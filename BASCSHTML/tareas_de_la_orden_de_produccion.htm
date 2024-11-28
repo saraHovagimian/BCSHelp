@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_70"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tareas de la orden de produccion</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Tareas de la orden de produccion"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Alta y Modificación de tareas de la orden de producción</h1>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Insumos</p>
+  <p class="H_Parrafo_de_Item">Aquí se ingresan los insumos requeridos para la tarea.</p>
+  <p class="H_Parrafo_de_Item">La Orden de producción podrá controlar, o no, al momento en que se registra en el sistema, la disponibilidad de insumos utilizados en cada una de las tareas que la conforman, para las fechas y horas de producción previstas.</p>
+  <p class="H_Parrafo_de_Item">Si la orden de producción incluye productos terminados y/o insumos que administran números de serie, partidas y/o despachos, se pueden informar los códigos de los mismos al momento de registrar el comprobante o, posteriormente, al registrar el parte de producción.</p>
+  <p class="H_Parrafo_de_Item">En relación a los insumos involucrados en cada tarea se controlará, si hay disponibilidad de los mismos, según como se hayan definido dichos insumos en la tabla de Bienes . Específicamente, el control se realizará, o no, en base a la información del campo Administra Stock. Si en dicho campo figura Sí, al momento de registrar la Orden de Producción, se controlará que en el depósito en el cual se está registrando el comprobante, y en la fecha correspondiente a la tarea, el stock disponible sea suficiente para satisfacer las necesidades indicadas en dicha tarea. También se controlará el stock existente en la partida y en el despacho informados para los insumos que administren dichos conceptos.</p>
+  <p class="H_Parrafo_de_Item">En caso que el stock no sea suficiente, se dará aviso al operador de dicha situación y, se dejará en sus manos la decisión de grabar, o no, el comprobante.</p>
+  <p class="H_Parrafo_de_Item">Es importante tener en cuenta que si se registra una Orden de producción, y al momento de dicha registración algunos de los insumos requeridos no se encuentran disponibles, cuando se registre el ingreso de dichos insumos al sistema (ya sea mediante compra o producción), dichos insumos serán asignados automáticamente a las Ordenes de producción para las cuales están en falta.</p>
+  <p class="H_Parrafo_de_Item">La información es similar a la que corresponde a la Hoja de ruta, según se detalla:</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Insumos</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Código</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de bien correspondiente al insumo necesario en la tarea que se está definiendo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a un bien ingresado en el sistema.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Puede ingresarse el código del ítem o su código alternativo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que el bien tenga asociadas tablas de medidas y colores se abre la grilla correspondiente para que se informen las combinaciones medida-color correspondientes a los insumos.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Alternativo</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Es posible reemplazar un insumo por uno alternativo. Para esto el insumo en cuestión debe tener completa la solapa Alternativos en la tabla Bienes.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Descripción del insumo indicado en el dato anterior.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem tiene asociada una descripción larga, se exhibirá esta. Si no, se exhibirá la otra descripción. Si el ítem no tiene descripción asociada, se solicitará el ingreso de un detalle del mismo en este momento.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Obs.</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Campo de hasta 2000 caracteres para indicar una observación.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Cantidad</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades necesarias del insumo indicado.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem trabaja con doble unidad de medida, se solicitará este campo si las compras se registran en la primera unidad. Si las compras se registran en segunda unidad, al ingresar la cantidad en la segunda unidad se completará este dato en forma automática y podrá ser modificado sólo si se indicó que la relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Cantidad en 2da unidad</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades necesarias del insumo indicado en la segunda unidad de medida.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem no trabaja con doble unidad de medida, no se solicitará información en este campo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem trabaja con doble unidad de medida, se solicitará este campo si las compras se registran en la segunda unidad. Si las compras se registran en primera unidad, al ingresar la cantidad en la primera unidad se completará este dato en forma automática y podrá ser modificado sólo si se indicó que la relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Depósito</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que se haya indicado una planta en el encabezado de la tarea, se exhibe un código de depósito que es tomado como valor “por defecto” para los insumos. En caso que el insumo provenga de otro depósito se puede modificar el valor por defecto ofrecido.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Despacho</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que el bien administre despachos, se indica el código de despacho del bien.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">El sistema controla que no se ingrese más de un despacho por producto.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Partida</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que el bien maneje partidas, se indica el código de partida del bien.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">El sistema controla que no se ingrese más de una partida por producto.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Número de Serie</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el bien se administra por números de serie, se indica el número del serie del bien.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Incidencia</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Tipo de incidencia del insumo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones son:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Fija</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Proporcional</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica incidencia <font style="font-weight: bold;">Fija</font>, la cantidad de insumos que se indiquen serán independientes de la cantidad de piezas a fabricar.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En cambio, si se indica incidencia <font style="font-weight: bold;">Proporcional</font>, las cantidades de insumos informadas variarán en función a la cantidad de bienes a producir.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Redondeo cantidades</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Redondeo a aplicar en la cantidad de unidades del insumo necesarias para completar la tarea.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Puede ocurrir que cuando se está registrando un proceso productivo en base a una hoja de ruta y, en particular, el sistema está calculando la cantidad de insumos a utilizar en la misma, para algunos insumos resulten cantidades no exactas en relación a las unidades en las que se miden.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, se tiene una tarea donde se indica que se requieren <font style="font-weight: bold;">5 kg</font>. de sal para fabricar <font style="font-weight: bold;">7000</font> docenas de tapas de empanadas y en la orden de producción se indica que se van a fabricar <font style="font-weight: bold;">10000</font> docenas de tapas. En ese caso, según lo informado, el cálculo proporcional indicará que se requieren de <font style="font-weight: bold;">7.14 kg</font>. de sal. El <font style="font-weight: bold;">Redondeo cantidades</font> se refiere a la decisión a tomar en ese tipo de casos. Si se indica <font style="font-weight: bold;">0.01</font> la fabricación mencionada utilizará <font style="font-weight: bold;">7.14 kg</font>. de sal. Si se indica <font style="font-weight: bold;">1</font> el proceso utilizará <font style="font-weight: bold;">8 kg</font> de sal.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Color Prod.</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Se usa para indicar el color del producto terminado principal al cual están destinados. Si el producto terminado se fabrica en distintos colores y si algunos insumos se requiere indicar a qué colores corresponden, se debe indicar en esta columna.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Dist.</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">La información que se informe en este campo está destinada exclusivamente a los procesos que involucran productos terminados con medidas y colores.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Para entrar información al campo, presione “doble clic”.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Para los insumos a los que se ha informado una determinada distribución por medida, en esta columna se muestra una &quot;X&quot; en azul. Si no se ha ingresado información , pero está permitido que se ingrese, se muestra una &quot;X&quot; en negro. Si no se puede ingresar distribución de medidas para el ítem, la columna no exhibe nada.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Cuando se fabrica un bien en distintos talles y colores puede ocurrir que, de determinado insumo, se requiera utilizar distinta cantidad de unidades, o distintos colores, para algunos talles.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, el talle XL de una prenda puede requerir más botones, o cierres de diferente medida, que los talles L y M.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Posiblemente un cierre color beige pueda utilizarse como insumo en prendas de diversos color claros pero se requiera de un cierre más oscuro para otro conjunto de colores.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Para estos casos se prevé la posibilidad de indicar, en relación a los insumos, la &quot;distribución por medidas&quot;.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">La &quot;distribución por medida&quot; de los insumos indica como se distribuye la cantidad de unidades indicadas, entre las distintas medidas del producto terminado.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Por supuesto, tiene sentido indicarla cuando el producto terminado tiene distintas medidas y colores y el insumo no se reparte uniformemente entre las mismas. Vale aclarar que si la hoja de ruta tiene más de un producto terminado que se administra con medidas, todos ellos deben corresponder a la misma tabla de medidas.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, si se fabrican camperas y uno de los insumos es &quot;botones&quot;. Si las camperas llevan distinta cantidad de botones según cual sea la medida, en &quot;distribución por medidas&quot; diremos como se distribuye la cantidad total de botones, entre las diversas medidas de las camisas.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se fabrican 60 camperas según la curva 10/S, 20/L, 20/M, 10/XL y si los talles S llevan 10 botones, los talles L y M llevan 12 y los talles XL llevan 14, en la hoja de ruta se indicará::</p>
+  <table align="center" cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="73%">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 19.10%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Insumo</p>
+        </td>
+        <td style="width: 20.21%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Cantidad</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">S</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">M</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">L</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 19.10%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Botones</p>
+        </td>
+        <td style="width: 20.21%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">720 unidades</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">100</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">240</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">240</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En el caso que las prendas del ejemplo requieran cierres, y que los talles S y M requieran cierres de 20 cm y los talles L y XL de 25 cm, la distribución por medida resultaría:</p>
+  <table align="center" cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="73%">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.60%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item" style="margin-top: 0; margin-bottom: 0;"></p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Cantidad</p>
+        </td>
+        <td style="width: 11.24%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">S</p>
+        </td>
+        <td style="width: 15.72%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">M</p>
+        </td>
+        <td style="width: 29.21%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">L</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.60%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">cierres de 20 cm.</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">30</p>
+        </td>
+        <td style="width: 11.24%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">10</p>
+        </td>
+        <td style="width: 15.72%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">20</p>
+        </td>
+        <td style="width: 29.21%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">0</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.60%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">cierres de 25 cm.</p>
+        </td>
+        <td style="width: 20.23%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">30</p>
+        </td>
+        <td style="width: 11.24%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">0</p>
+        </td>
+        <td style="width: 15.72%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">0</p>
+        </td>
+        <td style="width: 29.21%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">20</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Vale aclarar que, si luego de producir, al registrar el parte de producción, se informa que no se ha fabricado una determinada medida de campera, por ejemplo la medida XL, al modificar el dato en el parte, el sistema no incluirá la cantidad de insumos que corresponden a la distribución indicada. Es decir que, por ejemplo en el caso de los botones, descontará la cantidad de botones exacta necesaria para fabricar las camperas XL.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Recálculo</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Permite recalcular los datos de la orden de producción en base a las modificaciones de la cantidad de algún insumo. Este botón se habilita si la orden de producción tienen indicada una hoja de ruta y si el insumo que se está recalculando estaba en dicha hoja y no tiene explosión por colores y medidas. Para recalcular se debe posicionar en la línea del insumo deseado. Al presionarlo se accede a una ventana para indicar la cantidad actual.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Recursos</p>
+  <p class="H_Parrafo_de_Item">Aquí se muestran los tipos de recursos requeridos para la tarea que se está visualizando, y podrán indicarse los recursos que van a utilizarse de cada tipo.</p>
+  <p class="H_Parrafo_de_Item">Es posible agregar nuevos recursos a una tarea, cambiar los que ofrece el sistema por otros y, también, variar los porcentajes de utilización previstos en la hoja de ruta.</p>
+  <p class="H_Parrafo_de_Item">Al igual que con los insumos la Orden de producción podrá controlar, o no, al momento en que se registra en el sistema, la disponibilidad de recursos utilizados en cada una de las tareas que la conforman, para las fechas y horas de producción previstas.</p>
+  <p class="H_Parrafo_de_Item">Si los recursos que se asignan no están disponibles, ya sea porque están asignados a otras tareas, o porque están afectados a un &quot;uso especial&quot;, o porque el &quot;Calendario base&quot; indica que no están disponibles, y si se han definido con &quot;control de disponibilidad&quot;, se informa de tal situación y no se permite grabar el comprobante.</p>
+  <p class="H_Parrafo_de_Item">Para los recursos que se han definido sin &quot;control de disponibilidad&quot; no se efectúa ningún tipo de control.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Recursos</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Grupo</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este campo se habilita si al ingresar la orden de producción, la misma viene de una hoja de ruta que tiene tareas que permiten diferentes grupos de trabajo. El sistema genera automáticamente tantos grupos como se indicó en la hoja y ofrece los recursos disponibles.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si en la Hoja se indicó un recurso, éste se ofrece para el primer grupo de trabajo a pesar de que puede no estar disponible.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Es posible modificar la cantidad de grupos. En este caso el sistema ofrece perder las modificaciones ingresadas y volver a cargar los recursos en base a la nueva cantidad y la disponibilidad de los mismos.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Tipo de recurso</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de hasta ocho caracteres que identifica al tipo de recurso que será necesario utilizar para el proceso productivo asociado a la hoja de ruta que se está definiendo.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Descripción del tipo de recurso indicado en el dato anterior.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Recurso</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de hasta ocho caracteres que identifica al Recurso que se asignará a la tarea. Debe corresponder al tipo de recurso que se indique.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se registra sobre una Hoja de ruta y ésta tienen indicado un recurso, éste se precarga en este campo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que no haya precargado un recurso en la Hoja de ruta, el sistema ofrece un recurso del tipo que se indica. Para ello, en base a la agenda de la tarea, se fija que el recurso esté disponible ese día; si está disponible, se fija que no tenga un uso especial ese día y que no esté siendo utilizado en otra Orden ni en esa misma orden, para otra tarea. Si no encuentra ningún recurso que cumpla con todos esos requisitos, ofrece cualquiera de ese tipo.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Descripción del recurso indicado en el dato anterior.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Porcentaje de uso</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje correspondiente al uso que se le dará en la tarea, al recurso del tipo indicado.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este porcentaje indica si el recurso se afectará totalmente a la tarea o en forma parcial.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Duración</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de tiempo que será utilizado el recurso. Puede indicarse en horas o minutos con expresión de hasta dos decimales.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">El tiempo que se informa podrá depender o no de la cantidad de unidades a producir (incidencia fija o variable).</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">La duración que aquí se indique tendrá consecuencias directas en la ocupación de los recursos que se requieran. Dicho tiempo de ocupación, conjuntamente con el costo estándar, serán la base del cálculo del costo correspondiente a un proceso productivo.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Incidencia</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Tipo de incidencia del recurso.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones son:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Fija</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Proporcional</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica incidencia <font style="font-weight: bold;">Fija</font>, el tiempo que será utilizado el recurso será independiente de la cantidad de piezas a fabricar.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En cambio, si se indica incidencia <font style="font-weight: bold;">Proporcional</font>, el tiempo de uso informado variará en función a la cantidad de bienes a producir.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Redondeo duración</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Unidad a la que se desea redondear la cantidad de tiempo de uso del recurso, con expresión de hasta dos decimales.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este dato está destinado al caso en que, como resultado del cálculo, no se obtenga una duración que resulte un múltiplo exacto de la duración informada.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Proveedor</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el recurso es de tercero y tiene indicado un proveedor, el código del mismo se indica en esta columna.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Nombre</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Nombre del proveedor indicado en la columna anterior.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Servicio</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si el recurso es de terceros, en esta columna se puede indicar un código de servicio de tipo Manufactura. Este dato no es obligatorio y puede ingresarse posteriormente en la orden de producción.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Descripción del servicio indicado anteriormente.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Dependencias</p>
+  <p class="H_Parrafo_de_Item">Aquí se definen las tareas de las que depende la tarea de la orden de producción, que se está definiendo.</p>
+  <p class="H_Parrafo_de_Item">Si la orden se registra en base a una hoja de ruta, esta tabla exhibirá las dependencias tal como fueron ingresadas en la definición de la misma, permitiendo efectuar modificaciones a esta información.</p>
+  <p class="H_Parrafo_de_Item">Se podrá indicar el código de la tarea, el lapso de tiempo que se debe esperar para comenzar con la tarea que se está definiendo y el porcentaje de avance en el que se debe encontrar la primera para poder comenzar con la tarea actual.</p>
+  <p class="H_Parrafo_de_Item">Las dos últimas columnas exhiben la fecha y hora de finalización de cada una de las tareas de las que depende la tarea que se está ingresando.</p>
+  <p class="H_Parrafo_de_Item">Los datos que se exhiben son:</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Dependencias</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Tarea</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de tarea de la cual depende la tarea.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Espera mínima</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Tiempo mínimo que se debe esperar una vez terminada la tarea indicada, para comenzar con la tarea que se está definiendo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En algunos casos ocurre que, además de que sea necesario que se cumplimente determinada parte de una tarea, una vez cumplida, deba esperarse un lapso de tiempo determinado para comenzar con otra. Esta espera puede tener un tiempo mínimo, por ejemplo, para que endurezca o seque un proceso.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este tiempo puede expresarse en horas o minutos con indicación de hasta dos decimales.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Espera máxima</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Tiempo máximo que se debe esperar una vez terminada la tarea indicada, para comenzar con la tarea que se está definiendo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En algunos casos ocurre que, además de que sea necesario que se cumplimente determinada parte de una tarea, una vez cumplida, deba esperarse un lapso de tiempo determinado para comenzar con otra. Esta espera puede tener un tiempo máximo, por ejemplo, para que no se produzca una reacción química no deseada.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este tiempo puede expresarse en horas o minutos, con indicación de hasta dos decimales.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Respecto porcentaje de avance</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje que indica en qué estado debe estar la tarea indicada para que la tarea que se está definiendo pueda comenzar.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">No está permitido ingresar 0 en este campo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, si se informa para una tarea dada <font style="font-weight: bold;">100%</font>, significa que hasta que dicha tarea no esté completamente concluida, no se puede comenzar. Si para otra tarea se informa un porcentaje de avance de <font style="font-weight: bold;">50%</font>, significa que cumplimentada la mitad de la misma ya es posible comenzar con la tarea en cuestión.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Fecha de terminación</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Fecha en la que termina la tarea correspondiente a la línea.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Hora</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Hora en la que termina la tarea correspondiente a la línea.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Agenda</p>
+  <p class="H_Parrafo_de_Item">En esta fecha se informa el calendario previsto para la tarea. Se deberá informar las fechas y hora de comienzo y de finalización.</p>
+  <p class="H_Parrafo_de_Item">En caso que la tarea sea divisible es posible que la tarea se concrete en varios períodos de tiempo.</p>
+  <p class="H_Parrafo_de_Item">Cuando se carga la orden en base a una Hoja de ruta, si se ha indicado una fecha y hora de inicio en la orden de producción, el sistema generará automáticamente la programación de la agenda de las tareas, en base a dicha fecha y hora de inicio, al esquema de dependencias entre y al tiempo de espera mínimo.</p>
+  <p class="H_Parrafo_de_Item">Si no se informó una hoja de ruta, o si habiéndose informado se está ingresando una nueva tarea, el sistema ofrecerá  la fecha y hora de inicio y finalización de dicha tarea en base a su duración y a las dependencias ingresadas.</p>
+  <p class="H_Parrafo_de_Item">Si se informa como fecha de inicio de la tarea una fecha anterior a la fecha de finalización de una tarea de la cual depende, el sistema ofrece modificarla.</p>
+  <p class="H_Parrafo_de_Item">Si se modifica alguna dependencia o se modifica la fecha de finalización de la tarea de tal forma que la nueva fecha es posterior a la que existía anteriormente, el sistema ofrece recalcular las fechas de todas las tareas que dependen de la tarea modificada.</p>
+  <p class="H_Parrafo_de_Item">Cuando se recalcula la fecha de inicio de la tarea, si la fecha calculada es anterior a la existente, la fecha no se reemplaza.</p>
+  <p class="H_Parrafo_de_Item">Los datos a informar son:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Sub-Sub_Item_con_vi￱eta_negrita">Inicio: Fecha</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Sub-Sub_Item_con_vi￱eta_negrita">Inicio: Hora</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Sub-Sub_Item_con_vi￱eta_negrita">Terminación: Fecha</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Sub-Sub_Item_con_vi￱eta_negrita">Terminación Hora</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">En caso que la tarea sea divisible se deberán informar todos los períodos de tiempo previstos para su ejecución.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Observaciones</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Observación</p>
+  <p class="H_Parrafo_de_Sub-Item">Esta ficha permite incluir instrucciones, consideraciones, y todo aquello que resulte de interés informar a los responsables de concretar la tarea.</p>
+
+</body></html>

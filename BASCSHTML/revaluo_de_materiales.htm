@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.3.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Revaluo de materiales</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Materiales,Revalúo"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Revalúo de materiales</h1>
+<p class="H_Texto">Este comprobante permite aumentar el costo de los <a href="tabla__Bienes.htm">bienes</a> en stock incorporando, al valor 
+ de compra o producción, los gastos adicionales que se hubieran realizado 
+ para obtener el bien, por ejemplo, gastos de transporte, de nacionalización, 
+ etc. Dichos gastos se asocian a los comprobantes de ingreso de mercadería 
+ mediante los cuales los bienes mencionados, ingresaron al stock.</p>
+<p class="H_Texto">Podemos decir entonces que el valor al cual ingresa 
+ la mercadería estará compuesto por el valor de compra o producción más 
+ todos los revalúos que se le hayan aplicado.</p>
+<p class="H_Texto">Los revalúos de materiales no modifican las existencias 
+ de los bienes que incluyen, sino que modifican el costo de dichos bienes.</p>
+<p class="H_Texto">En cuanto a la metodología de trabajo, propiamente dicha, 
+ la tarea consiste en invocar un comprobante de ingreso en particular e 
+ imputar, a cada uno de los bienes que figuran en él, un importe determinado. 
+ Este importe se incorpora al costo del bien.</p>
+<p class="H_Texto">Si se revalúan bienes que trabajan con <a href="tabla__Tablas_de_medidas.htm">medidas</a> 
+ y <a href="tabla__Tablas_de_colores.htm">colores</a> el valor del revalúo 
+ que se ingrese se repartirá proporcionalmente entre todas las medidas 
+ y colores entregadas de cada ítem.</p>
+<p class="H_Texto">Las facturas de gastos que se registren en el sistema, 
+ y que luego se deban incorporar a los costos de los <a href="tabla__Bienes.htm">bienes</a> 
+ que figuran en un determinado ingreso o parte de producción, deben imputar 
+ una determinada <a href="tabla__Cuentas.htm">cuenta</a> del plan de cuentas 
+ definida a tal fin, a la que llamaremos, <font style="font-weight: bold;">cuenta 
+ compensadora</font>.</p>
+<p class="H_Texto">Luego, al invocar el movimiento de ingreso asociado 
+ al gasto se asociará, a cada uno de los bienes incluidos en ese comprobante, 
+ un importe. Dicho importe se incorporará al valor de inventario de cada 
+ bien y el asiento utilizará como contrapartida contable a la cuenta compensadora 
+ mencionada antes. Si el importe que se incorpora al costo coincide (como 
+ debe ser) con el total de la factura de gastos, la cuenta compensadora 
+ quedará saldada.</p>
+<p class="H_Texto">La <a href="tabla__Cuentas.htm">cuenta</a> compensadora, 
+ entonces, funciona como cuenta puente en el sentido que permite transferir 
+ los gastos adicionales relacionados a las compras a los costos de los 
+ correspondientes bienes comprados o producidos.</p>
+<p class="H_Texto">Los datos a ingresar para registrar revalúos de materiales, 
+ son los siguientes:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775239057" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP775239057">
+	<p class="H_Parrafo_de_Item">Fecha del comprobante.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775210318" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número</span><span data-close-text="true">Número</span></a></p>
+<div data-targetname="POPUP775210318">
+	<p class="H_Parrafo_de_Sub-Item">Número de comprobante que se asocia 
+	 al revalúo que se está ingresando. Está compuesto por el prefijo o 
+	 sucursal, y el número propiamente dicho.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cada uno de los revalúos de materiales 
+	 que se registran en el sistema tiene asociado un <a href="tabla__Talonarios.htm">talonario</a> 
+	 , que se asigna al indicar el prefijo del número. El talonario determina 
+	 el subdiario donde se contabiliza el comprobante, el tipo de numeración 
+	 del comprobante, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775225068" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cuenta compensadora</span><span data-close-text="true">Cuenta compensadora</span></a></p>
+<div data-targetname="POPUP775225068">
+	<p class="H_Parrafo_de_Sub-Item">Código de la <a href="tabla__Cuentas.htm">imputación 
+	 contable</a> asociada al comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe ingresarse el código de una cuenta 
+	 imputable ya definida en el Plan de cuentas y sin subcuentas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta cuenta será imputada en el asiento 
+	 contable del revalúo que se está registrando.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP774870240" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Comprobantes a revaluar</span><span data-close-text="true">Comprobantes a revaluar</span></a></p>
+<div data-targetname="POPUP774870240">
+	<p class="H_Parrafo_de_Item">Indicación del tipo de comprobante que 
+	 se desea revaluar.</p>
+	<p class="H_Parrafo_de_Item">Las opciones son:</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Ingreso</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona Ingreso se activará 
+	 además el campo <a href="tabla__Proveedores.htm">Proveedor</a> destinado 
+	 a indicar el código del proveedor titular del comprobantes a revaluar. 
+	 Luego, mediante el botón Buscar, podrá seleccionarse el comprobante 
+	 a revaluar entre todos los comprobantes de ingreso existentes de dicho 
+	 proveedor.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Parte 
+	 Producción</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona Parte Producción 
+	 podrá seleccionarse el comprobante a revaluar mediante el botón Buscar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Buscar</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante este botón se accede a una 
+	 ventana que exhibe todos los ingresos de mercadería o partes de producción 
+	 registrados en el sistema y es posible seleccionar el comprobante 
+	 cuyos <a href="tabla__Bienes.htm">bienes</a> se deban revaluar. Serán 
+	 posibles de seleccionar todas las facturas de compra que tengan la 
+	 correspondiente entrega de la mercadería (facturas-remito),todos los 
+	 ingresos de mercadería que ya hayan sido facturados o todos los partes 
+	 de producción registrados.</p>
+	<p class="H_Parrafo_de_Sub-Item">No se pueden revaluar Partes de producción 
+	 (no se ofrecen en la búsqueda) que:</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta" style="counter-set: prl-p-h_sub_sub_item_con_vineta 0;"> no referencien órdenes 
+	 de producción.</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta"> <span lang="ES" xml:lang="ES">referencien 
+	 órdenes de producción que no estén cerradas.</span></p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta"><span lang="ES" xml:lang="ES" style="font-size: 11.0pt; 
+												 mso-bidi-font-size: 10.0pt; 
+												 font-family: Symbol; mso-fareast-font-family: Symbol; 
+												 mso-bidi-font-family: Symbol;"><span style="mso-list: Ignore;"><span style="font: 7.0pt &#39;Times New Roman&#39;;"> </span></span></span><span lang="ES" xml:lang="ES"> ocurran en una planta, es decir que 
+	 no sean de depósitos.</span></p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez seleccionado el comprobante, 
+	 al salir de la ventana de selección, los ítems incluidos en dicho 
+	 comprobante pasan a formar parte del revalúo y se completa la pantalla 
+	 con la fecha y el número del comprobante seleccionado.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ Revalúo proporcional</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP775176916" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> 
+ Importe</span><span data-close-text="true"> 
+ Importe</span></a></p>
+<div data-targetname="POPUP775176916">
+	<p class="H_Parrafo_de_Sub-Item">Aquí es posible ingresar un importe, 
+	 y pulsando el botón <font style="font-weight: bold;">Revaluar</font>, 
+	 el sistema automáticamente distribuye este valor en forma proporcional 
+	 entre los <a href="tabla__Bienes.htm">bienes</a> que se están valuando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Esto es útil si se quiere repartir 
+	 el importe de un determinado gasto entre todos los bienes de un ingreso 
+	 de mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si para algunos bienes ya se había 
+	 ingresado un importe, el importe resultante de este revalúo proporcional 
+	 se agrega a dicho importe.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Ítems</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP775129772" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla 
+ de Ítems</span><span data-close-text="true">Tabla 
+ de Ítems</span></a></p>
+<div data-targetname="POPUP775129772">
+	<p class="H_Parrafo_de_Sub-Item">En esta tabla se informan los <a href="tabla__Bienes.htm">bienes</a> 
+	 a incluir en el revalúo de materiales que se está ingresando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Dichos ítems se ingresan automáticamente 
+	 al revalúo al seleccionar el comprobante de ingreso de mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para cada ítem a revaluar se debe 
+	 informar el importe correspondiente.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Bienes.htm">bienes</a> 
+	 a incluir en el revalúo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se exhiben los códigos de todos los 
+	 ítems incluidos en el comprobante de ingreso de mercadería seleccionado 
+	 para revaluar.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el 
+	 dato anterior.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se exhibe la cantidad de unidades 
+	 especificada en el comprobante de ingreso de mercadería seleccionado 
+	 para revaluar.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe</p>
+	<p class="H_Parrafo_de_Sub-Item">Importe del revalúo asociado al bien 
+	 cuyo código se exhibe en la columna <font style="font-weight: bold;">Ítem</font>.</p>
+	<p class="H_Parrafo_de_Sub-Item">El costo de los bienes revaluados 
+	 aumentará incorporando al valor de compra de cada bien, el importe 
+	 aquí indicado.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP637141435" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+<div data-targetname="POPUP637141435">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Observaciones</p>
+	<p class="H_Parrafo_de_Sub-Item">Permite ingresar un texto aclaratorio 
+	 acerca del revalúo ingresado. Este aparece en todos los informes en 
+	 los que se incluye al comprobante.</p></div>
+<p class="H_Item_con_imagen_negrita" style="font-style: normal;"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> <a href="administracion_de_Documentos.htm"><font style="font-style: normal;">Ficha 
+ Adjuntos</font></a> </p>
+<p class="H_Parrafo_de_Item">Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de <a href="adjuntos.htm">Adjuntos</a>.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/><a data-target="POPUP775161910" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para 
+ tener en cuenta</span><span data-close-text="true">Para 
+ tener en cuenta</span></a></p>
+<div data-targetname="POPUP775161910">
+	<p class="H_Parrafo_de_Item">El sistema no permite revaluar por importes 
+	 en negativo que provoquen que el costo final del producto quede en 
+	 negativo, o sea no se podrán poner importes en negativo cuyo monto 
+	 sea superior al costo del movimiento más el importe de todos los revalúos 
+	 hechos hasta el momento.</p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP775239057');
+	TextPopupInit('a2', 'POPUP775210318');
+	TextPopupInit('a3', 'POPUP775225068');
+	TextPopupInit('a4', 'POPUP774870240');
+	TextPopupInit('a5', 'POPUP775176916');
+	TextPopupInit('a6', 'POPUP775129772');
+	TextPopupInit('a8', 'POPUP637141435');
+	TextPopupInit('a7', 'POPUP775161910');
+//]]></script>
+
+
+</body></html>

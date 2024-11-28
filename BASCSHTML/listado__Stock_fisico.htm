@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.3.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Stock fisico</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Stock físico"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Stock físico</h1>
+  <p class="H_Texto">Este informe permite ver el detalle de las cantidades de unidades en stock de los ítems con los que se trabaja.</p>
+  <p class="H_Texto">Pueden seleccionarse para imprimir rangos de rubros , ítems y depósitos y puede emitirse el listado hasta una fecha determinada y con diferentes ordenamientos.</p>
+  <p class="H_Texto">Para los ítems que trabajan con doble unidad de medida se pueden ver las existencias en ambas unidades.</p>
+  <p class="H_Texto">Para los ítems que trabajan con medidas y colores pueden verse las existencias consolidando medidas y/o colores, detallando las existencias por cada color y/o medida posible, o puede emitirse el listado en forma tabular. Esta última opción muestra en la línea del listado correspondiente a cada ítem las existencias para las diferentes medidas del mismo, una a continuación de la otra en forma de tabla.</p>
+  <p class="H_Texto">Cuando el listado se emita detallando depósitos y colores, y las medidas se expongan en forma tabular se exhibirá, para cada código de ítem, un total por cada columna de medida.</p>
+  <p class="H_Texto">Para los ítems que trabajan con partidas o despachos pueden verse las existencias detalladas por cada partida o por cada despacho. Puede, además, solicitarse que sólo se incluyan los ítems con alguna de esas características.</p>
+  <p class="H_Texto">Las existencias pueden emitirse detallando por depósito , es decir, mostrando para cada depósito el detalle de las existencias de los ítems del mismo, y los totales para cada depósito.</p>
+  <p class="H_Texto">También podrá solicitarse la inclusión de la mercadería en tránsito, es decir, aquella que egresó de un depósito con destino a otro depósito.</p>
+  <p class="H_Texto">En este listado se incluyen movimientos pertenecientes a los lotes de generación automática. Se indicarán con una L junto a la cantidad si la existencia del ítem incluye movimientos correspondientes a un lote, y se detallará en el pie de página que incluye valores del lote.</p>
+  <p class="H_Texto">Pueden incluirse en el listado todos los ítems o pueden seleccionarse los productos a listar por código de ítem, por código de selección o por atributos y valores de atributos de los ítems.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP742272545" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP742272545">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Rubro</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de rubro cuyos ítems se desean
+      incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un rubro en particular
+      o un grupo de rubros. Si este dato es dejado en blanco, se incluirán
+      todos los rubros en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Hasta
+      fecha</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha hasta la cual se desean considerar
+      las existencias de los ítems.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna fecha, se
+      consideran las existencias de los ítems hasta el final.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica una fecha no se tendrán
+      en cuenta para el cálculo de las existencias los ingresos y egresos
+      de materiales registrados en una fecha posterior a esta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Depósito/Planta</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Depositos_Plantas.htm">depósito</a>
+      cuyas existencias desean incluirse en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un depósito en
+      particular o un grupo de depósitos. Si este dato es dejado en blanco,
+      se incluirán todos los depósitos en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando se indique un único depósito,
+      o se detallen depósitos, los valores siempre corresponden a mínimo
+      y al stock ideal indicados en la Ficha Depósitos de la Tabla de Bienes,
+      caso contrario al mínimo y/o máximo que se indica en la solapa Stock.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Origen</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe tildar si el stock a listar
+      corresponde a depósitos, plantas o ambos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>Depósito</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>Planta</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Tipo</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>Propio</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>de
+      terceros</p>
+    <p class="H_Parrafo_de_Sub-Item">Los depósitos de terceros puede ser
+      plantas de producción o depósitos involucrados en remitos cárnicos.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP740190168" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP740190168">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Stock
+      físico en cero</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir
+      o no en el listado los ítems con existencia en cero.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Incluye
+      stock en tránsito</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea incluir
+      o no en el listado, para cada ítem, la cantidad de mercadería &quot;en
+      tránsito&quot;, es decir, la mercadería no recibida aún por el depósito
+      cuyo stock se lista. Este tipo de stock se genera en operaciones de
+      transferencia de mercadería entre depósitos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las transferencias de mercadería se
+      registran mediante un remito que refleja el egreso de un depósito
+      determinado con destino a otro depósito y un remito de ingreso que
+      refleja la recepción de la mercadería transferida, en el depósito
+      de destino. Durante el lapso de tiempo que media entre la salida de
+      la mercadería del depósito de origen y su ingreso en el depósito indicado
+      como destino, la misma permanece en tránsito.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los ítems con unidades en tránsito
+      se exhiben con una letra <font style="font-weight: bold;">T</font>
+      a la izquierda de la cantidad, indicando que la misma incluye unidades
+      aún no ingresadas pero que están en tránsito.</p>
+    <p class="H_Parrafo_de_Sub-Item">A su vez, al indicar esta opción es
+      posible especificar que el stock en tránsito se sume al stock físico
+      existente en el depósito de destino o, de lo contrario, se detalle
+      en forma separada. Para ellos se deberá marcar la opción correspondiente.
+      A saber:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Suma al depósito de destino</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se marca esta opción se adicionará
+      a la línea de cada ítem para el que exista stock en tránsito, una
+      letra <font style="font-weight: bold;">T</font> indicando que la cantidad
+      que se exhibe en dicha línea incluye unidades en tránsito.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Detalla aparte el stock no físico</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si en cambio, se marca la opción
+      Detalla aparte el stock no físico, se exhibirán sin desglosar por
+      depósitos, los ítems y las cantidades correspondientes bajo el rótulo
+      Stock en tránsito, a continuación de la información correspondiente
+      a cada uno de los depósitos incluidos en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Ambas opciones se habilitan cuando
+      se activa el campo Incluye stock en tránsito. No obstante, la segunda
+      de ellas (<font style="font-weight: bold;">Detalla aparte stock no
+        físico</font>) sólo se habilita si el informe se solicita con <span style="font-weight: bold;"><a href="tabla__Depositos_Plantas.htm">Depósitos</a></span>
+      <font style="font-weight: bold;">Detallados</font>.
+    </p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Incluye
+      bienes propios en poder de terceros</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir
+      en el listado ítems correspondientes a egresos de mercadería pendientes.
+      Por ejemplo aquella mercadería que se ha otorgado en calidad de préstamo.
+      Esta opción se encontrará disponible siempre y cuando no se solicite
+      el detalle de las medidas en forma tabular.</p>
+    <p class="H_Parrafo_de_Sub-Item">En este caso el informe luego de incluir
+      las existencias de los ítems que correspondan, según las opciones
+      elegidas, exhibe los ítems en poder de terceros detallados por concepto
+      pero sin desglosar por depósito.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> No incluir
+      stock vendido no entregado</p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Este stock
+        corresponde al stock vendido que aún no fue entregado o que fue entregado
+        en una fecha posterior al hasta fecha.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">El objetivo
+        es tener la posibilidad de restar o no de la cantidad en stock, las
+        unidades que ya están vendidas pero todavía no se entregaron. Al tildarlo
+        se indica que se desea restar al stock dichas cantidades. Por defecto
+        no está tildado, por lo que estos informes consideran el stock vendido
+        no entregado como si hubiera sido entregado.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">El cálculo
+        del valor del stock vendido no entregado se obtiene de las líneas
+        de las facturas de venta pendientes de entrega.</span></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Sólo
+      ítems por debajo del mínimo</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir
+      en el listado sólo los ítems cuyas existencias se encuentran por debajo
+      de la existencia mínima indicada en la definición de cada ítem.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Sólo
+      ítems que superan el máximo</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir
+      en el listado sólo los ítems cuyas existencias superan la existencia
+      máxima indicada en la definición de cada ítem.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Normalizado
+      a contenedor default</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona esta opción, para
+      los ítems contenedores, se mostrará la cantidad expresada en unidades
+      del contenedor default de cada ítem, es decir, se divide la cantidad
+      de unidades del ítem por la cantidad de unidades del ítem que hay
+      en el contenedor default.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción se desactivará en caso
+      de emitir el listado detallando medidas en forma tabular.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Detallar
+      ubicaciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo sólo se habilita cuando
+      el informe se solicita detallando depósitos y las medidas no se exhiban
+      en forma tabular.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cabe aclarar que, cuando se indique
+      detallar ubicaciones para un depósito solo, el sistema verificará
+      que éste administre múltiples ubicaciones por ítem, pero cuando se
+      indique un conjunto de depósitos no hará verificación alguna.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando se detallen ubicaciones, para
+      aquellos depósitos que administren múltiples ubicaciones por ítem,
+      se considerarán las ubicaciones indicadas a través de los movimientos
+      por depósito que correspondan a las existencias generales, es decir,
+      no a fecha, en la primera unidad y segunda unidad de medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que sólo se
+      detallarán aquellas que presenten al menos una de las existencias
+      generales distinta de cero. Esta información se detallará en letra
+      itálica, y los valores correspondientes a las existencias generales
+      no estarán incluidos en los totales.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Depósitos</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la forma en que se desean
+      visualizar las existencias por <a href="tabla__Depositos_Plantas.htm">depósito</a>
+      .</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Consolidados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se seleccionan depósitos Consolidados
+      se listarán las existencias de los ítems de todos los depósitos sumadas,
+      es decir, se mostrará para cada ítem su existencia total.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Detallados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se seleccionan depósitos <font style="font-weight: bold;">Detallados</font> se listarán las existencias
+      de los ítems para cada depósito, es decir, se mostrará cada depósito
+      con el detalle de las existencias de los ítems del mismo. Al finalizar
+      el detalle de cada depósito se imprimen los totales de unidades del
+      mismo.</p>
+    <p class="H_Parrafo_de_Sub-Item">En ambos casos, sólo se tendrán en
+      cuenta los depósitos del rango seleccionado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación del ordenamiento con el
+      que se desea emitir el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      <font style="font-weight: bold;">Ítem</font> se imprimirán las existencias
+      ordenadas por código de ítems.
+    </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Rubro</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      <font style="font-weight: bold;">Rubro</font> se imprimirán las existencias
+      ordenadas por código de <a href="tabla__Rubros.htm">rubro</a> . Se
+      mostrará cada rubro del rango seleccionado con el detalle de las existencias
+      de los ítems de ese rubro y se imprimen totales de unidades por rubro.
+    </p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En ambos casos, se permite además
+      efectuar el ordenamiento por:</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Código</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Descripción.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Nivel
+      de detalle</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación del nivel de detalle que
+      se desea otorgar al informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Ítem
+      se mostrarán las existencias totales de cada ítem, sin tener en cuenta
+      la <a href="partidas.htm">partida</a> o el <a href="despachos.htm">despacho</a>
+      asociado a cada unidad.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Partida</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Partida
+      se mostrarán las existencias de cada ítem detallando las cantidades
+      por partida especificando el código y la descripción correspondiente
+      a cada partida.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Sólo ítems con partidas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona Partida se activa
+      este campo y es posible incluir sólo los ítems que trabajan con partidas.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Despacho</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Despacho
+      se mostrarán las existencias de cada ítem detallando las cantidades
+      por despacho.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Sólo ítems con despacho</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona Despacho se activa
+      este campo y es posible incluir sólo los ítems que trabajan con despachos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Número de serie</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Número
+      de serie se mostrarán las existencias de cada ítem detallando las
+      cantidades por número de serie.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este nivel de detalle sólo está
+      habilitado si se consolidan colores y medidas y si no se incluyen
+      los bienes los bienes en poder de terceros. Sólo se incluyen ítems
+      con existencia distinta de cero.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para los ítems que manejan números
+      de serie en cantidades unitarias, los números de serie se concatenan
+      usando como delimitador el separador para datos complementarios indicado
+      en <a href="parametros__Datos_generales.htm">Parámetros Datos Generales</a>;
+      para los que no manejan cantidades unitarias se detallarán uno debajo
+      del otro.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Sólo ítems con nros de serie</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona Nro de serie
+      se activa este campo y es posible incluir sólo los ítems que trabajan
+      con números de serie.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>Incluir
+      observaciones</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona Nro de serie
+      se activa este campo y es posible incluir observaciones de los números
+      de serie que se detallen.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si no se incluyen, para los ítems
+      que tienen series unitarias, el informe muestra los números de serie
+      uno al lado del otro. Si se incluyen, se muestra un número de serie
+      por línea y al lado de dicho campo las observaciones correspondientes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Colores</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la forma en que se desean
+      visualizar en el listado los ítems que trabajan con colores. Las opciones
+      son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Consolidados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona colores <font style="font-weight: bold;">Consolidados</font> se muestran las existencias
+      totales de cada ítem, sin tener en cuenta el color de cada unidad.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Detallados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona colores <font style="font-weight: bold;">Detallados</font> se muestran las existencias
+      de cada ítem detallando por código de color.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Ordenar
+      por Despacho / Partida</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo se habilita en caso que
+      se haya indicado como Nivel de detalle la opción Despacho o la opción
+      partida.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que se tilde, para cada ítem
+      se detallarán los despachos/ partidas asociados.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada despacho/ partida, en caso
+      que se detallen medidas y/o colores, se detallarán las medidas y colores
+      que intervienen. En este caso, el informe presentará totales por despacho/
+      partida cuando detalle medidas y/o colores.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cabe observar que cuando se ordene
+      por despacho/ partida no se podrán detallar ubicaciones.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Medidas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la forma en que se desean
+      visualizar en el listado los ítems que trabajan con medidas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Consolidadas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona medidas <font style="font-weight: bold;">Consolidadas</font> se muestran las existencias
+      totales de cada ítem, sin tener en cuenta la medida de cada unidad.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Detalladas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona medidas <font style="font-weight: bold;">Detalladas</font> se muestran las existencias
+      de cada ítem detallando por código de medida.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Tabular</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona medidas <font style="font-weight: bold;">Tabular</font> se muestran las existencias
+      de cada ítem para cada medida, una a continuación de la otra en forma
+      de tabla. Este listado presenta un total general de cantidades al
+      final, pero este total no distingue ni colores ni medidas</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Títulos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se tilda la opción <font style="font-weight: bold;">Tabular</font>
+      se habilita el campo <font style="font-weight: bold;">Títulos</font>
+      donde es posible indicar con que tabla de títulos se filtrará el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una tabla de títulos,
+      para cada ítem, si por definición su tabla de medidas está incluida
+      en alguna de las filas de la tabla de títulos indicada y la medida
+      aparece entre las que se definieron para esa fila en la tabla de títulos,
+      la cantidad se encolumnará bajo dicha medida. Caso contrario, se incluirá
+      la cantidad en la columna que corresponde a cantidades cuya medida
+      no está en la tabla de títulos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Ordenar por tabla</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea que
+      la información se exhiba ordenada primero por tabla de medidas, y
+      luego por ítem o rubro, según sea el ordenamiento que se haya seleccionado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo solo se habilita en
+      caso de haber seleccionado la opción Tabular.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP742272545');
+    TextPopupInit('a2', 'POPUP740190168');
+    //]]>
+  </script>
+
+</body></html>

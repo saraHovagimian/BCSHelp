@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.11.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado de Estado de ordenes de compra</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Estado de órdenes de compra.</h1>
+  <p class="H_Texto">Este informe permite observar el estado de cada orden de compra de un rango determinado, con los diferentes comprobantes de compra o cancelación que la referencian, con sus importes, y calculando el saldo que va quedando pendiente en la orden a medida que se detallan los comprobantes asociados.</p>
+  <p class="H_Texto">Se puede establecer un período a considerar e indicar si se incluyen órdenes de compra expiradas, como así también filtros por <a href="tabla__Proveedores.htm">proveedor</a>, <a href="tabla__Agentes.htm">comprado</a>r, prefijo, número de orden de compra y <a href="tabla__Empresas.htm">empresas</a>/<a href="tabla__Sucursales.htm">sucursales</a> a considerar.</p>
+  <p class="H_Texto">También se puede seleccionar ordenar por Proveedor u Orden de compra.</p>
+  <p class="H_Texto">Cabe aclarar que si una orden de compra presenta saldo pendiente pero se encuentra cumplida, es decir, no está pendiente de entrega, y todos los remitos de ingresos referenciados a la misma se encuentran facturados, entonces se muestra una línea con la observación “Orden de compra cumplida y facturada / cancelada”. De esta forma la orden de compra queda con saldo cero ya que en el estado no se consideran las entregas que no se encuentran facturadas.</p>
+  <p class="H_Texto">Por ejemplo, si se tienen dos órdenes de compra entregadas y facturadas, la primera facturada a un precio mayor al de la orden de compra, y la segunda a un precio menor, en ambos casos, la orden de compra tiene un saldo pero como ya está cumplida, el saldo se muestra en cero en ambos casos.</p>
+  <p class="H_Texto">El saldo se muestra en la moneda de cada orden de compra. Al final del listado se informan los totales de saldos de órdenes de compra discriminados por <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a>. Si el ordenamiento elegido es por proveedor, se observan además los totales de saldos por proveedor.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP643845340" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP643845340">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Proveedor</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Proveedores.htm">proveedor</a> cuyas órdenes de compra asociadas se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un proveedor en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán las órdenes de compra de todos los proveedores en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Comprador</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Agentes.htm">comprador</a> cuyas órdenes de compra asociadas se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un comprador en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán las órdenes de compra de todos los compradores en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El prefijo debe corresponder a un <a href="tabla__Talonarios.htm">talonario</a> que admita el ingreso de órdenes de compra.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco se incluirán en el listado las órdenes de compra sin tener en cuenta su numeración.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Números de los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse un número en particular o un rango de números. Si este dato es dejado en blanco y se indicó un prefijo, se incluirán todas las órdenes de compra ingresadas con el prefijo indicado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Proveedor</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea ordenar los comprobantes incluidos en el informe por el código del proveedor titular de los mismos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Orden de compra</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea ordenar los comprobantes incluidos en el informe por fecha y número de orden de compra.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir órdenes de compra Expiradas</p>
+    <p class="H_Parrafo_de_Sub-Item">Se indica si se incluye en el informe el estado de las órdenes de compra expiradas.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm"><span style="font-style: normal;">Empresas</span></a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP643845340');
+    //]]>
+  </script>
+
+</body></html>

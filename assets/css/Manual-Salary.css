@@ -1,0 +1,855 @@
+/*Created with Adobe RoboHelp 2017.*/
+P {
+  margin-right: 6.50pt;
+  margin-top: 4.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 8pt;
+  margin-right: 6.50pt;
+  margin-top: 4.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 8pt;
+  margin-right: 6.50pt;
+  margin-top: 4.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 8pt;
+  margin-right: 6.50pt;
+  margin-top: 4.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 8pt;
+}
+H1 {
+  margin-left: 5.75pt;
+  margin-right: 6.50pt;
+  margin-top: 6.00pt;
+  margin-bottom: 2.00pt;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1.5rem;
+}
+H2 {
+  margin-right: 6.50pt;
+  margin-top: 6.00pt;
+  margin-bottom: 2.00pt;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Calibri;
+}
+H3 {
+  margin-right: 6.50pt;
+  margin-top: 6.00pt;
+  margin-bottom: 2.00pt;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Calibri;
+}
+H4 {
+  margin-left: 18.00pt;
+  margin-right: 6.50pt;
+  margin-top: 4.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+H5 {
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-align: left;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+H6 {
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-align: left;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+H6.Heading7 {
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 42.55pt;
+  text-align: left;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 1rem;
+}
+H6.Heading8 {
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-left: 5.75pt;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 49.60pt;
+  text-align: left;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+}
+H6.Heading9 {
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-size: 8pt;
+  font-weight: bold;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 56.70pt;
+  text-align: left;
+  font-family: Arial;
+  font-size: 8pt;
+  font-weight: bold;
+}
+P.H_Texto {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+  color: #111111;
+}
+p.Texto {
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Item_con_imagen_negrita {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 1rem;
+}
+P.H_Parrafo_de_Item {
+  margin-left: 14.20pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.H_Parrafo_de_Sub-Item {
+  margin-left: 28.35pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Parrafo_de_Sub-Sub-Item {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Sub-Item_con_imagen_negrita {
+  margin-left: 28.35pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: -14.20pt;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Sub-Sub-Sub-Item_con_imagen_negrita {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Texto_negrita {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Titulo_de_texto_negrita {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Item_con_imangen_negrita_XE {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.Estilo_H_Sub-Item_con_vi￱eta_negrita_XE_+_Symbol_(s￭mbolo) _11_pt_S___ {
+  margin-top: 0.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.Estilo_Estilo_H_Sub-Item_con_vi￱eta_negrita_XE_+_Symbol_(s￭mbolo) _11___ {
+  margin-top: 0.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri;
+}
+P.Estilo_H_Sub-Item_con_vi￱eta_negrita_+_Symbol_(s￭mbolo) _11_pt_Sin____ {
+  margin-top: 0.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.Estilo_Estilo_H_Sub-Item_con_vi￱eta_negrita_+_Symbol_(s￭mbolo) _11_pt___ {
+  margin-top: 0.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Calibri;
+}
+P.H_Sub-Sub-Item_con_imagen_negrita {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: -14.20pt;
+  text-align: justify;
+  font-weight: bold;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Item_con_imagen_negrita_XE {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Parrafo_de_Item_XE {
+  margin-left: 14.20pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1 rem;
+  font-style: italic;
+  font-family: Calibri;
+}
+P.H_Parrafo_de_Sub-Item_XE {
+  margin-left: 28.35pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.H_Parrafo_de_Sub-Sub_Item_XE {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.H_Parrafo_de_Sub-Sub-Item_XE {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Parrafo_de_Sub-Sub-Sub_Item {
+  margin-left: 76.85pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.H_Parrafo_de_Sub-Sub-Sub_Item_(XE) {
+  margin-left: 76.85pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.H_Sub-Item_con_imagen_negrita_XE {
+  margin-left: 28.40pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: -14.20pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Calibri;
+}
+P.H_Sub-Sub_Item_con_imagen_negrita_(XE) {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: -14.20pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri;
+}
+P.H_Sub-Sub-Sub_Item_con_imagen_negrita_(XE) {
+  margin-left: 42.55pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri;
+}
+P.H_Texto_XE {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+P.Normal_(Web) {
+  margin-right: 6.50pt;
+  margin-top: 4.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-size: 1rem;
+  font-family: Calibri;
+}
+P.epigrafe {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Calibri;
+  text-align: left;
+}
+P.H_parrafo_de_Sub-Sub-Sub-Item_XE {
+  margin-left: 76.85pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: Calibri;
+}
+P.H_Sub-Sub-Item_con_vieta_negrita {
+  margin-left: 56.70pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: -14.20pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+}
+P.Titulo_item_subrayado {
+  margin-left: 45.35pt;
+  margin-top: 12.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: 42.55pt;
+  text-align: left;
+  font-family: Calibri;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+de_Item_con_imagen {
+  margin-left: 21.25pt;
+  margin-top: 0.00pt;
+  margin-bottom: 3.00pt;
+  text-align: left;
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+}
+P.H_Sub-Sub-Item_con_imagen_negrita_XE {
+  margin-left: 56.70pt;
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-indent: -14.20pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+P.Titulo_principal {
+  margin-top: 0.00pt;
+  margin-bottom: 0.00pt;
+  text-align: left;
+  font-family: Calibri;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+Item_+_Izquierda___0_cm_Primera_l￭nea___0_cm {
+  margin-top: 5.00pt;
+  margin-bottom: 3.00pt;
+  text-align: left;
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+}
+P.H_Sub_Item_con_imagen_negrita {
+  margin-top: 3.00pt;
+  margin-bottom: 3.00pt;
+  text-align: justify;
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p.H_Sub_Item_con_vineta_negrita {
+  font-weight: bold;
+  font-style: normal;
+  font-family: Calibri;
+  margin-left: 18px;
+  font-size: 1rem;
+}
+p.H_Sub_Sub_Item_con_vineta {
+  font-family: Calibri;
+  text-indent: -0.5cm;
+  margin-left: 1.5cm;
+  font-size: 1rem;
+}
+p.H_Sub_Sub_Item_con_vineta_negrita {
+  font-weight: bold;
+  list-style: rh-list;
+  x-list-class: rl-p-H_Sub_Sub_Item_con_vineta_negrita;
+  x-list-level: 1;
+  font-family: Calibri;
+  text-align: justify;
+  text-indent: -;
+  margin-left: 54pt;
+  font-size: 1rem;
+}
+@media only print {
+  p.H_Sub_Sub_Item_con_vineta_negrita {
+    font-family: Arial;
+    margin-left: 18pt;
+    font-weight: bold;
+    x-next-class: H_Sub_Sub_Item_con_vineta_negrita;
+    x-next-type: p;
+  }
+}
+p.H_Sub_Item_con_vineta {
+  font-family: Calibri;
+  margin-left: 18pt;
+  font-size: 1rem;
+}
+p.H_Item_con_vineta {
+  font-family: Calibri;
+  margin-left: 18pt;
+  font-size: 1rem;
+}
+p.H_Sub_Item_con_vineta_negrita_XE {
+  font-family: Calibri;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 18pt;
+  font-size: 1rem;
+}
+p.H_Sub_Sub_Sub_Item_con_vineta_negrita {
+  font-family: Calibri;
+  font-weight: bold;
+  margin-left: 72pt;
+  font-size: 1rem;
+}
+p.H_Item_con_vineta_negrita {
+  font-weight: bold;
+  font-family: Calibri;
+  margin-left: 18pt;
+  font-size: 1rem;
+}
+p.H_Item_con_vineta_negrita_XE {
+  font-weight: bold;
+  font-style: italic;
+  font-family: Calibri;
+  margin-left: 18pt;
+  font-size: 1rem;
+}
+p.H_Item_con_imagen_negrita_rojo {
+  font-family: Calibri;
+  font-size: 1rem;
+}
+p.H_Item_con_Imagen_negrita_11 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Calibri;
+}
+ol.rl-p-H_Sub_Sub_Item_con_vineta {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Sub_Item_con_vineta_negrita {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Sub_Sub_Item_con_vineta_negrita {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Sub_Item_con_vineta {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Item_con_vineta {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Sub_Item_con_vineta_negrita_XE {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Item_con_vineta_negrita {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+ol.rl-p-H_Item_con_vineta_negrita_XE {
+  list-style: disc;
+  padding-left: 40px;
+  margin-left: 0px;
+  counter-reset: item1;
+  list-style-type: none;
+}
+p.rl-p-H_Sub_Item_con_vineta_negrita::before {
+  counter-increment: prl-p-h_sub_item_con_vineta_negrita;
+  content: counter(prl-p-h_sub_item_con_vineta_negrita, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Sub_Sub_Item_con_vineta::before {
+  counter-increment: prl-p-h_sub_sub_item_con_vineta;
+  content: counter(prl-p-h_sub_sub_item_con_vineta, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Sub_Sub_Item_con_vineta_negrita::before {
+  counter-increment: prl-p-h_sub_sub_item_con_vineta_negrita;
+  content: counter(prl-p-h_sub_sub_item_con_vineta_negrita, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Sub_Item_con_vineta::before {
+  counter-increment: prl-p-h_sub_item_con_vineta;
+  content: counter(prl-p-h_sub_item_con_vineta, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Item_con_vineta::before {
+  counter-increment: prl-p-h_item_con_vineta;
+  content: counter(prl-p-h_item_con_vineta, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Sub_Item_con_vineta_negrita_XE::before {
+  counter-increment: prl-p-h_sub_item_con_vineta_negrita_xe;
+  content: counter(prl-p-h_sub_item_con_vineta_negrita_xe, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita::before {
+  counter-increment: prl-p-h_sub_sub_sub_item_con_vineta_negrita;
+  content: counter(prl-p-h_sub_sub_sub_item_con_vineta_negrita, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Item_con_vineta_negrita::before {
+  counter-increment: prl-p-h_item_con_vineta_negrita;
+  content: counter(prl-p-h_item_con_vineta_negrita, disc);
+  margin-right: 0.5rem;
+}
+p.rl-p-H_Item_con_vineta_negrita_XE::before {
+  counter-increment: prl-p-h_item_con_vineta_negrita_xe;
+  content: counter(prl-p-h_item_con_vineta_negrita_xe, disc);
+  margin-right: 0.5rem;
+}
+body {
+  counter-reset: prl-p-h_sub_sub_item_con_vineta prl-p-h_sub_item_con_vineta_negrita prl-p-h_sub_sub_item_con_vineta_negrita prl-p-h_sub_item_con_vineta prl-p-h_item_con_vineta prl-p-h_sub_item_con_vineta_negrita_xe prl-p-h_sub_sub_sub_item_con_vineta_negrita prl-p-h_item_con_vineta_negrita prl-p-h_item_con_vineta_negrita_xe;
+}
+ol.rl-p-H_Sub_Sub_Item_con_vineta>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Sub_Sub_Item_con_vineta>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Sub_Item_con_vineta_negrita>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Sub_Item_con_vineta_negrita>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Sub_Sub_Item_con_vineta_negrita>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Sub_Sub_Item_con_vineta_negrita>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Sub_Item_con_vineta>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Sub_Item_con_vineta>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Item_con_vineta>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Item_con_vineta>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Sub_Item_con_vineta_negrita_XE>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Sub_Item_con_vineta_negrita_XE>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Item_con_vineta_negrita>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Item_con_vineta_negrita>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+ol.rl-p-H_Item_con_vineta_negrita_XE>li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+}
+ol.rl-p-H_Item_con_vineta_negrita_XE>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Calibri;
+  font-size: 1rem;
+}
+p.Estilo_H_Sub-Item_con_vi￱eta_negrita_ {
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p.H_Sub-Item_con_vi￱eta_negrita {
+  font-family: Calibri;
+  font-size: 1rem;
+  font-weight: bold;
+}
+p.H_Sub-Sub-Sub_Item_con_vi￱eta_negrita {
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 1rem;
+}
+ul.Disc {
+  list-style: disc;
+}

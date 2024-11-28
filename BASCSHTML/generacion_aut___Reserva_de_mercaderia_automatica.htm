@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.1.5.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Generacion automatica de reserva de mercaderia automatica</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Reserva de mercadería automática"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Reserva de mercadería automática </h1>
+<p class="H_Texto">Una vez seleccionados los rangos y opciones solicitadas, 
+ el sistema asigna mercadería a los pedidos internos o externos que se 
+ encuentran pendientes y que no tienen asignada toda la mercadería pedida. 
+ Para los pedidos externos, se asigna la mercadería disponible por prioridad 
+ de <a href="tabla__Clientes.htm">cliente</a> y para los clientes de igual 
+ prioridad, se asigna por antigüedad de los pedidos. Para los pedidos internos, 
+ se asigna dándole mayor prioridad a la antigüedad de los pedidos.</p>
+<p class="H_Texto">La asignación realizada mediante este proceso puede 
+ modificarse cuantas veces se considere necesario, ya sea en forma automática 
+ o en forma manual, hasta que se efectúe la entrega o facturación de los 
+ pedidos en cuestión.</p>
+<p class="H_Texto">Los datos a ingresar para realizar la asignación de 
+ mercadería son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ Pedido</p>
+<p class="H_Parrafo_de_Item">Prefijo y número de comprobante del pedido 
+ interno o externo al cual se desea asignar mercadería.</p>
+<p class="H_Parrafo_de_Item">En el caso en que se desee asignar mercadería 
+ a un pedido en particular, es posible indicar aquí el número del mismo 
+ mediante la búsqueda y selección del pedido, pulsando el botón <font style="font-weight: bold;">Buscar</font>.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a data-target="POPUP656119109" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Buscar</span><span data-close-text="true">Buscar</span></a></p>
+<div data-targetname="POPUP656119109">
+	<p class="H_Parrafo_de_Sub-Item">Este botón sólo debe utilizarse si 
+	 se desea asignar mercadería a un pedido en particular, si no la asignación 
+	 automática se efectuará para todos los pedidos que cumplan con los 
+	 rangos y opciones indicadas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante este botón se abre una ventana 
+	 que muestra los pedidos internos y externos posibles de seleccionar 
+	 para la asignación de mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se muestra cada pedido pendiente con 
+	 su fecha, número y destino del mismo (cliente, agente o depósito).</p>
+	<p class="H_Parrafo_de_Sub-Item">Los pedidos que requieren autorización 
+	 manual y aún no han sido autorizados también se exhiben en esta lista, 
+	 aunque no es posible seleccionarlos para asignarles mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez seleccionado el pedido, se 
+	 cierra la ventana y los datos del mismo se copian a la pantalla.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP656140103" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo</span><span data-close-text="true">Tipo</span></a></p>
+<div data-targetname="POPUP656140103">
+	<p class="H_Parrafo_de_Sub-Item">Indicación del tipo de pedidos a los 
+	 cuales se desea asignar mercadería.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Internos</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean incluir 
+	 los pedidos internos en el proceso de asignación de mercadería automática.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Externos</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean incluir 
+	 los pedidos externos en el proceso de asignación de mercadería automática.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP656166317" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha de entrega</span><span data-close-text="true">Fecha de entrega</span></a></p>
+<div data-targetname="POPUP656166317">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Desde</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible acotar el rango de 
+	 pedidos a los cuales se va a asignar mercadería, mediante el ingreso 
+	 de una fecha de entrega desde la cual se va a realizar la asignación.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado en blanco, 
+	 se asignará mercadería a todos los pedidos pendientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una fecha, sólo se 
+	 asignará mercadería a los pedidos cuya fecha de entrega no sea anterior 
+	 a esta.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Hasta</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible acotar el rango de 
+	 pedidos a los cuales se va a asignar mercadería, mediante el ingreso 
+	 de una fecha de entrega hasta la cual se va a realizar la asignación.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado en blanco, 
+	 se asignará mercadería a todos los pedidos pendientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una fecha, sólo se 
+	 asignará mercadería a los pedidos cuya fecha de entrega no sea posterior 
+	 a esta.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/><a data-target="POPUP654383718" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> <span style="text-decoration: underline; ">Ítems</span> 
+ <font style="text-decoration: underline; ">alternativos</font></span><span data-close-text="true"> <span style="text-decoration: underline; ">Ítems</span> 
+ <font style="text-decoration: underline; ">alternativos</font></span></a></p>
+<div data-targetname="POPUP654383718">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Considerar ítems alternativos</p>
+	<p class="H_Parrafo_de_Sub-Item">Activar este campo tiene por objeto 
+	 permitir reemplazar un producto del cual no hay stock disponible por 
+	 uno o varios de sus alternativos.</p>
+	<p class="H_Parrafo_de_Sub-Item">En caso de indicar esta opción, si 
+	 al intentar asignar un ítem no hay stock disponible suficiente, se 
+	 asignará la cantidad disponible para dicho ítem y se intentará cubrir 
+	 el faltante usando un ítem alternativo o varios.</p>
+	<p class="H_Parrafo_de_Sub-Item">El reemplazo de un ítem por uno o 
+	 varios de sus alternativos genera una cancelación de la línea del 
+	 comprobante original y la generación de un nuevo comprobante del mismo 
+	 tipo con la línea del ítem asignada y las líneas de sus alternativos. 
+	 El sistema intentará minimizar la cantidad de pedidos generados.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se trata de un pedido externo se 
+	 habilitan las siguientes opciones:</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
+	 Conservar precio del pedido</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
+	 No conservar</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En el caso de conservar el precio 
+	 del pedido, sólo se considerarán aquellos ítems alternativos cuyo 
+	 rango de precios en la lista de precios correspondiente, incluya al 
+	 precio del pedido original. Si no se conserva el precio del pedido, 
+	 se utilizará el precio de la lista de precios actual para el ítem 
+	 alternativo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cabe destacar que las bonificaciones 
+	 con las que se genera el nuevo pedido externo son las que le correspondan 
+	 al ítem según las tablas vigentes definidas en la condición de venta.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> <a data-target="POPUP658756400" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Destino</span><span data-close-text="true">Destino</span></a></p>
+<div data-targetname="POPUP658756400">
+	<p class="H_Parrafo_de_Sub-Item">Tipo de destinatario de los pedidos 
+	 a los cuales se les desea asignar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Cliente</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Agente</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez indicado el tipo de destinatario 
+	 se podrá ingresar el código de destino correspondiente a los pedidos 
+	 que se desean incluir en la asignación.</p>
+	<p class="H_Parrafo_de_Sub-Item">En función del tipo de destino seleccionado, 
+	 se deberá ingresar el código de un <a href="tabla__Clientes.htm">cliente</a>, 
+	 <a href="tabla__Agentes.htm">agente</a> o <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 titular de los pedidos que se desean incluir en la asignación. Si 
+	 no se ingresa ningún código todos los pedidos internos o externos 
+	 del tipo de destinatario seleccionado serán incluidos en el proceso 
+	 de asignación.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP658775839" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cliente</span><span data-close-text="true">Cliente</span></a></p>
+<div data-targetname="POPUP658775839">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Atributo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> 
+	 de los clientes a cuyos pedidos asociados se desea asignar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica atributo, sólo se 
+	 asignará mercadería a los pedidos asociados a los clientes que tengan 
+	 definido el atributo indicado.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado 
+	 si se seleccionó un atributo de clientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valor del atributo asociado a 
+	 los clientes a cuyos pedidos asociados se desea asignar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor de atributo, 
+	 sólo se asignará mercadería a los pedidos asociados a los clientes 
+	 que tengan definido el atributo y valor de atributo indicados.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Ruta</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Rutas.htm">ruta</a> 
+	 cuyos clientes serán considerados para la asignación de mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una ruta, se asignará 
+	 mercadería a los pedidos asociados a los clientes que se encuentren 
+	 en dicha ruta.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP658776858" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ítem</span><span data-close-text="true">Ítem</span></a></p>
+<div data-targetname="POPUP658776858">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Ítem</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Bienes.htm">ítem</a> 
+	 del cual se desea asignar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado blanco, 
+	 se asignará mercadería a los ítems de todos los pedidos pendientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un ítem, sólo asignará 
+	 mercadería a los pedidos asociados al mismo.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Atributo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> 
+	 de los ítems a cuyos pedidos asociados se desea asignar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un atributo, se asignará 
+	 mercadería a los pedidos de los ítems que tengan definido el atributo 
+	 indicado.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se habilitado si 
+	 se seleccionó un atributo de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valor del atributo asociado a 
+	 los ítems de los pedidos a los cuales se desea asignar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor de , sólo 
+	 se asignará mercadería a los pedidos de los ítems que tengan definido 
+	 el atributo y valor de atributo indicados.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Depósito</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Depósito cuyos pedidos asociados 
+	 serán considerados para la asignación de mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un depósito, sólo 
+	 se asignará mercadería a los pedidos asociados a dicho depósito.</p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP656119109');
+	TextPopupInit('a2', 'POPUP656140103');
+	TextPopupInit('a3', 'POPUP656166317');
+	TextPopupInit('a7', 'POPUP654383718');
+	TextPopupInit('a4', 'POPUP658756400');
+	TextPopupInit('a5', 'POPUP658775839');
+	TextPopupInit('a6', 'POPUP658776858');
+//]]></script>
+
+
+</body></html>

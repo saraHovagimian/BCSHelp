@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.9.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Rentabilidad bruta</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Rentabilidad bruta</h1>
+  <p class="H_Texto">Este informe combina toda la información de las operaciones de ventas efectuadas, de una forma configurable por el usuario permitiendo obtener la información referente a la rentabilidad de las ventas de diferentes maneras acorde a las necesidades de cada caso, y desde diferentes ángulos de análisis de la información.</p>
+  <p class="H_Texto">Las rentabilidad de las ventas efectuadas en un rango de fechas a considerar se pueden filtrar por <a href="tabla__Atributos.htm">atributos</a> de <a href="tabla__Clientes.htm">clientes</a> , de <a href="tabla__Bienes.htm">ítems</a> , por <a href="tabla__Agentes.htm">vendedor</a> , por <a href="tabla__Condiciones_de_compra_y_venta.htm">condición de venta</a>, por <a href="tabla__Sucursales.htm">sucursal</a> y por <a href="tabla__Rubros.htm">rubro</a> y subrubro.</p>
+  <p class="H_Texto">Este informe permite ver para cada <a href="tabla__Bienes.htm">
+      <font color="#008000" style="text-decoration: underline; ">bien</font>
+    </a> y para cada <a href="tabla__Clientes.htm">cliente</a> que incluye, la cantidad e importe total de ventas en un rango de fechas determinado, el costo asociado a dichas ventas, y las rentabilidades bruta y porcentual obtenidas.</p>
+  <p class="H_Texto">El criterio usado para la valorización de los movimientos es seleccionable por el usuario entre los que provee el sistema.</p>
+  <p class="H_Texto">Cada ítem que se registra en el sistema tiene definido un método de valuación que es utilizado para la contabilización de los movimientos de entrada/salida del ítem. Para emitir el listado pueden valorizarse las ventas de cada ítem por su método de valuación o pueden valorizarse las ventas de todos los ítems por un mismo método que se selecciona en el momento de imprimir el listado.</p>
+  <p class="H_Texto">Pueden seleccionarse para incluir rangos de <a href="tabla__Clientes.htm">clientes</a>, rangos de <a href="tabla__Rubros.htm">rubros</a> e <a href="tabla__Bienes.htm">ítems</a> y puede emitirse el listado para un período de tiempo determinado y con diferentes ordenamientos. También pueden seleccionarse los productos a listar por código de selección o por <a href="tabla__Atributos.htm">atributos</a> y valores de atributos aplicables a ítems y los clientes a incluir por código de selección o por atributos y valores de atributos aplicables a clientes.</p>
+  <p class="H_Texto">El orden en que se presenta la información es indicado por el usuario. Para ello se pueden indicar hasta tres niveles de jerarquía que determinarán tanto el orden de la información, como los totales y subtotales que se incluirán en el listado.</p>
+  <p class="H_Texto">En cada nivel puede indicarse si se desea un cambio de página para los distintos valores.</p>
+  <p class="H_Texto">En el caso que los informes se emitan incluyendo el detalle del color en algún nivel se exhibirá, además del código de cada color, la descripción correspondiente al mismo.</p>
+  <p class="H_Texto">También es posible detallar, cuando se usen formatos personalizados de impresión, el código alternativo del ítem en el nivel en que se seleccione ítem.</p>
+  <p class="H_Texto">Esto se podrá hacer a través de los input items <font style="font-weight: bold;">AuxNivel1</font> (información adicional correspondiente al código indicado en el nivel 1), <font style="font-weight: bold;">AuxNivel2</font> (información adicional correspondiente al código indicado en el nivel 2) y AuxNivel3 (información adicional correspondiente al código indicado en el nivel 3).</p>
+  <p class="H_Texto">Es posible detallar, cuando se usen formatos personalizados de impresión y se seleccionen ciertos niveles, el código alternativo del ítem informado para cada medida y color.</p>
+  <p class="H_Texto">Esto estará disponible para las emisiones no tabulares en las que se haya indicado:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">colores y medidas en algún nivel</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">o color y en los niveles previos, cualquiera sea el orden, medidas e ítem</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">o medidas y en los niveles previos, cualquiera sea el orden, colores e ítem</p>
+  <p class="H_Texto">Esta información se podrá incluir mediante los input items <font style="font-weight: bold;">AuxNivel2</font> (información adicional correspondiente al código indicado en el nivel 2) y <font style="font-weight: bold;">AuxNivel3</font> (información adicional correspondiente al código indicado en el nivel 3).</p>
+  <p class="H_Texto">El informe exhibe la cantidad de unidades vendidas, el importe de dichas ventas, el costo, la utilidad, y los porcentajes de utilidad sobre ventas y sobre el costo.</p>
+  <p class="H_Texto">La rentabilidad bruta o utilidad surge como diferencia entre el importe de las ventas y el costo, mientras que la rentabilidad porcentual sobre ventas surge por el cociente entre la utilidad y el importe de las ventas (expresado como porcentaje), y la rentabilidad porcentual sobre costo surge por el cociente entre la utilidad y el costo de las ventas del ítem.</p>
+  <p class="H_Texto">También es posible imprimir el listado tipo <font style="font-weight: bold;">Ranking</font>. Se exhibirá a qué porcentaje del total corresponde el valor de la columna indicada para cada nivel que se liste.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a href="listado_documentos_valorizados_tener_en_cuenta.htm">Para tener en cuenta</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP588760530" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP588760530">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Rubro</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Rubros.htm">rubro</a> cuyos ítems se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un rubro en particular o un grupo de rubros. Si este dato es dejado en blanco, se incluirán todos los rubros en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Cantidades</p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">El tipo de cantidad indicada es la que considerará en los procesos de valorización.</span></p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe seleccionar una opción entre:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Entregadas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se eligen cantidades remitidas o entregadas, e<span lang="ES" xml:lang="ES">l valor de venta de dichas unidades se obtiene de considerar los comprobantes de venta que referencian a dichas cantidades remitidas. Con las cantidades e importes facturados se obtiene un costo unitario que se multiplica por la cantidad entregada para obtener el valor de venta de dichas cantidades. </span></p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">O sea, el valor de venta de los remitos se obtendrá a partir de los comprobantes de venta asociados. No se considerarán las cantidades remitidas que no tienen comprobantes de venta asociados.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"><span lang="ES" xml:lang="ES">El valor del costo se obtiene de la valuación según el método indicado de dichas cantidades remitidas, o el valor de la lista de precio ocasional indicada.</span></p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir remitos de pedidos no facturados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Esta opción se habilita al seleccionar cantidades Entregadas. Al seleccionarla, se incluirán las cantidades de los remitos que no tienen comprobantes de venta asociados, pero referencian a pedidos de venta o de devolución según se trate de un remito de egreso o de ingreso.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Por el lado del costo de dichos remitos solo se considerará la parte del costo asociado a las cantidades facturadas.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Facturadas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"><span lang="ES" xml:lang="ES">Si se eligen cantidades facturadas, el valor de venta de dichas cantidades se obtiene del importe indicado en dichos comprobantes de venta, teniendo en cuenta que las notas de crédito restan a dicho valor.</span><span lang="ES" style="font: 7.0pt &#39;Times New Roman&#39;; mso-list: Ignore; 
+	 font-size: 11.0pt; mso-bidi-font-size: 9.0pt; font-family: Symbol; 
+	 mso-fareast-font-family: Symbol; mso-bidi-font-family: Symbol;" xml:lang="ES"> </span> </p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El costo de cada cantidad facturada se obtendrá a partir del costo de los remitos asociados a dichos movimientos. Las cantidades facturadas para las cuales no se dispone de un remito asociado, se valuarán al costo según el último cierre del subdiario de materiales registrado en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En ambos casos se consideran también los comprobantes de venta de ajuste del período para cada ítem.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Cabe destacar que para los ítems conjuntos su costo es la suma de los costos de sus componentes, considerando la cantidad remitida o entregada del ítem conjunto. Con eso se calcula un costo unitario para poder costear las cantidades facturadas del ítem conjunto.</span></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ventas</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Contado</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir o no en el listado las ventas con método de pago de contado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cuenta corriente</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir o no en el listado las ventas con método de pago Cuenta corriente.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valorización</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Método de valuación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Método de valuación que se desea utilizar para valorizar los movimientos que se incluyen en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones que se ofrezcan dependerán de los métodos de valuación indicados en la pantalla <a href="parametros__Items.htm">parámetros de ítems</a>.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Contable</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">C.P.P. al cierre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">L.I.F.O. (Last In First Out)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">F.I.F.O. (First In First Out)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Costo de última compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Precio de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Lista de precios</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ocasional</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Lista de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo está habilitado si se indicó método de valuación Ocasional.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="listas_de_precios__Definicion.htm">lista de precios</a> que se utilizará para efectuar la valuación de los movimientos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La lista de precios que se indique puede haberse definido como dinámica.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Como este informe se muestra en primera unidad de medida, la lista que se utilice para valorizar se convierte, de la unidad que esté, a primera unidad de medida.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valores en</p>
+    <p class="H_Parrafo_de_Sub-Item">Moneda de valuación que se desea utilizar para valorizar los movimientos que se incluyen en el listado. Este cuadro solo se habilitará en caso de haber definido una <font color="#008000" style="font-weight: bold; 
+	 text-decoration: underline; ">Moneda de valuación y contabilización adicional</font>. Aparecerá entonces la opción de emitir el informe con valores expresados en:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Pesos</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Dolares</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Ranking de utilidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea emitir el listado tipo <font style="font-weight: bold;">ranking</font> o no.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Detalla sucursales del cliente</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean detallar o no en el listado las ventas efectuadas a aquellos clientes de tipo sucursales.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reexpresado en</p>
+    <p class="H_Parrafo_de_Sub-Item"><a href="tabla__Tablas_de_indices_y_cotizaciones.htm">Moneda</a> en la cual se desean reexpresar los importes de las ventas efectuadas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de una tabla de cotizaciones ingresada en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna moneda no se reexpresarán los importes y los mismos se mostrarán en la moneda en la cual fue ingresado cada comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">La reexpresión podrá efectuarse:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Fecha de comprobante</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se reexpresa a <font style="font-weight: bold;">Fecha de comprobante</font>, se utilizará para efectuar la reexpresión la cotización de la moneda correspondiente a la fecha de ingreso de cada comprobante, y los valores reexpresados se obtendrán dividiendo cada importe a listar por dicha cotización.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> A fecha de informe</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se reexpresa a A fecha de informe, se utilizará para efectuar la reexpresión la cotización de la moneda correspondiente a la fecha hasta indicada para la emisión del listado, y los valores reexpresados se obtendrán dividiendo cada importe a listar por dicha cotización.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP588812523" href="#"><span data-open-text="true" data-skip-index="true">Ficha Niveles</span><span data-close-text="true">Ficha Niveles</span></a></p>
+  <div data-targetname="POPUP588812523">
+    <p class="H_Parrafo_de_Item">Se pueden indicar hasta tres niveles de jerarquía que determinarán tanto el orden de la información, el detalle con el que se muestra dicha información, y los totales y subtotales que se incluirán en el informe.</p>
+    <p class="H_Parrafo_de_Item">Debe indicarse el nivel de jerarquía y de detalle con el que se lista cada uno de los tres niveles.</p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">En esta solapa, si en algún nivel se indica vendedor, se considerará el vendedor asociado al comprobante, si no se considerará el vendedor asociado al cliente de cada comprobante.</span></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Nivel 1</p>
+    <p class="H_Parrafo_de_Sub-Item">Este nivel es obligatorio.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cambio de hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea efectuar un cambio de hoja cada vez que cambia el contenido del campo seleccionado en cada nivel.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación del orden que se le desea dar a la información para cada nivel definido.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Descripción</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Detalle</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada nivel debe seleccionarse una de las siguientes opciones:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Item</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores y Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cliente</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de cliente</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Vendedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Condición de venta</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Subrubro (solo a partir del segundo nivel)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Año</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Trimestre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Mes</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Según el dato que se seleccione la información de la rentabilidad de las ventas efectuadas se detallará por <a href="tabla__Bienes.htm">ítem</a> , <a href="tabla__Clientes.htm">cliente</a> , <a href="tabla__Atributos.htm">atributos</a> , <a href="tabla__Agentes.htm">vendedor</a> , <a href="tabla__Condiciones_de_compra_y_venta.htm">condición</a> o <a href="tabla__Rubros.htm">rubro</a> y subrubro se incluirán subtotales para cada ítem, atributo, vendedor, etc., según el dato elegido.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona atributo de cliente o de ítem, podrá indicarse un código de atributo para analizar la información según los valores de dicho atributo. Por ejemplo, si se indica un atributo de clientes, la información de la rentabilidad se agrupará para cada valor de ese atributo.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, si en el primer nivel se indica condición de venta, en el segundo se indica cliente y en el tercer nivel se indica ítem, se obtendrá para cada condición el detalle de la rentabilidad de las ventas efectuadas agrupadas por cliente y se detallarán los ítems vendidos a cada uno. Se incluirán subtotales para cada condición, y para cada cliente al que se le hayan efectuado ventas con dicha condición.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La opción Subrubro sólo se activará en caso de haber seleccionado la opción Rubro en un nivel anterior. Es por eso que sólo se cuenta con dicho campo a partir del segundo nivel.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Es importante tener en cuenta que, si solo se solicita el detalle por color y/o medida, no se obtendrá el dato de la rentabilidad por ítem. En caso de querer incluirla se deberá incluir al ítem como uno de los niveles de detalle.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">También cabe destacar que en caso de solicitar que el primero de los niveles detalle por Año podrá solicitarse luego que detalle por Trimestre y/o por Mes en los niveles inferiores. No sucede así al revés, es decir, no es posible indicar como Nivel 1 la opción Mes y como Nivel 2 la opción Trimestre.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Nivel 2</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Nivel 2</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este nivel no es obligatorio y permite agrupar la información con más detalle para cada uno de los valores del dato del nivel 1.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cambio de hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea efectuar un cambio de hoja cada vez que cambia el contenido del campo seleccionado en cada nivel.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación del orden que se le desea dar a la información para cada nivel definido.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Descripción</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Detalle</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada nivel debe seleccionarse una de las siguientes opciones:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Item</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores y Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cliente</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de cliente</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Vendedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Condición de venta</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Subrubro (solo a partir del segundo nivel)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Año</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Trimestre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Mes</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Nivel 3</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Nivel 3</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este nivel no es obligatorio y permite agrupar la información con más detalle para cada uno de los valores del dato del nivel 1.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cambio de hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea efectuar un cambio de hoja cada vez que cambia el contenido del campo seleccionado en cada nivel.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación del orden que se le desea dar a la información para cada nivel definido.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Descripción</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Detalle</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada nivel debe seleccionarse una de las siguientes opciones:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Item</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores y Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cliente</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de cliente</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Vendedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Condición de venta</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Subrubro (solo a partir del segundo nivel)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Año</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Trimestre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Mes</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Clientes.htm">Ficha Clientes</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP588760530');
+    TextPopupInit('a2', 'POPUP588812523');
+    //]]>
+  </script>
+
+</body></html>

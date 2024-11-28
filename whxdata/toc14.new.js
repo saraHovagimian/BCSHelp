@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Registro de cotizaciones","type":"item","tilePath":"","description":"","url":"BASCSHTML/registro_de_cotizaciones.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

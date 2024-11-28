@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.10.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Comisiones por ventas</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Comisiones,Ventas"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Comisiones por ventas</h1>
+  <p class="H_Texto">Este informe está destinado exhibir los importes de comisiones a pagar &quot;Por ventas&quot; y &quot;Por ventas cobradas&quot;. Las primeras se calculan en base a la facturación correspondiente a cada vendedor y las segundas, sobre las facturas cobradas. En ambos casos, los cálculos se realizan sobre el neto gravado de las ventas, es decir, sin tener en cuenta el importe de I.V.A..</p>
+  <p class="H_Texto">El importe de comisiones por ventas se calcula en base a los porcentajes asociados a los distintos valores del <a href="tabla__Atributos.htm">atributo</a> de <a href="tabla__Clientes.htm">clientes</a> y a los distintos valores del <a href="tabla__Atributos.htm">atributo</a> aplicable a <a href="tabla__Bienes.htm">bienes</a> y <a href="tabla__Servicios.htm">servicios</a> vendidos y son especificados para cada <a href="tabla__Agentes.htm">agentes</a> de tipo <font style="font-weight: bold;">Vendedor</font> definido en el sistema.</p>
+  <p class="H_Texto">En el caso de las comisiones por ventas, la moneda correspondiente al importe de la comisión coincide con la moneda del comprobante. En el caso de las comisiones por ventas cobradas, la moneda de la comisión coincide con la correspondiente a la imputación contable del recibo.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> Para tener en cuenta:</p>
+  <p class="H_Parrafo_de_Item">Para las comisiones por ventas se considerarán los comprobantes de venta cuya fecha pertenezca al período y que no hayan sido ni eliminados ni anulados pero que si fueron eliminados o anulados la fecha de registración de la eliminación o anulación no pertenezca al período.</p>
+  <p class="H_Parrafo_de_Item">Cuando se indique un período con desde y/o hasta fecha determinado también se incluirán los comprobantes de ventas, cuya fecha no pertenezca al período, que hayan sido eliminados o anulados y, de acuerdo al caso, la fecha de registración de la eliminación o anulación pertenezca al período.</p>
+  <p class="H_Parrafo_de_Item">Para las comisiones por ventas cobradas se considerarán las aplicaciones cuya fecha pertenezca al período y que no hayan sido desaplicadas, eliminadas o anuladas pero que si fueron desaplicadas, eliminadas o anuladas la fecha de la desaplicación o la fecha de registración de la eliminación o anulación no pertenezca al período.</p>
+  <p class="H_Parrafo_de_Item">Cuando se indique un período con desde y/o hasta fecha determinado también se incluirán las aplicaciones, cuya fecha no pertenezca al período, que hayan sido desaplicadas, eliminadas o anuladas y, de acuerdo al caso, la fecha de la desaplicación o la fecha de registración de la eliminación o anulación pertenezca al período.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primera solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP597717983" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP597717983">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título 1</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto de hasta 30 caracteres que corresponderá a la primer línea de título con el que se emita el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título 2</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto de hasta 30 caracteres que corresponderá a la segunda línea de título con el que se emita el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Vendedor</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Agentes.htm">vendedor</a> que se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un agente de tipo <font style="font-weight: bold;">Vendedor</font> definido en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un vendedor en particular o un grupo de vendedores. Si este dato es dejado en blanco, se incluirán en el informe las comisiones de todos los vendedores.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP597761397" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP597761397">
+    <p class="H_Parrafo_de_Item">En esta ficha se define la forma en que se incluirán los comprobantes de ventas de cada vendedor en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Tipo de listado</p>
+    <p class="H_Parrafo_de_Sub-Item">Se puede seleccionar:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Continuo</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Un vendedor por hoja</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el listado se emite detallado, se podrá emitir en forma continua o indicando un salto de hoja cuando cambie el vendedor. En este caso, los totales generales se detallarán en hoja aparte, es decir, no se detallarán junto a los datos del último vendedor listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir datos adicionales del vendedor</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea o no incluir en el listado los datos adicionales asociados al vendedor. Estos son el Número de legajo, Sueldo, Viáticos, Zona, Fecha de ingreso, Fecha de egreso y las Observaciones que se le puedan haber asociado al mismo.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Considerar porcentaje de comisión en cero</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda esta opción se incluyen en este listado los movimientos con porcentaje de comisión en cero.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Tipo de listado</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que se emita en forma detallada, según se desee un cambio de hoja por cada vendedor, seccionar Continuo o Un vendedor por hoja. En este último caso, los totales generales se detallarán en hoja aparte, es decir, no se detallarán junto a los datos del último vendedor listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Item">Muestra, para cada vendedor que incluye, el total acumulado correspondiente a cada porcentaje de comisión, el porcentaje de comisión y el importe correspondiente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las emisiones consolidadas se ordenan por código de vendedor y moneda.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Detallado</p>
+    <p class="H_Parrafo_de_Sub-Item">Las emisiones detalladas se ordenan por código de vendedor y dentro de éste por fecha, talonario, abreviado, prefijo y número del comprobante de venta y, en el caso en que se consideren las ventas cobradas, dentro de este ordenamiento por fecha, talonario, prefijo y número del comprobante correspondiente al cobro.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Comisiones</p>
+    <p class="H_Parrafo_de_Sub-Item">Se puede seleccionar:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Por ventas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Por ventas cobradas</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando se indique que se listan las comisiones por ventas y ventas cobradas, para cada comprobante de venta se detallarán los valores correspondientes al comprobante de venta y luego los valores de los comprobantes correspondientes a las ventas cobradas encolumnados con los valores de las comisiones por ventas.</p>
+    <p class="H_Parrafo_de_Sub-Item">En este caso los totales que correspondan a ventas se distinguirán de los que correspondan a ventas cobradas por un membrete. Cuando sólo se listen ventas o ventas cobradas dichos membretes no se detallarán.</p>
+    <p class="H_Parrafo_de_Sub-Item">En las emisiones detalladas, para las ventas cobradas, cuando el comprobante de venta haya sido refinanciado en forma total o parcial por un comprobante interno de cuenta corriente (CICC), en todas las líneas correspondientes a comisiones por cobranzas del mismo aparecerán su prefijo y número entre paréntesis. La fecha y talonario del CICC están disponibles para las emisiones personalizadas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por otro lado, en las emisiones detalladas, para las ventas cobradas, cuando la información de la cobranza corresponda a un CICC se detallarán los datos del recibo u orden de pago que refinancia, es decir, la fecha, talonario, abreviado, prefijo y número del comprobante original. Igualmente, los datos del CICC, es decir, fecha, talonario, prefijo y número están disponibles para las emisiones personalizadas.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm"> Empresas </a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP597717983');
+    TextPopupInit('a2', 'POPUP597761397');
+    //]]>
+  </script>
+
+</body></html>

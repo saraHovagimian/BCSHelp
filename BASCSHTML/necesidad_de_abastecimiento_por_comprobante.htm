@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_56"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Necesidad de abastecimiento por comprobante</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Necesidad de abastecimiento por comprobante"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Necesidad de abastecimiento por comprobante</h1>
+  <p class="H_Texto">Este botón también permite conocer que <a href="tabla__Bienes.htm">ítems</a> y que cantidad de los mismos son necesarias en un determinado depósito para satisfacer las necesidades de abastecimiento a una determinada fecha. Pero, a diferencia del anterior, las cantidades se exhiben detalladas por comprobante pendiente de satisfacer.</p>
+  <p class="H_Texto">Es decir, la consulta incluirá una línea por cada comprobante en el cual estén incluidos los ítems consultados, informando las cantidades pendientes de cada uno de ellos para dicho comprobante.</p>
+  <p class="H_Texto">También se exhiben los números de <a href="despachos.htm">despacho</a> y las <a href="partidas.htm">partidas</a> afectadas a cada uno de los comprobantes incluidos en la consulta</p>
+  <p class="H_Texto">Al pulsar el botón <font style="font-weight: bold;">Por comprobante</font> se desplegará una ventana en la que se deberá informar la <font style="font-weight: bold;">Fecha límite</font> a considerar y el tipo de <font style="font-weight: bold;">Comprobante</font> que se desea detallar en la búsqueda, este último campo incluye una opción <font style="font-weight: bold;">Todos</font> que se ofrece por defecto y que implica la inclusión de todos los tipos de comprobantes.</p>
+  <p class="H_Texto">Los comprobantes que es posible incluir en la consulta son:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Facturas de venta</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Pedidos de venta</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Pedidos de otras entregas</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Pedidos internos</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Remitos diferidos</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Ordenes de producción</p>
+    </li>
+  </ul>
+  <p class="H_Texto">Recordemos entonces que un ítem necesita abastecimiento cuando su stock disponible es menor o igual al punto de reposición en el depósito, su stock en venta es mayor a 0, y su cantidad necesaria para llegar al stock ideal es mayor a 0 siendo:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Stock Disponible &lt;= Punto de reposición del depósito</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Stock en venta &gt; 0</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Cantidad necesaria &lt;&gt; 0</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">El Stock Disponible se calcula como:</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta" style="margin-left: 2.2pt;">Stock Actual + Stock en compra + Stock pedidos internos-Stock en Venta</p>
+    </li>
+  </ul>
+  <p class="H_Texto">Para el cálculo del <font style="font-weight: bold;">Stock Actual</font>, <font style="font-weight: bold;">Stock en Compra</font> y <font style="font-weight: bold;">Stock de pedidos internos</font> se consideran los movimientos efectuados en el depósito hasta la fecha límite indicada, es decir, los movimientos cuya fecha de entrega sea anterior o igual a la fecha límite informada.</p>
+  <p class="H_Texto">Para el cálculo del <font style="font-weight: bold;">Stock en Venta</font> se consideran los movimientos del depósito cuya fecha de entrega menos los días de reposición en el depósito, sea anterior o igual a la fecha límite informada.</p>
+  <p class="H_Texto">La cantidad pendiente de cada comprobante que se exhibe en la consulta se expresa en la unidad para cantidades pendientes de ventas.</p>
+  <p class="H_Texto">Para seleccionar los ítems que se desea incluir en el comprobante se podrá utilizar la combinación de las teclas Control o Shift y el clic del mouse. Al aceptar la selección efectuada el comprobante se completará con los ítems elegidos y con las cantidades necesarias de acuerdo a los comprobantes marcados para cada ítem.</p>
+
+</body></html>

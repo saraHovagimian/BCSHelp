@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.7.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Inventario de bienes de uso</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Bienes,Inventario,Uso"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Informe de Inventario de bienes de uso</h1>
+  <p class="H_Texto">Este informe permite ver los datos de los inventarios de bienes de uso afectados hasta una fecha determinada.</p>
+  <p class="H_Texto">Se pueden indicar rangos de inventarios, de <a href="tabla__Grupos_de_bienes_de_uso.htm">grupos de bienes de uso</a> , de ubicaciones físicas y se puede emitir el listado con diferentes ordenamientos.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Se muestra para cada inventario del rango solicitado, la fecha de afectación del mismo, la ubicación física, el grupo de bienes de uso, la vida útil, el valor origen, la amortización acumulada y el valor residual. Los inventarios desafectados no se incluirán en el informe.</p>
+  <p class="H_Texto">En la columna <font style="font-weight: bold;">Valor Origen</font>, si el inventario tiene vida útil transcurrida, se muestra el valor ingresado en pantalla en la última modificación del inventario. Si el inventario no tiene vida útil transcurrida, se muestra el costo de la afectación más el de las modificaciones del inventario, calculado en el último <a href="cierre_operativo.htm">cierre operativo</a> del correspondiente <a href="tabla__Subdiarios.htm">subdiario</a> de materiales.</p>
+  <p class="H_Texto">En la columna <font style="font-weight: bold;">Amortización acumulada</font>, se muestra el valor de las amortizaciones del inventario efectuadas que fueron generadas por el sistema en el <a href="cierre_operativo.htm">cierre operativo</a> de los correspondientes <a href="tabla__Subdiarios.htm">subdiarios</a> de bienes de uso, y si hay vida útil transcurrida se agregan a éstas las amortizaciones anteriores no registradas en el sistema, o sea, las correspondientes a la vida útil transcurrida, calculadas como la diferencia entre el valor origen ingresado y el costo calculado por el sistema.</p>
+  <p class="H_Texto">En la columna <font style="font-weight: bold;">Valor residual</font>, se muestra el valor del inventario calculado como la diferencia entre el valor origen y la amortización acumulada.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a href="listado_documentos_valorizados_tener_en_cuenta.htm">Para tener en cuenta</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP587590233" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP587590233">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Inventario</p>
+    <p class="H_Parrafo_de_Sub-Item">Número de inventario que se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un inventario en particular o un grupo de inventarios. Si este dato es dejado en blanco, se incluirán todos los inventarios en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Grupo de bienes de uso</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Grupos_de_bienes_de_uso.htm">grupo de bienes de uso</a> asociado a los inventarios que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un grupo en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán los inventarios de todos los grupos en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Ubicación física</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la ubicación física asociada a los inventarios que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una ubicación física en particular o un grupo de ellas. Si este dato es dejado en blanco, se incluirán los inventarios de todas las ubicaciones en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Hasta fecha</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha hasta la cual se desean considerar en el informe los comprobantes de afectación y modificación de inventarios.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna fecha se considerarán los comprobantes ingresados hasta el final.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato permite ordenar los datos del informe con diferentes criterios.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="margin-left: 28.35pt;"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Inventario</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento <font style="font-weight: bold;">Inventario</font> se ordenan los datos listados por número de inventario.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="margin-left: 28.35pt;"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Grupo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento <font style="font-weight: bold;">Grupo</font> se ordenan los datos listados por código de <a href="tabla__Grupos_de_bienes_de_uso.htm">grupo de bienes de uso</a> . Para cada grupo se detallan los inventarios asociados y se incluyen totales por grupo.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="margin-left: 28.35pt;"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Ubicación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento <font style="font-weight: bold;">Ubicación</font> se ordenan los datos listados por código de ubicación física. Para cada ubicación se detallan los inventarios asociados y se incluyen totales por ubicación.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valores</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="margin-left: 28.35pt;"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Valorizado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean emitir el informe valorizado o no.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si no se emite el listado valorizado no se incluirán en el mismo, las columnas valor origen, amortización acumulada y valor residual.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="margin-left: 28.35pt;"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> En</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> en la cual se mostrarán los valores que se incluyan en el listado. Este campo solo se habilitará en caso de haber indicado la opción anterior.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato estará visible si hay una <font style="font-weight: bold;">Moneda de contabilización adicional</font> indicada en los <a href="parametros__Datos_generales.htm">
+        <font style="font-weight: bold;">Parámetros de Datos Generales</font>
+      </a> .</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se podrá seleccionar la moneda local o la moneda adicional y se considerarán los valores del inventario en la moneda que aquí se seleccione.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP587590233');
+    //]]>
+  </script>
+
+</body></html>

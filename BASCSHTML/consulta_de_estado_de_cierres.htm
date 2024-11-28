@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.15.2.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Consulta de Estado de cierres</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Estado de cierres"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Estado de cierres</h1>
+<p class="H_Texto">Esta consulta permite conocer los detalles de los subdiarios 
+ definidos en el sistema.</p>
+<p class="H_Texto">La consulta ofrece precargada la empresa por defecto, 
+ siendo posible seleccionar varias empresas a incluir en la consulta.</p>
+<p class="H_Texto">También puede indicarse el tipo de subdiario a consultar 
+ o, directamente, consultar todos los subdiarios habilitados de las empresas 
+ que se hayan indicado.</p>
+<p class="H_Texto">La consulta incluye, para cada uno de los subdiarios, 
+ los datos que tienen asociados en la tabla correspondiente y la fecha 
+ de ultimo cierre Si esta fecha está en color rojo indica que falta generar 
+ el cierre mensual obligatorio.</p>
+<p class="H_Texto">En el encabezado de la consulta se indica la <a href="fecha_de_certeza_contable.htm">Fecha 
+ de certeza contable (FCC).</a> Esta es la menor fecha de cierre de los 
+ subdiarios y del diario general de las empresas. Si alguno no presenta 
+ fecha de cierre como FCC se indicará Ninguna.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP640984895" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+<div data-targetname="POPUP640984895">
+	<p class="H_Parrafo_de_Item">Se deben indicar los códigos de las empresas 
+	 a consultar.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP640997638" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo Subdiario</span><span data-close-text="true">Tipo Subdiario</span></a></p>
+<div data-targetname="POPUP640997638">
+	<p class="H_Parrafo_de_Item">Debe indicarse el tipo de subdiario a 
+	 consultar (Ventas, Compras. Materiales, Otros, Caja y Bancos, Bienes 
+	 de uso, Diario General) o Todos</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP641029146" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Subdiarios</span><span data-close-text="true">Subdiarios</span></a></p>
+<div data-targetname="POPUP641029146">
+	<p class="H_Parrafo_de_Item">En esta tabla se detalla la información 
+	 de cada uno de los subdiarios que corresponden al tipo indicado (o 
+	 de todos los subdiarios si se ha indicado Todos).</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Subdiario</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe el Código y Descripción de 
+	 cada uno de los subdiarios que se incluyen en la consulta.</p>
+	<p class="H_Parrafo_de_Sub-Item">Haciendo clic en esta columna se accede 
+	 al <a href="detalle_de_auditoria_de_cierres.htm">detalle de auditoría 
+	 de cierres</a> del subdiario, ordenados desde el más reciente al más 
+	 antiguo. SI algún subdiario no posee enlace se debe a que no se ha 
+	 realizado ningún cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">En el caso de subdiarios que resumen 
+	 desde la consulta del asiento resumen se puede acceder, a través del 
+	 enlace &#39;Ver lista de comprobantes&#39; ,al detalle de todos los comprobantes 
+	 que conformaron el asiento resumen. Haciendo clic en cada comprobante 
+	 se llega al detalle del asiento del mismo, pudiendo navegar entre 
+	 las diferentes asientos.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Tipo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Tipo correspondiente al subdiario.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En el caso del diario general 
+	 es inoperante.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ultimo Cierre</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Fecha del último cierre del subdiario.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se dispone de un botón, a la derecha 
+	 de la fecha, que permite acceder a la situación de los parámetros 
+	 utilizados al momento en que se efectuó dicho cierre.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> Por ejemplo para el caso 
+	 del cierre del subdiario de materiales, se indica si resumió o no 
+	 en el diario, si generó o no asiento en el cierre, los métodos de 
+	 valuación habilitados a la fecha de cierre, si ajustó o no bienes 
+	 de uso, etc. Esta información se muestra siempre y ciando se haya 
+	 seleccionado una empresa.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Resume en el diario</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este campo aparece tildado si 
+	 en la definición del subdiario se ha indicado que resume en el diario.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En el caso del diario general 
+	 es inoperante.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cierre mensual</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este campo aparece tildado si 
+	 en la definición del subdiario (o en el diario) se ha indicado que 
+	 requiere cierre mensual obligatorio.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Genera asiento de cierre</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este campo aparece tildado si 
+	 el subdiario genera asiento de cierre.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En realidad el único tipo de subdiario 
+	 que puede no generar asiento de cierre es el de materiales, por lo 
+	 cual, solo puede aparecer destildado para este tipo de subdiario.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Participa pos. impositiva</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este campo aparece tildado si 
+	 en la definición del subdiario se ha indicado que participa en la 
+	 posición impositiva.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Fecha desde</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se elige más de una empresa, 
+	 este capo se deshabilita.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Fecha hasta</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se elige más de una empresa, 
+	 este capo se deshabilita.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP641023943" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP641023943">
+	<p class="H_Parrafo_de_Item">Es importante aclarar que si se accede 
+	 a esta consulta a través de la FCC (Fecha de certeza contable) puede 
+	 mostrar la información de la base de informes o de la base principal. 
+	 Si lo que se exhibe corresponde a la base de informes en la cabecera 
+	 de la pantalla se indica como título: Estado de cierres (Información 
+	 de la base de informes)” y se permite navegar únicamente hasta el 
+	 detalle de cierres.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP640984895');
+	TextPopupInit('a2', 'POPUP640997638');
+	TextPopupInit('a3', 'POPUP641029146');
+	TextPopupInit('a4', 'POPUP641023943');
+//]]></script>
+
+
+</body></html>

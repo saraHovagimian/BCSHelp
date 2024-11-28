@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.3.2.0_7"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Armado de transferencias</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Armado de transferencias</h1>
+<p class="H_Texto">Esta tarea permite generar en forma automática egresos 
+ de mercadería desde un <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+ de la empresa a otros depósitos . Se deberá indicar el depósito de origen 
+ y varios depósitos de destino. Se generará un comprobante de egreso para 
+ cada destino que se indique. El depósito de origen será el mismo para 
+ todos los egresos que se generen.</p>
+<p class="H_Texto">Los comprobantes de egreso que se generen podrán imprimirse 
+ al momento de su generación y también, en esa instancia, se podrán generar 
+ los mensajes y/o los archivos para actualizar a las sucursales correspondientes 
+ a los depósitos de destino informados.</p>
+<p class="H_Texto">Si la información no se envía al momento de generar 
+ el comprobante, se podrá realizar el envío en una instancia posterior 
+ desde el punto <a href="generacion_archivo_de_egresos.htm">Generación 
+ de archivos de egresos</a>.</p>
+<p class="H_Texto">Para registrar un armado de transferencias se debe completar, 
+ además de la fecha y el número, la siguiente información:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP633202668" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP633202668">
+	<p class="H_Parrafo_de_Item">Código del depósito del cual egresa la 
+	 mercadería.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP633188722" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Talonario de egresos</span><span data-close-text="true">Talonario de egresos</span></a></p>
+<div data-targetname="POPUP633188722">
+	<p class="H_Parrafo_de_Item">Código del talonario que se ha de utilizar 
+	 para generar los comprobantes de egreso.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP633169500" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Generar Egresos</span><span data-close-text="true">Generar Egresos</span></a></p>
+<div data-targetname="POPUP633169500">
+	<p class="H_Parrafo_de_Item">Al pulsar este botón, previo pedido de 
+	 confirmación, se generarán los egresos de mercadería desde el depósito 
+	 de origen, a cada uno de los depósitos indicados en la distribución 
+	 por depósitos.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP633150588" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Precarga</span><span data-close-text="true">Precarga</span></a></p>
+<div data-targetname="POPUP633150588">
+	<p class="H_Parrafo_de_Item">Si los bienes a transferir a los diferentes 
+	 depósitos están disponibles en un remito de ingreso, es posible precargar 
+	 el armado de transferencia con la información que figura en dicho 
+	 comprobante. Luego se podrán modificar las cantidades de las líneas 
+	 del mismo o, directamente eliminar el comprobante. Esta prestación 
+	 resulta útil cuando, por ejemplo, la casa central recibe mercadería 
+	 de un proveedor (que se registra en el sistema mediante un remito 
+	 de ingreso) y dicha mercadería debe distribuirse a locales de venta 
+	 representados por diferentes depósitos del sistema.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Desde 
+	 fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha a partir de la cual se desean 
+	 considerar los ingresos de mercadería en la consulta.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna fecha, se 
+	 incluyen todos los ingresos desde el principio.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Hasta 
+	 fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha hasta la cual se desean considerar 
+	 los ingresos de mercadería en la consulta.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna fecha, se 
+	 incluyen todos los ingresos hasta el final.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Proveedor</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del proveedor titular de los 
+	 ingresos de mercadería que se desea incluir en la consulta.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Mov. 
+	 de Materiales</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante este botón se accede a la 
+	 consulta de ingresos de mercadería que tuvieron como destino el depósito 
+	 informado y que corresponden al rango de fechas y al <a href="tabla__Proveedores.htm">proveedor</a> 
+	 informados en los campos precedentes.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP633151457" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla de Items</span><span data-close-text="true">Tabla de Items</span></a></p>
+<div data-targetname="POPUP633151457">
+	<p class="H_Parrafo_de_Item">Mediante esta tabla se informan los <a href="tabla__Bienes.htm">bienes</a> a incluir en el armado el transferencias 
+	 que se está confeccionando.</p>
+	<p class="H_Parrafo_de_Item">Para cada ítem se debe informar la cantidad 
+	 que se entrega. Luego de informarla, se abre una ventana donde se 
+	 deberá indicar la distribución por depósito, es decir, la cantidad 
+	 de unidades del ítem que se desea transferir a cada depósito.</p>
+	<p class="H_Parrafo_de_Item">Para los ítems que administran colores 
+	 y medidas se prevé indicar la cantidad a transferir, a cada depósito, 
+	 para cada color y medida del bien.</p>
+	<p class="H_Parrafo_de_Item">Los ítems que se incluyen en el armado 
+	 de transferencias se agrupan por depósito de destino de modo de generar 
+	 cada comprobante de egreso. Recién en ese momento se actualizará el 
+	 stock de los depósitos involucrados.</p>
+	<p class="H_Parrafo_de_Item">Es importante tener en cuenta que no son 
+	 aptos para esta tarea los ítems de tipo conjunto, ni aquellos que 
+	 administran <a href="despachos.htm">despachos</a> y/o <a href="partidas.htm">partidas</a>.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Item</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a> 
+	 ingresado en el sistema.</p>
+	<p class="H_Parrafo_de_Sub-Item">Puede ingresarse el código del ítem, 
+	 su GTIN o su código alternativo.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">GTIN / Alternativo</p>
+	<p class="H_Parrafo_de_Sub-Item">Código alternativo del ítem indicado 
+	 en el dato anterior.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el 
+	 dato anterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta. Si no, se exhibirá la otra descripción.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que egresan del 
+	 ítem indicado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Distribuida</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades distribuidas 
+	 del ítem indicado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Pendiente</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades aún no distribuidas 
+	 del ítem indicado.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP633202668');
+	TextPopupInit('a2', 'POPUP633188722');
+	TextPopupInit('a3', 'POPUP633169500');
+	TextPopupInit('a4', 'POPUP633150588');
+	TextPopupInit('a5', 'POPUP633151457');
+//]]></script>
+
+
+</body></html>

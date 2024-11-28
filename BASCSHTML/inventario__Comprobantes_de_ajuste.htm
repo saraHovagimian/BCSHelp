@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.4.0_7"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Inventario Comprobantes de ajuste</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Comprobantes de ajuste"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Comprobantes de ajuste</h1>
+<p class="H_Texto">Mediante esta tarea se generan en forma automática los 
+ ingresos o egresos de mercadería que permiten corregir el inventario, 
+ es decir, hacer coincidir los datos del sistema con los datos reales del 
+ inventario físico tomado.</p>
+<p class="H_Texto">Los remitos de ajuste se generan para un depósito determinado 
+ del cual se tomó el inventario. Antes de generar los remitos de ajuste 
+ se debe cerrar el inventario del depósito mediante la tarea correspondiente.</p>
+<p class="H_Texto">En el listado de control de inventario si se selecciona 
+ imprimir las <font style="font-weight: bold;">Diferencias entre datos 
+ del sistema</font> <font style="font-weight: bold;">y del inventario</font> 
+ se verán los bienes en los que se detectan diferencias y la cantidad de 
+ unidades en la que difieren estos dos valores. Teniendo en cuenta que 
+ los datos del inventario registrados por el usuario corresponden a la 
+ información real de un depósito, mediante esta opción se pueden ver las 
+ modificaciones a realizar en el sistema para que los datos del mismo coincidan 
+ con la realidad. Estas modificaciones se registran automáticamente en 
+ el sistema mediante los <font style="font-weight: bold;">Remitos de ajuste 
+ de inventario</font>.</p>
+<p class="H_Texto">Las diferencias del inventario se registrarán en un 
+ remito de egreso o de ingreso dependiendo del tipo de operación a realizar 
+ para corregir el stock de cada bien del inventario. Por ejemplo, si del 
+ ítem XXX en el depósito 1 hay registradas en el sistema 100 unidades y 
+ al tomar el inventario se detecta que hay 110 unidades, se generará una 
+ línea de un remito de ingreso por 10 unidades del ítem XXX. Y así se agruparán 
+ los bienes que deben ingresar, en un remito y los que deben egresar, en 
+ otro remito.</p>
+<p class="H_Texto">Es importante destacar que se efectúa un control destinado 
+ a impedir la generación reiterada de remitos de ajuste para un mismo inventario.</p>
+<p class="H_Texto">Si en el inventario hay un ítem que maneja despachos 
+ y/o partidas y/o series, al intentar hacer el ajuste aparece el siguiente 
+ mensaje de error “ En el inventario hay ítems que manejan despachos y/o 
+ partidas y/o series.¿ Desea continuar sin ajustar esos ítems?”. Si la 
+ respuesta es No, el sistema no hará nada. Si la respuesta es Sí, se hará 
+ el remito sin tener en cuenta dichos ítems.</p>
+<p class="H_Texto">Los datos a ingresar para generar los remitos de ajuste 
+ son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679633385" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP679633385">
+	<p class="H_Parrafo_de_Item">Número de <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 del cual se van a generar los remitos de ajuste.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder a un depósito definido 
+	 en el sistema, del que se haya tomado inventario y el mismo se haya 
+	 cerrado.</p>
+	<p class="H_Parrafo_de_Item">Al ingresar el depósito se mostrará el 
+	 <font style="font-weight: bold;">número de inventario</font> del cual 
+	 se generarán los remitos y la <font style="font-weight: bold;">fecha 
+	 de inicio</font> del mismo.</p>
+	<p class="H_Parrafo_de_Item">A continuación se deben ingresar los datos 
+	 de los remitos a generar.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP679665744" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Remitos de ajuste</span><span data-close-text="true">Remitos de ajuste</span></a></p>
+<div data-targetname="POPUP679665744">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Item">Fecha que tendrán los remitos que se generen.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Concepto</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Conceptos.htm">concepto</a> 
+	 que tendrán asociados los remitos que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un concepto definido 
+	 en el sistema y habilitado para <font style="font-weight: bold;">Agentes</font>.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Agente</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Agentes.htm">agente</a> 
+	 titular de los remitos de ajuste que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un agente definido 
+	 en el sistema y de tipo <font style="font-weight: bold;">Destino de 
+	 materiales</font>.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Centro 
+	 de apropiación A</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro 
+	 de apropiación</a> correspondiente al centro <font style="font-weight: bold;">A</font>.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al generar el remito si se detecta 
+	 que el ítem cuyo stock se ajusta, requiere un centro de apropiación, 
+	 se utilizará el que aquí se indique. El que lo requiera o no depende 
+	 de las subcuentas (centro de apropiación A o ambos centros) de la 
+	 <a href="tabla__Cuentas.htm">imputación contable</a> del inventario 
+	 y de la asociada al concepto indicado, en la posición contable del 
+	 ítem.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Centro 
+	 de apropiación B</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro 
+	 de apropiación</a> correspondiente al centro <font style="font-weight: bold;">B</font>.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al generar el remito si se detecta 
+	 que el ítem cuyo stock se ajusta, requiere el centro de apropiación 
+	 B, se utilizará el que aquí se indique. El que lo requiera o no depende 
+	 de las subcuentas (centro de apropiación B o ambos centros) de la 
+	 <a href="tabla__Cuentas.htm">imputación contable</a> del inventario 
+	 y de la asociada al concepto indicado, en la posición contable del 
+	 ítem.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 de ingreso</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo que tendrá el remito de ingreso 
+	 que se genere.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 de egreso</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo que tendrá el remito de egreso 
+	 que se genere.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP682914074" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP682914074">
+	<p class="H_Parrafo_de_Item">Si un ítem se administra mediante doble 
+	 unidad de medida, puede ocurrir que al generarse los remitos de ajuste 
+	 de inventario queda la primera unidad con un signo y la segunda unidad 
+	 con el otro.</p>
+	<p class="H_Parrafo_de_Item">Para evitar este inconveniente, si el 
+	 ítem maneja doble unidad de medida y la diferencia entre los datos 
+	 del inventario y los datos del sistema resulta en cantidades de distintos 
+	 signos, el sistema considera a la línea como dos líneas y generará 
+	 un comprobante de ingreso por una de las cantidades y uno de egreso 
+	 por la otra cantidad.</p>
+	<p class="H_Parrafo_de_Item">Así por ejemplo, si en un ítem se encuentra 
+	 una diferencia en cantidad de 1 en la primera unidad, y en la segunda 
+	 unidad se encuentra una diferencia de cantidad de -0.25; se genera 
+	 un remito de egreso con cantidad 1 en la primera unidad y segunda 
+	 cantidad en 0 y un remito de ingreso con cantidad=0 en la primera 
+	 unidad y con cantidad=0,25 en la segunda cantidad.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a2', 'POPUP679633385');
+	TextPopupInit('a3', 'POPUP679665744');
+	TextPopupInit('a1', 'POPUP682914074');
+//]]></script>
+
+
+</body></html>

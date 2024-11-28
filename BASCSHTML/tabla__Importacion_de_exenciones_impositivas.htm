@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.3.0_16"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tabla mportacion de exenciones impositivas</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Importación de exenciones impositivas"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Importación de exenciones impositivas</h1>
+  <p></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Formato</span><span data-close-text="true">Formato</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Formato del archivo que se desea importar.</p>
+    <p class="H_Parrafo_de_Item">Es posible indicar que un mismo registro se ingrese como exención de percepciones y de retenciones al mismo tiempo. Esto es útil en los casos en que un mismo CUIT se asocia a un cliente y a un proveedor y se quiere ingresar para ambos un mismo porcentaje de exención.</p>
+    <p class="H_Parrafo_de_Item">Para ello, en el campo <span lang="ES" style="font-weight:bold" xml:lang="ES">Tipo</span> del formato, se dispone de los siguientes valores:</p>
+    <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta"><b>A</b> Para indicar que el registro se ingresa como exención de percepción y de retención de Ingresos Brutos.</p>
+    <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta"><b>C</b> Para indicar que el registro se ingresa como exención de percepción y de retención de Ganancias.</p>
+    <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta"><b>Y</b> Para indicar que el registro se ingresa como exención de percepción y de retención de IVA.</p>
+    <p class="H_Parrafo_de_Item">Si se indica alguno de estos valores para un CUIT que no se repite en clientes y proveedores, el registro se ingresará como exención de percepción si el CUIT existe en clientes, y como la exención de retención que corresponda, si el CUIT corresponde a proveedores.</p>
+    <p class="H_Parrafo_de_Item">También debe tenerse en cuenta que un CUIT puede pertenecer a la empresa en cuyo caso las exenciones que se importen se importarán como exenciones de la empresa.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Nombre archivo <img alt="BASCSIMAG\Boton_Examinar.gif" border="0" height="21" src="../assets/images/BASCSIMAG/Boton_Examinar.gif" width="60"/> Examinar</span><span data-close-text="true">Nombre archivo <img alt="BASCSIMAG\Boton_Examinar.gif" border="0" height="21" src="../assets/images/BASCSIMAG/Boton_Examinar.gif" width="60"/> Examinar</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Se debe indicar el nombre del archivo a importar, puede buscarse mediante el botón Examinar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Preproceso</span><span data-close-text="true">Preproceso</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Archivo</p>
+    <p class="H_Parrafo_de_Sub-Item"><span style="mso-bidi-font-size: 10.0pt; 
+									
+										 mso-fareast-font-family: &#39;Times New Roman&#39;; 
+										 mso-bidi-font-family: &#39;Times New Roman&#39;; 
+										 mso-ansi-language: ES-AR; mso-fareast-language: ES; 
+										 mso-bidi-language: AR-SA;">Es posible indicar un archivo para preproceso del archivo a importar, con extensión awk, que se aplicará automáticamente sobre el archivo a importar antes de iniciar el proceso de importación. Se dispone de un botón para buscar dicho archivo. Para que este proceso funcione es preciso que el archivo awk.exe se ubique en directorio Programs de la instalación de BASCS. Vale aclarar que <b>AWK</b> es un lenguaje de programación</span> <span style="mso-bidi-font-size: 10.0pt;  
+		 mso-fareast-font-family: &#39;Times New Roman&#39;; mso-bidi-font-family: &#39;Times New Roman&#39;; 
+		 mso-ansi-language: ES-AR; mso-fareast-language: ES; mso-bidi-language: AR-SA;">diseñado para procesar datos basados en texto. Esta funcionalidad puede utilizarse en los casos en que el archivo a importar tiene un formato muy especial y debe adecuarse antes de la importación.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span style="mso-bidi-font-size: 10.0pt; 
+										 
+										 mso-fareast-font-family: &#39;Times New Roman&#39;; 
+										 mso-bidi-font-family: &#39;Times New Roman&#39;; 
+										 mso-ansi-language: ES-AR; mso-fareast-language: ES; 
+										 mso-bidi-language: AR-SA;">E</span>s posible no eliminar, al finalizar el proceso de importación, los archivos intermedios generados al utilizar un archivo de preproceso, o en la eliminación de caracteres extraños del archivo original.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para ello podrá definirse una variable ambiental de usuario con nombre NOBORRARARCIMP, que en caso de crearse indicando que tiene como valor 1, provoca que el sistema no elimine los archivos mencionados al finalizar el proceso de importación.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los archivos se podrán encontrar en el directorio de instalación de BASCS o en la ubicación del archivo de importación. El correspondiente a la aplicación del archivo de preproceso tiene el prefijo ~PRE y la extensión TXT. El correspondiente a la eliminación de caracteres extraños tiene el mismo nombre que el archivo de importación y la extensión BAS.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de no existir la variable o no tener valor 1, dichos archivos se eliminarán al finalizar el proceso de importación, tal como ocurría hasta ahora.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Solo reemplazar los registros que hayan cambiado</span><span data-close-text="true">Solo reemplazar los registros que hayan cambiado</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">TTildar si sólo se desea reemplazar los registros que hayan cambiado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Eliminar porcentajes de exención vencidos</span><span data-close-text="true">Eliminar porcentajes de exención vencidos</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Tildar si se desea eliminar vencidas a la fecha de importar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Valores por defecto</span><span data-close-text="true">Valores por defecto</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> % Percepción</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje que se utilizará para las percepciones si el archivo que se importa tiene indicado valor cero o no tiene indicado nada para alguno de los registros.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> % Retención</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje que se utilizará para las retenciones si el archivo que se importa tiene indicado valor cero o no tiene indicado nada para alguno de los registros.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Provincia</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la provincia que se utilizará para las retenciones o percepciones de ingresos brutos si el archivo que se importa no tiene indicada la provincia o no tiene indicado nada para alguno de los registros.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Generar</span><span data-close-text="true">Generar</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Item">Para comenzar la importación se debe presionar el botón Generar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Al finalizar el proceso de importación, el proceso informa la cantidad de registros importados, la cantidad de registros eliminados y los registros que no se hayan podido importar por presentar alguna anomalía, ya sea por exenciones que se superponen, números de CUIT incorrectos u otros problemas.</span></p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
+
+</body></html>

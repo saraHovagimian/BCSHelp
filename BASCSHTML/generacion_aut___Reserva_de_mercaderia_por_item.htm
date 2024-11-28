@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.1.5.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Generacion automatica Reserva de mercaderia por item</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Reserva de mercadería por ítem"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Reserva de mercadería por ítem</h1>
+<p class="H_Texto">Una vez que se haya indicado el <a href="tabla__Bienes.htm">ítem</a> 
+ del cual se desea reservar la mercadería y el <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+ asociado, se mostrará una lista conteniendo todos los pedidos pendientes 
+ del ítem, con la cantidad pedida y la cantidad reservada a cada uno hasta 
+ ese momento. A partir de allí podrá modificarse la cantidad reservada, 
+ en forma manual o automática, y finalizar la tarea, para efectuar la registración 
+ de las nuevas reservaciones de mercadería efectuadas para el ítem.</p>
+<p class="H_Texto">En el encabezado de la pantalla se exhibe el stock disponible 
+ del ítem (y color, si corresponde), en ambas unidades de medida, el stock 
+ actual de dicho ítem y la cantidad pendiente en pedidos y/o pedidos internos 
+ expresados ambos en la unidad del pendiente para ventas.</p>
+<p class="H_Texto">Al hacer doble clic sobre el encabezado de las columnas: 
+ Fecha, Fecha de entrega, prioridad, medida, Código de la cuenta corriente, 
+ nombre de la cuenta corriente, tipo de comprobante y número de comprobante, 
+ la tabla de comprobantes a reservar se ordenará por dichos campos. El 
+ ordenamiento puede guardarse en el modelo.</p>
+<p class="H_Texto">Los datos a ingresar para realizar la reserva de mercadería 
+ son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP706963552" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP706963552">
+	<p class="H_Parrafo_de_Item">Código del <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 en el cual se desea reservar la mercadería del ítem indicado.</p>
+	<p class="H_Parrafo_de_Item">Para los ítems que trabajan con medidas 
+	 se mostrará la cantidad disponible para cada medida del ítem en el 
+	 depósito indicado</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP706993102" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ítem</span><span data-close-text="true">Ítem</span></a></p>
+<div data-targetname="POPUP706993102">
+	<p class="H_Parrafo_de_Item">Código del ítem del cual se desea reservar 
+	 mercadería.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a> 
+	 ingresado en el sistema.</p>
+	<p class="H_Parrafo_de_Item">Puede ingresarse el código del ítem o 
+	 su código alternativo.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP707067886" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Color</span><span data-close-text="true">Color</span></a></p>
+<div data-targetname="POPUP707067886">
+	<p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado 
+	 si el ítem indicado maneja colores.</p>
+	<p class="H_Parrafo_de_Item">Código de color del ítem del cual se desea 
+	 reservar mercadería.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder a un color válido para 
+	 la tabla de colores asociada al ítem.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP656071044" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cargar pedidos</span><span data-close-text="true">Cargar pedidos</span></a></p>
+<div data-targetname="POPUP656071044">
+	<p class="H_Parrafo_de_Item">Pulsando este botón se habilita una pantalla 
+	 intermedia denominada <font style="font-weight: bold;">Filtrar</font>, 
+	 en la misma es posible completar los siguientes datos:</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP706930689" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha 
+	 de entrega hasta</span><span data-close-text="true">Fecha 
+	 de entrega hasta</span></a></p>
+	<div data-targetname="POPUP706930689">
+		<p class="H_Parrafo_de_Sub-Item">En el caso en que el ítem tenga 
+		 muchos pedidos pendientes es posible acotar el rango de pedidos 
+		 a los cuales se va a reservar mercadería, mediante el ingreso 
+		 de una fecha de entrega hasta la cual se va a realizar la reserva.</p>
+		<p class="H_Parrafo_de_Sub-Item">Este campo es opcional. Si no 
+		 se ingresa ninguna fecha se exhibirán todos los pedidos pendientes 
+		 del ítem.</p>
+		<p class="H_Parrafo_de_Sub-Item">Si se indica una fecha sólo será 
+		 posible reservar mercadería a los pedidos del ítem cuya fecha 
+		 de entrega no sea posterior a esta.</p></div>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP706970779" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cliente</span><span data-close-text="true">Cliente</span></a></p>
+	<div data-targetname="POPUP706970779">
+		<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+		 Atributo</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> 
+		 de los <a href="tabla__Clientes.htm">clientes</a> titulares de 
+		 los pedidos a los cuales se desea reservar mercadería.</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un atributo, 
+		 sólo será posible reservar mercadería a los pedidos asociados 
+		 a los clientes que tengan definido el atributo indicado.</p>
+		<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+		 Valor</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra 
+		 habilitado si se seleccionó un atributo de clientes.</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Es el valor del atributo indicado 
+		 asociado a los clientes cuyos pedidos asociados se desean incluir 
+		 en la reserva de mercadería.</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor de atributo, 
+		 sólo se incluirán los pedidos asociados a los clientes que tengan 
+		 definido el atributo y valor de atributo indicados.</p></div>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP706981534" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Pedidos</span><span data-close-text="true">Pedidos</span></a></p>
+	<div data-targetname="POPUP706981534">
+		<p class="H_Parrafo_de_Sub-Item">Indicación del tipo de pedidos 
+		 del ítem a los cuales se desea reservar mercadería.</p>
+		<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+		 Internos</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean 
+		 incluir los pedidos internos del ítem en el proceso de reserva 
+		 de mercadería.</p>
+		<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+		 Externos</p>
+		<p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean 
+		 incluir los pedidos externos del ítem en el proceso de reserva 
+		 de mercadería.</p></div></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP656070761" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidad</span><span data-close-text="true">Cantidad</span></a></p>
+<div data-targetname="POPUP656070761">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Disponible</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem, disponibles 
+	 en el depósito indicado. El stock disponible resulta de restarle al 
+	 stock físico, el stock a entregar reservado.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Stock</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem en stock 
+	 en el depósito indicado.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Pendiente</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem que 
+	 se encuentran pendientes de entrega.</p></div>
+<p class="H_Titulo_de_texto_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <font style="text-decoration: underline; ">Ordenamiento Medida-Prioridad-Fecha</font></p>
+<p class="H_Parrafo_de_Item">Al hacer clic en este enlace se habilita una 
+ ventana que permite definir el ordenamiento que se le desea dar a los 
+ pedidos del ítem a los cuales se desea reservar mercadería.</p>
+<p class="H_Parrafo_de_Item">El ordenamiento por defecto es por Medida-Prioridad-Fecha. 
+ Si el sistema no maneja colores y medidas el ordenamiento es por Prioridad-Fecha.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP707343191" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ordenamiento</span><span data-close-text="true">Ordenamiento</span></a></p>
+<div data-targetname="POPUP707343191">
+	<p class="H_Parrafo_de_Sub-Item">Esta ventana permite seleccionar las 
+	 columnas por las que se desea ordenar la tabla. Se presentan dos tablas 
+	 que llamaremos:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Tabla A</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Tabla B</p>
+	<p class="H_Parrafo_de_Sub-Item">En la Tabla A (primer columna) aparecen 
+	 los siguientes datos, que son los nombres de las columnas que permiten 
+	 el ordenamiento: fecha, fecha de entrega, prioridad, medida, código 
+	 de la cuenta corriente, nombre de la cuenta corriente, tipo de comprobante 
+	 y número del comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">En la Tabla B (segunda columna) se 
+	 agregan los criterios en base a los cuales se desea ordenar la información. 
+	 Se puede incluir un dato, algunos o todos los datos que se vayan seleccionando 
+	 de la primer columna para definir el ordenamiento. Cada uno de estos 
+	 datos pueden ser ordenados en forma ascendente o descendente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para seleccionar y copiar datos de 
+	 la primer columna a la segunda y viceversa en forma unitaria se disponen 
+	 de los siguientes botones <img src="../assets/images/BASCSIMAG/siguiente.gif" alt="BASCSIMAG\siguiente.gif" width="24" height="23" border="0"/> 
+	 y <img src="../assets/images/BASCSIMAG/anterior.gif" alt="BASCSIMAG\anterior.gif" width="24" height="23" border="0"/> . Para copiar todos los 
+	 datos de la columna A a la columna B o quitarlos existen los botones 
+	 <img src="../assets/images/BASCSIMAG/siguientes.gif" alt="BASCSIMAG\siguientes.gif" width="24" height="23" border="0"/> y<img src="../assets/images/BASCSIMAG/anteriores.gif" alt="BASCSIMAG\anteriores.gif" width="24" height="23" border="0"/>. 
+	 También para copiar una selección de columnas o eliminar una selección 
+	 de columnas se pueden utilizar las teclas SHIFT o CTRL.</p>
+	<p class="H_Parrafo_de_Sub-Item">Existen otros dos botones para subir 
+	 o bajar las columnas en la tabla derecha. El orden de las columnas 
+	 en dicha tabla establece el orden de los comprobantes a reservar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si no se elige ninguna columna para 
+	 definir el ordenamiento se ubican los pedidos en la lista sin ordenamiento, 
+	 y el sistema indica tal estado al lado del campo ordenamiento.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a data-target="POPUP707287164" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Reserva 
+ automática</span><span data-close-text="true">Reserva 
+ automática</span></a></p>
+<div data-targetname="POPUP707287164">
+	<p class="H_Parrafo_de_Sub-Item">Mediante este botón se efectúa la 
+	 reserva de mercadería automática del ítem indicado a los pedidos internos 
+	 y externos exhibidos en la tabla de pedidos pendientes del ítem.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al oprimir este botón el sistema precarga 
+	 la tabla de comprobantes a reservar con los valores propuestos pero 
+	 sin actualizar la base de datos.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para hacer efectiva la reserva automática, 
+	 el usuario tiene que grabar los valores propuestos por el sistema. 
+	 Si oprime la tecla cancelar o salir se pierden los valores de dicha 
+	 reserva automática.</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez pulsado este botón, y realizada 
+	 la reserva automática es posible nuevamente modificar la reserva si 
+	 existen pedidos para los cuales el usuario lo considere necesario.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a data-target="POPUP707304482" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cancelar 
+ línea</span><span data-close-text="true">Cancelar 
+ línea</span></a></p>
+<div data-targetname="POPUP707304482">
+	<p class="H_Parrafo_de_Sub-Item">Presionando este botón se cancela 
+	 una línea, que previamente debió haber sido seleccionada. La línea 
+	 que se cancela se muestra tachada. También se puede hacer doble clic 
+	 sobre el encabezado de la línea para cancelarla.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona una línea marcada 
+	 para cancelación y se oprime otra vez el botón, o se hace doble clic 
+	 sobre el encabezado, ésta pasa a su estado normal.</p>
+	<p class="H_Parrafo_de_Sub-Item">No se puede reservar cantidad a líneas 
+	 que van a ser canceladas.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de 
+ Pedidos pendientes</p>
+<p class="H_Parrafo_de_Sub-Item">En esta tabla se exhiben todos los pedidos 
+ pendientes del ítem indicado, a los cuales es posible reservar mercadería. 
+ Si se indicó un atributo de clientes se exhibirán los pedidos de los clientes 
+ que tengan asociado el atributo y el valor de atributo indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Se incluirán en la lista los pedidos internos 
+ del ítem, los externos o ambos dependiendo del tipo de pedidos que se 
+ haya seleccionado.</p>
+<p class="H_Parrafo_de_Sub-Item">Se muestra cada pedido con su fecha, tipo, 
+ número de comprobante, fecha de entrega, cantidad pedida, cantidad pendiente 
+ y cantidad reservada hasta el momento. Para los pedidos externos se muestra 
+ el cliente asociado y la prioridad de facturación del mismo; para los 
+ pedidos internos se muestra el agente o depósito dependiendo del tipo 
+ de destinatario del pedido.</p>
+<p class="H_Parrafo_de_Sub-Item">Es importante destacar que las cantidades 
+ exhibidas se encuentran expresadas en la Unidad para cantidades pendientes 
+ informada para cada ítem en la tabla de <a href="tabla__Bienes.htm">bienes</a>.</p>
+<p class="H_Parrafo_de_Sub-Item">Se muestran también en esta lista los 
+ pedidos que requieran autorización manual y aún no hayan sido autorizados, 
+ pero no podrá reservarse mercadería a los mismos.</p>
+<p class="H_Parrafo_de_Sub-Item">Si no se controlan las entregas en exceso 
+ el sistema permite reservar los pedidos hasta el máximo de la cantidad 
+ disponible para dicho ítem aunque se supere la cantidad pendiente del 
+ pedido.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se controlan las entregas en exceso 
+ pero se definió un porcentaje de exceso permitido en las entregas, el 
+ sistema permite reservar los pedidos hasta una cantidad que se corresponde 
+ a la cantidad pendiente del comprobante más el porcentaje por exceso permitido. 
+ Siempre teniendo en cuenta que haya stock disponible suficiente para reservar 
+ dicho ítem.</p>
+<p class="H_Parrafo_de_Sub-Item">Es posible reservar la mercadería a cada 
+ pedido en forma manual o en forma automática mediante el botón <font style="font-weight: bold;">Reserva 
+ automática</font>. Al pulsar este botón, el sistema reserva automáticamente 
+ la mercadería teniendo en cuenta para los pedidos externos, la prioridad 
+ de cada cliente y para clientes de igual prioridad tiene en cuenta la 
+ antigüedad de cada pedido. Para los pedidos internos se reserva dando 
+ mayor prioridad a los pedidos más antigüos.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707390482" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP707390482">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Fecha de cada pedido pendiente 
+	 del ítem solicitado, al cual es posible reservar mercadería.</p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707411609" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Comprobante</span><span data-close-text="true">Comprobante</span></a></p>
+<div data-targetname="POPUP707411609">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Tipo de comprobante de cada pedido 
+	 pendiente del ítem solicitado, al cual es posible reservar mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> </p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707439296" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número</span><span data-close-text="true">Número</span></a></p>
+<div data-targetname="POPUP707439296">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Número de comprobante de cada 
+	 pedido pendiente del ítem solicitado, al cual es posible reservar 
+	 mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> </p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707472312" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Nombre</span><span data-close-text="true">Nombre</span></a></p>
+<div data-targetname="POPUP707472312">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Razón social del cliente titular 
+	 del pedido cuyo número se exhibe en la columna <font style="font-weight: bold;">Número</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Para los pedidos externos cuyo 
+	 destino sea agente, se mostrará el nombre del <a href="tabla__Agentes.htm">agente</a> 
+	 titular del pedido y si el destino es depósito se mostrará la descripción 
+	 del <a href="tabla__Depositos_Plantas.htm">depósito</a> que pidió 
+	 la mercadería.</p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707469716" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+<div data-targetname="POPUP707469716">
+	<p class="H_Parrafo_de_Sub-Sub-Item">En esta columna se exhibe la letra 
+	 X si existen observaciones asociadas al ítem correspondiente a la 
+	 línea. Presionando Enter en el campo se puede visualizar el texto 
+	 correspondiente a la observación.</p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707580919" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidad 
+ reservada</span><span data-close-text="true">Cantidad 
+ reservada</span></a></p>
+<div data-targetname="POPUP707580919">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades del ítem, 
+	 que se desean reservar al pedido cuyo número se exhibe en la columna 
+	 <font style="font-weight: bold;">Número</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta cantidad se encuentra expresada 
+	 en la <font style="font-weight: bold;">Unidad para cantidades pendientes</font> 
+	 informada para cada ítem en la tabla de bienes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Al completarse inicialmente la 
+	 tabla de pedidos pendientes se muestra aquí la cantidad reservada 
+	 del ítem en el pedido, hasta ese momento. Este valor es el que podrá 
+	 modificarse, ya sea en forma manual o automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Al oprimir el botón de la consulta 
+	 posicionados en esta columna, se abre la consulta de clientes precargada 
+	 con los códigos que se encuentran en esta grilla.</p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707578739" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidad 
+ pendiente</span><span data-close-text="true">Cantidad 
+ pendiente</span></a></p>
+<div data-targetname="POPUP707578739">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades del ítem, 
+	 que se encuentran pendientes de entrega en el pedido cuyo número se 
+	 exhibe en la columna <font style="font-weight: bold;">Número</font>. 
+	 La misma se encuentra expresada en la unidad de medida correspondiente 
+	 a la cantidad reservada, es decir, en la <font style="font-weight: bold;">Unidad 
+	 para cantidades pendientes</font> informada para cada ítem en la tabla 
+	 de <a href="tabla__Bienes.htm">bienes</a>.</p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707619537" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidad 
+ pedida</span><span data-close-text="true">Cantidad 
+ pedida</span></a></p>
+<div data-targetname="POPUP707619537">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades del ítem, 
+	 solicitadas en el pedido cuyo número se exhibe en la columna <font style="font-weight: bold;">Número</font>. La misma se encuentra expresada 
+	 en la unidad de medida correspondiente a la cantidad reservada, es 
+	 decir, en la <font style="font-weight: bold;">Unidad para</font> cantidades 
+	 <font style="font-weight: bold;">pendientes</font> informada para 
+	 cada ítem en la tabla de <a href="tabla__Bienes.htm">bienes</a>.</p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707630324" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha 
+ de entrega</span><span data-close-text="true">Fecha 
+ de entrega</span></a></p>
+<div data-targetname="POPUP707630324">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Fecha de entrega del pedido.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> </p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707641882" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cuenta 
+ corriente</span><span data-close-text="true">Cuenta 
+ corriente</span></a></p>
+<div data-targetname="POPUP707641882">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Indica el número de la cuenta 
+	 del plan de cuentas contable correspondiente a la imputación del comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> </p></div>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><a data-target="POPUP707667864" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Prioridad</span><span data-close-text="true">Prioridad</span></a></p>
+<div data-targetname="POPUP707667864">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prioridad de facturación del <a href="tabla__Clientes.htm">cliente</a> asociado a cada pedido al cual 
+	 es posible reservarle mercadería.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Autorizado</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si el pedido indicado 
+	 está o no autorizado.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/><a data-target="POPUP707031222" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> 
+ A tener en cuenta</span><span data-close-text="true"> 
+ A tener en cuenta</span></a></p>
+<div data-targetname="POPUP707031222">
+	<p class="H_Texto">Esta tarea contempla la posibilidad de definir <font style="font-weight: bold;">Modelos.</font> Estos guardan todas las 
+	 modificaciones que se realicen en las columnas correspondientes a 
+	 la grilla de trabajo-</p>
+	<p class="H_Texto">Al modificar la posición y el ancho de las columnas 
+	 de la tabla de detalle de comprobantes a reservar y grabar el modelo, 
+	 la posición y el ancho de las mismas queda almacenada en dicho modelo. 
+	 Al seleccionar un modelo que incluya la posición de las columnas, 
+	 la tabla se acomodará para mostrar las nuevas posiciones.</p>
+	<p class="H_Texto">El ordenamiento de la tabla de comprobantes a reservar 
+	 indicado se puede guardar en el modelo cuando se selecciona la opción 
+	 Modifica los valores predeterminados guardados en el modelo.</p>
+	<p class="H_Texto">Al grabar la tarea Reserva de mercadería por ítem 
+	 se cancelan las líneas de los pedidos indicados como pendientes de 
+	 cancelación y se reservan las cantidades indicadas en cada línea.</p>
+	<p class="H_Texto">Al terminar el proceso de grabación se muestra una 
+	 pantalla con los detalles de los comprobantes generados si los hubiera. 
+	 Los talonarios necesarios para las cancelaciones se indican en la 
+	 tabla de Sucursales, en la solapa Comprobantes.</p></div>
+<p class="H_Texto"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP706963552');
+	TextPopupInit('a2', 'POPUP706993102');
+	TextPopupInit('a3', 'POPUP707067886');
+	TextPopupInit('a22', 'POPUP656071044');
+	TextPopupInit('a4', 'POPUP706930689');
+	TextPopupInit('a5', 'POPUP706970779');
+	TextPopupInit('a6', 'POPUP706981534');
+	TextPopupInit('a23', 'POPUP656070761');
+	TextPopupInit('a7', 'POPUP707343191');
+	TextPopupInit('a8', 'POPUP707287164');
+	TextPopupInit('a9', 'POPUP707304482');
+	TextPopupInit('a10', 'POPUP707390482');
+	TextPopupInit('a11', 'POPUP707411609');
+	TextPopupInit('a12', 'POPUP707439296');
+	TextPopupInit('a13', 'POPUP707472312');
+	TextPopupInit('a14', 'POPUP707469716');
+	TextPopupInit('a15', 'POPUP707580919');
+	TextPopupInit('a16', 'POPUP707578739');
+	TextPopupInit('a17', 'POPUP707619537');
+	TextPopupInit('a18', 'POPUP707630324');
+	TextPopupInit('a19', 'POPUP707641882');
+	TextPopupInit('a20', 'POPUP707667864');
+	TextPopupInit('a21', 'POPUP707031222');
+//]]></script>
+
+
+</body></html>

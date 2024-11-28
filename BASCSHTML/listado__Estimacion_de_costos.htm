@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.4.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Estimacion de costos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Estimación de costos</h1>
+  <p class="H_Texto">Este informe está destinado a permitir obtener información relacionada con los costos de producción.</p>
+  <p class="H_Texto">Es posible estimar costos de hojas de ruta o de Ordenes de producción (en forma excluyente).</p>
+  <p class="H_Texto">El cálculo de costos de los recursos considera si la tarea permite diferentes grupos de trabajo o no.</p>
+  <p class="H_Texto">En el caso de hojas, si la tarea permite diferentes grupos de trabajo, cuando el valor del recurso sea por hora o minuto la cantidad de grupos afecta al costo multiplicándolo y cuando sea unitario lo afecta dividiéndolo.</p>
+  <p class="H_Texto">En el caso de las órdenes de producción, si la tarea permite diferentes grupos de trabajo, sólo afecta a aquellos costos en que el valor del recursos sea por unidad dividiéndolo.</p>
+  <p class="H_Texto">Este listado no incluye plantas en sus emisiones.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a href="listado_documentos_valorizados_tener_en_cuenta.htm">Para tener en cuenta</a></p>
+  <p class="H_Texto">Los datos a ingresar para la emisión del listado son:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673564142" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP673564142">
+    <p class="H_Parrafo_de_Item">En esta ficha se debe informar todo lo
+      relativo al método de valuación a utilizar para la estimación. En
+      caso de trabajar con una moneda adicional se deberá especificar también
+      en que moneda se han de expresar los importes resultantes de la valuación.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Valorización</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/>
+      Método de valuación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Método de valuación que se desea
+      utilizar para efectuar la estimación de los costos de producción.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones que se ofrezcan dependerán
+      de lo indicado en la pantalla parámetros de ítems. No obstante, los
+      métodos que el sistema ofrece por defecto son los siguientes:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Contable</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">C.P.P. al cierre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">C.U.C. (Costo Ultima
+      Compra)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">L.I.F.O. (Last In First
+      Out)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">F.I.F.O. (First In First
+      Out)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Lista de precios</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Precio de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ocasional</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para valuar el costo de los recursos
+      se tomará en cuenta, en las hojas de ruta, el costo del recurso informado
+      como <font style="font-weight: bold;">Recurso costo estándar</font>
+      en la tabla Tipos de recursos y, en las Ordenes de producción, se
+      tomará el costo del recurso efectivamente incorporado a la misma.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Lista de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Código de lista de precios que
+      se utilizará para efectuar la valuación de las cantidades de los insumos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo está habilitado
+      si se indicó método de valuación Lista de precios.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La lista de precios que se indique
+      puede haberse definido como dinámica.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      A fecha</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha hasta la cual se efectuará
+      la estimación de los costos de producción. En caso de haberse seleccionado
+      el método de valuación Lista de Precios, deberá obligatoriamente ingresarse
+      la fecha de vigencia de la misma en este campo. Presionando F3 se
+      pueden consultar las distintas vigencias de la lista de precios indicada.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si el método de valuación elegido
+      es uno diferente a Lista de precios, no será obligatorio indicar fecha
+      alguna en este campo. Si se deja en blanco el sistema considerará
+      que la fecha solicitada coincide con la fecha de emisión del informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Opciones</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se emite el informe bajo esta
+      modalidad, el sistema exhibirá una línea por cada hoja de ruta u orden
+      de producción incluida en el mismo, con los datos del comprobante,
+      la suma de los costos de los productos terminados, la suma de los
+      costos de los insumos y la suma de los costos de los recursos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En el caso que la hoja u orden
+      de producción presente más de un producto terminado éstos se detallarán
+      junto con los datos de la hoja u orden de producción. En este caso,
+      la información que se detallará será la misma que presenta la emisión
+      detallada, es decir:</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">código del producto terminado,
+      descripción, unidad de medida, si corresponde código de medida y color,
+      porcentaje de costo y costo unitario, y están disponibles el código
+      alternativo del ítem y el código alternativo asociado a la medida
+      y color.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Detallado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se emite el informe bajo esta
+      modalidad, además de los datos del comprobante, el sistema exhibirá
+      en grupos separados los productos terminados, los insumos y los recursos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para los productos terminados
+      se exhiben los datos del producto, el % de costo que se aplica al
+      mismo dentro del comprobante, la cantidad expresada en primera unidad
+      de medida, el costo unitario y el costo total del producto.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para los insumos se exhiben los
+      datos del mismo, la cantidad expresada en primera unidad de medida,
+      el costo unitario y el costo total del insumo.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para los recursos se exhiben los
+      datos del mismo, el tipo de recurso del que se trate, la duración
+      de la tarea a la que está asociado, el % de afectación a la misma,
+      el costo unitario y el costo total.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Ordenar por tarea</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Cuando se tilde, se listarán los
+      insumo y recursos de las hojas u órdenes de producción ordenadas por
+      tareas.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este ordenamiento incluye totales
+      por tarea.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Valores
+      en</p>
+    <p class="H_Parrafo_de_Sub-Item">Este cuadro aparecerá cuando se haya
+      definido una moneda de cotización y valuación adicional. Este dato
+      deberá haberse ingresado en la Ficha Contable de la configuración
+      de los parámetros generales.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Pesos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta opción permite la emisión
+      del listado con los costos expresados en pesos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Moneda de contabilización y valuación adicional</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta opción permite la emisión
+      del listado con los costos expresados en la moneda de valuación adicional,
+      la cual debe haberse definido en la Ficha Contable de la configuración
+      de los parámetros generales.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Con
+      explosión de semi-elaborados</p>
+    <p class="H_Parrafo_de_Sub-Item">Este listado se puede emitir considerando
+      los costos correspondientes a explotar los semi-elaborados.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda la opción Con explosión
+      de semielaborados, el costo de éstos se calcula en base a lo que figura
+      en su hoja de ruta, siempre y cuando las hojas o las órdenes de producción
+      solicitadas incluyan insumos asociados a dicha hoja de ruta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Detallar
+      explosión</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica esta opción, en el listado
+      aparecen las hojas por defecto que correspondan, relacionadas a los
+      semi-elaborados. Estas se detallan unitariamente (cantidad uno) y,
+      a modo distintivo presentan un asterisco junto al código.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673557637" href="#"><span data-open-text="true" data-skip-index="true">Ficha Hojas</span><span data-close-text="true">Ficha Hojas</span></a></p>
+  <div data-targetname="POPUP673557637">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      Hojas de ruta</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar una por
+      una las hojas de ruta que se desea incluir en el informe de estimación
+      de costos.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Hoja</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la hoja de ruta que se desea
+      incluir en el listado. Presionando F3 pueden seleccionarse varias
+      hojas simultáneamente desde la ventana de búsqueda.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción de la hoja de ruta correspondiente
+      al código informado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades equivalentes
+      de productos terminados cuyo costo de producción se desea estimar.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Color Prod.</p>
+    <p class="H_Parrafo_de_Sub-Item">Color del producto terminado cuyo
+      costo se desea estimar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673600533" href="#"><span data-open-text="true" data-skip-index="true">Ficha Ordenes</span><span data-close-text="true">Ficha Ordenes</span></a></p>
+  <div data-targetname="POPUP673600533">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Ordenes de producción</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar una por
+      una las ordenes de producción que se desea incluir en el informe de
+      estimación de costos. Se podrá hacer uso de la tecla de consulta para
+      acceder a la selección de comprobantes. En la pantalla de consulta
+      se exhibirá el prefijo y número de cada orden de producción, la fecha
+      de la misma y su hora de Entrega.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Número de prefijo correspondiente
+      a la Orden de producción que se desea incluir en el informe.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Número de Orden de producción que
+      se desea incluir en el informe, debe corresponderse con el prefijo
+      ingresado en el campo anterior.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673613674" href="#"><span data-open-text="true" data-skip-index="true">Ficha Insumos</span><span data-close-text="true">Ficha Insumos</span></a></p>
+  <div data-targetname="POPUP673613674">
+    <p class="H_Parrafo_de_Item">Permite indicar tanto un conjunto de ítems
+      como atributos y valores de atributos que actuarán como filtro.</p>
+    <p class="H_Parrafo_de_Item">En caso de ingresar información se listarán
+      las hojas de ruta u ordenes de producción, según el caso, que presentan
+      al menos un insumo que cumple con las condiciones indicadas.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Considerar</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando se indiquen ítems y/o atributos
+      y valores de atributos de ítems es posible indicar qué comprobantes
+      considerar. Se podrá indicar:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Las hojas u órdenes indicadas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica Las hojas u órdenes
+      indicadas se consideran las informadas en las fichas Hojas u Ordenes.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Todas las hojas que contengan los insumos indicados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica que se consideren
+      Todas las hojas que contengan los insumos indicados o Todas las órdenes
+      que contengan los insumos indicados y se detallaron hojas u órdenes
+      en las fichas Hojas y Ordenes, no se tendrán en cuenta las hojas u
+      órdenes indicadas en éstas.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Todas las órdenes que contengan los insumos indicados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Por otro lado, si no se indican
+      ítems y/o atributos y valores de atributos de ítems, sólo se podrá
+      emitir indicando Considerar las hojas u órdenes indicadas.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Ítem</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de los ítems incluidos en
+      los comprobantes que se desea incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un ítem en particular
+      o un grupo de ítems. Si este dato es dejado en blanco, se incluirán
+      en el informe todos los comprobantes sin distinción de insumos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los atributos
+      asociados a los ítems incluidos en los comprobantes que se desean
+      incluir en el listado con sus valores.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Código</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del atributo asociado a los
+      ítems cuyos comprobantes se desea incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al atributo y al valor
+      de atributo que se indique se considerará o no cada uno de los ítems
+      del rango seleccionado, según los atributos y valores que se hayan
+      asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún atributo,
+      todos los ítems del rango solicitado intervendrán en el listado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del atributo correspondiente
+      al código informado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Valor del atributo informado asociado
+      a los ítems cuyos comprobantes se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder a un valor ya definido
+      en el sistema para el atributo indicado en el campo Código.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al atributo y al valor
+      de atributo que se indique se considerará o no cada uno de los ítems
+      del rango seleccionado, según los atributos y valores que se hayan
+      asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica un valor, se incluirán
+      en el listado los ítems que tengan asociados el valor del atributo
+      indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún valor de
+      atributo, todos los ítems del rango solicitado que tengan el atributo
+      indicado, intervendrán en el listado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del valor asociado al
+      atributo correspondiente al código informado.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673625032" href="#"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+  <div data-targetname="POPUP673625032">
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita" style="counter-set: prl-p-h_item_con_vineta_negrita 0;"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Color
+        pendiente</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">En
+        las hojas de ruta cuyo producto terminado principal deje el color
+        pendiente y no se indique ningún color en la columna Color prod<i style="mso-bidi-font-style: normal;">.</i> en el cálculo del costo
+        del producto terminado intervendrán todos los insumos que en la definición
+        de la hoja de ruta presenten o no color en la columna Color prod<i style="mso-bidi-font-style: normal;">.</i> pero, para aquellos insumos
+        que presentan un color en la columna Color prod en la definición de
+        la hoja de ruta, el cálculo del costo se promediará por el número
+        de colores distintos que, en la definición de la hoja de ruta, aparecen
+        en la columna Color prod<i style="mso-bidi-font-style: normal;">.</i>
+        considerando todas las tareas.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">En
+        este caso en las emisiones detalladas se indicará un <b style="mso-bidi-font-weight: normal;">**</b>
+        al lado del costo de los insumos cuyo costo fue promediado. En las
+        emisiones consolidadas, cuando se detalle el costo de insumos, se
+        indicará al lado del mismo y, cuando no se detalle, se indicará al
+        lado del costo del producto terminado.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">En
+        ambos casos, cuando corresponda, se detallará una nota aclaratoria
+        al pie de página indicando que <b style="mso-bidi-font-weight: normal;">**</b>
+        indica que el costo fue prorrateado por colores pendientes del producto
+        terminado.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">En
+        cualquier otro caso el costo de los insumos se realizará como hasta
+        ahora.</span></p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Recursos
+        de terceros</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">C</span><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">uando
+        se emita sin explosión de semi-elaborados, para hojas de ruta u órdenes
+        de producción, el costo de los recursos de terceros a los que se les
+        haya indicado un servicio se calculará en base al precio del servicio
+        en la lista de precios asociada al proveedor establecido en el recurso.
+        Cuando se emita para hojas de ruta y no se haya indicado el recurso
+        se usará el recurso costo estándar del tipo de recurso.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Cabe
+        observar que el costo del recurso de terceros será 0 (cero) si no
+        se hubiera indicado un servicio o el proveedor del recurso no tuviera
+        asociada una lista de precios o no hubiese una lista vigente a la
+        fecha de estimación o el precio del servicio no figurara en la lista
+        de precios.<span style="mso-spacerun: yes;"> </span></span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">E</span><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">n las
+        emisiones detalladas</span><span lang="ES" xml:lang="ES">, para cada
+        recurso se indicará, cuando corresponda y lo presente, el código del
+        servicio ingresado para el recurso en la hoja de ruta o en la orden
+        de producción. En las emisiones personalizadas detalladas se podrán
+        detallar la descripción y el</span> <span lang="ES" xml:lang="ES" style="font-size: 10.0pt; 
+												 mso-bidi-font-family: Arial;">GTIN/c</span><span lang="ES" xml:lang="ES" style="mso-bidi-font-family: Arial;">ódigo
+        alternativo</span> <span lang="ES" xml:lang="ES">del mismo.</span></p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Sobrecosto
+        de insumos</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">C</span><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">uando
+        se emita para hojas de ruta sin indicar explosión de semi-elaborados,
+        para aquellas hojas que presenten sobrecosto en insumos, dicho sobrecosto
+        se considerará en el cálculo del costo final de los productos terminados.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Cuando
+        el listado de costos<span style="mso-spacerun: yes;"> </span> se
+        emita detallado, sin ordenar por tarea, el sobrecosto en insumos se
+        detallará luego de todos los insumos y cuando se emita ordenado por
+        tarea luego del detalle de los insumos de cada tarea.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Cuando
+        se emita consolidado aparecerá englobado en el costo total de los
+        insumos.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Cabe
+        aclarar que si se indica listar órdenes de producción no hay cambios
+        al respecto.</span></p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Valorización
+        a Lista de precios</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">C</span><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">uando
+        se indique valorizar por lista de precios, no se controlará que la
+        fecha a la cual se indica valorizar corresponda a una fecha de vigencia
+        de la lista indicada. </span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Cuando
+        no se indique una fecha a la cual valorizar, se considerará la fecha
+        del día en que se emite el listado.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Debido
+        a esta modificación ya no será posible consultar, en el campo A fecha</span><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">, las
+        vigencias de las listas de precios.</span></p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">Redondeo</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES" style="mso-fareast-language: EN-US;">En
+        los cálculos correspondientes a productos terminados, en los que sea
+        necesario redondear, se redondeará hacia la unidad menor aplicando
+        el redondeo que se haya indicado.</span></p>
+    <p> </p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP673564142');
+    TextPopupInit('a2', 'POPUP673557637');
+    TextPopupInit('a3', 'POPUP673600533');
+    TextPopupInit('a4', 'POPUP673613674');
+    TextPopupInit('a5', 'POPUP673625032');
+    //]]>
+  </script>
+
+</body></html>

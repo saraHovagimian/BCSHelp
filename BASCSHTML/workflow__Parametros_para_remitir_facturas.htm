@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.6.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Workflow parametros para Remitir facturas</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Remitir facturas"/><meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Remitir facturas</h1>
+<p class="H_Texto">En este punto se pueden informar los usuarios responsables de registrar los remitos, para los casos en donde el estilo de trabajo sea facturar la mercadería primero y remitirla después.</p>
+<p class="H_Texto">Las condiciones pueden ser: para todos los facturas, con ítems, clientes, rutas, transportistas determinados y medios de pago contado o cuenta corriente.</p>
+<p class="H_Texto">También es posible ingresar los talonarios por defecto que se utilizarán en la generación de facturas, según la sucursal, el depósito y el tipo de factura a emitirse.</p>
+<p class="H_Texto">Estos parámetros son utilizados para el circuito de agenda. Una vez realizada la parametrización, el sistema en forma automática, actualizará las agendas de cada uno de los usuarios con las facturas que tengan pendientes.</p>
+<p class="H_Texto">Los datos que deben ingresarse son los siguientes:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Empresa</p>
+<p class="H_Parrafo_de_Item">Número de hasta dos dígitos que identifica a la empresa donde hay al menos un responsable de la emisión de facturas.</p>
+<p class="H_Parrafo_de_Item">Debe corresponder a una empresa ya definida en el sistema.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Para todos los facturas</p>
+<p class="H_Parrafo_de_Item">Activando este campo todos los facturas pendientes de ser remitidas aparecen en la agenda de la persona que se defina en el campo <font style="font-weight: bold;">Usuarios.</font></p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Usuarios</p>
+<p class="H_Parrafo_de_Item">Nombre del responsable de remitir las facturas.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Medios de pago</p>
+<p class="H_Parrafo_de_Item">Este campo debe activarse en caso que interese indicar uno o más usuarios responsables de remitir las facturas de contado o en cuenta corriente.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Medio de pago Contado</p>
+<p class="H_Parrafo_de_Sub-Item">Si se activa este campo aparecen las facturas de contado pendientes de ser remitidas en la agenda de la persona que se defina en el campo <font style="font-weight: bold;">Usuarios.</font></p>
+<p class="H_Parrafo_de_Sub-Item">Si se indica este campo, debe completarse el campo Usuarios que se presenta a continuación:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Usuarios</p>
+<p class="H_Parrafo_de_Sub-Item">Nombre del usuario/usuarios responsable de remitir los facturas de contado.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Medio de pago Cuenta Corriente</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que interese indicar uno o más usuarios responsables de registrar remitos en cuenta corriente</p>
+<p class="H_Parrafo_de_Sub-Item">Si se indica este campo, debe completarse el campo Usuarios que se presenta a continuación:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Usuarios</p>
+<p class="H_Parrafo_de_Sub-Item">Nombre del responsable de remitir las facturas en cuenta corriente.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha Ítems</p>
+<p class="H_Parrafo_de_Item">En esta ficha es posible indicar diferentes usuarios encargados de remitir facturas, según los ítems a entregar.</p>
+<p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Con ítems determinados</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que interese que distintos usuarios registren remitos según los ítems de los que se trate.</p>
+<p class="H_Parrafo_de_Sub-Item">Luego, se debe indicar el atributo y valores en base a los cuales se determinarán que ítems remitirá cada usuario.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+<p class="H_Parrafo_de_Sub-Item">Se informa el atributo en base a cuyos valores se indicarán los usuarios encargados de remitir las facturas.</p>
+<p class="H_Parrafo_de_Sub-Item">Si por ejemplo se indica Tipos de producto, y este atributo tiene valores 01-Alimenticios y 02 Bazar, se podrá indicar un usuario, o varios usuarios para que registren los remitos de pedidos que incluyan ítems alimenticios, y otro u otros para registrar los remitos correspondientes a productos de bazar.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de atributos:</p>
+<p class="H_Parrafo_de_Sub-Item">En esta tabla se asignan, para los valores del atributo informado, los usuarios responsables de las entregas.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Valor del atributo, correspondiente a los ítems que entregará el/los usuarios responsables de las entregas.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del valor del atributo.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del usuario/usuarios encargados de remitir las facturaras, para el valor de atributo especificado.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha Clientes</p>
+<p class="H_Parrafo_de_Item">En esta ficha es posible indicar diferentes usuarios encargados de las entregas, en función de los clientes destinatarios de la mercadería a entregar.</p>
+<p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> De Clientes determinados</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que sea necesario que distintos usuarios remitan facturas, según los clientes de los que se trate.</p>
+<p class="H_Parrafo_de_Sub-Item">Luego se debe indicar el atributo y valores en base a los cuales se determinarán a que clientes remitirá cada usuario.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+<p class="H_Parrafo_de_Sub-Item">Se informa el atributo en base a cuyos valores se indicarán los usuarios encargados de registrar los remitos.</p>
+<p class="H_Parrafo_de_Sub-Item">Si por ejemplo se indica Actividad Clientes, y este atributo tiene valores 01-Hipermercado y 03 Mayorista, se podrá indicar un usuario para que registre los remitos de facturas a clientes de actividad Hipermercado, y otro para registrar los remitos correspondientes a clientes mayoristas.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de atributos:</p>
+<p class="H_Parrafo_de_Sub-Item">En esta tabla se asignan, para los valores del atributo informado, los usuarios responsables de las entregas.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Valor del atributo correspondiente a los clientes para los que registrará remitos el/los usuarios que se informen en la línea.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del valor del atributo.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del usuario encargado de remitir los facturas, para los valores de atributo de tipo clientes especificados.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha Depósitos</p>
+<p class="H_Parrafo_de_Item">En este ficha es posible indicar diferentes usuarios encargados de registrar remitos, en función de distintos depósitos desde los cuales se entregue la mercadería.</p>
+<p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Con depósito determinado:</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que interese que distintos usuarios registren remitos según los depósitos desde los que se entregue la mercadería.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se tilda este campo deberá completarse la tabla que se presenta a continuación:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de depósitos:</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Código de depósito, correspondiente al usuario responsable de la remisión de facturas. Ejemplo: 1 (Casa Central).</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del depósito. Ejemplo: Casa Central, Depósito Flores, etc.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del usuario encargado de remitir las facturas.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha Transporte</p>
+<p class="H_Parrafo_de_Item">En este ficha es posible indicar diferentes usuarios encargados de las entregas, en función de distintas rutas de entrega de mercadería y/o transportistas.</p>
+<p class="H_Parrafo_de_Item">También es posible indicar diferentes usuarios en base de los transportistas que se harán cargo de las entrega.</p>
+<p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Con rutas determinadas:</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que interese que distintos usuarios registren remitos según las diferentes rutas de entrega.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se tilda este campo debe completarse la tabla que se presenta a continuación:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de rutas:</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Ruta:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Código de la ruta en base a la cual se informa un responsable de la remisión de pedidos. Ejemplo: R02, R10, etc.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre de la ruta. Ejemplo: R02: Zona Oeste Ruta 7.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del usuario encargado de remitir los facturas.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> De transportistas determinados:</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que interese que distintos usuarios registren remitos según los transportistas que entreguen la mercadería.</p>
+<p class="H_Parrafo_de_Sub-Item">En caso que se active este campo, debe completarse la tabla que se presenta a continuación:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de transportistas:</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Transportista:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Código del transportista en base al cual se informa un responsable de la remisión de facturas. Ejemplo: T001.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del transportista. Ejemplo: para el código T001: Transporte Jaime S.A.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del usuario encargado de remitir las facturas.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha de Resolución:</p>
+<p class="H_Parrafo_de_Item">Se indican en esta ficha los talonarios por defecto a utilizar en la generación de los remitos respectivos, según la sucursal, el depósito y el tipo de remito a emitirse.(egreso o egreso diferido).</p>
+<p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes:</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Sucursal:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Código de la sucursal para la cual es posible registrar los remitos de las facturas pendientes. Por ejemplo:5 (sucursal cinco).</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Denominación de la sucursal informada.</p>
+<p class="H_Parrafo_de_Sub-Item">Por ejemplo: Sucursal 3, Sucursal 5.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Número de hasta cuatro dígitos que identifica al depósito.</p>
+<p class="H_Parrafo_de_Sub-Item">Por ejemplo, <font style="font-weight: bold;">1, 11, 25,</font> etc.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Denominación del depósito.</p>
+<p class="H_Parrafo_de_Sub-Item">Por ejemplo, <font style="font-weight: bold;">Depósito central</font>, <font style="font-weight: bold;">Depósito Almagro ,</font> etc.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Tipo de comprobante:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Se debe seleccionar el tipo de egreso, según se requiera generar un comprobante de egreso o de egreso diferido.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Talonario:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Código de los talonario que se requiere que utilice el sistema para generar los comprobantes de egreso del depósito indicado.</p>
+
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+
+<p class="H_Parrafo_de_Sub-Item">Nombre del talonario informado.</p>
+
+
+</body></html>

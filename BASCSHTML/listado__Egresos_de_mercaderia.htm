@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.3.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Egresos de mercaderia</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Egresos,Mercadería"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Listado de Egresos de mercadería</h1>
+  <p class="H_Texto">Este informe permite ver los datos asociados a los comprobantes de egreso de mercadería y egresos de mercadería diferidos registrados en el sistema.</p>
+  <p class="H_Texto">Se pueden imprimir los comprobantes por rangos de <a href="tabla__Depositos_Plantas.htm">depósitos</a> de los que egresaron, por rangos de <a href="tabla__Conceptos.htm">conceptos</a> y para un determinado período de tiempo. Además, pueden seleccionarse los comprobantes a imprimir según el destino que tuvieron.</p>
+  <p class="H_Texto">Si se indica un dato en el campo <font style="font-weight: bold;">Hasta fecha</font>, se agrega la posibilidad de solicitar el informe para cantidades pendientes hasta dicha fecha. En ese caso, las cantidades pendientes y entregadas/facturadas que se exhiban, serán las correspondientes a la fecha indicada en el campo <font style="font-weight: bold;">Hasta fecha</font> mencionado y no las actuales.</p>
+  <p class="H_Texto">Es importante destacar que las cantidades pendientes exhibidas se encuentran expresadas en la <font style="font-weight: bold;">Unidad para cantidades pendientes</font> informada para cada ítem en la tabla de <a href="tabla__Bienes.htm">bienes</a>.</p>
+  <p class="H_Texto">Se muestra para cada comprobante de egreso de mercadería, diferido o no, del rango solicitado, su fecha, tipo, número interno, número externo, concepto, depósito y el detalle de las líneas ingresadas en cada uno.</p>
+  <p class="H_Texto">En las líneas se muestran el ítem, la cantidad remitida o la asignada (mediante egresos diferidos), la cantidad pendiente de facturar o cancelar (en egresos diferidos), los datos de los comprobantes de egreso (pedidos, facturas o egresos diferidos) a los cuales se hace referencia en cada línea, números de despachos, partidas y demás datos. Por cada comprobante se exhibe, además, el número de lote asociado al depósito.</p>
+  <p class="H_Texto">Si existen comprobantes de egreso de mercadería pendientes de control, éstos aparecerán acompañados de una letra <font style="font-weight: bold;">P</font> a la izquierda del número de comprobante, indicando que el mismo se encuentra en tal estado y una nota al pie de página haciendo referencia a dicha marca.</p>
+  <p class="H_Texto">Se podrá solicitar el informe valorizado según alguno de los métodos de valuación previstos por el sistema (contable, costo promedio ponderado, costo promedio ponderado al cierre, costo F.I.F.O., costo L.I.F.O. o a lista de precios), con valores en moneda local o Moneda de Valuación Alternativa (en caso de haber definido una en <a href="parametros__Items.htm">Parámetros de Items</a>), permitiendo costear la cantidad original del egreso, o la cantidad pendiente del mismo. En el caso de los bienes de tipo <font style="font-weight: bold;">Conjunto</font>, el costo unitario de los mismos será la suma de los costos unitarios de los componentes que lo conforman multiplicados por la cantidad de unidades de cada uno de ellos.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a href="listado_documentos_valorizados_tener_en_cuenta.htm">Para tener en cuenta</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP682160626" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP682160626">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito/Planta</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Depositos_Plantas.htm">depósito</a> cuyos comprobantes de egreso de mercadería se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un depósito en particular o un grupo de depósitos. Si este dato es dejado en blanco, se incluirán todos los depósitos en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Destino</p>
+    <p class="H_Parrafo_de_Sub-Item">Destino de los comprobantes de egreso de mercadería que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Cliente</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona destino <font style="font-weight: bold;">Cliente</font> se incluirán en el listado los egresos de mercadería de <a href="tabla__Clientes.htm">clientes</a> y se podrá seleccionar luego un rango de clientes.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Proveedor</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona destino <font style="font-weight: bold;">Proveedor</font> se incluirán en el listado los egresos de mercadería de <a href="tabla__Proveedores.htm">proveedores</a> y se podrá seleccionar luego un rango de proveedores a incluir en el listado.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Agente</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona destino <font style="font-weight: bold;">Agente</font> se incluirán en el listado los egresos de mercadería de <a href="tabla__Agentes.htm">agentes</a> y se podrá seleccionar luego un rango de agentes a incluir en el listado.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Depósito</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona destino <font style="font-weight: bold;">Depósito</font> se incluirán en el listado los comprobantes de transferencias entre <a href="tabla__Depositos_Plantas.htm">depósitos</a> y se podrá seleccionar luego un rango de depósitos destino a incluir en el listado.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Planta</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona destino <font style="font-weight: bold;">Planta</font> se incluirán en el listado los comprobantes de transferencias entre plantas y se podrá seleccionar luego un rango de plantas destino a incluir en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código de destino</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Clientes.htm">cliente</a> , <a href="tabla__Proveedores.htm">proveedor</a> , <a href="tabla__Agentes.htm">agente</a> o <a href="tabla__Depositos_Plantas.htm">depósito</a> cuyos comprobantes de egreso de mercadería asociados se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">El código que se ingrese corresponderá a la entidad que se haya indicado como destino.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un cliente, proveedor, agente o depósito en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán todos los clientes, proveedores, agentes o depósitos en el informe dependiendo del destino indicado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Concepto</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de tres caracteres correspondiente al <a href="tabla__Conceptos.htm">concepto</a> asociado a los comprobantes de egreso de mercadería que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un concepto en particular o un grupo de conceptos. Si este dato es dejado en blanco, se incluirán todos los conceptos en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código de selección</p>
+    <p class="H_Parrafo_de_Sub-Item">Se utiliza si el destino solicitado es cliente, proveedor o agente.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al código de selección que se indique se considerará o no cada uno de los clientes, proveedores o agentes del rango seleccionado, según el código de selección que se haya asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los clientes, proveedores o agentes que se incluyen son aquellos cuyo código de selección coincide con el ingresado. Se pueden ingresar los caracteres <font style="font-weight: bold;">?</font> y <font style="font-weight: bold;">*</font> que cumplen la función de comodines. El carácter <font style="font-weight: bold;">?</font> se utiliza para un único carácter y el <font style="font-weight: bold;">*</font> para varios.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún código de selección, todos los clientes, proveedores o agentes del rango solicitado intervendrán en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El prefijo debe corresponder a un <a href="tabla__Talonarios.htm">talonario</a> que admita comprobantes de egresos de mercadería.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco se incluirán en el listado los egresos de mercadería sin tener en cuenta su numeración.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Números de los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse un número en particular o un rango de números. Si este dato es dejado en blanco y se indicó un prefijo, se incluirán todos los comprobantes de egreso de mercadería del prefijo indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP682919123" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP682919123">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Comprobantes</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Egresos pendientes</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Egresos no pendientes</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Egresos diferidos pendientes</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Egresos diferidos no pendientes</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Solo egresos de control.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se mostrará para cada ítem, la cantidad remitida o asignada (mediante egresos diferidos), la cantidad pendiente de facturar o cancelar (en egresos diferidos), los datos de los comprobantes de egreso (pedidos, facturas o egresos diferidos) a los cuales se hace referencia en cada línea, números de despachos, partidas y demás datos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Los comprobantes de egreso o comprobantes de egreso diferido pendientes de control aparecerán en el informe con una letra <font style="font-weight: bold;">P</font> a la izquierda indicando que se encuentran en esa situación.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cantidades pendientes al</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo se habilita dependiendo de la opción elegida en el campo período de la ficha Rangos y si el campo Egresos diferidos no pendientes está activado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea incluir en el informe el dato de las cantidades pendientes hasta determinada fecha.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Orden que se les desea otorgar a los comprobantes en el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Comprobante</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Comprobante se ordenan los comprobantes listados por número, Clientes, Agentes, <a href="tabla__Depositos_Plantas.htm">Depósitos</a>.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Destino</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Destino se ordenan los datos listados por código de destino, es decir, por código de <a href="tabla__Clientes.htm">cliente</a>, <a href="tabla__Proveedores.htm">proveedor</a>, <a href="tabla__Agentes.htm">agente</a> o <a href="tabla__Depositos_Plantas.htm">depósito</a> dependiendo del tipo de <a href="tabla__Clientes.htm">destino seleccionad</a>o. Se muestran para cada cliente, proveedor, agente o depósito los egresos asociados y se incluyen totales por destino. Para cada destino se ordena a su vez por comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Item se ordenan los datos listados por código de <a href="tabla__Bienes.htm">ítem</a>. Se muestran para cada ítem los egresos en los que participa y se incluyen totales por ítem. Por cada ítem se ordenará a su vez por fecha.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Consolidar ítems</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea consolidar los ítems por cada comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">No se consolidará los ítems que presenten distinto color, talle, observación, unidad pendiente, despacho, partida o que se incluyan en distintos comprobantes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Detallar componentes</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que se active el campo, para los ítems de tipo Conjunto, se detallan sus componentes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción se habilita sólo si se indica en el cuadro Comprobantes, Egresos pendientes y/o Egresos diferidos pendientes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valorización</p>
+    <p class="H_Parrafo_de_Sub-Item">En este cuadro se debe indicar si se desea emitir el listado valorizado o no. Se podrá valorizar la cantidad original incluida en el egreso o la cantidad pendiente del mismo.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Sin valorizar</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Valorizar cantidad original</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Valorizar cantidad pendiente</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Método de valuación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de qué método de valuación se desea utilizar para valorizar las cantidades elegidas en la opción anterior (cantidad original o cantidad pendiente).</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones que se ofrezcan dependerán de los <a href="parametros__Items.htm">métodos de valuación elegibles</a> indicados en la pantalla <a href="parametros__Items.htm">parámetros de ítems</a>. No obstante, los métodos que el sistema ofrece por defecto son los siguientes:</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Contable</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">C.P.P. al cierre</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">C.U.C. (Costo Ultima Compra)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">L.I.F.O. (Last In First Out)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">F.I.F.O. (First In First Out)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Lista de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Precio de compra</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Ocasional</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Lista de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Código de lista de precios que se utilizará para efectuar la valuación de las cantidades de los ítems.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo está habilitado si se indicó método de valuación Lista de precios.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La lista de precios que se indique puede haberse definido como dinámica.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valores en</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Moneda de valuación que se desea utilizar para valorizar los movimientos que se incluyen en el listado. Este cuadro solo se habilitará en caso de haber definido una Moneda de Valuación Alternativa. Aparecerá entonces la opción de emitir el informe con valores expresados en moneda local o en la Moneda de Valuación Alternativa definida.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Pesos</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Dólares</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP684429816" href="#"><span data-open-text="true" data-skip-index="true">Ficha Destino</span><span data-close-text="true">Ficha Destino</span></a></p>
+  <div data-targetname="POPUP684429816">
+    <p class="H_Parrafo_de_Item">Permite seleccionar los comprobantes a
+      incluir en el informe en base a determinados atributos -valor de cliente.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP682160626');
+    TextPopupInit('a2', 'POPUP682919123');
+    TextPopupInit('a3', 'POPUP684429816');
+    //]]>
+  </script>
+
+</body></html>

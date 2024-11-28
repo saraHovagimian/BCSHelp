@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.0_14"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Valuación</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Valuación</h1>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Este programa efectúa 
+ la valorización de movimientos de materiales ingresados en la empresa 
+ hasta una fecha determinada.</span></p>
+<p class="H_Texto" style="mso-fareast-language: EN-US;"><span lang="ES" xml:lang="ES">Este es un proceso manual y tiene por objeto incluir 
+ la información de costos en informes o en la generación de listas; dichos 
+ datos no son definitivos dado que, en el proceso de cierre, la valuación 
+ mensual se vuelve a realizar, generándose el asiento mencionado.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto">Para realizar la valuación, debe ingresarse la fecha 
+ hasta la cual se desea realizar la valuación y presionar &quot;Aceptar&quot;.</p>
+<p class="H_Texto">En el caso que no sea posible valuar en el tiempo máximo 
+ de espera indicado para valuación en parámetros generales, si se solicitó 
+ valuación por el método contable costo última compra, el sistema emitirá 
+ un aviso avisando de tal eventualidad, indicando al usuario que solicite 
+ dicho proceso más tarde.</p>
+<p class="H_Texto">Para el resto de métodos de valuación en el caso de 
+ los informes, el sistema avisará de tal eventualidad permitiendo al usuario 
+ continuar sin valorizar los movimientos, o seguir esperando la posibilidad 
+ de valuar los movimientos pendientes</p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><span lang="ES" xml:lang="ES">E</span>l 
+ proceso de valuación se basa en la siguiente ecuación aplicable a cada 
+ ítem:</span></p>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><span lang="ES" xml:lang="ES">Stock 
+ inicial + Ingresos – Egresos +/- Diferencia por tenencia = Stock Final</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><b style="mso-bidi-font-weight: normal;">Stock 
+ Inicial</b>= Es el valor del stock al fin del período anterior (cierre 
+ de subdiario de materiales) teniendo en cuenta las existencias en depósito, 
+ en plantas y en tránsito, según el costo contable que figura en cada ítem 
+ al momento del cierre.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><b style="mso-bidi-font-weight: normal;">Ingresos</b>= 
+ Es la suma de los ingresos del periodo al valor de compra de cada uno 
+ de ellos teniendo en cuenta aquellos que tienen asociada una orden de 
+ compra o facturas con fecha anterior al cierre del periodo (si las facturas 
+ son posteriores no se tienen en cuenta y se generará un ajuste cuando 
+ se realice un cierre posterior que las incluya).</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><b style="mso-bidi-font-weight: normal;">Egresos</b>= 
+ Es el valor de los egresos al costo contable de cada ítem a la fecha de 
+ fin del periodo (fecha de cierre del subdiario). Todos los egresos se 
+ consideran al mismo costo.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><b style="mso-bidi-font-weight: normal;">Stock 
+ Final</b>= Es el valor de las existencias a fin del periodo teniendo en 
+ cuenta las existencias en depósito, en plantas y en tránsito, según el 
+ costo contable que figura en cada ítem al momento del cierre.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><b style="mso-bidi-font-weight: normal;">Diferencia 
+ por tenencia</b>= Según el método de valuación utilizado por cada ítem, 
+ por ejemplo lista de precios, es posible que ” Stock inicial + Ingresos 
+ – Egresos” no coincida con el “Stock Final”. Dichas diferencias se reflejan 
+ en términos de diferencia por tenencia. Lo mismo puede pasar si se cambia 
+ el método de valuación contable de un ítem entre un cierre y otro.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Este algoritmo permite 
+ hacer un seteo de costos haciendo un cierre con método contable lista 
+ de precios y, posteriormente, volver al método contable que se prefiera.Los 
+ bienes que no administran stock solo podrán tener como método de valuación 
+ contable “Costo última compra” o “Lista de precios”.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">La valuación de los productos 
+ terminados en los partes de producción se realiza con el método de costo 
+ estándar tomándolo de una lista de precios. La diferencia entre el costo 
+ estándar y el costo real de lo producido se asignará a una cuenta de diferencias 
+ informada en un parámetro. Para la confección de la lista de costos se 
+ agrega la posibilidad de generar dicha lista en base a una estimación 
+ de costos que tiene en cuenta la hoja de ruta por defecto de cada producto 
+ y las de sus semielaborados, de manera similar al informe de estimación 
+ de costos con explosión de insumos.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto_negrita"><span lang="ES" xml:lang="ES">Valuación a Precio 
+ de compra</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">En caso que se encuentre 
+ habilitado el método de valuación &quot;Precio de compra&quot;, este se 
+ utilizará para la  valuación de los bienes que no administran stock 
+ o servicios de tipo cantidad, que lo tengan indicado como método de valuación 
+ contable. Para el resto de bienes o servicios que no lo tengan indicado 
+ como método de valuación contable, el valor del costeo por ese método 
+ siempre será cero.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">La diferencia de este 
+ método de valuación respecto de los otros se basa en la valuación de los 
+ egresos de mercadería. Los mismos no se valúan al costo hasta el momento 
+ o al costo de las partidas FIFO o LIFO o según la última compra o una 
+ lista de precios, sino según el valor de la compra asociada.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Por ejemplo, los egresos 
+ por consumo se valúan siempre al valor del ingreso que les dio origen. 
+ El resto de egresos que aún no tengan habilitada la forma de indicar qué 
+ ingreso o compra les dio origen, tendrán un costo cero según este método.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Los posibles ajustes del 
+ ingreso o compra relacionada con un egreso por consumo, también repercuten 
+ sobre los costos de dicho egreso por consumo.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"> </p>
+
+
+</body></html>

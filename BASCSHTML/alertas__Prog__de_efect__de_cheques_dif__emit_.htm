@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.5.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Alertas Prog de Efec. de cheques dif. emitidos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Programación de efectivización de cheques diferidos emitidos</h1>
+  <p class="H_Texto">El sistema brinda la posibilidad de programar procesos y acciones del sistema para que se ejecuten en forma automática en determinados momentos y con determinada frecuencia y periodicidad. El proceso que puede programarse en este caso es la efectivización de cheques diferidos. Primero vamos a tratar en detalle en qué consiste el proceso y luego veremos cómo se realiza la programación automática de la tarea.</p>
+  <p class="H_Texto">Los cheques de pago diferido que se ingresan en el sistema pueden contabilizarse en una <a href="tabla__Cuentas.htm">imputación contable</a> provisoria hasta que llegue la fecha de pago de los mismos.</p>
+  <p class="H_Texto">La efectivización de cheques diferidos es un proceso automático del sistema mediante el cual los cheques diferidos que se contabilizaron en imputaciones provisorias, pasan de esas imputaciones a las imputaciones contables definitivas de la <a href="tabla__Cuentas_bancarias.htm">cuenta bancaria</a> de cada cheque.</p>
+  <p class="H_Texto">La imputación contable provisoria se asocia a cada cuenta bancaria que se ingresa al sistema. Si no se indica ninguna imputación provisoria, los cheques diferidos se contabilizan directamente en la imputación de la cuenta bancaria.</p>
+  <p class="H_Texto">Los cheques contabilizados en imputaciones provisorias se denominan <font style="font-weight: bold;">No efectivizados</font> y una vez ejecutado este proceso quedarán efectivizados aquellos cheques diferidos cuya fecha de pago no sea posterior a la fecha en la que se ejecuta el proceso.</p>
+  <p class="H_Texto">La efectivización de cheques diferidos es un comprobante que se registra en el sistema, por lo tanto debe tener definido un <a href="tabla__Talonarios.htm">talonario</a> para que el proceso pueda realizarse y debe tener asociado un <a href="tabla__Subdiarios.htm">subdiario</a> de tipo <font style="font-weight: bold;">Caja y Bancos</font> para su registración contable. Se generará un comprobante de efectivización por cada <a href="tabla__Cuentas_bancarias.htm">cuenta bancaria</a> a la que se le efectivicen cheques diferidos.</p>
+  <p class="H_Texto">Los cheques no efectivizados se reflejan en el informe de valores entregados, en los saldos bancarios y en el flujo de fondos. Una vez efectivizados aparecen también en la conciliación bancaria. Los comprobantes de efectivización podrán verse en la emisión del subdiario correspondiente y en el informe de comprobantes de bancos.</p>
+  <p class="H_Texto">Para realizar la tarea debe completarse los siguientes datos:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Empresa</p>
+  <p class="H_Parrafo_de_Item">Empresa sobre la cual se realiza el proceso. Este dato lo sugiere el sistema y no puede ser modificado.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Talonario</p>
+  <p class="H_Parrafo_de_Item">En este campo deberá indicarse el talonario correspondiente a los comprobantes de efectivización que se generen, se ofrecerá uno como valor por defecto y también podrá modificarse.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Programar trabajo</p>
+  <p class="H_Parrafo_de_Item">Al pulsar este botón se accede a una pantalla. Esta solicita una serie de datos para programar la forma en que se ejecutará el proceso, tales como la periodicidad del mismo y la frecuencia diaria, se podrá configurar para que se ejecute siempre un día y a una determinada hora o se pueden indicar períodos de días, semanas o meses pasados los cuales se ejecutará el proceso.</p>
+  <p class="H_Parrafo_de_Item">La modificación de la programación periódica de la efectivización de cheques diferidos sólo podrá ser realizada por el administrador del sistema y podrá modificarse esta programación todas las veces que sea necesario.</p>
+  <p class="H_Parrafo_de_Item">La fecha hasta la cual se efectivizan los cheques es la fecha del día en que se realiza el proceso.</p>
+
+</body></html>

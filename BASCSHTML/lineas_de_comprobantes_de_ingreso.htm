@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_76"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Lineas de comprobantes de ingreso</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Lineas de comprobantes de ingreso"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Líneas de comprobantes de ingreso</h1>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Item</p>
+<p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el comprobante.</p>
+<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a>, 
+ <a href="tabla__Servicios.htm">servicio</a> o <a href="tabla__Items_varios.htm">ítem 
+ vario</a> ingresado en el sistema.</p>
+<p class="H_Parrafo_de_Sub-Item">Puede ingresarse el código del ítem o 
+ su código alternativo.</p>
+<p class="H_Parrafo_de_Sub-Item">En este campo se cuenta con la opción 
+ de salir de la línea con la flecha hacia abajo del teclado. Al digitar 
+ dicho botón se indica el valor uno para el campo cantidad de esa línea 
+ (según la unidad de venta del bien) y se inserta una nueva línea para 
+ el comprobante. Esto ocurre sólo si el ítem no maneja dimensiones, contenedores, 
+ despachos, partidas, colores o números de serie. En estos casos, el cursor 
+ se posiciona en el campo cantidad de la línea tipeada ya que es necesario 
+ ingresar datos adicionales. Esta nueva opción de tipeo habilita la posibilidad 
+ de ingresar líneas de ítems con lector de código de barras de teclado.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
+<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el dato 
+ anterior.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción 
+ larga, se exhibirá esta si en los <a href="parametros__Datos_generales.htm">Parámetros 
+ de datos generales</a> se indica eso. Si no, se exhibirá la otra descripción. 
+ Si el ítem no tiene descripción asociada, se solicitará el ingreso de 
+ un detalle del mismo en este momento.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Comprobante</p>
+<p class="H_Parrafo_de_Sub-Item">Número de comprobante al que se hace referencia 
+ en la línea del comprobante de ingreso.</p>
+<p class="H_Parrafo_de_Sub-Item">Este campo no está disponible si en los 
+ Parámetros de Datos Generales se indicó que no se utiliza la columna de 
+ comprobantes referenciados.</p>
+<p class="H_Parrafo_de_Sub-Item">Si la línea del ingreso de materiales 
+ fue insertada automáticamente en el comprobante mediante la selección 
+ de uno o más comprobantes pendientes, en esta columna se exhibe el número 
+ del comprobante seleccionado, correspondiente a cada ítem.</p>
+<p class="H_Parrafo_de_Sub-Item">Aquí se presenta la posibilidad de invocar 
+ un requerimiento, una orden de compra, un egreso de materiales o una factura 
+ de compra para el ítem indicado en la línea del comprobante. Es decir, 
+ una vez indicado el ítem es posible pulsar la tecla <font style="font-weight: bold;">F3</font> 
+ para buscar y seleccionar la línea del comprobante que se desea incluir 
+ en el ingreso de materiales. Al pulsar <font style="font-weight: bold;">F3</font> 
+ se abre una ventana que contiene una lista con todas las líneas de requerimientos, 
+ en las órdenes de compra, comprobantes de egreso de materiales y facturas 
+ de compra pendientes, ingresados para el ítem indicado. Al seleccionar 
+ una línea en esta tabla, los datos de la misma se copian a la correspondiente 
+ línea del ingreso de materiales. En este caso el número de comprobante, 
+ la cantidad y demás datos correspondientes a la línea del comprobante 
+ seleccionado se copiarán a la línea del ingreso de materiales desde la 
+ que se hizo la selección.</p>
+<p class="H_Parrafo_de_Sub-Item">Este dato no puede ingresarse manualmente. 
+ Se completa automáticamente al seleccionar comprobantes mediante los botones 
+ de comprobantes pendientes o mediante la tecla <font style="font-weight: bold;">F3</font>.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Ref. 
+ Alt.</p>
+<p class="H_Parrafo_de_Sub-Item">Al hacer doble clic sobre esta columna 
+ (Referencia alternativo) se accede a una pantalla en la que se puede seleccionar 
+ una Orden de Compra pendiente en la cual el ítem esté como alternativo 
+ e indicar el ítem al cual reemplaza.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Observaciones</p>
+<p class="H_Parrafo_de_Sub-Item">Si se ha parametrizado el sistema en forma 
+ acorde, aparece una columna para registrar las observaciones en relación 
+ al ítem de la línea.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cantidad</p>
+<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Aquí se presentan varias posibilidades.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de 
+ medida, se solicitará este campo si las compras se registran en la primera 
+ unidad. Si las compras se registran en segunda unidad, al ingresar la 
+ cantidad en la segunda unidad se completará este dato en forma automática 
+ y podrá ser modificado sólo si se indicó que la relación entre las unidades 
+ de medida es <font style="font-weight: bold;">Variable</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a> 
+ y <a href="tabla__Tablas_de_medidas.htm">medidas</a> se abrirá una ventana 
+ que solicitará el ingreso de las cantidades para cada color y medida solicitada, 
+ y al finalizar el ingreso de datos en esa ventana, se completará este 
+ dato con la cantidad total de unidades indicadas para todos los colores 
+ y medidas del ítem.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem es un contenedor, se abrirá 
+ una ventana que solicita el código del ítem que contiene (se ofrecerá 
+ el ítem indicado como default en la tabla de contenedores del bien) y 
+ la cantidad del mismo, y luego se completará este dato con la cantidad 
+ resultante de multiplicar la cantidad indicada por la cantidad de unidades 
+ de este indicada en la definición del ítem contenedor.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con dimensiones, se 
+ abrirá una ventana que solicitará el ingreso de cantidades para cada dimensión 
+ posible definida para el ítem, y luego se completará este dato con la 
+ cantidad resultante de multiplicar la cantidad indicada por todas las 
+ dimensiones del ítem.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el grupo de compras asociado a los 
+ bienes que ingresan lo indica, se controlan las cantidades que ingresan 
+ de modo que la entrega no se realice en forma parcial y, en caso que existan 
+ diferencias, que éstas no excedan los porcentajes de tolerancia máximos 
+ admitidos.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cantidad 
+ en 2da unidad</p>
+<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que ingresan del 
+ ítem indicado en la segunda unidad de medida.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad 
+ de medida, no se solicitará información en este campo.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de 
+ medida, se solicitará este campo si las compras se registran en la segunda 
+ unidad. Si las compras se registran en primera unidad, al ingresar la 
+ cantidad en la primera unidad se completará este dato en forma automática 
+ y podrá ser modificado sólo si se indicó que la relación entre las unidades 
+ de medida es <font style="font-weight: bold;">Variable</font>.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Despacho</p>
+<p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que 
+ indica el número de <a href="despachos.htm">despacho</a> al cual ingresa 
+ el ítem indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems 
+ que trabajan con despachos. Debe corresponder a un despacho definido en 
+ el sistema.</p>
+<p class="H_Parrafo_de_Sub-Item">Cabe acotar que, cuando se cargue un remito 
+ de ingreso referenciando algún comprobante como por ejemplo una orden 
+ de compra, al ingresar el primer despacho, si en el comprobante hay otros 
+ ítems que manejen despachos y no tienen aún uno definido, el sistema consulta 
+ si el usuario desea asignar el despacho recién ingresado a los demás ítems.</p>
+<p class="H_Parrafo_de_Sub-Item">En caso que se conteste “Sí”, el sistema 
+ asignará automáticamente el despacho informado al resto de los ítems, 
+ pudiendo reemplazarse por otros, si lo desea.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Partida</p>
+<p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que 
+ indica el número de la <a href="partidas.htm">partida</a> a la cual ingresa 
+ el ítem indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems 
+ que trabajan con partidas. Debe corresponder a una partida definida en 
+ el sistema para el ítem indicado.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Números 
+ de serie</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem indicado trabaja con números 
+ de serie, se abrirá una ventana que permitirá el ingreso de todos los 
+ números de serie que ingresan con el comprobante.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Números 
+ de serie con cantidades unitarias</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">Se solicita el ingreso de tantos números 
+ como cantidad de unidades ingresen del ítem.</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">El sistema brinda la posibilidad de 
+ ingresar estos números en forma automática definiendo un prefijo común 
+ y un rango de números para los mismos. Esto es muy útil en el caso de 
+ ingresos de grandes cantidades de mercadería seriada.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Números 
+ de serie con cantidades no unitarias</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">El sistema maneja también la idea 
+ de bienes que administran números de serie que no se asocian a cantidades 
+ unitarias.</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">Si el bien no maneja cantidades unitarias, 
+ deberán indicarse tantos números de serie tal que la cantidad de todos 
+ ellos sumada, considerando la unidad de medida del comprobante, deberá 
+ ser igual a la cantidad ingresada para dicho bien si la relación entre 
+ unidades de medida es fija. Si la relación es variable, la suma de cantidades 
+ en ambas unidades de medida deberá ser igual a las cantidades en ambas 
+ unidades de medida indicadas para el bien.</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">A tal fin, se habilita en la pantalla 
+ de ingreso la columna de cantidades para cada número de serie. Si la relación 
+ entre cantidades es fija se ingresa solo la cantidad en la unidad de medida 
+ del comprobante y se calcula la otra unidad de medida según la relación 
+ entre unidades. Si la relación es variable se podrán indicar ambas cantidades.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> Para tener 
+ en cuenta</p>
+<p class="H_Parrafo_de_Sub-Item">Cabe aclarar en cuanto a ingreso por devoluciones, 
+ que las devoluciones de bienes que administren números de serie, deberán 
+ hacerse por la totalidad de la cantidad del número de serie del ítem devuelto.</p>
+<p class="H_Parrafo_de_Sub-Item">En cuanto al ingreso de bienes que maneja 
+ números de serie con doble unidad de medida y relación fija, no se permitirá 
+ el ingreso de éstos, en tanto que la unidad de medida de compras y ventas 
+ sea diferente.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Centro 
+ de apropiación A</p>
+<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro 
+ de apropiación</a> A asociado a la línea del comprobante.</p>
+<p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el comprobante 
+ que tiene una tabla de posiciones contables asociadas, se verificará si 
+ la <a href="tabla__Cuentas.htm">imputación contable</a> de inventario 
+ de la posición contable o la asociada al concepto indicado en el comprobante, 
+ tienen subcuentas de tipo centro de apropiación A o ambos centros. En 
+ ese caso, se solicitará el ingreso del centro de apropiación asociado.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Centro 
+ de apropiación B</p>
+<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro 
+ de apropiación</a> B asociado a la línea del comprobante.</p>
+<p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el comprobante 
+ que tiene una tabla de posiciones contables asociadas, se verificará si 
+ la <a href="tabla__Cuentas.htm">imputación contable</a> de inventario 
+ de la posición contable o la asociada al concepto indicado en el comprobante, 
+ tienen subcuentas de tipo centro de apropiación B o ambos centros. En 
+ ese caso, se solicitará el ingreso del centro de apropiación asociado.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Orden 
+ de producción</p>
+<p class="H_Parrafo_de_Sub-Item">Esta columna sólo aparece en los ingresos 
+ a planta desde depósito.</p>
+<p class="H_Parrafo_de_Sub-Item">Se muestra el prefijo-número de las orden 
+ de producción correspondiente al movimiento.</p>
+<p class="H_Parrafo_de_Sub-Item">Pasando el cursor por la celda se muestra 
+ un tooltip que exhibe el prefijo-número de la orden, la tarea y el producto 
+ terminado principal de la orden de producción en cuestión.</p>
+
+
+</body></html>

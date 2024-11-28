@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.1.1.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Listas de precios Modificacion de precios por atributo</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Modificación de precios por atributo</h1>
+<p class="H_Texto">Esta tarea permite modificar en forma automática los 
+ precios de un conjunto de ítems incluidos en una lista de precios , afectándolos 
+ por un factor, mayor o menor a la unidad.</p>
+<p class="H_Texto">Sólo pueden modificarse listas normales, es decir, que 
+ no se haya indicado Lista dinámica en su definición.</p>
+<p class="H_Texto">La tarea actúa sobre todos aquellos ítems que están 
+ incluidos en la lista y que poseen un <a href="tabla__Atributos.htm">atributo</a> 
+ en común.</p>
+<p class="H_Texto">Es importante tener en cuenta que solo pueden modificarse 
+ los precios de listas de precios con fechas de vigencia iguales o posteriores 
+ a la fecha del día. Ahora bien, si se trata de listas de precios <font style="font-weight: bold;">no habilitadas para ventas</font>, si podrán 
+ modificarse los precios correspondientes a vigencias anteriores.</p>
+<p class="H_Texto">En caso de haberse implementado un circuito de autorización 
+ de listas de precios, también podrán modificarse los precios de listas 
+ habilitadas para ventas con fechas de vigencia anteriores a la fecha del 
+ día siempre y cuando dichas listas se encuentren pendientes de autorizar.</p>
+<p class="H_Texto">Lo interesante a tener en cuenta es que el atributo 
+ que se utiliza para agrupar a los ítems cuyos precios se han de modificar, 
+ es independiente de aquel que se ha utilizado para definir la lista. Esto 
+ posibilita, por ejemplo, determinar los ítems a incluir en la lista en 
+ función de los clientes a los que va destinada y, luego, efectuar modificaciones 
+ de precios por proveedor, línea, marca, tipo de bien, etc.</p>
+<p class="H_Texto">Para realizar la tarea se deben completar los siguientes 
+ datos:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679760298" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a><span style="color: #ff0000;"> 
+ </span></p>
+<div data-targetname="POPUP679760298">
+	<p class="H_Parrafo_de_Item" style="color: #000000;"><span style="color: #000000;">Código 
+	 de empresa en la cual esta definida la lista..</span></p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP673670367" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lista</span><span data-close-text="true">Lista</span></a></p>
+<div data-targetname="POPUP673670367">
+	<p class="H_Parrafo_de_Sub-Item">Código de la lista de precios cuyos 
+	 valores se desea modificar.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP673660437" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Día de vigencia</span><span data-close-text="true">Día de vigencia</span></a></p>
+<div data-targetname="POPUP673660437">
+	<p class="H_Parrafo_de_Sub-Item">Fecha de vigencia correspondiente 
+	 a la lista informada.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP673642739" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Factores de cálculo</span><span data-close-text="true">Factores de cálculo</span></a></p>
+<div data-targetname="POPUP673642739">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Atributos.htm">atributo</a> 
+	 asociado a los ítems de la lista de precios indicada, cuyos precios 
+	 se desean modificar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla 
+	 de valores del atributo</p>
+	<p class="H_Parrafo_de_Sub-Item">Los valores de la lista a modificar 
+	 serán el resultado de multiplicar los precios de los ítems que tienen 
+	 el atributo indicado, por un factor.</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se informa, para 
+	 cada valor del <a href="tabla__Atributos.htm">atributo</a> indicado, 
+	 por cuanto se han de multiplicar los precios asociados para obtener 
+	 los nuevos precios.</p>
+	<p class="H_Parrafo_de_Sub-Item">Los valores resultantes pueden redondearse 
+	 a la unidad o a múltiplos o submúltiplos de la misma.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Valor</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta columna exhibe los códigos de 
+	 los valores del atributo indicado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe los nombres correspondientes 
+	 a los códigos de la columna <font style="font-weight: bold;">Valor</font>.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Factor</p>
+	<p class="H_Parrafo_de_Sub-Item">Factor por el que se multiplican los 
+	 precios correspondientes al valor de atributo del que se trate para 
+	 obtener el nuevo precio a asociar a los ítems que tienen asociados 
+	 el atributo y valor del atributo indicado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para no variar los valores asociados 
+	 a algún valor de atributo en particular, se debe dejar el factor en 
+	 <font style="font-weight: bold;">1</font>.</p>
+	<p class="H_Parrafo_de_Sub-Item">El factor puede ser un número mayor 
+	 o menor a la unidad, entero o decimal, según sean los requerimientos 
+	 a cumplir.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Redondeo</p>
+	<p class="H_Parrafo_de_Sub-Item">Se debe indicar a que unidad se desea 
+	 redondear los valores resultantes del cálculo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Por ejemplo, si se informa <font style="font-weight: bold;">0.01</font>, 
+	 se redondea a dos decimales. En cambio, informando <font style="font-weight: bold;">1</font> 
+	 se redondea a la unidad. Si se informa <font style="font-weight: bold;">5</font>, 
+	 se redondea en múltiplos de 5.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema redondea hacia arriba cuando 
+	 el valor resultante es mayor o igual a la mitad del valor más próximo 
+	 (según el redondeo informado).</p>
+	<p class="H_Parrafo_de_Sub-Item">Por ejemplo, si se redondea a la unidad, 
+	 el valor resultante de redondear <font style="font-weight: bold;">3.30</font> 
+	 y <font style="font-weight: bold;">2.7</font> será <font style="font-weight: bold;">3</font> 
+	 y el de redondear <font style="font-weight: bold;">5.5</font> será 
+	 <font style="font-weight: bold;">6</font>.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se redondea a <font style="font-weight: bold;">5</font>, 
+	 el valor resultante de redondear <font style="font-weight: bold;">21.4</font> 
+	 y <font style="font-weight: bold;">17.5</font> será <font style="font-weight: bold;">20</font>; 
+	 en cambio, <font style="font-weight: bold;">22.5</font> y <font style="font-weight: bold;">23.3</font> 
+	 se redondearán a <font style="font-weight: bold;">25</font>.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a4', 'POPUP679760298');
+	TextPopupInit('a1', 'POPUP673670367');
+	TextPopupInit('a2', 'POPUP673660437');
+	TextPopupInit('a3', 'POPUP673642739');
+//]]></script>
+
+
+</body></html>

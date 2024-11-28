@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.3.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Tabla Tablas de autorizaciones</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Autorizaciones,Tablas"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Tablas de autorizaciones</h1>
+<p class="H_Texto">En este punto del menú se definen las tablas de autorizaciones. 
+ Estas determinan los usuarios responsables de autorizar los comprobantes 
+ para los cuáles se ha parametrizado que requieren autorización.</p>
+<p class="H_Texto">Cada tabla se identifica mediante un código y una descripción, 
+ y contiene un detalle de los usuarios que deban autorizar según los importes 
+ de los comprobantes.</p>
+<p class="H_Texto">Los datos que deben ingresarse para definir tablas de 
+ autorizaciones son:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ Código</p>
+<p class="H_Parrafo_de_Item">Código de hasta tres caracteres que identifica 
+ a la tabla de autorizaciones que se define.</p>
+<p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight: bold;">Ta1</font>, 
+ <font style="font-weight: bold;">A4</font>, <font style="font-weight: bold;">15</font>, 
+ etc.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ Descripción</p>
+<p class="H_Parrafo_de_Item">Nombre asignado a la tabla de autorizaciones 
+ que se define.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> 
+ Tabla de Autorizaciones</p>
+<p class="H_Parrafo_de_Item">En esta tabla se debe ingresar una lista con 
+ los usuarios que deben efectuar las autorizaciones dependiendo del importe 
+ de los comprobantes.</p>
+<p class="H_Parrafo_de_Item">La autorización podrá realizarse en cada caso, 
+ por un solo usuario o por una grupo de hasta tres de ellos.</p>
+<p class="H_Parrafo_de_Item">Para una línea de autorización puede haber 
+ más de una combinación de usuarios, es decir, puede haber más de una línea 
+ en la tabla con el mismo importe. Bastará con que se cumpla la autorización 
+ en una de las líneas para que el comprobante quede autorizado.</p>
+<p class="H_Parrafo_de_Item">Si para un importe se indica que debe autorizar 
+ más de un usuario, y al ingresar un comprobante correspondiente a ese 
+ importe de autorización, el usuario de mayor nivel realiza la autorización, 
+ no será necesario que autoricen también los demás usuarios de la misma 
+ línea de la autorización.</p>
+<p class="H_Parrafo_de_Item">Si un usuario asociado a una línea de autorización 
+ ingresa un comprobante con un importe correspondiente a esa línea, la 
+ autorización se realiza en forma automática, pero si hay en esa línea 
+ de autorización otros usuarios de mayor nivel que deban autorizar, quedará 
+ pendiente la autorización de esos usuarios.</p>
+<p class="H_Parrafo_de_Item">Si un usuario está involucrado en más de una 
+ línea de autorización, podrá tener distintas prioridades en cada línea 
+ y en alguna línea podrá indicarse que se le avisa la autorización por 
+ mail y en otra línea no.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Importe</p>
+<p class="H_Parrafo_de_Item">Importe del comprobante hasta el cual corresponde 
+ utilizar la línea de autorización.</p>
+<p class="H_Parrafo_de_Item">El mecanismo para ubicar la línea de autorización 
+ a utilizar es buscar en la tabla el máximo importe que sea inferior o 
+ igual al importe del comprobante a autorizar. Si no hay en la tabla ninguna 
+ línea que cumpla con esta condición, el comprobante se autoriza automáticamente.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Usuario</p>
+<p class="H_Parrafo_de_Item">Nombre del usuario que debe realizar la autorización.</p>
+<p class="H_Parrafo_de_Item">Pueden indicarse para cada línea de autorización 
+ hasta tres usuarios distintos.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ Avisa </p>
+<p class="H_Parrafo_de_Item">Indicación de si se desea enviar un mail al 
+ usuario cada vez que el mismo deba autorizar un comprobante con un importe 
+ correspondiente al de la línea en la que está involucrado.</p>
+<p class="H_Parrafo_de_Item">Se debe indicar si se le avisa o no, a cada 
+ uno de los usuarios que se ingresen en la línea de la autorización.</p>
+<p class="H_Parrafo_de_Item">La dirección de e_mail de cada usuario podrá 
+ indicarse en la ficha Datos Generales del punto <a href="tabla__Usuarios.htm"><font style="font-weight: bold; text-decoration: underline; " color="#008000">Usuarios</font></a>.</p>
+<p class="H_Parrafo_de_Item">Al ingresar un comprobante que debe autorizarse 
+ el aviso se envía primero a los usuarios de menor nivel en la línea de 
+ la autorización según la cual se debe autorizar, una vez que estos usuarios 
+ autorizaron se les avisa a los del siguiente nivel y así sucesivamente.</p>
+<p class="H_Item_con_vineta_negrita_XE rl-p-H_Item_con_vineta_negrita_XE">Nivel </p>
+<p class="H_Parrafo_de_Item">Nivel de prioridad que se le asocia a cada 
+ usuario.</p>
+<p class="H_Parrafo_de_Item">Debe ser un número entre 1 y 3.</p>
+<p class="H_Parrafo_de_Item">Los usuarios que se ingresan en una misma 
+ línea de autorización, es decir, asociados a un mismo importe, pueden 
+ tener igual nivel de prioridad.</p>
+<p class="H_Parrafo_de_Item">Se debe indicar el nivel de cada uno de los 
+ usuarios que se ingresen en la línea de la autorización.</p>
+
+
+</body></html>

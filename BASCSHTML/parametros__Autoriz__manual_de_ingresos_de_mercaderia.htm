@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.3.2.0_6"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Parámetros Autoriz manual de ingresos de mercadería</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Autorización Ingresos de mercadería</h1>
+<p class="H_Texto">La finalidad de esta autorización es controlar que no 
+ se realicen pagos de mercadería que no fue autorizada. El ingreso de mercadería 
+ no autorizado puede facturarse y puede imprimirse, pero esa factura no 
+ podrá pagarse hasta que el remito de ingreso que la originó no sea autorizado. 
+ </p>
+<p class="H_Texto">Los ingresos pendientes de autorizar por el usuario 
+ que utiliza el sistema, se incorporarán a la agenda del usuario a nivel 
+ de tareas y de alertas. También se incorporan al mail que se envía a los 
+ usuarios que estén indicados como destinatarios de esos mensajes, en las 
+ tablas de autorización involucradas.</p>
+<p class="H_Texto">Si se cancela completamente un ingreso de mercadería 
+ el sistema deja dicho ingreso como autorizado si está pendiente de autorización 
+ y se eliminan sus alertas y tareas pendientes de la agenda. La eliminación 
+ de la cancelación revierte dicha autorización.</p>
+<p class="H_Texto">Es posible indicar una tabla de autorizaciones para 
+ todos los ingresos en general, y/o indicar otras tablas, por ejemplo para 
+ ingresos de mercadería con determinados ítems, o de determinados proveedores, 
+ o con determinados centros de apropiación.</p>
+<p class="H_Texto">Los parámetros pueden modificarse mientras se está operando 
+ con el sistema y la actualización de las opciones que se indiquen se realizará 
+ en forma inmediata sin necesidad de salir del sistema y volver a entrar.</p>
+<p class="H_Texto">Los parámetros de ingresos de mercadería posibles de 
+ configurar son:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ Para todas los ingresos de mercadería</p>
+<p class="H_Parrafo_de_Item">Indicación de si se desea que todos los ingresos 
+ de mercadería se autoricen. La forma en que deberá efectuarse la autorización 
+ dependerá de la tabla de autorizaciones que se indique.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Tabla de 
+ autorizaciones</p>
+<p class="H_Parrafo_de_Sub-Item">Tabla que se usa para autorizar todos 
+ los ingresos.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ Con Ítems determinados</p>
+<p class="H_Parrafo_de_Item">Indicación de si los ingresos de mercadería 
+ que incluyen determinados ítems requieren o no autorización manual.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> 
+ ya definido en el sistema y aplicable a <span style="font-weight: bold;"><font style="font-weight: bold;">Í</font>tems</span>.</p>
+<p class="H_Parrafo_de_Sub-Item">Esta opción sólo se habilita si se indicó 
+ la autorización de ingresos de mercadería con <span style="font-weight: bold;">Ítems</span><font style="font-weight: bold;"> determinados</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Los ingresos de mercadería que incluyan 
+ ítems que tengan este atributo serán tenidas en cuenta para decidir si 
+ el comprobante requiere o no autorización. El que la requieran o no y 
+ la forma en que deberá efectuarse la misma dependerá de los valores del 
+ atributo que se informen en la tabla que sigue y de la tabla de autorizaciones 
+ que se indique para cada uno de dichos valores.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de 
+ valores</p>
+<p class="H_Parrafo_de_Sub-Item">En esta tabla se deberán ingresar los 
+ distintos valores del atributo de ítems, indicado en el campo precedente, 
+ para los cuales se desea definir un circuito de autorización.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+<p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó 
+ en el campo <font style="font-weight: bold;">Atributo</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Esta opción sólo se habilita si se indicó 
+ la autorización manual de ingresos de mercadería con <span style="font-weight: bold;"><font style="font-weight: bold;">Í</font>tems</span> <font style="font-weight: bold;">determinados</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Los ingresos de mercadería que incluyan 
+ ítems que tengan este valor para el atributo indicado en el campo correspondiente, 
+ requerirán autorización para poder continuar su curso, la forma en que 
+ debe efectuarse la autorización dependerá de la tabla de autorizaciones 
+ que se indique.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Tabla de autorización</p>
+<p class="H_Parrafo_de_Sub-Item">Tabla que se usa para autorizar todos 
+ los ingresos que tengan ítems con el valor del atributo indicado.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ De proveedores determinados</p>
+<p class="H_Parrafo_de_Item">Indicación de si los ingresos de mercadería 
+ provenientes de determinados <a href="tabla__Proveedores.htm">proveedores</a> 
+ requieren o no autorización manual.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+<p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder 
+ a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema 
+ y aplicable a <a href="tabla__Proveedores.htm">proveedores</a>.</p>
+<p class="H_Parrafo_de_Sub-Item">Esta opción sólo se habilita si se indicó 
+ la autorización manual de ingresos de mercadería <font style="font-weight: bold;">De 
+ proveedores determinados</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Los ingresos de mercadería efectuadas 
+ a proveedores que tengan este atributo serán tenidos en cuenta para decidir 
+ si el comprobante requiere o no autorización. El que la requieran o no 
+ y la forma en que deberá efectuarse la misma dependerá de los valores 
+ del atributo que se informen en la tabla que sigue y de la tabla de autorizaciones 
+ que se indique para cada uno de dichos valores.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de 
+ valores</p>
+<p class="H_Parrafo_de_Sub-Item">En esta tabla se deberán ingresar los 
+ distintos valores del atributo de proveedores, indicado en el campo precedente, 
+ para los cuales se desea definir un circuito de autorización.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+<p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó 
+ en el campo anterior.</p>
+<p class="H_Parrafo_de_Sub-Item">Esta opción sólo se habilita si se indicó 
+ la autorización manual de ingresos de mercadería <font style="font-weight: bold;">De 
+ proveedores determinados</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Los ordenes de compra efectuadas a proveedores 
+ que tengan este valor para el atributo indicado en el campo anterior, 
+ requerirán autorización para poder seguir su curso y la forma en que debe 
+ efectuarse la autorización dependerá de la tabla de autorizaciones que 
+ se indique.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Tabla de autorización</p>
+<p class="H_Parrafo_de_Sub-Item">Tabla que se usa para autorizar todos 
+ los ingresos de proveedores que tengan el valor del atributo indicado.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ De centros determinados</p>
+<p class="H_Parrafo_de_Item">Es posible parametrizar esta autorización 
+ de modo que los ingresos de mercadería requieran autorización si incluyen 
+ lineas con determinados centros de apropiación.</p>
+<p class="H_Parrafo_de_Item">Para la evaluación de la autorización del 
+ ingreso respecto de este criterio, se consideran los centros ingresados 
+ en la carga del comprobante y los centros existentes en el egreso por 
+ consumo asociado, en caso de existir, quedando el ingreso pendiente de 
+ autorizar si alguno de los centros indicados en el egreso por consumo 
+ existen en la tabla de centros que requieren autorización. En caso de 
+ no existir egreso por consumo, se evaluarán los centros indicados en el 
+ remito de ingreso.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de 
+ centros de apropiación</p>
+<p class="H_Parrafo_de_Sub-Item">En esta tabla se deberán ingresar los 
+ distintos centros de apropiación, tal que los ingresos de mercadería que 
+ los referencien participen del circuito de autorizaciones.</p>
+<p class="H_Parrafo_de_Sub-Item">Esta opción sólo se habilita si se indicó 
+ la autorización manual de ingresos de mercadería <font style="font-weight: bold;">De 
+ centros determinados</font>.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Tipo de centro</p>
+<p class="H_Parrafo_de_Sub-Item">Indicación de si se va a ingresar a continuación 
+ un centro de tipo A o de tipo B.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código</p>
+<p class="H_Parrafo_de_Sub-Item">Código del centro de apropiación del tipo 
+ indicado.</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Tabla de autorización</p>
+<p class="H_Parrafo_de_Sub-Item">Tabla que se usa para autorizar todos 
+ los ingresos que usen el centro de apropiación indicado.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ Diferencias de fechas de entrega</p>
+<p class="H_Parrafo_de_Item"> Las diferencias de fechas respecto de 
+ la orden de compra se evaluarán para las líneas del remito de ingreso 
+ de bienes o servicios de tipo cantidad, que referencien directamente a 
+ una orden de compra.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ Diferencias de cantidades</p>
+<p class="H_Parrafo_de_Item"> Las diferencias de cantidades respecto 
+ de la orden de compra se evaluarán para las líneas del remito de ingreso 
+ de bienes o servicios de tipo cantidad, que referencien directamente a 
+ una orden de compra.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ Sin orden de compra o factura</p>
+<p class="H_Parrafo_de_Item">Se revisará la existencia de líneas del remito 
+ que sean bienes o servicios de tipo cantidad, que no referencien a una 
+ orden de compra, comprobante de compra o egreso de mercadería. </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ Tabla de autorizaciones</p>
+<p class="H_Parrafo_de_Item">Tabla que se usa para autorizar todos los 
+ ingresos que cumplan con algunas de las tres condiciones anteriores que 
+ estén chequeadas.</p>
+<p class="H_Parrafo_de_Item">El circuito de autorizaciones que regirá para 
+ cada uno de estos casos y lo usuarios responsables de autorizar dependerán 
+ de la tabla de autorizaciones que se informe.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Destinatarios</p>
+<p class="H_Parrafo_de_Item">Es posible indicar a quien/es se les envía 
+ email cuando un ingreso de mercadería queda totalmente autorizado o rechazado.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Al autorizar</p>
+<p class="H_Parrafo_de_Sub-Item">Una o mas direcciones de email a las que 
+ se envía aviso al autorizar totalmente un ingreso de mercadería. Puede 
+ indicarse una dirección de email o un tag que permita obtener una dirección 
+ de email. Por ejemplo,el tag &quot;Responsable del depósito&quot; indica 
+ que se utilice la/s dirección/es de email de el/los usuario/s indicado/s 
+ como responsable del depósito del comprobante.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Al rechazar</p>
+<p class="H_Parrafo_de_Sub-Item">Una o mas direcciones de email a las que 
+ se envía aviso al rechazar totalmente un ingreso de mercadería. Puede 
+ indicarse una dirección de email o un tag que permita obtener una dirección 
+ de email. Por ejemplo,el tag &quot;Responsable del depósito&quot; indica 
+ que se utilice Por ejemplo,el tag &quot;Responsable del depósito&quot; 
+ indica que se utilice la/s dirección/es de email de el/los usuario/s indicado/s 
+ como responsable del depósito del comprobante.</p>
+
+
+</body></html>

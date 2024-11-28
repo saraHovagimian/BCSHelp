@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.1.5.0_9"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Generacion automatica Cierre del lote</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Cierre,Lote"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Cierre del lote</h1>
+<p class="H_Texto">Debe indicarse el lote correspondiente a los comprobantes 
+ que se requiere cerrar.</p>
+<p class="H_Texto">Sólo será necesario informar los prefijos para los tipos 
+ de comprobantes incluidos en el lote que se está cerrando.</p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Al cerrar el lote, si 
+ es de facturas, se controla  el crédito disponible de los clientes. 
+ Si los comprobantes se generan en base a pedidos que fueron autorizados 
+ por crédito excedido, o egresos registrados en base a pedidos autorizados 
+ por crédito excedido, se cierra el lote a pesar de que exceda el crédito 
+ disponible. </span></p>
+<p class="H_Texto">Al finalizar el proceso de cierre se exhibe un resumen 
+ que indica cuántos comprobantes se procesaron en el cierre actual, cuántos 
+ comprobantes de cada tipo se generaron en el cierre actual y cuantos comprobantes 
+ procesados tuvieron errores.</p>
+<p class="H_Texto">Para aquellas facturas de venta cuya condición de venta 
+ tenga indicado que genera vencimientos a documentar se generarán las FC 
+ correspondientes al ejecutar esta tarea.</p>
+<p class="H_Texto">Para la impresión de los comprobantes se prevé un botón 
+ denominado, justamente, <font style="font-weight: bold;">Impresión</font>. 
+ Este botón funciona diferente según el cierre del lote corresponda a uno 
+ o más prefijos.</p>
+<p class="H_Texto">Si se indicó un solo prefijo en la tarea de cierre, 
+ al apretar el botón <font style="font-weight: bold;">Impresión</font> 
+ se pasa directamente a la ventana de impresión del tipo de comprobante 
+ para el que se informó dicho prefijo.</p>
+<p class="H_Texto">Si el lote que se cierra incluye comprobantes que corresponden 
+ a varios prefijos, el botón <font style="font-weight: bold;">Impresión</font> 
+ muestra una ventana con los prefijos de los distintos tipos de comprobantes 
+ indicados en el cierre y, a la derecha de cada uno se ofrece un botón 
+ destinado a imprimir los mismos.</p>
+<p class="H_Texto" style="mso-fareast-language: EN-US;"><span lang="ES" xml:lang="ES">Al cerrar un lote de egresos automáticos que corresponden 
+ a un talonario que requiere fiscalización electrónica, los mismos quedarán 
+ pendientes de fiscalizar (para Uruguay).</span></p>
+<p class="H_Texto">Los datos a ingresar para el cierre son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714383022" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lote</span><span data-close-text="true">Lote</span></a></p>
+<div data-targetname="POPUP714383022">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Tipo</p>
+	<p class="H_Parrafo_de_Sub-Item">Tipo de lote que se desea cerrar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Los comprobantes automáticos generados 
+	 en el lote que aquí se indique pasarán a integrar los movimientos 
+	 definitivos registrados en el sistema.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha del lote de comprobantes automáticos 
+	 que se desea cerrar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Los comprobantes automáticos generados 
+	 en el lote y fecha que aquí se indique pasarán a integrar los movimientos 
+	 definitivos registrados en el sistema.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714358883" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Facturas</span><span data-close-text="true">Facturas</span></a></p>
+<div data-targetname="POPUP714358883">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha que tendrán las facturas definitivas 
+	 que se generen en base a los comprobantes del lote de comprobantes 
+	 automáticos seleccionado para cerrar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 facturas A</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las facturas 
+	 <font style="font-weight: bold;">A</font> que se cierren.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el <a href="tabla__Talonarios.htm">talonario</a> asociado a cada factura 
+	 <font style="font-weight: bold;">A</font> que se cierre, el número 
+	 de comprobante definitivo que se asignará a cada factura, el <a href="tabla__Subdiarios.htm">subdiario</a> 
+	 de ventas al cual ingresarán las facturas, etc.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 facturas B</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las facturas 
+	 <font style="font-weight: bold;">B</font> que se cierren.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el <a href="tabla__Talonarios.htm">talonario</a> asociado a cada factura 
+	 <font style="font-weight: bold;">B</font> que se cierre, el número 
+	 de comprobante definitivo que se asignará a cada factura, el <a href="tabla__Subdiarios.htm">subdiario</a> 
+	 de ventas al cual ingresarán las facturas, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714357572" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Notas de crédito</span><span data-close-text="true">Notas de crédito</span></a></p>
+<div data-targetname="POPUP714357572">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha que tendrán las notas de crédito 
+	 definitivas que se generen en base a los comprobantes del lote de 
+	 comprobantes automáticos seleccionado para cerrar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 notas de crédito A</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las notas 
+	 de crédito <font style="font-weight: bold;">A</font> que se generen 
+	 en el cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada nota, el número de comprobante definitivo 
+	 que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 notas de crédito B</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las notas 
+	 de crédito <font style="font-weight: bold;">B</font> que se generen 
+	 en el cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada nota, el número de comprobante definitivo 
+	 que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Fiscalización 
+	 en excepción</p>
+	<p class="H_Parrafo_de_Sub-Item">Se agrega en la opción de notas de 
+	 crédito la posibilidad de indicar un período en la fiscalización por 
+	 excepción. Se ve habilitada cuando se indique un talonario para la 
+	 generación de las notas de crédito A y/o B que requieran fiscalización 
+	 electrónica argentina.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+	 Período</p>
+	<p class="H_Parrafo_de_Sub-Item">Período a considerar en la fiscalización 
+	 electrónica de las notas de crédito del lote. </p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Fecha inicial</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha desde del período.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Fecha final</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha hasta del período. No puede 
+	 ser posterior a la fecha de emisión del comprobante.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714316015" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Liquidaciones</span><span data-close-text="true">Liquidaciones</span></a></p>
+<div data-targetname="POPUP714316015">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha que tendrán las liquidaciones 
+	 definitivas que se generen en base a los comprobantes del lote de 
+	 comprobantes automáticos seleccionado para cerrar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 liquidaciones A</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las <span style="font-weight: bold;">liquidaciones </span><font style="font-weight: bold;">A</font> 
+	 que se generen en el cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 liquidaciones B</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las <span style="font-weight: bold;">liquidaciones</span> <font style="font-weight: bold;">B</font> 
+	 que se generen en el cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714283989" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Liquidaciones crédito</span><span data-close-text="true">Liquidaciones crédito</span></a></p>
+<div data-targetname="POPUP714283989">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha que tendrán las liquidaciones 
+	 de crédito definitivas que se generen en base a los comprobantes del 
+	 lote de comprobantes automáticos seleccionado para cerrar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 liquidaciones de crédito A</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las <span style="font-weight: bold;">liquidaciones de crédito </span><font style="font-weight: bold;">A</font> 
+	 que se generen en el cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 liquidaciones de crédito B</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a las <span style="font-weight: bold;">liquidaciones</span> <span style="font-weight: bold;">de 
+	 crédito </span><font style="font-weight: bold;">B</font> que se generen 
+	 en el cierre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el talonario asociado a cada liquidación, el número de comprobante 
+	 definitivo que se asignará, el subdiario de ventas en el que se contabilizarán 
+	 los comprobantes, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714289702" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Egresos de mercadería</span><span data-close-text="true">Egresos de mercadería</span></a></p>
+<div data-targetname="POPUP714289702">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha que tendrán los comprobantes 
+	 de egreso de mercadería definitivos que se generen en base a los comprobantes 
+	 del lote de comprobantes automáticos seleccionado para cerrar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Prefijo 
+	 Egreso/Egreso diferido</p>
+	<p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los comprobantes 
+	 de egreso de mercadería que se cierren.</p>
+	<p class="H_Parrafo_de_Sub-Item">El prefijo que aquí se indique determinará 
+	 el <a href="tabla__Talonarios.htm">talonario</a> asociado a cada egreso 
+	 que se cierre, el número de comprobante definitivo que se asignará 
+	 a cada uno, el <a href="tabla__Subdiarios.htm">subdiario</a> de movimiento 
+	 de materiales al cual ingresarán los comprobantes, etc.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP714383022');
+	TextPopupInit('a2', 'POPUP714358883');
+	TextPopupInit('a3', 'POPUP714357572');
+	TextPopupInit('a4', 'POPUP714316015');
+	TextPopupInit('a5', 'POPUP714283989');
+	TextPopupInit('a6', 'POPUP714289702');
+//]]></script>
+
+
+</body></html>

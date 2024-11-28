@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.6.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Cierre de caja</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Cierre de Caja</h1>
+<p class="H_Texto">Mediante esta tarea se efectúa el cierre del lote de 
+ una <a href="tabla__Cajas.htm">caja</a> determinada.</p>
+<p class="H_Texto">Un <font style="font-weight: bold;">Lote de caja</font> 
+ incluye un conjunto de operaciones que tienen lugar, en dicha caja, en 
+ un determinado lapso de tiempo. Dicho lapso, es el tiempo que media entre 
+ dos cierres de caja consecutivos.</p>
+<p class="H_Texto">El trabajar, o no, con lotes de cajas es opcional. En 
+ el único caso en que los lotes deben utilizarse obligatoriamente, es en 
+ aquellos en los cuales se trabaja con procesos de distribución mediante 
+ camiones y se desea administrar la liquidación de los correspondientes 
+ viajes. En ese caso, el sistema administra automáticamente los lotes de 
+ las cajas que se asocian a los camiones.</p>
+<p class="H_Texto">Cuando se comienza a trabajar con una <a href="tabla__Cajas.htm">caja</a> 
+ en el sistema, automáticamente se está trabajando en el lote <font style="font-weight: bold;">Número 
+ 1</font> de esa caja y se continuará incorporando información en él, hasta 
+ tanto se realice un cierre de caja. En ese momento, se cierra el <font style="font-weight: bold;">Lote Número 1</font> y, automáticamente, 
+ se abre el <font style="font-weight: bold;">Lote Número 2</font> que incorporará 
+ información hasta tanto vuelva a realizarse el siguiente cierre de caja, 
+ abriéndose el <font style="font-weight: bold;">Lote Número 3</font> y 
+ así sucesivamente.</p>
+<p class="H_Texto">De lo dicho se desprende que, por cada caja, existe 
+ un único lote activo a la vez y es en dicho lote en el que se está trabajando, 
+ a este lote lo llamaremos <font style="font-weight: bold;">Lote actual</font>.</p>
+<p class="H_Texto">Los lotes se identifican por su número de lote, por 
+ la fecha y la hora de su apertura (que corresponde a la fecha de cierre 
+ del lote anterior) y por la fecha y la hora correspondientes a su cierre.</p>
+<p class="H_Texto">La administración de cajas por lotes es útil al momento 
+ de controlar y auditar los valores registrados en una caja en determinado 
+ período ya que, independientemente de la fecha que se informe al registrar 
+ los comprobantes, permite listar la información de una caja en base a 
+ la fecha de registración de los mismos.</p>
+<p class="H_Texto_XE" style="font-style: normal;">Las <a href="tabla__Cajas.htm" style="font-style: normal;">cajas</a> 
+ asociadas a camiones activos no pueden cerrarse mediante esta tarea sino 
+ que su cierre se produce, en forma automática, al realizar la tarea de 
+ Cierre de camión, del camión del cual se trate.</p>
+<p class="H_Texto_XE" style="font-style: normal;">Al realizar dicha tarea, 
+ se cierra automáticamente el lote de la caja asociada al camión que se 
+ está cerrando y se imprime, en caso que se lo solicite, el arqueo de caja 
+ correspondiente a la caja mencionada.</p>
+<p class="H_Texto_XE" style="font-style: normal;">Si se trabaja con camiones, 
+ los lotes de un camión , de su <a href="tabla__Cajas.htm" style="font-style: normal;">caja</a> 
+ y de su depósito siempre llevan la misma numeración, siempre avanzan juntos.</p>
+<p class="H_Texto">Se debe ingresar:</p>
+<p class="H_Texto"> </p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Caja</p>
+<p class="H_Parrafo_de_Sub-Item">Código de la <a href="tabla__Cajas.htm">caja</a> 
+ que se desea cerrar.</p>
+<p class="H_Parrafo_de_Sub-Item_XE" style="font-style: normal;">Se debe 
+ ingresar el código de una caja que no esté asociada a un camión activo, 
+ ya que en ese caso la caja se cerrará al cerrar el camión.</p>
+<p class="H_Texto">Luego de ingresada la caja, se mostrarán la fecha de 
+ cierre y el número de lote del último cierre efectuado para esa caja.</p>
+
+
+</body></html>

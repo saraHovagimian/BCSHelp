@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.2.0_7"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Parametros Evaluacion de proveedores</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Evaluación,Proveedores"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Evaluación de proveedores</h1>
+  <p class="H_Texto">Es posible evaluar a los proveedores respecto a cual es su desempeño en relación a:</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cumplimiento de los plazos de entrega</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Desvíos en precios</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Calidad de entrega</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Desvíos en cantidades</p>
+  <p class="H_Texto">Para cada uno de las características mencionadas es posible asignar una calificación de un conjunto de 5 posibles. Las 5 posibilidades de cada caso se designan A, B, C, D y E.</p>
+  <p class="H_Texto">En todos los casos <font style="font-weight: bold;">A</font> es la calificación máxima y <font style="font-weight: bold;">E</font> es la mínima.</p>
+  <p class="H_Texto">Así se podrá definir un puntaje de proveedores y determinar que proveedores son los más eficientes.</p>
+  <p class="H_Texto">La forma de determinar, para cada categoría, que calificación corresponde es parametrizable por el usuario en esta ventana y consiste en revisar una serie de comprobantes correspondientes a facturas de compra e ingresos de mercaderías.</p>
+  <p class="H_Texto">Los comprobantes en base a los cuales se establece la calificación se eligen a partir de la parametrización que se realiza en esta ventana en el cuadro Parámetros de evaluación.</p>
+  <p class="H_Texto">Toda esta metodología de evaluación sólo se podrá utilizar si los comprobantes, en base a los cuáles se establece la evaluación, operan con Partes de diferencias, ya que de ahí se sacará la información de los inconvenientes ocurridos.</p>
+  <p class="H_Texto">Una vez establecida la parametrización, para realizar la evaluación, se dispone de un proceso que se programa para ser ejecutado, en forma automática, con la frecuencia que se desee.</p>
+  <p class="H_Texto">Cuando se ejecute, se revisarán los comprobantes que correspondan y los proveedores recibirán una calificación al día de ejecución de la tarea, que consistirá en un conjunto de 4 caracteres, donde cada posición corresponde a la calificación en cada una de las cuatro categorías mencionadas.</p>
+  <p class="H_Texto">Por ejemplo, si se asigna a un proveedor CCAB, significa que obtuvo:</p>
+  <table cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="396">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td height="15" style="width: 57.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Característica</p>
+        </td>
+        <td height="15" style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Evaluación</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td height="15" style="width: 57.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Cumplimiento de los plazos de entrega</p>
+        </td>
+        <td height="15" style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">C</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td height="15" style="width: 57.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Desvíos en precios</p>
+        </td>
+        <td height="15" style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">C</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td height="15" style="width: 57.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Calidad de entrega</p>
+        </td>
+        <td height="15" style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td height="15" style="width: 57.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Desvíos en cantidades</p>
+        </td>
+        <td height="15" style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">B</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Texto">La calificación correspondiente a cada proveedor puede verse en la consulta de Tabla: <a href="consulta_de_proveedores.htm">Proveedores</a>.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Parámetros de Evaluación</p>
+  <p class="H_Parrafo_de_Item">Para calificar cada categoría se deberán revisar una serie de comprobantes (facturas de compra (que no sean de crédito) e ingresos de mercaderías), los cuales se eligen a partir de los dos parámetros que se indican en este cuadro:</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cantidad de días</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cantidad de operaciones</p>
+  <p class="H_Parrafo_de_Item">El sistema considerará el menos restrictivo de los dos.</p>
+  <p class="H_Parrafo_de_Item">Esto significa que si, por ejemplo, se indicó que la evaluación debe abarcar los últimos 180 días y 20 operaciones, y en los últimos 180 días se realizaron 30 operaciones, se considerarán las 30 últimas operaciones.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Calificaciones</p>
+  <p class="H_Parrafo_de_Item">En este cuadro se ingresa la información necesaria para asignar las calificaciones con las que se ponderarán las características de los proveedores a evaluar.</p>
+  <p class="H_Parrafo_de_Item">Para cada uno de las características es posible asignar una calificación de un conjunto de 5 posibles. Las 5 posibilidades de cada caso se designan A, B, C, D y E.</p>
+  <p class="H_Parrafo_de_Item">En todos los casos A es la calificación máxima y E es la mínima.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Cumplimiento de plazos de entrega (en días)</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe indicar los días de retraso que corresponden a cada unas de las categorías: A, B, C, D y E.</p>
+  <p class="H_Parrafo_de_Sub-Item">No se pueden indicar números negativos ni valores inferiores o iguales al de la categoría anterior.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para esta categoría se evaluarán solamente los ingresos de mercadería y las facturas con entrega.</p>
+  <p class="H_Parrafo_de_Sub-Item">El sistema de evaluación del proveedor para este criterio obtiene una cantidad promedio de días de desvío de los comprobantes a considerar, respecto de la fecha de entrega indicada en la orden de compra referenciada en cada uno de ellos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Dicho valor se compara con lo parametrizado para cada una de las calificaciones (A-E). Para valores mayores o iguales a lo indicado en la categoría A y menores a lo indicado en la categoría B, le corresponde la calificación A, y así sucesivamente.</p>
+  <table cellpadding="1" cellspacing="0" style="margin-left: 17.75pt; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="580">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.26%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Categoría A</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Categoría B</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Categoría C</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Categoría D</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Categoría E</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.26%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">0</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">10</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">20</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">40</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">80</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Parrafo_de_Sub-Item">Estos valores, si al efectuar el promedio de días de retraso de los comprobantes da:</p>
+  <table cellpadding="1" cellspacing="0" style="margin-left: 17.75pt; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="580">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 51.89%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Menos de 10 días</p>
+        </td>
+        <td style="width: 48.11%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">corresponde calificación A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 51.89%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Entre 10 y 20 días</p>
+        </td>
+        <td style="width: 48.11%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">corresponde calificación B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 51.89%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Entre 20 y 40 días</p>
+        </td>
+        <td style="width: 48.11%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">corresponde calificación C</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 51.89%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Entre 40 y 80 días</p>
+        </td>
+        <td style="width: 48.11%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">corresponde calificación D</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 51.89%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Más de 80 días</p>
+        </td>
+        <td style="width: 48.11%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">corresponde calificación E</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Desvíos en precios</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe indicar los porcentajes de casos que se corresponden a cada categoría. No se pueden indicar números negativos, ni mayores a 100, ni valores inferiores o iguales al de la categoría anterior.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para esta categoría se evaluarán solamente las facturas con o sin entrega. Se tendrán en cuenta los desvíos en más o en menos en los precios indicados en la orden de compra.</p>
+  <p class="H_Parrafo_de_Sub-Item">El sistema de evaluación del proveedor para este criterio obtiene un porcentaje, que surge de la cantidad de casos que presentaron desvíos (en más o en menos) dividido por la cantidad total de casos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para realizar el cálculo se considera, como numerador, la cantidad de líneas que presentaron inconvenientes y, como denominador, la cantidad de líneas de todos los comprobantes que se evalúan.</p>
+  <p class="H_Parrafo_de_Sub-Item">El valor obtenido se compara con lo parametrizado para cada una de las calificaciones (A-E), de igual forma que en el caso anterior.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Calidad de entrega</p>
+  <p class="H_Parrafo_de_Sub-Item">Para asignar la calificación se deben indicar los porcentajes de casos que se corresponden a cada categoría. No se pueden indicar números negativos, ni mayores a 100, ni valores inferiores o iguales al de la categoría anterior.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para esta categoría se evaluarán solamente los ingresos de mercadería y las facturas con entrega. Se tendrán en cuenta las diferencias indicadas en el Control de calidad, que se resolvieron en el Parte diferencias aceptando la mercadería, o mediante entregas de productos alternativos que también se aceptaron.</p>
+  <p class="H_Parrafo_de_Sub-Item">El sistema de evaluación del proveedor, para este criterio, obtiene un porcentaje, que surge de la cantidad de casos descriptos (con inconvenientes) dividido por la cantidad total de casos.</p>
+  <p class="H_Parrafo_de_Sub-Item">El cálculo se realiza teniendo en cuenta la cantidad de líneas de comprobantes que presentan problemas, dividido por la cantidad de líneas de todos los comprobantes que se evalúan.</p>
+  <p class="H_Parrafo_de_Sub-Item">Vale aclarar que no se consideran las mercaderías resueltas por devolución, como parte del numerador de la división.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si por ejemplo, se evalúan 200 comprobantes y 40 presentaron inconvenientes, el porcentaje a tener en cuenta para establecer la calificación es 20%.</p>
+  <p class="H_Parrafo_de_Sub-Item">Dicho valor se compara con lo parametrizado para cada una de las calificaciones (A-E), de igual forma que en el caso anterior.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para la parametrización que se muestra, por ejemplo, para un porcentaje del 22 %, corresponde asignar Categoría C.</p>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <table cellpadding="1" cellspacing="0" style="margin-left: 17.75pt; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="580">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.26%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Categoría A</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Categoría B</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Categoría C</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">Categoría D</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item" style="border-right: 0.50pt solid #000000;">Categoría E</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 23.26%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">5</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">10</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">15</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item">20</p>
+        </td>
+        <td style="width: 19.18%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Parrafo_de_Item" style="border-right: 0.50pt solid #000000;">25</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Desvíos en cantidades</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe asignar la calificación, para ello es preciso indicar los porcentajes de casos que corresponden a cada categoría. No se pueden indicar números negativos, ni mayores a 100, ni valores inferiores o iguales al de la categoría anterior.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para esta categoría se evaluarán solamente los ingresos de mercadería y las facturas con entrega. Se tendrán en cuenta las diferencias o desvíos en cantidades en menos respecto de las indicadas en la orden de compra, en los cuales en la resolución del parte de diferencias correspondiente, se optó por devolver la mercadería o cancelar el resto de la orden de compra.</p>
+  <p class="H_Parrafo_de_Sub-Item">El sistema de evaluación del proveedor para este criterio obtiene un porcentaje, que surge de la cantidad de casos descriptos dividido por la cantidad total de casos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Al igual que en los casos anteriores, el calculo se realiza dividiendo la cantidad de líneas que presentan inconvenientes por la cantidad de líneas de todos los comprobantes que se evalúan.</p>
+  <p class="H_Parrafo_de_Sub-Item">Dicho valor se compara con lo parametrizado para cada una de las calificaciones (A-E), de igual forma que en el caso anterior.</p>
+
+</body></html>

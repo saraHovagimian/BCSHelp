@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.1.0_8"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Tabla Conceptos</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Conceptos"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Conceptos</h1>
+<p class="H_Texto">Los conceptos se utilizan en el ingreso de comprobantes 
+ de movimientos de materiales.</p>
+<p class="H_Texto">Efectivamente, los movimientos de ingreso y egreso de 
+ mercadería solicitan, entre otros datos, que se informe el concepto a 
+ asociar al movimiento.</p>
+<p class="H_Texto">Es importante mencionar que el sistema efectúa un control 
+ destinado a impedir que se elimine un concepto que ya ha sido utilizado. 
+ Al intentar la eliminación se emite un aviso de alerta y se impide continuar 
+ adelante con la tarea.</p>
+<p class="H_Texto">Los conceptos cumplen dos objetivos fundamentales, a 
+ saber:</p>
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Determinar, 
+ mediante su inclusión en las Posiciones contables que se asocian a los 
+ bienes, las cuentas a imputar en relación al tipo de movimientos en los 
+ que éstos intervienen.</p>
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Informar 
+ si los comprobantes a los cuales se asocian, quedan pendientes o no. Los 
+ comprobantes pendientes pueden ser utilizados como fuente de otros comprobantes, 
+ cuando éstos últimos se ingresan al sistema.</p>
+<p class="H_Texto">Los datos a ingresar son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP606546744" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Código</span><span data-close-text="true">Código</span></a></p>
+<div data-targetname="POPUP606546744">
+	<p class="H_Parrafo_de_Item">Código identificatorio del concepto.</p>
+	<p class="H_Parrafo_de_Item">Como ejemplos podemos mencionar, PRE, 
+	 AJU, VEN, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP606533743" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Descripción</span><span data-close-text="true">Descripción</span></a></p>
+<div data-targetname="POPUP606533743">
+	<p class="H_Parrafo_de_Item">Texto que identifica al concepto. Por 
+	 ejemplo, Préstamo, Ajuste, Ventas, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP606671522" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Deja comprobantes pendientes</span><span data-close-text="true">Deja comprobantes pendientes</span></a></p>
+<div data-targetname="POPUP606671522">
+	<p class="H_Parrafo_de_Item">Se debe indicar si los comprobantes de 
+	 ingreso o egreso de mercadería que lo utilicen, quedarán pendientes 
+	 o no.</p>
+	<p class="H_Parrafo_de_Item">Los comprobantes pendientes pueden ser 
+	 invocados cuando se ingresen otros comprobantes, de modo que éstos 
+	 últimos se confeccionen en base a la información que contienen.</p>
+	<p class="H_Parrafo_de_Item">Como ejemplo de lo que se quiere significar 
+	 supongamos que se ha definido un concepto Ventas para asociar a los 
+	 remitos de egresos por ventas.</p>
+	<p class="H_Parrafo_de_Item">Si la forma de trabajo de la empresa es 
+	 facturar los remitos en una instancia posterior, en el concepto se 
+	 deberá indicar Deja comprobantes pendientes.</p>
+	<p class="H_Parrafo_de_Item">De este modo los remitos que utilicen 
+	 el concepto quedan como remitos pendientes de facturación. Estos, 
+	 además, podrán ser invocados en la tarea de facturación de modo que 
+	 la información que contienen se pre-cargue como base del comprobante 
+	 a registrar.</p>
+	<p class="H_Parrafo_de_Item">Es importante tener en cuenta que es obligatorio 
+	 tildar este campo en caso de estar definiendo un concepto habilitado 
+	 para depósitos.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ H<a data-target="POPUP606681260" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">abilitado para</span><span data-close-text="true">abilitado para</span></a></p>
+<div data-targetname="POPUP606681260">
+	<p class="H_Parrafo_de_Item">Como se ha dicho, los conceptos que se 
+	 definan serán asociados, en una instancia posterior, a comprobantes 
+	 de movimientos de mercadería.</p>
+	<p class="H_Parrafo_de_Item">Los titulares de dichos comprobantes pueden 
+	 ser:</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Clientes</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Proveedores</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Agentes</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Depósitos</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Plantas</p>
+	<p class="H_Parrafo_de_Item">Según sean los destinatarios de los comprobantes 
+	 que usarán el concepto, éstos deberán habilitarse mediante un tilde 
+	 en los cuadros de selección que correspondan a dichos destinatarios.</p>
+	<p class="H_Parrafo_de_Item">Por ejemplo, para un concepto Préstamo, 
+	 si se producen tanto egresos de mercadería por préstamos a clientes 
+	 como ingresos de mercadería por préstamos de proveedores, dicho concepto 
+	 debe habilitarse para Tabla:_Proveedores y Clientes.</p>
+	<p class="H_Parrafo_de_Item">Como ejemplos de conceptos a utilizar 
+	 en movimientos de egreso, podemos mencionar, Ventas, Devolución, Préstamo, 
+	 Consignación, Ajuste, etc. Para movimientos de ingreso, se pueden 
+	 definir Compras, Devolución, Préstamo, Ajuste, etc.</p>
+	<p class="H_Parrafo_de_Item">Es importante tener en cuenta que un concepto 
+	 está habilitado para <a href="tabla__Depositos_Plantas.htm">depósitos</a> 
+	 debe dejar comprobantes pendientes.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP606692365" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla de Posiciones Contables</span><span data-close-text="true">Tabla de Posiciones Contables</span></a></p>
+<div data-targetname="POPUP606692365">
+	<p class="H_Parrafo_de_Item">Esta tabla permite informar las posiciones 
+	 contables en las que se incluye el concepto y las cuentas que se han 
+	 de imputar en cada caso.</p>
+	<p class="H_Parrafo_de_Item">Los elementos de esta tabla pueden administrarse 
+	 desde aquí o desde la tabla de Posiciones contables.</p>
+	<p class="H_Parrafo_de_Item">Es decir, al incorporar un concepto y 
+	 la <a href="tabla__Cuentas.htm">imputación contable</a> correspondiente 
+	 a una posición contable, ésta última, junto a la mencionada imputación, 
+	 pasan a formar parte de esta tabla. Este elemento, que se agrega a 
+	 la tabla, es indistinguible de los que se dan de alta directamente 
+	 mediante esta tarea.</p>
+	<p class="H_Parrafo_de_Item">Del mismo modo, al incorporar nuevos elementos 
+	 a la tabla mediante esta tarea, éstos se verán reflejados en la tabla 
+	 de posiciones contables.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Código</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Corresponde a una posición contable.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Nombre</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Exhibe el nombre de la posición 
+	 contable correspondiente al código informado.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Imputación Contable</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cuenta que se imputa cuando los 
+	 productos que tienen asociada la posición contable informada, participan 
+	 en comprobantes de materiales donde se invoca el concepto.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Nombre</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Exhibe el nombre correspondiente 
+	 a la cuenta informada en el dato anterior, según figura en el Plan 
+	 de Cuentas.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP606720672" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP606720672">
+	<p class="H_Parrafo_de_Item">Hemos mencionado que el concepto permite 
+	 informar, a través de su inclusión en las posiciones contables, qué 
+	 cuentas se han de imputar en relación al movimiento de los bienes.</p>
+	<p class="H_Parrafo_de_Item">Citemos algunos ejemplos:</p>
+	<p class="H_Parrafo_de_Item">Supongamos que en la posición contable 
+	 del ítem <font style="font-weight: bold;">001</font> se indica como 
+	 <a href="tabla__Cuentas.htm">imputación contable</a> de inventario 
+	 <font style="font-weight: bold;">Mercadería en existencia</font>, 
+	 para el concepto <font style="font-weight: bold;">PRE-Préstamo</font>, 
+	 la imputación contable <font style="font-weight: bold;">Mercadería 
+	 en préstamo</font>, para el concepto <font style="font-weight: bold;">CSG-Consignación</font>, 
+	 la imputación contable <font style="font-weight: bold;">Mercadería 
+	 en consignación</font>, para el concepto <font style="font-weight: bold;">VEN-Costo 
+	 ventas</font>, la imputación contable <font style="font-weight: bold;">Costo 
+	 de</font> <font style="font-weight: bold;">Ventas</font> y para el 
+	 concepto <font style="font-weight: bold;">COM-Compras</font>, la imputación 
+	 contable <font style="font-weight: bold;">Compras.</font></p>
+	<p class="H_Parrafo_de_Item">Cuando el ítem se incluya en un remito 
+	 de egreso y se informe que corresponde al concepto <font style="font-weight: bold;">PRE-Préstamo</font>, 
+	 el asiento correspondiente al movimiento debitará la cuenta <font style="font-weight: bold;">Mercadería en préstamo</font> y acreditará 
+	 la cuenta <font style="font-weight: bold;">Mercadería en existencia</font>.</p>
+	<p class="H_Parrafo_de_Item">Si, en cambio el egreso corresponde al 
+	 concepto <font style="font-weight: bold;">CSG-Consignación</font>, 
+	 la cuenta que se acreditará será <font style="font-weight: bold;">Mercadería 
+	 en consignación</font>.</p>
+	<p class="H_Parrafo_de_Item">Si el concepto invocado es <font style="font-weight: bold;">VEN 
+	 - Costo ventas</font>, se debitará la cuenta <font style="font-weight: bold;">Costo 
+	 de</font> <font style="font-weight: bold;">Ventas</font> y se acreditará 
+	 la cuenta <font style="font-weight: bold;">Mercadería en existencia.</font></p>
+	<p class="H_Parrafo_de_Item">Si el bien ejemplificado se utiliza en 
+	 un remito de ingreso y se invoca el concepto <font style="font-weight: bold;">COM 
+	 – Compras</font>, el asiento debitará la cuenta <font style="font-weight: bold;">Mercadería 
+	 en existencia</font> y acreditará la cuenta <font style="font-weight: bold;">Compras</font>.</p>
+	<p class="H_Parrafo_de_Item">Vale la pena aclarar que se prevén dos 
+	 parámetros generales para informar en forma global dos conceptos de 
+	 uso, prácticamente, obligatorio; éstos son el <font style="font-weight: bold;">Concepto 
+	 para compras</font> y el <font style="font-weight: bold;">Concepto</font> 
+	 <font style="font-weight: bold;">para ventas</font>.</p>
+	<p class="H_Parrafo_de_Item">El <font style="font-weight: bold;">Concepto 
+	 para compras</font> se utiliza en todos los comprobantes de compras 
+	 (facturas, remitos, notas de débito y notas de crédito), por lo cual, 
+	 la <a href="tabla__Cuentas.htm">imputación contable</a> que se asocie 
+	 será la que se debite en facturas, remitos de egresos por devolución 
+	 y notas de débito y la que se acredite en remitos de ingreso y notas 
+	 de crédito.</p>
+	<p class="H_Parrafo_de_Item">El <font style="font-weight: bold;">Concepto 
+	 para ventas</font> se utiliza en forma automática cuando se genera 
+	 un remito de egreso a partir de la registración de una factura con 
+	 entrega. Es decir, cuando el ingreso de una factura lleva implícita 
+	 la generación del correspondiente remito.</p>
+	<p class="H_Parrafo_de_Item">Estos dos conceptos, entonces, se informan 
+	 en forma global y, luego, bastará asociarles una <a href="tabla__Cuentas.htm">imputación 
+	 contable</a> en cada una de las posiciones contables que se definan.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP606546744');
+	TextPopupInit('a2', 'POPUP606533743');
+	TextPopupInit('a3', 'POPUP606671522');
+	TextPopupInit('a4', 'POPUP606681260');
+	TextPopupInit('a5', 'POPUP606692365');
+	TextPopupInit('a6', 'POPUP606720672');
+//]]></script>
+
+
+</body></html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_30"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>evento</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Evento"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Carga de un Evento – CI (Versión XE)</h1>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+<p class="H_Parrafo_de_Item">Fecha del evento a ingresar. Dato obligatorio para la carga de un evento.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Asunto:</p>
+<p class="H_Parrafo_de_Item">Título del evento a ingresar. Dato obligatorio para la carga de un evento.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Descripción:</p>
+<p class="H_Parrafo_de_Item">Descripción extendida del evento a ingresar.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Modifica Estado</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Estado</p>
+<p class="H_Parrafo_de_Sub-Item">Permite ingresar uno de los siguientes estados, a fines de identificar la situación de la mercadería:</p>
+<ul>
+<li style="font-size: 8pt;">
+<p class="H_Parrafo_de_Sub-Item" style="margin-left: 19.65pt;"><font style="font-weight: bold;">En Aduana</font>: La mercadería esta en la aduana.</p>
+</li>
+<li style="font-size: 8pt;">
+<p class="H_Parrafo_de_Sub-Item" style="margin-left: 19.65pt;"><font style="font-weight: bold;">En Deposito</font>: La mercadería esta en Depósito.</p>
+</li>
+<li style="font-size: 8pt;">
+<p class="H_Parrafo_de_Sub-Item" style="margin-left: 19.65pt;"><font style="font-weight: bold;">Embarcado</font>: La mercadería esta en viaje.</p>
+</li>
+<li style="font-size: 8pt;">
+<p class="H_Parrafo_de_Sub-Item" style="margin-left: 19.65pt;"><font style="font-weight: bold;">En Operador Logístico</font>: La mercadería esta entregada al transporte internacional.</p>
+</li>
+<li style="font-size: 8pt;">
+<p class="H_Parrafo_de_Sub-Item" style="margin-left: 19.65pt;"><font style="font-weight: bold;">Producción</font>: La mercadería solicitada esta en proceso de producción.</p>
+</li>
+</ul>
+<p class="H_Parrafo_de_Sub-Item">No existe relación obligatoria entre estos estados.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Modifica Fechas</p>
+<p class="H_Parrafo_de_Item">Tildar para ingresar o modificar las fechas de salida, arribo y llegada a depósito de la mercadería. Las mismas se visualizan en la solapa Datos Generales de la CI.</p>
+<p class="H_Parrafo_de_Item">En caso de ingresar alguna de ellas, es obligatorio la carga de las tres. Deben cumplir la relación de que la fecha de Arribo sea posterior a la de Salida y/o la de En Deposito sea posterior a la de Arribo y Salida.</p>
+<p class="H_Parrafo_de_Item">Al modificar la fecha En Depósito, y grabar el cambio en la CI, se modificará la fecha de entrega de las líneas de OC asociadas a la carpeta, a fines de calcular el stock “A Ingresar” disponible a determinada fecha.</p>
+<p class="H_Parrafo_de_Item">La fecha de salida, arribo y a deposito, no pueden ser anteriores a la fecha de la OC.</p>
+<p class="H_Parrafo_de_Item">La CI mostrará el estado indicado en la última modificación de estado de eventos, el de la fecha mayor, y para igual fecha se considera la última modificación de estado ingresada.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Salida</p>
+<p class="H_Parrafo_de_Sub-Item">Fecha de salida de la mercadería del País de procedencia.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Arribo</p>
+<p class="H_Parrafo_de_Sub-Item">Fecha de arribo de la mercadería al País donde radica la Empresa.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Depósito</p>
+<p class="H_Parrafo_de_Sub-Item">Fecha de ingreso de la mercadería al Depósito de la Empresa.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Documentos</p>
+<p class="H_Parrafo_de_Sub-Item">Esta grilla exhibe los documentos asociados al evento, los cuales no son editables.</p>
+<p class="H_Parrafo_de_Sub-Item">Para mayor información ver <a href="administracion_de_Documentos.htm">aquí</a>.</p>
+
+
+</body></html>

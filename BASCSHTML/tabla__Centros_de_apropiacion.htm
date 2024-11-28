@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.5.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tabla Centros de apropiacion</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Centros"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Centros de apropiación</h1>
+  <p class="H_Texto">Aquí se definen los distintos centros de apropiación que componen la empresa.</p>
+  <p class="H_Texto">Para las <a href="tabla__Cuentas.htm">cuentas</a> del plan de cuentas que administren subcuentas de tipo <font style="font-weight: bold;">Centros de Apropiación</font>, se llevará el registro de a qué centro se asocia cada operación. De esta forma, al generar los asientos contables con cuentas de este tipo, se obtendrán los importes del asiento discriminados por cada centro que participa en la operación. Y luego se podrán obtener informes por centros de apropiación.</p>
+  <p class="H_Texto">El sistema permite administrar hasta dos familias de centros de apropiación independientes entre sí. La posibilidad de imputar los movimientos a dos centros independientes posibilita, por ejemplo, destinar el uso de uno de ellos a los informes de gestión y, el otro, a los de exposición contable.</p>
+  <p class="H_Texto">En la definición de <a href="parametros__Datos_generales.htm">
+      <font style="font-weight: bold;">Parámetros de Datos Generales</font>
+    </a> se podrá indicar cómo se denomina cada una de las familias de centros de apropiación previstas.</p>
+  <p class="H_Texto">El doble centro de apropiación puede ser, por ejemplo, en empresas constructoras o agropecuarias, para obtener información de los diferentes rubros de gastos discriminados por obra, en un caso, y por campo, en el otro.</p>
+  <p class="H_Texto">En esos casos uno de los dos centros de apropiación se utilizará para definir las obras (o campos) y el otro para definir los rubros. Por ejemplo, carpintería, hormigón o cerramientos metálicos, en las empresas constructoras y, veterinaria, semillas o combustible, en las empresas agropecuarias.</p>
+  <p class="H_Texto">Cuando se da de alta un centro de apropiación se debe indicar si se trata de un centro &quot;Individual&quot; o &quot;Grupal&quot;.</p>
+  <p class="H_Texto">Los centros grupales permiten asociar diferentes centros de costos a una misma línea de un comprobante de compras o ventas, con un determinado criterio de prorrateo del importe entre los centros que conforman el centro grupal. Al indicar que un centro es grupal se podrán informar los centros que lo integran y el porcentaje que le corresponde a cada uno de ellos.</p>
+  <p class="H_Texto">También es posible indicar centros de apropiación grupales al registrar asientos en el diario general, excepto en asientos de ajuste por inflación. Al grabar el asiento, internamente, se efectuará el desglose de las líneas en base a los centros que se agrupen en cada centro grupal indicado.</p>
+  <p class="H_Texto">La información a ingresar al definir centros de apropiación es la siguiente:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Tipo</p>
+  <p class="H_Parrafo_de_Item">Indicación del tipo de centro de apropiación que se está definiendo.</p>
+  <p class="H_Parrafo_de_Item">El sistema ofrecerá como tipos las denominaciones de los centros A y B que se ingresaron en los parámetros da datos generales.</p>
+  <p class="H_Parrafo_de_Item">Entonces, cada vez que se desee ingresar un centro de apropiación en el sistema, se debe indicar a qué tipo de centro corresponde.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
+  <p class="H_Parrafo_de_Item">Código de hasta seis caracteres que identifica al centro de apropiación y será utilizado para individualizar al mismo en todo el sistema.</p>
+  <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight: bold;">ADM,</font>
+    <font style="font-weight: bold;">CEN2</font>, <font style="font-weight: bold;">VENTAS</font>, <font style="font-weight: bold;">001</font>, etc.
+  </p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Nombre</p>
+  <p class="H_Parrafo_de_Item">Denominación del centro de apropiación. Se dispone de hasta veinte caracteres para el ingreso.</p>
+  <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight: bold;">Administración</font>, <font style="font-weight: bold;">Contaduría</font>, <font style="font-weight: bold;">Ventas</font>, <font style="font-weight: bold;">Capacitación</font>, etc.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Característica</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Individual</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Grupal</p>
+  <p class="H_Parrafo_de_Sub-Item">Los centros grupales permiten asociar diferentes centros de costos a una misma línea de un comprobante de compras o ventas y de los asientos que se registran por diario, con un determinado criterio de prorrateo del importe entre los centros que conforman el centro grupal.</p>
+  <p class="H_Parrafo_de_Sub-Item">Los centros que pueden agruparse en un centro grupal deben ser centros definidos con la Característica &quot;Individual&quot;, deben ser del mismo tipo del centro grupal y no pueden administrar negocios (versión XE).</p>
+  <p class="H_Parrafo_de_Sub-Item">Al efectuar la registración contable de un comprobante de compras o ventas, para las líneas en las que se utilizó un centro grupal, se generarán en el asiento tantas líneas como centros se agrupen en el centro grupal indicado.</p>
+  <p class="H_Parrafo_de_Sub-Item">Además, a cada una de las líneas se le asigna el importe resultante de aplicar, al importe original de la línea del comprobante, el porcentaje que cada centro tenga definido.</p>
+  <p class="H_Item_con_imangen_negrita_XE"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Administra negocios </p>
+  <p class="H_Parrafo_de_Item">Indicación de si el centro de apropiación puede administrar negocios o no.</p>
+  <p class="H_Parrafo_de_Item">Si el centro de apropiación administra negocios cada vez que se ingrese el centro de apropiación en un comprobante de compras o ventas, se solicitará el ingreso del negocio al cual corresponde la línea del comprobante que se está ingresando.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Centros en los que participa</p>
+  <p class="H_Parrafo_de_Item">En esta tabla, para los centros que se definen como grupales, se deben informar los centros que lo integran y el porcentaje que le corresponde a cada uno de ellos.</p>
+  <p class="H_Parrafo_de_Item">Para los centros individuales exhibe la lista de centros grupales que lo incluyen.</p>
+
+</body></html>

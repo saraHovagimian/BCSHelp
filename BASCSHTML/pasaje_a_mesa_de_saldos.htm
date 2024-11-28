@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.3.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Pasaje a Mesa de saldos</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Mesa,Saldos"/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Mesa de saldos</h1>
+<p class="H_Texto">Este comprobante permite registrar el pasaje del stock 
+ de uno o más productos, de uno o varios depósitos, a un único producto. 
+ Esto implica que todos los productos pasan a tener un mismo código y un 
+ mismo precio.</p>
+<p class="H_Texto">Aplica a depósitos de Casa Central y de Sucursales administradas 
+ con QP y con Discovery.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ Para tener en cuenta</p>
+<p class="H_Texto">La Mesa de saldos no aparece en el menú de BASCS. Su 
+ habilitación se realiza desde Tablas/ Configuración/ Parámetros/ Especiales 
+ mediante un tilde en el campo Incluir en el menú el programa de mesa de 
+ saldos. Una vez habilitada se la debe incluir en el menú de los usuarios 
+ que corresponda, desde Tablas/ Configuración/ Usuarios. El programa a 
+ incluir se denomina Pasaje a mesa de saldos.</p>
+<p class="H_Texto">La trasmisión la realiza el programa <font style="font-weight: bold;">Importador/Exportador</font> 
+ de la <font style="font-weight: bold;">I.C.R.</font></p>
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">En 
+ Discovery será posible definir formatos de importación de modo de incorporar 
+ la información correspondiente a los mensajes. Estos permitirán registrar 
+ remitos de ingreso y la suspensión, en caso que corresponda, de los ítems 
+ que se transfieren a la mesa de saldos. Los remitos de ingreso incluyen 
+ el ítem mesa de saldo y la cantidad correspondiente y también incluyen 
+ a todos los ítems que se transfieren a la mesa de saldos con las respectivas 
+ cantidades en negativo.</p>
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">En 
+ el caso de QP el mensaje que se envía no específica las cantidades de 
+ los ítems en casa central que se pasan a mesa de saldos sino que se tomará 
+ el stock disponible en QP al momento de procesar el mensaje. O sea que 
+ el pasaje se realiza a partir del stock en QP al momento de la recepción 
+ del mensaje y no del que figura en BASCS al momento de definir la mesa 
+ de saldos. El remito de ingreso registra el alta del stock del ítem mesa 
+ de saldos y también incluye a todos los ítems que se transfieren a la 
+ mesa de saldos con las respectivas cantidades en negativo. Al recibir 
+ el comprobante, automáticamente se suspenden todos los ítems que pasan 
+ a mesa de saldos para las operaciones de ventas, compras e ingresos. Es 
+ posible ingresar ítems con stock negativo o sin stock ya sea que se haya 
+ indicado unoo varios depósitos en el encabezado.</p>
+<p style="margin-top: 0; margin-bottom: 0;"> </p>
+<p class="H_Parrafo_de_Item">Si hubiese ítems sin stock, a pesar de que 
+ no se dispone de stock para pasar a la mesa de saldos, los ítems se suspenden 
+ al igual de aquellos que disponen de stock para el pasaje.</p>
+<p class="H_Texto">Vale aclarar que el ítem de destino no puede manejar 
+ despachos, partidas, números de serie, doble unidad de medida, dimensiones 
+ ni contenedores. Puede manejar medidas y colores, pero los ítems de origen 
+ deben tener la misma tabla de medidas que el ítem de destino.</p>
+<p class="H_Texto">En una mesa de saldos, entonces, si el ítem de destino 
+ tiene medidas y colores, se generan varios ítems de destino, tomando como 
+ origen los de la misma medida y, si es posible, color. Si el color no 
+ coincidiera se toma un color cualquiera de la tabla de colores del ítem 
+ de destino.</p>
+<p class="H_Texto">Vale aclarar que el concepto que se usará en el remito 
+ de ingreso de QP tiene que estar habilitado para proveedores.</p>
+<p class="H_Texto">En BAS CS, la Mesa de saldos queda pendiente hasta que 
+ se reciba la información de recepción desde la sucursal.</p>
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Al 
+ recibir el remito de ingreso en QP, se envía a BAS CS la confirmación, 
+ mediante un mensaje con formato de parte de producción, con prefijo y 
+ número vacíos. Estos datos serán completados por la ICR.</p>
+<p class="H_Parrafo_de_Item">Se generan tantos Remitos de ingreso en QP 
+ como ítems destino haya en la mesa de saldos y se transmiten a BAS CS 
+ tantos <font style="font-weight: bold;">Partes de Producción</font> como 
+ remitos de ingreso son generados en QP, con la información de las cantidades 
+ registradas en dichos remitos.</p>
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Al 
+ importar la mesa de saldos en Discovery, se envía a BAS CS la confirmación, 
+ mediante remitos de ingreso que registran el alta del stock del nuevo 
+ ítem y la baja del stock de los ítems que pasan a la mesa de saldos.</p>
+<p class="H_Texto">De lo dicho es importante recalcar que la información 
+ en BAS CS, en relación al stock de los ítems que se dan de baja y del 
+ ítem mesa de saldos que los recibe, se actualiza recién cuando se reciben 
+ los mensajes provenientes de los Discovery o QP instalados en las sucursales 
+ involucradas.</p>
+<p class="H_Texto">Con respecto a los costos vale aclarar que, para utilizar 
+ esta funcionalidad, se deben valuar a los productos a lista de precios 
+ y ésta debe informarse en el campo Lista de precios para valuación contable 
+ disponible en Tablas -  Configuración - Parámetros -  Ítems.</p>
+<p class="H_Texto">La Mesa de saldos modificará el costo del ítem destino 
+ en dicha lista de precios de costos, a partir de los costos de los ítems 
+ de origen.</p>
+<p class="H_Texto">Al recibir un parte de producción (si la sucursal tiene 
+ QP) o un remito de ingreso (si la sucursal es de Discovery) se valorizará 
+ el producto destino.</p>
+<p class="H_Texto">Para ello se hace una especie de costo promedio ponderado. 
+ Se toma el stock existente del producto de destino en la empresa al precio 
+ de la lista de costos y se le suma la cantidad que figura en el comprobante 
+ al costo que surge del mismo; luego dicho importe se divide por la cantidad 
+ total (stock existente del item destino + cantidad que figura en el comprobante) 
+ y con ese costo se actualiza el costo del item destino en la lista de 
+ precios de costos.</p>
+<p class="H_Texto">Vale aclarar que los ítems destino deben haberse dado 
+ de alta en la lista de precios de costos.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ Para tener en cuenta</p>
+<p class="H_Texto">Para registrar la Mesa de saldos se dispone del tipo 
+ de comprobante &quot;Pasaje a mesa de saldos&quot;, debe habilitarse un 
+ talonario que permita su registración. El comprobante no se imprime ni 
+ se contabiliza.</p>
+<p class="H_Texto">El comprobante Mesa de saldos puede eliminarse o anularse 
+ libremente siempre y cuando se encuentre pendiente de envío, es decir, 
+ mientras no se haya enviado a la cola de mensajes mediante la ejecución 
+ del programa Importador/ Exportador de la I.C.R.</p>
+<p class="H_Texto">Para la registración del comprobante se debe definir 
+ un concepto que debe habilitarse para proveedores y no debe dejar comprobantes 
+ pendientes.</p>
+<p class="H_Texto">El concepto que se da de alta debe indicarse en Tablas 
+ - Configuración - Parámetros - Datos Generales, solapa Comprobantes, en 
+ el campo Mesa de Saldos.</p>
+<p class="H_Texto">El mismo será utilizado por los comprobantes de ingreso 
+ de mercadería a las sucursales que se generen a partir de las mesas de 
+ saldos enviadas por BAS CS. En el comprobante, en el caso de Discovery, 
+ figurarán los ítems que se transfieren a la mesa de saldos con sus cantidades 
+ en negativo y el ítem destino de la mesa de saldos con la cantidad resultante 
+ de todos los ítems transferidos en positivo. En el caso de QP sólo figuran 
+ los códigos de ítems pues las cantidades se toman, directamente, desde 
+ QP.</p>
+<p class="H_Texto">La mesa de saldos se da por terminada cuando se reciben 
+ todos los partes y remitos de las sucursales.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP658668446" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Vigencia</span><span data-close-text="true">Vigencia</span></a></p>
+<div data-targetname="POPUP658668446">
+	<p class="H_Parrafo_de_Item">Es la fecha de entrada en vigencia de 
+	 la mesa de saldos. El dato es obligatorio y tiene que ser posterior 
+	 o igual a la fecha de la mesa de saldos.</p>
+	<p class="H_Parrafo_de_Item">La fecha de vigencia tendrá efecto para 
+	 las efectivización de mesa de saldos tanto de depósitos correspondientes 
+	 a casa central como de depósitos correspondientes a sucursales que 
+	 se administran con QuickPos.</p>
+	<p class="H_Parrafo_de_Item">Vale aclarar que para depósitos de sucursales 
+	 con Discovery la fecha de vigencia no será tenida en cuenta.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP658644247" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP658644247">
+	<p class="H_Parrafo_de_Item">Depósitos a afectar. Los depósitos pueden 
+	 corresponder a sucursales o pueden ser depósitos de la casa central.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP658639884" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lista</span><span data-close-text="true">Lista</span></a></p>
+<div data-targetname="POPUP658639884">
+	<p class="H_Parrafo_de_Item">El campo Lista se completa con la informada 
+	 como lista de precios para valuación contable en Tablas -  Configuración 
+	 -  Parámetros -  Ítems.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP658621371" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">A ítem</span><span data-close-text="true">A ítem</span></a></p>
+<div data-targetname="POPUP658621371">
+	<p class="H_Parrafo_de_Item">Se debe indicar el código del ítem de 
+	 destino, éste debe estar incluido en la lista de costos.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP658575393" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">No suspender ítem</span><span data-close-text="true">No suspender ítem</span></a></p>
+<div data-targetname="POPUP658575393">
+	<p class="H_Parrafo_de_Item">En el caso de Discovery, permite indicar 
+	 si los bienes que se pasan a mesa de saldos se suspenden o no.</p>
+	<p class="H_Parrafo_de_Item">En QP, es inoperante pues los bienes se 
+	 suspenden siempre para operaciones de venta, ingresos y compra, independientemente 
+	 de lo que se indique en este flag. Vale aclarar que al realizar el 
+	 pasaje también se suspenden los ítems origen que no tienen stock (aunque 
+	 no tengan stock para pasar al ítem de destino, se suspenden).</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Ítems</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP658542957" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla 
+ de Ítems</span><span data-close-text="true">Tabla 
+ de Ítems</span></a></p>
+<div data-targetname="POPUP658542957">
+	<p class="H_Parrafo_de_Sub-Item">En la solapa &quot;Ítems&quot; se 
+	 deben informar los códigos de todos los ítems que se transfieren a 
+	 la mesa de saldos. Todos los ítems del stock que se indiquen pasarán 
+	 a la mesa de saldos con el mismo código, éste corresponde al indicado 
+	 en el campo &quot;A Ítem&quot;.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para cada ítem se debe informar la 
+	 cantidad que se entrega y, en función al tipo de ítem del que se trate, 
+	 se requerirá información adicional.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Puede ingresarse el código del ítem 
+	 o su código alternativo.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el 
+	 dato anterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta. Si no, se exhibirá la otra descripción. Si 
+	 el ítem no tiene descripción asociada, se solicitará el ingreso de 
+	 un detalle del mismo en este momento.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Item">En la columna &quot;Cantidad&quot; 
+	 se muestra el stock resultante de sumar, para cada ítem, las existencias 
+	 que corresponden a todos los depósitos indicados. En caso que se indique 
+	 más de un depósito, este dato no puede modificarse, salvo que se indique 
+	 0, en cuyo caso el ítem no se transfiere.</p>
+	<p class="H_Parrafo_de_Sub-Item">En esos casos, cuando se pasan las 
+	 existencias de un bien a mesa de saldos, se pasa todo el stock remanente 
+	 del mismo correspondiente a todos los depósitos indicados.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se indica un ítem que maneja colores 
+	 y medidas se tendrá que indicar en la solapa de Selección en la grilla 
+	 de colores y medidas, mediante un tilde, que combinaciones se desea 
+	 enviar a mesa de saldos, haya o no stock de las mismas (las cantidades 
+	 no se pueden modificar).</p>
+	<p class="H_Parrafo_de_Sub-Item">Las combinaciones que no están tildadas 
+	 se muestran en la solapa de cantidades grisadas y no se consideran 
+	 en la suma de totales.</p>
+	<p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que 
+	 para calcular el stock de cada ítem se tiene en cuenta el stock actual 
+	 menos el stock asignado en cada depósito en el que hay existencia 
+	 del ítem.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+	 Para tener en cuenta</p>
+	<p class="H_Parrafo_de_Sub-Item">En caso que se indique un único depósito:</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Si se trata de Discovery es 
+	 posible transferir cantidades parciales de los ítems. En ese caso, 
+	 si se ha indicado que se han de suspender los ítems, para aquellos 
+	 que se transfieren parcialmente, es decir que aun presentan existencias 
+	 en el depósito en cuestión, no se generan los mensajes correspondientes 
+	 a la suspensión.</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Si se trata de QP, no está previsto 
+	 realizar transferencias parciales a la mesa de saldos. Por lo cual, 
+	 el stock que se muestra en la columna cantidad sólo es a título informativo.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Costo</p>
+	<p class="H_Parrafo_de_Sub-Item">En la columna &quot;Costo&quot; se 
+	 exhibe el costo de cada ítem según figura en la lista de precios informada 
+	 como lista de precios para valuación contable. Por lo cual, para poder 
+	 realizar este proceso se requiere que tanto los ítems que pasan a 
+	 la mesa de saldos como el ítem &quot;mesa de saldos&quot;, que se 
+	 informa en el campo &quot;A Ítem&quot;, figuren en la lista de precios 
+	 para valuación contable que se ha informado en los parámetros. En 
+	 caso contrario, no se permite realizar la tarea.</p>
+	<p class="H_Parrafo_de_Sub-Item">Ya hemos mencionado que los costos 
+	 con los cuales los productos pasan a la mesa de saldos son los correspondientes 
+	 a la lista de precios para valuación contable vigente a la fecha del 
+	 comprobante. Luego el costo del producto final (mesa de saldos) se 
+	 calculará, en forma automática, a partir del costo promedio de los 
+	 ítems que integran el lote.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP658569966" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+<div data-targetname="POPUP658569966">
+	<p class="H_Parrafo_de_Item">Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.</p>
+	<p class="H_Parrafo_de_Item">Este campo se inserta en la cola o tabal 
+	 de salida. Para poder incorporarlo a Discovery se debe indicar, en 
+	 el descriptor de formato, el campo Observaciones, desde la columna 
+	 73 a la columna 98.</p>
+	<p class="H_Parrafo_de_Item">Se mandarán sólo 25 caracteres pues esa 
+	 es la cantidad que prevé Discovery en el campo Observaciones del remito.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP658573093" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Total de unidades</span><span data-close-text="true">Total de unidades</span></a></p>
+<div data-targetname="POPUP658573093">
+	<p class="H_Parrafo_de_Item">En este campo se exhibe la cantidad de 
+	 stock que se va transfiriendo al ítem informado en el campo precedente.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP658668446');
+	TextPopupInit('a2', 'POPUP658644247');
+	TextPopupInit('a3', 'POPUP658639884');
+	TextPopupInit('a4', 'POPUP658621371');
+	TextPopupInit('a5', 'POPUP658575393');
+	TextPopupInit('a6', 'POPUP658542957');
+	TextPopupInit('a7', 'POPUP658569966');
+	TextPopupInit('a8', 'POPUP658573093');
+//]]></script>
+
+
+</body></html>

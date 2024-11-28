@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.4.0_6"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Alertas Secuencialidad de talonarios</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Secuencialidad,Talonarios"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Secuencialidad de talonarios </h1>
+  <p class="H_Texto">Mediante esta tarea es posible controlar la secuencia numérica de los comprobantes asociados a los talonarios indicados y, en caso que se encuentren números faltantes, enviar mensajes por correo electrónico a él o los usuarios que se indiquen.</p>
+  <p class="H_Texto">Los usuarios destinatarios de los avisos, además de tener que contar con una dirección de correo electrónico, deben tener permiso para utilizar el <a href="tabla__Talonarios.htm">talonario</a> al cual se refieran los avisos.</p>
+  <p class="H_Texto">Para programar la frecuencia y periodicidad con que se enviarán estos avisos debe accederse a la tarea de <font style="font-weight: bold;">Programación de alertas de secuencialidad de talonarios</font> mediante el botón rotulado <font style="font-weight: bold;">Programar trabajo</font>. A esta tarea sólo puede acceder el usuario administrador del sistema (sa).</p>
+  <p class="H_Texto">El envío de avisos también podrá indicarse desde la tabla de <a href="tabla__Talonarios.htm">talonarios</a>. Para ello debe marcarse, en la ficha <font style="font-weight: bold;">Requisitos</font> del talonario a controlar, la opción <font style="font-weight: bold;">Generar alerta por falta de secuencia</font> e indicar el usuario o usuarios que serán destinatarios de los mensajes de alerta. En ese caso, en esta tarea se exhibirá una lista con todos los talonarios en los que se haya indicado el requisito mencionado y los usuarios elegidos para cada uno de ellos.</p>
+  <p class="H_Texto">Los mensajes que se envíen, detallarán el código y la descripción del talonario que corresponda, el prefijo del mismo y el rango de números de comprobantes faltantes (desde número-hasta número).</p>
+  <p class="H_Texto">Es importante tener en cuenta que para los talonarios que tienen asociado un subdiario, el control de la secuencialidad se realiza desde la fecha correspondiente al último cierre operativo de dicho subdiario. Para los talonarios que no tienen subdiario asociado, el control se efectuará desde el primer día del mes anterior al mes en que se ejecuta el proceso.</p>
+  <p class="H_Texto">En esta tarea se solicitan los siguientes datos:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de talonarios</p>
+  <p class="H_Parrafo_de_Item">En esta tabla se deben indicar los talonarios cuya secuencia numérica se desea controlar, y los usuarios a los cuales se les enviará mensajes de alerta. No obstante, también se exhibirán aquí todos aquellos talonarios que tienen indicada la opción <font style="font-weight: bold;">Generar alerta por falta de secuencia</font> y los usuarios indicados en los mismos.</p>
+  <p class="H_Parrafo_de_Item">Se prevé, también, la posibilidad de modificar los talonarios y usuarios que se exhiben, de incorporar nuevos talonarios o de eliminar algunos de los existentes, directamente desde esta tarea. En ese caso, la tabla de talonarios se actualiza automáticamente con la información que aquí se ingrese.</p>
+  <p class="H_Parrafo_de_Item">El momento en que se envíe cada mensaje y con qué frecuencia podrá configurarse pulsando el botón <font style="font-weight: bold;">Programar trabajo</font>.</p>
+  <p class="H_Parrafo_de_Item">Además de indicar la programación de la tarea, es posible indicar que los resultados generados se agreguen al <font style="font-weight: bold;">Historial</font> de la misma.</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Talonario</p>
+  <p class="H_Parrafo_de_Item">Código del talonario sobre el cual se efectuará el control de la secuencia numérica.</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Item">Descripción del talonario indicado en el campo anterior.</p>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Usuarios</p>
+  <p class="H_Parrafo_de_Item">Usuarios para los cuales se han de generar los avisos de alerta por falta de secuencialidad en la numeración.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Programar trabajo</p>
+  <p class="H_Parrafo_de_Item">Pulsando este botón aparecerá una pantalla que permitirá configurar la programación periódica de alertas por falta de secuencialidad en la numeración.</p>
+  <p class="H_Parrafo_de_Item">Se podrá programar la periodicidad con que se enviarán los alertas y la frecuencia diaria, se podrá configurar para que se envíen los mensajes siempre un día y a una determinada hora o se pueden indicar períodos de días, semanas o meses pasados los cuales se enviarán.</p>
+  <p class="H_Parrafo_de_Item">La programación periódica de alertas sólo podrá ser realizada por el administrador del sistema y podrá modificarse esta programación todas las veces que sea necesario.</p>
+
+</body></html>

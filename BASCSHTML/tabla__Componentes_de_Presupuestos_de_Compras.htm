@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.6.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>tabla componentes presupuestos compras</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Definición"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Definición de componentes de presupuesto de compras</h1>
+  <p class="H_Texto">En esta ventana se definen las componentes de cada uno de los presupuestos de compras que se hayan definido.</p>
+  <p class="H_Texto">Al definir una componente se indica, para determinados valores del atributo asociado al presupuesto, el importe de la compra en la moneda indicada en la definición del presupuesto, si corresponde se indicará la cantidad involucrada en la compra (expresada en la unidad de medida de compras del bien y el período de vigencia del componente (que deberá estar comprendido en el período indicado en la definición del presupuesto).</p>
+  <p class="H_Texto">Es posible parametrizar el sistema para que las componentes de los presupuestos requieran de autorización.</p>
+  <p class="H_Texto">En caso que una componente autorizada se modifique, quedará nuevamente pendiente de autorización.</p>
+  <p class="H_Texto">Una vez que el presupuesto se encuentre aprobado, no se podrán modificar ni eliminar las componentes ingresadas previas a la aprobación de dicho presupuesto; éstas se denominan componentes originales.</p>
+  <p class="H_Texto">Toda modificación al presupuesto que se requiera realizar se deberá registrar en componentes ingresadas con posterioridad a la aprobación del mismo. Estas se consideran como modificaciones al presupuesto original y, si el sistema está parametrizado para que las componentes requieran de autorización, quedarán pendientes de autorización.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Empresa</p>
+  <p class="H_Parrafo_de_Item">Empresa correspondiente al presupuesto.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Presupuesto</p>
+  <p class="H_Parrafo_de_Item">Código del presupuesto para el cual se define la componente.</p>
+  <p class="H_Parrafo_de_Item">Un presupuesto puede tener todas las componentes que se requieran.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Componente</p>
+  <p class="H_Parrafo_de_Item">Código identificatorio del componente que se define.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Descripción</p>
+  <p class="H_Parrafo_de_Item">Texto que identifica a la componente.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Item">Exhibe el atributo que corresponde al presupuesto.</p>
+  <p class="H_Parrafo_de_Item">La componente que se está definiendo presupuestará cantidades e importes en relación a los valores de este atributo.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Totales</p>
+  <p class="H_Parrafo_de_Item">Este cuadro exhibe los totales resultantes de los importes y, si corresponde, cantidades presupuestados en la componente que se define.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Componentes</p>
+  <p class="H_Item_con_imagen_negrita">Valor</p>
+  <p class="H_Parrafo_de_Item">Código del valor del atributo que define al presupuesto para el cual se está presupuestando el importe y la cantidad.</p>
+  <p class="H_Parrafo_de_Item">Luego, al registrar compras de bienes y servicios que tengan asociados este valor para el atributo en cuestión, si el grupo de compras de los mismos indica que se debe realizar control de presupuesto de compras, se realizará el correspondiente control.</p>
+  <p class="H_Item_con_imagen_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Item">Nombre correspondiente al valor del atributo informado.</p>
+  <p class="H_Item_con_imagen_negrita">Proveedor</p>
+  <p class="H_Parrafo_de_Item">Si el presupuesto admite apertura por proveedor, es posible indicar el código del proveedor en relación al cual se está presupuestando esa línea de la componente.</p>
+  <p class="H_Parrafo_de_Item">Para cada valor del atributo es posible indicar varias líneas involucrando proveedores diferentes. También se indicará un valor adicional al cual sumen todos los proveedores no contemplados en la apertura.</p>
+  <p class="H_Item_con_imagen_negrita">Nombre</p>
+  <p class="H_Parrafo_de_Item">Si se informó un código de proveedor, se exhibe el nombre correspondiente.</p>
+  <p class="H_Item_con_imagen_negrita">Importe</p>
+  <p class="H_Parrafo_de_Item">Importe presupuestado (expresado en la moneda indicada en la definición del presupuesto) para el período de vigencia de la componente.</p>
+  <p class="H_Item_con_imagen_negrita">Cantidad</p>
+  <p class="H_Parrafo_de_Item">Cantidad de la compra (si corresponde), en la unidad de medida de compras, siempre que se haya indicado Importes y cantidades en la definición del presupuesto.</p>
+  <p class="H_Item_con_imagen_negrita">Fecha Desde</p>
+  <p class="H_Parrafo_de_Item">Fecha inicial del período de vigencia de la componente (debe ser posterior o igual a la fecha de inicio del presupuesto).</p>
+  <p class="H_Item_con_imagen_negrita">Fecha Hasta</p>
+  <p class="H_Parrafo_de_Item">Fecha final del período de vigencia de la componente (debe ser anterior o igual a la fecha final del presupuesto).</p>
+
+</body></html>

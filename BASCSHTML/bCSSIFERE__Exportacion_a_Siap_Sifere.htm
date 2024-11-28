@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.16.0_9"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>BCSSIFERE Exportacion a S.I.Ap. Si.Fe.Re</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="S.I.Ap. Si.Fe.Re"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>S.I.Ap. Si.Fe.Re</h1>
+  <p class="H_Texto">Este utilitario permite generar las salidas compatibles conforme a los formatos de importación establecidos por el Sistema Federal de Recaudación – Convenio multilateral (Si.Fe.Re.) del S.I.A.p.</p>
+  <p class="H_Texto">Se generan archivos para informar las retenciones y percepciones del impuesto a los ingresos brutos sufridas en un período dado .</p>
+  <p class="H_Texto">La generación consta de 4 procesos que permiten informar las retenciones y/o percepciones correspondientes a un grupo de provincias y tablas que son:</p>
+  <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Exportación de retenciones</p>
+  <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Exportación de percepciones</p>
+  <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Exportación de percepciones aduaneras</p>
+  <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Exportación de recaudaciones bancarias</p>
+  <p class="H_Item_con_imagen_negrita"></p>
+  <p class="H_Texto">Antes de generar los archivos se deben establecer parámetros generales y sinónimos para las provincias en el Menú &quot;Configuración&quot;.</p>
+  <p class="H_Item_con_Imagen_negrita_11"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Configuración</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Sinónimos- provincias</p>
+  <p class="H_Parrafo_de_Item">Se deben establecer los sinónimos de las distintas provincias que intervienen en la generación. Esto debe hacerse para cada empresa para la cual se vayan a generar los archivos.</p>
+  <p class="H_Parrafo_de_Item">En las dos primeras columnas de la tabla se exhiben el código y la descripción de las provincias en BAS CSS y en la columna Sinónimo, se deben registrar los códigos según establece el Sifere.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/>Parámetros generales</p>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Tipos de comprobantes</p>
+  <p class="H_Parrafo_de_Item">Se debe ingresar un atributo de proveedores y un valor, éstos se utilizan para determinar los comprobantes a considerar como documentos aduaneros parala generación del archivo de percepciones aduaneras.</p>
+  <p class="H_Parrafo_de_Item">Los comprobantes que se incluyan en el archivo de percepciones aduaneras no se incluirán en el archivo de percepciones.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Código del atributo de proveedores a través del cual se desean relacionar los documentos aduaneros.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Documento aduanero</p>
+  <p class="H_Parrafo_de_Sub-Item">Valor del atributo correspondiente al documento aduanero.</p>
+  <p class="H_Texto_subrayado_arial_9" style="margin-top: 0; margin-bottom: 0;"></p>
+  <p class="H_Item_con_imagen_negrita">Menú Operación-Exportación</p>
+  <p class="H_Texto">Los archivos que pueden generarse en este menú son cuatro:</p>
+  <p class="H_Texto">•    Retenciones </p>
+  <p class="H_Texto">•    Percepciones sufridas</p>
+  <p class="H_Texto">•    Percepciones aduaneras</p>
+  <p class="H_Texto">•    Recaudaciones bancarias</p>
+  <p class="H_Texto">Los cuatro archivos se generan de la misma manera. </p>
+  <p class="H_Item_con_imagen_negrita"></p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Generar archivo</p>
+  <p class="H_Parrafo_de_Sub-Item">Tildar según el archivo a generar</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Formato</p>
+  <p class="H_Parrafo_de_Sub-Item">Se ofrece el formato de archivo que corresponde a la retención o percepción indicada. Si se desea ver el detalle de los datos que incluye puede presionarse F4.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Nombre del archivo</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe informar el nombre del archivo a generar.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tabla</p>
+  <p class="H_Parrafo_de_Sub-Item">Número de la tabla de retenciones/percepciones que corresponda, según figura en la tabla Provincias de BAS CS, en las fichas Retenciones/Percepciones (columna “Nro.).</p>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Texto_subrayado_arial_9" style="margin-top: 0; margin-bottom: 0;"></p>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Desde Fecha / Hasta fecha</p>
+  <p class="H_Parrafo_de_Item">Rango de fechas de los datos que se desean incluir en el archivo.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Empresa</p>
+  <p class="H_Parrafo_de_Item">Código de la empresa de la cual se desean generar los archivos.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Provincia</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de la provincia de la cual se desean generar los archivos.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/>Consolidar información en el Administrador</p>
+  <p class="H_Parrafo_de_Item">Si se tilda se considera la información de la casa central asociada a cada sucursal en lugar de la de la sucursal, caso contrario se considerará la de la sucursal.</p>
+  <p class="Texto"></p>
+  <p class="Texto">En el caso que la emisión involucre comprobantes de compras, cuando se indiquen fechas para filtrar los comprobantes, se considerará la fecha impositiva de los mismos. </p>
+  <p class="Texto"></p>
+  <p class="Texto">•    Exportación de retenciones sufridas</p>
+  <p class="H_Parrafo_de_Item">La generación de archivos considera recibos, correspondientes a clientes y proveedores cuyas fechas estén comprendidas en el período indicado y cuyo monto retenido, correspondiente a provincias que participan en los ingresos brutos, sea distinto de cero. Por cada comprobante se generarán tantos registros como provincias involucre la retención de ingresos brutos del mismo.  </p>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Texto">•    Exportación de percepciones sufridas</p>
+  <p class="H_Parrafo_de_Item">El proceso considera comprobantes de compras, correspondientes a clientes y proveedores que no presenten el valor de atributo del atributo indicado en parámetros generales, cuyas fechas estén comprendidas en el período indicado y cuyo monto percibido, correspondiente a provincias que participan en los ingresos brutos, sea distinto de cero. Por cada comprobante se generarán tantos registros como provincias involucre la percepción de ingresos brutos del mismo.  </p>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Texto">•    Exportación de percepciones aduaneras</p>
+  <p class="H_Parrafo_de_Item">Se consideran comprobantes de compras, correspondientes a clientes y proveedores que presenten el valor de atributo del atributo indicado en los “Parámetros generales”, cuyas fechas estén comprendidas en el período indicado y cuyo monto percibido, correspondiente a provincias que participan en los ingresos brutos, sea distinto de cero. Por cada comprobante se generarán tantos registros como provincias involucre la percepción de ingresos brutos del mismo.  </p>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Texto">•    Exportación de recaudaciones bancarias</p>
+  <p class="H_Parrafo_de_Item">El proceso considerará retenciones de liquidaciones de tarjetas, créditos bancarios y anulación de créditos bancarios y percepciones de liquidaciones de tarjetas, débitos bancarios y anulación de débitos bancarios, cuyas fechas estén comprendidas en el período indicado, y cuyo monto retenido/percibido, correspondiente a provincias que participan en los ingresos brutos, sea distinto de cero. Por cada comprobante se generarán tantos registros como provincias involucren las retenciones y percepciones de ingresos brutos del mismo.  </p>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Item_con_imagen_negrita"></p>
+
+</body></html>

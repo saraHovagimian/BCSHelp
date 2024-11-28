@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.3.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Refinanciacion de vencimientos - A pagar</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Refinanciación,Vencimientos"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Refinanciación de vencimientos a pagar </h1>
+<p class="H_Texto">Esta tarea permite modificar tanto en fechas como en 
+ importes, los vencimientos de los comprobantes de compra pendientes en 
+ las cuentas corrientes de los <a href="tabla__Proveedores.htm">proveedores</a>. 
+ También es posible mediante esta tarea pasar a cuenta corriente una factura 
+ que originalmente fue ingresada con una <a href="tabla__Condiciones_de_compra_y_venta.htm">condición 
+ de compra</a> que generaba vencimientos a documentar y viceversa.</p>
+<p class="H_Texto">Al registrar en el sistema facturas de compra, las fechas 
+ de vencimiento y los importes a vencer en cada fecha se calculan teniendo 
+ en cuenta la <a href="tabla__Condiciones_de_compra_y_venta.htm">condición 
+ de compra</a> asociada al comprobante.</p>
+<p class="H_Texto">Si la condición de compra indica que se permiten modificar 
+ las fechas de vencimiento calculadas, mediante esta tarea podrán modificarse 
+ los vencimientos según las necesidades de cada caso.</p>
+<p class="H_Texto">La refinanciación de vencimientos se registra en el 
+ sistema mediante un comprobante habilitado para tal fin. Se deben indicar 
+ la fecha y el número del comprobante de refinanciación.</p>
+<p class="H_Texto">Cada comprobante de refinanciación puede modificar los 
+ vencimientos de un comprobante de compra determinado.</p>
+<p class="H_Texto">La forma de operar es seleccionar un <a href="tabla__Proveedores.htm">proveedor</a> 
+ y luego mediante el botón <font style="font-weight: bold;">Comprobantes</font> 
+ seleccionar de la lista de comprobantes de compra asociados al proveedor 
+ indicado, cuál es el comprobante del que se desean modificar los vencimientos. 
+ Sólo se permitirá modificar los vencimientos de comprobantes que aún no 
+ han tenido aplicaciones. Del mismo modo, para modificar la condición de 
+ un comprobante, pasarlo de deuda documentada con facturas de crédito a 
+ cuenta corriente y viceversa, deberá tratarse de comprobantes sin aplicaciones 
+ ni documentos generados.</p>
+<p class="H_Texto">Es importante tener en cuenta que el sistema permite 
+ refinanciar vencimientos correspondientes a <a href="comprobantes_internos_de_cuenta_corriente.htm">comprobantes 
+ internos de cuenta corriente</a>.</p>
+<p class="H_Texto">Los datos a ingresar para la refinanciación, además 
+ de la <font style="font-weight: bold;">fecha</font> y el <font style="font-weight: bold;">número 
+ de comprobante</font>, son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP671724829" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Comprobante a refinanciar</span><span data-close-text="true">Comprobante a refinanciar</span></a></p>
+<div data-targetname="POPUP671724829">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Proveedor</p>
+	<p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Proveedores.htm">proveedor</a> 
+	 titular del comprobante cuyos vencimientos se van a refinanciar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_ok.gif" alt="BASCSIMAG\Boton_ok.gif" width="24" height="24" border="0"/> Comprobantes</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez ingresado el proveedor, mediante 
+	 este botón se accede a una ventana que muestra la lista de comprobantes 
+	 de compra cuyos vencimientos pueden refinanciarse.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se exhibe para cada comprobante del 
+	 proveedor, el tipo, fecha, número y saldo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al seleccionar el comprobante, haciendo 
+	 click en la línea correspondiente de la tabla, se completa la pantalla 
+	 con los datos del mismo, los vencimientos, totales e Imputación 
+	 contable.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Opera 
+	 con fac. crédito</p>
+	<p class="H_Parrafo_de_Sub-Item">Indicación de si se desea que el comprobante 
+	 opere con facturas de crédito o pase a cuenta corriente. Solo se podrá 
+	 modificar la condición de comprobantes que aún no han tenido aplicaciones 
+	 ni documentos generados.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP671744316" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Vencimientos</span><span data-close-text="true">Ficha Vencimientos</span></a></p>
+<div data-targetname="POPUP671744316">
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de 
+	 vencimientos</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta tabla se completa con la lista 
+	 de vencimientos del comprobante seleccionado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se muestra para cada vencimiento el 
+	 número de cuota, fecha de vencimiento e importe.</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta lista puede modificarse según 
+	 las necesidades, tanto las fechas de vencimiento como los importes 
+	 de cada uno, pueden borrarse cuotas y también agregarse nuevas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al lado de la tabla se muestra el 
+	 importe total del comprobante, la suma de las cuotas y el importe 
+	 que falta ingresar para que la suma de las cuotas coincida con el 
+	 importe total. A medida que se modifican los vencimientos estos totales 
+	 se mantienen actualizados y al intentar registrar la refinanciación, 
+	 el sistema verificará que la suma de los importes de las cuotas coincida 
+	 con el importe total del comprobante.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Cuota</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Número de cuota de los vencimientos 
+	 del comprobante seleccionado para refinanciar.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Fecha de vencimiento</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Fecha de vencimiento del comprobante 
+	 seleccionado para refinanciar.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Importe</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Importe del vencimiento correspondiente 
+	 a la cuota y fecha indicados.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP745665525" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+<div data-targetname="POPUP745665525">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Observaciones</p>
+	<p class="H_Parrafo_de_Sub-Item">Observación asociada al comprobante 
+	 que se genera. Ofrece como default la observación asociada al talonario 
+	 del comprobante de refinanciación.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a2', 'POPUP671724829');
+	TextPopupInit('a3', 'POPUP671744316');
+	TextPopupInit('a1', 'POPUP745665525');
+//]]></script>
+
+
+</body></html>

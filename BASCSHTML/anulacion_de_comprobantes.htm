@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Anulacion de comprobantes</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Anulación de comprobantes</h1>
+<p class="H_Texto">El sistema permite anular comprobantes ingresados en 
+ el sistema o comprobantes que nunca se van a ingresar y se quiere registrar 
+ como <font style="font-weight: bold;">Anulados</font>.</p>
+<p class="H_Texto">La anulación de comprobantes inexistentes deberá utilizarse, 
+ por ejemplo, en el caso en que se arruinen formularios preimpresos de 
+ facturas de venta.</p>
+<p class="H_Texto">La diferencia entre comprobantes eliminados y anulados 
+ radica en que los primeros desaparecen del sistema y pueden ser reingresados 
+ nuevamente, mientras que los comprobantes anulados, no pueden ser reingresados 
+ al sistema. Esto significa que no puede reutilizarse el número de comprobante 
+ asignado a un comprobante anulado, es decir, no puede ingresarse otro 
+ comprobante con el mismo número que el anulado.</p>
+<p class="H_Texto">No es posible anular un comprobante de compras o ventas 
+ si el mismo está aplicado a otro comprobante. Durante el proceso de anulación 
+ el sistema informará de dicha eventualidad y ofrecerá una lista con los 
+ comprobantes a los que está aplicado.</p>
+<p class="H_Texto">Cuando se trabaje con <a href="carpetas_de_importacion.htm" style="font-style: normal;"><font style="font-style: normal; text-decoration: underline; " color="#008000">Carpetas 
+ de Importación</font></a> , no se podrá anular ningún comprobante de compra 
+ (facturas, nota de debito o crédito, remitos de ingreso, ordenes de compra, 
+ etc) que tuviera líneas de bienes asociadas a carpetas de importación.</p>
+<p class="H_Texto">Los comprobantes anulados aparecerán en los informes 
+ del sistema con la leyenda <font style="font-weight: bold;">Comprobante 
+ anulado</font>.</p>
+<p class="H_Texto">La pantalla solicita una serie de datos a completar 
+ para identificar al comprobante que se desea anular. Pueden ingresarse 
+ estos datos o puede seleccionarse el comprobante a anular con el botón 
+ <font style="font-weight: bold;">Buscar</font> que figura en la parte 
+ inferior de la pantalla. Mediante este botón se accede a una lista que 
+ muestra todos los comprobantes existentes en el sistema con sus datos 
+ asociados. Si algún dato de la pantalla es ingresado antes de pulsar el 
+ botón, ese dato será utilizado como un filtro para buscar comprobantes. 
+ Por ejemplo, si se indica una fecha y luego se pulsa el botón aparecerán 
+ en la lista sólo los comprobantes con la fecha indicada en la pantalla, 
+ si no se indica ninguna fecha aparecerán todos.</p>
+<p class="H_Texto">Debe tenerse en cuenta que los datos de la pantalla 
+ pueden ser completados manualmente o automáticamente mediante el botón 
+ <font style="font-weight: bold;">Buscar</font>.</p>
+<p class="H_Texto">Si los datos se ingresan en forma manual al finalizar 
+ el ingreso de los mismos y ejecutar la anulación, el sistema verifica 
+ si los mismos corresponden a un comprobante existente en el sistema o 
+ no. Si el comprobante existe en el sistema, se registra como anulado, 
+ y si no existe, se crea un comprobante anulado y su número no podrá utilizarse 
+ para ingresar un nuevo comprobante.</p>
+<p class="H_Texto">Los datos a ingresar para solicitar una anulación son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP732417083" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP732417083">
+	<p class="H_Parrafo_de_Sub-Item">Fecha del comprobante a anular.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> <a data-target="POPUP732427435" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo de comprobante</span><span data-close-text="true">Tipo de comprobante</span></a></p>
+<div data-targetname="POPUP732427435">
+	<p class="H_Parrafo_de_Sub-Item"><a href="tabla__Tipos_de_comprobantes.htm">Tipo 
+	 de comprobante</a> a anular.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema permite seleccionar el 
+	 tipo de comprobante de una lista que contiene todos los tipos de comprobantes 
+	 posibles de anular. Pulsando el botón <font style="font-weight: bold;">Buscar</font> 
+	 se accede a esta lista que muestra los tipos de comprobante ordenados 
+	 alfabéticamente por su nombre.</p>
+	<p class="H_Parrafo_de_Sub-Item">El tipo que se seleccione determinará 
+	 qué datos de la pantalla es necesario completar para posibilitar la 
+	 anulación.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP732447227" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> Número</span><span data-close-text="true"> Número</span></a></p>
+<div data-targetname="POPUP732447227">
+	<p class="H_Parrafo_de_Sub-Item">Número del comprobante que se desea 
+	 anular. Está compuesto por el prefijo o sucursal, y el número propiamente 
+	 dicho.</p>
+	<p class="H_Parrafo_de_Sub-Item">Es posible anular un rango de comprobantes, 
+	 siempre que los mismos no hayan sido emitidos. Si sólo se completa 
+	 el número del primero de los campos se anulará únicamente el comprobante 
+	 allí indicado.</p>
+	<p class="H_Parrafo_de_Sub-Item">De esta manera es posible anular en 
+	 conjunto los comprobantes de un talonario vencido, apareciendo los 
+	 mismos como anulados en el subdiario correspondiente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si dentro del rango de números seleccionado 
+	 para anular hay comprobantes existentes o comprobantes que existieron 
+	 y fueron anulados o eliminados, se avisará tal circunstancia y no 
+	 se permitirá hacer la anulación. Es decir, sólo se permite anular 
+	 un rango si dentro de ese rango no hay ningún número de comprobante 
+	 que haya sido ingresado en el sistema en algún momento.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP732456355" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cliente-Proveedor-Agente</span><span data-close-text="true">Cliente-Proveedor-Agente</span></a></p>
+<div data-targetname="POPUP732456355">
+	<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Clientes.htm">cliente</a> 
+	 , <a href="tabla__Proveedores.htm">proveedor</a> o <a href="tabla__Agentes.htm">agente</a> 
+	 titular del comprobante que se desea anular.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP732480682" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cuenta bancaria</span><span data-close-text="true">Cuenta bancaria</span></a></p>
+<div data-targetname="POPUP732480682">
+	<p class="H_Parrafo_de_Sub-Item"><a href="tabla__Cuentas_bancarias.htm">Cuenta 
+	 bancaria</a> asociada al comprobante que se desea anular.</p>
+	<p class="H_Parrafo_de_Sub-Item">Este dato sólo será necesario indicarlo 
+	 si se seleccionó un tipo de comprobante que lo requiera, por ejemplo, 
+	 un comprobante de bancos como depósito bancario, liquidación de tarjetas, 
+	 etc.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP732485494" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> Importe</span><span data-close-text="true"> Importe</span></a></p>
+<div data-targetname="POPUP732485494">
+	<p class="H_Parrafo_de_Sub-Item">Importe del comprobante que se desea 
+	 anular.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a data-target="POPUP732502507" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Buscar</span><span data-close-text="true">Buscar</span></a></p>
+<div data-targetname="POPUP732502507">
+	<p class="H_Parrafo_de_Sub-Item">Precarga una grilla con los comprobantes 
+	 que correspondan a los filtros ingresados, de modo se seleccionar 
+	 el que corresponde anular.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP732506912" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones de la anulación</span><span data-close-text="true">Observaciones de la anulación</span></a></p>
+<div data-targetname="POPUP732506912">
+	<p class="H_Parrafo_de_Sub-Item">Observaciones sobre la anulación que 
+	 se realiza, que quedan registradas en la transacción del comprobante 
+	 de anulación.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP639245745" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP639245745">
+	<p class="H_Texto">Al anular un egreso de mercaderías, que generó un 
+	 comprobante de desubicación cuando se ingresó el mismo se ofrece la 
+	 posibilidad de anular en el mismo momento los comprobantes de desubicación, 
+	 con opciones de: aceptar la anulación, no anular las desubicaciones 
+	 asociadas o cancelar la anulación del comprobante de egreso.</p>
+	<p class="H_Texto">Para comprobantes que ingresen mercadería al stock, 
+	 si el depósito de ingreso maneja múltiples ubicaciones, el sistema 
+	 controla que la cantidad a anular se encuentre no ubicada.</p></div>
+<p class="H_Texto"> </p>
+<p class="H_Sub-Item_con_imagen_negrita"><span lang="ES" xml:lang="ES"><a data-target="POPUP638871421" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Controles 
+ personalizados</span><span data-close-text="true">Controles 
+ personalizados</span></a></span></p>
+<div data-targetname="POPUP638871421">
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">Es  posible para 
+	 un usuario, agregar controles especiales o acciones propias de su 
+	 implementación, que se ejecutarán luego de los controles que realiza 
+	 BASCS en el momento de la eliminación o anulación de un comprobante.</span></p>
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">Esos controles y/o 
+	 acciones deben incluirse en la base de datos en una nueva stored procedure 
+	 llamada sp_eliminacion_valida_programable.</span></p>
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">La stored procedure 
+	 tiene los siguientes parámetros:</span></p>
+	<p class="H_Texto_negrita"><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;"><span style="mso-spacerun: yes;"> </span><span style="mso-spacerun: yes;"> </span> <b style="mso-bidi-font-weight: normal;">@Nrotrans</b><span style="mso-tab-count: 1;">    </span> integer<span style="mso-tab-count: 3;">                               </span> número 
+	 de transacción del comprobante de eliminación/anulación</span></p>
+	<p class="H_Texto_negrita"><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;">   <b style="mso-bidi-font-weight: normal;">@error</b> </span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES; mso-tab-count: 1;">           </span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;"> integer 
+	 OUTPUT</span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES; 
+						 mso-tab-count: 1;">             </span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;">  número 
+	 de error</span></p>
+	<p class="H_Texto_negrita"><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;">   <b style="mso-bidi-font-weight: normal;">@msgerror</b></span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES; mso-tab-count: 1;">    </span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;"> char(155) 
+	 OUTPUT</span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES; 
+						 mso-tab-count: 1;">          </span><span lang="ES" xml:lang="ES" style="mso-ansi-language: ES;"> mensaje 
+	 de error que se quiere devolver</span></p>
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">Los parámetros @error 
+	 y @msgerror sirven para indicar que el proceso NO terminó satisfactoriamente 
+	 y se generó un aviso al operador que impedirá continuar con la eliminación/anulación.</span></p>
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">En el caso de que 
+	 el proceso termine exitosamente el parámetro @error debería valer 
+	 0 (es el valor que tiene al inicio de la llamada).</span></p>
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">Para abortar la transacción 
+	 es necesario indicar un valor diferente a cero en el parámetro @error 
+	 y el mensaje de aviso al operador en el parámetro @msgerror.</span></p>
+	<p class="H_Texto_negrita"><span lang="ES" xml:lang="ES">Se debe tener 
+	 en cuenta que <b style="mso-bidi-font-weight: normal;">EL CÓDIGO INGRESADO 
+	 EN ESTA STORED PROCEDURE NO PUEDE DEVOLVER RESULTSET DE DATOS, GENERAR 
+	 TRANSACCIONES O HACER COMMIT O ROLLBACK DE NINGÚN TIPO</b>.</span></p>
+	<p class="H_Texto"><span lang="ES" xml:lang="ES">Se encontrarán ejemplos 
+	 de funcionalidad en el código de dicha stored procedure.</span></p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a3', 'POPUP732417083');
+	TextPopupInit('a4', 'POPUP732427435');
+	TextPopupInit('a5', 'POPUP732447227');
+	TextPopupInit('a6', 'POPUP732456355');
+	TextPopupInit('a7', 'POPUP732480682');
+	TextPopupInit('a8', 'POPUP732485494');
+	TextPopupInit('a9', 'POPUP732502507');
+	TextPopupInit('a10', 'POPUP732506912');
+	TextPopupInit('a1', 'POPUP639245745');
+	TextPopupInit('a2', 'POPUP638871421');
+//]]></script>
+
+
+</body></html>

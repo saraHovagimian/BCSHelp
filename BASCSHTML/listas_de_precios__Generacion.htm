@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.1.1.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listas de precios Generacion </title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Generación,Listas,Precios"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Generación de listas de precios</h1>
+  <p class="H_Texto">Esta tarea permite generar las listas de precios que se hayan definido, previamente, en el punto <a href="listas_de_precios__Definicion.htm">Definición de listas de precios</a> .</p>
+  <p class="H_Texto">La tarea de generación de una lista de precios se encarga, fundamentalmente, de detallar los ítems que la integran (en función al <a href="tabla__Atributos.htm">atributo</a> asociado y a los correspondientes valores) y el precio asociado a cada uno de ellos.</p>
+  <p class="H_Texto">Por lo cual, para identificar una lista de precios en particular, además del código de la misma, se debe indicar su fecha de vigencia.</p>
+  <p class="H_Texto">Cuando se dispone de varias versiones de una misma lista, la lista activa es aquella cuya fecha de vigencia es la más próxima (inmediata anterior) a la fecha de facturación (siempre y cuando no haya expirado).</p>
+  <p class="H_Texto">En el caso de las listas dinámicas, la lista no se genera pues es una lista virtual. Lo que hace la tarea es registrar los detalles para calcular la lista dinámica cuando lo requiera.</p>
+  <p class="H_Texto">No es posible generar listas de precios con fecha de vigencia anterior a la del día. La tarea sólo permite generar listas con fecha de vigencia igual a la del día o con fechas futuras. En este último caso, éstas entrarán en vigencia automáticamente cuando se alcance la correspondiente fecha de vigencia.</p>
+  <p class="H_Texto">La tarea de generación de listas asigna un valor a cada uno de los ítems, en función a un método de cálculo determinado. Dicho método se selecciona en el momento de generar la lista y, básicamente, calcula el valor a asignar al ítem multiplicando un costo, o precio de lista, por un factor de cálculo asignado a cada valor del atributo de bienes y, multiplicando el resultado de esta ecuación por otro factor de tipo global que afecta a todos lo bienes de la lista por igual.</p>
+  <p class="H_Texto">También es posible completar todos los datos necesarios para generar una lista de precios y grabar dicha información, sin generar la lista. De este modo se prepara toda la información necesaria para generarla pero, se reserva la tarea de generación propiamente dicha, para otro momento.</p>
+  <p class="H_Texto">Cabe preguntarse qué pasa si, una vez generada una lista de precios, se incorporan nuevos ítems al sistema que deben ser incluidos en ella. Esta situación puede presentarse frecuentemente en la práctica, continuamente las empresas están incorporando nuevos productos en la oferta a sus clientes. ¿Qué se hace entonces?.</p>
+  <p class="H_Texto">El sistema prevé dos metodologías posibles de trabajo; una consiste en incorporarlos a la lista de precios digitando directamente sus códigos identificatorios en la tarea Modificación de precios por ítem y, la otra, en volver a ejecutar la tarea <font style="font-weight: bold;">Generación de listas de precios</font>, de modo que dicha tarea los incorpore a la lista en forma automática. En este último caso la tarea no modifica los precios de los ítems ya existentes en la lista de precios que se está generando sino que tiene por objeto, solamente, incorporar a la lista los nuevos productos y calcular sus precios en función al método de cálculo que se indique al momento de ejecutar el correspondiente proceso.</p>
+  <p class="H_Texto">La elección de trabajar de una u otra forma depende de la cantidad de ítems que se deben incorporar a la lista. Si deben incluirse solamente algunos pocos bienes, es más ágil incorporarlos, tanto a ellos como a sus respectivos precios, mediante el uso de la tarea <font style="font-weight: bold;">Modificación de</font>
+    <font style="font-weight: bold;">precios por ítem</font>. Por supuesto, para que el sistema permita la incorporación, los ítems deben tener asociado el <a href="tabla__Atributos.htm">atributo</a> mediante el cual se define la lista a la cual se están incorporando y alguno de los valores del atributo correspondientes a la lista en cuestión. En cambio, si el volumen de ítems a incorporar es muy grande, puede resultar más eficiente volver a ejecutar el proceso de generación de la lista de modo que los bienes y sus respectivos precios, se incorporen en forma automática.
+  </p>
+  <p class="H_Texto">Si se ha definido una lista de precios cuyos valores se han de administrar manualmente mediante la correspondiente tarea, la lista debe generarse previamente, al menos una vez, mediante la <font style="font-weight: bold;">Generación de listas de precios</font>. Luego, una vez generada, se procederá a la modificación manual de sus precios.</p>
+  <p class="H_Texto">Decimos al menos una vez pues, una vez que se haya generado la lista, la tarea <font style="font-weight: bold;">Modificación de</font>
+    <font style="font-weight: bold;">precios por ítem</font> permite incorporar nuevos bienes; por supuesto, siempre y cuando tengan asociado el atributo y alguno de los correspondientes valores que definen a la lista en cuestión.
+  </p>
+  <p class="H_Texto">Es posible programar la tarea de <font style="font-weight: bold;">Generación de listas de precios</font> de modo que la misma se efectúe determinado día y a determinada hora. El único usuario que puede acceder a la programación de esta tarea es el usuario Administrador del Sistema (sa).</p>
+  <p class="H_Texto">Al presionar el botón <span style="font-weight: bold;">Borrar</span> se emite un aviso, en caso que se acepte se eliminará la definición para la generación de listas de precios.</p>
+  <p class="H_Texto">A continuación vamos a analizar la información relevante que se debe dar al sistema para generar una lista de precios:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673341988" href="#"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+  <div data-targetname="POPUP673341988">
+    <p class="H_Parrafo_de_Item" style="color: #000000;"><span style="color: #000000;">Código
+        de empresa en la cual se ingresa la lista de precios..</span></p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP667636762" href="#"><span data-open-text="true" data-skip-index="true">Lista</span><span data-close-text="true">Lista</span></a></p>
+  <div data-targetname="POPUP667636762">
+    <p class="H_Parrafo_de_Item">Código correspondiente a la <a href="listas_de_precios__Definicion.htm">lista
+        de precios</a> a generar.</p>
+    <p class="H_Parrafo_de_Item">El código debe corresponder a una lista
+      definida previamente mediante la tarea destinada a tal fin.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP667633598" href="#"><span data-open-text="true" data-skip-index="true">Vigencia</span><span data-close-text="true">Vigencia</span></a></p>
+  <div data-targetname="POPUP667633598">
+    <p class="H_Parrafo_de_Item">Fecha desde la cual comienzan a regir
+      los precios de la lista que se está generando.</p>
+    <p class="H_Parrafo_de_Item">No es posible generar listas con fechas
+      de vigencia anteriores a la del día. Por lo cual, si la lista vigente
+      tiene una fecha de vigencia anterior a la del día y si debe ejecutarse
+      el proceso de generación para incorporar nuevos ítems a la lista,
+      se deberá generar una nueva versión de dicha lista cuya fecha de vigencia
+      sea la fecha del día.</p>
+    <p class="H_Parrafo_de_Item">Del mismo modo, se controla, al momento
+      de incorporar manualmente nuevos ítems a una lista (mediante la tarea
+      <font style="font-weight: bold;">Modificación de</font>
+      <font style="font-weight: bold;">precios
+        por ítem</font>) que la fecha de vigencia de la misma sea igual, o
+      posterior, a la fecha del día.
+    </p>
+    <p class="H_Parrafo_de_Item">Es posible generar listas de precios con
+      fecha de vigencia a futuro. Estas últimas no pasarán a ser listas
+      activas hasta tanto no se alcance su correspondiente fecha de vigencia.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP667651192" href="#"><span data-open-text="true" data-skip-index="true">Expiración</span><span data-close-text="true">Expiración</span></a></p>
+  <div data-targetname="POPUP667651192">
+    <p class="H_Parrafo_de_Item">Es la fecha hasta la cual regirán los
+      precios de la lista de precios que se está generando.</p>
+    <p class="H_Parrafo_de_Item">Este es un dato opcional, es decir, no
+      es necesario ingresar información en él.</p>
+    <p class="H_Parrafo_de_Item">En el caso que no se informe una fecha,
+      la lista será considerada como lista activa y, por ende, será utilizada
+      en las operaciones de venta, en tanto no aparezca una nueva versión
+      de ella misma, que la reemplace.</p>
+    <p class="H_Parrafo_de_Item">Esta situación puede darse, por ejemplo,
+      en el caso que se haya generado en el sistema una versión de la lista
+      en cuestión con fecha de vigencia a futuro. El día que se alcance
+      dicha fecha, esta lista entrará en vigencia automáticamente haciendo
+      expirar a la lista que estuvo vigente hasta ese momento.</p>
+    <p class="H_Parrafo_de_Item">Resumiendo, una lista expira cuando se
+      alcanza su fecha de expiración o, en caso de no poseer dicha fecha,
+      cuando aparece una versión de la misma con fecha de vigencia posterior
+      (y anterior o igual a la fecha del día).</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP667657604" href="#"><span data-open-text="true" data-skip-index="true">Observación</span><span data-close-text="true">Observación</span></a></p>
+  <div data-targetname="POPUP667657604">
+    <p class="H_Parrafo_de_Item">En este campo se ofrecerá la observación
+      asociada a la lista desde su definición y podrá ser modificado libremente
+      por el usuario.</p>
+    <p class="H_Parrafo_de_Item">Según que la lista sea Normal o Dinámica
+      se habilita la solapa que corresponda.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673632692" href="#"><span data-open-text="true" data-skip-index="true">Lista Normal</span><span data-close-text="true">Lista Normal</span></a></p>
+  <div data-targetname="POPUP673632692">
+    <p class="H_Parrafo_de_Item">Esta ficha sólo se habilita si la lista
+      que se indica se definió como Normal (no se tildó el campo &quot;Lista
+      dinámica&quot;.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Precio
+      Base</p>
+    <p class="H_Parrafo_de_Sub-Item">Los precios correspondientes a cada
+      uno de los ítems a incorporar a la lista de precios que se está se
+      pueden calcular a partir de datos existentesr.</p>
+    <p class="H_Parrafo_de_Sub-Item">En este dato se debe seleccionar el
+      valor base sobre el cual se ha de realizar el cálculo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones que se ofrezcan dependerán
+      de los <a href="parametros__Items.htm">métodos de valuación habilitados</a>
+      indicados en la pantalla <a href="parametros__Items.htm">parámetros
+        de ítems</a>. Se ofrecen los allí habilitados y se agregan Contable,
+      Ocasional, Estimación de costos y Precios en Cero. Si se habilitasen
+      todos se exhibirían.:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Contable</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">CPP al cierre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Costo LIFO</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Costo FIFO</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Costo Ultima Compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Precio de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Lista de precios  (tiene
+      en cuenta la lista de precios informada en los parámetros de ítems,
+      en &quot;Lista de precios para valuación contable&quot;)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ocasional</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Estimación de costos</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Precios en cero</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="color: #000000;">Precios
+      en cero</p>
+    <p class="H_Parrafo_de_Sub-Item">Se hace posible generar una lista
+      de precios con precio cero para todos los ítems que la integran. Al
+      seleccionar la opción Precios en cero para la generación, se deshabilitan
+      las opciones de política de precios, factor y redondeo. Si la lista
+      ya existe y se vuelve a generar, sólo se agregan con precio en cero
+      en los ítems nuevos. El resto de los ítems mantienen el precio que
+      tenían. Además, si ya existe otra lista de precios con vigencia anterior,
+      los precios de dicha lista serán copiados a la nueva lista que recién
+      se genera agregándose los ítems que falten con precio en cero.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita" style="color: #000000;">Costo
+      última compra</p>
+    <p class="H_Parrafo_de_Sub-Item">En el caso del Costo de última compra
+      (CUC) se debe tener en cuenta que también incluye el costo resultante
+      de los partes de producción (en relación a los productos terminados)
+      como costo de última compra de los ítems.</p>
+    <p class="H_Parrafo_de_Sub-Item">El CUC considera la factura de compra
+      o el parte de producción último a la fecha de costeo que se indique,
+      más todos los posibles revalúos de dicho comprobante. Es decir que
+      en el caso que un producto se compre y fabrique, el CUC corresponderá
+      a lo último que haya sucedido (compra o fabricación).</p>
+    <p class="H_Parrafo_de_Sub-Item">Para el cálculo del costo de fabricación
+      se consideran los costos contables de los insumos que participan del
+      producto terminado y el costo y tiempo de los recursos que intervienen.
+      De este modo cuando se soliciten informes que implican valuación de
+      stock a CUC (rotación de inventario, stock valorizado, estimación
+      de costos de producción, etc.), y cuando se requiera generar listas
+      de precios a partir del CUC, se dispondrá de valores tanto para los
+      productos comprados como para los productos fabricados.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><a href="estimacion_de_costos.htm">Estimación
+        de costos</a></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Al indicar
+        esta opción se debe seleccionar en &quot;Método de valuación&quot;
+         el método de valuación que se utilizará para realizar la estimación.</span></p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><span lang="ES" xml:lang="ES"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Método de valuación</span></p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"><span lang="ES" xml:lang="ES"> Las
+        opciones incluyen los mecanismos de valuación habilitados, más la
+        posibilidad de indicar una lista de precios ocasional:</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES">Contable</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES">CPP
+        al cierre</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES">Costo
+        LIFO</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES">Costo
+        FIFO</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES">Costo
+        última compra</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"><span lang="ES" xml:lang="ES">Precio
+        de compra</span></p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"> Lista de precios
+      (tiene en cuenta la lista de precios informada en los parámetros de
+      ítems, en &quot;Lista de precios para valuación contable&quot;)</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita"> <span lang="ES" xml:lang="ES">Ocasional</span></p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP667931486" href="#"><span data-open-text="true" data-skip-index="true">Valores en</span><span data-close-text="true">Valores en</span></a></p>
+  <div data-targetname="POPUP667931486">
+    <p class="H_Texto">Moneda de valuación en la que se desean expresar los costos tomados como base para el cálculo de los precios de la lista. Este cuadro solo se habilitará en caso de haber definido una Moneda de valuación y contabilización adicional. Aparecerá entonces la opción de tomar como base el costo de los bienes expresados en moneda local o en la <font style="font-weight: bold;">Moneda de valuación y contabilización adicional</font> definida en los <a href="parametros__Datos_generales.htm">Parámetros generales</a> .</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/><a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666740737" href="#"><span data-open-text="true" data-skip-index="true"> Lista</span><span data-close-text="true"> Lista</span></a></p>
+  <div data-targetname="POPUP666740737">
+    <p class="H_Parrafo_de_Sub-Item">En caso de haber seleccionado <span style="font-weight: bold;">Ocasional</span>
+      <font style="font-weight: bold;">
+      </font> como <font style="font-weight: bold;">Precio base</font>,
+      en este dato se debe informar el código de lista sobre la cual se
+      ha de realizar el cálculo.
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">Al generar una lista de precios en
+      base a otra lista con diferente unidad de medida, se efectúan las
+      conversiones necesarias de los precios teniendo en cuenta la relación
+      entre unidades definida para dicho ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">También se debe informar la lista
+      de precios en caso de haber seleccionado como &quot;Precio base&quot;
+      &quot;Estimación de costos&quot;, y en método de valuación &quot;Ocasional&quot;.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666739317" href="#"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+  <div data-targetname="POPUP666739317">
+    <p class="H_Parrafo_de_Sub-Item">En caso de haber seleccionado <span style="font-weight: bold;"> Ocasional</span>  como <font style="font-weight: bold;">Precio base</font>, es la fecha de vigencia
+      de la lista.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se seleccionó algún costo como
+      <font style="font-weight: bold;">Precio base</font>, es la fecha respecto
+      a la cual debe considerarse dicho costo.
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">También se debe informar la fecha
+      en caso de haber seleccionado como &quot;Precio base&quot; &quot;Estimación
+      de costos&quot;, y en método de valuación &quot;Ocasional&quot;.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666768041" href="#"><span data-open-text="true" data-skip-index="true">Política de Precios</span><span data-close-text="true">Política de Precios</span></a></p>
+  <div data-targetname="POPUP666768041">
+    <p class="H_Parrafo_de_Sub-Item">Este campo no es obligatorio. Se utiliza
+      para seleccionar una política de precios y obtener de esta forma el
+      valor del factor a través de una composición de bonificaciones y/o
+      recargos.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666762585" href="#"><span data-open-text="true" data-skip-index="true">Factor</span><span data-close-text="true">Factor</span></a></p>
+  <div data-targetname="POPUP666762585">
+    <p class="H_Parrafo_de_Sub-Item">Factor de tipo global que se ha de
+      aplicar a todos los ítems de la lista, sin distinción. Se trata de
+      un factor de cálculo por el cual se ha de afectar a los valores base
+      informados en el <font style="font-weight: bold;">Precio base</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se ha seleccionado una política
+      de precios, este campo queda desafectado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se informa la política de precios,
+      se puede modificar el factor directamente y el valor por defecto es
+      1.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666770616" href="#"><span data-open-text="true" data-skip-index="true">Sólo para ítems nuevos</span><span data-close-text="true">Sólo para ítems nuevos</span></a></p>
+  <div data-targetname="POPUP666770616">
+    <p class="H_Parrafo_de_Sub-Item">Si está seteado, significa que el
+      cálculo indicado en el proceso de generación se aplica solamente a
+      los nuevos ítems que se incorporan a la lista. Es decir, para los
+      ítem ya existentes en ella, se respetan los valores existentes al
+      momento de ejecutar el proceso.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si la lista que se genera es una ya
+      existente, este dato se setea automáticamente y no se permite alterar
+      su estado. Es decir, cuando se genera una lista ya existente, los
+      precios de sus ítems no se alteran y la fórmula de cálculo informada
+      sólo actúa sobre los nuevos ítems a incorporar.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666804085" href="#"><span data-open-text="true" data-skip-index="true">Considerar precios de los componentes en conjuntos</span><span data-close-text="true">Considerar precios de los componentes en conjuntos</span></a></p>
+  <div data-targetname="POPUP666804085">
+    <p class="H_Parrafo_de_Sub-Item">Cuando se genera una lista de precios
+      en base a otra lista de precios es posible asignar como precio a los
+      ítems de tipo Conjunto el resultante de los precios de sus componentes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para ello se debe tildar este campo
+      que, por defecto, se ofrece destildado.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666825919" href="#"><span data-open-text="true" data-skip-index="true">Factores de Cálculo</span><span data-close-text="true">Factores de Cálculo</span></a></p>
+  <div data-targetname="POPUP666825919">
+    <p class="H_Parrafo_de_Sub-Item">Esta zona está destinada a informar
+      los factores de cálculo que han de afectar a los valores base de los
+      bienes que responden a cada valor del atributo elegido en la definición
+      de la lista .</p>
+    <p class="H_Parrafo_de_Sub-Item">Se exhibe el atributo y los valores
+      de éste que definen a la lista que se está generando y, para cada
+      uno de los valores del mismo, es posible indicar un factor diferente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por lo tanto, los valores tomados
+      como <font style="font-weight: bold;">Precio base</font> para la generación
+      de una lista de precios dada, se multiplican, en primer término, por
+      el factor definido para cada valor del atributo de ítems informado
+      en la definición de la misma, luego, el resultado obtenido se multiplica
+      por el citado <font style="font-weight: bold;">factor</font> global.</p>
+    <p class="H_Parrafo_de_Sub-Item">El valor resultante se redondea respetando
+      el redondeo indicado para cada grupo.</p>
+    <p class="H_Parrafo_de_Sub-Item">De esta manera, una determinada lista
+      de precios, podrá verse afectada, durante su proceso de generación,
+      por dos factores independientes entre sí. El primero de ellos, será
+      aquel que fue informado para cada grupo de bienes incluidos en la
+      misma (grupo formado por bienes que presentan un valor determinado
+      para un atributo dado). En tanto que el segundo, será el citado &quot;<font style="font-weight: bold;">factor&quot;</font> global, que afectará
+      a todos los bienes por igual.</p>
+    <p class="H_Parrafo_de_Sub-Item">Además se cuenta con la posibilidad
+      de generar el factor global y/o los factores de cálculo correspondientes
+      a los valores del atributo de definición, en base a una combinación
+      de bonificaciones y/o recargos definida en una política de precios.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Atributo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo muestra el <a href="tabla__Atributos.htm">atributo</a>
+      correspondiente a la lista.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/>
+      Tabla de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Los valores de la lista de precios
+      a generar serán el resultado de multiplicar los valores que se hayan
+      seleccionado (correspondientes a una lista de precios o a un costo),
+      por un factor.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Mediante esta tabla se informa,
+      para cada valor del <a href="tabla__Atributos.htm">atributo</a> incluido
+      en la lista, por cuanto se han de multiplicar los importes asociados
+      para obtener los valores de la nueva lista.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Los valores resultantes pueden
+      redondearse a la unidad o a múltiplos o submúltiplos de la misma.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Valor</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta columna exhibe los códigos
+      de los valores del atributo que conforman la lista de precios, según
+      su definición.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Exhibe los nombres correspondientes
+      a los códigos de la columna Valor.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Política de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Es posible seleccionar una política
+      de precios y obtener de esta forma el valor del factor a través de
+      una composición de bonificaciones y/o recargos. En este caso afecta
+      al factor por valor de atributo.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En esta columna el sistema exhibe
+      la descripción de la política de precios seleccionada en la columna
+      anterior.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Factor</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Factor por el que se multiplican
+      los valores correspondientes al valor de atributo del que se trate
+      para obtener el importe a asociar a la lista que se genera.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para no variar los valores asociados
+      a algún valor de atributo en particular, se debe dejar el factor en
+      1.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El factor puede ser un número
+      mayor o menor a la unidad, entero o decimal, según sean los requerimientos
+      a cumplir.</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Redondeo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se debe indicar a que unidad se
+      desea redondear los valores resultantes del cálculo.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, si se informa 0.01,
+      se redondea a dos decimales. En cambio, informando 1 se redondea a
+      la unidad. Si se informa 5, se redondea en múltiplos de 5.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El sistema redondea hacia arriba
+      cuando el valor resultante es mayor o igual a la mitad del valor más
+      próximo (según el redondeo informado).</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, si se redondea a
+      la unidad, el valor resultante de redondear 3.30 y 2.7 será 3 y el
+      de redondear 5.5 será 6.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se redondea a 5, el valor resultante
+      de redondear 21.4 y 17.5 será 20; en cambio, 22.5 y 23.3 se redondearán
+      a 25.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666839583" href="#"><span data-open-text="true" data-skip-index="true">Generar</span><span data-close-text="true">Generar</span></a></p>
+  <div data-targetname="POPUP666839583">
+    <p class="H_Parrafo_de_Sub-Item">Presionando este botón se genera la
+      lista.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si la lista y fecha de vigencias informadas
+      corresponden a los de una lista existente, al presionar el botón,
+      se exhibe un cartel avisando que los valores de la misma serán sustituidos
+      por los que se calculen.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se desea generar la lista de
+      precios, pero se desea guardar la definición asociada a la misma,
+      en lugar de presionar este botón se debe proceder a grabar la lista.</p>
+    <p class="H_Parrafo_de_Sub-Item">De este modo, si bien no se genera
+      la lista, cuando se desee hacerlo, bastará con invocarla en esta tarea,
+      mediante su código y fecha de vigencia, y presionar el botón <font style="font-weight: bold;">Generar</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP666849969" href="#"><span data-open-text="true" data-skip-index="true">Programar tarea</span><span data-close-text="true">Programar tarea</span></a></p>
+  <div data-targetname="POPUP666849969">
+    <p class="H_Parrafo_de_Sub-Item">Pulsando este botón se accederá a
+      una pantalla que permite programar la ejecución de la tarea de Generación
+      lista de precios de modo que la misma se realice a una fecha y hora
+      determinadas. Para ello deberá informarse, por supuesto, de que lista
+      se trata y que vigencia se le desea dar a la misma.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe indicar el día y la hora en
+      los cuales se desea ejecutar la tarea. Ambos datos deben ser posteriores
+      a la fecha y hora en las que se está programando la tarea.</p>
+    <p class="H_Parrafo_de_Sub-Item">También es posible indicar que las
+      salidas que produzca la ejecución de la tarea se añadan al historial
+      de la misma.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que la generación de la lista
+      que se está programando se hubiese programado anteriormente pero no
+      se ha llegado a ejecutar aún, al intentar modificar dicha programación,
+      también se da un aviso de alerta</p>
+    <p class="H_Parrafo_de_Sub-Item">La programación de la tarea se graba
+      en la base de datos. Cada vez que se vuelva a programar la generación
+      de la lista de precios, se estará modificando la tarea original correspondiente
+      a dicha lista y se informará con un mensaje de alerta al usuario de
+      tal situación.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de haber programado la generación
+      de una lista de precios a futuro, si al momento de ejecutarse la tarea,
+      dicha lista de precios ya existe en el sistema, se producirá una salida
+      con un mensaje que indica la existencia de la lista, dicho mensaje
+      se añadirá al historial de la tarea en caso de haber indicado <font style="font-weight: bold;">Agregar salida al historial de la tarea</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los controles que efectúa el sistema
+      en relación a la fecha de vigencia de la lista, cuya generación se
+      está programando, son los mismos que si se quisiera generar la lista
+      de precios en el momento. Es decir, que no se podrá programar la generación
+      de una lista con fecha de vigencia anterior a la actual y, si se desea
+      programar la generación de una lista ya existente, se dará el aviso
+      correspondiente, de modo que el usuario decida seguir adelante o interrumpir
+      la programación.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673745968" href="#"><span data-open-text="true" data-skip-index="true">Lista Dinámica</span><span data-close-text="true">Lista Dinámica</span></a><span style="color: #ff0000;"> </span></p>
+  <div data-targetname="POPUP673745968">
+    <p class="H_Parrafo_de_Item">Esta ficha sólo se habilita si la lista
+      que se indica se definió como Lista dinámica.</p>
+    <p class="H_Parrafo_de_Item">Para calcular el precio de un ítem de
+      una lista dinámica, lo que se tiene en cuenta es el precio vigente
+      en la lista de origen a la fecha del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Al buscar el precio en la lista de origen
+      pueden producirse errores, a saber, que no hay una lista de origen
+      vigente a la fecha del comprobante, que la misma está expirada, que
+      no está generada o que no está autorizada.</p>
+    <p class="H_Parrafo_de_Item">Si se encuentra el precio de la lista
+      origen, el cálculo que se hace para obtener el precio de la lista
+      dinámica es el siguiente:</p>
+    <p class="H_Parrafo_de_Item">El precio de la lista origen se multiplica
+      por el factor indicado para dicha lista, y luego se aplica el cambio
+      si fuera necesario (si la lista dinámica está en moneda diferente
+      a la de origen). Para ello se utiliza la cotización de cada moneda
+      a la fecha de la operación. Luego se aplica el redondeo.</p>
+    <p class="H_Parrafo_de_Item">Si el cliente es consumidor final y la
+      lista no incluye impuestos se le suma el IVA y se redondea. Si, además,
+      la condición tiene indicado un porcentaje de descuento o recargo,
+      se aplica dicho valor y se redondea.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe informar un atributo de tipo
+      ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">En base a los valores de este atributo
+      se indicarán las listas en base a las cuáles se calcularán los precios
+      de las listas que se están definiendo.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Item">Los valores de la lista de precios
+      a generar serán el resultado de multiplicar los precios que figuran
+      en otras listas por un factor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se informa, para
+      cada valor de interés del atributo informado, por cuanto se han de
+      multiplicar los importes asociados para obtener los valores de la
+      nueva lista.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los valores resultantes pueden redondearse
+      a la unidad o a múltiplos o submúltiplos de la misma.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe seleccionar el valor del atributo
+      que corresponda.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe los nombres correspondientes
+      a los códigos de la columna <font style="font-weight: bold;">Valor</font>.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Lista</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe indicar el código de la lista
+      en base a la cual se calcularán los precios de la lista dinámica para
+      ese valor de atributo.</p>
+    <p class="H_Parrafo_de_Sub-Item">(Para otro valor puede indicarse otra
+      lista)</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la lista informada.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Política de precios</p>
+    <p class="H_Parrafo_de_Sub-Item">Es posible seleccionar una política
+      de precios y obtener de esta forma el valor del factor a través de
+      una composición de bonificaciones y/o recargos. En este caso afecta
+      al factor por valor de atributo.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la Política de
+      precios informada.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Factor</p>
+    <p class="H_Parrafo_de_Sub-Item">Factor por el que se multiplican los
+      valores correspondientes al valor de atributo del que se trate para
+      obtener el importe a asociar a la lista.</p>
+    <p class="H_Parrafo_de_Sub-Item">El factor puede ser un número mayor
+      o menor a la unidad, entero o decimal, según sean los requerimientos
+      a cumplir.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Redondeo</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe indicar a que unidad se desea
+      redondear los valores resultantes del cálculo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por ejemplo, si se informa <font style="font-weight: bold;">0.01</font>,
+      se redondea a dos decimales. En cambio, informando <font style="font-weight: bold;">1</font>
+      se redondea a la unidad. Si se informa <font style="font-weight: bold;">5</font>,
+      se redondea en múltiplos de 5.</p>
+    <p class="H_Parrafo_de_Sub-Item">El sistema redondea hacia arriba cuando
+      el valor resultante es mayor o igual a la mitad del valor más próximo
+      (según el redondeo informado).</p>
+    <p class="H_Parrafo_de_Sub-Item">Por ejemplo, si se redondea a la unidad,
+      el valor resultante de redondear <font style="font-weight: bold;">3.30</font>
+      y <font style="font-weight: bold;">2.7</font> será <font style="font-weight: bold;">3</font>
+      y el de redondear <font style="font-weight: bold;">5.5</font> será
+      <font style="font-weight: bold;">6</font>.
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">Si se redondea a <font style="font-weight: bold;">5</font>,
+      el valor resultante de redondear <font style="font-weight: bold;">21.4</font>
+      y <font style="font-weight: bold;">17.5</font> será <font style="font-weight: bold;">20</font>;
+      en cambio, <font style="font-weight: bold;">22.5</font> y <font style="font-weight: bold;">23.3</font>
+      se redondearán a <font style="font-weight: bold;">25</font>.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a15', 'POPUP673341988');
+    TextPopupInit('a1', 'POPUP667636762');
+    TextPopupInit('a2', 'POPUP667633598');
+    TextPopupInit('a3', 'POPUP667651192');
+    TextPopupInit('a4', 'POPUP667657604');
+    TextPopupInit('a16', 'POPUP673632692');
+    TextPopupInit('a5', 'POPUP667931486');
+    TextPopupInit('a6', 'POPUP666740737');
+    TextPopupInit('a7', 'POPUP666739317');
+    TextPopupInit('a8', 'POPUP666768041');
+    TextPopupInit('a9', 'POPUP666762585');
+    TextPopupInit('a10', 'POPUP666770616');
+    TextPopupInit('a11', 'POPUP666804085');
+    TextPopupInit('a12', 'POPUP666825919');
+    TextPopupInit('a13', 'POPUP666839583');
+    TextPopupInit('a14', 'POPUP666849969');
+    TextPopupInit('a17', 'POPUP673745968');
+    //]]>
+  </script>
+
+</body></html>

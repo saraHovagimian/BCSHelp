@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.2.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado de Vencimientos a pagar</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Vencimientos"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Vencimientos de proveedores</h1>
+  <p class="H_Texto">Mediante este informe se puede obtener un listado de comprobantes de compra no saldados, ordenados por vencimiento, con su correspondiente antigüedad en días, y el importe total de la deuda de un determinado <a href="tabla__Proveedores.htm">proveedor</a> o de varios.</p>
+  <p class="H_Texto">El listado muestra los vencimientos de los comprobantes de compras detallando fecha de vencimiento, fecha, tipo, número de comprobante, <a href="tabla__Proveedores.htm">proveedor</a> , días de antigüedad, importe del comprobante e importe pendiente de cobrar. Los importes se expresan en la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> de cada comprobante.</p>
+  <p class="H_Texto">Las facturas de compra pendientes de autorización se exhiben acompañadas con la letra <font style="font-weight: bold;">A</font> indicando que aún no están autorizadas.</p>
+  <p class="H_Texto">Se imprimen los totales a pagar discriminados por moneda.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos a ingresar para solicitar la emisión del listado son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP671101921" href="#"><span data-open-text="true" data-skip-index="true">Ficha Períodos</span><span data-close-text="true">Ficha Períodos</span></a></p>
+  <div data-targetname="POPUP671101921">
+    <p class="H_Parrafo_de_Item">Desde esta ficha podemos seleccionar el
+      rango de datos a incluir en el informe. Podemos especificar desde
+      aquí un intervalo de cuentas corrientes de proveedores, solicitar
+      datos de un grupo de proveedores o hasta que sean atendidos por un
+      determinado comprador.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Rango</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      A Fecha</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite listar los vencimientos a
+      una fecha determinada.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los vencimientos que se detallan al
+      indicar una fecha en este campo se exhiben con el saldo a tal fecha
+      sin ser afectados por todos los comprobantes cuya fecha sea posterior
+      a la opción “ A Fecha”.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna fecha, se
+      incluyen todos los vencimientos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Períodos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se podrán indicar aquí hasta cuatro
+      fechas que delimiten distintos períodos en los cuales operan los vencimientos
+      de los comprobantes que se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">A fin de poder indicar con mayor
+      facilidad los períodos se prevé la posibilidad de informar un intervalo
+      de días entre período y período, en base al cual el sistema construirá
+      automáticamente cada una de las fechas de corte.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Comprador</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Agentes.htm">comprador</a>
+      asociado a los comprobantes de compra cuyos vencimientos se desean
+      incluir en el informe. Permite obtener un informe de todos aquellos
+      proveedores que se incluyen en la cartera de un determinado comprador.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un
+      agente de tipo <font style="font-weight: bold;">Comprador</font> definido
+      en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un comprador en
+      particular o un grupo de compradores. Si este dato es dejado en blanco,
+      se incluirán todos los compradores en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Imputación
+      contable</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de las <a href="tabla__Cuentas.htm">imputaciones
+        contables</a> de proveedores asociadas a los comprobantes que se desean
+      incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una cuenta en
+      particular o un grupo de cuentas. Si este dato es dejado en blanco,
+      se considerarán los comprobantes de todos los proveedores que se incluyen
+      en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica alguna imputación sólo
+      se listarán para cada proveedor los comprobantes que tengan asociados
+      las imputaciones que se indicaron.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP671179042" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP671179042">
+    <p class="H_Parrafo_de_Item">Desde esta ficha podemos especificar el
+      ordenamiento de los datos en el informe y el tipo de listado a obtener.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite ordenar los datos del informe
+      con diferentes criterios.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      Vencimiento se ordenan los comprobantes listados por fecha de vencimiento.
+      Para cada fecha de vencimiento se detallan los comprobantes correspondientes
+      a esa fecha.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Proveedor</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      Proveedor se ordenan los datos listados por código, razón social o
+      nombre de fantasía, según se indique en el cuadro Ordenamiento proveedor.
+      Para cada proveedor se detallan los vencimientos de sus comprobantes
+      asociados y se incluyen totales por proveedor. Cuando se ordenen las
+      cuentas corrientes por nombre de fantasía se detallará el nombre de
+      fantasía junto al código de la cuenta corriente y en la misma línea
+      la razón social. Análogamente cuando se orden por código o razón social
+      se detallará la razón social junto con el código de la cuenta corriente
+      y en la misma línea el nombre de fantasía.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Comprador</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      <font style="font-weight: bold;">Comprador</font> se ordenan los datos
+      listados por código de <a href="tabla__Agentes.htm">comprador</a>
+      . Para cada comprador se detallan los vencimientos de sus comprobantes
+      asociados y se incluyen totales por comprador. En este caso se puede
+      indicar un segundo nivel de ordenamiento, cuyas opciones son:
+    </p>
+    <p class="H_Sub_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_sub_item_con_vineta_negrita 0;">Proveedor</p>
+    <p class="H_Sub_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita">Importe</p>
+    <p class="H_Sub_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita">Vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esto implica que los vencimientos
+      de los comprobantes correspondientes a cada comprador, serán a su
+      vez ordenados por proveedor (código, razón social o nombre de fantasía),
+      por importe del vencimiento o por fecha de vencimiento.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Tipo
+      de Listado</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la forma en que se desean
+      listar los datos de los vencimientos de los proveedores. Si se desea
+      que se exhiban los vencimientos consolidados por <a href="tabla__Proveedores.htm">proveedor</a>
+      o detallados por comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Detallado</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Item">En todas las emisiones consolidadas
+      se consolidará la información más interna de acuerdo a los cortes
+      y, cuando corresponda, subcortes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Opciones</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Ficha</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona tipo <font style="font-weight: bold;">Ficha</font>
+      se imprimen los <a href="tabla__Proveedores.htm">proveedores</a> o
+      <a href="tabla__Agentes.htm">compradores</a> (según el ordenamiento
+      solicitado) separados entre sí, utilizando al menos una hoja para
+      cada uno.
+    </p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las emisiones tipo ficha sólo
+      cambian de hoja cuando cambia el valor por el que se realiza el ordenamiento
+      principal, es decir, cuando cambia el cliente/proveedor, cobrador
+      o vendedor/comprador y no si cambia el valor correspondiente al subordenamiento.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Continuo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona tipo <font style="font-weight: bold;">Continuo</font>
+      se imprime un <a href="tabla__Proveedores.htm">proveedor</a> o <a href="tabla__Agentes.htm">comprador</a> a continuación de otro.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Proveedores.htm">Ficha Proveedores</a></p>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm" style="font-style: normal;">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP671101921');
+    TextPopupInit('a2', 'POPUP671179042');
+    //]]>
+  </script>
+
+</body></html>

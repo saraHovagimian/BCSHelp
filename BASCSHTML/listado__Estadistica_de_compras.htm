@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.8.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Estadisticas de compras</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Compras,Estadísticas"/>
+<meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Estadísticas de compras</h1>
+  <p class="H_Texto">Este informe combina toda la información de las operaciones de compras efectuadas, de una forma configurable por el usuario permitiendo obtener la información de compras de diferentes maneras acorde a las necesidades de cada caso, y desde diferentes ángulos de análisis de la información.</p>
+  <p class="H_Texto">Las compras efectuadas en un rango de fechas a considerar se pueden filtrar por <a href="tabla__Atributos.htm">atributos</a> de <a href="tabla__Proveedores.htm">proveedores</a> , de <a href="tabla__Bienes.htm">ítems</a> , por <a href="tabla__Agentes.htm">comprador</a> , por <a href="tabla__Condiciones_de_compra_y_venta.htm">condición de compra</a> y por <a href="tabla__Rubros.htm">rubro</a> y subrubro.</p>
+  <p class="H_Texto">El orden en que se presenta la información es indicado por el usuario. Para ello se pueden indicar hasta tres niveles de jerarquía que determinarán tanto el orden de la información, como los totales y subtotales que se incluirán en el listado.</p>
+  <p class="H_Texto">En cada nivel puede indicarse si se desea un cambio de página para los distintos valores.</p>
+  <p class="H_Texto">En el caso que los informes se emitan incluyendo el detalle del color en algún nivel se exhibirá, además del código de cada color, la descripción correspondiente al mismo.</p>
+  <p class="H_Texto">También es posible detallar, cuando se usen formatos personalizados de impresión, el código alternativo del ítem en el nivel en que se seleccione ítem.</p>
+  <p class="H_Texto">Esto se podrá hacer a través de los input ítems <font style="font-weight: bold;">AuxNivel1</font> (información adicional correspondiente al código indicado en el nivel 1), <font style="font-weight: bold;">AuxNivel2</font> (información adicional correspondiente al código indicado en el nivel 2) y AuxNivel3 (información adicional correspondiente al código indicado en el nivel 3).</p>
+  <p class="H_Texto">Es posible detallar, cuando se usen formatos personalizados de impresión y se seleccionen ciertos niveles, el código alternativo del ítem informado para cada medida y color.</p>
+  <p class="H_Texto">Esto estará disponible para las emisiones no tabulares en las que se haya indicado:</p>
+  <p class="H_Texto">colores y medidas en algún nivel</p>
+  <p class="H_Texto">o color y en los niveles previos, cualquiera sea el orden, medidas e ítem</p>
+  <p class="H_Texto">o medidas y en los niveles previos, cualquiera sea el orden, colores e ítem</p>
+  <p class="H_Texto">Esta información se podrá incluir mediante los input ítems <font style="font-weight: bold;">AuxNivel2</font> (información adicional correspondiente al código indicado en el nivel 2) y <font style="font-weight: bold;">AuxNivel3</font> (información adicional correspondiente al código indicado en el nivel 3).</p>
+  <p class="H_Texto">La estadística puede contener hasta nueve columnas, pudiendo listarse las que se deseen hasta un máximo de nueve. Para cada una de ellas debe indicarse un título y el contenido. El contenido de una columna puede ser: un importe, una cantidad de ítems o contenedores, una cantidad de proveedores, o una cantidad de operaciones. En el caso de elegir un importe debe indicarse además cómo se compone el mismo (neto gravado, impuestos, percepciones, etc.). También se pueden seleccionar los comprobantes a considerar para el cálculo de cada columna.</p>
+  <p class="H_Texto">También es posible imprimir el listado tipo <font style="font-weight: bold;">Ranking</font>. En este caso se deberá indicar en base a qué columna del listado se hace el ranking y cuál será el porcentaje de corte que se tendrá en cuenta. Se exhibirá a qué porcentaje del total corresponde el valor de la columna indicada para cada nivel que se liste.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP609151500" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP609151500">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto de hasta 50 caracteres que corresponderá al título con el que se emita el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Condición de compra</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones de compra</a> cuyos comprobantes asociados se desean incluir en la estadística.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una condición en particular o un grupo de condiciones. Si este dato es dejado en blanco, se considerarán para la emisión del informe todas las condiciones para las cuales se hayan registrado comprobantes de compras.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Comprador</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de los <a href="tabla__Agentes.htm">compradores</a> cuyas compras asociadas se desean incluir en la estadística.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un comprador en particular o un grupo de compradores. Si este dato es dejado en blanco, se considerarán para la emisión del informe todos los compradores que hayan efectuado operaciones de compra.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Medio de pago</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite seleccionar uno o varios medios de pago que actuarán como un filtro más en la selección de los comprobantes de compra. La selección de medios de pago está directamente relacionada con el Método de Pago especificado en la Factura de Compra y sólo serán considerados aquellos comprobantes cuyo Método de Pago haya sido especificado como <font style="font-weight: bold;">Contado</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se opta por este tipo de selección, deberá indicarse en la ficha Niveles una opción Por Medio de Pago y en las fichas Columnas sólo se podrá optar, en el campo Contenido, por Cantidad de operaciones y Cantidad de proveedores.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Subdiario</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de subdiario que se utiliza para filtrar los movimientos de compras.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Talonario</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de los talonarios correspondientes a comprobantes de compras a incluir en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP609696686" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP609696686">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluye comprobantes de cuenta corriente</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite incluir en la estadística de compras los comprobantes de cuenta corriente, es decir, aquellos comprobantes que tengan especificado <font style="font-weight: bold;">Cuenta Corriente</font> como Método de Pago.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Consolida información en el administrador</p>
+    <p class="H_Parrafo_de_Sub-Item">Seleccionando esta opción, el informe listará las ventas consolidas en el Cliente configurado como administrador.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Ranking</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea emitir el listado tipo ranking o no.</p>
+    <p class="H_Parrafo_de_Sub-Item">El ranking podrá efectuarse por cualquiera de las columnas que se incluyan en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si por ejemplo se efectúa el ranking por una columna que contiene un importe gravado, se mostrará qué porcentaje del total gravado comprado en el período de tiempo solicitado, corresponde al neto gravado de cada línea que se detalle en el informe. De esta forma aparecerán primero en el listado las líneas con mayor importe gravado y se irán imprimiendo las siguientes, ordenadas en forma descendente por importe gravado, hasta llegar al porcentaje de corte que se indique.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona tipo <font style="font-weight: bold;">Ranking</font> luego del informe se imprime un gráfico que vuelca la información listada mostrando la mayor porción de la torta para las compras con mayor porcentaje de incidencia y porciones menores para las siguientes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Porcentaje de corte</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato sólo está habilitado si la estadística se imprime tipo <font style="font-weight: bold;">Ranking</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se puede indicar aquí un porcentaje hasta el cual se desean listar las compras de acuerdo al porcentaje de incidencia de cada una. Es decir, se imprimirán las compras acumulando el porcentaje de cada una hasta llegar a la primera línea para la cual el acumulado supera el porcentaje aquí indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las compras en las cuales el acumulado de los porcentajes supera el porcentaje de corte no se incluyen en la estadística ni en el gráfico.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Columna</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se emite la estadística tipo ranking, debe indicarse la columna del listado en base a la cual se efectuará el ranking.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se permitirá seleccionar cualquiera de las columnas que se emitan en el listado, ofreciéndose el título indicado para cada una.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Reexpresado en</p>
+    <p class="H_Parrafo_de_Sub-Item"><a href="tabla__Tablas_de_indices_y_cotizaciones.htm">Moneda</a> en la cual se desean reexpresar los importes de las compras efectuadas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de una tabla de cotizaciones ingresada en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna moneda, no se reexpresarán los importes y los mismos se mostrarán en la moneda en la cual fue ingresado cada comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Reexpresado a fecha del comprobante</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Reexpresado a fecha del informe</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Los valores reexpresados se obtienen dividiendo cada importe en moneda local por la cotización a la fecha de cada comprobante o a la fecha del listado, según se indique.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Sólo comprobantes de la moneda</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Permite seleccionar solo los comprobantes ingresados con la misma moneda que la seleccionada en la estadística.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP609318225" href="#"><span data-open-text="true" data-skip-index="true">Ficha Niveles</span><span data-close-text="true">Ficha Niveles</span></a></p>
+  <div data-targetname="POPUP609318225">
+    <p class="H_Parrafo_de_Item">Se pueden indicar hasta tres niveles de jerarquía que determinarán tanto el orden de la información, el detalle con el que se muestra dicha información, y los totales y subtotales que se incluirán en la estadística.</p>
+    <p class="H_Parrafo_de_Item">Debe indicarse el nivel de jerarquía y de detalle con el que se lista cada uno de los tres niveles.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Nivel 1</p>
+    <p class="H_Parrafo_de_Sub-Item">Este nivel es obligatorio.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cambio de hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Mediante el tilde en este campo se indica que se desea cambiar de hoja cuando se cambie de nivel.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Por</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada nivel debe seleccionarse una de las siguientes opciones:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Año</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de proveedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Color</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Comprador</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Condición de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Día</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Mes</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medio de pago</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Proveedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Subdiario</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal de entrega/recepción</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Talonario</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Trimestre</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Según el dato que se seleccione la información de las compras efectuadas se detallará por ítem, atributo, comprador, condición de compra o rubro y subrubro y se incluirán subtotales para cada ítem, atributo, comprador, condición, etc., según el dato elegido.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona atributo de proveedor o de ítem, podrá indicarse un código de atributo para analizar la información según los valores de dicho atributo. Por ejemplo, si se indica un atributo de proveedores, la información de las compras efectuadas se agrupará para cada valor de ese atributo.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Por ejemplo, si en el primer nivel se indica condición de compra, en el segundo se indica proveedor y en el tercer nivel se indica ítem, se obtendrá para cada condición el detalle de las compras efectuadas agrupadas por proveedor y se detallarán los ítems comprados a cada uno. Se incluirán subtotales para cada condición, y para cada proveedor al que se le hayan efectuado compras con dicha condición.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si en el campo Por se selecciona Atributo de item o Atributo de proveedor este campo se habilita para indicar el atributo deseado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Nivel 2</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Nivel 2</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este nivel es optativo y permite agrupar la información con más detalle para cada uno de los valores del dato del nivel 1.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cambio de hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea efectuar un cambio de hoja cada vez que cambia el contenido del campo seleccionado en cada nivel.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Tabular</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se tilda esta opción se habilita el campo Títulos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Títulos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En este campo se indica la tabla de títulos a través de la cual se detallará la información a contener en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una tabla de títulos para cada ítem y por definición su tabla de medidas está incluida en alguna de las filas de tabla de títulos indicada, y la medida aparece entre las que se definieron para esa fila en la tabla; la cantidad se encolumnará bajo dicha medida. En caso contrario dicha cantidad se incluirá en la columna que corresponde a cantidades cuya medida no está en la tabla de títulos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Por</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada nivel debe seleccionarse una de las siguientes opciones:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Año</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Mes</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Trimestre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores y medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Proveedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de proveedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Comprador</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Condición de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Subrubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal de recepción (sólo si no se ha seleccionado como nivel Medios de pago)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La opción Subrubro sólo se activará en caso de haber seleccionado la opción Rubro en un nivel anterior. Es por eso que sólo se cuenta con dicho campo a partir del segundo nivel.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En el caso de indicar &quot;Sucursal de recepción&quot; como nivel se podrá emitir en forma tabular, tildando el check box Tabular correspondiente al nivel, cuando se indiquen al menos dos niveles y sólo se indique una columna que no sea del tipo &quot;Sólo total&quot;.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si en el campo Por se selecciona Atributo de item o Atributo de proveedor este campo se habilita para indicar el atributo deseado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Nivel 3</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Nivel 3</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este nivel es optativo y permite agrupar la información con más detalle para cada uno de los valores del dato del nivel 1.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Tabular</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se tilda esta opción se habilita el campo Títulos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Títulos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En este campo se indica la tabla de títulos a través de la cual se detallará la información a contener en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una tabla de títulos para cada ítem y por definición su tabla de medidas está incluida en alguna de las filas de tabla de títulos indicada, y la medida aparece entre las que se definieron para esa fila en la tabla; la cantidad se encolumnará bajo dicha medida. En caso contrario dicha cantidad se incluirá en la columna que corresponde a cantidades cuya medida no está en la tabla de títulos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Por</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada nivel debe seleccionarse una de las siguientes opciones:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Año</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Mes</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Trimestre</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de ítem</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Colores y medidas</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Proveedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Atributo de proveedor</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Comprador</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Condición de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Subrubro</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Sucursal de recepción (sólo si no se ha seleccionado como nivel Medios de pago)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La opción Subrubro sólo se activará en caso de haber seleccionado la opción Rubro en un nivel anterior. Es por eso que sólo se cuenta con dicho campo a partir del segundo nivel.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En el caso de indicar &quot;Sucursal de recepción&quot; como nivel se podrá emitir en forma tabular, tildando el check box Tabular correspondiente al nivel, cuando se indiquen al menos dos niveles y sólo se indique una columna que no sea del tipo &quot;Sólo total&quot;.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si en el campo Por se selecciona Atributo de item o Atributo de proveedor este campo se habilita para indicar el atributo deseado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Proveedores.htm">Ficha Proveedores</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Ítems</a></p>
+  <p class="H_Parrafo_de_Item">En esta ficha pueden indicarse diferentes filtros a aplicar a los ítems cuyas compras se incluyen en la estadística.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP609400283" href="#"><span data-open-text="true" data-skip-index="true">Ficha Columna 1 a Columna 9</span><span data-close-text="true">Ficha Columna 1 a Columna 9</span></a></p>
+  <div data-targetname="POPUP609400283">
+    <p class="H_Parrafo_de_Item">La estadística puede contener hasta 9 columnas. La información de cada columna es configurable por el usuario según las necesidades de cada caso.</p>
+    <p class="H_Parrafo_de_Item">De esta forma la información de cada nivel indicado mostrará un valor en cada una de las columnas que se listen.</p>
+    <p class="H_Parrafo_de_Item">Se podrá indicar qué dato informará cada columna y qué tipos de comprobantes se desean considerar para obtener el valor de cada una.</p>
+    <p class="H_Parrafo_de_Item">Para cada una de las columnas debe ingresarse la siguiente información:</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto de hasta 15 caracteres que corresponderá al título de la columna.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Contenido</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Nada</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad 1</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Peso</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad 2</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Importe</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad de operaciones</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad de proveedores</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad de contenedores</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica Nada significa que no se incluirá la columna en la estadística.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica Cantidad 1 se incluirán en la columna los totales de unidades compradas expresadas en la primera unidad de medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica Peso se incluirá el peso bruto del ítem establecido en la tabla de bienes de los ítems que correspondan.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica Cantidad 2 para los ítems que trabajan con doble unidad de medida, se incluirán en la columna los totales de unidades compradas expresadas en la segunda unidad de medida, y para los demás ítems se mostrarán las cantidades correspondientes en la unidad con la que trabajan.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo total</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea incluir la columna para cada línea que se detalle en el listado o no.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se marca esta opción sólo se incluirá un total de la información de la columna al pie del reporte.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Importe</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica Importe se podrá seleccionar a qué importe deberá corresponder el valor que se liste en la columna y podrán indicarse los siguientes importes, en base a los cuales se construirá el importe de la columna:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Neto gravado</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> I.V.A.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Impuestos internos</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Percepciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede indicarse un solo tipo de importe o todos los que se deseen. El importe de la columna estará conformado por la suma de los importes que aquí se indiquen.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Tipos de comprobantes</p>
+    <p class="H_Parrafo_de_Sub-Item">Se muestra en esta tabla una lista con todos los <a href="tabla__Tipos_de_comprobantes.htm">tipos de comprobantes</a> de compras posibles de seleccionar para incluir en la columna de la estadística.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción permite, si se desea, incluir en la columna de la estadística sólo las compras efectuadas con determinados tipos de comprobantes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se podrán considerar distintos tipos de comprobantes para cada una de las columnas del listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Inicialmente la tabla tiene seleccionados todos los tipos de comprobantes que contiene, de modo que si se imprime la estadística sin modificar esta tabla, todas las operaciones de compras que cumplan con las opciones y rangos solicitados participarán de la estadística.</p>
+    <p class="H_Parrafo_de_Sub-Item">Haciendo doble click en la línea de la tabla que se desee se procede a marcar o desmarcar un determinado tipo de comprobante. Además, mediante el botón <font style="font-weight: bold;">Invertir selección</font> se invierte la selección de toda la tabla. Es decir, si la tabla tiene seleccionados todos los tipos de comprobantes, al pulsar el botón no queda seleccionado ningún tipo y a partir de allí puede elegirse algún comprobante en particular.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm" style="font-style: normal;">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP609151500');
+    TextPopupInit('a4', 'POPUP609696686');
+    TextPopupInit('a2', 'POPUP609318225');
+    TextPopupInit('a3', 'POPUP609400283');
+    //]]>
+  </script>
+
+</body></html>

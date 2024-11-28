@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.3.0_13"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tabla Sinónimos para códigos de padrones</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Sinónimos para códigos de padrones</h1>
+  <p class="H_Texto">Si se indica en los parámetros de cuentas corrientes que se obtienen porcentajes de padrones de ingresos brutos mediante BAS Padrones, se pueden indicar aquí sinónimos de padrones para esa importación.</p>
+  <p class="H_Texto">Los porcentajes en BAS Padrones se importan de Agencias, entonces aquí se debe indicar la relación entre los padrones utilizados y esas agencias, indicando para cada padrón de qué agencia obtiene los porcentajes, a eso se refieren estos sinónimos.</p>
+  <p class="H_Texto">No es obligatorio indicar todos los padrones, los padrones que no tengan agencia asociada, continuarán utilizando los porcentajes de ingresos brutos obtenidos mediante la importación de padrones de BASCS utilizada hasta ahora, y podrán seguir importándose de esa manera.</p>
+  <p class="H_Texto">Si no se utiliza BAS Padrones para obtener porcentajes de ingresos brutos, los campos de esta pantalla se muestran todos deshabilitados.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Usar códigos de padrón como códigos de agencias</span><span data-close-text="true">Usar códigos de padrón como códigos de agencias</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Mediante esta opción es posible indicar que se utilizan los códigos de padrones como códigos de agencias, en cuyo caso la tabla con el detalle de sinónimos se blanquea, ya que no se indican sinónimos en ese caso porque los códigos de agencias coinciden con los códigos de padrón.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Obtener agencias</span><span data-close-text="true">Obtener agencias</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Al comenzar a definir sinónimos, o durante la carga de los mismos, mediante este hipervínculo se obtienen los códigos de las agencias importadas en BAS Padrones y dichos códigos a partir de ese momento pueden utilizarse como sinónimos de padrones.</p>
+    <p class="H_Parrafo_de_Item">Si una agencia con sinónimos indicados deja de existir en BAS Padrones, la próxima vez que se indique &quot;Obtener agencias&quot;, esa agencia dejará de ser válida en BASCS y deberá indicarse otra agencia como sinónimo, si se desea. Y si en BAS Padrones se agregan nuevas agencias, la próxima vez que se obtengan las mismas, se actualizarán dichas agencias en BASCS y podrán ser utilizadas como sinónimos.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Tabla de sinónimos</span><span data-close-text="true">Tabla de sinónimos</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Padrón</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del padrón para la cual se desea informar el sinónimo.</p>
+    <p class="H_Parrafo_de_Sub-Item">El padrón debe haberse dado de alta previamente en la tabla Padrón de tasas.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del padrón indicado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Agencia</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la agencia que se utiliza como sinónimo para el padrón indicado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre</p>
+    <p class="H_Parrafo_de_Sub-Item">Nombre de la agencia indicada.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+
+</body></html>

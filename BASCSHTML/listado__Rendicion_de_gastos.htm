@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.5.0_8"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Rendicion de gastos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Gastos,Rendición"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Rendición de gastos</h1>
+  <p class="H_Texto">Este informe permite ver las rendiciones de gastos registradas en el sistema con el detalle de las facturas de compra y los pagos aplicados a cada rendición.</p>
+  <p class="H_Texto">Una vez habilitada una rendición de gastos, tanto los valores que se entreguen al responsable del fondo, como las facturas y gastos que éste realice o el dinero que devuelva, se asocian a dicha rendición de modo que la misma refleje el destino dado a los fondos asignados.</p>
+  <p class="H_Texto">Este informe de rendición de gastos, entonces, mostrará cómo y en qué, se fueron consumiendo los valores asignados al responsable del fondo.</p>
+  <p class="H_Texto">El listado muestra cada comprobante de rendición de gastos de un determinado <a href="tabla__Agentes.htm">agente</a> , con su fecha, número, fecha de vencimiento, <a href="tabla__Cuentas.htm">imputación contable</a> , observaciones, y luego el detalle de las facturas de compra y de las órdenes de pago imputadas a la rendición, ordenadas por fecha. Las facturas de compra suman y los pagos restan a la rendición. El importe resultante constituye el saldo de la rendición de gastos.</p>
+  <p class="H_Texto">Los importes de todos los comprobantes se muestran expresados en la moneda correspondiente a la <a href="tabla__Cuentas.htm">imputación contable</a> asociada a la rendición de gastos. Se informan totales por comprobante de rendición y totales por agente.</p>
+  <p class="H_Texto">Al final del listado se informan el total de comprobantes de rendición listados y los importes totales.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP764476112" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP764476112">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Agente</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Agentes.htm">agente</a> cuyas rendiciones de gastos se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un agente en particular o un grupo de agentes. Si este dato es dejado en blanco, se incluirán en el informe las rendiciones de gastos de todos los agentes de tipo <font style="font-weight: bold;">Rendición de gastos</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Comprobantes asociados</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción permite seleccionar los comprobantes asociados a cada rendición informando un rango de fechas. De este modo, solo se incluirán en el informe los comprobantes cuya fecha interna se encuentra dentro de este rango.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Período</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Fecha inicial</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha a partir de la cual se desean incluir los comprobantes asociados a las rendiciones de gastos en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si no se indica ninguna fecha, se incluyen desde los comprobantes más antiguos asociados a las rendiciones que se soliciten.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Fecha final</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha hasta la cual se desean incluir los comprobantes asociados a las rendiciones de gastos en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si no se indica ninguna fecha, se incluyen hasta los comprobantes más actuales asociados a las rendiciones que se soliciten.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Imputación contable</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de las <a href="tabla__Cuentas.htm">imputaciones contables</a> asociadas a las rendiciones que se desea incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una cuenta en particular o un grupo de cuentas. Si este dato es dejado en blanco, se incluirán en el listado, todas las rendiciones sin importar la cuenta informada al ingresarlas al sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica alguna imputación sólo se listará, para cada agente las rendiciones vinculadas con las imputaciones que se indicaron.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los comprobantes de rendiciones de gastos que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El prefijo debe corresponder a un <a href="tabla__Talonarios.htm">talonario</a> que admita el ingreso de rendiciones de gastos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco se incluirán en el listado las rendiciones de gastos sin tener en cuenta su numeración.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Números del comprobante de rendición de gastos que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse un número en particular o un rango de números. Si este dato es dejado en blanco y se indicó un prefijo, se incluirán todos los comprobantes de rendición de gastos del prefijo indicado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación del ordenamiento con el que se desea emitir el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento <font style="font-weight: bold;">Código</font> se imprimirán las rendiciones de gastos ordenadas por código de agente.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Nombre</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Nombre se imprimirán las rendiciones de gastos ordenadas alfabéticamente por nombre de agente.</p>
+    <p class="H_Parrafo_de_Sub-Item">En ambos casos, se mostrará luego para cada rendición, el detalle de las facturas de compra y de las órdenes de pago imputadas a cada una, ordenadas por fecha.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo rendiciones abiertas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir o no en el listado solamente las rendiciones de gastos abiertas o todas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez que se han imputado todos los comprobantes a una determinada rendición de gastos se puede proceder a efectuar el cierre de la misma.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si esta opción está marcada se incluyen en el listado las rendiciones que aún no han sido cerradas, sino se incluyen todas. En este caso las rendiciones cerradas aparecerán en el listado con un cartel que indica tal situación.</p>
+    <p class="H_Parrafo_de_Sub-Item">En este informe además se puede incluir un saldo de la rendición en relación a la fecha de cierre de ejercicio, si éste se hubiese realizado. Este saldo se incluye, en los casos en que se han efectuado depuraciones de datos históricos con rendiciones de gastos abiertas a la fecha de cierre.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo rendiciones vencidas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir o no en el listado solamente las rendiciones de gastos vencidas o todas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las rendiciones de gastos vencidas son aquellas cuya fecha de vencimiento es anterior a la fecha del día.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si esta opción está marcada se incluyen en el listado las rendiciones de gastos que ya se encuentran vencidas, sino se incluyen todas.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm" style="font-style: normal;">
+      <font style="font-style: normal;">Ficha Empresas</font>
+    </a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP764476112');
+    //]]>
+  </script>
+
+</body></html>

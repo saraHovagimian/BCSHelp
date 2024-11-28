@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.5.1.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tabla de Cuentas</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Cuentas"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Cuentas</h1>
+  <p class="H_Texto">Aquí se definen las características del Plan de Cuentas de la empresa. Podrán definirse cuentas imputables, cuentas presupuestarias o cuentas que cumplen ambas funciones.</p>
+  <p class="H_Texto">Las cuentas imputables son las que llevarán imputados los importes en los asientos de los comprobantes que se registren en el sistema y en los asientos del diario general. Las cuentas presupuestarias son las que se utilizarán en la definición de presupuestos . Una o más cuentas imputables podrán tener asociada una misma cuenta presupuestaria.</p>
+  <p class="H_Texto">El sistema prevé que las cuentas del plan de cuentas manejen subcuentas de diverso tipo. Esta prestación del sistema permite obtener una gran apertura de la información sin necesidad de incluir un gran volumen de cuentas dentro del plan de cuentas.</p>
+  <p class="H_Texto">Por ejemplo, si pensamos en cuentas tales como <font style="font-weight: bold;">Deudores en Pesos</font>, <font style="font-weight: bold;">Deudores en</font>
+    <font style="font-weight: bold;">Dólares</font> y <font style="font-weight: bold;">Deudores en Marcos</font>, es lógico pensar que deben manejar subcuentas que permitan registrar la información especifica de cada cliente. Luego, los clientes que se definan en el sistema, serán utilizados indistintamente por las tres cuentas mencionadas. De este modo, logramos contabilizar la información en forma detallada sin necesidad de habilitar en el plan de cuentas una cuenta por cada moneda y por cada cliente con el cual se opere. Cuando se ingrese un comprobante de ventas (en cualquiera de las monedas mencionadas), al informar el cliente titular de la operación, el sistema completará el ciclo y contabilizará el movimiento en la subcuenta y en la cuenta de control que correspondan.
+  </p>
+  <p class="H_Texto">Los datos a ingresar para definir cuentas imputables son:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
+  <p class="H_Parrafo_de_Item">Código de hasta nueve dígitos que identifica a la cuenta y será utilizado para individualizar a la misma en todo el sistema.</p>
+  <p class="H_Parrafo_de_Item">Como ejemplos podemos mencionar, <font style="font-weight: bold;">110101001</font>, <font style="font-weight: bold;">25001</font>, <font style="font-weight: bold;">410101003,</font> etc.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Nombre</p>
+  <p class="H_Parrafo_de_Item">Denominación de la cuenta imputable. Se dispone de hasta sesenta caracteres para el ingreso.</p>
+  <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight: bold;">Efectivo en caja</font>, <font style="font-weight: bold;">Valores a depositar</font>, <font style="font-weight: bold;">Proveedores pesos,</font> etc.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Datos generales</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Subcuentas</p>
+  <p class="H_Parrafo_de_Sub-Item">Tipo de subcuentas de la cuenta. Indica si la cuenta, al ser imputada en los asientos, tendrá asociada o no, una subcuenta y de ser así, el tipo de la misma.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">No tiene</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Clientes</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Proveedores</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Caja</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cuentas bancarias</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Centro de apropiación A</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Centro de apropiación B</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Centros de apropiación A y B</p>
+  <p class="H_Parrafo_de_Sub-Item">Cada uno de estos grupos de subcuentas presenta características particulares y distintivas del resto.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las cuentas que manejan subcuentas de tipo <font style="font-weight: bold;">Cliente</font> y las de tipo <a href="tabla__Proveedores.htm">
+      <font style="font-weight: bold;">Proveedores</font>
+    </a> tienen por objeto ser utilizadas en las transacciones asociadas a los <a href="tabla__Clientes.htm">clientes</a> y <a href="tabla__Proveedores.htm">proveedores</a> , respectivamente, que se definan en el sistema. Como ejemplos, podemos mencionar, deudores en pesos, deudores en dólares, proveedores varios, etc. Este tipo de cuentas se deben asociar a los clientes y proveedores, al momento de definirlos, en las tablas dispuestas a tal fin. De este modo, cuando se invoque a uno como titular de un comprobante, se imputa automáticamente la cuenta que le corresponde.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las cuentas que administran subcuentas de tipo <font style="font-weight: bold;">Caja</font>, son las que se conocen como cuentas monetarias, es decir, aquellas cuentas que representan efectivo (en moneda local o extranjera), cupones de tarjetas de crédito, documentos y cheques, facturas de crédito, etc. Estas cuentas se asocian a los <a href="tabla__Medios_de_pago.htm">medios de pago</a> que se habiliten en el sistema de modo que, cuando éstos se invoquen en los comprobantes de <a href="tabla__Cajas.htm">caja</a> , para ingresar o egresar valores, el sistema las impute automáticamente.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las cuentas que administran subcuentas de tipo <font style="font-weight: bold;">Cuentas Bancarias</font> permiten operar ágilmente cuando se tienen varias cuentas abiertas en un mismo banco. En ese caso se incorpora una única cuenta en el plan de cuentas que represente al banco y, luego, ésta será compartida por todas las <a href="tabla__Cuentas_bancarias.htm">cuentas bancarias</a> que se habiliten en el banco en cuestión.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las cuentas que administran subcuentas de tipo <font style="font-weight: bold;">Centro de Apropiación</font> a su vez podrán ser de un centro de apropiación (A o B) o de los dos. El sistema exhibirá como subcuentas la denominación dada al centro A en el punto <a href="parametros__Datos_generales.htm">
+      <font style="font-weight: bold;">Parámetros de Datos Generales</font>
+    </a> , la del centro B y una con las dos denominaciones que identificaría al tipo de subcuentas <font style="font-weight: bold;">Doble centro de apropiación</font>. Estas cuentas podrán ser imputadas referenciando <a href="tabla__Centros_de_apropiacion.htm">centros de apropiación</a> que se hayan definido en el sistema. Si, por ejemplo, cada sector de la empresa se define como un centro de apropiación, al registrar los asientos de sueldos y cargas sociales, se podrán discriminar los importes correspondientes a cada sector.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las cuentas de tipo presupuestarias sólo podrán tener subcuentas de centros de apropiación o no tener subcuentas.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Saldo habitual</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación del tipo de saldo habitual que tendrá la cuenta que se está definiendo.</p>
+  <p class="H_Parrafo_de_Sub-Item">Los valores posibles de seleccionar son:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Deudor</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Acreedor</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Ninguno</p>
+  <p class="H_Parrafo_de_Sub-Item">Este dato le sirve al sistema para poder informar en los balances del sistema si una cuenta presenta un saldo diferente del habitual.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Período de validez de la cuenta</p>
+  <p class="H_Parrafo_de_Sub-Item">El sistema permite asociar a cada cuenta del plan de cuentas un rango de fechas que determinan su período de validez.</p>
+  <p class="H_Parrafo_de_Sub-Item">Esto es sumamente útil si se necesitan efectuar cambios al plan de cuentas. En esos casos, debe coexistir un grupo de cuentas que dejan de imputarse, pero que deben permanecer en el sistema pues poseen movimientos y participan de los informes, junto a otro grupo que se habilita para otro período.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se presentan estas situaciones, el rango de validez de las cuentas posibilita la coexistencia evitando errores de imputación y permite, por ejemplo, indicar que, al efectuar una cobranza, hasta determinada fecha se imputa una cuenta y, a partir de dicha fecha, se imputa otra diferente.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Desde</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Fecha desde la cual se considera válida la cuenta y podrá referenciarse en tablas, comprobantes y demás procesos del sistema.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Hasta</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Fecha hasta la cual se considera válida la cuenta y podrá referenciarse en tablas, comprobantes y demás procesos del sistema.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta presupuestaria</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de cuenta presupuestaria que se asocia a la cuenta. Este dato sólo se solicita si la cuenta que se está definiendo es de tipo Imputable.</p>
+  <p class="H_Parrafo_de_Sub-Item">Debe ingresarse el código de una cuenta ya definida en el sistema, de tipo Presupuestaria.</p>
+  <p class="H_Parrafo_de_Sub-Item">En esta cuenta presupuestaria se acumularán los importes de los asientos de la cuenta que se está definiendo, en el Informe de ejecución de presupuestos .</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Tipo de cuenta</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación del tipo de cuenta que se está definiendo.</p>
+  <p class="H_Parrafo_de_Sub-Item">Los valores posibles de seleccionar son:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Imputable</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Presupuestaria</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Ambas</p>
+  <p class="H_Parrafo_de_Sub-Item">Este dato define en qué procesos podrá utilizarse la cuenta. Las cuentas imputables son las que llevan imputados los importes en los asientos que se generen, podrán ser además cuentas de ajuste y asociarse a cajas, cuentas bancarias, tablas de impuestos, etc. Las cuentas presupuestarias sólo podrán utilizarse en la definición de los presupuestos de la empresa.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Vistas</p>
+  <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los datos de todas las <a href="tabla__Vistas.htm">vistas</a> en las cuales participa la cuenta imputable que se está definiendo.</p>
+  <p class="H_Parrafo_de_Sub-Item">La cuenta puede incorporarse a una vista ingresando la información en esta tabla o desde el punto <font style="font-weight: bold;">Vistas</font>, en donde para una vista dada se define la forma en que está compuesta, niveles de jerarquía, títulos, subtítulos, etc.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Vista</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de vista en la que participa la cuenta.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre</p>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la vista correspondiente al código informado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Título</p>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el título de la vista correspondiente al código informado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre de la cuenta en la vista</p>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre que se le asigna a la cuenta imputable en la vista.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Ajuste</p>
+  <p class="H_Parrafo_de_Item">Esta ficha contiene los datos necesarios para realizar los ajustes automáticos en moneda local y en moneda de contabilización adicional, en caso que dicha moneda esté indicada en los <a href="parametros__Datos_generales.htm">parámetros generales</a>.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> En Moneda local</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ajuste por valor corriente</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tabla de ajuste</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Código de la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">tabla de cotizaciones</a> que se utilizará para realizar los ajustes por valores corrientes de la cuenta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Si no se indica ninguna tabla la cuenta no será ajustable por valores corrientes y no se ajustará por tal concepto en los balances y demás procesos del sistema que realicen este tipo de ajustes.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Siempre que se ingrese en un asiento una cuenta imputable cuya tabla de ajuste sea de cotizaciones, se deberá ingresar además del importe en moneda local, la cantidad expresada en las unidades de la tabla. En el caso de los comprobantes cuyos asientos se registran automáticamente, esta cantidad será solicitada, si es necesario, al ingresar el comprobante.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta de ajuste deudora</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Código de cuenta imputable que será utilizada como cuenta de ajuste deudora de la cuenta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Debe ingresarse el código de una cuenta ya definida en el sistema, no ajustable por ningún concepto y sin subcuentas</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Esta cuenta se debitará cuando se realice un ajuste por valores corrientes al haber de la cuenta imputable que se está definiendo.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta de ajuste acreedora</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Código de cuenta imputable que será utilizada como cuenta de ajuste acreedora de la cuenta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Debe ingresarse el código de una cuenta ya definida en el sistema, no ajustable por ningún concepto y sin subcuentas</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Esta cuenta se acreditará cuando se realice un ajuste por valores corrientes al debe de la cuenta imputable que se está definiendo.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ajuste por inflación</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tabla de ajuste</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Código de la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">tabla de índices</a> que se utilizará para realizar los ajustes por inflación de la cuenta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Si no se indica ninguna tabla la cuenta no será ajustable por inflación y no se ajustará por tal concepto en los balances y demás procesos del sistema que realicen este tipo de ajustes.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta de ajuste deudora</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Código de cuenta imputable que será utilizada como cuenta de ajuste deudora de la cuenta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Debe ingresarse el código de una cuenta ya definida en el sistema, no ajustable por ningún concepto y sin subcuentas.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Esta cuenta se debitará cuando se realice un ajuste por inflación al haber de la cuenta imputable que se está definiendo.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta de ajuste acreedora</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Código de cuenta imputable que será utilizada como cuenta de ajuste acreedora de la cuenta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Debe ingresarse el código de una cuenta ya definida en el sistema, no ajustable por ningún concepto y sin subcuentas</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Esta cuenta se acreditará cuando se realice un ajuste por inflación al debe de la cuenta imputable que se está definiendo.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> En Moneda de contabilización adicional</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Ajusta en moneda de contabilización adicional</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea que esta cuenta sea ajustable también en moneda de contabilización adicional. Esta opción solo se encontrará habilitada en caso de haber indicado el manejo de dicha moneda en los Parámetros Generales.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta de ajuste deudora</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de cuenta imputable que será utilizada como cuenta de ajuste deudora de la cuenta en el asiento de ajuste de la contabilidad adicional.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Debe ingresarse el código de una cuenta ya definida en el sistema. La cuenta que se indique no puede ser de tipo presupuestario, ni tener subcuentas de tipo centros de apropiación. Además, dicha cuenta no pueden ser ajustables ni en moneda local ni en <font style="font-weight: bold;">mca</font>.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Esta cuenta se debitará cuando se realice un ajuste al haber de la cuenta imputable que se está definiendo.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cuenta de ajuste acreedora</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de cuenta imputable que será utilizada como cuenta de ajuste acreedora de la cuenta en el asiento de ajuste de la contabilidad adicional.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Debe ingresarse el código de una cuenta ya definida en el sistema. La cuenta que se indique no puede ser de tipo presupuestario, ni tener subcuentas de tipo centros de apropiación. Además, dicha cuenta no pueden ser ajustables ni en moneda local ni en mca.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Esta cuenta se acreditará cuando se realice un ajuste al debe de la cuenta imputable que se está definiendo.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Discrimina subcuentas</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea obtener el detalle de los ajustes discriminado por subcuentas. Esta opción permite obtener un asiento de ajuste en mca detallado por Clientes o <a href="tabla__Proveedores.htm">Proveedores</a>.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Cotización moneda de valuación y contabilización adicional</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En este campo se selecciona la cotización (cualquiera de las tres disponibles, ejemplo: comprador, vendedor y promedio) para la moneda de contabilización adicional que se usa para hacer el ajuste correspondiente.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Cotización otra moneda</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En este campo se selecciona la cotización (cualquiera de las tres disponibles) para la tabla de ajuste de la imputación contable, que se utilizará en el ajuste en moneda de contabilización adicional, para pasar a moneda local el importe de la imputación contable según su tabla de ajuste.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este último campo sólo se habilita si la tabla de ajuste es de tipo cotización y la misma es diferente a la moneda de contabilización adicional.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Atributos</p>
+  <p class="H_Parrafo_de_Item">Esta ficha exhibe el código de agrupación y los atributos de tipo &quot;Imputación contable&quot; que se hayan habilitado en el sistema y, para cada uno de ellos, el valor que corresponde a la cuenta que se define.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Referencia externa</p>
+  <p class="H_Parrafo_de_Item">Este campo permite indicar información referida a la cuenta para el uso que requiera el usuario.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código de agrupación</p>
+  <p class="H_Parrafo_de_Item">Código de agrupación de la cuenta. Puede cargarse manualmente o, en forma automática, a partir de los valores que se asignan a los atributos.</p>
+  <p class="H_Parrafo_de_Item">Efectivamente, al definir a éstos últimos, es posible indicar, una posición y largo de código de selección de modo de completarlos en forma automática.</p>
+  <p class="H_Parrafo_de_Item">Puede ingresarse un texto de hasta ocho caracteres independientes entre sí. Al asignar un número o una letra en una posición determinada del código, se estará indicando el grupo o grupos a los cuales pertenece la cuenta.</p>
+  <p class="H_Parrafo_de_Item">En los informes y procesos que involucran rangos de cuentas, es posible indicar que se ejecute el proceso para un grupo específico de cuentas, permitiendo agrupar las cuentas con características comunes.</p>
+  <p class="H_Parrafo_de_Item">Una posición del código de agrupación podría utilizarse, por ejemplo, para distinguir entre cuentas de resultado y patrimoniales.</p>
+  <p class="H_Parrafo_de_Item">Es importante tener en cuenta que las imputaciones de tipo presupuestario no disponen de código de agrupación.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Atributos</p>
+  <p class="H_Parrafo_de_Item">Esta tabla exhibe los atributos de tipo &quot;imputación contable&quot; que se han definido y, para cada uno de ellos, el valor que corresponde a la cuenta en cuestión.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Vistas.htm">vista</a> en la que participa la cuenta.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la vista correspondiente al código informado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Vistas.htm">vista</a> en la que participa la cuenta.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la vista correspondiente al código informado.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Empresas</p>
+  <p class="H_Parrafo_de_Item">Si se trabaja con múltiples empresas, aquí se puede indicar para cada cuenta que se ingresa en qué empresas podrá utilizarse.</p>
+  <p class="H_Parrafo_de_Item">Por default se muestra una lista con todas las empresas habilitadas para el usuario que está ingresando la cuenta, y en esta lista se ofrecen marcadas como habilitadas (en color rojo) todas las empresas, de manera de no tener que acceder a esta ficha si se ingresan cuentas comunes a todas las empresas.</p>
+  <p class="H_Parrafo_de_Item">Las cuentas del Plan de Cuentas comunes a todas las empresas también estarán habilitadas para operar con nuevas empresas que se ingresen en el sistema. Al habilitar una cuenta para operar con una empresa también se habilita a la misma para operar en todas las sucursales de la empresa.</p>
+  <p class="H_Parrafo_de_Item">Pulsando el botón <font style="font-weight: bold;">Invertir selección</font> las empresas habilitadas se deshabilitan y las no habilitadas se marcan automáticamente como habilitadas.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Empresa de alta</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de empresa en la cual está el usuario en el momento de ingresar la cuenta en el sistema.</p>
+  <p class="H_Parrafo_de_Sub-Item">Un usuario solamente podrá efectuar modificaciones a la cuenta si se encuentra en la empresa de alta asociada a la misma.</p>
+  <p class="H_Parrafo_de_Sub-Item">Este dato no se ingresa manualmente. Para las cuentas nuevas que se ingresen, se muestra la empresa en la cual está el usuario, y para las cuentas ya existentes se muestra la empresa en la cual estaba el usuario en el momento de ingresar la cuenta.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Empresas</p>
+  <p class="H_Parrafo_de_Sub-Item">Esta tabla muestra todas las empresas habilitadas para el usuario que está ingresando la cuenta. Recordemos que un usuario podrá tener habilitadas algunas empresas de todas las existentes y esta información podrá indicarse en el punto Usuarios .</p>
+  <p class="H_Parrafo_de_Sub-Item">De las empresas habilitadas para el usuario se mostrarán en color rojo las empresas en las cuales la cuenta está habilitada.</p>
+  <p class="H_Parrafo_de_Sub-Item">Una cuenta podrá habilitarse o deshabilitarse para una empresa haciendo doble click en la fila de la tabla correspondiente a la misma.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Empresa</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de la empresa en la cual la cuenta que se está definiendo podrá estar o no habilitada para operar.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre</p>
+  <p class="H_Parrafo_de_Sub-Item">Nombre de la empresa correspondiente al código informado.</p>
+
+</body></html>

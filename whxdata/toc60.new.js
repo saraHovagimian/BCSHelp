@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Estadísticas de compras","type":"item","tilePath":"","description":"","url":"BASCSHTML/listado__Estadistica_de_compras.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.2.5.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Imputacion del IVA al Costo</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Imputación del IVA al Costo"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Imputación del IVA al Costo</h1>
+<p class="H_Texto">Esta funcionalidad permite imputar el IVA al costo de los bienes. Cobra relevancia en aquellos casos en que la compra de determinados bienes de cambio está gravada con IVA, pero que no puede tomarse como crédito fiscal, por ser la venta exenta o no gravada. A este IVA el sistema lo denomina IVA NO Computable.</p>
+<p class="H_Texto">El proceso se realiza en forma automática, a través de revalúos.</p>
+<p class="H_Texto">Para activar esta funcionalidad se debe:</p>
+
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Tildar el Parámetro correspondiente en las configuraciones de Parámetros <a href="parametros__Especiales.htm">Especiales</a>.</p>
+
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Dar de alta una nueva <a href="tabla__Impuestos.htm">Tabla de Impuestos</a>, con un tipo de IVA compras gravado y con tasa diferente de cero, y un IVA ventas no gravado, exento o gravado con una tasa igual a cero.</p>
+
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Asociar la Tabla de impuestos a los ítems (bienes o servicios) correspondientes.</p>
+
+<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Existencia de un <a href="tabla__Talonarios.htm">Talonario</a> para revalúos.</p>
+
+<p class="H_Texto">Una vez configurados estos puntos, cada vez que se ingresen comprobantes de compra, se registrará la información necesaria para que, en el caso de los bienes, se generen revalúos automáticos de dichos ingresos para los ítems que tengan asociada la nueva tabla de impuestos.</p>
+<p class="H_Texto">Dichos revalúos coincidirán con el importe de IVA asociado a dichos ítems y usarán como cuenta compensadora la imputación contable de IVA compras definida en la tabla de impuestos. El objetivo de dichos revalúos es incorporar el importe de IVA al costo del producto (o restarlo en el caso de notas de crédito).</p>
+<p class="H_Texto">Los revalúos se generarán automáticamente cada vez que se active el proceso de valorización de la mercadería. Los revalúos se generarán a la fecha del ingreso, utilizando un talonario para revalúos asociado a la sucursal del ingreso que debe existir y ser el adecuado.</p>
+<p class="H_Texto">El importe de IVA a revaluar será el importe de IVA de los ítems con características de IVA no computable en moneda local a la fecha del comprobante.</p>
+<p class="H_Texto">Vale aclarar que no se podrá rehacer el asiento de un comprobante de compras con revalúos de IVA no computable ya generados.</p>
+<p class="H_Texto">Tampoco se podrá eliminar comprobantes de compra o ingresos de mercadería asociados si hay revalúos por IVA no computable asociados ya generados, hay que eliminar los comprobantes de revalúo asociados previamente.</p>
+<p class="H_Texto">El proceso automático contempla la posibilidad de generar revalúos por IVA no computable para notas de crédito de compras con remito asociado (estos revalúos restan al costo del producto).</p>
+
+
+</body></html>

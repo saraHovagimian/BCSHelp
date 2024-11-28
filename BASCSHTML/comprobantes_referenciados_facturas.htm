@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_73"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Comprobantes referenciados facturas</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Comprobantes referenciados facturas"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Comprobantes referenciados facturas</h1>
+<p class="H_Parrafo_de_Item">Las facturas de venta pueden registrarse en 
+ base a la información de otros comprobantes existentes en el sistema que 
+ se encuentran pendientes y que, una vez utilizados, pasarán a la categoría 
+ de cumplidos.</p>
+<p class="H_Parrafo_de_Item">Estos comprobantes son los pedidos y los egresos 
+ de materiales.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Pedidos</p>
+<p class="H_Parrafo_de_Item">Mediante este botón (excepto que el talonario 
+ correspondiente a la factura indique “Control de cantidades), se abre 
+ una ventana que permite visualizar una lista con todos los pedidos posibles 
+ de asociar a la factura que se está ingresando.</p>
+<p class="H_Parrafo_de_Item">En caso que se informe un cliente se incluyen 
+ todos los pedidos pendientes del cliente en cuestión. Si no se informa 
+ cliente, se exhiben todos los pedidos pendientes.</p>
+<p class="H_Parrafo_de_Item">Se mostrará una línea en la tabla para cada 
+ pedido con su fecha y número de comprobante. Los pedidos que aún no hayan 
+ sido autorizados aparecerán en la lista pero no se permitirá su selección</p>
+<p class="H_Parrafo_de_Item">Se pueden seleccionar en este momento uno 
+ o más pedidos a incluir en la factura. Haciendo clic en los pedidos que 
+ se deseen incluir se procederá a marcar o desmarcar los mismos y al pulsar 
+ el botón de Ok situado en la parte inferior de la ventana, automáticamente 
+ se incluirán en la factura todas las líneas de los comprobantes seleccionados 
+ (marcados). . En caso que no se haya indicado un código de cliente, se 
+ controla que no se seleccionen pedidos correspondientes a clientes diferentes.</p>
+<p class="H_Parrafo_de_Item">Al seleccionar los pedidos a facturar se copiará 
+ en la factura la imputación contable del pedido seleccionado. Si se factura 
+ más de un pedido a la vez y éstos tienen distinta imputación, se dejará 
+ en la factura la imputación contable por defecto del cliente.</p>
+<p class="H_Parrafo_de_Item">En este momento la ventana de pedidos pendientes 
+ se cierra y quedan incluidos en la factura todos los ítems que conforman 
+ los pedidos seleccionadas, con sus cantidades asociadas.</p>
+<p class="H_Parrafo_de_Item">Las líneas de los pedidos que no se quieran 
+ incluir en la factura pueden sacarse de la misma haciendo doble click 
+ en las líneas correspondientes de la factura.</p>
+<p class="H_Parrafo_de_Item">En caso que el pedido que se referencia incluya 
+ una línea relacionada al “Item asociado” de la condición de venta por 
+ descuento o recargo, si al facturarlo, la condición de venta asociada 
+ al cliente aun tiene asociado dicho ítem, éste se agregará a la factura 
+ y la línea del pedido correspondiente al ítem asociado no se tendrá en 
+ cuenta.</p>
+<p class="H_Parrafo_de_Item">Los pedidos que se asocien a la factura quedarán 
+ como cumplidos y de aquellos que se incluyan en forma parcial, quedarán 
+ pendiente sólo las líneas correspondientes a los ítems no incluidos en 
+ este comprobante.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, una vez 
+ seleccionados los pedidos en la ventana correspondiente, y habiendo retornado 
+ al comprobante, no es posible presionar el botón nuevamente para incorporar 
+ otros comprobantes. Por este motivo, todos los pedidos que quieran incluirse 
+ en el comprobante deben seleccionarse a la misma vez.</p>
+<p class="H_Parrafo_de_Item">Cuando se seleccionan pedidos de ítems que 
+ manejan despachos y/o partidas, se muestra en cada línea de la factura, 
+ el despacho y/o la partida de la cual se descargará la mercadería correspondiente 
+ a esa línea. Si la cantidad de unidades es mayor al stock disponible del 
+ ítem en el despacho y/o la partida que se ofrece por defecto, se abren 
+ tantas líneas como sean necesarias según el stock disponible en los restantes 
+ despachos y/o partidas del ítem.</p>
+<p class="H_Parrafo_de_Item">Si se está registrando la factura en moneda 
+ local, se podrán referenciar pedidos de venta que estén en moneda local 
+ o en otra moneda. Lo que no se podrá hacer es facturar pedidos que estén 
+ expresados en más de una moneda.</p>
+<p class="H_Parrafo_de_Item">Si se está registrando la factura en moneda 
+ extranjera los pedidos tendrán que corresponder a dicha moneda.</p>
+<p class="H_Parrafo_de_Item">Si la factura se registra en moneda local 
+ y se invoca un pedidos en otra moneda, el sistema solicitará el cambio 
+ a utilizar para su reexpresión en moneda local, ofreciendo por defecto 
+ el cambio del día para dicha moneda. Si la moneda de la imputación contable 
+ de cuenta corriente se corresponde con la moneda de los pedidos se utilizará 
+ el cambio indicado para dicha imputación contable.</p>
+<p class="H_Parrafo_de_Item">Si el talonario indica “Control de cantidades“, 
+ al presionar el botón correspondiente al comprobante referenciado se accede 
+ a una ventana previa destinada a registrar los ítem, llamada Control de 
+ cantidades.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Movimientos de materiales</p>
+<p class="H_Parrafo_de_Item">Mediante este botón (excepto que el talonario 
+ correspondiente a la factura tenga indicado “Control de cantidades”), 
+ se abre una ventana que permite visualizar una lista con todos los egresos 
+ de materiales posibles de asociar a la factura que se está ingresando.</p>
+<p class="H_Parrafo_de_Item">Se mostrará una línea en la tabla para cada 
+ remito con su fecha y número de comprobante.</p>
+<p class="H_Parrafo_de_Item">Se pueden seleccionar en este momento uno 
+ o más comprobantes de egreso de materiales a incluir en la factura. Es 
+ posible incluir egresos de mercadería que provengan de pedidos siempre 
+ y cuando la moneda especificada en la factura coincida con la especificada 
+ en el pedido.</p>
+<p class="H_Parrafo_de_Item">Haciendo click en los comprobantes que se 
+ deseen incluir se procederá a marcar o desmarcar los mismos y al pulsar 
+ el botón de Ok situado en la parte inferior de la ventana, automáticamente 
+ se incluirán en la factura todas las líneas de los comprobantes seleccionados 
+ (marcados).</p>
+<p class="H_Parrafo_de_Item">En este momento la ventana de egresos de materiales 
+ se cierra y quedan incluidos en la factura todos los ítems que conforman 
+ los remitos seleccionados, con sus cantidades asociadas.</p>
+<p class="H_Parrafo_de_Item">Las líneas de los remitos de egreso que no 
+ se quieran incluir en la factura pueden sacarse de la misma haciendo doble 
+ click en las líneas correspondientes de la factura.</p>
+<p class="H_Parrafo_de_Item">Los egresos de materiales que se asocien a 
+ la factura quedarán como cumplidos y de aquellos que se incluyan en forma 
+ parcial, quedarán pendiente sólo las líneas correspondientes a los ítems 
+ no incluidos en este comprobante.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, una vez 
+ seleccionados los egresos de materiales en la ventana correspondiente, 
+ y habiendo retornado al comprobante, no es posible presionar el botón 
+ nuevamente para incorporar otros comprobantes. Por este motivo, todos 
+ los egresos de materiales que quieran incluirse en el comprobante deben 
+ seleccionarse a la misma vez.</p>
+<p class="H_Parrafo_de_Item">Si el talonario indica “Control de cantidades“, 
+ al presionar el botón correspondiente al comprobante referenciado se accede 
+ a una ventana previa destinada a registrar los ítem, llamada Control de 
+ cantidades.</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item">Si el cliente indicado en el comprobante de 
+ venta es un administrador y se referencian egresos propios o de sus sucursales, 
+ sólo se completará el dato de &#39;Entrega en&#39; con la descripción del domicilio 
+ de los egresos, si la misma es válida para el cliente indicado en el comprobante 
+ de venta, es decir, que el domicilio se encuentre entre los asociados 
+ a dicho cliente. </p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item"><span style="font-weight: bold;">Para tener 
+ en cuenta:</span> Cuando desde comprobantes de venta se referencian pedidos 
+ o movimientos de materiales, si alguno de los ítems referenciados presenta 
+ algún error, se cargarán todas las líneas del comprobante referenciado, 
+ incluyendo las líneas erróneas que estarán marcadas con una cruz (como 
+ eliminadas), y al final se mostrará una ventana con todos los errores 
+ detectados informando la descripción del error y número de línea en la 
+ que ocurre.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+ Novedades</p>
+<p class="H_Parrafo_de_Item">Mediante este botón se incluyen en la factura 
+ todas las líneas correspondientes a las novedades del cliente titular 
+ de la misma.</p>
+<p class="H_Parrafo_de_Item">Las novedades son una lista de ítems que pueden 
+ tener cantidades asociadas, precios, bonificaciones, importes y prioridades. 
+ Son útiles si hay comprobantes que siempre necesiten tener ciertos ítems 
+ comunes a los mismos. El efecto que producen en el comprobante es el mismo 
+ que se produce si las líneas se agregaran manualmente, tienen la ventaja 
+ de permitir automatizar y agilizar el ingreso de algunos ítems a facturar.</p>
+<p class="H_Parrafo_de_Item">Las novedades pueden ingresarse para un cliente 
+ en particular o para un atributo y valor de atributo de clientes. Tienen 
+ además una fecha de vencimiento asociada que indicará, según la fecha 
+ del comprobante, si la novedad se incluye o no. La prioridad determina 
+ el orden en que se ingresarán las líneas en el comprobante, primero aparecerán 
+ las de prioridad más alta, considerando que las prioridades se ordenan 
+ en forma ascendente, es decir, un número bajo implica una mayor prioridad 
+ que un número más alto.</p>
+<p class="H_Parrafo_de_Item">Entonces, al ingresar novedades en la factura, 
+ se incluirán automáticamente, ordenadas por prioridad en forma ascendente, 
+ todas las líneas que se hayan ingresado para el cliente o para algún valor 
+ de atributo del cliente asociado a la factura. Se completarán en pantalla 
+ todos los datos que se hayan indicado en las novedades, los datos faltantes 
+ pueden completarse en este momento, directamente sobre el comprobante. 
+ Por ejemplo, si faltan los precios, o si se quiere agregar una bonificación 
+ distinta para algún ítem, o modificar alguna cantidad, etc.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cotizaciones</p>
+<p class="H_Parrafo_de_Item">Mediante este botón se abre una ventana que 
+ permite visualizar una lista con todos los pedidos de cotización posibles 
+ de asociar a la factura que se está ingresando.</p>
+<p class="H_Parrafo_de_Item">Se mostrará una línea en la tabla para cada 
+ pedido de cotización del cliente indicado, con su fecha, número de comprobante 
+ y condición de venta. Se pueden seleccionar en este momento una o más 
+ cotizaciones a incluir en la factura. Haciendo click en los pedidos de 
+ cotización que se deseen incluir se procederá a marcar o desmarcar los 
+ mismos y al pulsar el botón de Ok situado en la parte inferior de la ventana, 
+ automáticamente se incluirán en la factura todas las líneas de los comprobantes 
+ seleccionados (marcados).</p>
+<p class="H_Parrafo_de_Item">En este momento la ventana de pedidos de cotización 
+ se cierra y quedan incluidos en la factura de venta todos los ítems que 
+ conforman los comprobantes seleccionados, con sus cantidades asociadas.</p>
+<p class="H_Parrafo_de_Item">Las líneas de las cotizaciones que no se quieran 
+ incluir en la factura pueden sacarse de la misma haciendo doble click 
+ en las líneas correspondientes.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, una vez 
+ seleccionados los pedidos de cotización en la ventana correspondiente, 
+ y habiendo retornado al comprobante, no es posible presionar el botón 
+ nuevamente para incorporar otros comprobantes. Por este motivo, todos 
+ los pedidos de cotización que quieran incluirse en el comprobante deben 
+ seleccionarse a la misma vez.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Facturas</p>
+<p class="H_Parrafo_de_Item">Mediante este botón se abre una ventana que 
+ permite visualizar una lista con todas las facturas posibles de asociar 
+ a la factura que se está ingresando.</p>
+<p class="H_Parrafo_de_Item">Se mostrará una línea en la tabla para cada 
+ factura con su fecha y número de comprobante.</p>
+<p class="H_Parrafo_de_Item">Se puede seleccionar un comprobante factura 
+ de venta a incluir en la factura. Haciendo clic en el comprobante que 
+ se desea incluir se procederá a marcar o desmarcar el mismo y al pulsar 
+ el botón aceptar situado en la parte inferior de la ventana , automáticamente 
+ se incluirá en la factura todas las líneas del comprobante seleccionado 
+ (marcado).</p>
+<p class="H_Parrafo_de_Item">Las líneas de las facturas que no se quieran 
+ incluir en el comprobantes pueden sacarse de la misma haciendo doble clic 
+ en las líneas correspondientes de la factura.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, una vez 
+ seleccionado la factura en la ventana correspondiente, y habiendo retornado 
+ al comprobante, no es posible presionar el botón nuevamente para incorporar 
+ otro comprobante.</p>
+
+
+</body></html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.5.2.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado informe de  ejecucion de presupuestos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Ejecución"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Informe de ejecución de presupuestos</h1>
+  <p class="H_Texto">Este informe permite efectuar una comparación de los saldos correspondientes a las cuentas presupuestarias definidas en el Plan de cuentas y el presupuesto definido para cada una de ellas.</p>
+  <p class="H_Texto">Para esto se debe indicar qué presupuesto de desea emitir y cuál es el rango de fechas a considerar. Pueden imprimirse los saldos o los netos entre las fechas solicitadas.</p>
+  <p class="H_Texto">La comparación mencionada se visualiza en el informe mediante las columnas <font style="font-weight: bold;">Saldo Ejecutado</font> y <font style="font-weight: bold;">Saldo Presupuestado</font>. Si se piden netos las columnas se denominan <font style="font-weight: bold;">Neto Ejecutado</font> y <font style="font-weight: bold;">Neto Presupuestado</font>.</p>
+  <p class="H_Texto">El <font style="font-weight: bold;">Saldo ejecutado</font> de una cuenta presupuestaria está compuesto por la suma de todos los movimientos de todas las cuentas imputables que tienen asociada a dicha cuenta presupuestaria.</p>
+  <p class="H_Texto">El <font style="font-weight: bold;">Saldo presupuestado</font> de una cuenta presupuestaria está compuesto por la suma de todos los ingresos y egresos definidos en los componentes del presupuesto que se emite.</p>
+  <p class="H_Texto">Mediante las vistas se pueden definir diferentes modelos de informes a imprimir. Cada una de ellas pueden tener definidos niveles de jerarquía con todos los títulos y subtítulos necesarios de modo que la información resulte fácilmente interpretable al destinatario del informe. Al pie de cada nivel definido, se imprimen los totales de ese nivel.</p>
+  <p class="H_Texto">La vista puede tener asociadas sólo un grupo de cuentas, pero se permite además al imprimir el informe, incluir las cuentas que no están en la vista que se imprime.</p>
+  <p class="H_Texto">Se lista para cada cuenta presupuestaria que interviene en el informe, el saldo o neto ejecutado, el saldo o neto presupuestado, la diferencia entre ambos valores y el porcentaje del importe presupuestado que se ejecuta. Puede incluirse si se desea el detalle de los <a href="tabla__Centros_de_apropiacion.htm">centros de apropiación</a> asociados a cada cuenta con sus correspondientes importes.</p>
+  <p class="H_Texto">Para calcular el saldo o neto presupuestado de una determinada cuenta se prorratea proporcionalmente el importe de ingresos y egresos de cada componente en la que interviene la cuenta, entre las fechas de inicio y finalización del componente para poder obtener el importe correspondiente a las fechas solicitadas en el informe.</p>
+  <p class="H_Texto">El saldo anterior ejecutado estará compuesto por la suma de los movimientos de las cuentas correspondientes hasta la fecha indicada como fecha desde. El saldo anterior presupuestado estará compuesto por la suma de los movimientos de las cuentas correspondientes hasta la fecha de inicio del presupuesto solicitado mas la suma de los componentes del presupuesto cuyo rango de fechas es anterior o incluye a la fecha solicitada como fecha desde.</p>
+  <p class="H_Texto">Por ejemplo, si se solicita el listado desde el 01/10/1998 hasta el 31/12/1998 y el presupuesto va desde el 01/06/1998 hasta el 31/12/1998, el saldo anterior presupuestado de las cuentas que intervienen en el listado estará compuesto por la suma de los movimientos correspondientes hasta el 31/05/1998 mas la suma de los componentes del presupuesto solicitado, hasta el 30/09/1998.</p>
+  <p class="H_Texto">Si se solicita emitir el informe por <font style="font-weight: bold;">Tabla</font> el formato del listado es diferente. En este caso el rango de fechas del listado será el rango del presupuesto y se solicitará además el período de detalle. Se incluirá en la tabla el saldo anterior hasta la fecha de inicio del presupuesto y columnas con los saldos presupuestados y ejecutados para cada rango de fechas según el período solicitado.</p>
+  <p class="H_Texto">Este informe se puede imprimir reexpresando los importes en una moneda distinta a la moneda del presupuesto.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Los datos solicitados para la emisión del informe son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Rangos</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Rango de fechas</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se selecciona esta opción se debe indicar el rango de fechas deseado en el campo “Período”.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período</a></p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Períodos</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Período de detalle</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación del lapso de tiempo a considerar para agrupar saldos e importes presupuestados a lo largo del período del presupuesto solicitado.</p>
+  <p class="H_Parrafo_de_Sub-Item">Este dato sólo se habilita si se selecciona emitir el informe por <font style="font-weight: bold;">Tabla</font>.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Semanal
+  </p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Quincenal
+  </p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Mensual
+  </p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Bimestral
+  </p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Trimestral
+  </p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Cuatrimestral
+  </p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">
+    <font face="Symbol" size="2" style="font-family: Symbol; font-size: 11pt; font-weight: normal;">·<span style="">   </span></font>Semestral
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">Según el período seleccionado se grabarán en la tabla las columnas para cada período. Se generarán en la tabla tantas columnas como períodos de detalle entren entre las fechas de inicio y finalización del presupuesto solicitado.</p>
+  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, si el presupuesto va desde el 01/06/1998 hasta el 31/12/1998 y se pide período de detalle bimestral se incluirán columnas para los saldos hasta el 30/06, hasta el 31/08, hasta el 31/10 y hasta el 31/12, y los movimientos e importes presupuestados se acumularán en la columna correspondiente según las fechas de los mismos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se elige la opción “Períodos” sólo se puede exportar este listado a tabla o a planilla de Excel.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Presupuesto</p>
+  <p class="H_Parrafo_de_Sub-Item">Código del presupuesto para el cual se emite el informe.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Vista</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de la vista utilizada para la emisión del informe.</p>
+  <p class="H_Parrafo_de_Sub-Item">Debe ingresarse el código de una vista de tipo <font style="font-weight: bold;">Presupuestaria</font>.</p>
+  <p class="H_Parrafo_de_Sub-Item">Mediante la <font style="font-weight: bold;">Vista</font> se define el tipo de informe a imprimir, las cuentas que se incluyen, los niveles de jerarquía, totales, subtotales, etc.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Opciones</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valores</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación del tipo de valores que se listan para cada cuenta.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Netos</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se elige valores <font style="font-weight: bold;">Netos</font> se considerarán los movimientos y los importes presupuestados entre las fechas solicitadas.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Saldos</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se elige valores <font style="font-weight: bold;">Saldos</font> se considerarán los movimientos y los importes presupuestados entre las fechas solicitadas y a estos valores se les sumarán los saldos anteriores correspondientes.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Incluir</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cuentas que no están en la vista</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación de si se incluyen o no en el informe, las cuentas presupuestarias del Plan de cuentas que no están definidas en la vista que se selecciona para imprimir.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se incluyen estas cuentas, el informe contendrá todas las cuentas presupuestarias del Plan de cuentas.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Saldos en cero</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación de si se listan o no las cuentas presupuestarias cuyo saldo sea cero.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Asientos de ajuste por valor corriente</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación de si se listan o no los ajustes por valor corriente, por diferencias de cambio o resultado por tenencia que puedan existir.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Asientos de ajuste por inflación</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación de si se listan o no los ajustes por efectos de la inflación.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reexpresado</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se tilda este campo es posible emitir este informe reexpresando los importes en una moneda distinta a la moneda del presupuesto. Por ejemplo: dólares, euros, etc.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> En moneda</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de la moneda en que se desea hacer la reexpresión.</p>
+  <p class="H_Parrafo_de_Sub-Item">La reexpresión puede ser a fecha de asiento o a fecha del informe.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> A fecha de asiento</p>
+  <p class="H_Parrafo_de_Sub-Item">El informe se reexpresa a fecha de asiento. El cambio que se aplique a la parte del presupuesto corresponde al “Hasta fecha” que figure para la cuenta en las componentes del presupuesto.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> A fecha del informe</p>
+  <p class="H_Parrafo_de_Sub-Item">Es posible reexpresar a la fecha de informe si se indica una fecha en el campo “Hasta fecha” (Ficha “Rangos”), dado que los cambios que se utilicen para la reexpresión corresponderán a dicha fecha. En este caso, la reexpresión se realiza a partir de los valores expresados en la moneda del presupuesto.</p>
+  <p class="H_Parrafo_de_Sub-Item">Por lo cual, si el presupuesto está definido en moneda no local y se reexpresa en otra moneda no local será necesario aplicar dos cambios seguidos, cada uno con su correspondiente manejo de decimales. O sea, pasaremos de la moneda del presupuesto a la local y de ésta a la de reexpresión.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación A</p>
+  <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro de apropiación</a>
+    <font style="font-weight: bold;">A</font> a listar.
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">Se puede seleccionar un centro en particular, un grupo de centros o todos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se indica un centro se considerarán para las cuentas de subcuentas <font style="font-weight: bold;">Centros de apropiación</font>
+    <font style="font-weight: bold;">A</font> o <font style="font-weight: bold;">Ambos centros</font> sólo los movimientos y componentes del presupuesto del centro indicado.
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">Si no se indica ningún centro se considerarán los movimientos y componentes del presupuesto de todos los centros de apropiación utilizados como centro <font style="font-weight: bold;">A</font>.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación B</p>
+  <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro de apropiación</a>
+    <font style="font-weight: bold;">B</font> a listar.
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">Se puede seleccionar un centro en particular, un grupo de centros o todos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se indica un centro se considerarán para las cuentas de subcuentas <font style="font-weight: bold;">Centros de apropiación B</font> o <font style="font-weight: bold;">Ambos centros</font> sólo los movimientos y componentes del presupuesto del centro indicado.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si no se indica ningún centro se considerarán los movimientos y componentes del presupuesto de todos los centros de apropiación utilizados como centro <font style="font-weight: bold;">B</font>.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Detalle de centros de apropiación</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación del detalle con el que se desean imprimir los <a href="tabla__Centros_de_apropiacion.htm">centros de apropiación</a> en el informe.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Ninguno</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Ninguno</font> no se detallan los centros de apropiación para las cuentas de subcuentas <font style="font-weight: bold;">Centros de apropiación</font>.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Centro A</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Centro A,</font> para las cuentas de subcuentas <font style="font-weight: bold;">Centros de apropiación A</font> o <font style="font-weight: bold;">Ambos centros</font>, se detallan los saldos o netos para cada centro de apropiación utilizado como centro A cuyos movimientos y/o componentes del presupuesto se consideran en el informe.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Centro B</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica Centro B, para las cuentas de subcuentas <font style="font-weight: bold;">Centros de apropiación B</font> o <font style="font-weight: bold;">Ambos centros</font>, se detallan los saldos o netos para cada centro de apropiación utilizado como centro B cuyos movimientos y/o componentes del presupuesto se consideran en el informe.</p>
+
+</body></html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.6.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Cierre de Deposito</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Depósito"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Cierre de Depósito</h1>
+<p class="H_Texto">Mediante esta tarea se efectúa el cierre del lote de un depósito determinado.</p>
+<p class="H_Texto">Un <font style="font-weight: bold;">Lote de depósito</font> incluye un conjunto de operaciones que tienen lugar, en dicho depósito, en un determinado lapso de tiempo. Dicho lapso, es el tiempo que media entre dos Cierres de <a href="tabla__Depositos_Plantas.htm">Depósitos</a>, consecutivos.</p>
+<p class="H_Texto">El trabajar, o no, con lotes de depósitos es opcional. El único caso en que los lotes deben utilizarse obligatoriamente, se presenta cuando se trabaja con procesos de distribución mediante camiones y se desea administrar la liquidación de los correspondientes viajes. En ese caso, el sistema administra automáticamente los lotes de los depósitos que se hayan asociado a los camiones.</p>
+<p class="H_Texto">Esta tarea bloquea el ingreso de información al lote que se encuentra activo al momento de cerrar el depósito del que se trate y habilita el lote siguiente. De allí en más, todos los comprobantes de movimientos de materiales que afectan al depósito en cuestión, se registran en el nuevo lote.</p>
+<p class="H_Texto">Cuando se comienza a trabajar con un depósito del sistema, automáticamente se está trabajando en el lote <font style="font-weight: bold;">Número 1</font> de ese depósito y se continuará incorporando información en él, hasta tanto se realice el cierre de ese depósito<font style="font-weight: bold;">.</font></p>
+<p class="H_Texto">Al efectuarlo, se cierra el <font style="font-weight: bold;">Lote Número 1</font> y, automáticamente, se abre el <font style="font-weight: bold;">Lote Número 2</font> que incorporará información hasta tanto vuelva a realizarse el siguiente cierre del depósito, abriéndose el <font style="font-weight: bold;">Lote Número 3</font> y así sucesivamente.</p>
+<p class="H_Texto">De lo dicho se desprende que, por cada depósito, existe un único lote activo a la vez y es en dicho lote en el que se está trabajando, a este lote lo llamaremos <font style="font-weight: bold;">Lote actual</font>.</p>
+<p class="H_Texto">Los lotes se identifican por su número de lote, por la fecha y la hora de su apertura (que corresponde a la fecha de cierre del lote anterior) y por la fecha y la hora correspondientes a su cierre.</p>
+<p class="H_Texto">El utilizar el concepto de lote en los depósitos puede resultar útil al momento de controlar y auditar los bienes registrados en un depósito durante determinado período ya que, independientemente de las fechas que se informan en los comprobantes de movimientos de materiales al momento de registrarlos, al listar el lote del depósito se podrán listar los movimientos que lo afectan en base a la fecha de registración de los mismos.</p>
+<p class="H_Texto">En caso que se deban liquidar camiones, cada camión debe llevar asociado un depósito. Dicho depósito lleva cuenta de la mercadería en poder del camión y que debe rendir cuando se liquida el viaje.</p>
+<p class="H_Texto">Los depósito asociados a camiones no pueden cerrarse mediante esta tarea, sino que su cierre se produce, en forma automática, al realizar la tarea de Cierre de camión<font style="font-weight: bold;">,</font> del camión del cual se trate.</p>
+<p class="H_Texto">Al realizar dicha tarea, se cierra automáticamente el lote del depósito asociado al camión que se está cerrando y se imprime, en caso que se lo solicite, el listado de movimiento de materiales correspondiente al depósito.</p>
+<p class="H_Texto">Si se trabaja con camiones, los lotes de un camión, de su caja y de su depósito siempre llevan la misma numeración, siempre avanzan juntos.</p>
+<p class="H_Texto">Se debe ingresar:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Depósito</p>
+<p class="H_Parrafo_de_Item">Número del <a href="tabla__Depositos_Plantas.htm">depósito</a> que se desea cerrar.</p>
+<p class="H_Parrafo_de_Item">Se debe ingresar el número de un depósito que no esté asociado a un camión activo, ya que en ese caso el depósito se cerrará al cerrar el camión.</p>
+<p class="H_Texto">Luego de ingresado el depósito, se mostrarán la fecha de cierre y el número de lote del último cierre efectuado para ese depósito.</p>
+
+
+</body></html>

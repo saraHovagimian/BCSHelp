@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_20"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Control_de_cantidades</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Control de cantidades</h1>
+  <p class="H_Texto">Esta funcionalidad permite registrar comprobantes de ingreso, de egreso de materiales y comprobantes de venta, en forma muy ágil escaseando los códigos de los productos que incluyen pero, a la vez, controlando que las cantidades registradas respondan a las documentadas en los comprobantes que les dieron origen.</p>
+  <p class="H_Texto">Al indicar los comprobantes de referencia aparece esta ventana destinada a escanear los códigos de ítems.</p>
+  <p class="H_Texto">Los ítems se cargan, por ejemplo, escaneando sus etiquetas y, una vez que se da por terminada la tarea de carga de productos, si hay diferencias entre éstos y las cantidades que figuran en los comprobantes referenciados, el sistema avisa y exhibe el detalle de las diferencias encontradas, dejando en manos del operador la decisión de seguir adelante o modificar los ítems incluidos en el comprobante.</p>
+  <p class="H_Texto">Una vez que el operador da el OK, el comprobante se precarga con los ítems ingresados en la ventana, de modo de finalizar la registración del mismo.</p>
+  <p class="H_Texto">Un ejemplo de aplicación del Control de cantidades se da en el caso de los textiles cuando la forma de trabajo consiste en acopiar la mercadería que indica el pedido y luego, en base a la lectura de los códigos de barras que figuran en las etiquetas de las prendas, registrar la factura.</p>
+  <p class="H_Texto">En estos casos el control de cantidades es práctico pues, una vez finalizada la carga de ítems en la tarea de control, se comparan las cantidades ingresadas con las de los pedidos que se referenciaron al inicio de dicha tarea y si hay diferencias, se informan al operador.</p>
+  <p class="H_Texto">El tema es que a veces se conoce de antemano que van a producirse diferencias, por ejemplo, porque el empleado de almacén avisa que no hay existencias suficientes para satisfacer los pedidos e informa, también, cuáles son las cantidades disponibles en stock.</p>
+  <p class="H_Texto">En estos casos ya se sabe que al recolectar la mercadería para satisfacer un pedido habrá diferencias pues se conoce que el stock es menor, por lo cual, es una incomodidad para el operador informarle las diferencias, pues él ya la conoce de antemano.</p>
+  <p class="H_Texto">Por ejemplo, si un pedido es por 100 unidades del producto, y de almacén se informa que hay 70, el empleado sabe que recolectará 70, que facturará 70 y no desea que la tarea de control le indique que hay una diferencia de 30.</p>
+  <p class="H_Texto">Para tener en cuenta esta situación se dispone del botón <font style="font-weight: bold;">Preparación</font> . A partir de dicho botón se accede a una ventana en la cual se puede indicar la cantidad pendiente de cada ítem en relación a los comprobantes seleccionados para el control .</p>
+  <p class="H_Item_con_vineta_negrita">Ingreso</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe ingresar una cantidad expresada en unidad de venta o compra (dependiendo de si es un ingreso o egreso) y un código de ítem. Si el ítem maneja colores y medidas hay que indicar el color y la medida en el ingreso del mismo.</p>
+  <p class="H_Parrafo_de_Sub-Item">El campo “Item”, permite leer el código de ítem desde un escáner de código de barras de teclado que debe parametrizarse con un “Enter” o una flecha hacia abajo como último carácter.</p>
+  <p class="H_Item_con_vineta_negrita">Cantidad</p>
+  <p class="H_Parrafo_de_Sub-Item">Cantidad expresada en unidad de venta o compra (dependiendo de si es un ingreso o egreso).</p>
+  <p class="H_Item_con_vineta_negrita">Item</p>
+  <p class="H_Parrafo_de_Sub-Item">Este campo prevé una operativa rápida para el ingreso de la cantidad.</p>
+  <p class="H_Parrafo_de_Sub-Item">Posicionados en el campo se ingresa una cantidad y, al oprimir la tecla *, la misma se copia al campo “Cantidad” permitiendo ingresar seguidamente el código del ítem.</p>
+  <p class="H_Parrafo_de_Sub-Item">Al oprimir “Enter”, o flecha hacia abajo, o el botón “Copiar”, se copiará dicho ítem a la tabla inferior. Si no se indica ninguna cantidad se asumirá cantidad uno. Si el ítem ya existe en dicha tabla se suma la nueva cantidad a la cantidad existente.</p>
+  <p class="H_Item_con_vineta_negrita">Copiar</p>
+  <p class="H_Parrafo_de_Sub-Item">Copia La información del ítem a la tabla “Items ingresados”.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Items ingresados</p>
+  <p class="H_Parrafo_de_Item">En esta grilla se van registrando los ítems y cantidades informados en el cuadro <font style="font-weight: bold;">Ingreso</font>.</p>
+  <p class="H_Parrafo_de_Item">También se puede eliminar un ítem de esta tabla haciendo doble clic sobre el encabezado de la fila correspondiente. Si posteriormente se ingresa el mismo ítem el sistema marcará la línea como válida con la última cantidad indicada.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Código</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el código del ítem registrado.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe la descripción del ítem registrado.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Color</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe el color del ítem, si corresponde.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Medida</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Exhibe la medida del ítem, si corresponde.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub-Item_con_vi￱eta_negrita">Cantidad</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Desde acá se pueden modificar directamente las cantidades indicadas.</p>
+  <p class="H_Parrafo_de_Sub-Item">No se pueden indicar en ningún caso cantidades en negativo o mayores a la suma de las cantidades pendientes en los comprobantes referenciados.</p>
+  <p class="H_Parrafo_de_Sub-Item">La excepción a lo dicho se presenta en el caso en que los comprobantes referenciados sean órdenes de compra o pedidos y que se haya informado un porcentaje por exceso permitido en las cantidades en el grupo de compras (órdenes de compra) o en el control de pedidos (pedidos externos). En ese caso se permite indicar cantidades mayores a las cantidades pendientes en los comprobantes referenciados, siempre y cuando no se superen dichos límites.</p>
+  <p class="H_Parrafo_de_Sub-Item">Tampoco se permite indicar ítems que no existan en los comprobantes referenciados o ítems que no sean de tipo cantidad.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Preparación</p>
+  <p class="H_Parrafo_de_Item">Permite acceder a una ventana en la cual se podrá indicar la cantidad pendiente de cada ítem en relación a los comprobantes seleccionados para el control.</p>
+  <p class="H_Parrafo_de_Item">Estas serán las cantidades que el sistema utilizará como base para realizar el control.</p>
+  <p class="H_Parrafo_de_Item">El objetivo de esta ventana es poder indicar, en relación a algunos ítems, una cantidad menor a la cantidad pendiente en los comprobantes, ya sea porque no hay stock suficiente o porque se decide entregar una cantidad menor al cliente, y que dicha diferencia no aparezca en el informe de diferencias final del control de cantidades. De este modo el informe final de la tarea tendrá realmente las diferencias que se deben controlar y no aquellas que se conocen de antemano.</p>
+  <p class="H_Parrafo_de_Item">Al presionar el botón e ingresar a la ventana de Preparación del control de cantidades, para cada ítem que se informa se exhibe la “Cantidad pendiente” y se debe informar la “<font style="font-weight: bold;">Cantidad preparada</font>”.</p>
+  <p class="H_Parrafo_de_Item">Se debe tener en cuenta:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">No se puede indicar cantidades en negativo ni superiores a la cantidad pendiente total de dicho ítem en los comprobantes seleccionados.</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Para ítems con colores y medidas se permite el ingreso indicando el color y la medida junto con el código del ítem o por explosión de colores y medidas indicando en la ventana las cantidades para cada combinación.</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Si se indica el ítem con color y medida en la tabla y luego se indica el código del ítem sin color y medida, la cantidad indicada en la primera línea se agrega a la explosión de colores y medidas y la fila original aparece como eliminada.</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Si se indica el ítem inicialmente como explosión de colores y medidas, luego no puede indicarse individualmente con color y medida. Hay que agregar la cantidad correspondiente en la grilla por explosión de colores y medidas.</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">No puede indicarse un mismo ítem dos veces en la grilla, así como tampoco se puede indicar un ítem que no esté incluido en los comprobantes pendientes seleccionados.</p>
+    </li>
+  </ul>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Cancelar</p>
+  <p class="H_Parrafo_de_Item">Al presionar “Cancelar” en la tarea de control, habiendo ingresado ítems para controlar, el sistema previo pedido de confirmación, desechará todo lo actuado perdiéndose la información ingresada en la tabla hasta el momento.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> OK</p>
+  <p class="H_Parrafo_de_Item">Al oprimir el botón “OK” el sistema informa si hay diferencias entre lo indicado y los ítems involucrados en los comprobantes referenciados (o en la ventana “Preparación”) ya sea por cantidades menores o por ítems que no se incluyeron en la tabla anterior.</p>
+  <p class="H_Parrafo_de_Item">En esa instancia se ofrece al operador la posibilidad de consultar, mediante el botón “<font style="font-weight: bold;">Detalles</font>”, el detalle de todas las diferencias encontradas.</p>
+  <p class="H_Parrafo_de_Item">Cuando se encuentran diferencias, el sistema da la posibilidad de volver a la pantalla de carga (respondiendo “<font style="font-weight: bold;">No</font>” en la ventana). En ese caso se podrá continuar con la precarga del comprobante de ingreso o egreso.</p>
+  <p class="H_Parrafo_de_Item">Si se continua adelante (opción “<font style="font-weight: bold;">Sí</font>”), se cargará la grilla de ítems del comprobante del que se trate con los ítems indicados en la tabla de control para las cantidades indicadas en dicha tabla. Dicha cantidad se dividirá entre las cantidades pendientes de los comprobantes referenciados.</p>
+
+</body></html>

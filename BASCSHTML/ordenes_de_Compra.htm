@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.2.4.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Ordenes de compra</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Ingreso de ordenes de compra</h1>
+<p class="H_Texto">Esta tarea permite registrar ordenes de compra. No se 
+ permite registrar comprobantes que no tengan ninguna línea asociada.</p>
+<p class="H_Texto">Al registrar órdenes de compra se identifica al <a href="tabla__Agentes.htm">comprador</a> 
+ responsable y se incluyen las particularidades acordadas con el <a href="tabla__Proveedores.htm">proveedor</a> 
+ , entre otras, la condición de compra, el plazo de entrega, el precio 
+ pactado para los <a href="tabla__Bienes.htm">bienes</a> y una fecha, pasada 
+ la cual, si no se recepciona la mercadería, pierde validez el comprobante 
+ emitido.</p>
+<p class="H_Texto">La registración puede realizarse en forma directa o 
+ utilizando como base requerimientos de compra que aún se encuentran pendientes 
+ de satisfacer.</p>
+<p class="H_Texto">Las órdenes de compras registradas pueden requerir de 
+ autorización para poder continuar su curso. A pesar de no haber sido autorizadas, 
+ el sistema prevé la posibilidad de imprimirlas con una leyenda alusiva 
+ a tal situación.</p>
+<p class="H_Texto">Una vez autorizadas, pueden utilizarse como base para 
+ registrar los remitos de ingreso y las facturas de compra que se reciban; 
+ en ese caso, las órdenes de compra dejan de estar pendientes y se registran 
+ como cumplidas.</p>
+<p class="H_Texto">Al facturar una orden de compra, sus precios pueden 
+ modificarse libremente. De todos modos, si bien se pueden modificar, el 
+ sistema alerta que los precios que se están ingresando en la factura, 
+ difieren de los informados en la correspondiente orden de compra. Las 
+ modificaciones de precios efectuadas quedan registradas en el sistema 
+ de modo de incluir dicha información en los listados de auditoría de compras.</p>
+<p class="H_Texto">Se prevé la posibilidad de informar en los grupos de 
+ compras, para cada bien, si para su compra se requiere, o no, la existencia 
+ de una orden de compra. En caso que no se requiera de su existencia, se 
+ permitirá registrar el comprobante de compra en forma directa, sin necesidad 
+ de que se haya emitido la correspondiente orden de compra.</p>
+<p class="H_Texto">En caso que al registrar la orden de compra se invoquen 
+ uno o más requerimientos, éstos son registrados por el sistema como cumplidos.</p>
+<p class="H_Texto">Las órdenes de compra pueden referenciarse en el ingreso 
+ de las facturas de compra (o remitos de ingreso), incluso, a pesar de 
+ que se haya alcanzado su fecha de expiración. Además, incluyen todos los 
+ datos que suelen estar presentes en la factura de compra, entre otros, 
+ la condición de venta del proveedor, la fecha de entrega, los precios 
+ de compra pactados, las cantidades a comprar, etc.</p>
+<p class="H_Texto">Las órdenes de compra permanecen en el sistema como 
+ pendientes mientras no se cumplan mediante la emisión de una, o más, facturas 
+ de compras (o remitos de ingreso) o hasta que se cancelen, eliminen o 
+ anulen.</p>
+<p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante 
+ en estado de preparación</a>, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a href="comprobantes_referenciados_ordenes_compra.htm">Comprobantes referenciados</a></p>
+<p class="H_Texto">Los datos a ingresar, además de la fecha y el número 
+ de comprobante son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764739282" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha de expiración</span><span data-close-text="true">Fecha de expiración</span></a></p>
+<div data-targetname="POPUP764739282">
+	<p class="H_Parrafo_de_Item">Fecha de expiración de la orden de compra 
+	 que se está ingresando. Pasada esta fecha, si no se recepciona la 
+	 mercadería, se considera que pierde validez la orden de compra emitida.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764743302" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Proveedor</span><span data-close-text="true">Proveedor</span></a></p>
+<div data-targetname="POPUP764743302">
+	<p class="H_Parrafo_de_Item">Código del <a href="tabla__Proveedores.htm">proveedor</a> 
+	 al que se le emite la orden de compra.</p>
+	<p class="H_Parrafo_de_Item">Debe ingresarse el código de un proveedor 
+	 definido en el sistema.</p>
+	<p class="H_Parrafo_de_Item">Al ingresar el proveedor se completa la 
+	 pantalla con los datos asociados al mismo, como por ejemplo, el comprador, 
+	 la condición de compra, etc.</p>
+	<p class="H_Parrafo_de_Item">Al precargar los datos del proveedor se 
+	 exhibe un tooltip con el nombre de fantasía del mismo, de no contar 
+	 con dicho dato, se observará la razón social. </p>
+	<p class="H_Parrafo_de_Item"> Estos datos pueden modificarse en 
+	 este momento y los datos que se ingresen sólo afectarán a la orden 
+	 de compra que se está ingresando.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764779599" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Comprador</span><span data-close-text="true">Comprador</span></a></p>
+<div data-targetname="POPUP764779599">
+	<p class="H_Parrafo_de_Item">Código del <a href="tabla__Agentes.htm">comprador</a> 
+	 asociado a la orden de compra.</p>
+	<p class="H_Parrafo_de_Item">El sistema mostrará en este campo el código 
+	 del comprador asociado al proveedor y el mismo puede ser modificado.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder al código de un agente 
+	 de tipo <font style="font-weight: bold;">Comprador</font> definido 
+	 en el sistema.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764790646" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Condición de compra</span><span data-close-text="true">Condición de compra</span></a></p>
+<div data-targetname="POPUP764790646">
+	<p class="H_Parrafo_de_Item">Código de la condición de compra que se 
+	 asocia a la orden de compra.</p>
+	<p class="H_Parrafo_de_Item">El sistema mostrará en este campo el código 
+	 de la condición de compra asociada al proveedor y la misma puede ser 
+	 modificada.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764807390" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Control de cantidades</span><span data-close-text="true">Control de cantidades</span></a></p>
+<div data-targetname="POPUP764807390">
+	<p class="H_Parrafo_de_Item">Número que indica la cantidad total de 
+	 unidades de mercadería que se piden.</p>
+	<p class="H_Parrafo_de_Item">A veces pueden ocurrir errores de tipeo 
+	 en el ingreso de la orden de compra. Este campo permite controlar, 
+	 en caso que se sepa de antemano la cantidad total de unidades a comprar, 
+	 si hay errores en el ingreso de las cantidades en las líneas del comprobante.</p>
+	<p class="H_Parrafo_de_Item">Si se ingresa información en este dato, 
+	 al finalizar el ingreso de la orden de compra, se verificará que la 
+	 suma de unidades ingresadas en todas las líneas coincida con el valor 
+	 aquí consignado. Si no coincide aparecerá una leyenda en pantalla, 
+	 explicando el error, y no se permitirá grabar el comprobante hasta 
+	 que el error no sea corregido.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764810734" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidades ingresadas</span><span data-close-text="true">Cantidades ingresadas</span></a></p>
+<div data-targetname="POPUP764810734">
+	<p class="H_Parrafo_de_Item">Este campo exhibe la suma de las cantidades 
+	 (en primera unidad) registradas en el comprobante.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP764834142" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Moneda</span><span data-close-text="true">Moneda</span></a></p>
+<div data-targetname="POPUP764834142">
+	<p class="H_Parrafo_de_Item">Moneda en la cual se ingresan los valores 
+	 en la orden de compra.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder al código de una tabla 
+	 de tipo <font style="font-weight: bold;">Cotización</font> ingresada 
+	 en el sistema.</p>
+	<p class="H_Parrafo_de_Item">Si no se ingresa una moneda en particular, 
+	 se asumirá que los importes de la orden de compra se ingresan en moneda 
+	 local.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ Necesidad de abastecimiento</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a href="necesidad_de_abastecimiento_por_item.htm">Por 
+ ítem</a></p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a href="necesidad_de_abastecimiento_por_comprobante.htm">Por 
+ comprobante</a></p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Ítems</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP764561159" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla 
+ de Ítems</span><span data-close-text="true">Tabla 
+ de Ítems</span></a></p>
+<div data-targetname="POPUP764561159">
+	<p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se ingresan, uno 
+	 a uno, los ítems que conforman la orden de compra que se está registrando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Dichos ítems pueden ingresarse en 
+	 forma manual invocándolos mediante su código identificatorio o, en 
+	 forma automática, apretando el botón de Requerimientos pendientes 
+	 (Versión XE) y seleccionando los que se deban cumplimentar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para cada ítem se debe informar la 
+	 cantidad que se pide, el precio de cada unidad y, en función al tipo 
+	 de ítem del que se trate, se requerirá información adicional.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al respecto, y a título de ejemplo, 
+	 podemos mencionar que para algunos bienes se deben detallar las cantidades 
+	 que se piden por color y por medida.</p>
+	<p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que 
+	 la forma en que el sistema solicita los datos a incluir en el comprobante 
+	 varía según cuál sea el tipo de bienes de los que se trate. En algunos 
+	 casos, como por ejemplo cuando se trabaja con doble unidad de medida 
+	 o con medidas y colores, se abre una ventana en el campo <font style="font-weight: bold;">Cantidad</font> 
+	 para requerir los datos necesarios.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Item" style="font-style: normal;">Código 
+	 del ítem a incluir en la orden de compra.</p>
+	<p class="H_Parrafo_de_Sub-Item" style="font-style: normal;">Debe corresponder 
+	 a un <a href="tabla__Bienes.htm" style="font-style: normal;">bien</a> 
+	 , <a href="tabla__Servicios.htm" style="font-style: normal;">servicio</a> 
+	 o <a href="tabla__Items_varios.htm" style="font-style: normal;">ítem 
+	 vario</a> ingresado en el sistema.</p>
+	<p class="H_Parrafo_de_Sub-Item" style="font-style: normal;">Puede 
+	 ingresarse el código del ítem o su código alternativo.</p>
+	<p class="H_Parrafo_de_Sub-Item" style="font-style: normal;">Si se 
+	 trabaja con Carpetas de Importación  solo se podrán ingresar 
+	 bienes que requieran posición arancelaria. En el caso de servicios, 
+	 deben ser del tipo Gastos de Importación.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el 
+	 dato anterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta si en los <a href="parametros__Datos_generales.htm">Parámetros 
+	 de datos generales</a> se indica eso. Si no, se exhibirá la otra descripción. 
+	 Si el ítem no tiene descripción asociada, se solicitará el ingreso 
+	 de un detalle del mismo en este momento.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código propio proveedor</p>
+	<p class="H_Parrafo_de_Sub-Item">Si en los parámetros generales está 
+	 indicado que se muestra la columna del código propio del proveedor, 
+	 aparecerá esta columna y al ingresar un código de ítem se muestra 
+	 el valor de este campo.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Requerimiento</p>
+	<p class="H_Parrafo_de_Sub-Item">Posibilidad de asociar un Requerimiento 
+	 a la orden de compra, y así cargar en ésta los ítems ya requeridos. 
+	 Para su utilización debe configurarse Parámetros Generales, solapa 
+	 comprobantes, la opción “Columna de comprobantes referenciados”.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Observaciones</p>
+	<p class="H_Parrafo_de_Sub-Item">Posibilidad de agregar un detalle 
+	 más extenso del ítem. Para su utilización debe configurarse en la 
+	 tabla de bienes, solapa observaciones, que la orden de compra si requiere 
+	 la observación en el comprobante.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que se piden 
+	 del ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Aquí se presentan varias posibilidades.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem es un <a href="tabla__Items_varios.htm">ítem 
+	 vario</a> o es un <a href="tabla__Servicios.htm">servicio</a> de tipo 
+	 <font style="font-weight: bold;">Porcentaje</font> o <font style="font-weight: bold;">Importe</font>, 
+	 no se solicitará información en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las compras se registran en 
+	 la primera unidad. Si las compras se registran en segunda unidad, 
+	 al ingresar la cantidad en la segunda unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a> 
+	 y <a href="tabla__Tablas_de_medidas.htm">medidas</a> se abrirá una 
+	 ventana que solicitará el ingreso de las cantidades para cada color 
+	 y medida solicitada, y al finalizar el ingreso de datos en esa ventana, 
+	 se completará este dato con la cantidad total de unidades pedidas 
+	 para todos los colores y medidas del ítem.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem es un contenedor, se abrirá 
+	 una ventana que solicita el código del ítem que contiene (se ofrecerá 
+	 el ítem indicado como default en la tabla de contenedores del bien) 
+	 y la cantidad del mismo, y luego se completará este dato con la cantidad 
+	 resultante de multiplicar la cantidad indicada por la cantidad de 
+	 unidades de este indicada en la definición del ítem contenedor.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con dimensiones, 
+	 se abrirá una ventana que solicitará el ingreso de cantidades para 
+	 cada dimensión posible definida para el ítem, y luego se completará 
+	 este dato con la cantidad resultante de multiplicar la cantidad indicada 
+	 por todas las dimensiones del ítem.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad en 2da unidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que se piden 
+	 del ítem indicado en la segunda unidad de medida.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad 
+	 de medida, no se solicitará información en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad 
+	 de medida, se solicitará este campo si las compras se registran en 
+	 la segunda unidad. Si las compras se registran en primera unidad, 
+	 al ingresar la cantidad en la primera unidad se completará este dato 
+	 en forma automática y podrá ser modificado sólo si se indicó que la 
+	 relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Precio</p>
+	<p class="H_Parrafo_de_Sub-Item">Precio del ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem es un <a href="tabla__Servicios.htm">servicio</a> 
+	 o un <a href="tabla__Items_varios.htm">ítem vario</a> de tipo <font style="font-weight: bold;">Importe</font> o <font style="font-weight: bold;">Nada</font>, 
+	 no se solicitará información en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem es de tipo <font style="font-weight: bold;">Porcentaje</font>, 
+	 se solicitará el ingreso de un porcentaje que será aplicado al total 
+	 del comprobante ingresado hasta ese momento, y el valor resultante 
+	 se exhibirá en el campo <font style="font-weight: bold;">Importe</font>. 
+	 De esta forma, es posible aplicar descuentos o recargos parciales 
+	 cuyo valor depende del valor de los ítems ingresados en las líneas 
+	 anteriores de la orden de compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a> 
+	 y <a href="tabla__Tablas_de_medidas.htm">medidas</a> , en la ventana 
+	 donde se ingresaron las cantidades, podrán ingresarse también los 
+	 precios para cada color y medida. Esto es útil si se manejan distintos 
+	 precios por medida o por color. Si se utiliza un solo precio, podrá 
+	 indicarse el mismo en este dato.</p>
+	<p class="H_Parrafo_de_Sub-Item">Aquí el sistema ofrece el precio correspondiente 
+	 a la lista de precios asociada al <a href="tabla__Proveedores.htm">proveedor</a> 
+	 siempre y cuando la versión de la misma, esté vigente a la fecha del 
+	 comprobante y se encuentre autorizada (en caso de contar con circuito 
+	 de autorización de listas de precios)..</p>
+	<p class="H_Parrafo_de_Sub-Item">Como las cantidades se expresan en 
+	 la unidad de compras, si la lista de precios asociada al proveedor 
+	 no está definida en unidad de compras, el sistema realizará los cálculos 
+	 necesarios para expresar los precios en dicha unidad.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el proveedor no tiene lista de 
+	 precios asociada o el ítem indicado no figura en esa lista, se ofrece 
+	 como precio unitario del ítem, la última cotización existente (no 
+	 expirada) del proveedor en cuestión, para la condición compra indicada, 
+	 para la empresa en la que se está trabajando.</p>
+	<p class="H_Parrafo_de_Sub-Item">En el caso que el precio corresponda 
+	 a una cotización, se considerará la cantidad indicada (considerando 
+	 la unidad de compras) para obtener el precio de la misma. Eso quiere 
+	 decir que cuando se modifique la cantidad correspondiente a la unidad 
+	 de compras en el ingreso de las órdenes de compra, y no hay lista 
+	 de precios asociada al proveedor, el sistema considerará dicha cantidad 
+	 para obtener el precio entre las cotizaciones disponibles del ítem.</p>
+	<p class="H_Parrafo_de_Sub-Item">El comportamiento es análogo cuando 
+	 se trata de un bien con tabla asociada de colores y medidas y en el 
+	 ingreso no se indique el código del color ni el de la medida. Al indicar 
+	 cantidades en la tabla de colores y medidas se utilizará lo indicado 
+	 para obtener el precio entre las cotizaciones disponibles para dicho 
+	 ítem y dicho color y medida.</p>
+	<p class="H_Parrafo_de_Sub-Item">El esquema que se sigue en ambos casos 
+	 es buscar la última cotización para dicho ítem, proveedor, empresa 
+	 y condición de compra y considerar dentro de dicha cotización el precio 
+	 asociado a la cantidad máxima que sea menor a la cantidad ingresada 
+	 en el comprobante de compras.</p>
+	<p class="H_Parrafo_de_Sub-Item">Ej: si se dispone de una cotización 
+	 para 10 y 20 unidades y en la orden de compra se indican 15 unidades 
+	 se usará la cotización para 10 unidades.</p>
+	<p class="H_Parrafo_de_Sub-Item">Ej2: si se indica en la orden de compra 
+	 5 unidades y las cotizaciones disponibles son por 10, 50 y 100 unidades 
+	 no se dispondrá de precio para mostrar.</p>
+	<p class="H_Parrafo_de_Sub-Item">El precio ofrecido por el sistema 
+	 puede ser modificado manualmente si no se corresponde con el precio 
+	 al cual se efectúa la compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si estando en esta columna se oprimir 
+	 <font style="font-weight: bold;">SHIFT + F3</font>, se habilita una 
+	 ventana que permite, a partir del precio ingresado, indicar en una 
+	 tabla porcentajes de descuento y/o recargo, a partir de los cuales 
+	 se consigue un precio final.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al oprimir el botón de <font style="font-weight: bold;">OK</font> 
+	 o <font style="font-weight: bold;">F10</font> dicho precio se copiará 
+	 a la grilla de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se vuelve a oprimir <font style="font-weight: bold;">SHIFT 
+	 + F3</font> el sistema habilita la misma ventana pero no hay un registro 
+	 de los descuentos aplicados anteriormente, siempre se parte del precio 
+	 indicado hasta el momento en la grilla, pero se puede modificar el 
+	 precio original desde la ventana que se habilita.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe</p>
+	<p class="H_Parrafo_de_Sub-Item">Importe de la línea de la orden de 
+	 compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem es un bien, o un ítem vario 
+	 o servicio de tipo <font style="font-weight: bold;">Porcentaje</font> 
+	 o <font style="font-weight: bold;">Cantidad</font>, el importe de 
+	 la línea ya fue calculado en base a la información ingresada en los 
+	 otros campos, y el mismo no podrá ser modificado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el servicio o ítem vario es de 
+	 tipo <font style="font-weight: bold;">Importe</font> se debe ingresar 
+	 aquí el valor correspondiente al mismo.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">I.V.A.</p>
+	<p class="H_Parrafo_de_Sub-Item">Importe de I.V.A. de la línea de la 
+	 orden de compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se exhibe el importe del impuesto 
+	 calculado. Si el importe de I.V.A. es mayor a cero y se quiere modificar 
+	 este importe, haciendo click en el valor se accede a la ventana de 
+	 <a href="comprobantes_de_compras_Impuestos.htm">detalle de impuestos</a> 
+	 de la línea.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a> 
+	 y <a href="tabla__Tablas_de_medidas.htm">medidas</a>, en la ventana 
+	 donde se ingresan las cantidades por medida y color, se ve el importe 
+	 correspondiente y haciendo click en cada importe se accede a la ventana 
+	 de <a href="comprobantes_de_compras_Impuestos.htm">detalle de impuestos</a> 
+	 de ese color y esa medida.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Impuesto interno</p>
+	<p class="H_Parrafo_de_Sub-Item">Importe de impuesto interno de la 
+	 línea de la orden de compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se exhibe el importe del impuesto 
+	 calculado. Si el importe de impuesto interno es mayor a cero y se 
+	 quiere modificar este importe haciendo click en el valor se accede 
+	 a la ventana de <a href="comprobantes_de_compras_Impuestos.htm">detalle 
+	 de impuestos</a> de la línea.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a> 
+	 y <a href="tabla__Tablas_de_medidas.htm">medidas</a>, en la ventana 
+	 donde se ingresan las cantidades por medida y color, se ve el importe 
+	 correspondiente y haciendo click en cada importe se accede a la ventana 
+	 de <a href="comprobantes_de_compras_Impuestos.htm">detalle de impuestos</a> 
+	 de ese color y esa medida.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del depósito que se asigna 
+	 a la línea de la orden de compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez ingresado un depósito para 
+	 un ítem, el mismo será ofrecido en las siguientes líneas del comprobante, 
+	 pudiendo ser modificado, de ser necesario indicar un depósito distinto.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que el sistema 
+	 también solicitará el dato del depósito cuando se trate de un <a href="tabla__Servicios.htm">servicio</a> 
+	 de tipo <font style="font-weight: bold;">cantidad</font>.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Presupuesto</p>
+	<p class="H_Parrafo_de_Sub-Item">En caso que el ítem o servicio (de 
+	 tipo cantidad o importe) tenga asociado un grupo de compras que indica 
+	 que se debe realizar control de presupuestos de compra, se deberá 
+	 indicar el presupuesto de compras asociado para dicho control.</p>
+	<p class="H_Parrafo_de_Sub-Item">Dicho presupuesto debe estar aprobado, 
+	 tener un período de vigencia que comprenda la fecha del comprobante 
+	 y tener alguna componente con el valor del atributo asociado al ítem 
+	 para el atributo definido en dicho presupuesto.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al ingresar el comprobante al sistema 
+	 se procederá a realizar el control presupuestario correspondiente 
+	 para los presupuestos indicados. Si alguno de los presupuestos está 
+	 excedido se informará de tal eventualidad y se ofrecerá la posibilidad 
+	 de continuar con la grabación del comprobante o cancelar la operación.</p>
+	<p class="H_Parrafo_de_Sub-Item">El control presupuestario se realiza 
+	 en base al criterio de evaluación definido para dicho presupuesto, 
+	 que puede ser período completo, mes a mes o período transcurrido.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cuando el criterio de <font style="font-weight: bold;">evaluación 
+	 es por período completo</font> el sistema verifica que la suma de 
+	 las compras (facturas de compra (que no referencian órdenes de compra) 
+	 más órdenes de compra menos notas de crédito) en el período de vigencia 
+	 del presupuesto (incluida la actual), para el valor del atributo asociado 
+	 al ítem, no supere la suma de lo presupuestado en las componentes 
+	 de dicho presupuesto (vigentes a la fecha de la compra), para el valor 
+	 del atributo de dicho ítem, y para el mismo proveedor si está indicado 
+	 en las componentes.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cuando el criterio de <font style="font-weight: bold;">evaluación 
+	 es mes a mes</font>, el sistema efectúa el mismo control, pero teniendo 
+	 en cuenta solamente los comprobantes de compras correspondientes al 
+	 mes de carga del comprobante actual, igual para las componentes, prorrateando 
+	 los importes y cantidades si el período de vigencia del componente 
+	 es inferior o superior al mes evaluado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cuando el criterio de <font style="font-weight: bold;">evaluación 
+	 es por período transcurrido</font>, el sistema efectúa el mismo control, 
+	 pero teniendo en cuenta los comprobantes de compras desde el inicio 
+	 de vigencia del presupuesto hasta la fecha del comprobante actual, 
+	 igual para las componentes, prorrateando los importes y cantidades 
+	 si el período de vigencia del componente supera la fecha del comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se definieron los parámetros correspondientes 
+	 para la autorización de comprobantes excedidos por presupuesto de 
+	 compras, se evaluará si dicho comprobante queda pendiente de autorización 
+	 o queda autorizado automáticamente por exceso en el presupuesto de 
+	 compras.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Fecha de entrega</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha de entrega prevista para el 
+	 ítem que se está ingresando.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><font style="font-style: italic;"><span style="font-style: normal;">Carpeta</span> </font></p>
+	<p class="H_Parrafo_de_Sub-Item">Se habilita para aquellos casos que 
+	 se estuviera dando de alta una orden de compra a un proveedor del 
+	 exterior que requiera <a href="carpetas_de_importacion.htm"><font style="font-style: normal;">Carpeta de Importación</font></a> (CI).</p>
+	<p class="H_Parrafo_de_Sub-Item">Permite indicar y asociar una CI a 
+	 los bienes incluidos en la orden de compra, siendo optativo en esta 
+	 instancia. En caso de no realizarlo, es posible hacerlo desde la CI 
+	 en una instancia posterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">En esta columna, se visualizarán todas 
+	 las CI asociadas al proveedor de referencia, que estuvieran en estado 
+	 inicial, no tuvieran ingresados eventos que modifiquen fechas ni gastos 
+	 con prorrateo discrecional.</p>
+	<p class="H_Parrafo_de_Sub-Item">Recordar que solo se pueden incorporar 
+	 bienes que tengan una posición arancelaria definida.</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez indicada una CI en una línea, 
+	 el sistema ofrecerá automáticamente dicha CI para posteriores ingresos 
+	 de bienes con posición arancelaria para las líneas subsiguientes.</p>
+	<p class="H_Parrafo_de_Sub-Item">Estos bienes, si bien quedan asociados 
+	 a una CI, lo harán con un factor de precosteo de 1 y sin un permiso 
+	 de importación indicado, en aquellos casos que la posición arancelaria 
+	 del ítem en cuestión lo requiera. Para ingresar y/o modificar el factor 
+	 de precosteo y/o el permiso de importación, se debe ingresar a la 
+	 CI y configurarlos desde ahí.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a href="calculo_de_totales_del_comprobante.htm">Ficha Totales</a></p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Entrega</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP764916651" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Datos 
+ de entrega</span><span data-close-text="true">Datos 
+ de entrega</span></a></p>
+<div data-targetname="POPUP764916651">
+	<p class="H_Parrafo_de_Sub-Item">Texto aclaratorio de los datos de 
+	 entrega de la orden de compra.</p>
+	<p class="H_Parrafo_de_Sub-Item">Pueden consignarse datos como el domicilio 
+	 donde se debe efectuar la entrega, horarios de atención, etc.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Observaciones</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP764958248" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+<div data-targetname="POPUP764958248">
+	<p class="H_Parrafo_de_Sub-Item">Permite ingresar un texto aclaratorio. 
+	 Este aparece en todos los informes en los que se incluye al comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a href="administracion_de_Documentos.htm"><font style="font-style: normal;">Ficha 
+ Adjuntos</font></a> </p>
+<p class="H_Parrafo_de_Item">Permite adjuntar archivos(externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de <a href="adjuntos.htm">Adjuntos</a>.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP764670873" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Modificación de 
+ órdenes de compra</span><span data-close-text="true">Modificación de 
+ órdenes de compra</span></a></p>
+<div data-targetname="POPUP764670873">
+	<p class="H_Parrafo_de_Item">Al seleccionar una orden de compra en 
+	 la ventana de búsqueda, sus datos se copian en la ventana de ingreso 
+	 del comprobante. Las líneas que se copian son las líneas pendientes 
+	 de cumplir y las líneas de porcentajes y textos. Además, las cantidades 
+	 que se exhiben son las cantidades que se encuentran pendientes de 
+	 recibir. Si el comprobante está totalmente pendiente es posible reutilizar 
+	 el número correspondiente al mismo. En caso de no reutilizar el número, 
+	 el sistema cancelará la orden de compra y se generará un nuevo comprobante.</p>
+	<p class="H_Parrafo_de_Item">El talonario que se utiliza para registrar 
+	 la cancelación es el que se ha indicado en la ficha &quot;Comprobantes&quot; 
+	 de la tabla &quot;Sucursales&quot; en el campo &quot;Cancelación de 
+	 órdenes de compra&quot;.</p>
+	<p class="H_Parrafo_de_Item">En caso que ya se hayan recibido parte 
+	 de los bienes incluidos en una orden de compra, o sea que ésta se 
+	 encuentre pendiente en forma parcial, no podrá eliminarse. El sistema, 
+	 en ese caso, genera un comprobante de cancelación incluyendo todos 
+	 los bienes que se encuentran pendientes y una nueva orden de compra 
+	 incluyendo las líneas pendientes del comprobante invocado y las modificaciones 
+	 que el usuario haya efectuado en relación al mismo.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <font style="font-style: italic;"><span style="font-style: normal;"><a data-target="POPUP764684146" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ordenes 
+ de Compra a proveedores del exterior</span><span data-close-text="true">Ordenes 
+ de Compra a proveedores del exterior</span></a></span> </font></p>
+<div data-targetname="POPUP764684146">
+	<p class="H_Parrafo_de_Item">En aquellos casos que se requiera generar 
+	 una orden de compra a un proveedor del exterior, el cual requiera 
+	 <a href="carpetas_de_importacion.htm">Carpeta de Importación</a> (CI), 
+	 solo se podrán ingresar bienes que tengan indicada una posición arancelaria. 
+	 Se podrán ingresar sin restricciones servicios y textos varios.</p>
+	<p class="H_Parrafo_de_Item">No se podrán anular o eliminar Ordenes 
+	 de Compra que tengan líneas asociadas a una CI, y en caso de tenerla, 
+	 ésta no debe estar totalmente pendiente.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP764739282');
+	TextPopupInit('a2', 'POPUP764743302');
+	TextPopupInit('a3', 'POPUP764779599');
+	TextPopupInit('a4', 'POPUP764790646');
+	TextPopupInit('a5', 'POPUP764807390');
+	TextPopupInit('a6', 'POPUP764810734');
+	TextPopupInit('a7', 'POPUP764834142');
+	TextPopupInit('a8', 'POPUP764561159');
+	TextPopupInit('a9', 'POPUP764916651');
+	TextPopupInit('a10', 'POPUP764958248');
+	TextPopupInit('a11', 'POPUP764670873');
+	TextPopupInit('a12', 'POPUP764684146');
+//]]></script>
+
+
+</body></html>

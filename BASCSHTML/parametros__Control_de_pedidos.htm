@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.2.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Parametros Control de pedidos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Control,Pedidos"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Control de pedidos</h1>
+  <p class="H_Texto">Esta tarea permite proporcionar al sistema una serie de indicaciones destinadas a configurar y automatizar las tareas vinculadas al ingreso, control y reserva de stock de pedidos, tanto internos como externos.</p>
+  <p class="H_Texto">También es posible establecer controles en relación a las cuentas corrientes.</p>
+  <p class="H_Texto">El sistema asume determinados valores de los parámetros por defecto, pero los mismos pueden modificarse libremente.</p>
+  <p class="H_Texto">Los parámetros pueden modificarse mientras se está operando con el sistema y la actualización de las opciones que se indiquen se realizará en forma inmediata sin necesidad de salir y volver entrar al sistema.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Stock interno</p>
+  <p class="H_Parrafo_de_Item">Esta ficha permite establecer los controles de stock a realizar al momento de registrar pedidos internos. Es posible establecer controles genéricos, es decir, que actúen sobre todos los ítems, o independientes por grupo de ítems, mediante el uso de atributos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Genérico</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Control de stock</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Permite establecer controles en relación al stock al momento de registrar un pedido interno.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Se brindan tres valores posibles para este dato:</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Advierte</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Si se indica <font style="font-weight: bold;">Advierte</font>, el sistema avisará que no hay suficiente existencia de un producto cuando se intente registrar en un pedido una cantidad mayor a la disponible en stock. Este aviso no traba el ingreso del pedido, se permite seguir trabajando y el stock disponible asume valores negativos.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Si se indica <font style="font-weight: bold;">Prohíbe</font>, el sistema avisará que no hay suficiente existencia de un producto cuando se intente registrar en un pedido una cantidad mayor a la disponible en stock. La diferencia con la opción anterior es que en este caso, no se permite continuar con el ingreso del pedido, en estas condiciones.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> No controla</p>
+  <p class="H_Parrafo_de_Sub-Sub-Sub_Item">Si se indica <font style="font-weight: bold;">No controla</font>, el sistema nunca avisará si se registra un pedido de un ítem que no tiene stock disponible.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">No controlar stock con fecha de entrega mayor a <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> dias</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si la fecha de entrega de un pedido supera a la fecha del mismo en una cantidad de días mayor a los que acá se indican, no se efectuará ningún control de stock al momento de su registración.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso contrario, se efectuarán los controles indicados en el cuadro &quot;Control de stock&quot;.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reservar stock </p>
+  <p class="H_Parrafo_de_Sub-Sub_Item_XE">Indicación de si se desea que el sistema reserve stock al ingresar pedidos internos.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">No reservar stock con fecha de entrega mayor a <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> días</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si la fecha de entrega de un pedido supera a la fecha del mismo en una cantidad de días mayor a los que acá se indican, no se realizará la reserva de stock.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Al registrar un pedido interno, si la diferencia entre la fecha del mismo y su fecha de entrega es inferior a la cantidad de días indicada en este dato, se reservará automáticamente la mercadería pedida.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Por atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se habilita este campo se hace posible efectuar controles selectivamente sobre los pedidos internos que incluyen determinados ítems específicamente señalados para ello . Para utilizar esta funcionalidad se debe indicar un código de atributo y distintos valores del mismo que determinarán sobre que pedidos se controlará el stock y se reservará mercadería.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema y aplicable a <font style="font-weight: bold;">Ítems</font>.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de valores de atributo</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+  <p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó en el campo anterior.</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe indicar el valor que agrupa a los ítems sobre los cuáles se quiere controlar y/o reservar stock.</p>
+  <p class="H_Sub_Item_con_vineta_negrita_XE rl-p-H_Sub_Item_con_vineta_negrita_XE">Reservar stock</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea que el sistema reserve stock en relación a los bienes que presenten el valor del atributo indicado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita_XE rl-p-H_Sub_Item_con_vineta_negrita_XE">No reservar stock con fecha de entrega &gt; a</p>
+  <p class="H_Parrafo_de_Sub-Item">Si la fecha de entrega de un pedido supera a la fecha del mismo en una cantidad de días mayor a los que acá se indican, no se realizará la reserva de stock en relación a los bienes que cumplen con el valor de atributo indicado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Control de stock</p>
+  <p class="H_Parrafo_de_Sub-Item">En este campo se debe indicar si se desea, o no, controlar que haya stock disponible de los bienes que cumplen con el valor del atributo indicado, en el momento de registrar un pedido interno.</p>
+  <p class="H_Parrafo_de_Sub-Item">Es posible seleccionar:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Advierte</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">Advierte</font>, el sistema avisará que no hay suficiente existencia de los productos que presenten el valor del atributo indicado, cuando se intente registrar en un pedido una cantidad mayor a la disponible en stock. Este aviso no traba el ingreso del pedido, se permite seguir trabajando y el stock disponible asume valores negativos.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Prohíbe</font>, el sistema avisará que no hay suficiente existencia de los productos con el valor del atributo indicado, cuando se intente registrar en un pedido una cantidad mayor a la disponible en stock. La diferencia con la opción anterior es que en este caso, no se permite continuar con el ingreso del pedido, en estas condiciones.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">No controla</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">No controla</font>, el sistema nunca avisará si se registra un pedido de un ítem con el valor del atributo indicado que no tiene stock disponible.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">No controlar stock con fecha de entrega &gt; a</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se ingresa un dato en este campo, la opción indicada en el campo anterior actuará solamente sobre los pedidos cuya fecha de entrega no supere en la cantidad de días acá indicados a la fecha de registración de los mismos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reservar en pedidos internos pendientes de autorización</p>
+  <p class="H_Parrafo_de_Sub-Item">Si no se activa el campo, el sistema no reserva mercadería a los pedidos que quedan pendientes de autorización. Luego, al momento que se autorizan, si hay stock disponible, se reserva automáticamente,</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso que esté activado y que haya stock disponible, el sistema reserva mercadería al momento de registrar los pedidos, independientemente del estado de lso mismos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Ver stock disponible en ingreso</p>
+  <p class="H_Parrafo_de_Sub-Item">Permite indicar si se desea que el sistema incluya una columna exhibiendo el stock disponible de los bienes que se informan.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Considerar parámetros de control de stock del depósito</p>
+  <p class="H_Parrafo_de_Sub-Item">Este campo se activa en caso de haber indicado Ver stock disponible en el ingreso.</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso que se tilde el stock disponible que se exhibe considerará o no el stock reservado según qué se haya indicado para el depósito (en el check Considerar stock reservado).</p>
+  <p class="H_Parrafo_de_Sub-Item">Si no se tilda, siempre se tiene en cuenta el stock reservado al mostrar el stock disponible en los pedidos internos.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Stock externo</p>
+  <p class="H_Parrafo_de_Item">Esta ficha permite establecer los controles de stock a realizar al momento de registrar pedidos de venta (externos). Es posible establecer controles genéricos, es decir, que actúen sobre todos los ítems, o independientes por grupo de ítems, mediante el uso de atributos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Genérico</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Control de stock</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Permite establecer controles en relación al stock al momento de registrar un pedido de venta.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Se brindan tres valores posibles para este dato:</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Advierte</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Advierte</font>, el sistema avisará que no hay suficiente existencia de un producto cuando se intente registrar en un pedido una cantidad mayor a la disponible en stock. Este aviso no traba el ingreso del pedido, se permite seguir trabajando y el stock disponible asume valores negativos.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Prohíbe</font>, el sistema avisará que no hay suficiente existencia de un producto cuando se intente registrar en un pedido una cantidad mayor a la disponible en stock. La diferencia con la opción anterior es que en este caso, no se permite continuar con el ingreso del pedido, en estas condiciones.</p>
+  <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> No controla</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">No controla</font>, el sistema nunca avisará si se registra un pedido de un ítem que no tiene stock disponible.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita">No controlar stock con fecha de entrega mayor a <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> días</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Número que indica la cantidad de días hasta la fecha de entrega de los pedidos externos que será tenida en cuenta para controlar el stock disponible de cada ítem al ingresar el pedido.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Al registrar un pedido externo, si la diferencia entre la fecha del mismo y su fecha de entrega es inferior a la cantidad de días indicada en este dato, el sistema controlará la existencia de stock disponible de los ítems que el mismo incluye. En caso contrario, no se efectuará ningún control.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si la fecha de entrega de un pedido supera a la fecha del mismo en una cantidad de días mayor a los que acá se indican, no se efectuará ningún control de stock al momento de su registración.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso contrario, se efectuarán los controles indicados en el cuadro &quot;Control de stock&quot;.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reservar stock </p>
+  <p class="H_Parrafo_de_Sub-Sub_Item_XE">Indicación de si se desea que el sistema reserve stock al ingresar pedidos internos.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> No reservar stock con fecha de entrega mayor a</p>
+  <p class="H_Parrafo_de_Sub-Item">Si la fecha de entrega de un pedido de venta supera a la fecha del mismo en una cantidad de días mayor a los que acá se indican, no se realizará la reserva de stock.</p>
+  <p class="H_Parrafo_de_Sub-Item">Al registrar un pedido externo, si la diferencia entre la fecha del mismo y su fecha de entrega es inferior a la cantidad de días indicada en este dato, se reservará automáticamente la mercadería pedida.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Por atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se habilita este campo sólo se efectuarán controles sobre los pedidos externos que incluyen determinados ítems específicamente señalados para ello . Para utilizar esta funcionalidad se debe indicar un código de atributo y los distintos valores del mismo que determinarán qué pedidos externos se controlarán y sobre cuáles se reservará stock.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema y aplicable a <font style="font-weight: bold;">Ítems</font>.</p>
+  <p class="H_Parrafo_de_Sub-Item">En base a los valores de este atributo se determinarán los bienes sobre los cuáles se ha de controlar el stock.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de valores de atributo</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+  <p class="H_Parrafo_de_Sub-Item">Se debe informar un valor del atributo indicado en el campo anterior que agrupe a los bienes sobre los cuáles se desea efectuar controles.</p>
+  <p class="H_Sub_Item_con_vineta_negrita_XE rl-p-H_Sub_Item_con_vineta_negrita_XE"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reservar stock</p>
+  <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea que el sistema reserve stock en relación a los bienes que presenten el valor del atributo indicado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita_XE rl-p-H_Sub_Item_con_vineta_negrita_XE">No reservar stock con fecha de entrega &gt; a</p>
+  <p class="H_Parrafo_de_Sub-Item">Si la fecha de entrega de un pedido supera a la fecha del mismo en una cantidad de días mayor a los que acá se indican, no se realizará la reserva de stock en relación a los bienes que cumplen con el valor de atributo indicado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Control de stock</p>
+  <p class="H_Parrafo_de_Sub-Item">En este campo se debe indicar si se desea, o no, controlar que haya stock disponible de los bienes que cumplen con el valor del atributo indicado, en el momento de registrar un pedido externo.</p>
+  <p class="H_Parrafo_de_Sub-Item">Es posible seleccionar:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Advierte</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">Advierte</font>, en caso que el stock disponible de los productos que cumplen con el valor de atributo no sea suficiente, el sistema emitirá un mensaje de advertencia. Este aviso no traba el ingreso del pedido, se permite seguir trabajando y el stock disponible asume valores negativos.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">Prohíbe</font>, en caso que el stock disponible de los productos que cumplen con el valor de atributo no sea suficiente, el sistema emitirá un mensaje de advertencia y no permitirá seguir adelante con la tarea de carga.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">No controla</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">No controla</font>, el sistema no tiene en cuenta el stock disponible de los bienes y siempre permitirá su registración en el sistema.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">No controlar stock con fecha de entrega mayor a</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se ingresa un dato en este campo, la opción indicada en el campo anterior actuará solamente sobre los pedidos cuya fecha de entrega no supere en la cantidad de días acá indicados a la fecha de registración de los mismos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Avisar pedidos pendientes de ítems y alternativos</p>
+  <p class="H_Parrafo_de_Sub-Item">Activar en caso que se desee que el sistema emita un aviso ante la existencia de otros pedidos pendientes que incluyen los mismos ítems que el que se incluye en el pedido que se está ingresando o que contienen ítems informados como alternativos de aquel.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Ver stock disponible en ingreso</p>
+  <p class="H_Parrafo_de_Sub-Item">Activar en caso que se desee que la tarea de ingreso de pedidos incluya una columna adicional exhibiendo el stock disponible de los ítems.</p>
+  <p class="H_Parrafo_de_Sub-Item">Este parámetro está habilitado para los pedidos de venta u otras entregas. En los pedidos de cotización o de devolución la columna de stock disponible nunca está visible.</p>
+  <p class="H_Parrafo_de_Sub-Item">Para los ítems con tabla de colores y medidas asociada, en el caso de no indicar en el ingreso el color y medida correspondiente, la columna no mostrará ningún valor. De igual forma pasa con los ítems de tipo texto vario o servicio, o los ítems que no administran stock.</p>
+  <p class="H_Parrafo_de_Sub-Item">El valor de la columna stock disponible no puede modificarse y en caso de situarse sobre dicha columna, aparecerá un tooltip que nos muestra la descripción de la unidad de medida en que se expresa dicho stock disponible, que siempre coincide con la unidad de venta.</p>
+  <p class="H_Sub-Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Considerar parámetros de control de stock en depósito</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso que esté activada la opción Ver stock disponible en el ingreso, este parámetro permite determinar si en el stock disponible que se exhibe al registrar las líneas del pedido se considerará, o no, el stock reservado según la indicación del depósito en el cual se registra dicho pedido.</p>
+  <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Ver siempre el stock disponible como stock actual menos stock reservado (si no se activa el check).</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Ver el stock disponible considerando el stock reservado, o no, dependiendo de lo que el depósito tenga indicado (si está activado el check).</p>
+  <p class="H_Sub-Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Reservar en pedidos pendientes de autorización</p>
+  <p class="H_Parrafo_de_Sub-Item">Si no se activa el campo, el sistema no reserva mercadería a los pedidos que quedan pendientes de autorización. Luego, al momento que se autorizan, si hay stock disponible, se reserva automáticamente,</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso que esté activado y que haya stock disponible, el sistema reserva mercadería al momento de registrar los pedidos, independientemente del estado de los mismos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cantidad de días para expiración de pedidos</p>
+  <p class="H_Parrafo_de_Sub-Item">Si se informa se utiliza en el ingreso de pedidos externos, para ofrecer la fecha de expiración por defecto de los mismos, calculándola como la fecha del pedido más la cantidad de días que aquí se indiquen.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Control de cta. cte. externa</p>
+  <p class="H_Parrafo_de_Item">Esta ficha permite establecer diversos controles en relación a las cuentas corrientes de los clientes, al momento de registrar pedidos de venta que los tengan por titulares.</p>
+  <p class="H_Parrafo_de_Item">Es posible establecer tres tipos de controles diferentes: control del crédito del cliente, control de cheques rechazados del cliente y control de la deuda no documentada vencida del cliente.</p>
+  <p class="H_Parrafo_de_Item">Es posible indicar (en los &quot;Parámetros de cuenta corriente&quot;) si se desea o no considerar a los pedidos de venta en el cálculo de la <font style="font-weight: bold;">deuda no documentada</font> de las cuentas corrientes de los clientes.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Crédito</p>
+  <p class="H_Parrafo_de_Sub-Item">En relación al control de crédito disponible es posible indicar:</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Advierte</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Advierte</font>, cuando se intente registrar un pedido para un cliente con crédito excedido, el sistema emitirá un mensaje de advertencia al operador, quién decidirá si seguir adelante o no con la tarea.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Prohíbe</font>, cuando se intente registrar un pedido para un cliente con crédito excedido, el sistema emitirá un mensaje de advertencia al operador y no permitirá seguir adelante con la tarea.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> No controla</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">No controla</font>, el sistema no controla el crédito de los clientes al registrar pedidos de venta.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Rechazos</p>
+  <p class="H_Parrafo_de_Sub-Item">Al igual que en el control de créditos disponibles, hay tres opciones posibles para este dato:</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Advierte</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">Advierte</font>, en caso que existan cheques rechazados en relación al titular del pedido, se emitirá un aviso y se dejará en manos del operador la decisión de seguir adelante con la tarea.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica Prohíbe, en caso que existan cheques rechazados en relación al titular del pedido, se emitirá un aviso y se impedirá registrar el pedido.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> No controla</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica <font style="font-weight: bold;">No controla</font>, el sistema nunca avisará si se registra un pedido de un cliente que tiene cheques rechazados.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Deuda vencida</p>
+  <p class="H_Parrafo_de_Sub-Item">En relación a la deuda no documentada que se encuentra vencida, es posible, efectuar diversos controles:</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Advierte</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este control, se podrá indicar el importe mínimo de la deuda y la cantidad de días de tolerancia en el vencimiento de la misma a partir de los cuáles se desea emitir un aviso de advertencia.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En ese caso, si la deuda vencida es superior al importe mínimo indicado y con más días de vencimiento que los indicados como tolerancia, se emite un aviso y se deja en manos del operador la decisión de seguir adelante con la tarea,</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohíbe</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este control se podrá indicar el importe mínimo y la cantidad de días de tolerancia en el vencimiento de la misma a partir de los cuáles se desea prohibir al operador que registre el pedido.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En ese caso, si la deuda vencida es superior al importe mínimo indicado y con más días de vencimiento que los indicados como tolerancia, se emite un aviso y se impide seguir adelante con la tarea,</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> No controla</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica No controla, el sistema no tiene en cuenta el saldo de deuda no documentada al momento de registrar pedidos de venta.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Informar al ingresar el cliente</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso que se active este control, los controles que se han indicado en los párrafos anteriores se avisan al momento de ingresar el código del cliente titular del comprobante.</p>
+  <p class="H_Parrafo_de_Sub-Item">En ese caso se muestra una imagen al lado de la razón social del cliente y si se posiciona el puntero del mouse sobre dicha imagen, se exhibe un tooltip con un detalle que informa el estado del cliente.</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso contrario, se informan, al grabarlo.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Tolerancia</p>
+  <p class="H_Parrafo_de_Item">En esta ficha se podrán informar los porcentajes de tolerancia permitidos en relación a las diferencias entre las cantidades registradas y las efectivamente entregadas, en los pedidos de venta y de otras entregas de determinados <a href="tabla__Bienes.htm">ítems</a></p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Externos</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> en base al cual se informarán los porcentajes de tolerancia en las cantidades entregadas para cancelar pedidos de venta y de otras entregas.</p>
+  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla Valores de atributos</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Valor</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Valor seleccionado del atributo indicado en el campo Atributo.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Descripción del valor de atributo indicado en la columna valor.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">No controlar entrega en exceso</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En esta columna es posible indicar si se controlan o no las entregas en exceso al registrar entregas sobre pedidos.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que no se controle, el sistema deshabilita el acceso al campo “% permitido en exceso en la cantidad entregada, asumiéndose el dato o (cero) que indica no controlar las entregas en exceso.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">% permitido de exceso en la cantidad entregada</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En caso que no sea posible entregar exactamente la cantidad pedida, este porcentaje representa la diferencia máxima de cantidad (en exceso) que será aceptada.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Esta situación puede estar motivada, por ejemplo, por el tipo de embalaje del que se trate.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Veamos un ejemplo. Si se están entregando telas y el pedido fue registrado por una determinada cantidad de metros, como las telas se suelen comercializar en rollos, seguramente la cantidad que se entregue no sea exactamente igual a la pedida. Al registrar un comprobante de ventas o egreso de mercadería, será posible referenciar a un pedido por una cantidad superior a la cantidad ingresada en este último, siempre y cuando la diferencia entre ambas cantidades sea igual o menor al porcentaje por exceso indicado. El pedido se dará por cancelado por la cantidad original del mismo.</p>
+  <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">% permitido por defecto en la cantidad entregada</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Se debe informar aquí el porcentaje que representa la diferencia máxima de cantidad (en defecto) que se permite entregar.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si la diferencia entre la cantidad pedida y la recibida no excede el porcentaje que aquí se indica, el pedido se dará por cancelado.</p>
+
+</body></html>

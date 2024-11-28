@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.8.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Bienes de uso Ajuste</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Ajuste,Bienes,Uso"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Ajuste de bienes de uso</h1>
+  <p class="H_Texto">Esta tarea permite efectuar el ajuste por inflación y/ o por valores corrientes de las cuentas de <a href="tabla__Bienes.htm">Bienes</a> y de Amortización acumulada informadas en cada uno de los grupos de bienes de uso definidos en el sistema.</p>
+  <p class="H_Texto">El proceso de ajuste realizará todos los tipos de ajustes que se hayan indicado en la <a href="tabla__Cuentas.htm">imputación contable</a> de la que se trate, en forma simultánea. Si por ejemplo, la imputación contable se ajusta por valor corriente y por inflación , ambos ajustes se calculan en forma simultánea. El orden en el que se realiza el proceso de ajuste es: en primer lugar se efectúa el ajuste por valor corriente y luego el ajuste por inflación.</p>
+  <p class="H_Texto">Las cuentas de bienes de uso se ajustarán automáticamente mediante la registración de comprobantes de modificación de inventario. De este modo, las próximas amortizaciones que se realicen se calcularán teniendo en cuenta estos ajustes.</p>
+  <p class="H_Texto">Para la cuenta Amortización Acumulada se generará un asiento de ajuste por inflación en el diario. El asiento se conformará por dicha cuenta y la que corresponda para el ajuste por inflación. Este asiento de ajuste por inflación será tenido en cuenta para las posteriores amortizaciones de dicho inventario.</p>
+  <p class="H_Texto">Es importante tener en cuenta que también se ofrece la posibilidad de ejecutar el proceso de ajuste al momento de efectuar el <a href="cierre_operativo.htm">cierre operativo</a> del subdiario de materiales.</p>
+  <p class="H_Texto">Los datos a ingresar para generar un asiento de ajuste son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP775669596" href="#"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+  <div data-targetname="POPUP775669596">
+    <p class="H_Parrafo_de_Item">Fecha del asiento de ajuste a generar.</p>
+    <p class="H_Parrafo_de_Item">La misma será considerada además como
+      fecha de ajuste para obtener los valores de índices y cotizaciones
+      que permiten efectuar los ajustes.</p>
+    <p class="H_Parrafo_de_Item">Se considerarán para generar el asiento,
+      los asientos ingresados hasta esta fecha en el diario o en <a href="tabla__Subdiarios.htm">subdiarios</a>
+      que no se resumen.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP775667457" href="#"><span data-open-text="true" data-skip-index="true">Grupo de bienes de uso</span><span data-close-text="true">Grupo de bienes de uso</span></a></p>
+  <div data-targetname="POPUP775667457">
+    <p class="H_Parrafo_de_Item">Códigos correspondientes a los grupo de
+      bienes de uso cuyas cuentas se desea ajustar.</p>
+    <p class="H_Parrafo_de_Item">Si no se especifica ningún código de grupo
+      de bienes de uso, todas las cuentas ajustables informadas para todos
+      los grupos definidos intervendrán en el asiento.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP775645437" href="#"><span data-open-text="true" data-skip-index="true">Número de inventario</span><span data-close-text="true">Número de inventario</span></a></p>
+  <div data-targetname="POPUP775645437">
+    <p class="H_Parrafo_de_Item">Códigos correspondientes a los inventarios
+      que se desea incluir en el ajuste.</p>
+    <p class="H_Parrafo_de_Item">Si no se especifica ningún código de inventario,
+      se considerarán todos los inventarios de bienes de uso en el ajuste.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP775637318" href="#"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+  <div data-targetname="POPUP775637318">
+    <p class="H_Parrafo_de_Item">Texto aclaratorio que tendrá el nuevo
+      asiento que se genera.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" style="cursor: nwse-resize;" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP775616395" href="#"><span data-open-text="true" data-skip-index="true">Programar tarea</span><span data-close-text="true">Programar tarea</span></a></p>
+  <div data-targetname="POPUP775616395">
+    <p class="H_Parrafo_de_Item">Pulsando este botón aparecerá una pantalla
+      que permitirá configurar la programación del proceso de generación
+      de asientos de ajuste.</p>
+    <p class="H_Parrafo_de_Item">Se podrá programar la fecha y hora en
+      que deberá ejecutarse este proceso, considerando que las mismas deben
+      ser posteriores a la fecha y hora actual.</p>
+    <p class="H_Parrafo_de_Item">Es posible, además indicar que las salidas
+      que produzca la ejecución de esta tarea se añadan al historial de
+      la misma.</p>
+    <p class="H_Parrafo_de_Item">La programación de esta tarea se graba
+      en la base de datos. Cada vez que se vuelve a programar la tarea,
+      se estará modificando la tarea original. Esto permite modificar la
+      programación de la tarea en el caso de haber cometido algún error.</p>
+    <p class="H_Parrafo_de_Item">La programación del proceso de generación
+      de asientos de ajuste sólo podrá ser realizada por el administrador
+      del sistema y podrá modificarse esta programación todas las veces
+      que sea necesario.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP775669596');
+    TextPopupInit('a2', 'POPUP775667457');
+    TextPopupInit('a3', 'POPUP775645437');
+    TextPopupInit('a4', 'POPUP775637318');
+    TextPopupInit('a5', 'POPUP775616395');
+    //]]>
+  </script>
+
+</body></html>

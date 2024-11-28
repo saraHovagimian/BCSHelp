@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.1.2.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Reserva de credito</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Crédito,Reserva"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Reserva de crédito</h1>
+<p class="H_Texto">Esta funcionalidad está destinada al funcionamiento 
+ de BAS CS con el sistema de punto de venta y permite que éste último, 
+ al registrar ventas en cuenta corriente, verifique si el cliente tiene 
+ crédito disponible .</p>
+<p class="H_Texto">Para registrar una reserva de crédito se debe definir 
+ un talonario y asociar el tipo de comprobante Reserva de crédito.</p>
+<p class="H_Texto">Al ingresar el comprobante, el sistema realiza un control 
+ de crédito, en forma análoga a la que se realiza al ingresar comprobantes 
+ de venta, y no permitirá completar la operación si el cliente se excede 
+ en los créditos máximos definidos.</p>
+<p class="H_Texto">Si el ingreso del comprobante se puede realizar satisfactoriamente 
+ el sistema genera un código de autorización aleatorio para dicho comprobante 
+ que constará de 6 dígitos numéricos, y que no se repetirá por empresa.</p>
+<p class="H_Texto">También es posible anular Reservas de crédito. Sólo 
+ podrán anularse reservas de crédito que no estén asociadas a ningún comprobante 
+ (no está prevista la eliminación de reservas de crédito).</p>
+<p class="H_Texto">Al ingresar el comprobante de anulación, el sistema 
+ anulará la reserva de crédito correspondiente al código de autorización 
+ ingresado. Para que el comprobante pueda ingresarse correctamente los 
+ datos correspondientes a la sucursal, condición de venta, cliente y moneda 
+ del comprobante deben ser iguales a los de la reserva de crédito correspondiente. 
+ Además el importe total del comprobante debe ser inferior o igual al importe 
+ de la reserva de crédito.</p>
+<p class="H_Texto">Las reservas de crédito que no estén anuladas, se considerarán 
+ a partir de ahora como parte de la deuda no documentada del cliente y 
+ se podrán consultar en la consulta de cliente.</p>
+<p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante 
+ en estado de preparación</a>, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.</p>
+<p class="H_Texto">Los datos a ingresar son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627275658" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP627275658">
+	<p class="H_Parrafo_de_Item">Fecha del comprobante.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627269162" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número</span><span data-close-text="true">Número</span></a></p>
+<div data-targetname="POPUP627269162">
+	<p class="H_Parrafo_de_Item">Prefijo y número correspondiente al comprobante 
+	 de reserva. El talonario debe corresponder a la sucursal que realiza 
+	 la reserva.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627288430" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Sucursal</span><span data-close-text="true">Sucursal</span></a></p>
+<div data-targetname="POPUP627288430">
+	<p class="H_Parrafo_de_Item">Código de la sucursal que realiza la reserva</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627303558" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Caja</span><span data-close-text="true">Caja</span></a></p>
+<div data-targetname="POPUP627303558">
+	<p class="H_Parrafo_de_Item">Caja desde la que se realiza la reserva.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627319246" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cliente</span><span data-close-text="true">Cliente</span></a></p>
+<div data-targetname="POPUP627319246">
+	<p class="H_Parrafo_de_Item">Código del titular de la operación.</p>
+	<p class="H_Parrafo_de_Item">Al precargar los datos del cliente y se 
+	 exhibe un tooltip con el nombre de fantasía del cliente, de no contar 
+	 con dicho dato, se observará la razón social. </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627347622" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Condición de venta</span><span data-close-text="true">Condición de venta</span></a></p>
+<div data-targetname="POPUP627347622">
+	<p class="H_Parrafo_de_Item">Código de la condición correspondiente 
+	 a la operación</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627337768" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Moneda - Importe</span><span data-close-text="true">Moneda - Importe</span></a></p>
+<div data-targetname="POPUP627337768">
+	<p class="H_Parrafo_de_Item">Moneda y monto correspondiente a la operación 
+	 para la cual se solicita la reserva de crédito.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP627361826" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+<div data-targetname="POPUP627361826">
+	<p class="H_Parrafo_de_Item">Observación asociada al comprobante que 
+	 se genera. Ofrece como default la observación asociada al talonario 
+	 del comprobante.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP627275658');
+	TextPopupInit('a2', 'POPUP627269162');
+	TextPopupInit('a3', 'POPUP627288430');
+	TextPopupInit('a4', 'POPUP627303558');
+	TextPopupInit('a5', 'POPUP627319246');
+	TextPopupInit('a6', 'POPUP627347622');
+	TextPopupInit('a7', 'POPUP627337768');
+	TextPopupInit('a8', 'POPUP627361826');
+//]]></script>
+
+
+</body></html>

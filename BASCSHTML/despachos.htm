@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.3.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Despachos</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Despacho,Importación"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Despacho de importación</h1>
+<p class="H_Texto">Esta tarea permite incorporar al sistema la información 
+ asociada a los despachos que amparan el ingreso y comercialización de 
+ la mercadería importada.</p>
+<p class="H_Texto">Luego, al registrar comprobantes de ingreso de mercadería, 
+ se podrá hacer referencia a los despachos de importación que se hayan 
+ definido mediante esta tarea de modo de asociar, a los <a href="tabla__Bienes.htm">bienes</a> 
+ que ingresan, el número de despacho al cual corresponden.</p>
+<p class="H_Texto">Una vez ingresados al sistema, los bienes y las unidades 
+ que corresponden a cada despacho, el sistema administra automáticamente 
+ el stock de cada uno de los despachos definidos.</p>
+<p class="H_Texto">El stock de los despachos se actualiza, en forma automática, 
+ desde el de fecha más antigua avanzando hacia los de fecha más reciente. 
+ Esto significa que las unidades que egresan de un determinado bien, se 
+ descuentan del despacho más antiguo que lo incluye y que posee stock disponible. 
+ Si la cantidad existente en el despacho no es suficiente para cubrir el 
+ egreso, éste se completa con el despacho siguiente y así, sucesivamente, 
+ hasta cubrir la cantidad total de unidades que egresan.</p>
+<p class="H_Texto">Del mismo modo, el sistema administra, en forma automática, 
+ el reingreso de mercadería importada, originado, por ejemplo, en las devoluciones 
+ de <a href="tabla__Clientes.htm">clientes</a>. En ese caso se actualiza 
+ el stock del despacho de fecha más reciente asociado al bien que ingresa; 
+ si las unidades que ingresan exceden la cantidad original de dicho despacho, 
+ se actualiza el de fecha inmediata anterior y así, sucesivamente, hasta 
+ cubrir la cantidad total de unidades que ingresan.</p>
+<p class="H_Texto">Se prevén informes que permiten consultar el stock disponible 
+ de cada despacho definido en el sistema, como así también, las cantidades 
+ originales del mismo y las que ya se han facturado.</p>
+<p class="H_Texto">Del mismo modo, se podrá consultar, para cada ítem, 
+ los despachos mediante los cuales se produjo su ingreso y, para cada uno 
+ de ellos, la cantidad ingresada, la facturada y la que aún se encuentra 
+ disponible.</p>
+<p class="H_Texto">En la definición de un despacho se registran solamente 
+ los datos generales del mismo. Luego, cuando se registre el comprobante 
+ de ingreso correspondiente (factura o remito), se informan los ítems, 
+ las cantidades que conforman el envío y se referencia el código de un 
+ despacho que debe haberse definido previamente mediante esta tarea.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775660339" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Despacho</span><span data-close-text="true">Despacho</span></a></p>
+<div data-targetname="POPUP775660339">
+	<p class="H_Parrafo_de_Item">Código identificatorio del despacho.</p>
+	<p class="H_Parrafo_de_Item">Al registrar (mediante factura o remito) 
+	 el ingreso de la mercadería correspondiente a un despacho, éste debe 
+	 invocarse mediante este dato.</p>
+	<p class="H_Parrafo_de_Item">Luego, cuando se produzca el egreso de 
+	 la mercadería, el código de despacho se imprimirá acompañando a los 
+	 ítems, en los comprobantes mediante los cuales éstos egresan (facturas 
+	 y remitos).</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775661789" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP775661789">
+	<p class="H_Parrafo_de_Item">Fecha correspondiente al despacho.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775691276" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Aduana</span><span data-close-text="true">Aduana</span></a></p>
+<div data-targetname="POPUP775691276">
+	<p class="H_Parrafo_de_Item">Aduana por la que ingresa la mercadería 
+	 asociada al despacho.</p>
+	<p class="H_Parrafo_de_Item">Este dato se incluye en los informes relativos 
+	 al despacho y, si se desea, puede imprimirse en los comprobantes mediante 
+	 los cuales egresan los ítems correspondientes al despacho.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775697908" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">País de Origen</span><span data-close-text="true">País de Origen</span></a></p>
+<div data-targetname="POPUP775697908">
+	<p class="H_Parrafo_de_Item">País del cual proviene la mercadería.</p>
+	<p class="H_Parrafo_de_Item">Al igual que el campo anterior, este dato 
+	 se incluye en los informes y, si se desea, en los comprobantes de 
+	 egreso asociados a los ítems correspondientes al despacho.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP775704185" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+<div data-targetname="POPUP775704185">
+	<p class="H_Parrafo_de_Item">Texto asociado al despacho.</p>
+	<p class="H_Parrafo_de_Item">Se exhibe junto a él en todos los informes 
+	 que provee el sistema.</p></div>
+<p class="H_Item_con_imagen_negrita" style="font-style: normal;"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP775734998" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Estampillas</span><span data-close-text="true">Estampillas</span></a> </p>
+<div data-targetname="POPUP775734998">
+	<p class="H_Parrafo_de_Item">Posibilidad de ingresar en forma manual, 
+	 la numeración de las estampillas de importación asociadas al despacho 
+	 en cuestión.</p>
+	<p class="H_Parrafo_de_Item">La numeración ingresada en el campo desde 
+	 debe ser menor a la numeración ingresada en el campo hasta.</p></div>
+<p class="H_Item_con_imagen_negrita" style="font-style: normal;"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP775724324" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Garantía</span><span data-close-text="true">Garantía</span></a> </p>
+<div data-targetname="POPUP775724324">
+	<p class="H_Parrafo_de_Item" style="font-style: normal;"><span style="font-style: normal;">Si 
+	 el Despacho tiene asociada una garantía, es posible dejar constancia 
+	 de la misma en este apartado.</span></p>
+	<p class="H_Parrafo_de_Item" style="font-style: normal;">La carga de 
+	 esta información no es obligatoria, y puede realizarse en una instancia 
+	 posterior al alta del despacho.</p></div>
+<p class="H_Item_con_imagen_negrita" style="font-style: normal;"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP775757086" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo</span><span data-close-text="true">Tipo</span></a></p>
+<div data-targetname="POPUP775757086">
+	<p class="H_Parrafo_de_Item" style="font-style: normal;"><span style="font-style: normal;">Permite 
+	 identificar el tipo de Garantía asociada al Despacho. Pudiendo ser:</span></p>
+	<ul>
+		<li style="font-size: 8pt; font-style: normal;"><p class="H_Parrafo_de_Item">Efectivo. 
+		 Se habilita una casilla para indicar el importe de la misma.</p></li>
+		<li style="font-size: 8pt; font-style: normal;"><p class="H_Parrafo_de_Item">Caución. 
+		 En caso de seleccionar esta opción, se habilitan casilleros para 
+		 ingresar los datos relacionados a la Póliza (fecha de emisión, 
+		 Compañía emisora, número, fecha de vencimiento e importe. La fecha 
+		 de vencimiento debe ser igual o mayor a la fecha de emisión de 
+		 la póliza).</p></li>
+		<li style="font-size: 8pt; font-style: normal;"><p class="H_Parrafo_de_Item">Mixta. 
+		 En caso de seleccionar esta opción, se habilitarán ambas posibilidades.</p></li>
+	</ul></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP775660339');
+	TextPopupInit('a2', 'POPUP775661789');
+	TextPopupInit('a3', 'POPUP775691276');
+	TextPopupInit('a4', 'POPUP775697908');
+	TextPopupInit('a5', 'POPUP775704185');
+	TextPopupInit('a6', 'POPUP775734998');
+	TextPopupInit('a7', 'POPUP775724324');
+	TextPopupInit('a8', 'POPUP775757086');
+//]]></script>
+
+
+</body></html>

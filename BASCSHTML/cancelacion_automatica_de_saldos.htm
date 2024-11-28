@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.1.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Cancelacion automatica de saldos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Cancelación automática de saldos"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Cancelación automática de saldos</h1>
+  <p class="H_Texto">Mediante esta tarea es posible generar en forma automática notas de crédito y/o débito para cancelar saldos de clientes y liquidaciones y liquidaciones de crédito para cancelar saldos de proveedores.</p>
+  <p class="H_Texto">Los comprobantes se generan con la letra correspondiente asociada al comprobante al cual se aplican y no calculan impuestos de ningún tipo.</p>
+  <p class="H_Texto">El proceso cancela facturas, notas de crédito y notas de débito autónomas.</p>
+  <p class="H_Texto">Las cancelaciones de créditos pendientes se cancelarán con notas de débito autónomas.</p>
+  <p class="H_Texto">Las notas de débito autónomas que tengan saldos a cancelar, se cancelarán con notas de crédito si son a cobrar, y con liquidaciones de crédito si son a pagar.</p>
+  <p class="H_Texto">En saldos a cobrar, las cancelaciones de créditos pendientes se cancelarán con notas de débito autónomas.</p>
+  <p class="H_Texto">Tanto en saldos a cobrar como a pagar, los saldos a cancelar de notas de débito, se aplicarán a comprobantes de compras y ventas ya existentes en el sistema, y luego esos comprobantes se aplicarán a las notas de crédito generadas.</p>
+  <p class="H_Texto">Los datos a ingresar para generar automáticamente notas son:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Opciones</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608426783" href="#"><span data-open-text="true" data-skip-index="true">Comprobantes a generar</span><span data-close-text="true">Comprobantes a generar</span></a></p>
+  <div data-targetname="POPUP608426783">
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/>
+      Cuenta corriente de</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Seleccionar Cliente o Proveedor,
+      según los saldos a cancelar.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/>
+      Débitos</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Fecha</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha que tendrán las notas de
+      débito y liquidaciones que se generen.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Prefijo Comprobantes A</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondiente a las
+      notas de débito y liquidaciones <font style="font-weight: bold;">A</font>
+      que se generen.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique
+      determina el <a href="tabla__Talonarios.htm">talonario</a> asociado
+      a los comprobantes a generar.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El talonario debe contar con el
+      método de numeración Automático o Preimpreso.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Prefijo Comprobantes B</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondiente las notas
+      débito y liquidaciones <font style="font-weight: bold;">B</font> que
+      se generen.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique
+      determina: el <a href="tabla__Talonarios.htm">talonario</a> asociado
+      a los comprobantes a generar.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El talonario debe tener método
+      de numeración Automático o Preimpreso.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Prefijo Comprobantes I</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondiente a las
+      liquidaciones <font style="font-weight: bold;">I</font> que se generen.
+      Este campo sólo se habilita para proveedores.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique
+      determina el talonario asociado a cada liquidación I que se genere,
+      el talonario debe tener método de numeración Automático o Preimpreso.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se debe indicar el Servicio a
+      incluir en los comprobantes a generar.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a un servicio
+      de tipo <font style="font-weight: bold;">Importe</font> ya definido
+      en el sistema.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/>
+      Créditos</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Fecha</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha que tendrán las notas y
+      liquidaciones de crédito que se generen.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Prefijo notas A</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las
+      notas de crédito y liquidaciones de crédito <font style="font-weight: bold;">A</font>
+      que se generen.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que se indique determina
+      el talonario a utilizar. Este debe contar con un método de numeración
+      Automático o Preimpreso.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Prefijo notas B</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las
+      notas de crédito y liquidaciones <font style="font-weight: bold;">B</font>
+      que se generen.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que se indique determina
+      el talonario a utilizar. Este debe contar con un método de numeración
+      Automático o Preimpreso.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Código del servicio a incluir
+      en los comprobantes, debe ser un servicio de tipo <font style="font-weight: bold;">Importe</font>
+      ya definido en el sistema.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Sub-Item"></p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608650041" href="#"><span data-open-text="true" data-skip-index="true">Desde fecha</span><span data-close-text="true">Desde fecha</span></a></p>
+  <div data-targetname="POPUP608650041">
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha desde la cual se consideran
+      los comprobantes a incluir en el proceso.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta fecha corresponde a la fecha
+      de vencimiento de los mismos, ya que los comprobantes de cancelación
+      se generan por vencimiento y no por comprobante.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608647564" href="#"><span data-open-text="true" data-skip-index="true">Hasta fecha</span><span data-close-text="true">Hasta fecha</span></a></p>
+  <div data-targetname="POPUP608647564">
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha hasta la cual se consideran
+      los comprobantes a incluir en el proceso.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta fecha corresponde a la fecha
+      de vencimiento de los mismos, ya que los comprobantes de cancelación
+      se generan por vencimiento, no por comprobante.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/><a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608680514" href="#"><span data-open-text="true" data-skip-index="true"> Moneda</span><span data-close-text="true"> Moneda</span></a></p>
+  <div data-targetname="POPUP608680514">
+    <p class="H_Parrafo_de_Item"><a href="tabla__Tablas_de_indices_y_cotizaciones.htm">Moneda</a>
+      correspondiente a la cuenta corriente que se desea cancelar. Para
+      moneda local, deberá dejarse este campo en blanco.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608674291" href="#"><span data-open-text="true" data-skip-index="true">Genera para comprobantes de caja</span><span data-close-text="true">Genera para comprobantes de caja</span></a></p>
+  <div data-targetname="POPUP608674291">
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa se cancelan también
+      los saldos pendientes de recibos y órdenes de pago.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608699532" href="#"><span data-open-text="true" data-skip-index="true">Saldos menores a</span><span data-close-text="true">Saldos menores a</span></a></p>
+  <div data-targetname="POPUP608699532">
+    <p class="H_Parrafo_de_Sub-Sub-Item">Importe correspondiente al valor
+      máximo de los saldos a cancelar.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Sólo se generarán comprobantes
+      para cancelar saldos menores al que acá se indica.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP608703620" href="#"><span data-open-text="true" data-skip-index="true">Imputación contable</span><span data-close-text="true">Imputación contable</span></a></p>
+  <div data-targetname="POPUP608703620">
+    <p class="H_Parrafo_de_Sub-Sub-Item">Código de la imputación contable
+      correspondiente a las cuentas corrientes a saldar.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado en blanco,
+      se considerarán todas las imputaciones correspondientes a la moneda
+      indicada.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Sub-Item"></p>
+  <p class="H_Texto">Según la selección realizada en la ficha Opciones, se dispone de una ficha que indica Clientes o Proveedores.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Clientes.htm">Clientes</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Proveedores.htm">Proveedores</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP608426783');
+    TextPopupInit('a2', 'POPUP608650041');
+    TextPopupInit('a3', 'POPUP608647564');
+    TextPopupInit('a4', 'POPUP608680514');
+    TextPopupInit('a5', 'POPUP608674291');
+    TextPopupInit('a6', 'POPUP608699532');
+    TextPopupInit('a7', 'POPUP608703620');
+    //]]>
+  </script>
+
+</body></html>

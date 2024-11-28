@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.10.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Pedidos pendientes por atributo</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Pedidos pendientes por atributo</h1>
+  <p class="H_Texto">Este informe permite ver, dado un <a href="tabla__Atributos.htm">atributo</a> de clientes, una lista con los pedidos registrados en el sistema que se encuentran pendientes de entrega al momento de la emisión del listado, agrupando los pedidos por cada valor del atributo asociado al <a href="tabla__Clientes.htm">cliente</a> titular de cada pedido.</p>
+  <p class="H_Texto">Se puede ver la lista de pedidos pendientes en forma consolidada o detallada. La opción consolidada muestra para cada valor del <a href="tabla__Atributos.htm">atributo</a> que se indique, la cantidad de pedidos pendientes, la cantidad total, el peso y el volumen total de dichos pedidos. La opción detallada muestra la lista de pedidos para cada valor, incluyendo los datos de cada pedido, fecha, tipo y número de comprobante, y la cantidad, peso y volumen correspondiente a las líneas pendientes.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP597472341" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP597472341">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Fecha de Entrega</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cliente</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite indicar los códigos de los clientes cuyos pedidos quieren incluirse en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Atributos.htm">atributo</a> para el que se desea emitir el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un atributo aplicable a <font style="font-weight: bold;">Clientes.</font>
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">Se incluirán en el informe los pedidos pendientes de <a href="tabla__Clientes.htm">clientes</a> que tengan asociados el atributo que aquí se indique.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de depósito cuyos pedidos asociados se desean incluir en el informe. Este código de depósito se refiere a los depósitos a los que se le pidió la mercadería en los pedidos que se incluyen en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un depósito en particular o un grupo de depósitos. Si este dato es dejado en blanco, se incluirán todos los depósitos en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Concepto</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de tres caracteres correspondiente al <a href="tabla__Conceptos.htm">concepto</a> asociado a los pedidos pendientes que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un concepto en particular o un grupo de conceptos. Si este dato es dejado en blanco, se incluirán los pedidos de todos los conceptos en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Vendedor</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del vendedor o rango de <a href="tabla__Agentes.htm">vendedores</a> asociados a los pedidos pendientes que se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un vendedor en particular o un grupo de vendedores. Si este dato es dejado en blanco, se incluirán los pedidos de todos los vendedores en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los pedidos pendientes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El prefijo debe corresponder a un <a href="tabla__Talonarios.htm">talonario</a> que admita el ingreso de pedidos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco se incluirán en el listado, los pedidos pendientes sin tener en cuenta su numeración.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Números de los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse un número en particular o un rango de números.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco y se indicó un prefijo, se incluirán todos los pedidos pendientes del prefijo indicado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP597520601" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP597520601">
+    <p class="H_Parrafo_de_Item">Indicación del tipo de listado a imprimir.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Detalle</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona <font style="font-weight: bold;">Consolidado</font> se muestra para cada valor del <a href="tabla__Atributos.htm">atributo</a> indicado, la cantidad de pedidos pendientes, la cantidad total de unidades, y el peso y volumen total.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Detalla comprobantes</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona <font style="font-weight: bold;">Detalla comprobantes</font> se muestra para cada valor del atributo indicado, una lista con todos los pedidos pendientes, con los datos de cada pedido, y la cantidad, el peso y el volumen correspondiente a las líneas de los pedidos que se encuentren pendientes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Detallar componentes</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se activa, en caso que el informe incluya ítems de tipo Conjunto, se detallan sus componentes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Normalizado a contenedor default</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción sólo estará habilitada si se emite el listado en forma consolidada.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona esta opción, las cantidades de unidades pendientes correspondientes a <a href="tabla__Bienes.htm">ítems</a> contenedores, se mostrarán expresadas en unidades del contenedor default de cada ítem, es decir, en cada caso se divide la cantidad de unidades del ítem por la cantidad de unidades del ítem que hay en el contenedor default.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo pedidos con reserva pendiente</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir en el informe solamente los pedidos pendientes de asignación de mercadería o todos los pedidos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los pedidos con asignación pendiente son aquellos que tienen ítems que aún no han sido asignados ya sea en forma manual o automática.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo pedidos con autorización pendiente</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir en el informe solamente los pedidos pendientes de autorización o todos los pedidos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los pedidos con autorización pendiente son aquellos que requieren autorización, según lo indicado en los parámetros del sistema, pero que aún no se ha realizado la misma.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo pedidos autorizados</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se activa, se listarán los pedidos pendientes de entrega que se encuentran autorizados.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir pedidos expirados</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir o no en el informe los pedidos externos que se encuentren expirados.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Detallar componentes</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se activa, en caso que el informe incluya ítems de tipo Conjunto, se detallan sus componentes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Método de pago</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Contado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean incluir o no en el listado los pedidos externos con método de pago de contado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cuenta corriente</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean incluir o no en el listado los pedidos externos con método de pago Cuenta corriente.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP597472341');
+    TextPopupInit('a2', 'POPUP597520601');
+    //]]>
+  </script>
+
+</body></html>

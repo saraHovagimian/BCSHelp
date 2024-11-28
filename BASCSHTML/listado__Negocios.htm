@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.10.0_10"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Negocios</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Negocios"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Listado de negocios</h1>
+  <p class="H_Texto">Este informe permite ver los datos asociados a los negocios registrados en el sistema.</p>
+  <p class="H_Texto">Puede indicarse un rango de negocios a incluir en el listado y además pueden seleccionarse los negocios a listar por <a href="tabla__Atributos.htm">atributos</a> y valores de atributos de los mismos.</p>
+  <p class="H_Texto">Se muestran para cada negocio su fecha, <a href="tabla__Clientes.htm">cliente</a> titular, importe presupuestado, observaciones y luego el detalle de los comprobantes de compras y ventas asociados a cada uno con fecha, tipo, número de comprobante, cliente o proveedor, ítem, importe y saldo resultante del ingreso de cada nuevo comprobante al negocio.</p>
+  <p class="H_Texto">Las facturas de compra y los egresos de mercadería a clientes se debitan, mientras que las facturas de venta, los ingresos de mercadería de clientes y los egresos de mercadería a proveedores se acreditan.</p>
+  <p class="H_Texto">El importe de las facturas sale del neto gravado de las mismas, para los ingresos y egresos de mercadería se toma el costo de cada movimiento. Dichos comprobantes tendrán costo si se efectuó el <a href="cierre_operativo.htm">cierre del subdiario</a> de movimiento de materiales correspondiente. Si los movimientos no tienen aún un costo, para aquellos <a href="tabla__Bienes.htm">ítems</a> que se valúan por lista de precios, se toma el valor de la lista de precios default a la fecha de cada movimiento.</p>
+  <p class="H_Texto">Los importes se muestran expresados en la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> de cada negocio.</p>
+  <p class="H_Texto">El informe puede emitirse para un rango de fechas de modo de incluir las operaciones efectuadas en un período de tiempo determinado. Para cada negocio se informará el saldo anterior, compuesto por la suma de todos los movimientos con fecha anterior a la fecha desde la cual se solicita el informe.</p>
+  <p class="H_Texto">Al finalizar el detalle de los movimientos de cada negocio se informan totales de débitos y créditos, y total de comprobantes registrados para el negocio.</p>
+  <p class="H_Texto">Al final del listado se muestran los totales generales discriminados por moneda.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP607955285" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP607955285">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Tipo de Listado</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la forma en que se desea imprimir el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Continuo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona tipo <font style="font-weight: bold;">Continuo</font> se imprime un negocio a continuación de otro.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Un negocio por hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona tipo Un negocio por hoja el informe se imprime separando los negocios, utilizando una hoja para cada uno.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Negocios cerrados</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se incluyen o no en el informe los negocios que hayan sido cerrados.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se marca esta opción, los negocios cerrados aparecerán en el informe con la indicación correspondiente.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Hasta el:</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona listar negocios cerrados, es posible seleccionar listar negocios cerrados hasta una determinada fecha que se informa en este campo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si la fecha se deja en blanco, se tendrán en cuenta todos los negocios cerrados, sin importar su fecha de cierre.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al listar negocios cerrados se mostrará también la fecha de cierre del negocio.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Negocios sin movimientos</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se incluyen o no en el informe los negocios que no hayan tenido movimientos en el período de tiempo especificado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se marca esta opción, los negocios sin movimientos aparecerán en el informe con la leyenda Negocio sin movimientos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir egresos facturados</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda este campo, se incluyen en el informe los egresos facturados relacionados con el negocio.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP607959336" href="#"><span data-open-text="true" data-skip-index="true">Ficha Negocios</span><span data-close-text="true">Ficha Negocios</span></a></p>
+  <div data-targetname="POPUP607959336">
+    <p class="H_Parrafo_de_Item">En esta ficha pueden indicarse diferentes filtros a aplicar a los negocios que se incluyen en el listado.</p>
+    <p class="H_Parrafo_de_Item">Pueden filtrarse los negocios por código, o por <a href="tabla__Atributos.htm">atributos</a> y valores de atributos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Negocio</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de negocios que se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un negocio ya registrado en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un negocio en particular o un grupo de negocios. Si este dato es dejado en blanco, se incluirán todos los negocios en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los <a href="tabla__Atributos.htm">atributos</a> asociados a los negocios que se desean incluir en el listado con sus valores.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Atributo</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> de los negocios que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al atributo y al valor de atributo que se indique se considerará o no cada uno de los negocios del rango seleccionado, según los atributos y valores que se hayan asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún atributo, todos los negocios del rango solicitado intervendrán en el listado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del atributo correspondiente al código informado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Valor del <a href="tabla__Atributos.htm">atributo</a> informado asociado a los negocios que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder a un valor ya definido en el sistema para el atributo indicado en el campo <font style="font-weight: bold;">Código</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al atributo y al valor de atributo que se indique se considerará o no cada uno de los negocios del rango seleccionado, según los atributos y valores que se hayan asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica un valor, se incluirán en el listado todos los negocios que tengan asociados el valor del atributo indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún valor de atributo, todos los negocios del rango solicitado que tengan el atributo indicado, intervendrán en el listado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP607955285');
+    TextPopupInit('a2', 'POPUP607959336');
+    //]]>
+  </script>
+
+</body></html>

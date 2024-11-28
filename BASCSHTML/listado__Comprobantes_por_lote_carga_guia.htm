@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.10.0_8"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Comprobantes por lote/carga/guia</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Comprobantes,Lote/carga/guía"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Comprobantes por lote/carga/guía</h1>
+  <p class="H_Texto">Este informe permite ver el detalle de los comprobantes correspondientes a un determinado lote de comprobantes automáticos, los asignados a una carga o los incluidos en una guía en el sistema.</p>
+  <p class="H_Texto">Recordemos que en un lote se encuentran las facturas de venta y los egresos de mercadería generados con un proceso de generación automática. Este proceso genera los comprobantes de ventas en un lote provisorio cuyo tipo y fecha deben indicarse al generar los comprobantes.</p>
+  <p class="H_Texto">Las cargas pueden asignarse a la mercadería facturada ya sea en forma manual o automática, en el proceso de distribución de cargas.</p>
+  <p class="H_Texto">Las guías se generan cuando finaliza la asignación de mercadería a una carga y se realiza el cierre de esa carga.</p>
+  <p class="H_Texto">Lo primero que debe indicarse para emitir el listado, es si se desea listar los comprobantes por lote, por carga o por guía.</p>
+  <p class="H_Texto">Pueden verse para cada lote, carga o guía los comprobantes asociados con fecha, tipo, número de comprobante, cliente, depósito o agente titular, e importe.</p>
+  <p class="H_Texto">Además puede emitirse el listado en forma detallada, incluyendo para cada comprobante el detalle de los <a href="tabla__Bienes.htm">ítems</a> facturados, la observación que se les haya adicionado y los totales de importes gravados, impuestos y percepciones. Los importes se exhiben expresados en la moneda de cada comprobante. Se incluyen además los totales de unidades, peso y volumen de cada comprobante.</p>
+  <p class="H_Texto">En caso de listarse comprobantes de venta emitidos a través de un controlador fiscal, se exhibirán en este informe tanto los Ajustes por redondeo de Base imponible, como los Ajustes por redondeo, calculados por el sistema en forma automática.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Al final del listado se imprime el total de comprobantes incluidos en el lote, carga o guía indicados.</p>
+  <p class="H_Texto">Cuando se liste indicando un lote, al cambiar el número de carga se efectuará un salto de hoja.</p>
+  <p class="H_Texto">Es importante tener en cuenta, que los totales del listado se muestran, además discriminados por la moneda de los comprobantes.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Texto">Los datos a ingresar para la emisión del listado son:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP605014554" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP605014554">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Origen</p>
+    <p class="H_Parrafo_de_Sub-Item">Tipo de origen de los comprobantes a incluir en el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Lote</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona origen Lote se debe indicar el tipo y fecha del lote a listar. En caso que se requiera es posible informar varios lotes, siempre y cuando correspondan a una misma fecha.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El listado mostrará el detalle de las facturas y egresos de mercadería asociados al lote, y podrán listarse los comprobantes que aún se encuentren en el lote provisorio o los que ya hayan sido incluidos en los movimientos definitivos al haber efectuado el cierre del lote indicado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se agruparán además los comprobantes del lote solicitado, por carga. Si todavía no se efectuó la distribución de cargas se mostrarán los comprobantes agrupados bajo el título <font style="font-weight: bold;">Sin carga</font>.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tipo de lote</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Código de lote correspondiente a los comprobantes de venta que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato no se encuentra habilitado si se seleccionó origen Guía.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Fecha del lote</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Fecha del lote correspondiente a los comprobantes de venta que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato no se encuentra habilitado si se seleccionó origen Guía.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Carga</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona origen Carga se debe indicar el número de carga, y el tipo y fecha del lote a listar. El listado mostrará el detalle de las facturas que tengan asignadas la carga solicitada.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Guía</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona origen Guía, indicando prefijo y número de comprobante, el listado mostrará el detalle de las facturas asociadas a la misma. Se visualizará en el titulo el nombre del depósito y su descripción, cuando todas las guías seleccionadas (sin considerar los restantes filtros indicados) correspondan al mismo depósito. Análogamente sucederá con el transportista y el camión.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo del talonario asignado a las guías.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número de la guía a listar. Es posible indicar una, varias o todas las existentes.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cerrado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean listar los comprobantes de ventas generados en forma automática y ya cerrados.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado si se seleccionó origen Lote.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> No Cerrado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desean listar los comprobantes de ventas generados en forma automática y que se encuentran en lotes aún no cerrados.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado si se seleccionó origen Lote.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número de carga</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número de carga correspondiente a las facturas de venta que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado si se seleccionó origen Carga.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número de guía</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo y número de comprobante de la guía cuyos comprobantes se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado si se seleccionó origen Guías.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP605073119" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP605073119">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Opciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Tipo de listado a imprimir.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona listado <font style="font-weight: bold;">Consolidado</font> se mostrará el detalle de los comprobantes asociados al lote, carga o guía solicitado con los valores totales de cada uno.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Detallado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona listado <font style="font-weight: bold;">Detallado</font> se mostrará además el detalle de los ítems facturados o remitidos en cada comprobante indicando su ubicación física, la cantidad expresada en ambas unidades de medida, cantidad de contenedores, precios y bonificaciones. Luego se informarán los totales de cada comprobante, con total gravado, impuestos, percepciones, total de unidades, peso y volumen.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones que es detallarán a continuación se activarán sólo en caso de seleccionar la opción <font style="font-weight: bold;">Detallado</font> y consisten en un segundo nivel de ordenamiento.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por secuencia de ingreso</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea ordenar los comprobantes incluidos en el informe de acuerdo a la secuencia de ingreso de los mismos al sistema.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por ubicación física</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se desea ordenar los comprobantes incluidos en el informe de acuerdo a la ubicación física de los ítems que los mismos incluyen. Aquellos ítems que no tengan asociada ubicación física dentro del depósito se listarán a continuación de aquellos que sí la tengan.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Medidas tabuladas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea listar un comprobante por hoja. Esta opción sólo se activa en caso de haber</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción solo es accesible si el informe se emite en forma &quot;Detallada&quot;.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando se activa esta opción, para cada comprobante, código de ítem y color, se detallarán en una misma línea las medidas que presentan igual precio (en este caso no se respetará la secuencia de ingreso en el comprobante).</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada comprobante se exhibirán los datos generales del encabezado del comprobante en forma análoga a como salen en la emisión detallada no tabular. Después de estos datos, para cada tabla de medidas que esté involucrada en el comprobante, se exhibirán los códigos de ítem, colores, ubicaciones y precios que corresponden a las cantidades detalladas.</p>
+    <p class="H_Parrafo_de_Sub-Item">En el caso de los códigos de ítem que no manejan colores y medidas se detallarán la cantidad en la primera unidad de medida, y cuando el sistema maneje doble unidad de medida y corresponda, la cantidad en la segunda unidad de medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada tabla de medidas se detallará un total de cantidades cuando se hayan detallado para ésta más de un código de ítem y/o color y/o precio. Análogamente para el conjunto de ítems que no manejan talles y colores.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si bien están disponibles, no se detallarán totales por comprobante ni totales generales.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cabe aclarar, que cuando se emita en forma tabular no estará disponible el código alternativo del ítem asociado a la medida y color, dado que en general impediría la consolidación por color. Tampoco estará disponible el importe imponible para tasa departamental del comprobante cuando se emita ordenado por departamento.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Un comprobante por hoja</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea listar un comprobante por hoja. Esta opción sólo se activa en caso de haber seleccionado la opción <font style="font-weight: bold;">Detallado</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Informar saldo del cliente</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea que el listado incluya los saldos de los clientes a determinada fecha. Se trata del saldo no documentado vencido, a la fecha que se indique. Estará expresado en la <font style="font-weight: bold;">Moneda para créditos de clientes</font> informada en los Parámetros de cuentas corrientes o en la moneda local, en caso de no haber indicado moneda alguna en dicha pantalla.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> A fecha</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha a la cual se desea emitir el informe del saldo del cliente.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Tipo de ordenamiento con el que se desea emitir el informe.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Comprobante</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento <font style="font-weight: bold;">Comprobante</font> se ordenan los datos listados por prefijo y número de comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Departamento</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El ordenamiento por Departamento es aplicable en caso de existir ventas gravadas con el impuesto denominado Tasa Bromatológica o Tasa departamental aplicado en la República Oriental del Uruguay. Por lo tanto solo será utilizado por empresas ubicadas en dicho país y dedicadas a la comercialización de comestibles y bebidas. En caso de solicitar este ordenamiento, se incluirá en el informe una línea por cada comprobante detallando los importes correspondientes a la tasa bromatológica (en los casos en que ésta se incluye).</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Destino</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Destino se ordenan los comprobantes listados por el destino asociado a los mismos. Al seleccionar esta opción se podrá ordenar por:</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/>
+      <font style="font-weight: normal;">Código</font>
+    </p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/>
+      <font style="font-weight: normal;">Nombre</font>
+    </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Ruta</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Ruta se ordenan los comprobantes listados por código de ruta y los destinos que figuren en ella se listarán de acuerdo al orden que se estableció en la misma. Los destinos que no figuren en la ruta se agregarán a continuación.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm"><span style="font-style: normal;">Empresas</span> </a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP605014554');
+    TextPopupInit('a2', 'POPUP605073119');
+    //]]>
+  </script>
+
+</body></html>

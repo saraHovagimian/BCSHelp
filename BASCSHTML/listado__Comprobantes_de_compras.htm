@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.11.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Comprobantes de compras</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Comprobantes de compras</h1>
+  <p class="H_Texto">Este informe permite ver el detalle de los comprobantes de compras registrados en el sistema pudiendo seleccionar los comprobantes a listar con diferentes rangos y criterios.</p>
+  <p class="H_Texto">Se incluyen en el listado todas las facturas de compra, notas de débito y crédito, comprobantes internos de compras y demás comprobantes incluidos en los rangos solicitados.</p>
+  <p class="H_Texto">Puede verse cada comprobante con su fecha, tipo, número externo e interno, <a href="tabla__Subdiarios.htm">subdiario</a> , <a href="tabla__Cajas.htm">caja</a> y <a href="tabla__Proveedores.htm">proveedor</a> , y luego el detalle de los <a href="tabla__Bienes.htm">ítems</a> mostrando la cantidad de unidades, indicando en que unidad de medida esta expresada la misma, precio unitario y el importe total de cada ítem. Para los ítems que provienen de otros comprobantes (por ejemplo, al facturar órdenes de compra), se muestran además la fecha, tipo y número de dichos comprobantes. Los ítems de tipo base imponible se mostrarán con una marca al lado de cada importe indicando que el mismo es una base imponible.</p>
+  <p class="H_Texto">En caso que el comprobante genere partes de diferencias, se detallará si el control de calidad está finalizado o no y el estado del parte de diferencia (finalizado, pendiente o sin incidentes).</p>
+  <p class="H_Texto">Al finalizar cada comprobante se imprime el total gravado, totales de I.V.A. y demás impuestos y el total general del comprobante. Los importes y totales de cada comprobante se imprimen expresados en la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> del comprobante.</p>
+  <p class="H_Texto">Al final del listado se informan el total de comprobantes listados y los importes totales por moneda.</p>
+  <p class="H_Texto">Las facturas de compra pendientes de autorización se exhiben acompañadas con la letra <font style="font-weight: bold;">A</font> indicando que aún no están autorizadas.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP586773186" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP586773186">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Subdiario</p>
+    <p class="H_Parrafo_de_Sub-Item">Número del <a href="tabla__Subdiarios.htm">subdiario</a> de compras cuyos comprobantes se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un subdiario en particular o un grupo de subdiarios. Si este dato es dejado en blanco, se incluirán todos los subdiarios de compras en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Caja</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la <a href="tabla__Cajas.htm">caja</a> de los comprobantes de compras que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una caja en particular o un grupo de cajas. Si este dato es dejado en blanco, se incluirán todas las cajas en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Comprador</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del comprador a utilizar como filtro de los bienes cuyos comprobantes de compra se desea listar.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los comprobantes de compras que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El prefijo debe corresponder a un <a href="tabla__Talonarios.htm">talonario</a> que admita el ingreso de facturas de compra.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco se incluirán en el listado los comprobantes de compras sin tener en cuenta su numeración.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Números de los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse un número en particular o un rango de números. Si este dato es dejado en blanco y se indicó un prefijo, se incluirán todos los comprobantes de compras ingresados con el prefijo indicado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP636171255" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP636171255">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo comprobantes pendientes de autorización</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea incluir en el informe solamente aquellos comprobantes que aún están pendientes de autorización.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo gastos pendientes de asignar a carpetas de importación</p>
+    <p class="H_Parrafo_de_Sub-Item">Incluye los gatos realizados y pendientes a imputar a carpeta de imputación.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo comprobantes pendientes de entrega</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea incluir en el informe solamente aquellos comprobantes que están pendientes de entrega. Es decir, aquellos que incluyen bienes aún no recibidos o no entregados (en caso de devoluciones).</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo diferencias de cambio</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite listar solamente los comprobantes ingresados como diferencias de cambio, ya sea en forma manual o automática.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al emitir el listado, se mostrará la letra D en los encabezados de los comprobantes de diferencia de cambio que se listen.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Es posible indicar como se desea ordenar la información, a saber, por:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Comprobante</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Proveedor</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Comprador</p>
+    <p class="H_Parrafo_de_Sub-Item">Los ordenamientos por proveedor y comprador detallarán la información ordenada, según el caso, por proveedor o comprador siguiendo a este ordenamiento el ordenamiento por comprobante. Estos ordenamientos presentarán totales por proveedor/comprador y se podrá indicar que se produzca un cambio de hoja cuando cambia el proveedor/comprador.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Cambio de hoja</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de ordenar por proveedor o por comprador permite indicar que se cambie de hoja cuando cambia el proveedor/comprador.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP585159372" href="#"><span data-open-text="true" data-skip-index="true">Ficha Tipos de comprobantes</span><span data-close-text="true">Ficha Tipos de comprobantes</span></a></p>
+  <div data-targetname="POPUP585159372">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Tipos de comprobantes</p>
+    <p class="H_Parrafo_de_Sub-Item">Se muestra en esta tabla una lista con todos los <a href="tabla__Tipos_de_comprobantes.htm">tipos de comprobantes</a> de compras posibles de seleccionar para incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta opción permite, si se desea, listar sólo determinados tipos de comprobantes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Inicialmente la tabla tiene seleccionados todos los tipos de comprobantes que contiene, de modo que si se imprime el listado sin modificar esta tabla, todos los comprobantes de compras que cumplen con las opciones y rangos solicitados son incluidos en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Haciendo doble click en la línea de la tabla que se desee se procede a marcar o desmarcar un determinado tipo de comprobante a imprimir.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Invertir selección</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante este botón se invierte la selección de toda la tabla. Es decir, si la tabla tiene seleccionados todos los tipos de comprobantes, al pulsar el botón no queda seleccionado ningún tipo y a partir de allí puede elegirse algún comprobante en particular.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Proveedores.htm">Ficha Proveedores</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm" style="font-style: normal;">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP586773186');
+    TextPopupInit('a3', 'POPUP636171255');
+    TextPopupInit('a2', 'POPUP585159372');
+    //]]>
+  </script>
+
+</body></html>

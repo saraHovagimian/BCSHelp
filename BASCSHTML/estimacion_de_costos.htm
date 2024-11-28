@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_29"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Estimacion de costos</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Estimación de costos</h1>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><span lang="ES" xml:lang="ES">A</span>l 
+ indicar esta opción se debe seleccionar en &quot;Método de valuación&quot; 
+  el método de valuación que se utilizará para realizar la estimación.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">También se deberá indicar 
+ la fecha a la que se desea generar la estimación, y, en el caso de seleccionar 
+ el método &quot;valuación ocasional&quot;, se tomará la lista que se indique, 
+ vigente a dicha fecha.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">También se deberá indicar 
+ si se desea la estimación en moneda local o moneda de contabilización 
+ adicional (si la misma está habilitada) en el dato &quot;Valores en&quot;.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Los bienes a incluir en 
+ listas generadas en base a estimación de costos deben tener indicado en 
+ el ABM de bienes una hoja de ruta por defecto, en la solapa de Producción. 
+ En dicha hoja de ruta el ítem debe ser el producto terminado indicado 
+ en la primera fila de la grilla de productos terminados (o sea, el producto 
+ terminado principal).</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">En caso de que no esté 
+ indicada la hoja de ruta por defecto con las características anteriormente 
+ definidas, el sistema lo informará al operador durante la generación de 
+ la lista y no se continuará con el proceso.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES"><span lang="ES" xml:lang="ES">A</span>l 
+ oprimir el botón de generar, el sistema calculará el precio de los bienes 
+ incluidos en dicha lista en base a la estimación de costos de las hojas 
+ de ruta por defecto, a la fecha indicada.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si alguno de los insumos 
+ en dicha hoja de ruta tiene a su vez indicada una hoja de ruta por defecto, 
+ el costo de dicho insumo se obtendrá de la estimación de costos de dicha 
+ hoja, de manera similar a como se hace la explosión de semi-elaborados 
+ en el informe de estimación de costos. Este proceso se repetirá hasta 
+ que no haya insumos con hoja de ruta por defecto. El costo de dichos insumos 
+ saldrá del método de valuación indicado en la generación, en la moneda 
+ indicada y a la fecha indicada. Dicho costo se irá propagando a los semi-elaborados 
+ hasta llegar a obtener el costo del producto terminado que está incluido 
+ en la lista a generar.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">El costo se expresará 
+ en la moneda de la lista a generar y en la unidad de medida que tenga 
+ definida dicha lista.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">El proceso hace una serie 
+ de consideraciones especiales para los bienes con colores y medidas. Hay 
+ que tener en cuenta si el bien tiene precios distintos por color y/o medida 
+ y la manera en que está definida la hoja de ruta por defecto (si deja 
+ color pendiente o no).</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Por ejemplo: si la hoja 
+ de ruta no indica producto terminado con color genérico y el bien no detalla 
+ precios por color y medida, el sistema usará la hoja de ruta por defecto 
+ como esté definida, y si hay más de un color y medida indicado se hará 
+ un promedio ponderado de los costos por combinación de color y medida 
+ obtenido. Este promedio será el precio que se indicará en la lista de 
+ precios. En cambio, si la hoja de ruta indica color genérico se calculará 
+ el costo de la hoja para el primer color del bien que tiene más talles 
+ habilitados, y se hará el promedio ponderado de dichos costos por talle. 
+ Esto último se hace también si el bien detalla solo precios por talle.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si el bien detalla precios 
+ por color si la hoja de ruta no deja color pendiente, se calculará su 
+ costo como esté definida. Si deja color pendiente se calculará el costo 
+ de la hoja para cada color habilitado para el bien.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">En cuanto a los insumos 
+ con color y medida, si en la hoja se indicó el color genérico para dicho 
+ insumo, el sistema considerará para su estimación el primer color que 
+ tenga habilitado el insumo en su tabla de colores para ese talle.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">En la explosión de insumos 
+ con color y medida, si la hoja de ruta por defecto del insumo no tiene 
+ la combinación de color y medida del mismo, se considerará que el mismo 
+ no es un semi-elaborado. Si la hoja de ruta por defecto del insumo se 
+ indica para el color genérico, se considerará para la estimación de dicho 
+ semi-elaborado la hoja de ruta como si se estuviera fabricando el color 
+ que se precisa de dicho semi-elaborado.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">La lista generada puede 
+ ser modificada mediante los programas de modificación de precios por ítem, 
+ atributo, etc., y participará del circuito de autorización de listas de 
+ precios.</span></p>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+
+
+</body></html>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.1.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Notas de debito y credito por diferencias de cambio</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Cambio,Notas"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Notas por diferencias de cambio</h1>
+<p class="H_Texto">Mediante este proceso es posible generar en forma automática, 
+ notas de débito y crédito por diferencias de cambio.</p>
+<p class="H_Texto">Las diferencias de cambio se producen por variaciones 
+ en las cotizaciones de las <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">monedas</a> 
+ asociadas a los <a href="tabla__Clientes.htm">clientes</a> a los cuales 
+ se les vende.</p>
+<p class="H_Texto">Por ejemplo, si varía la cotización desde el momento 
+ en que se realiza la venta hasta el momento en que se efectúa el pago 
+ que salda la factura, ocurrirá que la factura estará saldada en la moneda 
+ de la cuenta corriente pero no en moneda local. Esa diferencia en moneda 
+ local será el importe de la nota por diferencia de cambio, y permite que 
+ el comprobante quede saldado también en moneda local.</p>
+<p class="H_Texto">El caso mencionado no es el único caso que genera diferencias 
+ de cambio, también si el cambio varía al pagar parcialmente una factura 
+ se produce una diferencia de cambio.</p>
+<p class="H_Texto">Si la cotización aumenta se generará una nota de débito 
+ y si disminuye se generará una nota de crédito.</p>
+<p class="H_Texto">Los comprobantes que generan diferencias de cambio por 
+ saldo son las facturas, notas de crédito y débito y <a href="comprobantes_internos_de_cuenta_corriente.htm">comprobantes 
+ internos de cuenta corriente</a>.</p>
+<p class="H_Texto">Las notas por diferencia de cambio son comprobantes 
+ de ventas en moneda local y no llevan importe en moneda extranjera. Se 
+ registran contablemente en el sistema como asientos de ajuste. Debe indicarse 
+ el <a href="tabla__Servicios.htm">ítem</a> al que se le imputará el importe 
+ de la diferencia en cada caso.</p>
+<p class="H_Texto">Las notas de crédito que se generen se autorizarán en 
+ forma automática.</p>
+<p class="H_Texto">Se deben ingresar los prefijos para determinar los talonarios 
+ a utilizar en la generación de las Notas según se deban generar, notas 
+ A, B o E. La letra que se asigna a la nota de crédito/débito se determina 
+ en función a la letra del comprobante que le da origen.</p>
+<p class="H_Texto">Los comprobantes que se considerarán para calcular las 
+ diferencias de cambio pueden seleccionarse por rangos de fechas, de <a href="tabla__Clientes.htm">clientes</a> , de <a href="tabla__Atributos.htm">atributos</a> 
+ de clientes, y para una determinada <a href="tabla__Cuentas.htm">imputación 
+ contable</a> de clientes.</p>
+<p class="H_Texto">Vale aclarar que al generar notas crédito no exentas 
+ y con percepciones de ingresos brutos no se calcularán percepciones en 
+ las provincias que calculan sólo en orígenes del mismo mes, si la nota 
+ se aplica a facturas de un mes distinto.</p>
+<p class="H_Texto">Los datos a ingresar para generar automáticamente notas 
+ por diferencia de cambio son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP728441695" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+<div data-targetname="POPUP728441695">
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Comprobantes 
+	 a generar</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha que tendrán las notas de débito 
+	 por diferencia de cambio que se generen.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Genera comprobantes 
+	 exentos</p>
+	<p class="H_Parrafo_de_Sub-Item">Activando este campo es posible generar 
+	 notas por diferencia de cambio exentas, es decir, sin discriminar 
+	 ningún impuesto, independientemente del tratamiento impositivo del 
+	 cliente.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Ítem</p>
+	<p class="H_Parrafo_de_Sub-Item">Código el ítem a incluir en las notas 
+	 exentas.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla 
+	 de Ítems</p>
+	<p class="H_Parrafo_de_Sub-Item">En esta tabla se solicita el ingreso 
+	 de todos los códigos de <a href="tabla__Servicios.htm">servicios</a> 
+	 que se han de incluir en las notas de crédito y/o débito que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al informar cada servicio en la tabla, 
+	 se exhibirá a continuación la tasa de I.V.A. que tiene asociada el 
+	 mismo en relación a las ventas y su correspondiente <a href="tabla__Cuentas.htm">imputación 
+	 contable</a>. Esta tasa, así como la cuenta contable asociada, se 
+	 encuentran especificadas en la tabla de impuestos asociada al servicio.</p>
+	<p class="H_Parrafo_de_Sub-Item">A cada uno de los servicios que se 
+	 indiquen en esta tabla se les imputará, en la nota,.el importe de 
+	 diferencia de cambio correspondiente a los ítems incluidos en los 
+	 comprobantes que generan dichas notas y que tienen la misma tasa y 
+	 la misma imputación contable de I.V.A. Ventas, que las informadas.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Servicios.htm">servicio</a> 
+	 que llevará imputado el importe de la diferencia de cambio en las 
+	 notas de débito que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a un servicio 
+	 de tipo <font style="font-weight: bold;">Importe</font> ya definido 
+	 en el sistema.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción correspondiente al 
+	 código de <a href="tabla__Servicios.htm">ítem</a> indicado en el campo 
+	 anterior.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Tabla de impuestos</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se expondrá en este campo el código 
+	 de la tabla de impuestos asociada al servicio indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si en alguno de los comprobantes 
+	 que generan diferencias de cambio se incluyen ítems que tienen una 
+	 tabla de impuestos para la cual no se indicó un ítem en esta tabla, 
+	 aparecerá en pantalla un cartel indicando que para algunos comprobantes 
+	 no fue posible generar las diferencias de cambio por ese motivo y 
+	 podrá verse en pantalla una lista con todos los comprobantes en ese 
+	 estado.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción correspondiente a 
+	 la tabla de impuestos indicada en el campo anterior.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Genera 
+	 para saldos pendientes</p>
+	<p class="H_Parrafo_de_Sub-Item">Indicación de si se generan o no notas 
+	 por diferencia de cambio para los saldos pendientes de los comprobantes, 
+	 además de las diferencias de cambio que se calculen para las aplicaciones 
+	 efectuadas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona esta opción para 
+	 los comprobantes de ventas que tengan un saldo pendiente, se calcularán 
+	 las diferencias de cambio como si el pago de ese saldo se efectuara 
+	 en la fecha hasta indicada. Obviamente, que si el cambio a dicha fecha 
+	 no varía con respecto al cambio del comprobante de ventas, no se produce 
+	 diferencia de cambio.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si no se selecciona esta opción sólo 
+	 se generarán notas de débito y crédito para los comprobantes aplicados 
+	 a los comprobantes de ventas, ya sea que los mismos salden dichos 
+	 comprobantes en forma total o parcial.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Importe 
+	 mínimo de los comprobantes a generar</p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si se 
+	 indica un importe, y durante el proceso de generación se detecta que 
+	 el importe de una nota a generar resulta inferior a lo que se indique 
+	 en ese campo, no se generará ese comprobante.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Es importante 
+	 aclarar que las notas  de crédito o débito por diferencia de 
+	 cambio que no se generen por tener un importe menor al mínimo indicado 
+	 al generar, seguirán siendo diferencias de cambio pendientes en el 
+	 sistema.</span></p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Comprobantes 
+	 a evaluar</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Desde fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible acotar el rango de 
+	 comprobantes a considerar para el cálculo de las diferencias de cambio, 
+	 mediante el ingreso de una fecha desde la cual se van a considerar 
+	 los comprobantes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado en blanco, 
+	 se generarán las diferencias de cambio desde el principio.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Hasta fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible acotar el rango de 
+	 comprobantes a considerar para el cálculo de las diferencias de cambio, 
+	 mediante el ingreso de una fecha hasta la cual se van a considerar 
+	 los comprobantes. Se consideran tanto los comprobantes como sus aplicaciones.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe tenerse en cuenta que sólo 
+	 se considerarán las aplicaciones efectuadas a una fecha anterior a 
+	 la fecha informada en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta fecha además se utiliza para 
+	 calcular las diferencias de cambio sobre saldos pendientes, es decir, 
+	 para el saldo impago de las facturas. En ese caso, se obtiene cuál 
+	 sería la diferencia de cambio si ese saldo pendiente se pagara en 
+	 la fecha indicada en este dato.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Imputación contable</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Cuentas.htm">imputación 
+	 contable</a> de clientes asociada a los comprobantes que se desean 
+	 considerar para el cálculo de las diferencias de cambio.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a una cuenta 
+	 imputable, de subcuentas <font style="font-weight: bold;">Clientes</font> 
+	 y debe tener como <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">tabla 
+	 de ajuste</a> una tabla de cotizaciones.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP728372685" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Prefijos</span><span data-close-text="true">Ficha Prefijos</span></a></p>
+<div data-targetname="POPUP728372685">
+	<p class="H_Parrafo_de_Item">Se deben indicar los prefijos a utilizar 
+	 en cada una de las sucursales.</p>
+	<p class="H_Parrafo_de_Item">El cálculo de las diferencias de cambio 
+	 que se producen por aplicaciones de comprobantes, se hace por el total 
+	 de las aplicaciones del comprobante.</p>
+	<p class="H_Parrafo_de_Item">En el cálculo de las diferencias de cambio 
+	 por saldos de comprobantes, se calculan los saldos a la fecha en la 
+	 que se generan diferencias, reconstruyendo exactamente el saldo a 
+	 esa fecha.</p>
+	<p class="H_Parrafo_de_Item">Si al aprobar la generación se detecta 
+	 que hay sucursales en las que corresponde generar diferencias de cambio, 
+	 y no se especificaron los talonarios correspondientes, o si para una 
+	 sucursal no se indicó el talonario correspondiente al tipo de comprobante 
+	 que se va a generar, se exhibe una ventana de aviso detallando el 
+	 error e indicando los prefijos y talonarios faltantes, debiéndose 
+	 completar la información faltante para poder continuar</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Notas de 
+	 débito</p>
+	<p class="H_Parrafo_de_Item">Indicación de si se desean generar comprobantes 
+	 de tipo Nota de débito de ventas.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Prefijos</p>
+	<p class="H_Parrafo_de_Sub-Item">Se deben informar los prefijos para 
+	 la generación de los comprobantes. Como éstos se generan por sucursal, 
+	 se deben indicar para cada una de las sucursales definidas.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Sucursal</p>
+	<p class="H_Parrafo_de_Sub-Item">Código de la sucursal para la cual 
+	 se informan los prefijos.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Nombre</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la sucursal informada.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Prefijo notas A</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las 
+	 notas de débito <font style="font-weight: bold;">A</font> que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique 
+	 determinará el <a href="tabla__Talonarios.htm">talonario</a> asociado 
+	 a cada nota de débito <font style="font-weight: bold;">A</font> que 
+	 se genere, el número de comprobante definitivo que se asignará a cada 
+	 nota, el <a href="tabla__Subdiarios.htm">subdiario</a> de ventas al 
+	 cual ingresarán las notas, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este talonario es el que se utiliza 
+	 cuando la diferencia de cambio corresponde a comprobantes A.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Prefijo notas B</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las 
+	 notas de débito <font style="font-weight: bold;">B</font> que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique 
+	 determinará el <a href="tabla__Talonarios.htm">talonario</a> asociado 
+	 a cada nota de débito <font style="font-weight: bold;">B</font> que 
+	 se genere, el número de comprobante definitivo que se asignará a cada 
+	 nota, el <a href="tabla__Subdiarios.htm">subdiario</a> de ventas al 
+	 cual ingresarán las notas, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este talonario es el que se utiliza 
+	 cuando la diferencia de cambio corresponde a comprobantes B.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Prefijo notas E</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las 
+	 notas de débito <font style="font-weight: bold;">E</font> que se generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique 
+	 determinará el <a href="tabla__Talonarios.htm">talonario</a> asociado 
+	 a cada nota de débito <font style="font-weight: bold;">B</font> que 
+	 se genere, el número de comprobante definitivo que se asignará a cada 
+	 nota, el <a href="tabla__Subdiarios.htm">subdiario</a> de ventas al 
+	 cual ingresarán las notas, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este talonario es el que se utiliza 
+	 cuando la diferencia de cambio corresponde a comprobantes E.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Notas 
+	 de crédito</p>
+	<p class="H_Parrafo_de_Sub-Item">Indicación de si se desean generar 
+	 comprobantes de tipo Nota de crédito de ventas.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Prefijos</p>
+	<p class="H_Parrafo_de_Sub-Item">Se deben informar los prefijos para 
+	 la generación de los comprobantes. Como éstos se generan por sucursal, 
+	 se deben indicar para cada una de las sucursales definidas.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Sucursal</p>
+	<p class="H_Parrafo_de_Sub-Item">Código de la sucursal para la cual 
+	 se informan los prefijos.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Nombre</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe el nombre de la sucursal informada.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Prefijo notas A</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las 
+	 notas de crédito <font style="font-weight: bold;">A</font> que se 
+	 generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique 
+	 determinará el <a href="tabla__Talonarios.htm">talonario</a> asociado 
+	 a cada nota de crédito <font style="font-weight: bold;">A</font> que 
+	 se genere, el número de comprobante definitivo que se asignará a cada 
+	 nota, el <a href="tabla__Subdiarios.htm">subdiario</a> de ventas al 
+	 cual ingresarán las notas, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este talonario es el que se utiliza 
+	 cuando la diferencia de cambio corresponde a comprobantes A.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Prefijo notas B</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las 
+	 notas de crédito <font style="font-weight: bold;">B</font> que se 
+	 generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique 
+	 determinará el <a href="tabla__Talonarios.htm">talonario</a> asociado 
+	 a cada nota de crédito <font style="font-weight: bold;">B</font> que 
+	 se genere, el número de comprobante definitivo que se asignará a cada 
+	 nota, el <a href="tabla__Subdiarios.htm">subdiario</a> de ventas al 
+	 cual ingresarán las notas, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este talonario es el que se utiliza 
+	 cuando la diferencia de cambio corresponde a comprobantes B.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Prefijo notas E</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo correspondientes a las 
+	 notas de crédito <font style="font-weight: bold;">E</font> que se 
+	 generen.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El prefijo que aquí se indique 
+	 determinará el <a href="tabla__Talonarios.htm">talonario</a> asociado 
+	 a cada nota de crédito <font style="font-weight: bold;">B</font> que 
+	 se genere, el número de comprobante definitivo que se asignará a cada 
+	 nota, el <a href="tabla__Subdiarios.htm">subdiario</a> de ventas al 
+	 cual ingresarán las notas, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este talonario es el que se utiliza 
+	 cuando la diferencia de cambio corresponde a comprobantes E.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Participan 
+	 del circuito de autorizaciones</p>
+	<p class="H_Parrafo_de_Sub-Item">Indicación si se desea que para los 
+	 comprobantes que se generan se consideren las autorizaciones parametrizadas 
+	 para las notas de crédito.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a href="ficha_Clientes.htm">Ficha Clientes</a></p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP728441695');
+	TextPopupInit('a2', 'POPUP728372685');
+//]]></script>
+
+
+</body></html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_54"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Modificacion de inventario Items</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Modificacion de inventario Items"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Ingreso de Ítems a la Modificación de inventario</h1>
+<p class="H_Texto">Para ingresar los datos en este comprobante, se accede a una pantalla intermedia denominada “<font style="font-weight: bold;">Ingreso</font>” al hacer click sobre esta tabla, estando la misma vacía, u oprimiendo el botón derecho del mouse sobre dicha tabla, que hablita un menú contextual con las opciones “Nueva” o “Insertar”.</p>
+<p class="H_Texto">Mediante esta tabla se informan los <a href="tabla__Bienes.htm">bienes</a> a incluir en el comprobante de modificación del inventario que se está confeccionando.</p>
+<p class="H_Texto">Sólo será necesario ingresar ítems en esta tabla si se afectan nuevos bienes al inventario indicado.</p>
+<p class="H_Texto">Para cada ítem se debe informar la cantidad que se afecta y, en función al tipo de ítem del que se trate, se requerirá información adicional.</p>
+<p class="H_Texto">Al respecto, y a título de ejemplo, podemos mencionar que para algunos bienes, si la mercadería que egresa ingresó avalada por un <a href="despachos.htm">despacho de importación</a>, éste deberá indicarse en el comprobante de afectación. En ese caso, además, el sistema lleva un control estricto del stock disponible por despacho. En caso de bienes tales que cada unidad disponible en stock tenga asociado un número de serie en particular, cada unidad que egresa deberá identificarse, también, por su respectivo número de serie.</p>
+<p class="H_Texto">Es importante tener en cuenta que la forma en que el sistema solicita los datos a incluir en el comprobante varía según cual sea el tipo de bienes de los que se trate. En algunos casos, como por ejemplo cuando se trabaja con doble unidad de medida, se abre una ventana en el campo <font style="font-weight: bold;">Cantidad</font> para requerir los datos necesarios.</p>
+<p class="H_Texto">En otros casos, como por ejemplo, cuando deben ingresarse códigos de despachos o partidas, se incorporan columnas adicionales para permitir incluir dicha información.</p>
+<p class="H_Texto">Los datos a incluir en la pantalla intermedia “<font style="font-weight: bold;">Ingreso</font>” son:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha Ítem</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Ítem</p>
+<p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el comprobante.</p>
+<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a> o <a href="tabla__Servicios.htm">servicio</a> ingresado en el sistema.</p>
+<p class="H_Parrafo_de_Sub-Item">Puede ingresarse el código del ítem o servicio o su código alternativo.</p>
+<p class="H_Parrafo_de_Sub-Item"><font style="font-weight: bold;">Descripción</font></p>
+<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el dato anterior.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción larga, se exhibirá esta. Si no, se exhibirá la otra descripción. Si el ítem no tiene descripción asociada, se solicitará el ingreso de un detalle del mismo en este momento.</p>
+<p class="H_Parrafo_de_Sub-Item">En el caso que se trate de bienes con colores y medidas es necesario ingresar el código del color y medida junto con el código principal del bien. Si hablamos de bienes con contenedores, no será necesario indicar el contenedor.</p>
+<p class="H_Parrafo_de_Sub-Item">Los bienes con dimensiones se ingresan al sistema con dimensiones 1x1x1.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Cantidad</p>
+<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que egresan del stock y que se afectan del ítem indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Aquí se presentan varias posibilidades.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de medida, se solicitará este campo si las compras se registran en la primera unidad. Si las compras se registran en segunda unidad, al ingresar la cantidad en la segunda unidad se completará este dato en forma automática y podrá ser modificado sólo si se indicó que la relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con dimensiones, se abrirá una ventana que solicitará el ingreso de cantidades para cada dimensión posible definida para el ítem, y luego se completará este dato con la cantidad resultante de multiplicar la cantidad indicada por todas las dimensiones del ítem.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Cantidad en 2da unidad</p>
+<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que se afectan del ítem indicado, en la segunda unidad de medida.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad de medida, no se solicitará información en este campo.</p>
+<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de medida, se solicitará este campo si las compras se registran en la segunda unidad. Si las compras se registran en primera unidad, al ingresar la cantidad en la primera unidad se completará este dato en forma automática y podrá ser modificado sólo si se indicó que la relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Importe</p>
+<p class="H_Parrafo_de_Sub-Item">El importe del bien o servicio si es de tipo importe. Cabe aclarar que es posible ingresar un valor con signo negativo. Esto se utiliza para reflejar una depreciación en el bien.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Negocio</p>
+<p class="H_Parrafo_de_Sub-Item">Si se ingresan centros de apropiación y alguno de los centros indicados administra negocios se debe ingresar el código del negocio asociado a la línea del comprobante.</p>
+<p class="H_Parrafo_de_Sub-Item">Debe indicarse el código de un negocio ya definido en el sistema y correspondiente a la empresa en la cual se ingresa el comprobante.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Despacho</p>
+<p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que indica el número de despacho del cual egresa el <a href="tabla__Bienes.htm">bien</a> indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems que trabajan con despachos. Debe corresponder a un <a href="despachos.htm">despacho</a> definido en el sistema y debe tener disponible la cantidad de unidades del ítem que se está entregando.</p>
+<p class="H_Parrafo_de_Sub-Item">El sistema muestra una lista ordenada por fecha con todos los despachos en los que ingresó el bien y podrá seleccionarse el despacho que corresponda.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Partida</p>
+<p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que indica el número de partida de la cual egresa el <a href="tabla__Bienes.htm">bien</a> indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems que trabajan con partidas. Debe corresponder a una partida definida en el sistema para el ítem indicado.</p>
+<p class="H_Parrafo_de_Sub-Item">El sistema mostrará una lista con todas las partidas en las que ingresó el bien y podrá seleccionarse la partida que corresponda.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Números de serie</p>
+<p class="H_Parrafo_de_Sub-Item">Si el <a href="tabla__Bienes.htm">bien</a> indicado trabaja con números de serie, se abrirá una ventana que permitirá el ingreso de todos los números de serie que egresan con el comprobante. Sólo se podrán ingresar bienes que administre números de serie si manejan cantidades unitarias.</p>
+<p class="H_Parrafo_de_Sub-Item">Se solicitará el ingreso de tantos números como cantidad de unidades egresen del ítem.</p>
+<p class="H_Parrafo_de_Sub-Item">Se brinda la posibilidad de ingresar estos números en forma automática definiendo un prefijo común y un rango de números para los mismos. Esto es muy útil en el caso de egresos de grandes cantidades de mercadería seriada. Además, se exhibirá una lista con todos los números de serie registrados en los ingresos de mercadería del ítem, permitiendo también seleccionar de estos números cuáles son los que egresan.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Botones adicionales para navegación en la pantalla de ingreso</p>
+<p class="H_Parrafo_de_Sub-Item">Los botones <img src="../assets/images/BASCSIMAG/anterior.gif" alt="BASCSIMAG\anterior.gif" width="24" height="23" border="0"/> “Anterior” (AvPág) y <img src="../assets/images/BASCSIMAG/siguiente.gif" alt="BASCSIMAG\siguiente.gif" width="24" height="23" border="0"/> “Siguiente” (RePág) permiten agregar filas a la pantalla de inventarios (al final de esta grilla) o recorrer las ya existentes hacia delante y hacia atrás. También se dispone de botones <img src="../assets/images/BASCSIMAG/primero.gif" alt="BASCSIMAG\primero.gif" width="24" height="23" border="0"/> para ir directamente a la fila inicial (Primero) y <img src="../assets/images/BASCSIMAG/ultimo.gif" alt="BASCSIMAG\ultimo.gif" width="24" height="23" border="0"/> a la final (Ultimo).</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> Ficha Observaciones</p>
+<p class="H_Parrafo_de_Sub-Item">Observaciones del bien o servicio , en el caso que correspondiere.</p>
+
+
+</body></html>

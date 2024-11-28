@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Ordenes de producción","type":"book","tilePath":"","key":"toc33"},{"name":"Partes de producción","type":"book","tilePath":"","key":"toc35"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

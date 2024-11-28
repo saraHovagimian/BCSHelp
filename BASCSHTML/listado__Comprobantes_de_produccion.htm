@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.4.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Comprobantes de produccion</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Comprobantes,Producción"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Comprobantes de producción</h1>
+  <p class="H_Texto">Este informe permite ver el detalle de los comprobantes de producción registrados en el sistema, tanto las órdenes de producción como los partes de producción.</p>
+  <p class="H_Texto">Se pueden imprimir los comprobantes por rangos de depósitos , por rangos de números de comprobante, para un determinado período de tiempo, correspondientes a determinado producto terminado o que incluya determinados insumos, o que utilice determinados recursos, etc.</p>
+  <p class="H_Texto">Se muestra para cada comprobante del rango solicitado, su fecha, tipo, número, depósito y fecha de terminación.</p>
+  <p class="H_Texto">Luego se lista el detalle de las líneas ingresadas en cada comprobante, con ítem , cantidad. También se incluirá el despacho y/o la partida de cada uno de los insumos y/o productos terminados que se caractericen por administrar despachos y/o partidas.</p>
+  <p class="H_Texto">Para cada tarea se indicará, la incidencia, la fecha y hora de inicio y finalización, el detalle de los insumos, tipo de recursos y recursos que participan y los centros de apropiación afectados.</p>
+  <p class="H_Texto">Si el comprobante incluye ítems que se administran mediante números de serie, éstos pueden mostrarse separados por un conjunto de caracteres y/o exhibirse de a uno por línea. Para ello habrá que hacer una parametrización acorde en los <font style="font-weight: bold;">Parámetros Generales</font> y diseñar un formato personalizado de emisión que incluya las variables que correspondan.</p>
+  <p class="H_Texto">En el caso de órdenes de producción se detalla el estado y fecha de finalización de las órdenes de producción, y para cada tarea, el estado y las fechas de inicio real, finalización real, inicio estimada, finalización estimada, inicio estimada probable y finalización estimada probable.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a href="listado_documentos_valorizados_tener_en_cuenta.htm">Para tener en cuenta</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP674930827" href="#"><span data-open-text="true" data-skip-index="true"> Ficha Rangos</span><span data-close-text="true"> Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP674930827">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Tipo de comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Tipo de comprobante de producción que se desea incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Orden de producción</p>
+    <p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Parte de producción</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona tipo Orden de producción se incluirán en el listado las órdenes de producción ingresadas que cumplan con las opciones y rangos solicitados.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona tipo Parte de producción se incluirán en el listado los partes de producción ingresados que cumplan con las opciones y rangos solicitados. En este caso, en una sección Revalúos se detallan los revalúos asociados a cada parte, si los hubiera.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito/Planta</p>
+    <p class="H_Parrafo_de_Sub-Item">Depósitos o Plantas cuyos comprobantes de producción asociados se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un depósito en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán los comprobantes de todos los depósitos en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">El depósito se informa en el momento de registrar el comprobante de producción y de este se decrementan las existencias de los insumos y se incrementan las existencias de los productos terminados al registrar los partes de producción.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Prefijo</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo correspondiente a los comprobantes que se desean incluir en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Número del comprobante a seleccionar para incluir en el listado. Se puede solicitar un solo número de comprobante ó un rango desde-hasta, para esto se especificará el número de inicio de rango seguido de un guión y el número de fin de rango, ej.: 71-73. Para seleccionar comprobantes cuyos números no son consecutivos, deberán indicárselos separados por coma, ej.: 71,75,78. El ingreso de un guión y un número, ej.: -71, indica que se desea la impresión del primer comprobante existente hasta aquel cuyo número fue especificado. El ingreso de un número y un guión, ej.: 71-, indica que se desea imprimir desde el comprobante cuyo número fue ingresado, hasta el último existente.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP674971052" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP674971052">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Sólo
+      órdenes pendientes</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato sólo se encuentra habilitado
+      si se seleccionó imprimir las órdenes de producción.</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir
+      o no en el listado las órdenes de producción que no se encuentran
+      pendientes, es decir, las que ya fueron cumplimentadas en su totalidad
+      al ser referenciadas en partes de producción.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se selecciona esta opción sólo
+      aparecerán en el listado las órdenes de producción que tienen ítems
+      pendientes de fabricación</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Valorización
+      de insumos</p>
+    <p class="H_Parrafo_de_Sub-Item">Se habilita al seleccionar partes
+      de producción como tipo de comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Sin valorizar</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se elige esta opción el listado
+      no incluye el costo unitario de los ítems (ejemplo: insumos) y recursos
+      (de tipo bienes de uso, recursos humanos u otros).</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Valorizado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En estas emisiones se detalla
+      el costo unitario de los ítems y recursos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"><span lang="ES" xml:lang="ES" style="mso-bidi-font-family: Arial;">C</span><span lang="ES" xml:lang="ES" style="mso-bidi-font-family: Arial;">ualquiera
+        sea el tipo de valuación seleccionado, el costo de los productos terminados
+        de partes finales es el que figura en la lista de precios para valuación
+        de productos terminados indicada en los parámetros de ítems. El costo
+        de los productos terminados de los restantes partes será 0.</span></p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"><span lang="ES" xml:lang="ES">El
+        informe detalla el importe asociado a cada producto terminado e insumo.
+        Cabe aclarar que el importe y el costo unitario de los productos terminados
+        sólo se detallarán para partes finales.</span></p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/>
+      Método de valuación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se debe elegir el método de valuación
+      del ítem. Las opciones son:</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta" style="counter-set: prl-p-h_sub_sub_item_con_vineta 0;">Contable</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">CPP al cierre</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Costo FIFO</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Costo LIFO</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Costo ultima compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Lista de precios</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Precio de compra</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Ocasional</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Lista</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo se habilita si se seleccionó
+      en el campo Método de valuación la opción Ocasional.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Es posible emitir el listado utilizando
+      lista de precios dinámicas.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/>
+      Valores en</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Moneda de valuación que se desea
+      utilizar para valorizar los movimientos que se incluyen en el listado.
+      Este cuadro solo se habilitará en caso de haber definido una Moneda
+      de valuación y <a href="parametros__Datos_generales.htm">contabilización
+        adicional</a> <a href="parametros__Items.htm">Parámetros:_Items</a>.
+      Aparecerá entonces la opción de emitir el informe con valores expresados
+      en moneda local o en la Moneda de valuación y contabilización adicional
+      definida.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Pesos</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Dólares</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos terminados</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Insumos</a></p>
+  <p class="H_Parrafo_de_Item">En esta ficha pueden indicarse diferentes filtros a aplicar a los comprobantes que se desea incluir en el listado en base a los insumos incluidos en los mismos.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP675011104" href="#"><span data-open-text="true" data-skip-index="true">Ficha Recursos</span><span data-close-text="true">Ficha Recursos</span></a></p>
+  <div data-targetname="POPUP675011104">
+    <p class="H_Parrafo_de_Item">En esta ficha pueden indicarse que Tipos de recursos o que recursos se desea utilizar para determinar que comprobantes se han de incluir en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tipo de recurso</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del tipo de recurso cuyos comprobantes Bienes se desea incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un tipo de recurso en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán en el informe todos los comprobantes sin distinción de tipos de recursos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Recurso</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del recurso cuyos comprobantes se desea incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un recurso en particular o un grupo de ellos. Si este dato es dejado en blanco, se incluirán en el informe todos los comprobantes sin distinción de recursos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Tipos de recursos</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante tildes se indican que tipos de recursos se van a incluir en el informe. Pueden seleccionarse uno o mas de uno.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Bienes de uso</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Recursos humanos</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Otros</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP674930827');
+    TextPopupInit('a2', 'POPUP674971052');
+    TextPopupInit('a3', 'POPUP675011104');
+    //]]>
+  </script>
+
+</body></html>

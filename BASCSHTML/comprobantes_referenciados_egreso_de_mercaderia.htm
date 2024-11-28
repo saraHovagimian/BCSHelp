@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_12"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Comprobantes_referenciados_egreso_de_mercaderia</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Comprobantes_referenciados_egreso_de_mercaderia"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Comprobantes referenciados egreso de mercadería</h1>
+<p class="H_Parrafo_de_Item">Un comprobante de egreso puede ser utilizado 
+ como fuente al registrar otros comprobantes. A la vez, este mismo puede 
+ registrarse a partir de la información de otro comprobante ya existente 
+ en el sistema.</p>
+<p class="H_Parrafo_de_Item">Piénsese, por ejemplo, en un ingreso de mercadería 
+ en calidad de préstamo. El comprobante que registra dicho ingreso quedará 
+ pendiente mientras no se devuelva la mercadería. Dicha devolución se registra, 
+ justamente, con un comprobante de egreso que se confecciona invocando 
+ al correspondiente comprobante de ingreso.</p>
+<p class="H_Parrafo_de_Item">Otro ejemplo se puede encontrar en las ventas 
+ en los casos en que primero se factura la mercadería y luego se entrega. 
+ En este caso el comprobante de egreso se confecciona en base a la factura 
+ de venta.</p>
+<p class="H_Parrafo_de_Item">No obstante, debe tenerse en cuenta que si 
+ el talonario utilizado para registrar el comprobante de egreso o egreso 
+ diferido de mercadería requiere ser convalidado mediante la tarea Control 
+ de egresos, se deshabilitan todos los botones de comprobantes pendientes 
+ a excepción del botón de pedidos.</p>
+<p class="H_Parrafo_de_Item">Los egresos de mercadería heredan además de 
+ otros datos, el concepto de los comprobantes a los que referencian. Si 
+ se especifica un concepto, al referenciar cualquier tipo de comprobante 
+ solamente se mostrarán los que tienen asociado dicho concepto. Si no se 
+ especifica un concepto, se mostrarán todos los comprobantes pero no se 
+ podrán seleccionar comprobantes con conceptos diferentes.</p>
+<p class="H_Parrafo_de_Item">En caso que el talonario indique “Control 
+ de cantidades” al presionar el botón correspondiente al comprobante referenciado 
+ se accede a la ventana <a href="control_de_cantidades.htm">Control de 
+ cantidades</a>.</p>
+<p class="H_Parrafo_de_Item">El combo de selección que se encuentra en 
+ el extremo superior derecho de la pantalla, ofrece los siguientes comprobantes:</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Pedidos 
+ internos</p>
+<p class="H_Parrafo_de_Item">Este botón sólo se encuentra habilitado si 
+ el egreso tiene destino agente o depósito.</p>
+<p class="H_Parrafo_de_Item">Mediante este botón (excepto que el talonario 
+ del comprobante tenga indicado control de cantidades) se accede a una 
+ ventana que exhibe todos los pedidos internos del agente o depósito destinatario 
+ del comprobante de egreso y que aún se encuentran pendientes de remitir.</p>
+<p class="H_Parrafo_de_Item">Una vez seleccionados todos aquellos pedidos 
+ internos cuyos ítems se desea incluir en el comprobante, al salir de la 
+ ventana, los mismos pasan a formar parte del comprobante que se está registrando.</p>
+<p class="H_Parrafo_de_Item">La forma de operar y las consideraciones a 
+ tener en cuenta son similares a las explicadas para el botón <font style="font-weight: bold;">Pedidos.</font></p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Pedidos</p>
+<p class="H_Parrafo_de_Item">Mediante este botón (excepto que el talonario 
+ del comprobante tenga indicado control de cantidades) se accede a una 
+ ventana que exhibe todos los pedidos externos del cliente destinatario 
+ del comprobante de egreso y que aún se encuentran pendientes de remitir.</p>
+<p class="H_Parrafo_de_Item">En caso que el talonario indique “Control 
+ de cantidades” al presionar el botón correspondiente al comprobante referenciado 
+ se accede a la ventana <a href="control_de_cantidades.htm">Control de 
+ cantidades</a>.</p>
+<p class="H_Parrafo_de_Item">Los pedidos registrados con diferente moneda 
+ no pueden formar parte del mismo comprobante de egreso de mercadería.</p>
+<p class="H_Parrafo_de_Item">Una vez seleccionados todos aquellos pedidos 
+ cuyos ítems se desea incluir en el comprobante, al salir de la ventana, 
+ los mismos pasan a formar parte del comprobante que se está registrando.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, una vez 
+ seleccionados los pedidos en la ventana correspondiente y habiendo retornado 
+ al comprobante, no es posible presionar el botón nuevamente para acceder 
+ a los pedidos pendientes. Por este motivo, si se desea incluir en el comprobante 
+ varios pedidos, éstos deben seleccionarse simultáneamente.</p>
+<p class="H_Parrafo_de_Item">Cuando se seleccionan pedidos de <a href="tabla__Bienes.htm">bienes</a> 
+ que manejan despachos y/o partidas, se muestra en cada línea del comprobante, 
+ el <a href="despachos.htm">despacho</a> y/o la <a href="partidas.htm">partida</a> 
+ de la cual se descargará la mercadería correspondiente a esa línea. Si 
+ la cantidad de unidades es mayor al stock disponible del ítem en el despacho 
+ y/o la partida que se ofrece por defecto, se abren tantas líneas como 
+ sean necesarias según el stock disponible en los restantes despachos y/o 
+ partidas del ítem.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Facturas</p>
+<p class="H_Parrafo_de_Item">Este botón permite acceder (excepto que el 
+ talonario del comprobante tenga indicado control de cantidades) a las 
+ facturas del <a href="tabla__Clientes.htm">cliente</a> invocado que, si 
+ bien se han registrado en el sistema, se encuentran pendientes de remitir.</p>
+<p class="H_Parrafo_de_Item">Es decir, aquellas facturas que fueron confeccionadas 
+ indicando <font style="font-weight: bold;">Sin entrega</font>, en el dato 
+ <font style="font-weight: bold;">Entrega</font>.</p>
+<p class="H_Parrafo_de_Item">En ese caso la factura actualiza solamente 
+ la cuenta corriente del cliente y, la salida de los <a href="tabla__Bienes.htm">bienes</a> 
+ que incluye, se produce con el registro del comprobante de egreso.</p>
+<p class="H_Parrafo_de_Item">La forma de operar en la ventana de selección 
+ de facturas y las consideraciones a tener en cuenta en la operación, son 
+ similares a las explicadas para el botón <font style="font-weight: bold;">Pedidos</font>.</p>
+<p class="H_Parrafo_de_Item">En caso que el talonario indique “Control 
+ de cantidades” al presionar el botón correspondiente al comprobante referenciado 
+ se accede a la ventana <a href="control_de_cantidades.htm">Control de 
+ cantidades</a>.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Movimientos 
+ de Materiales</p>
+<p class="H_Parrafo_de_Item">Mediante este botón (excepto que el talonario 
+ del comprobante tenga indicado control de cantidades) se accede a los 
+ comprobantes de ingreso de materiales que han sido registrados a nombre 
+ del titular del comprobante, y que aún se encuentran pendientes.</p>
+<p class="H_Parrafo_de_Item">Un ejemplo puede ser un comprobante de ingreso 
+ de bienes por préstamo. Dicho movimiento estará pendiente hasta que se 
+ registre un comprobante de egreso que se confeccione en base al respectivo 
+ comprobante de ingreso.</p>
+<p class="H_Parrafo_de_Item">Para que esto sea posible el concepto asociado 
+ al comprobante de ingreso debe tener activado el dato <font style="font-weight: bold;">Deja 
+ comprobantes pendientes</font>.</p>
+<p class="H_Parrafo_de_Item">La forma de operar y las consideraciones a 
+ tener en cuenta son similares a las explicadas para el botón <font style="font-weight: bold;">Pedidos</font>.</p>
+<p class="H_Parrafo_de_Item">En caso que el talonario indique “Control 
+ de cantidades” al presionar el botón correspondiente al comprobante referenciado 
+ se accede a la ventana <a href="control_de_cantidades.htm">Control de 
+ cantidades</a>.</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item"><span style="font-weight: bold;">Para tener 
+ en cuenta:</span> Cuando desde comprobantes de venta se referencian pedidos 
+ o movimientos de materiales, si alguno de los ítems referenciados presenta 
+ algún error, se cargarán todas las líneas del comprobante referenciado, 
+ incluyendo las líneas erróneas que estarán marcadas con una cruz (como 
+ eliminadas), y al final se mostrará una ventana con todos los errores 
+ detectados informando la descripción del error y número de línea en la 
+ que ocurre.Movimientos de Materiales diferidos</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item">Mediante este botón (excepto que el talonario 
+ del comprobante tenga indicado control de cantidades) se accede a los 
+ comprobantes de egreso de materiales diferido que han sido registrados 
+ a nombre del titular del comprobante (cliente, agente o proveedor), y 
+ que aún se encuentran pendientes.</p>
+<p class="H_Parrafo_de_Item">Una vez seleccionados todos aquellos egresos 
+ diferidos cuyos ítems se desea incluir en el comprobante de egreso, al 
+ salir de la ventana, los mismos pasan a formar parte del comprobante que 
+ se está registrando.</p>
+<p class="H_Parrafo_de_Item">La forma de operar y las consideraciones a 
+ tener en cuenta son similares a las explicadas para el botón <font style="font-weight: bold;">Pedidos.</font></p>
+<p class="H_Parrafo_de_Item">En caso que el talonario indique “Control 
+ de cantidades” al presionar el botón correspondiente al comprobante referenciado 
+ se accede a la ventana <a href="control_de_cantidades.htm">Control de 
+ cantidades</a>.</p>
+<p class="H_Parrafo_de_Item">No obstante, debe tenerse en cuenta que si 
+ se han indicado números de serie, despachos o partidas en el egreso de 
+ mercadería diferido, estos números no podrán ser modificados en el egreso 
+ que lo reverencie.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Egresos</p>
+<p class="H_Parrafo_de_Item">Existe la posibilidad de ingresar un movimiento 
+ de egreso en base a otro movimiento ya existente en el sistema haciendo 
+ click en el botón “Egresos”, o bien pulsando la tecla <font style="font-weight: bold;">F11</font> 
+ se abre una ventana que muestra una lista conteniendo todos los comprobantes 
+ ingresados en el sistema, incluyendo los anulados y los eliminados.</p>
+<p class="H_Parrafo_de_Item">Una vez seleccionado un movimiento de egreso 
+ se completa la pantalla con todos los datos del mismo. Estos datos pueden 
+ ser modificados según sea necesario en el nuevo comprobante, pueden eliminarse 
+ líneas o agregarse nuevos ítems. Esta tarea no afecta al comprobante original 
+ que se selecciona, éste simplemente se utiliza para copiar su información 
+ al comprobante que se está ingresando.</p>
+<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cargas</p>
+<p class="H_Parrafo_de_Item">Mediante este botón se accede a una ventana 
+ que exhibe todas las cargas que tienen como destino el depósito informado 
+ y que aún se encuentran pendientes de remitir.</p>
+<p class="H_Parrafo_de_Item">El objeto de este botón, que sólo se activará 
+ si el destino de la transferencia es un depósito, es permitir precargar 
+ en el comprobante de egreso, todos los bienes que figuran en los comprobantes 
+ incluidos en una determinada Carga. En este caso particular no se controlará 
+ el stock.</p>
+<p class="H_Parrafo_de_Item">Una vez seleccionada la carga cuyos ítems 
+ se desea incluir en el comprobante, al salir de la ventana, los mismos 
+ pasan a formar parte del comprobante que se está registrando.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, una vez 
+ seleccionada la carga en la ventana correspondiente y habiendo retornado 
+ al comprobante, no es posible presionar el botón nuevamente para acceder 
+ a las cargas pendientes.</p>
+<p class="H_Parrafo_de_Item">Cuando se seleccionan cargas cuyos comprobantes 
+ incluyen bienes que manejan despachos y/o partidas, se muestra en cada 
+ línea del comprobante, el despacho y/o la partida de la cual se descargará 
+ la mercadería correspondiente a esa línea. Si la cantidad de unidades 
+ es mayor al stock disponible del ítem en el despacho y/o la partida que 
+ se ofrece por defecto, se abren tantas líneas como sean necesarias según 
+ el stock disponible en los restantes despachos y/o partidas del ítem.</p>
+
+
+</body></html>

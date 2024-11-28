@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_47"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Importar archivo de inventario</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Importar archivo de inventario"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Importar archivo de inventario</h1>
+  <p class="H_Texto">Al presionar el botón “Importar” se accede a una ventana donde se deben indicar el formato correspondiente al archivo que contiene los datos a importar y el nombre del mismo. Dicho nombre puede escribirse directamente, en el campo “Archivo”, o puede buscarse mediante el botón “Examinar” que se encuentra a la derecha de dicho campo. Informados estos datos, presionando el botón “Importar”, se precargará la información del archivo en una tabla y se realizarán las acciones que correspondan tal como veremos más adelante.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_1.gif" border="0" height="154" src="../assets/images/BASCSIMAG/Imp_1.gif" width="416"/></p>
+  <p class="H_Texto">Con respecto al formato, en la ventana de la figura anterior, es posible acceder al detalle de un formato definido con anterioridad o definir uno nuevo. Estando ubicados en el campo “Formato” se debe presionar la tecla F4 (o presionar el botón correspondiente a la opción “Alta” de la barra de herramientas).</p>
+  <p class="H_Texto">Para consultar todos los formatos definidos, también estando ubicados en el campo “Formato”, se debe pulsar la tecla F3 o presionar el botón de búsqueda de la barra de herramientas.</p>
+  <p class="H_Texto">Al presionar F4 en el campo “Formato”, se accede a la pantalla de la figura siguiente, en la cual podrá darse de alta un nuevo formato o acceder a uno ya existente para modificarlo o eliminarlo.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_2.gif" border="0" height="290" src="../assets/images/BASCSIMAG/Imp_2.gif" width="454"/></p>
+  <p class="H_Texto">Según el archivo a importar se debe indicar:</p>
+  <p class="H_Texto">En “Formato” se debe indicar:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">CSV (valores separados por comas)</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Si los campos del registro del archivo están separados por comas.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Posición fija</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">En caso que los campos del registro estén ubicados en determinadas columnas.</p>
+  <p class="H_Parrafo_de_Item">Al seleccionarlo se habilita el campo “Longitud registro”. El dato puede dejarse en blanco, en caso que se indique si luego la línea del archivo es más larga se emitirá un mensaje de error.</p>
+  <p class="H_Parrafo_de_Item">Esta información puede dejarse en blanco.</p>
+  <p class="H_Texto">En “Configuración” se debe indicar:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Hay línea de títulos</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Tildar si la primera línea del archivo corresponde a títulos.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Contiene datos de color y medida</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Tildar si el archivo contiene ítems con detalle de color y medida.</p>
+  <p class="H_Texto">En la grilla de la derecha de la figura anterior, se deben detallar los campos del registro del archivo a importar. La grilla pide diferentes datos según el formato del archivo corresponda a posición fija o a datos separados por comas, según se verá más adelante.</p>
+  <p class="H_Texto">Independientemente del formato, presionando F3 en la columna “Campo”, pueden consultarse los campos previstos para el archivo.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_3.gif" border="0" height="395" src="../assets/images/BASCSIMAG/Imp_3.gif" width="492"/></p>
+  <p class="H_Texto">Comencemos por ver el caso en el cual el archivo corresponde a posición fija. Si por ejemplo se debe importar el archivo de la figura siguiente, se deberá tomar nota de la columna donde está ubicado cada dato y de su longitud. Se observa que el archivo tiene línea de títulos y detalle de colores y medidas.</p>
+  <p class="H_Texto">Los datos están ubicados en las posiciones:</p>
+  <table align="center" cellpadding="1" cellspacing="0" style="border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; border-collapse: separate;" width="23%">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 39.18%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Campo</p>
+        </td>
+        <td style="width: 29.53%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Inicio</p>
+        </td>
+        <td style="width: 31.29%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Largo</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 39.18%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Item</p>
+        </td>
+        <td style="width: 29.53%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">6</p>
+        </td>
+        <td style="width: 31.29%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">7</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 39.18%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Color</p>
+        </td>
+        <td style="width: 29.53%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">14</p>
+        </td>
+        <td style="width: 31.29%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 39.18%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Medida</p>
+        </td>
+        <td style="width: 29.53%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">17</p>
+        </td>
+        <td style="width: 31.29%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 39.18%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Cantidad</p>
+        </td>
+        <td style="width: 29.53%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">20</p>
+        </td>
+        <td style="width: 31.29%; border-top: 0.75pt solid #000000; border-bottom: 0.75pt solid #000000; border-left: 0.75pt solid #000000; border-right: 0.75pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_4.gif" border="0" height="412" src="../assets/images/BASCSIMAG/Imp_4.gif" width="453"/></p>
+  <p class="H_Texto">En este caso se debe definir un formato como el que se muestra en la figura siguiente.</p>
+  <p class="imagen"><img alt="BASCSIMAG\imp_5.gif" border="0" height="290" src="../assets/images/BASCSIMAG/imp_5.gif" width="454"/></p>
+  <p class="H_Texto">Al importar el archivo, se precargan los ítems en la ventana de trabajo y se informa de los errores encontrados.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_6.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_6.gif" width="567"/></p>
+  <p class="H_Texto">Antes de pasar al análisis de los elementos de la ventana anterior, vamos a ver un ejemplo de importación de un archivo donde los campos están separados por comas tal como el que se muestra en la figura siguiente.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_7.gif" border="0" height="412" src="../assets/images/BASCSIMAG/Imp_7.gif" width="453"/></p>
+  <p class="H_Texto">En el caso que los campos del archivo estén separados por “comas”, como el ejemplo que se muestra en la figura anterior, se debe utilizar un formato C.S.V.</p>
+  <p class="H_Texto">Al igual que en el caso anterior se indica que el archivo tiene línea de títulos y datos de color y medida. Para los campos del registro, como se separan por comas, sólo se debe indicar en que orden se presentan.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_8.gif" border="0" height="290" src="../assets/images/BASCSIMAG/Imp_8.gif" width="454"/></p>
+  <p class="H_Texto">Al importar el archivo, se precargan los datos en la ventana de trabajo, al igual que en el caso de importación con formato fijo.</p>
+  <p class="H_Texto">Vale aclarar que si, al comenzar la importación, el archivo a importar ya cuenta con más de 10 errores de formato, se interrumpe la importación avisando de la situación mediante el mensaje “Hay al menos 10 registros con errores de formato. Revisar la configuración del archivo. Se finaliza la importación.”.</p>
+  <p class="H_Texto">Veremos ahora cómo trabajar en las ventanas que se muestran en la figura siguiente.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_9.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_9.gif" width="567"/></p>
+  <p class="H_Texto">Los datos que se observan son los siguientes:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Línea</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Se corresponde con el número de la línea en el archivo físico donde se encuentra el ítem que se muestra en la tabla.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Ítem</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Código y descripción del ítem de la línea. Debería corresponder a un ítem existente en BAS CS y que administre stock.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Color y Medida</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Estas columnas aparecen si los ítems administran medidas y colores.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Cantidad</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">Cantidad de unidades del ítem en el depósito en el cual se efectúa el inventario. En el caso que en el archivo se hayan incluido dos unidades de medida, se mostrarán ambas.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Error</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">En la última columna se informan los errores detectados. Estos pueden ser de formato (por ejemplo una cantidad no numérica) o de proceso (por ejemplo un ítem inexistente).</p>
+  <p class="H_Parrafo_de_Item">Si una línea tiene más de 1 error aparece la leyenda más errores’disponiéndose de un hipervínculo para acceder al detalle de todos los errores. La figura siguiente muestra un ejemplo correspondiente al caso de acceder al enlace disponible en la línea 13.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Ver</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">En esta zona puede indicarse si se desea ver los errores y/o las líneas correctas.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_10.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_10.gif" width="567"/></p>
+  <p class="H_Texto">Vale aclarar que:</p>
+  <ul>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Si el ítem presenta errores, para distinguirla, la línea se muestra en rojo.</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Si el ítem maneja despachos y/o partidas y/o series y no tiene error, la línea aparece en color gris.</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Las líneas que no presentan error y se muestran en color azul claro indican que el ítem tiene ubicación en BAS CS y no tiene indicada ubicación en el inventario, o la tiene pero es diferente. No obstante, el sistema permite que se ingresen al inventario ítems cuya ubicación difiera de la que figura en BAS CS.</p>
+    </li>
+  </ul>
+  <p class="H_Texto">Al pasar el puntero del mouse por cada fila de la tabla se muestra, en un tooltip, la información del error (si hubiere), datos de las dimensiones (si el ítem tiene más de una dimensión) o el aviso de la ubicación (si el ítem no tiene indicada la ubicación donde ahora se está inventariando o tiene indicada una ubicación diferente). Puede verse un ejemplo en la figura siguiente.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_11.gif" border="0" height="277" src="../assets/images/BASCSIMAG/Imp_11.gif" width="520"/></p>
+  <p class="H_Texto">Si el archivo no presenta errores se exhibe una leyenda (en la zona inferior izquierda) indicando “No hay errores en el archivo importado”. En caso contrario se informa la cantidad de errores encontrados con el siguiente texto: “Se encontraron x errores en el archivo importado” (x es la cantidad de errores).</p>
+  <p class="H_Texto">Si se tilda el campo “Errores“, la tabla exhibe solamente las líneas que presentan errores.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_12.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_12.gif" width="567"/></p>
+  <p class="H_Texto">La tabla se puede ordenar por cualquiera de sus columnas o combinación de ellas, ya sea eligiéndolas a través del hipervínculo “Línea”, disponible en el campo “Ordenamiento” de la figura anterior, o haciendo clic en el título de la columna por la cual se desea ordenar. Por defecto, la grilla se presenta ordenada por la columna “Línea”.</p>
+  <p class="H_Texto">Al acceder al hipervínculo “Línea” se abre una ventana destinada a indicar el ordenamiento de las líneas en la grilla según se visualiza en la siguiente imagen. Se deberán seleccionar las columnas y el modo de ordenarlas (ascendente o descendente).</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_13.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_13.gif" width="567"/></p>
+  <p class="H_Texto">La tabla de la la figura de los errores sólo puede incluir 300 líneas. En caso que el archivo tenga más líneas aparecerá un hipervínculo, en la parte inferior derecha de la tabla, para acceder a los ítems anteriores o posteriores a los 300 que se exhiben.</p>
+  <p class="H_Texto">Los ítems que finalmente se importan son aquellos que no poseen errores, es decir, las líneas que se muestran en rojo se descartan para el proceso de importación.</p>
+  <p class="H_Texto">Vale aclarar que:</p>
+  <ul>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Si el archivo incluye ítems sin cantidad (cantidad nula), en la ventana de trabajo en el campo cantidad se asumirá, como cantidad, una unidad (en la unidad de compras). Esto permite que en el caso que el inventario se tome escaneando los códigos de los ítems, si el escáner no incluye la cantidad porque ésta es unitaria, se evita la molestia de tener que editar el archivo e ingresar manualmente una unidad en la cantidad para todos los ítems.</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Si el ítem que se importa ya presenta una cantidad en el inventario del depósito, la cantidad importada se suma a la existente.</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Si el ítem maneja doble unidad de medida con relación fija, la unidad de medida que no se corresponde con la unidad de compras se recalcula utilizando la relación definida para el ítem. Para los ítems con relación variable se respeta lo indicado en el archivo de importación, a no ser que alguna de las cantidades no esté informada o esté informada en cero.</p>
+    </li>
+  </ul>
+  <p class="H_Texto">Al finalizar el proceso se exhibe un mensaje indicando la cantidad de líneas procesadas y la cantidad de ítems diferentes que se actualizaron en el inventario tal como se muestra en la figura siguiente. También se informará si se produjo algún error en la ejecución.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_14.gif" border="0" height="157" src="../assets/images/BASCSIMAG/Imp_14.gif" width="416"/></p>
+  <p class="H_Texto">El botón “Exportar”, disponible en el ángulo superior derecho de la imagen siguiente, permite exportar la información de la grilla a un archivo temporal. Al presionarlo se exhibe el mensaje de la figura siguiente y al “Aceptar” se genera un archivo en la carpeta que se indica, manteniendo el ordenamiento definido. El archivo puede consultarse, por ejemplo, con el bloc de notas.</p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_15.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_15.gif" width="567"/></p>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_16.gif" border="0" height="222" src="../assets/images/BASCSIMAG/Imp_16.gif" style="cursor: nesw-resize;" width="567"/></p>
+  <p class="H_Texto">El botón “Totales” disponible al pie de la ventana de la figura siguiente, permite acceder a una ventana con un resumen de la cantidad de casos encontrados de cada tipo:</p>
+  <ul>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Cantidad de líneas</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Cantidad de líneas con y sin errores</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Cantidad de ítems diferentes</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Cantidad de ítems diferentes con y sin errores</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Total de cantidades</p>
+    </li>
+    <li style="font-size: 8pt;">
+      <p class="H_Sub_Item_con_vineta">Total de cantidades con y sin errores</p>
+    </li>
+  </ul>
+  <p class="imagen"><img alt="BASCSIMAG\Imp_17.gif" border="0" height="303" src="../assets/images/BASCSIMAG/Imp_17.gif" width="567"/></p>
+
+</body></html>

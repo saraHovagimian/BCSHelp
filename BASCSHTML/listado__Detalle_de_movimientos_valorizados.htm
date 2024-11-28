@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.3.0_8"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Detalle de movimientos valorizados</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Detalle de movimientos valorizados</h1>
+  <p class="H_Texto">Este informe permite ver el detalle de los comprobantes que originan entradas o salidas de los ítems registrados en el sistema, incluyendo la valorización de cada movimiento.</p>
+  <p class="H_Texto">Cada <a href="tabla__Bienes.htm">ítem</a> que se registra en el sistema tiene definido un método de valuación que es utilizado para la contabilización de los movimientos de entrada/salida del ítem. Para emitir el listado pueden valorizarse los movimientos de cada ítem por su método de valuación o pueden valorizarse  por un mismo método que se selecciona en el momento de imprimir el listado.</p>
+  <p class="H_Texto">En caso de haber definido una Moneda de Valuación Alternativa se podrá seleccionar en cual de las dos monedas de valuación existentes se desean expresar los movimientos incluidos en el informe.</p>
+  <p class="H_Texto">Se muestra, para cada ítem,  el detalle de los movimientos que lo afectan con fecha, tipo, número de comprobante, <a href="tabla__Conceptos.htm">concepto</a> , cantidad, costo unitario del movimiento y costo total del movimiento.</p>
+  <p class="H_Texto"><span lang="ES" xml:lang="ES">Para los ingresos de mercadería que tuvieran facturas o revalúos asociados, sólo se mostrarán las facturas y revalúos cuya fecha de comprobante sea anterior o igual al fin de mes de la fecha del ingreso. Si los ingresos tienen asociados facturas de compra y órdenes de compra, sólo se mostrarán las facturas.</span></p>
+  <p class="H_Texto">El informe también incluye las transferencias entre depósitos y las notas de crédito de compras con el detalle de los revalúos de los remitos de egreso asociados.</p>
+  <p class="H_Texto">Se indica si un ingreso de mercadería no está facturado en su totalidad o si se encuentra todo pendiente de facturación.</p>
+  <p class="H_Texto">En caso que existan comprobantes de ingreso o egreso de mercaderías pendientes de control, se indicará tal situación mediante una letra <font style="font-weight: bold;">P</font> ubicada en el extremo derecho de la línea correspondiente a los mismos.</p>
+  <p class="H_Texto" style="mso-fareast-language: EN-US;"><span lang="ES" xml:lang="ES">En caso que al emitir el informe haya movimientos sin valorizar y/o si hay errores de valorización se emitirá un aviso alertando de tal situación. En caso que se produzcan errores de valorización se dispone de un hipervínculo para visualizarlos.</span></p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a href="listado_documentos_valorizados_tener_en_cuenta.htm">Para tener en cuenta</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP742181259" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP742181259">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Rubro</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Rubros.htm">rubro</a> cuyos ítems se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un rubro en particular o un grupo de rubros. Si este dato es dejado en blanco, se incluirán todos los rubros en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito/Planta</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite informar los depósitosy/o plantas  cuyos movimientos se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las facturas de compra, órdenes de compra y revalúos asociados a los movimientos que se incluyan se listarán siempre a pesar que no correspondan a ninguno de los depósitos.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP742222087" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP742222087">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Incluir
+      código propio de</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo permite indicar un código
+      de cliente o proveedor de modo de incluir el código propio de los
+      ítems para el proveedor o cliente indicado, al emitir el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación del ordenamiento con el
+      que se desea emitir el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      <font style="font-weight: bold;">Ítem</font> se imprimirá el detalle
+      de movimientos ordenado por código de <a href="tabla__Bienes.htm">ítem</a>
+      .
+    </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Rubro</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento
+      Rubro se imprimirá el detalle de movimientos ordenado por <a href="tabla__Rubros.htm">código
+        de rubro</a> y por código de subrubro. Se mostrará cada rubro del
+      rango seleccionado con el detalle de los movimientos de los ítems
+      de ese rubro. Los ítems sin rubro se imprimirán al principio del listado
+      agrupados bajo el título Sin rubro.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Cuenta</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Al seleccionar el ordenamiento
+      por Cuenta, se deberá indicar si se ordena por Ítem o por comprobante.
+      Es decir, si para cada cuenta se ordena el informe por Ítem-Comprobante,
+      o por Comprobante-Ítem. </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"> </p>
+    <p class="H_Parrafo_de_Sub-Item">Luego se solicita un segundo nivel
+      de ordenamiento para indicar si se desea ordenar el listado por código
+      de ítem o por su descripción. Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Código</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Descripción</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/>Valores
+      en</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Moneda de valuación que se desea
+      utilizar para valorizar los movimientos que se incluyen en el listado.
+      Este cuadro solo se habilitará en caso de haber definido una Moneda
+      de valuación y contabilización adicional.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Valorización</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/>
+      Método de valuación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Método de valuación que se desea
+      utilizar para valorizar los movimientos que se incluyen en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Las opciones que se ofrezcan dependerán
+      de los métodos indicados en <a href="parametros__Items.htm">métodos
+        de valuación habilitados</a> indicados en la pantalla parámetros de
+      ítems.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"><span lang="ES" xml:lang="ES">Si
+        se indica como método de valuación precio de compra o método contable,
+        para los bienes que no administran stock y servicios de tipo cantidad
+        que tienen método de valuación precio de compra, se dispone del detalle
+        del ingreso que le da costo.</span></p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Como el método de valuación contable
+      de un ítem puede modificarse en cualquier momento <span lang="ES" xml:lang="ES"> aunque
+        el mismo tenga movimientos y estos estén en un subdiario de materiales
+        cerrado, si el informe se pide según el método contable (sólo en este
+        método), el método de valuación asociado al ítem al momento de emitir
+        el listado puede no coincidir con el que se observa en el informe.
+        La figura muestra un ejemplo donde </span>los movimientos valorizados
+      de un ítem tenían valuación por costo FIFO hasta el mes de enero y
+      en febrero cambió su método de valuación a CPP al cierre, por lo tanto
+      el listado muestra los movimientos agrupados según el método por el
+      que se valuaron. </p>
+    <p class="H_Parrafo_de_Sub-Sub-Item" style="text-align: center;"><span lang="ES" xml:lang="ES"><img src="../assets/images/BASCSIMAG/detalle movimientos valorizado.gif" alt="" style="border: none;" border="0"/></span></p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/>
+      Lista de precios</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En caso de haber elegido como
+      Método de valuación &quot;Ocasional&quot; se debe indicar la lista
+      de precios.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">La lista de precios que se indique
+      puede haberse definido como dinámica.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Como este informe se muestra en
+      primera unidad de medida, la lista que se utilice para valorizar se
+      convierte, de la unidad que esté, a primera unidad de medida.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <p class="H_Item_con_imagen_negrita"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/></p>
+  <p class="H_Parrafo_de_Item">En el caso de un comprobante de ingreso al cual le dan valor más de una factura u orden de compra, se muestra en la columna cantidad, la cantidad de unidades del ítem ingresadas en la factura u orden de compra y, en la columna total, el importe gravado de dichas unidades.</p>
+  <p class="H_Parrafo_de_Item">Cuando la suma de las cantidades de los comprobantes que dan valor al ingreso sea igual a las del remito de ingreso, la suma de dichos importes debería coincidir con el total mostrado para el remito de ingreso.</p>
+  <p class="H_Parrafo_de_Item">En el caso que la suma de cantidades de los comprobantes que dan valor al ingreso de mercadería sea menor o mayor a las del ingreso, la suma de dichos importes no va a coincidir con lo mostrado como valor para el remito de ingreso.</p>
+  <p class="H_Parrafo_de_Item">El costo del movimiento de mercadería se calcula en todos los casos obteniendo un costo unitario a partir de los comprobantes que le dan valor, multiplicando dicho costo por la cantidad de unidades del remito.</p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP742181259');
+    TextPopupInit('a2', 'POPUP742222087');
+    //]]>
+  </script>
+
+</body></html>

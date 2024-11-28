@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_39"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Fiscalizacion manual</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Fiscalización manual"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Fiscalización manual</h1>
+  <p class="H_Texto">Esta opción permite generar el archivo de texto para la solicitud del CAE en forma manual utilizando el aplicativo SIAP RECE (Régimen de emisión de comprobantes electrónicos).</p>
+  <p class="H_Texto">La tarea genera un archivo de texto conforme a los formatos de exportación requeridos por el aplicativo RECE Anexo III de la RG 2177, este archivo incluirá todos los comprobantes del talonario que se encuentran pendientes de fiscalización.</p>
+  <p class="H_Texto">Para que el botón “<font style="font-weight: bold;">Fiscalización manual</font>” se habilite, es necesario pausar el servicio presionando el botón “<font style="font-weight: bold;">Pausar</font>”.</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_exportar.gif" border="0" height="279" src="../assets/images/BASCSIMAG/fiscalizacion_exportar.gif" width="444"/></p>
+  <p class="epigrafe">Figura 1-Exportación</p>
+  <p class="H_Texto">Al presionar el botón “Fiscalización manual” se ofrece la ventana destinada a generar el archivo de solicitud (archivo txt) (Figura 1-Exportación).</p>
+  <p class="H_Texto">Se prevén dos formatos; el que se indica en “Detalle” está destinado a grabar el detalle correspondiente a cada uno de los comprobantes pendientes de CAE (fecha, tipo de comprobante, número, etc.) y el otro, que se informa en “Resumen”, permite indicar el formato en que se grabarán los datos resumen (período, cantidad de registros, etc.).</p>
+  <p class="H_Texto">En el caso del formato “Detalle”, el formato va a variar ya sea que se trate de un <a href="tabla__Talonarios.htm">talonario</a> que se utiliza para facturar ventas de bienes o prestaciones de servicios.</p>
+  <p class="H_Texto">En el campo “Archivo” se debe informar el nombre del directorio donde se guardará el archivo que se genere y luego se deberá presionar el botón “Exportar”.</p>
+  <p class="H_Texto">El nombre que BAS CS asigna al archivo que se genera indica su contenido, por ejemplo, <font style="font-weight: bold;">RECE2008016666010110.txt</font> donde:</p>
+  <p class="H_Texto">“<font style="font-weight: bold;">RECE2008016666010110.txt</font>” donde:</p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font style="font-weight: bold;">200801</font> indica año y mes (período)
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font style="font-weight: bold;">6666</font> indica el punto de venta
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font style="font-weight: bold;">0101</font> indica el código de la empresa concatenado con el tipo de comprobante según la AFIP
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font style="font-weight: bold;">1</font> indica que se informan las fechas de comprobante
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font style="font-weight: bold;">0 ó 1</font> 0 - indica que las operaciones informadas no corresponden a prestación de servicios
+  </p>
+  <p class="H_Parrafo_de_Sub-Item">1 - indica que las operaciones informadas corresponden a prestación de servicios</p>
+  <p class="H_Texto">cantidad de comprobantes exportados correctamente y la cantidad de aquellos que tuvieron inconvenientes (Figura 2-Aviso).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_aviso.gif" border="0" height="63" src="../assets/images/BASCSIMAG/fiscalizacion_aviso.gif" width="250"/></p>
+  <p class="epigrafe">Figura 2-Aviso</p>
+  <p class="H_Texto">La Figura 3-Archivo generado muestra un ejemplo de archivo generado. Este archivo será el que se utilice para ser importado por el RECE.</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_archivo.gif" border="0" height="108" src="../assets/images/BASCSIMAG/fiscalizacion_archivo.gif" width="470"/></p>
+  <p class="epigrafe">Figura 3-Archivo generado</p>
+  <p class="H_Texto">Los comprobantes correctamente exportados son mostrados en la grilla de la aplicación en color verde formando así parte de un lote de fiscalización manual.</p>
+  <p class="H_Texto">Es importante tener en cuenta que el servicio no puede reanudarse hasta que el lote no se resuelva, ya sea importando la respuesta o desestimándolo.</p>
+  <p class="H_Texto">Para desestimarlo, si se presiona “Fiscalización manual” existiendo un lote pendiente de resolver, se accede a una pantalla donde es posible indicar el archivo en el cual se exportaron los comprobantes disponiéndose de una opción para desestimar el lote (Figura 4-Desestimar lote).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_desestimar.gif" border="0" height="279" src="../assets/images/BASCSIMAG/fiscalizacion_desestimar.gif" width="444"/></p>
+  <p class="epigrafe">Figura 4-Desestimar lote</p>
+  <p class="H_Texto">Cabe aclarar que el programa informático &quot;Régimen de Emisión de Comprobantes Electrónicos&quot; (RECE) constituye uno de los módulos que complementan el Sistema Integrado de Aplicaciones (S.I.Ap.), requiriendo la instalación de éste, en su versión más actualizada –SIAP versión 3.1, release 2- para su utilización y de donde se tomarán los datos de los contribuyentes, previamente ingresados.</p>
+  <p class="H_Texto">Este aplicativo tiene una pantalla de inicio en la que se debe generar el período por el cual vamos a solicitar la autorización de emisión (Figura 5-Solicitud).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_solicitud.gif" border="0" height="120" src="../assets/images/BASCSIMAG/fiscalizacion_solicitud.gif" width="250"/></p>
+  <p class="epigrafe">Figura 5-Solicitud</p>
+  <p class="H_Texto">Tildar el campo “Informa Fechas (SI)” y teniendo seleccionada la línea correspondiente a la solicitud a la cual corresponde la facturación, se debe ir al punto del menú “Solicitud-Importación de datos” (Figura 6-Solicitud-Importación de datos).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_importacion.gif" border="0" height="274" src="../assets/images/BASCSIMAG/fiscalizacion_importacion.gif" width="444"/></p>
+  <p class="epigrafe">Figura 6-Solicitud-Importación de datos</p>
+  <p class="H_Texto">Oprimiendo el botón “<font style="font-weight: bold;">Seleccionar archivo de origen para la importación</font>” se debe localizar el archivo con formato “txt” generado por el Administrador para la fiscalización manual (ej. RECE2008016666010110.txt).</p>
+  <p class="H_Texto">En la pantalla de laFigura 7 , y suponiendo que no se detectaron errores en el proceso, se observa el resultado de la importación de datos realizada. En caso que se detecten errores se emite un Mensaje pudiendo acceder al detalle de los mismos (Figura 8-Advertencia).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_mensaje.gif" border="0" height="274" src="../assets/images/BASCSIMAG/fiscalizacion_mensaje.gif" width="444"/></p>
+  <p class="epigrafe">Figura 7</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_advertencia.gif" border="0" height="275" src="../assets/images/BASCSIMAG/fiscalizacion_advertencia.gif" width="444"/></p>
+  <p class="epigrafe">Figura 8-Advertencia</p>
+  <p class="H_Texto">El próximo paso es “Generar la solicitud de autorización”, al acceder se exhiben los datos que fueron cargados previamente en el aplicativo (Figura 9-Generación del archivo para solicitar autorización).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_generacion.gif" border="0" height="117" src="../assets/images/BASCSIMAG/fiscalizacion_generacion.gif" width="250"/></p>
+  <p class="epigrafe">Figura 9-Generación del archivo para solicitar autorización</p>
+  <p class="H_Texto">Presionando el botón “Generar” (<img alt="BASCSIMAG\siap_grabar.gif" border="0" height="24" src="../assets/images/BASCSIMAG/siap_grabar.gif" width="24"/>) se abre la ventana que se muestra en la Figura 10-Generar CD / Disquete / Archivo. En ella el usuario podrá seleccionar donde se grabará la “solicitud de autorización” para, luego, ser presentada vía Internet</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\fiscalizacion_cd.gif" border="0" height="161" src="../assets/images/BASCSIMAG/fiscalizacion_cd.gif" width="250"/></p>
+  <p class="epigrafe">Figura 10-Generar CD / Disquete / Archivo</p>
+  <p class="H_Texto">Al presionar el botón “Aceptar” (<img alt="BASCSIMAG\siap_tilde.gif" border="0" height="24" src="../assets/images/BASCSIMAG/siap_tilde.gif" width="24"/>) se graba en el destino elegido el archivo generado por la aplicación. Este tendrá extensión”b64” (archivo zipeado)</p>
+  <p class="H_Texto">Al finalizar el proceso de “Generación de la solicitud”, el sistema RECE genera automáticamente dos copias de la dicha solicitud en una misma hoja.</p>
+  <p class="H_Texto">El archivo generado se transmite a la AFIP mediante transferencia electrónica de datos (ventanilla electrónica) utilizando la clave fiscal, debiendo actuar de la misma manera como se procede con cualquier declaración jurada en la opción “Presentación de DDJJ y pagos”.</p>
+  <p class="H_Texto">El paso siguiente consiste en la descarga por Internet del archivo de respuesta a la solicitud de CAE por ventanilla electrónica (e-ventanilla) y la incorporación de los CAE y sus fechas de vencimiento al sistema ERP.</p>
+  <p class="H_Texto">El archivo txt de respuesta lleva por nombre “<font style="font-weight: bold;">FX_nnnnnnn.TXT</font>” donde <font style="font-weight: bold;">nnnnnnn</font> es el número de la solicitud generada y su diseño corresponde a los formatos de exportación establecidos por el aplicativo RECE Anexo IV de la RG 2177.</p>
+  <p class="H_Texto">Para ingresar la respuesta del lote de fiscalización electrónica a BAS CS es necesario ingresar al programa Administrador de comprobantes electrónicos, seleccionar el talonario en cuestión y oprimir la opción de fiscalización manual.</p>
+  <p class="H_Texto">Al oprimir esta opción se habilita una pantalla con las opciones de desestimar el lote o importar la respuesta.</p>
+  <p class="H_Texto">En la opción de “Importar la respuesta”, existen diferentes formatos solicitados que se corresponden a los datos de la cabecera, al detalle de los comprobantes aprobados y al detalle de los comprobantes rechazados.</p>
+  <p class="H_Texto">Las respuestas pueden tener errores como CUIT no válidos, condiciones de IVA no válidas y comprobantes rechazados o no encontrados, entre otros.</p>
+  <p class="H_Texto">Pueden existir también problemas con el talonario o el punto de venta.</p>
+  <p class="H_Texto">El proceso toma el archivo txt que devuelve el RECE y actualiza en la base de datos todo lo referente a la fiscalización electrónica, como ser el CAE solicitado correspondiente a cada comprobante pendiente de fiscalización electrónica, la fecha de vencimiento, la fecha de presentación y las observaciones.</p>
+  <p class="H_Texto">Como en el caso de la exportación, el sistema da aviso del resultado de la importación informando la cantidad de comprobantes importados correctamente y un detalle de aquellos que fueron rechazados por la AFIP o los comprobantes existentes en el archivo para los que no es posible encontrar una correspondencia en BASCS.</p>
+  <p class="H_Texto">De no querer importar la respuesta se puede desestimar el lote para poder por ejemplo continuar con el servicio o para actualizar la lista de los comprobantes pendientes de CAE, etc.</p>
+
+</body></html>

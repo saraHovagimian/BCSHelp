@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.16.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>BCS 1547 Generacion de archivos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="RG 1547"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>RG 1547</h1>
+  <h2>Utilitario discontinuado por estar en desuso.</h2>
+  <p class="H_Texto">Este utilitario permite generar un archivo de texto conforme al formato establecido por la resolución general 1547.</p>
+  <h3>Menú Configuración</h3>
+  <h3>Cotizaciones</h3>
+  <p class="H_Texto">Permite establecer los sinónimos para las Cotizaciones.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Sinónimo para la moneda local</p>
+  <p class="H_Parrafo_de_Item">Presionar F3 y seleccionar el sinónimo para la moneda local.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Sinónimos</p>
+  <p class="H_Parrafo_de_Item">En la columna Código se exhiben las cotizaciones existentes en BAS CS. En la columna Sinónimos se debe presionar F3 para acceder a la tabla de monedas correspondiente a la resolución y seleccionar la que corresponda a cada caso.</p>
+  <p class="H_Texto_subrayado_arial_9">Menú Operación</p>
+  <p class="H_Texto_subrayado_arial_9">Generación de archivos</p>
+  <p class="H_Texto">A través de esta tarea se procesa información correspondiente a los pagos (que no sean del tipo de efectivo) efectuados en los siguientes tipos de comprobantes:</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Comprobantes de compras de contado, cuyo importe total en pesos es superior a $1000 y que no sean liquidaciones de crédito</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Ordenes de pago de clientes o proveedores, aplicadas a comprobantes de compras (que no sean liquidaciones de crédito) o ventas, de signo contrario al signo de la orden de pago, tal que el importe total del comprobante aplicado en pesos sea superior a $1000</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Formato</p>
+  <p class="H_Parrafo_de_Item">Se ofrece el código del formato estándar previsto por BAS CS para generar el archivo. Pueden consultarse todos los formatos disponibles pulsando F3.</p>
+  <p class="H_Parrafo_de_Item">Si el campo exhibe un código de formato y se presiona F4 se accede al detalle del formato correspondiente.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\ebx_823313483.gif" border="0" height="24" src="../assets/images/BASCSIMAG/ebx_823313483.gif" width="24"/>Los formatos estándar que ofrece BAS CS pueden modificarse. Para hacerlo se puede consultar:</p>
+  <p class="H_Texto"><a href="tabla__Formatos_de_Exportacion.htm">Formatos de exportación</a>.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Directorio</p>
+  <p class="H_Parrafo_de_Item">Indicar, o buscar con el botón Examinar, la carpeta donde se guardará el archivo a generar.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Período <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Año</p>
+  <p class="H_Parrafo_de_Item">Indicar mes y año de los comprobantes a incluir en el archivo. Se consideran los comprobantes cuyas fechas externas están comprendidas en el período seleccionado.</p>
+  <p class="H_Parrafo_de_Item">Por defecto, al ingresar en la ventana, el Período indica el mes anterior al mes en curso y el año actual.</p>
+  <p class="H_Parrafo_de_Item">El período seleccionado no puede ser posterior a la fecha actual, en caso que lo fuese se informará sobre tal situación.</p>
+  <p class="H_Texto">Se asignan, automáticamente, los siguientes sinónimos a los tipos de comprobantes de compras y ventas:</p>
+  <p class="H_Texto_subrayado_arial_9">Comprobantes de ventas</p>
+  <p class="H_Texto" style="margin-top: 0; margin-bottom: 0;"></p>
+  <table cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="359">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">01</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Facturas A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">02</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de débito A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">03</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de crédito y notas de crédito de devolución A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">06</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Facturas B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">07</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de débito B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">08</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de crédito y notas de crédito de devolución B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">19</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Facturas de exportación</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">20</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de débito por operaciones con el exterior</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">21</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de crédito por operaciones con el exterior</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">63</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Liquidaciones A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">64</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Liquidaciones B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">92</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Otros comprobantes no especificados</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Texto" style="margin-top: 0; margin-bottom: 0;"></p>
+  <p class="H_Texto_subrayado_arial_9">Comprobantes de compras</p>
+  <table cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="359">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">01</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Facturas A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">02</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de débito A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">03</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de crédito A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">04</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Factura-Recibo A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">06</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Facturas B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">07</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de débito B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">08</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Notas de crédito B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">09</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Factura-Recibo B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">63</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Liquidaciones A</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">64</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Liquidaciones B</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 13.16%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">92</p>
+        </td>
+        <td style="width: 86.84%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Otros comprobantes no especificados</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Texto" style="margin-top: 0; margin-bottom: 0;"></p>
+  <p class="H_Texto">El proceso de generación también asocia los sinónimos ya definidos correspondientes a las cotizaciones. Por esta razón es indispensable realizar, previamente a la generación de archivos, la tarea de asignación de sinónimos.</p>
+  <p class="H_Texto">El nombre del archivo generado tendrá el siguiente formato:</p>
+  <p class="H_Texto_subrayado_arial_9">RG1547_AAAAMM</p>
+  <p class="H_Texto">Donde AAAA corresponde al año del período indicado, y análogamente MM al número de mes correspondiente al período indicado.</p>
+  <p class="H_Texto">Si para el período indicado ya existiese el archivo, el proceso destruirá la información que éste contuviese, reemplazándola por la nueva información que se genere.</p>
+  <p class="H_Texto_subrayado_arial_9">Formato de archivos</p>
+  <table cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="463">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Denominación del campo</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Tipo de dato</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Longitud</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Formato</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Fecha de cancelación</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">8</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">DDMMAAAA</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Medio de pago</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Según tabla adjunta</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Identificación medio de pago</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Alfabético</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">30</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">CUIT emisor original de cheque endosado</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">11</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Importe de cheque cancelatorio</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">15</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">13 enteros y 2 decimales</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">CUIT Banco o entidad financiera interviniente</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">11</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Procedimiento de pago utilizado</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">1 Comprobantes de compra</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2 Ordenes de pago</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Nro. CUIT del comitente</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">11</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Apellido y nombre o denominación del comitente</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Alfanumérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">30</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Factura o documento equivalente</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Según lo indicado previamente</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Nro de factura o documento equivalente cancelado</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">12</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Importe total de la operación</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">15</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">13 enteros y 2 decimales</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 42.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Tipo de moneda</p>
+        </td>
+        <td style="width: 18.37%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Numérico</p>
+        </td>
+        <td style="width: 16.33%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">3</p>
+        </td>
+        <td style="width: 22.44%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Según lo establecido en la tarea Configuración de Cotizaciones</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Texto" style="margin-top: 0; margin-bottom: 0;"></p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">fecha de cancelación</font> se indicará la fecha externa del comprobante.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">medio de pago</font> se indicará el código de la tabla adjunta que se corresponda con el tipo de medio de pago a considerar.</p>
+  <table cellpadding="1" cellspacing="0" style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="415">
+    <tbody>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto"></p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">MEDIOS DE PAGO</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">1</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Depósitos en cuentas de entidades financieras</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">2</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Giros o transferencias bancarias</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">3</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Cheques o cheques cancelatorios</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">4</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Tarjeta de crédito, compra o débito</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">5</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Factura de crédito</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">6</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Endoso de cheque</p>
+        </td>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td style="width: 15.92%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">7</p>
+        </td>
+        <td style="width: 84.08%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
+          <p class="H_Texto">Otros procedimientos autorizados por el P.E.N.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">identificación del medio de pago</font> se indicará la descripción de la tabla adjunta correspondiente al código del medio de pago indicado en el campo anterior.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">CUIT del emisor original del cheque endosado</font> se indicará el número de documento establecido para el librador de dicho cheque. En el caso que no hubiese un valor indicado se completará con ceros (0).</p>
+  <p class="H_Texto">Este proceso no validará el documento, o sea, no verificará que el número de documento corresponda al tipo indicado.</p>
+  <p class="H_Texto">Además, si la longitud del mismo excediese <font style="font-weight: bold;">11</font> será truncado a derecha, y si tuviese menor longitud será completado con ceros a izquierda.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">importe de cheque cancelatorio</font> se indicará el importe correspondiente al medio de pago expresado en la moneda del mismo.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">CUIT del banco o entidad financiera interviniente</font> se indicará el número de documento establecido para el banco asociado a la cuenta corriente del cheque emitido.</p>
+  <p class="H_Texto">En el caso que no hubiese un valor indicado se completará con ceros (0).</p>
+  <p class="H_Texto">Este proceso no validará el documento, o sea, no verificará que el número de documento corresponda al tipo indicado.</p>
+  <p class="H_Texto">Además, si la longitud del mismo excediese <font style="font-weight: bold;">11</font> será truncado a derecha, y si tuviese menor longitud será completado con ceros a izquierda.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">Procedimiento de pago utilizado</font> se indicará un <font style="font-weight: bold;">1 (Contado)</font> para comprobantes de compra y un <font style="font-weight: bold;">2 (A plazo)</font> para las órdenes de pago aplicadas.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">Nro. CUIT del comitente</font> se indicará el número de documento establecido para la cuenta corriente asociada al comprobante.</p>
+  <p class="H_Texto">En el caso que no hubiese un valor indicado se completará con ceros (0).</p>
+  <p class="H_Texto">Este proceso no validará el documento, o sea, no verificará que el número de documento corresponda al tipo indicado.</p>
+  <p class="H_Texto">Además, si la longitud del mismo excediese 11 será truncado a derecha, y si tuviese menor longitud será completado con ceros a izquierda.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">Apellido y nombre o denominación del comitente</font> se indicarán los 30 primeros caracteres de la razón social del proveedor o cliente.</p>
+  <p class="H_Texto">El campo <font style="font-weight: bold;">Factura o documento equivalente</font> se completará de acuerdo a lo indicado previamente para la codificación de los tipos de comprobantes.</p>
+  <p class="H_Texto">En el campo <font style="font-weight: bold;">Número de factura o documento equivalente cancelado</font> se indicará el prefijo seguido del número externo del comprobante completado a 12 dígitos con ceros a izquierda.</p>
+  <p class="H_Texto">El campo <font style="font-weight: bold;">Importe total de la operación</font> se expresará siempre en moneda local y se corresponderá con el total en pesos del comprobante de compras o ventas considerado.</p>
+  <p class="H_Texto">El campo <font style="font-weight: bold;">Tipo de moneda</font> se completará según lo establecido en el programa de <font style="font-weight: bold;">Cotizaciones</font> en el menú de <font style="font-weight: bold;">Configuración</font>.</p>
+  <p class="H_Texto_subrayado_arial_9">Nota:</p>
+  <p class="H_Texto">Los valores numéricos que correspondan a importes se completarán con ceros no significativos a derecha e izquierda del punto decimal, y se truncarán a la cantidad de decimales indicada.</p>
+  <p class="H_Texto">Tales valores se describirán sin separador de miles ni separador decimal.</p>
+  <p class="H_Texto">Por ejemplo, si la longitud indicada para el campo fuese 5 con 2 decimales, y el dato fuese 10.2, el mismo quedaría: 01020</p>
+  <p class="H_Texto">Aquellos valores numéricos que no correspondan a importes se completarán con ceros a izquierda.</p>
+  <p class="H_Texto">Por ejemplo, si la longitud indicada para el campo fuese 5, y el dato fuese 12, el mismo quedaría: 00012.</p>
+  <p class="H_Texto">Por otro lado, los valores alfanuméricos o alfabéticos se completarán con blancos a derecha.</p>
+
+</body></html>

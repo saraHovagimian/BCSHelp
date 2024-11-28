@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.1.1.0_6"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Listas de precios Modificacion de precios por item</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Modificación de precios por ítem</h1>
+<p class="H_Texto">Mediante esta tarea es posible modificar los precios 
+ de algunos o de todos los ítems correspondientes a una lista de precios.</p>
+<p class="H_Texto">Sólo pueden modificarse listas normales, es decir, aquellas 
+ para las que no se haya indicado Lista dinámica en su definición.</p>
+<p class="H_Texto">Los ítems de la lista a modificar pueden ingresarse 
+ directamente, seleccionarse por atributo, traerse desde otra lista de 
+ precios o importándose desde archivos .</p>
+<p class="H_Texto">En caso que los ítems se informen directamente pueden 
+ digitarse sus códigos en forma directa o pueden seleccionarse desde ventanas 
+ de búsqueda, en el campo Item de la grilla. En el resto de los casos se 
+ debe acceder a una precarga de la grilla haciendo uso del botón de precarga 
+ disponible en la barra de botones del encabezado.</p>
+<p class="H_Texto">Si en los parámetros de ítems está tildado el campo 
+ &quot;Ver descripción larga en la modificación de precios&quot;, se mostrará 
+ la descripción larga del ítem, sino, la corta. El tooltip en las líneas 
+ siempre muestra la descripción larga.</p>
+<p class="H_Texto">Es importante tener en cuenta que solo pueden modificarse 
+ los precios de listas de precios con fechas de vigencia iguales o posteriores 
+ a la fecha del día. Ahora bien, si se trata de listas de precios <font style="font-weight: bold;">no habilitadas para ventas</font>, si podrán 
+ modificarse los precios correspondientes a vigencias anteriores.</p>
+<p class="H_Texto">En caso de haberse implementado un circuito de autorización 
+ de listas de precios, también podrán modificarse los precios de listas 
+ habilitadas para ventas con fechas de vigencia anteriores a la fecha del 
+ día siempre y cuando dichas listas se encuentren pendientes de autorizar.</p>
+<p class="H_Texto">Al presionar el botón <span style="font-weight: bold;">Borrar</span> 
+ se emite un aviso, en caso que se acepte se eliminará la definición para 
+ la generación de listas de precios.</p>
+<p class="H_Texto">Para realizar la tarea se deben completar los siguientes 
+ datos:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP680071772" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+<div data-targetname="POPUP680071772">
+	<p class="H_Texto">Código de empresa en la cual se va a modificar los 
+	 precios por items.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP675664323" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lista</span><span data-close-text="true">Lista</span></a></p>
+<div data-targetname="POPUP675664323">
+	<p class="H_Parrafo_de_Item">Código de la lista a modificar.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP675686751" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha de vigencia</span><span data-close-text="true">Fecha de vigencia</span></a></p>
+<div data-targetname="POPUP675686751">
+	<p class="H_Parrafo_de_Item">Vigencia correspondiente a la lista informada 
+	 .Si la lista es de ventas, salvo que la lista no esté autorizada, 
+	 la fecha debe ser igual o posterior a la fecha del día.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Texto">Los ítems a modificar pueden informarse directamente 
+ o haciendo uso del botón <img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/>.</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Texto"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> Este botón, 
+ ubicado a la derecha de la barra de botones, puede usarse para seleccionar 
+ los ítems a modificar y precargarlos en la grilla. Hay tres opciones:</p>
+<p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Ítems</p>
+<p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Lista</p>
+<p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Archivo</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a data-target="POPUP678280507" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ítems</span><span data-close-text="true">Ítems</span></a></p>
+<div data-targetname="POPUP678280507">
+	<p class="H_Parrafo_de_Item">Esta opción permite modificar los precios 
+	 de determinados ítems. Estos podrán seleccionarse indicando directamente 
+	 sus códigos o haciendo uso de un atributo.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Patrón 
+	 de búsqueda</p>
+	<p class="H_Parrafo_de_Sub-Item">En este cuadro es posible ingresar 
+	 información destinada a seleccionar los ítems cuyos precios se desea 
+	 modificar. Luego, al aprobar la tarea, los ítems quedarán disponibles 
+	 en la grilla, para su modificación.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Atributo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se desea seleccionar los ítems 
+	 a modificar por atributo, éste debe informarse en este campo.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valores del atributo informado 
+	 que corresponden a los ítems a modificar.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Código</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código correspondiente al ítem 
+	 a precargar en la lista.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción correspondiente al 
+	 ítem a precargar. Si no se conoce en forma exacta puede usarse el 
+	 carácter “%” al principio y al final del texto que se informe. Se 
+	 precargarán todos los ítems cuyas descripciones coincidan con la informada.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Provisto por</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible informar en este campo 
+	 un rango de proveedores de modo de limitar la carga de ítems solamente 
+	 a los que son provistos por los proveedores que se indiquen.</p>
+	<p class="H_Parrafo_de_Item">Una vez ingresada información en los campos 
+	 que correspondan, presionando el botón Grabar, se precargan en la 
+	 ventana de modificación de precios por ítem, los ítems que correspondan 
+	 a la selección, , pudiendo eliminarse, modificarse, etc.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a data-target="POPUP678340353" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lista</span><span data-close-text="true">Lista</span></a></p>
+<div data-targetname="POPUP678340353">
+	<p class="H_Parrafo_de_Item">Esta opción permite modificar los precios 
+	 de los ítems de la lista a partir de otra lista de precios.</p>
+	<p class="H_Parrafo_de_Item">La lista de precios que se indique debe 
+	 ser una lista normal, es decir, no puede haberse definido como lista 
+	 dinámica.</p>
+	<p class="H_Parrafo_de_Item">Al presionar el botón se accede a una 
+	 ventana de trabajo donde se solicita:</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Lista</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se debe indicar la lista de precios 
+	 origen, es decir, aquella de la cual se han de tomar los precios.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Como lista de origen se puede 
+	 seleccionar otra lista de precios o la misma lista, siempre y cuando, 
+	 ésta tenga una vigencia diferente.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En la precarga a partir de una 
+	 lista de precios se realizarán las conversiones necesarias en el caso 
+	 que la unidad de medida de las listas sea diferente.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Día de vigencia</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Vigencia correspondiente a la 
+	 lista origen.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Factor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este campo se precarga con el 
+	 valor que corresponde aplicar en base a la fecha de vigencia de la 
+	 lista, de las monedas de las listas origen y destino y de las cotizaciones 
+	 correspondientes a dichas monedas. O sea es el valor a aplicar al 
+	 precio de la lista origen para expresarlo como precio de la lista 
+	 destino en la moneda de dicha lista. De todas formas dicho valor se 
+	 puede modificar.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si, por ejemplo, la lista de origen 
+	 está en Marcos y la cotización del Marco respecto a la moneda local 
+	 es 7, y si la lista de destino está en dólares y la cotización de 
+	 esta moneda es 4, el campo factor exhibirá 1,75 (resultado de dividir 
+	 7 entre 4). Esto significa que los precios de la lista de origen (en 
+	 marcos) se multiplicarán por 1,75 para obtener los precios de la lista 
+	 de destino (en dólares).</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+	 Factores de calculo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En este cuadro se debe indicar 
+	 un atributo (de tipo Ítem) y los valores de dicho atributo que corresponden 
+	 a los ítems a incluir en la lista.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Para cada valor se debe indicar 
+	 el factor y el redondeo.</p>
+	<p class="H_Parrafo_de_Item">Una vez ingresada información en los campos 
+	 que correspondan, presionando el botón Grabar, se precargan en la 
+	 ventana de modificación de precios por ítem los ítems que correspondan 
+	 a la selección, pudiendo eliminarse, modificarse, etc.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a data-target="POPUP679944899" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Archivo</span><span data-close-text="true">Archivo</span></a></p>
+<div data-targetname="POPUP679944899">
+	<p class="H_Parrafo_de_Item">Al seleccionar esta opción se habilita 
+	 la ventana denominada <font style="font-weight: bold;">Importación 
+	 de ítems desde archivo</font>.</p>
+	<p class="H_Parrafo_de_Item">Esta ventana dispone de una grilla donde 
+	 es posible precargar ítems, trabajar en ellos y, una vez listos, pasarlos 
+	 a la ventana de modificación de ítems.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> Importar 
+	 desde</p>
+	<p class="H_Parrafo_de_Sub-Item">En dicha ventana se debe seleccionar, 
+	 según el formato del archivo a importar:</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta" style="counter-set: prl-p-h_sub_sub_item_con_vineta 0;">Archivo de texto</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Archivo ICR</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Origen - Proveedor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se desea importar una listas 
+	 de precios de un proveedor, se debe indicar su código y BAS CS analizará 
+	 si los ítems incluidos en el archivo a importar corresponden a códigos 
+	 propios del proveedor y, si así fuese, se reemplazarán por los códigos 
+	 que los tienen como códigos propios.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Ver solo ítems con errores</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se incluyen solo los ítems que 
+	 presentaron errores en la importación</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Archivo Texto</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona esta opción se 
+	 deben indicar el formato y el archivo que contiene los datos a importar.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Luego se indicará la parametrización 
+	 (si el archivo tiene línea de títulos, como están ubicados los datos, 
+	 etc). Para ello se abre en el sistema una ventana que se denomina 
+	 Parametrización del archivo a importar. En esta es posible indicar 
+	 lo siguiente:</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Formato</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe indicarse el <a href="formato_de_importacion_de_listas_de_precios.htm">formato</a> 
+	 del archivo a importar.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Archivo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe indicarse el nombre del archivo 
+	 que contiene los datos a importar.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Importar</p>
+	<p class="H_Parrafo_de_Sub-Sub-Sub_Item">Presionando este botón se 
+	 precargan la información del archivo en la grilla de trabajo, quedando 
+	 disponible para que se realicen las modificaciones del caso.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Archivo ICR</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Al seleccionar esta opción se 
+	 accede al explorador de Windows para indicar el nombre del archivo 
+	 que contiene la información importar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Tanto que se realice la importación 
+	 desde archivos de texto, como desde archivos de tipo ICR, una vez 
+	 realizado el proceso de importación los ítems se precargan en la grilla 
+	 de trabajo, quedando disponibles para realizar las acciones que correspondan.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/largavista.gif" alt="" style="border: none;" border="0"/></p>
+	<p class="H_Parrafo_de_Sub-Item">Este botón permite buscar ítems en 
+	 la grilla. Al presionarlo  se accede a una ventana donde se puede 
+	 indicar que la búsqueda es por alguna de las columnas:</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Iítem</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Descripción</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Precio. </p>
+	<p class="H_Parrafo_de_Sub-Item">Al presionar el botón &quot;Buscar&quot;, 
+	 de la pantalla &quot;Patrón de búsqueda&quot;, el sistema busca desde 
+	 la fila en la que estaba posicionado al pulsar el botón hacia abajo, 
+	 si no encuentra el dato, vuelve a empezar desde la primera fila hasta 
+	 la posición actual del cursor.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cuando se cierra la ventana de &quot;Patrón 
+	 de búsqueda&quot;, si ya se indicó algún patrón, presionando las teclas 
+	 Ctrl+F, el sistema sigue desde la última búsqueda realizada. </p>
+	<p class="H_Parrafo_de_Sub-Item">Si se sale de la ventana de &quot;Patrón 
+	 de búsqueda&quot; con el botón de cancelar, al volver a la ventana 
+	  no se dispone de la posibilidad de continuar con la búsqueda.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla 
+	 de listas de precios</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta es una ventana de trabajo, previa 
+	 a la pantalla de modificación de ítems, en la cual se precargan los 
+	 ítems del archivo quedando disponibles para realizar las modificaciones 
+	 que correspondan para, luego, incorporarlos a la ventana de modificación 
+	 de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">Los ítems se exhiben en la ventana. 
+	 Se distinguen en color rojo aquellos que presentaron algún inconveniente 
+	 detallando, en la última columna, el motivo. Por ejemplo: Presenta 
+	 varios precios (cuando el archivo incluye varias veces un mismo ítem 
+	 con distintos precios), Ítem inexistente, etc.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para eliminar un ítem de la lista 
+	 bastará con hacer doble clic en la cabecera de la fila de modo que 
+	 la misma quede marcada para borrarlo. Si se vuelve a hacer doble clic, 
+	 el ítem borrado vuelve a mostrarse activo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para modificar algún precio bastará 
+	 con digitarlo directamente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al importar el archivo se controla 
+	 que el valor indicado como precio sea un valor numérico válido. Se 
+	 debe tener en cuenta que dichos valores no deben presentar separador 
+	 de miles y, cuando corresponda, deben presentar separador decimal.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cuando se observe que varios valores 
+	 presentan una longitud que excede a la que deberían presentar, se 
+	 detendrá el proceso y se indicará que se revise la configuración (parametrización 
+	 del registro del archivo). Si la configuración fuera correcta al menos 
+	 se deberán modificar, en el archivo origen, los datos que quedaron 
+	 detallados y que presentan ese tipo de inconsistencia ya que hasta 
+	 que no se modifiquen no se podrá efectuar la importación.</p>
+	<p class="H_Parrafo_de_Sub-Item">El aviso aparece cuando se encuentran, 
+	 al menos, diez errores del tipo que se esperan datos numéricos y llegan 
+	 datos alfanuméricos (por ejemplo en campos de precios), o que la longitud 
+	 del código, que a lo sumo puede tener dieciocho caracteres tienen 
+	 cincuenta, etc.</p>
+	<p class="H_Parrafo_de_Sub-Item">Luego de hacer todas las modificaciones 
+	 del caso los ítems estarán disponibles para transferirlos a la ventana 
+	 de Modificaciones de precios por ítem.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cada registro aparece numerado. Dicha 
+	 numeración corresponde al orden en que están dispuestos los datos 
+	 en el archivo de origen. Además del código de ítem, el precio y, si 
+	 corresponde, el color y medida, en la ventana también se detallan 
+	 las descripciones de los ítems.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Revisar ítems</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En el caso de observar datos con 
+	 errores que se pueden solucionar simplemente dando de alta información 
+	 en el sistema, existe la posibilidad de resolver la situación en el 
+	 momento. Para ello de debe dar de alta la información que corresponde 
+	 y luego presionar este botón.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El sistema vuelve a recorrer el 
+	 archivo cargando nuevamente la información en la ventana de trabajo. 
+	 Así, por ejemplo, si el proceso de importación detecta ítems inexistentes, 
+	 se podrá darlos de alta y, al presionar el botón Revisar ítems, éstos 
+	 se cargarán en la ventana de trabajo.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+	 Copiar</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Una vez realizadas todas las modificaciones 
+	 requeridas en los ítems importados desde el archivo, se deben copiar 
+	 a la pantalla de modificación de precios por ítem.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Sólo ítems con precio diferentes</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se tilda esta opción es posible 
+	 indicar que solo se transfieran a la ventana de modificación de precios 
+	 por ítems aquellos que presentan precios diferentes a los que figuran 
+	 en la lista de precios que se está modificando.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Copiar</p>
+	<p class="H_Parrafo_de_Sub-Sub-Sub_Item" style="margin-left: 56.70pt;">Realizadas 
+	 todas las modificaciones que correspondan en la ventana de trabajo, 
+	 de modo que ésta incluya los ítems que se desean incorporar a la lista 
+	 de precios, se debe presionar este botón. Al hacerlo se exhibe la 
+	 información que efectivamente se tendrá en cuenta para la modificación 
+	 de precios (cabe aclarar que sólo se importarán los datos que no presenten 
+	 error y que no hayan sido descartados por el usuario). En caso que 
+	 ya se hubiese realizado el proceso se emite un Aviso informando que 
+	 se perderán los datos anteriores.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Sub_Item" style="margin-left: 56.70pt;">Una 
+	 vez copiados, se podrán ingresar las modificaciones a la lista de 
+	 precios que correspondan y proceder a su grabación.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Cancelar</p>
+	<p class="H_Parrafo_de_Sub-Sub-Sub_Item" style="margin-left: 56.70pt;">Si 
+	 se desea dejar sin efecto la importación de archivos se debe presionar 
+	 este botón.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Sub_Item" style="margin-left: 56.70pt;"> </p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> <a data-target="POPUP675695763" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP675695763">
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem contiene precios distintos 
+	 por color y medida, al hacer clic sobre la columna <font style="font-weight: bold;">Precio,</font> 
+	 se abre una ventana con todas las combinaciones de colores y medidas 
+	 y el precio por cada una de ellas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene precios iguales por 
+	 color pero distintos por medida, se agrega una fila de precios al 
+	 principio de la tabla, que permite el ingreso de los distintos precios 
+	 por medida que se copian a todos los colores cuya combinación esté 
+	 habilitada y se muestran en color gris. No se permite el ingreso de 
+	 precios en las filas de colores.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene precios distintos 
+	 por color pero iguales por medida, se agrega una columna de precios 
+	 al principio de la tabla, que permite el ingreso de los distintos 
+	 precios por color que se copian a todas las medidas cuya combinación 
+	 esté habilitada y se muestran en color gris. No se permite el ingreso 
+	 de precios en las columnas de medidas.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a4', 'POPUP680071772');
+	TextPopupInit('a1', 'POPUP675664323');
+	TextPopupInit('a2', 'POPUP675686751');
+	TextPopupInit('a5', 'POPUP678280507');
+	TextPopupInit('a6', 'POPUP678340353');
+	TextPopupInit('a7', 'POPUP679944899');
+	TextPopupInit('a3', 'POPUP675695763');
+//]]></script>
+
+
+</body></html>

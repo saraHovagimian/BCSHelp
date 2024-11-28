@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.2.5.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Comprobantes de compra</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Ingreso de facturas de compra</h1>
+  <p class="H_Texto">Para registrar facturas de compra se deben completar los datos de esta ventana. No se permite registrar comprobantes que no tengan ninguna línea asociada.</p>
+  <p class="H_Texto">Si el talonario asociado indica generar parte de diferencia, al ingresar el comprobante al sistema se generará el correspondiente parte (si hay una talonario asociado adecuado para realizar dicha operación). En dicho parte se ingresarán automáticamente todas las diferencias detectadas por comparación con la/s orden/es de compra a la/s cual/es referencia el comprobante (o a las que referencia el comprobante referenciado).</p>
+  <p class="H_Texto">En ese caso se agregarán al parte de diferencia las diferencias encontradas en el precio (mayor o menor), cantidad (mayor o menor), fecha de entrega (posterior), ítems que no están incluidos en las órdenes de compra o ítems que están en las órdenes de compra y no están en el comprobante.</p>
+  <p class="H_Texto">Cabe destacar que las diferencias de cantidad, fecha de entrega e ítems que están en las órdenes de compra y no están en el comprobante sólo se controlarán si la línea del comprobante es con entrega.</p>
+  <p class="H_Texto">En comprobantes de compras con y sin entrega se controlará siempre la diferencia en el precio.</p>
+  <p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante en estado de preparación</a>, de modo de seguir con el ingreso del mismo en una instancia posterior.</p>
+  <p class="H_Texto">Los datos a ingresar son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\boton_comprobante_referenciado.gif" border="0" height="29" src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" width="21"/> <a href="comprobantes_referenciados_facturas_compras.htm">Comprobantes referenciados facturas compras</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767206224" href="#"><span data-open-text="true" data-skip-index="true">Tipo de comprobante</span><span data-close-text="true">Tipo de comprobante</span></a></p>
+  <div data-targetname="POPUP767206224">
+    <p class="H_Parrafo_de_Item">El comprobante que se registra puede ser
+      de alguno de los siguientes tipos:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Factura de compra</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nota de Débito</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nota de Débito autónoma</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nota de Crédito</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Ticket</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Comprobante interno de compra</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Factura-Recibo</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación (crédito)</p>
+    <p class="H_Parrafo_de_Item">Las notas de débito, notas de crédito
+      y facturas pueden ser de contado o de cuenta corriente. Una nota de
+      crédito de contado puede corresponder, por ejemplo, cuando se devuelve
+      mercadería a un <a href="tabla__Proveedores.htm">proveedor</a> y éste
+      nos reintegra los valores que se han pagado por ella.</p>
+    <p class="H_Parrafo_de_Item">El <font style="font-weight: bold;">Comprobante
+        Interno</font> permite registrar aquellos gastos para los que no se
+      dispone de los comprobantes correspondientes como, por ejemplo, los
+      gastos de transporte, las propinas, etc. Se utiliza fundamentalmente
+      para registrar gastos que realizan los titulares de los fondos a rendir
+      en los comprobantes de Rendición de Gastos.</p>
+    <p class="H_Parrafo_de_Item">Mediante el tipo de comprobante <font style="font-weight: bold;">Ticket</font> es posible también registrar
+      compras que se paguen de contado o que generen una obligación en cuenta
+      corriente. Se identifican con una sigla diferente a la que corresponde
+      a las facturas de compra, de modo de distinguirlos en todos los informes
+      que provee el sistema.</p>
+    <p class="H_Parrafo_de_Item">Las <font style="font-weight: bold;">notas
+        de débito autónomas</font> permiten ingresar movimientos que afecten
+      la cuenta corriente de los proveedores pero sin que no estén relacionados
+      con algún comprobante de compras previamente ingresado en el sistema.</p>
+    <p class="H_Parrafo_de_Item">Es posible registrar las <font style="font-weight: bold;">Factura-Recibo</font>
+      que se reciban, tanto de tipo A como de tipo B y C. Estas tienen la
+      particularidad de que el pago se registra simultáneamente al registro
+      del comprobante, en forma análoga al caso de compras de contado.</p>
+    <p class="H_Parrafo_de_Item">Las <font style="font-weight: bold;">Liquidaciones
+        de compra</font> se utilizan en los casos en que no se registran facturas
+      al comprar, sino que se documenta la compra con la emisión de una
+      liquidación de compras. Un ejemplo de esto es el caso de las compras
+      franquiciadas.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767206082" href="#"><span data-open-text="true" data-skip-index="true">Letra</span><span data-close-text="true">Letra</span></a></p>
+  <div data-targetname="POPUP767206082">
+    <p class="H_Parrafo_de_Item">Letra asociada al tipo de comprobante
+      que se registra. Las opciones son:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">A</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">B</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">C</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">I</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">M</p>
+    <p class="H_Parrafo_de_Item">La letra <font style="font-weight: bold;">I</font>
+      se utiliza para las facturas de importación y permite registrar compras
+      realizadas mediante importaciones y también, en el caso que corresponda,
+      es posible registrar notas de crédito correspondientes a importaciones
+      realizadas. Ambos comprobantes se distinguen como comprobantes de
+      importación en todos los informes del sistema.</p>
+    <p class="H_Parrafo_de_Item">La letra <font style="font-weight: bold;">M</font>
+      aplica a facturas, notas de crédito y de débito y los respectivos
+      comprobantes tienen el mismo tratamiento que los que corresponden
+      a la letra <font style="font-weight: bold;">A</font>.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767221005" href="#"><span data-open-text="true" data-skip-index="true">Número externo</span><span data-close-text="true">Número externo</span></a></p>
+  <div data-targetname="POPUP767221005">
+    <p class="H_Parrafo_de_Item">Para los comprobantes de compra, por ser éstos externos al sistema, se prevé la posibilidad de indicar el número original con el que fueron generados por el <a href="tabla__Proveedores.htm">proveedor</a> titular de la compra.</p>
+    <p class="H_Parrafo_de_Item">Este número está compuesto por el prefijo y el número propiamente dicho, y el mismo será visualizado en todos los informes en los que se incluyan los datos del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Se controla que no puedan ingresarse dos comprobantes de compra con igual número externo y tipo y número de documento. Excepto en el caso que ambas tengan distinto soporte.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767256511" href="#"><span data-open-text="true" data-skip-index="true">Número interno</span><span data-close-text="true">Número interno</span></a></p>
+  <div data-targetname="POPUP767256511">
+    <p class="H_Parrafo_de_Item">Número de comprobante que asocia el sistema
+      a la factura que se está ingresando. Está compuesto por el prefijo
+      o sucursal, y el número propiamente dicho.</p>
+    <p class="H_Parrafo_de_Item">Cada uno de los comprobantes de compra
+      que se registran en el sistema tiene asociado un <a href="tabla__Talonarios.htm">talonario</a>
+      , que se asigna al indicar el prefijo del número. El talonario determina
+      el subdiario donde se contabiliza el comprobante, el formato de impresión,
+      la impresora en la cual se imprime, la cantidad de copias a emitir
+      y la numeración interna que le asigna el sistema dependiendo del tipo
+      de numeración del talonario.</p>
+    <p class="H_Parrafo_de_Item">El talonario determina además si la factura
+      es de contado, el subdiario y la numeración del comprobante mediante
+      el que se registra el pago contado y si la factura lleva asociada
+      la entrega de la mercadería, el subdiario y la numeración del comprobante
+      de ingreso de mercadería. Estos datos se obtienen de la tabla de talonarios
+      asociados que se indica en la definición del talonario.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767264211" href="#"><span data-open-text="true" data-skip-index="true">Fecha externa</span><span data-close-text="true">Fecha externa</span></a></p>
+  <div data-targetname="POPUP767264211">
+    <p class="H_Parrafo_de_Item">Fecha asignada por el <a href="tabla__Proveedores.htm">proveedor</a>
+      al comprobante que se está registrando.</p>
+    <p class="H_Parrafo_de_Item">Este dato quedará siempre en blanco luego
+      de grabar una factura.</p>
+    <p class="H_Parrafo_de_Item">Vale aclarar que si se selecciona un modelo
+      que tiene asociado un proveedor, el sistema solicita, antes de cargar
+      dicho modelo, la fecha externa del comprobante. En caso de no indicarla
+      no se cargará ningún modelo en la ventana; indicándola, se cargará
+      el modelo sin inconvenientes.</p>
+    <p class="H_Parrafo_de_Item">Es importante tener en cuenta que, cuando
+      se solicita la emisión de un informe contable en un rango de fechas
+      determinado, para decidir qué comprobantes se han de incluir, se tiene
+      en cuenta la fecha de registración de los mismos pero, en el listado,
+      se exhibe la fecha de los comprobantes propiamente dicha, es decir,
+      la fecha externa de los mismos.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767309238" href="#"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+  <div data-targetname="POPUP767309238">
+    <p class="H_Parrafo_de_Item">Fecha del comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767296913" href="#"><span data-open-text="true" data-skip-index="true">Soporte</span><span data-close-text="true">Soporte</span></a></p>
+  <div data-targetname="POPUP767296913">
+    <p class="H_Parrafo_de_Item">Permite seleccionar alguna de las siguientes
+      opciones:</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita" style="counter-set: prl-p-h_item_con_vineta_negrita 0;">Impreso</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Impreso Controlador Fiscal</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Comprobante electrónico</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Comprobante electrónico de crédito</p>
+    <p class="H_Parrafo_de_Item">Si se selecciona &quot;Impreso Controlador
+      fiscal&quot; se deshabilitan los campos que solicitan el nro de CAI/
+      CAE y el de fecha de vencimiento del mismo. Si se selecciona &quot;Comprobante
+      electrónico&quot; se exige el ingreso de nro de CAE y la fecha de
+      vencimiento.</p>
+    <p class="H_Parrafo_de_Item">En los comprobantes con soporte &quot;Comprobante
+      electrónico de crédito&quot; se exigirá el ingreso del número de CAE
+      y fecha de vencimiento si el talonario así lo requiere. </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767488647" href="#"><span data-open-text="true" data-skip-index="true">Proveedor</span><span data-close-text="true">Proveedor</span></a></p>
+  <div data-targetname="POPUP767488647">
+    <p class="H_Parrafo_de_Item">Código del <a href="tabla__Proveedores.htm">proveedor</a>
+      titular del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Si se está registrando una factura contado
+      y el código del proveedor es dejado en blanco, se asumirá que se trata
+      de un proveedor ocasional, se permitirá el ingreso del nombre del
+      mismo y se asociarán al comprobante los datos configurados para el
+      proveedor ocasional en los Parámetros de datos generales.</p>
+    <p class="H_Parrafo_de_Item">Al ingresar el proveedor se completa la
+      pantalla con los datos asociados al mismo, como por ejemplo, el comprador,
+      la condición de compra, tratamiento impositivo, provincia, etc. Estos
+      datos se ofrecen para agilizar y automatizar el ingreso de la factura,
+      pero de ser necesario, pueden modificarse en este momento y los datos
+      que se ingresen sólo afectarán al comprobante que se está ingresando.</p>
+    <p class="H_Parrafo_de_Item">En un tool tip con el  nombre de
+      fantasía del proveedor y, de no contar con dicho dato, se observará
+      la razón social.</p>
+    <p class="H_Parrafo_de_Item">Toda vez que se ingrese un comprobante
+      de compras, en caso que los bienes comprados tengan informado el rubro
+      al que pertenecen, se actualizará automáticamente la tabla de rubros
+      correspondiente al proveedor para el que se ingresó el comprobante.
+      Los comprobantes que actualizan esta tabla son: Notas de Débito, Tickets,
+      Comprobantes internos, Facturas de Compra, Liquidaciones y Factura-Recibo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767500553" href="#"><span data-open-text="true" data-skip-index="true">Imputación contable</span><span data-close-text="true">Imputación contable</span></a></p>
+  <div data-targetname="POPUP767500553">
+    <p class="H_Parrafo_de_Item">Código de la <a href="tabla__Cuentas.htm">imputación
+        contable</a> asociada al proveedor.</p>
+    <p class="H_Parrafo_de_Item">En los comprobantes que se registran en
+      cuenta corriente, se ofrecerá en este campo la imputación contable
+      <font style="font-weight: bold;">Por defecto</font> indicada para
+      el proveedor. Esta puede ser modificada por otra imputación de las
+      habilitadas en el ingreso del proveedor.
+    </p>
+    <p class="H_Parrafo_de_Item">En los comprobantes de contado o de tipo
+      rendición de gastos, se ofrecerá en este campo la <font style="font-weight: bold;">Imputación
+        contable para compras contado</font> indicada en el punto Parámetros
+      de Datos Generales.</p>
+    <p class="H_Parrafo_de_Item">Esta cuenta será imputada en el asiento
+      contable del comprobante que se está registrando.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767507366" href="#"><span data-open-text="true" data-skip-index="true">Cambio</span><span data-close-text="true">Cambio</span></a></p>
+  <div data-targetname="POPUP767507366">
+    <p class="H_Parrafo_de_Item">Este campo solo se encontrará habilitado
+      en caso que la cuenta contable informada en el campo precedente tenga
+      una tabla de ajuste asociada. El valor que se ofrece puede ser modificado
+      libremente.</p>
+    <p class="H_Parrafo_de_Item">El cambio que se exhibe depende de lo
+      que se haya indicado en el talonario en relación a la columna de cotizaciones
+      a considerar.</p>
+    <p class="H_Parrafo_de_Item">Si el talonario tiene indicada la columna
+      segunda o tercera y no hay valor en dichas columnas para la mayor
+      fecha de cotización que es menor o igual a la fecha del comprobante,
+      se utilizará el valor de la primera columna de cotizaciones. Cabe
+      destacar que lo indicado en el talonario sólo se utilizará para mostrar
+      la cotización inicial de las monedas cuyo cambio se ingresa en el
+      encabezado del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Si se modifica el talonario por otro que
+      tiene indicada una columna de cotización diferente o inicialmente
+      no se indicó nada y el sistema ya ha utilizado dicha cotización para
+      el cálculo del precio de un ítem o el valor de un medio de pago, el
+      sistema no permitirá la modificación avisando de tal eventualidad.
+      En caso contrario se modificará la cotización según lo indicado en
+      el nuevo talonario indicado.</p>
+    <p class="H_Parrafo_de_Item">En caso que la moneda del comprobante
+      coincida con la moneda de la imputación contable de cuenta corriente
+      (o la de contado), sólo se mostrará habilitado el campo del cambio
+      de la imputación contable de cuenta corriente (o de la imputación
+      contable de contado) y el valor que se ingrese en dicho campo se copiará
+      al campo &quot;Cambio&quot; correspondiente a la moneda del comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767518391" href="#"><span data-open-text="true" data-skip-index="true">Moneda</span><span data-close-text="true">Moneda</span></a></p>
+  <div data-targetname="POPUP767518391">
+    <p class="H_Parrafo_de_Item">Moneda en la cual se ingresa el comprobante.</p>
+    <p class="H_Parrafo_de_Item">Debe corresponder al código de una tabla
+      de tipo <font style="font-weight: bold;">Cotización</font> ingresada
+      en el sistema.</p>
+    <p class="H_Parrafo_de_Item">Si no se ingresa una moneda en particular,
+      se asumirá que los importes de la factura se ingresan en moneda local.
+      En caso contrario, los mismos se ingresarán en la moneda que se indique.</p>
+    <p class="H_Parrafo_de_Item">Las facturas de compra en moneda local
+      pueden registrarse referenciando órdenes de compra en moneda local
+      y en otra moneda diferente. En cambio, si la factura es en moneda
+      extranjera, todas las órdenes de compra  deberán ser de la misma
+      moneda.</p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">En el primer
+        caso, las órdenes de compra referenciadas que no estén en moneda local,
+        deberán tener todas una misma moneda. Es decir, desde una factura
+        en moneda local pueden seleccionarse órdenes de compra en moneda local,
+        o en moneda local y otra moneda extranjera, o en moneda extranjera
+        solamente.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Se solicita
+        el cambio a utilizar para convertir los precios de las órdenes de
+        compra en moneda extranjera  a moneda local, ofreciendo como
+        default el cambio de dicha moneda a la fecha externa de la factura.
+        Si la imputación contable de cuenta corriente es en la misma moneda
+        de la orden de compra y ya se indicó un cambio para dicha moneda,
+        no se solicitará el ingreso de la cotización y directamente se convertirán
+        los precios utilizando el cambio ya indicado.</span></p>
+    <p class="H_Parrafo_de_Item">Independientemente de la moneda en que
+      se registra el comprobante, la cuenta corriente se actualiza en la
+      moneda asociada a la <a href="tabla__Cuentas.htm">imputación contable</a>
+      que se indique. Por ejemplo, si los precios de compra están en marcos
+      y la cuenta corriente se debe actualizar en dólares, mediante las
+      cotizaciones correspondientes a ambas monedas se calcula, a partir
+      del importe de la factura (expresado en marcos), la deuda en dólares
+      y este valor se acredita de la correspondiente cuenta corriente. Las
+      cotizaciones a tener en cuenta son las que figuran en las tablas de
+      cotizaciones que se administran en el sistema y se tomarán las correspondientes
+      a la fecha de registración del comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767527900" href="#"><span data-open-text="true" data-skip-index="true">Cambio</span><span data-close-text="true">Cambio</span></a></p>
+  <div data-targetname="POPUP767527900">
+    <p class="H_Parrafo_de_Item">Este campo solo se encontrará habilitado
+      en caso que se indique una tabla de cotizaciones en el campo precedente.
+      El valor que se ofrece puede ser modificado libremente.</p>
+    <p class="H_Parrafo_de_Item">El cambio que se exhibe depende de lo
+      que se haya indicado en el talonario en relación a la columna de cotizaciones
+      a considerar.</p>
+    <p class="H_Parrafo_de_Item">Si el talonario tiene indicada la columna
+      segunda o tercera y no hay valor en dichas columnas para la mayor
+      fecha de cotización que es menor o igual a la fecha del comprobante,
+      se utilizará el valor de la primera columna de cotizaciones. Cabe
+      destacar que lo indicado en el talonario sólo se utilizará para mostrar
+      la cotización inicial de las monedas cuyo cambio se ingresa en el
+      encabezado del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Si se modifica el talonario por otro que
+      tiene indicada una columna de cotización diferente o inicialmente
+      no se indicó nada y el sistema ya ha utilizado dicha cotización para
+      el cálculo del precio de un ítem o el valor de un medio de pago, el
+      sistema no permitirá la modificación avisando de tal eventualidad.
+      En caso contrario se modificará la cotización según lo indicado en
+      el nuevo talonario indicado.</p>
+    <p class="H_Parrafo_de_Item">En caso que la moneda del comprobante
+      coincida con la moneda de la imputación contable de cuenta corriente
+      (o la de contado), sólo se mostrará habilitado el campo del cambio
+      de la imputación contable de cuenta corriente (o de la imputación
+      contable de contado) y el valor que se ingrese en dicho campo se copiará
+      al campo &quot;Cambio&quot; correspondiente a la moneda del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Cabe destacar también que si la moneda
+      de la lista de precios utilizada en el comprobante coincide con la
+      moneda de la imputación contable de cuenta corriente (o de contado)
+      y, si dicha moneda es diferente a la moneda del comprobante, se utilizará
+      el cambio tipeado en pantalla para realizar la conversión del precio
+      de la lista a moneda local.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767582335" href="#"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+  <div data-targetname="POPUP767582335">
+    <p class="H_Parrafo_de_Item">Código del depósito que se asigna a la
+      compra.</p>
+    <p class="H_Parrafo_de_Item">Este depósito será asignado automáticamente
+      a todos los ítems que se incluyan en el comprobante, pudiendo modificar
+      el mismo, en el caso de algún ítem que no ingrese en este depósito.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767578681" href="#"><span data-open-text="true" data-skip-index="true">Ajuste</span><span data-close-text="true">Ajuste</span></a></p>
+  <div data-targetname="POPUP767578681">
+    <p class="H_Parrafo_de_Item">Indicación de si el comprobante es de
+      ajuste o no. Este dato sólo puede indicarse para las notas de crédito</p>
+    <p class="H_Parrafo_de_Item">Las notas de crédito que no son de ajuste
+      siempre implican el egreso de los ítems de stock que incluyen, ya
+      sea que dicho egreso se registre en el mismo momento, o en una instancia
+      anterior o posterior. Las notas de crédito por ajuste, en cambio,
+      incluyen información referida a modificaciones de los precios de alguna
+      compra realizada, por lo cual, no afectan el stock.</p>
+    <p class="H_Parrafo_de_Item">Las notas de débito siempre son de ajuste.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767604177" href="#"><span data-open-text="true" data-skip-index="true">Diferencia de cambio</span><span data-close-text="true">Diferencia de cambio</span></a></p>
+  <div data-targetname="POPUP767604177">
+    <p class="H_Parrafo_de_Item">Indicación de si el comprobante es por
+      diferencias de cambio o no. Este dato sólo puede indicarse para las
+      liquidaciones tanto de crédito como de débito.</p>
+    <p class="H_Parrafo_de_Item">El efecto que tienen las liquidaciones
+      por diferencias de cambio ingresadas manualmente es el mismo que el
+      de las liquidaciones generadas mediante el proceso automático de generación
+      de liquidaciones por diferencias de cambio.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767165134" href="#"><span data-open-text="true" data-skip-index="true">Método de pago</span><span data-close-text="true">Método de pago</span></a></p>
+  <div data-targetname="POPUP767165134">
+    <p class="H_Parrafo_de_Item">Tipo de pago del comprobante.</p>
+    <p class="H_Parrafo_de_Item">Las opciones son:</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita" style="counter-set: prl-p-h_item_con_vineta_negrita 0;">Contado</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cuenta corriente</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Rendición de gastos</p>
+    <p class="H_Parrafo_de_Item">En los comprobantes de <font style="font-weight: bold;">Contado</font>,
+      el pago debe registrarse conjuntamente con el registro del comprobante</p>
+    <p class="H_Parrafo_de_Item">Si el comprobante es de <font style="font-weight: bold;">Cuenta
+        corriente</font>, actualiza la cuenta corriente correspondiente al
+      <a href="tabla__Proveedores.htm">proveedor</a> titular de la operación.
+      En este caso, las fechas de vencimiento y los importes a vencer en
+      cada fecha se calculan teniendo en cuenta la condición de compra asociada
+      al comprobante.
+    </p>
+    <p class="H_Parrafo_de_Item">Los comprobantes de cuenta corriente,
+      en los casos que corresponda, pueden aplicarse, al momento de su registración,
+      a los comprobantes que cancelan. Así, por ejemplo, una nota de crédito
+      por descuento se aplicará, al momento de su registración, a la factura
+      sobre la cual el proveedor ha otorgado el descuento.</p>
+    <p class="H_Parrafo_de_Item">Mediante la <font style="font-weight: bold;">Rendición
+        de gastos</font> es posible efectuar el seguimiento del destino que
+      se ha dado al dinero otorgado a un individuo o sector.</p>
+    <p class="H_Parrafo_de_Item">Al ingresar facturas de compra con método
+      de pago &quot;Rendición de gastos&quot; se controlará (al grabar el
+      comprobante), que no haya ningún ítem en la factura, ni ningún impuesto
+      calculado, que utilicen en la registración contable, la imputación
+      contable asociada a la rendición de gastos que se indique.</p>
+    <p class="H_Parrafo_de_Item">Este comprobante, especie de planilla
+      en lo que a su uso se refiere, se utiliza para rendir los gastos del
+      individuo responsable de los fondos asignados. Su uso posibilita también
+      la administración de fondos fijos en caso que la empresa utilice esta
+      metodología de trabajo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767166222" href="#"><span data-open-text="true" data-skip-index="true">Condición de compra</span><span data-close-text="true">Condición de compra</span></a></p>
+  <div data-targetname="POPUP767166222">
+    <p class="H_Parrafo_de_Item">Código de la condición de compra que se
+      asocia a la factura.</p>
+    <p class="H_Parrafo_de_Item">Se mostrará en este campo el código de
+      la condición de compra asociada al proveedor y la misma puede ser
+      modificada.</p>
+    <p class="H_Parrafo_de_Item">La condición de compra determina las fechas
+      de vencimiento del comprobante y los importes a vencer en cada fecha.</p>
+    <p class="H_Parrafo_de_Item">Se ofrece la condición de compra informada
+      &quot;Por defecto&quot;. En caso que para el proveedor en cuestión
+      se hayan habilitado solamente un grupo de condiciones de compra, la
+      condición que ofrece el sistema podrá reemplazarse, solamente, por
+      algunas de las habilitadas.</p>
+    <p class="H_Parrafo_de_Item">Si no se han informado, la condición puede
+      remplazarse, libremente, por cualquier a de las condiciones de compra
+      registradas en el sistema.</p>
+    <p class="H_Parrafo_de_Item">Si la condición de compra que se utiliza
+      se ha definido con el campo &quot;No permite agregar ítems en facturas
+      sobre pedido/orden de compra&quot; activado, no será posible agregar
+      ítems al comprobante.</p>
+    <p class="H_Parrafo_de_Item">La excepción a esto sólo está permitida
+      en el caso que el comprobante genere partes de diferencia. En ese
+      caso se permitirá ingresar bienes (no servicios ni textos varios que
+      no sean de tipo de valor nada) que no referencian a ningún comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Ítems</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767120788" href="#"><span data-open-text="true" data-skip-index="true">Tabla de Ítems</span><span data-close-text="true">Tabla de Ítems</span></a></p>
+  <div data-targetname="POPUP767120788">
+    <p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se ingresan, uno
+      a uno, los ítems que conforman la factura que se está registrando.</p>
+    <p class="H_Parrafo_de_Sub-Item">Dichos ítems pueden ingresarse en
+      forma manual invocándolos mediante su código identificatorio o, en
+      forma automática, apretando los botones de comprobantes pendientes
+      y seleccionando los que se deban cumplimentar.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada ítem se debe informar la
+      cantidad que se factura, el precio de cada unidad y, en función al
+      tipo de ítem del que se trate, se requerirá información adicional.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al respecto, y a título de ejemplo,
+      podemos mencionar que para algunos <a href="tabla__Bienes.htm">bienes</a>
+      se deben detallar las cantidades por color y por medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para otros bienes como, por ejemplo,
+      los importados que deben administrarse mediante <a href="despachos.htm">despachos</a>
+      , debe informarse el número de despacho que avala el ingreso. Dicho
+      despacho debe haberse definido en el sistema con anterioridad.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para aquellos bienes donde cada unidad
+      se identifica con un número de serie, se deben informar los números
+      de serie asociados a cada una de las unidades que ingresan.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para los bienes que llevan asociado
+      un código de <a href="partidas.htm">partida</a> se debe informar el
+      código de la partida correspondiente. La misma debe haberse definido
+      con anterioridad en la tabla destinada a tal fin.</p>
+    <p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que
+      la forma en que el sistema solicita los datos a incluir en el comprobante
+      varía según cuál sea el tipo de bienes de los que se trate. En algunos
+      casos, como por ejemplo cuando se trabaja con doble unidad de medida
+      o con <a href="tabla__Tablas_de_medidas.htm">medidas</a> y <a href="tabla__Tablas_de_colores.htm">colores</a>
+      , se abre una ventana en el campo <font style="font-weight: bold;">Cantidad</font>
+      para requerir los datos necesarios.</p>
+    <p class="H_Parrafo_de_Sub-Item">En otros casos, como por ejemplo,
+      cuando deben informarse códigos de despachos, de partidas o de centros
+      de apropiación, se incorporan columnas adicionales para permitir incluir
+      dicha información.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a>
+      y <a href="tabla__Tablas_de_medidas.htm">medidas</a>, en la ventana
+      donde se ingresan las cantidades por medida y color, se ve el importe
+      correspondiente y haciendo click en cada importe se accede a la ventana
+      de <a href="comprobantes_de_compras_Impuestos.htm">detalle de impuestos</a>
+      de ese color y esa medida.</p>
+    <p class="H_Parrafo_de_Sub-Item"><a href="lineas_de_comprobantes_de_compras.htm">Datos
+        a ingresar en cada línea del comprobante</a>.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767082810" href="#"><span data-open-text="true" data-skip-index="true">Ficha Totales</span><span data-close-text="true">Ficha Totales</span></a></p>
+  <div data-targetname="POPUP767082810">
+    <p class="H_Parrafo_de_Item">Esta ficha exhibe y permite modificar
+      impuestos e importes del comprobante.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a href="boton_provincias_para_IIBB_compras.htm">Provincia
+        para Ingresos brutos</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Base
+      para Retenciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite indicar un importe a tener
+      en cuenta como base imponible para el cálculo de las retenciones en
+      los pagos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta funcionalidad toma relevancia
+      en los casos en que, por la condición fiscal de la empresa, se reciben
+      comprobantes de compras B o C que, si bien incluyen IVA, no lo tienen
+      discriminado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767047543" href="#"><span data-open-text="true" data-skip-index="true">Ficha Entrega</span><span data-close-text="true">Ficha Entrega</span></a></p>
+  <div data-targetname="POPUP767047543">
+    <p class="H_Parrafo_de_Item">Esta ficha contiene datos sobre la mercadería
+      que se entrega. A saber:</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Proviene
+      de:</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite seleccionar un domicilio de
+      los que corresponden al proveedor.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad entregada de unidades del
+      ítem indicado. Ejemplo: 10 copas de cristal.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Peso</p>
+    <p class="H_Parrafo_de_Sub-Item">Peso de la mercadería entregada expresada
+      en la unidad de peso del bien indicada en Parámetros de Items. Ejemplo:
+      1 Kg.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> 2da
+      unidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el bien administra doble unidad
+      de medida, en este campo figura la cantidad entregada expresada en
+      la segunda unidad del bien.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Volumen</p>
+    <p class="H_Parrafo_de_Sub-Item">Volumen del bien entregado expresado
+      en la unidad de volumen indicada en los Parámetros de Ítems.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Vencim./Aplic. (Vencimientos y Aplicaciones)</p>
+  <p class="H_Parrafo_de_Item">Esta ficha sólo se encuentra habilitada para los comprobantes con método de pago <font style="font-weight: bold;">Cuenta corriente</font>. Muestra los vencimientos calculados automáticamente y los comprobantes a los cuales es posible aplicar la factura que se está registrando.</p>
+  <p class="H_Parrafo_de_Item">Esta ficha puede ser consultada todas las veces que sea necesario durante el ingreso del comprobante y la información de la misma se actualizará en forma automática a medida que se ingresan líneas en el comprobante.</p>
+  <p class="H_Parrafo_de_Item">Las fechas de vencimiento y los importes a vencer en cada fecha se calculan teniendo en cuenta la condición de venta asociada al comprobante.</p>
+  <p class="H_Parrafo_de_Item">Si la condición de compra lo indica, no se permiten modificar las fechas de vencimiento calculadas.</p>
+  <p class="H_Parrafo_de_Item">Si la condición de compra indica la posibilidad de efectuar modificaciones a las fechas e importes calculados, estas se podrán efectuar al momento de registrar la factura o, posteriormente, mediante el uso de una tarea denominada refinanciación de vencimientos</p>
+  <p class="H_Parrafo_de_Item">Los comprobantes de cuenta corriente, en los casos que corresponda, pueden aplicarse, al momento de su registración, a los comprobantes que cancelan. Así, por ejemplo, una nota de crédito por descuento se aplicara, al momento de su registración, a la factura sobre la cual el <a href="tabla__Proveedores.htm">proveedor</a> ha otorgado el descuento.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766998768" href="#"><span data-open-text="true" data-skip-index="true">Tabla de Vencimientos (o Vencimientos a documentar)</span><span data-close-text="true">Tabla de Vencimientos (o Vencimientos a documentar)</span></a></p>
+  <div data-targetname="POPUP766998768">
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla muestra una lista con todos
+      los vencimientos calculados por el sistema en base a las líneas ingresadas
+      en el comprobante de cuenta corriente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los importes de los vencimientos se
+      expresan en la moneda de la cuenta corriente, es decir, la tabla de
+      ajustes definida en la <a href="tabla__Cuentas.htm">imputación contable</a>
+      que se asoció al comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el comprobante es ingresado con
+      una condición de venta que genera vencimientos a documentar, esta
+      tabla pasa a llamarse <font style="font-weight: bold;">Vencimientos
+        a documentar</font> y en ella se exhiben los importes y los vencimientos
+      de las facturas de crédito que emitió el proveedor junto con este
+      comprobante. Además, deberá ingresarse el prefijo y el número de cada
+      una de ellas.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha de vencimiento de la cuota.</p>
+    <p class="H_Parrafo_de_Sub-Item">La misma podrá ser modificada sólo
+      si la condición de compra asociada al comprobante lo permite.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe del vencimiento correspondiente
+      a la fecha indicada en el dato anterior.</p>
+    <p class="H_Parrafo_de_Sub-Item">El mismo podrá ser modificado si la
+      condición de compra asociada al comprobante lo permite, y al finalizar
+      el ingreso del comprobante, para poder registrar el mismo, se controlará
+      que la suma de los importes de los vencimientos coincida con el total
+      del comprobante ingresado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al ingresar manualmente vencimientos
+      se ofrece como importe del vencimiento el importe que falta para que
+      la suma de los vencimientos coincida con el importe total del comprobante
+      que se está ingresando. <a data-target="POPUP631791478" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Modificación
+        de fechas de vencimiento</span><span data-close-text="true">Modificación
+        de fechas de vencimiento</span></a></p>
+    <div data-targetname="POPUP631791478">
+      <p class="H_Parrafo_de_Item">Es posible modificar la fecha de vencimiento
+         de facturas, notas de crédito y liquidaciones.</p>
+      <p class="H_Parrafo_de_Item">Si bien no se permite indicar más
+        de un vencimiento en las notas de crédito, tickets-nota de crédito
+        de compras y liquidaciones de crédito de compras, se permite cambiar
+        la fecha ofrecida por otra, siempre que sea igual o posterior
+        a la fecha del comprobante que se ingresa.</p>
+      <p class="H_Parrafo_de_Item">Se debe tener en cuenta que no se
+        va a permitir modificar la fecha de vencimiento  si se utiliza
+        una condición de  venta que indica <span style="font-weight: bold;">No
+          permitir modificar vencimientos</span>.</p>
+    </div>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767006794" href="#"><span data-open-text="true" data-skip-index="true">Aplicados</span><span data-close-text="true">Aplicados</span></a></p>
+  <div data-targetname="POPUP767006794">
+    <p class="H_Parrafo_de_Sub-Item">Presionando el botón <img src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" alt="BASCSIMAG\boton_para_aplicar.gif" width="29" height="27" border="0"/>
+      se accede a la tarea destinada a registrar <a href="aplicaciones_en_comprobantes.htm">Aplicaciones</a>
+      para el comprobante que se está registrando.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP767640976" href="#"><span data-open-text="true" data-skip-index="true">Ficha Pago Contado</span><span data-close-text="true">Ficha Pago Contado</span></a></p>
+  <div data-targetname="POPUP767640976">
+    <p class="H_Parrafo_de_Item">Esta ficha sólo se encuentra habilitada
+      para los comprobantes con método de pago <font style="font-weight: bold;">Contado</font>.</p>
+    <p class="H_Parrafo_de_Item">Aquí se ingresa el pago correspondiente
+      a la compra contado que se está registrando.</p>
+    <p class="H_Parrafo_de_Item">El sistema registra en el inventario de
+      valores y en la caja que se indique para efectuar el pago, la salida
+      de los valores que conforman el pago y los datos del destinatario
+      del mismo. Si el pago se realiza con cheques propios, se actualiza
+      la información asociada a las cuentas bancarias correspondientes a
+      los cheques que se emiten (resúmenes de cuenta, saldos bancarios,
+      etc.).</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Caja</p>
+    <p class="H_Parrafo_de_Item">Código de la caja en la que se efectúa
+      el pago.</p>
+    <p class="H_Parrafo_de_Item">Debe indicarse una caja definida en el
+      sistema.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe total a pagar</p>
+    <p class="H_Parrafo_de_Item">Se exhibe el importe total del pago calculado
+      en base a la factura ingresada.</p>
+    <p class="H_Parrafo_de_Item">Al ingresar los valores que conforman
+      el pago se controlará que el total de los mismos coincida exactamente
+      con este importe, es decir, que se pague el total de la factura ingresada.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766938334" href="#"><span data-open-text="true" data-skip-index="true">Tabla de Medios de pago</span><span data-close-text="true">Tabla de Medios de pago</span></a></p>
+  <div data-targetname="POPUP766938334">
+    <p class="H_Parrafo_de_Sub-Item">En esta tabla se ingresan los valores
+      que conforman el pago. Los valores se ingresan invocando códigos de
+      <a href="tabla__Medios_de_pago.htm">medios de pago</a> . La información
+      a asociar a cada uno dependerá del tipo de valor del que se trate.
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">Si el medio de pago es de tipo <font style="font-weight: bold;">Efectivo</font>, bastará con ingresar el
+      importe, si es en moneda extranjera, además, se solicita la <font style="font-weight: bold;">Cantidad</font> y el <font style="font-weight: bold;">Cambio</font>
+      correspondiente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el medio de pago corresponde a
+      cheques de terceros, documentos, o tarjetas de crédito, se deberán
+      seleccionar de las listas provistas por el sistema en cada caso, cuáles
+      son los valores en cartera que se entregan. Las listas muestran para
+      cada tipo de valor, el número, la fecha, fecha de vencimiento, plazo
+      de acreditación, banco, importe, cuenta origen, etc.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el medio de pago corresponde a
+      cheques propios se deben informar los datos del mismo: cuenta bancaria,
+      importe, chequera, número, fecha, plazo y observaciones.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los detalles de cómo trabajar con
+      cada medio de pago en particular, pueden verse en el apartado correspondiente
+      a las tablas de medios de pago.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Código</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Medios_de_pago.htm">medio
+        de pago</a> correspondiente al valor con el que se paga.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder a un medio de pago
+      definido en el sistema y de tipo Efectivo, Cheque recibido, Pagaré
+      recibido, Tarjeta o Cheque emitido.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del medio de pago cuyo
+      código se informó en el dato anterior.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe que se paga con el medio de
+      pago informado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se entrega un valor en cartera,
+      el importe se copiará automáticamente a la línea en el momento de
+      seleccionar el valor de la lista de valores en cartera provista en
+      cada caso dependiendo del tipo de medio de pago indicado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Fecha</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha del valor que se entrega.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se paga con efectivo no se solicita
+      esta información.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se entrega un valor en cartera,
+      la fecha del mismo se copiará automáticamente a la línea en el momento
+      de seleccionar el valor de la lista de valores en cartera provista
+      en cada caso dependiendo del tipo de medio de pago indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se paga con un cheque propio corresponde
+      a la fecha del cheque.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Número del valor que se entrega.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se paga con efectivo no se solicita
+      esta información.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se entrega un valor en cartera,
+      el número del mismo se copiará automáticamente a la línea en el momento
+      de seleccionar el valor de la lista de valores en cartera provista
+      en cada caso dependiendo del tipo de medio de pago indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se paga con un cheque propio corresponde
+      al número del cheque.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766918643" href="#"><span data-open-text="true" data-skip-index="true">Ficha Más</span><span data-close-text="true">Ficha Más</span></a></p>
+  <div data-targetname="POPUP766918643">
+    <p class="H_Parrafo_de_Item">En esta ficha se ingresan algunos datos generales de la factura.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tratamiento impositivo</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del tratamiento impositivo asociado a la factura.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se mostrará, en este campo, el código del tratamiento impositivo asociado al proveedor y el mismo puede ser modificado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El tratamiento impositivo determina la posición del proveedor frente al cálculo del I.V.A. y las categorías de percepción de Ganancias e I.V.A.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Trat. impositivo provincial</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del tratamiento impositivo provincial asociado a la factura.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se mostrará, en este campo, el código del tratamiento impositivo provincial asociado al proveedor y el mismo puede ser modificado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El tratamiento impositivo provincial determina la posición del proveedor frente al cálculo de percepción de ingresos brutos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Despacho</p>
+    <p class="H_Parrafo_de_Sub-Item">En este campo se puede indicar un despacho existente. De no existir se puede dar el alta directamente desde este campo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato se utiliza para completar el número de despacho aduanero en los archivos compatibles de percepciones aduaneras, generados con el utilitario BCSSifere. Este utilitario permite generar las salidas compatibles conforme a los formatos de importación establecidos por el Sistema Federal de Recaudación-Convenio multilateral del S.I.A.P.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Comprador</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Agentes.htm">comprador</a> asociado a la factura.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si todas las órdenes de compra que se seleccionan son del mismo comprador, se trae ese código de comprador, sino se asume el indicado como comprador por defecto, en relación al proveedor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un agente de tipo <font style="font-weight: bold;">Comprador</font> definido en el sistema.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Provincia</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la <a href="tabla__Provincias.htm">provincia</a> asociada a la factura.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se mostrará en este campo el código de la provincia asociada al proveedor y la misma puede ser modificada.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de una provincia definida en el sistema.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tipo de operación</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del tipo de operación asociado a la factura.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un tipo de operación definido en el sistema.</p>
+    <p class="H_Sub-Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Comprobante origen</p>
+    <p class="H_Parrafo_de_Sub-Item">Prefijo y número del comprobante de origen, en caso que se ingrese una nota de crédito o débito, que no sea diferencia de cambio.<br/>
+      Se puede indicar directamente un prefijo y número de comprobante, o seleccionarlo mediante la búsqueda de comprobantes origen. <br/>
+      Si se trata de un crédito el comprobante origen debe ser un crédito del mismo proveedor y si se trata de un débito debe corresponder a un débito del mismo proveedor.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Observaciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite ingresar un texto aclaratorio. Este aparece en todos los informes en los que se incluye al comprobante.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Nro. Aut. (CAI/CAE)</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite ingresar el número de Código de Autorización de Impresión o el Código de Autorización electrónico correspondiente al proveedor titular del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cabe aclarar que es posible leer con un scanner el código de barras que contiene el número de CAI/CAE y la correspondiente fecha de vencimiento.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite ingresar la fecha de vencimiento correspondiente al CAI/CAE informado en el campo anterior.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código de control</p>
+    <p class="H_Parrafo_de_Sub-Item">Campo alfanumérico de 14 posiciones que se mantendrá cuando se guarde un comprobante en preparación.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Hojas</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite informar la cantidad de hojas correspondiente al comprobante que se está ingresando.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766888679" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rendición de Gastos</span><span data-close-text="true">Ficha Rendición de Gastos</span></a></p>
+  <div data-targetname="POPUP766888679">
+    <p class="H_Parrafo_de_Item">Esta ficha sólo se encuentra habilitada
+      para los comprobantes con método de pago <font style="font-weight: bold;">Rendición
+        de Gastos</font>.</p>
+    <p class="H_Parrafo_de_Item">Mediante la Rendición de gastos es posible
+      efectuar el seguimiento del destino que se ha dado al dinero otorgado
+      a un individuo o sector.</p>
+    <p class="H_Parrafo_de_Item">Cuando se entrega dinero a un individuo
+      habilitado como titular de una <font style="font-weight: bold;">Rendición
+        de</font>
+      <font style="font-weight: bold;">Gastos</font>, se puede
+      hacer referencia a una planilla o comprobante de rendición, en particular.
+      Del mismo modo, al registrar sus compras y gastos, se puede referenciar
+      también, dicha rendición. Luego, los listados correspondientes, mostrarán
+      el detalle del dinero que se le ha otorgado y el destino que se la
+      ha dado a dichos fondos.
+    </p>
+    <p class="H_Parrafo_de_Item">Aquí se ingresan los datos del comprobante
+      de rendición que se afecta con la compra.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Agente</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Agentes.htm">agente</a>
+      titular de la rendición de gastos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe ingresarse el código de un agente
+      definido en el sistema y de tipo <font style="font-weight: bold;">Fondo
+        fijo</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Comprobante
+      de rendición Número</p>
+    <p class="H_Parrafo_de_Sub-Item">Número del comprobante de rendición
+      al cual se imputa la compra que se está registrando.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe ingresarse el prefijo y el número
+      del comprobante de un comprobante de rendición de gastos ya definido
+      en el sistema y para el agente indicado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766856615" href="#"><span data-open-text="true" data-skip-index="true">Ficha Proveedores</span><span data-close-text="true">Ficha Proveedores</span></a></p>
+  <div data-targetname="POPUP766856615">
+    <p class="H_Parrafo_de_Item">Esta ficha se habilita cuando se indica
+      como titular de la factura a un <a href="tabla__Proveedores.htm">proveedor</a>
+      ocasional.</p>
+    <p class="H_Parrafo_de_Item">Además de los datos asociados al mismo
+      que se indiquen en los Parámetros de Datos Generales , se pueden indicar
+      aquí otros datos asociados específicos del proveedor para el cual
+      se ingresa el comprobante.</p>
+    <p class="H_Parrafo_de_Item">Se puede ingresar el domicilio, localidad,
+      código postal, teléfonos, fax, e_mail, provincia, país y tipo y número
+      impositivo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Control de calidad</p>
+  <p class="H_Parrafo_de_Item">En esta ficha es posible registrar todos los bienes que presentan fallas de calidad, disponiéndose de los mismos alcances que ofrece la tarea &quot;Control de calidad&quot;.</p>
+  <p class="H_Parrafo_de_Item">Pueden informarse fallas en relación a algunos ítems y luego continuar suministrando información en relación al comprobante mediante la tarea &quot;Control de calidad&quot;. También es posible no registrar información en esta instancia, dejando el control para otro momento.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766836479" href="#"><span data-open-text="true" data-skip-index="true">Control finalizado</span><span data-close-text="true">Control finalizado</span></a></p>
+  <div data-targetname="POPUP766836479">
+    <p class="H_Parrafo_de_Sub-Item">Permite dar por concluido el control
+      de calidad en relación al comprobante que se exhibe en pantalla.</p>
+    <p class="H_Parrafo_de_Sub-Item">A pesar de ello, hasta tanto no se
+      resuelva el parte de diferencias correspondiente, es posible actuar
+      sobre comprobantes para los cuales se haya informado que el control
+      se ha finalizado desde la tarea &quot;Control de calidad&quot;.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP766818130" href="#"><span data-open-text="true" data-skip-index="true">Control de calidad</span><span data-close-text="true">Control de calidad</span></a></p>
+  <div data-targetname="POPUP766818130">
+    <p class="H_Parrafo_de_Sub-Item">En esta ventana es posible registrar
+      todos los bienes que presentan fallas de calidad, con los mismos alcances
+      que ofrece la tarea &quot;Control de calidad&quot;. Se debe informar:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Ítem</p>
+    <p class="H_Parrafo_de_Sub-Item">Se deben informar los códigos de los
+      ítems para los cuáles se deben informar fallas. Estos deben ser bienes
+      (no se permite informar ni servicios ni textos) y deben estar incluidos
+      en el comprobante que se está controlando.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se accede a la ventana de búsqueda,
+      se ofrecen todos los ítems del comprobante, siendo posible seleccionar
+      varios productos a la vez de modo de precargarlos en forma conjunta.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los bienes que manejan colores y medidas
+      deberán ingresarse, uno por cada línea, de acuerdo con la codificación
+      del color y la medida correspondiente indicada en los parámetros de
+      ítems (no se dispone de la grilla de &quot;medidas-colores&quot; para
+      la selección de los ítems a incluir en la ventana).</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Corresponde al ítem informado en el
+      campo anterior.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem que
+      presentan problemas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para los bienes que se administran
+      con números de serie, se deben seleccionar aquellos en los que, específicamente,
+      se observan las fallas a informar en el comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al registrar el código de un ítem,
+      siempre se ofrece por defecto la cantidad ingresada en el comprobante
+      a controlar, ésta puede modificarse reemplazándola siempre por una
+      cantidad menor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se registra en forma directa un
+      bien con contenedores o dimensiones (sin seleccionarlo de la búsqueda),
+      el sistema ofrecerá los datos correspondientes al primero que se haya
+      ingresado en el comprobante.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad en 2da. unidad</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que las compras se registren
+      en la 2da. Unidad, se deben ingresar en este campo la cantidad de
+      unidades que presentan fallas.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Falla</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo permite registrar un texto
+      descriptivo de la falla detectada en el control de calidad.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Despacho</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de despacho correspondiente,
+      al ítem a observar (en caso que corresponda).</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Partida</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de partida correspondiente,
+      al ítem a observar (en caso que corresponda).</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Serie</p>
+    <p class="H_Parrafo_de_Sub-Item">Número de serie correspondiente, al
+      ítem a observar (en caso que corresponda).</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita" style="font-style: normal;"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="administracion_de_Documentos.htm">
+      <font style="font-style: normal;">Ficha Adjuntos</font>
+    </a></p>
+  <p class="H_Parrafo_de_Item">Permite adjuntar archivos externos. Una vez grabado el comprobante la administración de los archivos adjuntados se realiza desde el Proceso de <a href="adjuntos.htm">Adjuntos</a>.</p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a2', 'POPUP767206224');
+    TextPopupInit('a3', 'POPUP767206082');
+    TextPopupInit('a4', 'POPUP767221005');
+    TextPopupInit('a5', 'POPUP767256511');
+    TextPopupInit('a6', 'POPUP767264211');
+    TextPopupInit('a7', 'POPUP767309238');
+    TextPopupInit('a8', 'POPUP767296913');
+    TextPopupInit('a9', 'POPUP767488647');
+    TextPopupInit('a10', 'POPUP767500553');
+    TextPopupInit('a11', 'POPUP767507366');
+    TextPopupInit('a12', 'POPUP767518391');
+    TextPopupInit('a13', 'POPUP767527900');
+    TextPopupInit('a14', 'POPUP767582335');
+    TextPopupInit('a15', 'POPUP767578681');
+    TextPopupInit('a16', 'POPUP767604177');
+    TextPopupInit('a17', 'POPUP767165134');
+    TextPopupInit('a18', 'POPUP767166222');
+    TextPopupInit('a19', 'POPUP767120788');
+    TextPopupInit('a20', 'POPUP767082810');
+    TextPopupInit('a21', 'POPUP767047543');
+    TextPopupInit('a22', 'POPUP766998768');
+    TextPopupInit('a1', 'POPUP631791478');
+    TextPopupInit('a23', 'POPUP767006794');
+    TextPopupInit('a24', 'POPUP767640976');
+    TextPopupInit('a25', 'POPUP766938334');
+    TextPopupInit('a26', 'POPUP766918643');
+    TextPopupInit('a27', 'POPUP766888679');
+    TextPopupInit('a28', 'POPUP766856615');
+    TextPopupInit('a29', 'POPUP766836479');
+    TextPopupInit('a30', 'POPUP766818130');
+    //]]>
+  </script>
+
+</body></html>

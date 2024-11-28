@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.7.1.0_4"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Ordenes de produccion Control</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Control de Ordenes de producción </h1>
+<p class="H_Texto">Esta tarea permite hacer un seguimiento de cada una 
+ de las orden de producción, siendo posible generar partes de producción 
+ parciales, reprogramar las agendas de las tareas, modificar los insumos 
+ y los recursos involucrados, etc.</p>
+<p class="H_Texto">La tarea opera solamente sobre órdenes de producción 
+ que no estén cerradas, tanto de plantas como de depósitos.</p>
+<p class="H_Texto">A medida que se van concretando cada una de las tareas 
+ se hace posible registrar, en una pantalla de trabajo gráfica, toda la 
+ información concerniente a cada una de ellas. Se podrá indicar la fecha 
+ y hora en que comenzó, la fecha y hora en que finalizó, se podrá registrar 
+ un parte de producción parcial en relación a la misma y, al hacerlo, si 
+ corresponde, modificar los insumos y los recursos que se utilizaron para 
+ llevarla adelante.</p>
+<p class="H_Texto">En la pantalla de trabajo, las tareas se muestran en 
+ colores diferentes según el estado en el cual se encuentran (no iniciadas, 
+ pueden iniciarse, iniciadas, terminadas) y se exhiben en un gráfico donde, 
+ en el eje vertical (dimensión Y), se muestran detalladas las tareas que 
+ componen la orden de producción y, en el eje horizontal (dimensión X), 
+ se muestra, en escala, la duración de cada tarea en relación al total 
+ de la orden de producción.</p>
+<p class="H_Texto">Las fechas y horas estimadas de inicio y finalización 
+ de una tarea corresponden a las que se han indicado al registrar la orden 
+ de producción. Pero puede pasar que algunas tareas de las cuáles depende, 
+ empiecen en fechas diferentes a las estimadas, por lo cual, y como consecuencia 
+ de ello, las fechas estimadas, obligatoriamente, se modificarán.</p>
+<p class="H_Texto">Estas fechas son las que se denominan fechas previstas 
+ y se exhiben cuando algunas de las tareas de las cuales depende la tarea 
+ en cuestión empezaron o terminaron en fechas diferentes a las estimadas.</p>
+<p class="H_Texto">Por último, las Fechas reales de inicio y terminación 
+ son las fechas en las que la tarea efectivamente se ha iniciado y se ha 
+ terminado.</p>
+<p class="H_Texto">Se dispone de diversos controles, entre otros, que al 
+ informar fechas de inicio o de fin éstas no sean posteriores a la fecha 
+ del día.</p>
+<p class="H_Texto">También se mantiene actualizado el estado de las tareas. 
+ Así, por ejemplo, cuando se inicia una tarea, todas las que dependen de 
+ ella pasarán al estado &quot;Posible de iniciar&quot; y, si la fecha de 
+ inicio que se informa es diferente a la fecha prevista, se reprogramarán 
+ las agendas de las tareas dependientes.</p>
+<p class="H_Texto">Es posible generar partes de producción parciales. Estos 
+ pueden corresponder a una o más tareas que se concluyen, e incluyen los 
+ insumos y recursos pendientes correspondientes a las tareas que se terminan. 
+ Así, los insumos serán dados de baja del stock y se liberarán los recursos 
+ involucrados, pero los productos terminados sólo ingresarán al stock con 
+ el último parte de producción que se genere.</p>
+<p class="H_Texto">Cabe aclarar que este programa no se puede ejecutar 
+ si está abierto alguno de los programas de : Iniciar tarea, Terminar tarea, 
+ Anular inicio de Tarea, Anular terminación de tarea o Parte parcial, dado 
+ que la funcionalidad es la misma.</p>
+<p class="H_Texto">Los usuarios sólo pueden operar sobre las tareas de 
+ su responsabilidad, ya sea porque es responsable de la planta asociada 
+ a la orden de producción, o es responsable en la orden de producción o 
+ es responsable de la tarea de dicha orden de producción.</p>
+<p class="H_Texto">El &quot;Control de producción&quot; prevé, para los 
+ casos de registrar partes que no consumen todos los insumos previstos, 
+ cancelarlos directamente desde esta pantalla de trabajo.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP664892000" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Comprobante a controlar</span><span data-close-text="true">Comprobante a controlar</span></a></p>
+<div data-targetname="POPUP664892000">
+	<p class="H_Parrafo_de_Item">En esta ventana se debe identificar la 
+	 orden de producción para la cual se suministrará información para 
+	 el control.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe la fecha de la orden de producción 
+	 a controlar, una vez que ésta se ha seleccionado.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Número</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe el número de la orden de producción 
+	 a controlar, una vez que ésta se ha seleccionado.</p>
+	<p class="H_Parrafo_de_Sub-Item">Este dato posee un enlace que abre 
+	 la consulta del comprobante seleccionado.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Inicio</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe la fecha de inicio de la orden 
+	 de producción y si no se ha iniciado ninguna tarea de la misma, puede 
+	 modificarse.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para ello se debe hacer doble clic 
+	 sobre el rótulo inicio accediéndose a una pantalla que muestra la 
+	 agenda prevista y solicita la nueva fecha. En base a la fecha y hora 
+	 indicadas se recalculan la fecha y hora de terminación.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Terminación</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe la fecha de terminación de 
+	 la orden de producción y si no se ha iniciado ninguna tarea de la 
+	 misma, puede modificarse.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para ello se debe hacer doble clic 
+	 sobre el rótulo Terminación accediéndose a una pantalla que muestra 
+	 la agenda prevista y solicita la nueva fecha.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Depósito/Planta</p>
+	<p class="H_Parrafo_de_Sub-Item">Se debe informar el depósito o la 
+	 planta correspondiente a la orden de producción a controlar.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Ordenes 
+	 de Producción</p>
+	<p class="H_Parrafo_de_Sub-Item">Para realizar la tarea de control, 
+	 propiamente dicha, se debe cargar una orden de producción que se encuentre 
+	 pendiente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para ello, una vez informado el depósito 
+	 o la planta, se debe presionar este botón que permite acceder al listado 
+	 de las órdenes de producción registradas en el sistema, de modo de 
+	 seleccionar aquella para la cual se ha de registrar información.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP664884118" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ordenamiento</span><span data-close-text="true">Ordenamiento</span></a></p>
+<div data-targetname="POPUP664884118">
+	<p class="H_Parrafo_de_Item">Indicación sobre cómo se desea ordenar 
+	 las tareas en el gráfico.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Según 
+	 definición</p>
+	<p class="H_Parrafo_de_Sub-Item">Las tareas se ubican según el orden 
+	 que se cargaron en la orden de producción.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Por 
+	 dependencia</p>
+	<p class="H_Parrafo_de_Sub-Item">Las tareas se ordenan según las dependencias 
+	 establecidas entre ellas, en la orden de producción.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP664928289" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tareas</span><span data-close-text="true">Tareas</span></a></p>
+<div data-targetname="POPUP664928289">
+	<p class="H_Parrafo_de_Item">Este botón permite desplegar un menú con 
+	 las tareas que conforman la orden de producción.</p>
+	<p class="H_Parrafo_de_Item">Al seleccionar una tarea en particular, 
+	 se muestra <font style="font-weight: bold;">un menú contextual</font> 
+	 donde se exhiben los detalles relativos a la tarea en cuestión, con 
+	 los mismos alcances de los que se dispone cuando se accede a dicho 
+	 menú desde el gráfico (los mismos son detallados a continuación en 
+	 el punto <font style="font-weight: bold;">Fechas, avance y operaciones 
+	 de la tarea</font>), haciendo clic sobre la tarea.</p>
+	<p class="H_Parrafo_de_Item">Se puede iniciar una tarea, anular inicio, 
+	 terminar o anular su terminación.</p>
+	<p class="H_Parrafo_de_Item">Es posible también saber el porcentaje 
+	 de avance de una tarea, y generar partes parciales en relación a la 
+	 misma</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si mientras se tiene abierta 
+ esta tarea se hace alguna modificación, o se ingresan comprobantes que 
+ referencian a la orden que está en pantalla, el sistema avisa que se tiene 
+ que refrescar la ventana de trabajo. Se observará en pantalla una línea 
+ con el texto &quot;Debe actualizar el control&quot; y al hacer clic sobre 
+ ella se podrán ver reflejados en la tarea los cambios que le hayan efectuado 
+ a la orden que se está controlando.</span></p>
+<p class="H_Texto"> </p>
+<h1>Ventana de trabajo</h1>
+<p class="H_Parrafo_de_Item">La pantalla de trabajo es gráfica y mediante 
+ diferentes colores se distinguen los diferentes estados de las tareas 
+ que conforman la orden de producción, dichas tareas se exhiben en un eje 
+ de tiempos en base a sus fechas de comienzo y de fin .</p>
+<p class="H_Parrafo_de_Item">Al seleccionar una orden de producción, se 
+ carga en la ventana de trabajo un gráfico de Gantt, representativo de 
+ las tareas que componen la orden de producción. Cada tarea se presenta 
+ coloreada según el estado en que se encuentra y con datos sobre su agenda 
+ y duración.</p>
+<p class="H_Parrafo_de_Item">En el eje vertical (dimensión Y) se muestran 
+ detalladas las tareas que componen la orden de producción.</p>
+<p class="H_Parrafo_de_Item">En el eje horizontal (dimensión X) se muestra, 
+ en escala, la duración de cada tarea en relación al total de la orden 
+ de producción.</p>
+<p class="H_Parrafo_de_Item">Es posible modificar la escala de tiempos 
+ (eje X) y la escala de tareas (eje Y). Para ello existe, a lo largo de 
+ cada uno de ambos ejes, los botones <img src="../assets/images/BASCSIMAG/grafico.gif" alt="BASCSIMAG\grafico.gif" width="24" height="23" border="0"/> 
+ en los cuales se puede indicar la cantidad de días y las tareas a mostrar 
+ en el gráfico de tareas.</p>
+<p class="H_Parrafo_de_Item">Al presionar el mouse sobre estos botones<img src="../assets/images/BASCSIMAG/grafico.gif" alt="BASCSIMAG\grafico.gif" width="24" height="23" border="0"/>, un tool tip indica que se trata del Rango 
+ de Tareas (eje Y) y del Rango de fechas (eje X).</p>
+<p class="H_Parrafo_de_Item">Al presionar uno de estos botones, por ejemplo 
+ el que corresponde al rango de fechas, se abre una ventana denominada 
+ <font style="font-weight: bold;">Parámetros de visualización</font> precargada 
+ con la cantidad total de días que abarca la orden de producción y con 
+ la fecha a partir de la cual comienza. Si se lo desea se puede ampliar 
+ o reducir la escala modificando los parámetros del campo <font style="font-weight: bold;">Ver</font> 
+ <img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <font style="font-weight: bold;">días</font> 
+ de esta ventana.</p>
+<p class="H_Parrafo_de_Item">Es posible también navegar en el gráfico utilizando 
+ los botones que se ofrecen, tanto en el eje vertical como en el eje horizontal. 
+ Mediante estos botones se pude ir al principio <img src="../assets/images/BASCSIMAG/primero.gif" alt="BASCSIMAG\primero.gif" width="24" height="23" border="0"/> o al 
+ fin <img src="../assets/images/BASCSIMAG/ultimo.gif" alt="BASCSIMAG\ultimo.gif" width="24" height="23" border="0"/> de la escala. También se puede avanzar</p>
+<p class="H_Parrafo_de_Item"><img src="../assets/images/BASCSIMAG/siguientes.gif" alt="BASCSIMAG\siguientes.gif" width="24" height="23" border="0"/> 
+ o retroceder <img src="../assets/images/BASCSIMAG/anteriores.gif" alt="BASCSIMAG\anteriores.gif" width="24" height="23" border="0"/> una determinada 
+ cantidad de días o tareas, específicamente la cantidad corresponde a la 
+ que se indica en el campo <font style="font-weight: bold;">Ver</font> 
+ de la parametrización de días y de tareas.</p>
+<p class="H_Parrafo_de_Item">También es viable avanzar <img src="../assets/images/BASCSIMAG/siguiente.gif" alt="BASCSIMAG\siguiente.gif" width="24" height="23" border="0"/> 
+ y retroceder <img src="../assets/images/BASCSIMAG/anterior.gif" alt="BASCSIMAG\anterior.gif" width="24" height="23" border="0"/> de un día o de 
+ una tarea por vez.</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item">Colores de las tareas:</p>
+<table style="border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+		 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+		 border-collapse: separate;" cellspacing="0" width="501" cellpadding="1">
+	<tbody><tr style="vertical-align: top;">
+		<td style="width: 16.15%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Gris</p></td>
+		<td style="width: 83.85%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Tareas que no están iniciadas 
+		 cuyos inicios dependen de otras</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 16.15%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Azul</p></td>
+		<td style="width: 83.85%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Tareas que no están iniciadas 
+		 pero que pueden iniciarse. Ya sea porque no dependen de nadie, 
+		 o porque la tarea o tareas de las que dependen están terminadas, 
+		 o porque la tarea o tareas de las que dependen están iniciadas 
+		 y tienen un porcentaje de avance tal, que pueden iniciarse.</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 16.15%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Amarillo</p></td>
+		<td style="width: 83.85%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Tareas iniciadas</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 16.15%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Verde oscuro</p></td>
+		<td style="width: 83.85%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Tareas terminadas</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 16.15%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Verde claro</p></td>
+		<td style="width: 83.85%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Tareas con el avance del 100%</p></td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td style="width: 16.15%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Rojo</p></td>
+		<td style="width: 83.85%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; 
+			 border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; 
+			 padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Sub-Item">Tareas que pueden iniciarse 
+		 y están demoradas.</p></td>
+	</tr>
+</tbody></table>
+<p class="H_Parrafo_de_Item">Al oprimir el botón derecho, sobre la porción 
+ de gráfico correspondiente a alguna tarea, se habilita un <font style="font-weight: bold;">menú 
+ contextual</font> con información sobre la agenda de dicha tarea y las 
+ operaciones que se pueden realizar sobre la misma.</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a href="fechas_avance_y_operaciones_de_la_tarea.htm">Fechas, avance y 
+ operaciones de la tarea</a></p>
+<p class="H_Texto">En el caso que lo que se está informando es la terminación 
+ de la última tarea de la orden de producción, se deberá generar un parte 
+ de producción final que incluirá todos los insumos y productos terminados 
+ pendientes. En este caso, si quedasen insumos sin consumir y se desea 
+ cancelarlos, se debe indicar tal situación en el campo &quot;Cancela Orden 
+ de Producción&quot; dispuesto a tal fin, en el encabezado del parte de 
+ producción.</p>
+<p class="H_Texto">En este caso también se dispone del botón &quot;Remanentes&quot;, 
+ al presionarlo el sistema carga en la tabla de insumos todo lo que se 
+ envió a la planta, para esa Orden de Producción y no fue utilizado. Si 
+ un insumo ya estaba en la tabla antes de presionar el botón, el sistema 
+ modifica la cantidad del mismo, sino lo agrega al final. Luego de presionar 
+ el botón el mismo se deshabilita.</p>
+<p class="H_Texto">En el caso que la orden de producción tenga un solo 
+ producto terminado y se esté generando un parte parcial, si se modifican 
+ las cantidades correspondientes al producto terminado, el sistema ofrece 
+ recalcular los insumos. En caso que se conteste que &quot;Sí&quot;, se 
+ recalculan los insumos en forma proporcional a la cantidad de productos 
+ terminados informados, en la tarea que se está registrando y también en 
+ todas las restantes.</p>
+<p class="H_Texto">Es importante tener en cuenta que los productos terminados 
+ sólo ingresarán al stock con el último parte de producción que se genere.</p>
+<p class="H_Texto">Una vez que se haya informado de la finalización de 
+ una tarea, se modificará el gráfico correspondiente a las tareas de la 
+ orden de producción teniendo en cuenta los cambios ocasionados por la 
+ tarea que se termina, según se indica:</p>
+<p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Las 
+ tareas de las que depende la tarea finalizada que no estaban terminadas, 
+ se darán por finalizadas, calculando las agendas reales. Estas se calculan 
+ en base a la agenda real de la tarea recién terminada y a los tiempos 
+ de espera mínimos.</p>
+<p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Las 
+ tareas que dependen de la tarea finalizada, pasan al estado correspondiente 
+ a &quot;poder iniciarse&quot; y se recalcularán sus agendas.</p>
+<p class="H_Texto">Si al terminar una tarea se genera un parte para la 
+ misma que no es final y luego se pretende anular dicha terminación, el 
+ sistema avisa que se ha generado un parte de producción para la terminación 
+ de la misma y permite decidir al usuario si desea o no eliminarlo.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/refrescar.gif" alt="BASCSIMAG\Boton_generico.gif" border="0"/> <a data-target="POPUP664677773" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Refrescar</span><span data-close-text="true">Refrescar</span></a></p>
+<div data-targetname="POPUP664677773">
+	<p class="H_Texto">Al activar este botón, se actualizan los estados 
+	 de las tareas que fueron realizándose.</p>
+	<p class="H_Texto"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP664626003" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP664626003">
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Productos terminados con 
+	 partida</p>
+	<p class="H_Parrafo_de_Sub-Item">La asignación de partidas a los productos 
+	 terminados se realiza de la siguiente manera:</p>
+	<p class="H_Parrafo_de_Sub-Item">Si la tarea para la que se carga un 
+	 parte parcial ya tiene ingresados otros partes parciales y los productos 
+	 terminados incluidos en dichos partes tienen indicada una sola partida 
+	 y/o despacho, al ingresar el nuevo parte el sistema ofrecerá los datos 
+	 de la partida y/o despacho ingresados para los ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">En caso de que no existan para la 
+	 tarea partes parciales ingresados, el sistema comprobará si los partes 
+	 parciales de las tareas de las que depende la tarea en cuestión tienen 
+	 indicado un dato único de partida y/o despacho para ofrecer lo mismo 
+	 en el nuevo parte a ingresarse.</p>
+	<p class="H_Parrafo_de_Sub-Item">De no cumplirse nada de lo anteriormente 
+	 dicho, o sea hay más de una partida y/o despacho indicado en las tareas 
+	 anteriores o en las partes de la misma tarea, el sistema no ofrecerá 
+	 ninguna partida y/o despacho en el ingreso de un nuevo parte de producción.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si la tarea es la primera tarea se 
+	 ofrecerá lo que se haya indicado en la orden de producción.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita"><span style="mso-fareast-font-family: Calibri; 
+													 mso-ansi-language: ES-AR;">Cancelación 
+	 de productos terminados</span></p>
+	<p class="H_Parrafo_de_Sub-Item" style="mso-fareast-font-family: Calibri;"><span style="mso-ansi-language: ES-AR;">Cuando se registra un parte parcial 
+	 desde esta tarea, en la solapa de productos cancelados, sólo se podrán 
+	 ingresar productos que estén en la orden de producción.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span style="mso-fareast-font-family: Calibri; 
+											 mso-ansi-language: ES-AR;">Si 
+	 se ingresa el producto principal de la orden de producción en dicha 
+	 solapa, luego de ingresar la cantidad el sistema pregunta: “Se consumieron 
+	 los insumos y recursos de las cantidades canceladas?”. Si se responde 
+	 que Sí el sistema recalcula los insumos y recursos, sumando la cantidad 
+	 cancelada a la indicada en la solapa de insumos.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span style="mso-fareast-font-family: Calibri; 
+											 mso-ansi-language: ES-AR;">Si 
+	 al terminar la tarea quedan productos terminados sin cancelar (o sea 
+	 que lo esperado -lo producido – lo cancelado &gt; 0) el sistema ofrece 
+	 generar las cancelaciones de dichos productos. Si no se quiere generar 
+	 la cancelación no se podrá terminar la tarea.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span style="mso-fareast-font-family: Calibri; 
+											 mso-ansi-language: ES-AR;">Cuando 
+	 se genera la cancelación de los productos terminados el sistema también 
+	 cancela el proporcional de los insumos de las tareas posteriores.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span style="mso-fareast-font-family: Calibri; 
+											 mso-ansi-language: ES-AR;">Al 
+	 recalcular los insumos por modificación de las cantidades, si la suma 
+	 del producto terminado más lo cancelado es igual al producto terminado 
+	 inicial que figura en el parte (por color y medida)<span style="mso-spacerun: yes;"> </span> no 
+	 se recalcula en forma proporcional sino que se ofrece la cantidad 
+	 original del insumo cuando se ingresó al parte. En otras palabras, 
+	 si las cantidades coinciden, no se está realizando el recálculo de 
+	 insumos para evitar errores de redondeo.</span></p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Finalización de tareas</p>
+	<p class="H_Parrafo_de_Sub-Item">Al terminar una tarea de una orden 
+	 de producción el sistema ofrece la cancelación de los insumos y/o 
+	 productos terminados pendientes de dicha tarea. Se aconseja siempre 
+	 cancelar lo pendiente para que la información mostrada en los informes 
+	 de desvíos sea lo más clara posible. Además cancelar lo pendiente 
+	 de una tarea permite ofrecer información más real en la transferencia 
+	 de insumos del depósito a la planta.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se muestra una ventana con la lista 
+	 de los insumos sobrantes y una columna para indicar si se los quiere 
+	 consumir. Si se presiona el botón de Ok se agregan los insumos indicados 
+	 al parte de producción de la tarea, si se cancela, no se hace nada.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los productos cancelados, siempre 
+	 se cancela la totalidad de la cantidad pendiente independientemente 
+	 de lo indicado para los productos terminados en la solapa de productos 
+	 cancelados. La información indicada en esta última solapa tiene incidencia 
+	 primordialmente en el cálculo del porcentaje de avance de la tarea.</p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES" style="mso-fareast-font-family: Calibri;">Si 
+	 hay partes pendientes de generación, el sistema emite un aviso. Si 
+	 el usuario desea generar el parte, se abrirá el comprobante del parte 
+	 de producción y luego de grabar lo se deberá volver a ingresar al 
+	 proceso de terminación de la tarea.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES" style="mso-fareast-font-family: Calibri;">Si 
+	 se está terminando una tarea de una planta de terceros y en la planta 
+	 quedaron insumos sobrantes, el sistema pregunta si se cancelaron los 
+	 insumos sobrantes, en caso afirmativo agrega los insumos a un parte 
+	 de producción de la tarea.</span></p>
+	<p> </p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP664892000');
+	TextPopupInit('a2', 'POPUP664884118');
+	TextPopupInit('a3', 'POPUP664928289');
+	TextPopupInit('a4', 'POPUP664677773');
+	TextPopupInit('a5', 'POPUP664626003');
+//]]></script>
+
+
+</body></html>

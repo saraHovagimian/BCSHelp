@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.1.5.0_6"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Generacion automatica</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Generación"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Generación</h1>
+<p class="H_Texto">Los comprobantes a tener en cuenta en el proceso, pueden 
+ seleccionarse por rangos de fechas de entrega, por destino, por <a href="tabla__Clientes.htm">cliente</a>, 
+ por <a href="tabla__Bienes.htm">ítem</a>, por rutas, o por <a href="tabla__Atributos.htm">atributos</a> 
+ .</p>
+<p class="H_Texto">En el caso de facturar o remitir pedidos, sólo se tiene 
+ en cuenta la cantidad asignada a cada pedido, ya sea la asignada automáticamente 
+ por el sistema al registrar los pedidos o la asignada manualmente por 
+ el usuario con los procesos de asignación provistos por el sistema.</p>
+<p class="H_Texto">Al facturar remitos se facturará la cantidad pendiente 
+ de cada uno y hasta donde alcance el stock disponible de cada ítem.</p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si se generan comprobantes 
+ de venta tipo A (facturas o notas de crédito) para una empresa inscripta, 
+ si está parametrizado en el sistema el control de constancia de CUIT, 
+ se verifica la constancia de CUIT de los clientes involucrados, antes 
+ de proceder a la generación de los comprobantes del lote.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">La verificación puede 
+ demorar un poco de tiempo, y mientras se está realizando, se mostrará 
+ en una ventana, una barra de avance del proceso, el número de clientes 
+ a verificar y los números de CUIT que se van verificando.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">En caso de producirse 
+ errores en la verificación de dichos clientes, se interrumpirá el proceso 
+ de generación del lote y se podrá ver el detalle de los clientes con errores, 
+ o se podrá generar un archivo con dichos errores.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">La verificación de constancia 
+ de CUIT se parametriza en los parámetros de cuentas corrientes, indicando 
+ si se desea realizar la misma y especificando algunos datos técnicos más, 
+ relativos a esa verificación. </span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Al generar facturas de 
+ venta se controla el crédito disponible de los clientes. Si los comprobantes 
+ se generan en base a pedidos que fueron autorizados por crédito excedido, 
+ o egresos registrados en base a pedidos autorizados por crédito excedido, 
+ se generan las facturas a pesar de que exceda el crédito disponible. </span></p>
+<p class="H_Texto">La generación se realizará por prioridad de facturación 
+ de <a href="tabla__Clientes.htm">cliente</a>, es decir, los pedidos de 
+ clientes con mayor prioridad se facturarán o remitirán primero y para 
+ clientes con igual prioridad se considerarán primero los comprobantes 
+ más antiguos. Para los pedidos internos la generación se realizará dando 
+ prioridad a la antigüedad de los pedidos.</p>
+<p class="H_Texto">Además existe la prioridad de cada novedad, que determina 
+ el orden en que se ingresan las líneas en las facturas automáticas. Primero 
+ se ingresan las líneas correspondientes a las novedades con prioridad 
+ menor que cinco, que corresponden a las novedades a las que se les da 
+ mayor prioridad; después se ingresan las líneas correspondientes a los 
+ comprobantes que se facturan, y por último se ingresan las novedades con 
+ prioridad mayor o igual a cinco.</p>
+<p class="H_Texto">El proceso de generación no asigna numeración definitiva 
+ a los comprobantes. Esto se debe a que los comprobantes, una vez generados 
+ y antes de su registración definitiva, quedan disponibles para su modificación 
+ o eliminación en el lote cuyo tipo se indique al generarlos.</p>
+<p class="H_Texto">Es posible, una vez efectuada la generación automática, 
+ seguir incorporando nuevos comprobantes al mismo lote, mediante nuevos 
+ procesos automáticos asociados al mismo lote.</p>
+<p class="H_Texto">Cuando termina el proceso de generación se muestra una 
+ ventana que indica la cantidad de comprobantes generados. En el caso que 
+ durante la generación se hayan producido errores al finalizar el proceso 
+ se avisa y además se indica un fichero temporal donde pueden leerse los 
+ mismos. Se puede abrir el fichero en ese mismo momento con el <font style="font-style: italic;">Bloc 
+ de notas</font> o consultarlo más tarde.</p>
+<p class="H_Texto">Si se parametriza una lista para valor declarado, el 
+ sistema calcula automáticamente el valor declarado en moneda local de 
+ los ítems bienes con entrega, multiplicando el precio del ítem en la lista 
+ indicada por la cantidad en la unidad de venta, para los comprobantes 
+ de venta con entrega o remitos de egreso.</p>
+<p class="H_Texto">Los datos a ingresar para generar los comprobantes automáticamente 
+ se ingresan en dos fichas. Estas son:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Generación</p>
+<p class="H_Parrafo_de_Item">En esta ficha se ingresan al sistema los datos 
+ correspondientes al origen y al destino de los comprobantes a generar. 
+ Los datos son:</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP702443689" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lote</span><span data-close-text="true">Lote</span></a></p>
+<div data-targetname="POPUP702443689">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Tipo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Los comprobantes automáticos generados 
+	 mediante este proceso pueden tener asignados un código de lote, que 
+	 se indica en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De esta forma, al efectuar el 
+	 cierre del lote para convertir los comprobantes provisorios en comprobantes 
+	 convencionales, será posible indicar el tipo de lote a cerrar y efectuar 
+	 el cierre sólo de un lote determinado.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El lote de comprobantes automáticos 
+	 generados mediante este proceso puede tener asignado una fecha de 
+	 lote, que se indica en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De esta forma, al efectuar el 
+	 cierre del lote para convertir los comprobantes provisorios en comprobantes 
+	 convencionales, será posible indicar el tipo de lote a cerrar y la 
+	 fecha del mismo, para efectuar el cierre sólo de un lote determinado.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Depósito lote</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Depósito que se asociará a los 
+	 comprobantes automáticos generados en el lote indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El sistema asignará automáticamente 
+	 los comprobantes al depósito que aquí se indique y descargará de este 
+	 depósito, la mercadería entregada en cada comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esto es útil, por ejemplo, en 
+	 aquellos casos en que al momento de tomar al pedido se ha optado por 
+	 un depósito y, luego, por algún motivo, se hace necesario despachar 
+	 la mercadería desde otro depósito.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP702472399" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Origen</span><span data-close-text="true">Origen</span></a></p>
+<div data-targetname="POPUP702472399">
+	<p class="H_Parrafo_de_Sub-Item">Indicación del tipo de comprobante 
+	 a partir del cual se generarán los comprobantes automáticos.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe seleccionarse alguna de estas 
+	 opciones:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Pedidos</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Egresos de mercadería</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Sólo Novedades</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Pedidos internos</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Facturas</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona comprobantes <font style="font-weight: bold;">Pedidos</font> se considerarán para la 
+	 generación automática, los pedidos externos pendientes de facturación 
+	 o de entrega que cumplan con los rangos y opciones solicitadas. Si 
+	 la condición de venta asociada al cliente tiene un ítem asociado para 
+	 descuento o recargo, éste se agregará a la factura y, si el pedido 
+	 que se factura también lo incluía, no se tendrá en cuenta.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona comprobantes <font style="font-weight: bold;">Egresos de mercadería</font> se facturarán 
+	 automáticamente los comprobantes de egreso de mercadería pendientes 
+	 de facturación que cumplan con los rangos y opciones solicitadas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Novedades</font> 
+	 se facturarán o remitirán sólo las novedades registradas para cada 
+	 <a href="tabla__Clientes.htm">cliente</a> y las novedades correspondientes 
+	 a los <a href="tabla__Atributos.htm">atributos</a> y valores de atributos 
+	 de cada cliente que cumpla con los rangos y opciones solicitadas. 
+	 Se incluirán las novedades asociadas a los ítems de los cuales haya 
+	 stock disponible y cuyas fechas de vencimiento sean anteriores a las 
+	 fechas de las facturas que se generan.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si no se selecciona <font style="font-weight: bold;">Novedades</font>, 
+	 igualmente al generar los comprobantes se agregarán automáticamente 
+	 las novedades asociadas al cliente titular de cada uno, y a los atributos 
+	 y valores de atributos de cada uno. La diferencia es que si se selecciona 
+	 <font style="font-weight: bold;">Novedades</font> se incluyen en los 
+	 comprobantes automáticos sólo las novedades, sin tener en cuenta ningún 
+	 comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona comprobantes <font style="font-weight: bold;">Pedidos</font> <font style="font-weight: bold;">internos</font> 
+	 se remitirán automáticamente los pedidos internos pendientes que cumplan 
+	 con los rangos y opciones solicitadas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Facturas</font> 
+	 se asume que se generarán egresos de mercadería y se remitirán automáticamente 
+	 las facturas de venta pendientes de remitir que cumplan con los rangos 
+	 y opciones solicitadas.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Pedido/Factura</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo y número de comprobante 
+	 del pedido o la factura que se desea facturar o remitir automáticamente.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En el caso en que se desee facturar 
+	 o remitir automáticamente un comprobante en particular, es posible 
+	 indicar aquí el número del mismo mediante la búsqueda y selección 
+	 del pedido o la factura, pulsando el botón <font style="font-weight: bold;">Buscar</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se podrán indicar un número de 
+	 pedido, pedido interno o factura dependiendo del origen de los comprobantes 
+	 a partir del cual se efectúa la generación automática.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+	 Buscar</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este botón sólo se encuentra habilitado 
+	 si se seleccionó origen <font style="font-weight: bold;">Pedidos</font>, 
+	 <font style="font-weight: bold;">Pedidos internos</font> o <font style="font-weight: bold;">Facturas</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se podrán buscar pedidos, pedidos 
+	 internos o facturas dependiendo del origen de los comprobantes a partir 
+	 del cual se efectúa la generación automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Sólo debe utilizarse este botón 
+	 si se desea facturar o remitir automáticamente un comprobante en particular, 
+	 si no la generación automática incluirá a todos los pedidos o facturas 
+	 que cumplan con los rangos y opciones indicadas.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Mediante este botón se abre una 
+	 ventana que muestra los pedidos o las facturas posibles de seleccionar 
+	 para la generación automática de facturas o remitos. Se puede restringir 
+	 la búsqueda indicando un destino (agente o depósito) y un depósito 
+	 al que se le pide.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se muestra cada comprobante pendiente 
+	 con su fecha, tipo de comprobante, número y destino (nombre del cliente, 
+	 agente o depósito).</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Los pedidos que requieren autorización 
+	 manual y aún no han sido autorizados también se exhiben en esta lista, 
+	 aunque no es posible seleccionarlos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Una vez seleccionado el pedido 
+	 o la factura, se cierra la ventana y los datos del comprobante se 
+	 copian a la pantalla.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Depósito</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta opción sólo se encuentra 
+	 habilitada si se seleccionó origen <font style="font-weight: bold;">Pedidos</font>, 
+	 <font style="font-weight: bold;">Pedidos internos</font> o <font style="font-weight: bold;">Facturas</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Depósitos asociado a los pedidos 
+	 o facturas que se desean facturar o remitir automáticamente.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En el caso en que se deseen facturar 
+	 o remitir automáticamente sólo los pedidos o las facturas de un depósito 
+	 en particular, es posible indicar aquí el número del depósito.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Comprobantes 
+ a generar</p>
+<p class="H_Parrafo_de_Sub-Item">Indicación del tipo de comprobante a generar. 
+ Mediante este proceso pueden generarse facturas o comprobantes de egreso 
+ de mercadería.</p>
+<p class="H_Parrafo_de_Sub-Item">Debe seleccionarse alguna de estas opciones:</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Egresos de mercadería</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Factura / Remito</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Factura</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Egreso Diferido</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Factura / Remito diferido</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nota de crédito</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nota de crédito / Remito</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación / Remito</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación / Remito diferido</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación crédito</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Liquidación crédito / Remito</p>
+<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Comprobantes E (Facturas y Notas 
+ de crédito) </p>
+<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Egresos 
+ de mercadería</font> el proceso generará comprobantes de egreso de mercadería 
+ a partir de los comprobantes indicados como <font style="font-weight: bold;">Origen</font> 
+ de la generación. Es decir, se remitirán en forma automática todas las 
+ novedades, pedidos, pedidos internos o facturas pendientes que cumplan 
+ con los rangos y opciones indicadas.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Factura/Remito</font> 
+ el proceso generará facturas con entrega de la mercadería a partir de 
+ los comprobantes indicados como <font style="font-weight: bold;">Origen</font> 
+ de la generación. Es decir, se facturarán en forma automática todas las 
+ novedades o pedidos pendientes que cumplan con los rangos y opciones indicadas.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Factura</font> 
+ el proceso generará facturas sin entrega de la mercadería a partir de 
+ los comprobantes indicados como <font style="font-weight: bold;">Origen</font> 
+ de la generación. Es decir, se facturarán en forma automática todas las 
+ novedades, pedidos o egresos de mercadería pendientes que cumplan con 
+ los rangos y opciones indicadas.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Egreso 
+ Diferido</font> el proceso generará comprobantes de egreso de mercadería 
+ diferidos a partir de los comprobantes indicados como <font style="font-weight: bold;">Origen</font> 
+ de la generación. Es decir se asignarán, mediante un remito de egreso 
+ diferido, en forma automática todos los pedidos pendientes que cumplan 
+ con los rangos u opciones indicadas.</p>
+<p class="H_Parrafo_de_Sub-Item">Si se selecciona <font style="font-weight: bold;">Factura 
+ / Remito</font> <span style="font-weight: bold;">diferido </span>el proceso 
+ generará facturas con entrega diferida de la mercadería a partir de los 
+ comprobantes indicados como <font style="font-weight: bold;">Origen</font> 
+ de la generación. Es decir, se facturarán en forma automática todos los 
+ pedidos pendientes que cumplan con los rangos u opciones indicadas.</p>
+<p class="H_Parrafo_de_Sub-Item">La posibilidad de seleccionar <font style="font-weight: bold;">notas 
+ de crédito sin entrega</font> y <font style="font-weight: bold;">con entrega</font> 
+ se habilita si se facturan novedades. En estos casos el sistema generará, 
+ en base a las novedades que tengan indicado que generan notas de crédito 
+ y que se correspondan con el número de proceso indicado, comprobantes 
+ del tipo nota de crédito, con los mismos criterios de agrupación de líneas 
+ de novedades que los actuales para la generación automática de facturas 
+ de venta en base a novedades.</p>
+<p class="H_Parrafo_de_Sub-Item">Al generar <span style="font-weight: bold;">Liquidaciones 
+ remito, Liquidaciones de crédito remito, Facturas E remito o Notas de 
+ crédito E remito</span>, el proceso generará comprobantes con entrega 
+ de la mercadería, es decir, se facturarán en forma automática todas las 
+ novedades o pedidos pendientes que cumplan con los rangos y opciones indicadas.</p>
+<p class="H_Parrafo_de_Sub-Item">Al generar <span style="font-weight: bold;">Liquidaciones, 
+ Liquidaciones de crédito, Facturas E o Notas de crédito E</span>, el proceso 
+ generará comprobantes sin entrega de la mercadería, es decir, se facturarán 
+ en forma automática todas las novedades, pedidos o egresos de mercadería 
+ pendientes que cumplan con los rangos y opciones indicadas.</p>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP679930211" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> Importe mínimo</span><span data-close-text="true"> Importe mínimo</span></a></p>
+<div data-targetname="POPUP679930211">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se generan facturas se puede 
+	 indicar un importe mínimo por debajo del cual no se generan los comprobantes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> </p></div>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP679906462" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidad de líneas</span><span data-close-text="true">Cantidad de líneas</span></a></p>
+<div data-targetname="POPUP679906462">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se indica en este campo la cantidad 
+	 máxima de líneas (o ítems) que admitirá cada uno de los comprobantes 
+	 a generar. Si no se especifica nada en este campo o se pone 0, no 
+	 hay límite de líneas a incluir.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se incluye en este número de líneas 
+	 las que provienen novedades.</p></div>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP679909552" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número de proceso</span><span data-close-text="true">Número de proceso</span></a></p>
+<div data-targetname="POPUP679909552">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Número que indica el tipo de proceso 
+	 de generación automática que se está realizando.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Puede ser un valor entre 0 y 12.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este número define el tipo de 
+	 novedades que se van a incluir en los comprobantes que se generen, 
+	 dependiendo del tipo de proceso para el que están habilitadas las 
+	 novedades.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Un 0 en este dato indica que no 
+	 se incluyan novedades, un 1 indica que se incluyan las novedades habilitadas 
+	 para el proceso automático 1, un 2 incluirá las novedades habilitadas 
+	 para el proceso automático 2, etc.</p></div>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP679883029" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Vigentes al</span><span data-close-text="true">Vigentes al</span></a></p>
+<div data-targetname="POPUP679883029">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Indicar una fecha de vigencia 
+	 de las novedades para controlar la inclusión de las mismas en la generación 
+	 del lote de facturación según su fecha de vencimiento.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item"> </p></div>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP679772503" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Período a imputar</span><span data-close-text="true">Período a imputar</span></a></p>
+<div data-targetname="POPUP679772503">
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+	 Período </p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Rango de fechas que se habilita 
+	 al generar notas de crédito automáticas. El ingreso del período no 
+	 es obligatorio de indicar y solo se va a exigir su ingreso para poder 
+	 generar notas de crédito con percepciones provinciales en alguna provincia 
+	 que tenga indicado que solo se calculan percepciones en orígenes del 
+	 mismo mes.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Desde fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Fecha desde que va a ser utilizada 
+	 al generar notas de crédito con percepciones provinciales en alguna 
+	 provincia que tenga indicado que solo se calculan percepciones en 
+	 orígenes del mismo mes.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Hasta fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Fecha hasta que va a ser utilizada 
+	 al generar notas de crédito con percepciones provinciales en alguna 
+	 provincia que tenga indicado que solo se calculan percepciones en 
+	 orígenes del mismo mes.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP702523776" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Opciones 
+ para la generación</span><span data-close-text="true">Opciones 
+ para la generación</span></a></p>
+<div data-targetname="POPUP702523776">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Moneda</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta opción sólo se habilita cuando 
+	 la facturación se realiza en base a novedades.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Permite indicar una moneda de 
+	 modo que sólo se facturen las novedades definidas para esa moneda.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Sólo novedades en esa moneda</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta opción sólo se habilita cuando 
+	 la facturación se realiza en base a novedades.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Permite indicar que se generan 
+	 comprobantes sólo para las novedades cuya moneda coincide con la que 
+	 se ha informado en el campo <font style="font-weight: bold;">Moneda</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se indica nada en dicho 
+	 campo, y se activa esta opción, la facturación sólo tiene en cuenta 
+	 las novedades en moneda local.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Genera un comprobante por comprobante de origen</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se genera un 
+	 comprobante por cada comprobante de origen que cumple con los rangos 
+	 y opciones solicitadas o si se genera un solo comprobante que incluya 
+	 a todos los comprobantes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se marca esta opción cada comprobante 
+	 que se genere tendrá los datos del comprobante que factura o remite. 
+	 Por ejemplo, la <a href="tabla__Provincias.htm">provincia</a> , condiciones 
+	 de venta, vendedor, concepto, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se genera un único comprobante 
+	 por cliente que factura o remite todos sus comprobantes asociados, 
+	 estos datos se obtienen de los defaults existentes, por ejemplo, provincia 
+	 asociada al cliente, vendedor asociado, etc.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se debe tener en cuenta que en 
+	 el caso de no generar un comprobante por comprobante de origen, clientes 
+	 o destinos (si se remiten pedidos internos), monedas y conceptos diferentes 
+	 provocan generación de comprobantes diferentes.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Genera comprobantes distintos por negocio</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se hace posible generar comprobantes 
+	 distintos por negocio en el caso de la facturación automática de novedades.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Las líneas de novedades que no 
+	 tengan indicado un negocio se facturarán juntas en un solo comprobante 
+	 y luego se generarán comprobantes separados por los negocios diferentes 
+	 indicados en las líneas de las novedades.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En caso que un negocio indique 
+	 que no se puede imputar a otro cliente, al facturar novedades, se 
+	 controla que la novedad corresponda al cliente del negocio.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Asignar despachos en facturas sin entrega</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Permite indicar si se asignarán 
+	 números de despachos en la generación de facturas sin entrega.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 No ignorar novedades por Atributos si existen novedades por cliente</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este check sólo se habilita si 
+	 el origen es &quot;Sólo novedades&quot;., y sirve para indicar que 
+	 se tengan en cuenta todos los ítems indicados en las novedades por 
+	 atributo y los indicados en las novedades por cliente.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no está marcado este check, 
+	 ante la existencia del mismo ítem en las novedades por atributos y 
+	 en las novedades del cliente, el ítem aparecerá sólo una vez en la 
+	 factura, con la cantidad indicada en los atributos del cliente.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>No 
+	 asignar partida en facturas con entrega</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica, al generar egresos 
+	 de mercadería y facturas/remito de ventas, con ítems que sólo manejan 
+	 partidas, no se asignará una partida a esos ítems. No aplica para 
+	 ítems que manejan despachos y/o números de serie, además de partida.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De todos modos, para cerrar con 
+	 posterioridad el lote de facturación automática, será obligatorio 
+	 indicar una partida para dichos ítems, y con stock suficiente. Por 
+	 lo tanto, antes del cerrar el lote habrá que asignar las partidas 
+	 correspondientes, mediante los procesos de modificación del lote de 
+	 facturas o remitos.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Rangos</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Destino</p>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> <a data-target="POPUP702548286" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo 
+ de destino</span><span data-close-text="true">Tipo 
+ de destino</span></a></p>
+<div data-targetname="POPUP702548286">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se generan comprobantes de 
+	 egreso de mercadería, es posible indicar el destino de los comprobantes 
+	 automáticos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Las opciones son:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Cliente</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Agente</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si los comprobantes se generan 
+	 para destino <font style="font-weight: bold;">Cliente</font>, se solicitará 
+	 luego el ingreso del código del cliente titular de los comprobantes 
+	 automáticos a generar. Si este dato es dejado en blanco, se facturarán 
+	 o remitirán los comprobantes pendientes y las novedades asociadas 
+	 a todos los clientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un cliente, sólo 
+	 se facturarán o remitirán los comprobantes y las novedades asociadas 
+	 al mismo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si los comprobantes se generan 
+	 para destino <font style="font-weight: bold;">Agente</font> o <font style="font-weight: bold;">Depósito</font> se solicitará luego el 
+	 ingreso del código de agente o del depósito, según corresponda.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Vendedor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de vendedor cuyos clientes 
+	 serán considerados para la generación automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un vendedor, sólo 
+	 se generarán automáticamente los comprobantes que tengan como titular 
+	 a los clientes asociados al mismo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">estar habilitada para los clientes 
+	 que se incluyen en el proceso de generación.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Atributo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de atributo de los clientes 
+	 cuyos comprobantes y novedades asociadas se desean considerar en la 
+	 generación automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un atributo, sólo 
+	 se considerarán los comprobantes asociados a los clientes que tengan 
+	 definido el atributo indicado.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado 
+	 si se seleccionó un atributo de clientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es el valor del atributo indicado 
+	 asociado a los clientes cuyos comprobantes asociados y novedades se 
+	 desean considerar en la generación automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor de atributo, 
+	 sólo se facturarán los comprobantes pendientes asociados a los clientes 
+	 que tengan definido el atributo y valor de atributo indicados.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Imputación contable</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de imputación contable 
+	 de cuenta corriente que se ha de utilizar.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Ruta</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Códigos de las rutas cuyos clientes 
+	 serán considerados para la generación automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un rango de rutas, 
+	 sólo se generarán automáticamente los comprobantes asociados a los 
+	 clientes que se encuentren en dichas rutas.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Los comprobantes generados se 
+	 ordenarán por el número de posición del cliente en la ruta. Los clientes 
+	 que no tienen número de orden en la ruta se considerarán al final.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/><a data-target="POPUP702568790" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> 
+ Ítem</span><span data-close-text="true"> 
+ Ítem</span></a></p>
+<div data-targetname="POPUP702568790">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Ítem</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de ítems cuyos comprobantes 
+	 asociados se desean considerar en la generación automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado en blanco, 
+	 se facturarán o remitirán los ítems de todos los comprobantes pendientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un ítem, sólo se 
+	 facturarán o remitirán los comprobantes pendientes asociados al mismo.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Atributo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de atributo de los ítems 
+	 cuyos comprobantes asociados se desean considerar en la generación 
+	 automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un atributo, sólo 
+	 se facturarán o remitirán los comprobantes asociados a los ítems que 
+	 tengan definido el atributo indicado.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo se encuentra habilitado 
+	 si se seleccionó un atributo de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valor del atributo indicado asociado 
+	 a los ítems de los comprobantes que se desean incluir en la generación 
+	 automática.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor de atributo, 
+	 sólo se facturarán o remitirán los comprobantes pendientes de los 
+	 ítems que tengan definido el atributo y valor de atributo indicados.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP702573209" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha 
+ de entrega</span><span data-close-text="true">Fecha 
+ de entrega</span></a></p>
+<div data-targetname="POPUP702573209">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Desde Fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible acotar el rango de 
+	 comprobantes a facturar o remitir, mediante el ingreso de una fecha 
+	 de entrega desde la cual se van a considerar los comprobantes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si este dato es dejado en blanco, 
+	 se facturarán o remitirán todos los comprobantes pendientes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una fecha, sólo se 
+	 facturarán o remitirán los comprobantes cuya fecha de entrega no sea 
+	 anterior a esta.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Hasta Fecha</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Es posible acotar el rango de 
+	 comprobantes a facturar o remitir, mediante el ingreso de una fecha 
+	 de entrega hasta la cual se van a considerar los comprobantes.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica una fecha, sólo se 
+	 facturarán o remitirán los comprobantes cuya fecha de entrega no sea 
+	 posterior a esta.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> <a data-target="POPUP702582267" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Método 
+ de pago del pedido</span><span data-close-text="true">Método 
+ de pago del pedido</span></a></p>
+<div data-targetname="POPUP702582267">
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Cta. Cte.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Cta. 
+	 Cte., se facturarán o remitirán sólo los pedidos que tengan indicado 
+	 el método de pago Cuenta corriente.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+	 Contado</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Contado, 
+	 se facturarán sólo aquellos pedidos que tengan indicado el método 
+	 de pago Contado. Estos pedidos generan facturas de venta de pago contado 
+	 diferido.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP702635104" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Sucursales</span><span data-close-text="true">Ficha Sucursales</span></a></p>
+<div data-targetname="POPUP702635104">
+	<p class="H_Parrafo_de_Item">Si se trabaja con varias sucursales, aquí 
+	 se puede indicar de cuales de ellas provienen los comprobantes a cancelar 
+	 mediante el proceso de <font style="font-weight: bold;">generación 
+	 automática</font> que se va a llevar a cabo.</p>
+	<p class="H_Parrafo_de_Item">Esta ficha sólo se habilitará si los comprobantes 
+	 a generar son facturas que toman como base a <font style="font-weight: bold;">Pedidos</font> 
+	 o a <font style="font-weight: bold;">Comprobantes de egreso</font>. 
+	 Por defecto esta ficha presenta activada solamente la sucursal en 
+	 la cual está trabajando el usuario al ingresar a la tarea. En caso 
+	 que no tenga asignada ninguna sucursal en los <font style="font-weight: bold;">Parámetros 
+	 del usuario</font><font style="text-decoration: underline; " color="#008000">,</font> 
+	 se activará la sucursal correspondiente al depósito del lote que se 
+	 haya informado en la ficha <font style="font-weight: bold;">Generación</font>.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Empresa</p>
+	<p class="H_Parrafo_de_Sub-Item">Código de empresa en la cual está 
+	 el usuario en el momento de ingresar a la tarea.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla 
+	 Sucursales</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta tabla muestra todas sucursales 
+	 Empresas habilitadas para el usuario que ingresó a la tarea. Recordemos 
+	 que un usuario podrá tener habilitadas algunas sucursales de todas 
+	 las existentes y esta información podrá indicarse en los Parámetros 
+	 del Usuario.</p>
+	<p class="H_Parrafo_de_Sub-Item">De las sucursales habilitadas para 
+	 el usuario se mostrará en color rojo aquella en la que está trabajando 
+	 actualmente.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Sucursal</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de la sucursal habilitada 
+	 para el usuario desde los Parámetros del usuario o, en su defecto, 
+	 la correspondiente al depósito del lote que se haya informado en la 
+	 ficha Generación Empresas.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Nombre</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Nombre de la sucursal correspondiente 
+	 al código informado.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+<p class="H_Item_con_imagen_negrita"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP702443689');
+	TextPopupInit('a2', 'POPUP702472399');
+	TextPopupInit('a9', 'POPUP679930211');
+	TextPopupInit('a10', 'POPUP679906462');
+	TextPopupInit('a11', 'POPUP679909552');
+	TextPopupInit('a12', 'POPUP679883029');
+	TextPopupInit('a13', 'POPUP679772503');
+	TextPopupInit('a3', 'POPUP702523776');
+	TextPopupInit('a4', 'POPUP702548286');
+	TextPopupInit('a5', 'POPUP702568790');
+	TextPopupInit('a6', 'POPUP702573209');
+	TextPopupInit('a7', 'POPUP702582267');
+	TextPopupInit('a8', 'POPUP702635104');
+//]]></script>
+
+
+</body></html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_40"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Formato archivos utilitarios</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Formato archivos utilitarios"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Formato archivos utilitarios</h1>
+  <p class="H_Texto">Todos los utilitarios impositivos generan archivos de texto cuyos formatos son diseñables por el usuario. BAS CS dispone de formatos estándar y en los campos “Formato” de cada utilitario se ofrecen los códigos de los mismos. No obstante, estos pueden modificarse según se requiera.</p>
+  <p class="H_Texto">Si se desea acceder a las características y al detalle de un formato en particular, estando ubicado en el campo “Formato”, se debe presionar la tecla F4. Debe tenerse en cuenta que los formatos estándar se pueden modificar pero no eliminar.</p>
+  <p class="H_Texto">Los formatos pueden ser de dos tipos de acuerdo a la forma en que se detallan los campos en los registros:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">C.S.V. (valores separados por comas)</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Sub_Item_con_vineta">Posición fija</p>
+    </li>
+  </ul>
+  <p class="H_Texto">En el primer caso los valores se separan por comas por lo que se debe indicar el orden (posición) en el registro de los campos que se detallen.</p>
+  <p class="H_Texto">En el segundo caso, los valores se ubican a partir de la columna que se indique (inicio) ocupando tantos caracteres / dígitos como se indique (largo). Los mismos se completarán con ceros o espacios a derecha o izquierda de acuerdo a lo que se establezca en el aplicativo para cada valor.</p>
+  <p class="H_Texto">En el caso de que el formato sea de “Posición fija” es conveniente que se complete el dato “Longitud de registro” (Figura 1-Posición Fija). En caso que no se informe, la longitud del registro se determina analizando los datos “inicio” y “largo” de cada uno de los campos para determinar la columna mayor (es la mayor que resulta de adicionar al dato “Inicio” de cada campo la longitud que le corresponde). Si este valor resulta inferior al indicado por el aplicativo en cuestión, se considera como longitud del registro el del aplicativo.</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\posicion_fija.gif" border="0" height="291" src="../assets/images/BASCSIMAG/posicion_fija.gif" width="400"/></p>
+  <p class="epigrafe">Figura 1-Posición Fija</p>
+  <p class="H_Texto">Además, entre los campos que pueden incluirse en el formato se prevé la posibilidad de informar textos libres ingresados por el usuario. Para incluir un texto se debe presionar F3 y seleccionar “Texto” (Figura 2-Selección de “Texto”).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\seleccion_texto.gif" border="0" height="291" src="../assets/images/BASCSIMAG/seleccion_texto.gif" width="400"/></p>
+  <p class="epigrafe">Figura 2-Selección de “Texto”</p>
+  <p class="H_Texto">Luego, al aceptar, se incorpora una línea al formato asociada a un campo de tipo “Texto” para el cual se podrá informar “Inicio”, “Longitud” y digitar la leyenda que se desea incluir en el formato (Figura 3-Ingreso de texto).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\ingreso_texto.gif" border="0" height="291" src="../assets/images/BASCSIMAG/ingreso_texto.gif" width="400"/></p>
+  <p class="epigrafe">Figura 3-Ingreso de texto</p>
+  <p class="H_Texto">La mayoría de los campos son obligatorios, por lo cual si se intentase definir un formato sin incluir alguno de dichos campos, un mensaje informará tal situación.</p>
+  <p class="H_Texto">Por último es importante resaltar que en cada formato se podrán repetir todos los campos que se requieran. Cuando se seleccionan se permite elegir varios en forma simultanea (Figura 4-Selección de campos).</p>
+  <p class="IMAGEN"><img alt="BASCSIMAG\seleccion_campo.gif" border="0" height="291" src="../assets/images/BASCSIMAG/seleccion_campo.gif" width="400"/></p>
+  <p class="epigrafe">Figura 4-Selección de campos</p>
+  <p class="H_Texto">Luego, cuando se registran en el formato, para facilitar la operatoria, se precargan sus longitudes.</p>
+
+</body></html>

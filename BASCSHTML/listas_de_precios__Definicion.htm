@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.1.1.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listas de precios Definicion</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Definición de listas de precios</h1>
+  <p class="H_Texto">Esta tarea permite definir <font style="font-weight: bold;">Listas de Precios.</font>
+  </p>
+  <p class="H_Texto">Hay dos tipos de listas, que llamaremos, Normales y Dinámicas.</p>
+  <p class="H_Texto">Una lista de precios Normal incluye un conjunto de ítems que tienen una característica en común representada, por lo que en el sistema se denomina, un <a href="tabla__Atributos.htm">atributo</a> . La lista incluye a todos aquellos ítems que corresponden a determinados valores del atributo del que se trate. Mediante esta tarea se determinan qué <a href="tabla__Bienes.htm">bienes</a> se han de incluir en la lista pero no se crea la misma, simplemente se informan los bienes que ésta incluirá cuando se la genere.</p>
+  <p class="H_Texto">Las listas Dinámicas no requieren informar el atributo pues serán listas dependientes de listas normales. Son listas virtuales, que no tienen existencia real en las tablas de precios.</p>
+  <p class="H_Texto">Las listas de precios pueden utilizarse en las operaciones de venta, para determinar el precio al que se han de vender los <a href="tabla__Bienes.htm">bienes</a> que incluyen, o para registrar costos.</p>
+  <p class="H_Texto">Las listas destinadas a registrar costos pueden utilizarse, también para lo que el sistema denomina Método de valuación contable del stock. Efectivamente, la valuación contable prevé, entre otros métodos (costo promedio ponderado, costo L.I.F.O, costo F.I.F.O), la posibilidad de utilizar una lista de precios.</p>
+  <p class="H_Texto">Si se trabaja con múltiples empresas se deberán definir las listas de precios de cada empresa con la que se trabaja. Las listas de precios que se ingresen se registrarán en la empresa en la cual está el usuario en ese momento.</p>
+  <p class="H_Texto">Los datos que se asocian a una lista de precios en su definición son los siguientes:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665688950" href="#"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+  <div data-targetname="POPUP665688950">
+    <p class="H_Parrafo_de_Item">Código de empresa en la cual se ingresa
+      la lista de precios que se está definiendo.</p>
+    <p class="H_Parrafo_de_Item">Este dato no se ingresa manualmente. Para
+      las listas nuevas que se ingresen, se completa el dato automáticamente
+      con el código de la empresa en la cual está el usuario en ese momento;
+      y sólo podrán verse o modificarse las listas de precios asociadas
+      a esa empresa.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665684373" href="#"><span data-open-text="true" data-skip-index="true">Código</span><span data-close-text="true">Código</span></a></p>
+  <div data-targetname="POPUP665684373">
+    <p class="H_Parrafo_de_Item">Código que identifica a la lista de precios.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665707845" href="#"><span data-open-text="true" data-skip-index="true">Descripción</span><span data-close-text="true">Descripción</span></a></p>
+  <div data-targetname="POPUP665707845">
+    <p class="H_Parrafo_de_Item">Texto previsto para ingresar el nombre
+      asignado a la lista de precios.</p>
+    <p class="H_Parrafo_de_Item">Este nombre es de uso interno, es decir,
+      es el que identifica a la lista en las tareas de administración de
+      listas de precios que prevé el sistema. Por lo cual, no tiene relación
+      alguna con los textos con los que se deseen encabezar los correspondientes
+      informes. Estos encabezados se informarán libremente al momento de
+      emitir las listas de precios.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665718504" href="#"><span data-open-text="true" data-skip-index="true">Observación</span><span data-close-text="true">Observación</span></a></p>
+  <div data-targetname="POPUP665718504">
+    <p class="H_Texto">Texto de observación que se desea asociar a la lista
+      de precios. Este texto estará disponible para ser incluido en la emisión
+      de listas de precios, cuando la misma se realice mediante un <font style="font-weight: bold;">formato personalizado de impresión</font>
+      y se ofrecerá como observación por defecto en la tarea <font style="font-weight: bold;">Generación
+        de listas de precios</font> cada vez que se genere una nueva versión
+      de la lista y podrá ser modificada libremente.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665759708" href="#"><span data-open-text="true" data-skip-index="true">Moneda</span><span data-close-text="true">Moneda</span></a></p>
+  <div data-targetname="POPUP665759708">
+    <p class="H_Parrafo_de_Item">Moneda en la que se expresan los valores
+      que se incluyen en la lista.</p>
+    <p class="H_Parrafo_de_Item">Si los precios se expresan en moneda local
+      este dato se debe dejar en blanco.</p>
+    <p class="H_Parrafo_de_Item">Si se expresan en moneda extranjera, se
+      debe informar el código correspondiente a la misma.</p>
+    <p class="H_Parrafo_de_Item">Dicho código debe haberse definido en
+      la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">
+        <font style="font-weight: bold;">Tabla
+          de índices y cotizaciones</font>
+      </a> y debe ser de <font style="font-weight: bold;">Tipo</font>
+      <font style="font-weight: bold;">Cotización</font>.
+    </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665741269" href="#"><span data-open-text="true" data-skip-index="true">Unidad de medida</span><span data-close-text="true">Unidad de medida</span></a></p>
+  <div data-targetname="POPUP665741269">
+    <p class="H_Parrafo_de_Item">Se debe selecciona runa opción, según cual sea la unidad en la que se expresan los precios de la lista:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Unidad de Ventas</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Unidad de Compras</p>
+    <p class="H_Parrafo_de_Item">De este modo, cuando un producto maneja dos unidades de medida, se calcularán los precios de las listas de precios en base a la relación entre ambas unidades y a las unidades que se hayan informado al definir las listas.</p>
+    <p class="H_Parrafo_de_Item">Al intentar cambiar la unidad de expresión de los precios de una lista, el sistema verificará que no existan listas de precios no dinámicas ya generadas que estén vigentes y no expiradas o vigencias futuras de dicha lista generadas y avisará de dicha eventualidad, ofreciendo al operador la posibilidad de cancelar la modificación de la unidad de medida o continuar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665792468" href="#"><span data-open-text="true" data-skip-index="true">Lista no habilitada para ventas</span><span data-close-text="true">Lista no habilitada para ventas</span></a></p>
+  <div data-targetname="POPUP665792468">
+    <p class="H_Parrafo_de_Item">Si esta opción está activada significa que la lista no puede utilizarse en comprobantes de ventas.</p>
+    <p class="H_Parrafo_de_Item">Si bien las listas de precios se utilizan fundamentalmente en las operaciones de venta, también pueden destinarse a otros fines. Al respecto, ya hemos mencionado la posibilidad de registrar costos en ellas y utilizarlas, luego, en las valuaciones de stock o en la valorización de movimientos.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665806509" href="#"><span data-open-text="true" data-skip-index="true">Precios a consumidores finales</span><span data-close-text="true">Precios a consumidores finales</span></a></p>
+  <div data-targetname="POPUP665806509">
+    <p class="H_Parrafo_de_Item">Si esta opción está activada significa que los precios de la lista incluyen el Impuesto al Valor Agregado y los impuestos internos si corresponden.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Sumar impuestos en la generación</span><span data-close-text="true">Sumar impuestos en la generación</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Indica si se suman IVA e Impuestos internos en el momento de generar la lista de precios.</p>
+    <p class="H_Parrafo_de_Item">Se habilita para listas con precios a consumidores finales.</p>
+    <p class="H_Parrafo_de_Item">Para los bienes que tienen un importe de impuesto interno fijo como ese importe siempre está expresado en unidad de ventas y en moneda local, al incluirlo en la lista de precios, se convertirá a la unidad de medida y a la moneda indicadas en la lista que se genera.<br/></p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665809910" href="#"><span data-open-text="true" data-skip-index="true">Lista dinámica</span><span data-close-text="true">Lista dinámica</span></a></p>
+  <div data-targetname="POPUP665809910">
+    <p class="H_Parrafo_de_Item">En caso que se active, se está definiendo
+      una lista dinámica.</p>
+    <p class="H_Parrafo_de_Item">Estas no requieren informar el atributo
+      y los valores del atributo de ítems que considera.</p>
+    <p class="H_Parrafo_de_Item">Se trata de un tipo de lista de precios,
+      que será dependiente de otras listas. Es una lista virtual, que no
+      tiene existencia real en las tablas de precios.</p>
+    <p class="H_Parrafo_de_Item">Una lista ya existente definida como dinámica
+      no puede convertirse en normal y viceversa.</p>
+    <p class="H_Parrafo_de_Item">Cuando el sistema necesite obtener el
+      precio correspondiente a una lista del tipo dinámica, buscará para
+      la lista dinámica vigente a la fecha del comprobante, el de la lista
+      original y lo modificará por el factor y redondeo (recuérdese que
+      la lista dinámica es virtual, por lo cual se calcula en el momento
+      en que se requiere).</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP665861034" href="#"><span data-open-text="true" data-skip-index="true">Ítems Incluidos en la lista</span><span data-close-text="true">Ítems Incluidos en la lista</span></a></p>
+  <div data-targetname="POPUP665861034">
+    <p class="H_Parrafo_de_Item">Aquí se determinan los <a href="tabla__Bienes.htm">bienes</a>
+      que se desean incluir en la lista de precios. La forma de incluirlos
+      es mediante el uso de <a href="tabla__Atributos.htm">atributos</a>
+      <font style="text-decoration: underline; " color="#008000">.</font>
+    </p>
+    <p class="H_Parrafo_de_Item">Podemos decir que, informado un atributo
+      y algunos o todos los valores del mismo, la tarea de generación de
+      listas incluirá, al generar la lista que estamos definiendo, a todos
+      aquellos bienes que tengan asociado el atributo en cuestión y un valor
+      del mismo que corresponda a algunos de los informados en la definición
+      de la lista.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe informar el código del <a href="tabla__Atributos.htm">atributo</a> asociado a los ítems que
+      se desea incluir en la lista.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez informado el atributo correspondiente
+      a la lista de precios, ésta incluirá a todos los ítems que tengan
+      asociado el atributo informado y que correspondan a los valores que
+      se detallan en esta tabla.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe informarse un valor determinado
+      del atributo definido. Es posible informar hasta 1000 valores para
+      el atributo en cuestión.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre correspondiente al
+      valor del atributo informado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Ejemplo</p>
+    <p class="H_Parrafo_de_Sub-Item">Supongamos que una empresa comercializa
+      automóviles de una determinada marca y repuestos (de diferentes proveedores),
+      y desea disponer de listas de precios independientes para los automóviles
+      y para los repuestos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Además, las variaciones en los precios
+      de los vehículos dependen de los modelos y las variaciones de precios
+      en los repuestos dependen del proveedor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se podría definir la lista <font style="font-weight: bold;">lau-Automotores</font>
+      con atributo <font style="font-weight: bold;">aut-Automotores</font>
+      y valores <font style="font-weight: bold;">m1</font>, <font style="font-weight: bold;">m2</font>
+      y <font style="font-weight: bold;">m3</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante esta definición, la lista
+      de precios sólo incluirá aquellos ítems que contengan el atributo
+      <font style="font-weight: bold;">aut</font> y, en particular, los
+      valores, <font style="font-weight: bold;">m1</font>, <font style="font-weight: bold;">m2</font>
+      y <font style="font-weight: bold;">m3</font> de dicho atributo.
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">La lista correspondiente a repuestos
+      puede definirse con atributo <font style="font-weight: bold;">rep-Repuestos</font>
+      y valores <font style="font-weight: bold;">p1</font>, <font style="font-weight: bold;">p2</font>
+      y <font style="font-weight: bold;">p3</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta lista incluirá a todos los ítems
+      que correspondan a los valores <font style="font-weight: bold;">p1</font>,
+      <font style="font-weight: bold;">p2</font> y <font style="font-weight: bold;">p3</font>
+      del atributo <font style="font-weight: bold;">rep</font>.
+    </p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP665688950');
+    TextPopupInit('a2', 'POPUP665684373');
+    TextPopupInit('a3', 'POPUP665707845');
+    TextPopupInit('a4', 'POPUP665718504');
+    TextPopupInit('a5', 'POPUP665759708');
+    TextPopupInit('a6', 'POPUP665741269');
+    TextPopupInit('a7', 'POPUP665792468');
+    TextPopupInit('a8', 'POPUP665806509');
+    TextPopupInit('a9', 'POPUP665809910');
+    TextPopupInit('a10', 'POPUP665861034');
+    //]]>
+  </script>
+
+</body></html>

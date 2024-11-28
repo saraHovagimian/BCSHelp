@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Bienvenido","type":"item","tilePath":"","description":"","url":"BASCSHTML/bienvenido.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

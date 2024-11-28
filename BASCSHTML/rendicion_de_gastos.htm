@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.4.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Rendicion de gastos Ingreso</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Rendición de gastos</h1>
+<p class="H_Texto">Esta tarea permite dar de alta en el sistema una <font style="font-weight: bold;">Rendición de gastos</font>.</p>
+<p class="H_Texto">La <font style="font-weight: bold;">Rendición de Gastos</font> 
+ se utiliza en los casos en que se entrega dinero a un individuo o sector 
+ para que realice sus compras y gastos en forma independiente y, luego, 
+ rinda el destino dado a los fondos que se le han asignado.</p>
+<p class="H_Texto">También, y según sea la forma en que se registra la 
+ información, puede utilizarse para la administración de los fondos fijos 
+ que se asignen en la empresa.</p>
+<p class="H_Texto">Por lo cual, el titular de la misma puede ser tanto 
+ un individuo como un sector. Uno u otro se representan mediante la figura 
+ de un <a href="tabla__Agentes.htm">agente</a> (de tipo <font style="font-weight: bold;">Rendición 
+ de gastos</font>).</p>
+<p class="H_Texto">Una vez incorporada una rendición de gastos en el sistema, 
+ se podrán imputar pagos, cobranzas y facturas de compra referenciando 
+ dicha rendición. Luego, los informes asociados a la rendición, detallarán 
+ el destino de los fondos asignados al agente titular del fondo asignado.</p>
+<p class="H_Texto">Se prevé la posibilidad de <a href="rendicion_de_gastos__Cierre.htm">cerrar 
+ una rendición de gastos</a> . Esto significa que, una vez que se haya 
+ realizado la tarea de cierre, no se le podrá imputar mas información; 
+ es decir, no será posible aplicarle compras, gastos, recibos u órdenes 
+ de pago.</p>
+<p class="H_Texto">La única condición que se requiere para cerrar una rendición 
+ es que su saldo sea cero. Es decir, que el total de los ingresos y de 
+ los egresos registrados en ella, coincidan.</p>
+<p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante 
+ en estado de preparación</a>, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.</p>
+<p class="H_Texto">Los datos a asociar a una rendición de gastos, además 
+ de la fecha y número de comprobantes, son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP670706781" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Agente</span><span data-close-text="true">Agente</span></a></p>
+<div data-targetname="POPUP670706781">
+	<p class="H_Parrafo_de_Item">Código correspondiente al responsable 
+	 de la rendición.</p>
+	<p class="H_Parrafo_de_Item">Este debe estar definido en la tabla de 
+	 <font style="font-weight: bold;">Agentes</font> y debe ser un <a href="tabla__Agentes.htm">agente</a> 
+	 de tipo <font style="font-weight: bold;">Rendición de gastos</font></p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP670729043" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Imputación Contable</span><span data-close-text="true">Imputación Contable</span></a></p>
+<div data-targetname="POPUP670729043">
+	<p class="H_Parrafo_de_Item"><a href="tabla__Cuentas.htm">Cuenta</a> 
+	 a imputar en los asientos correspondientes a los comprobantes donde 
+	 se invoque como titular al agente informado en el dato <font style="font-weight: bold;">Agente</font>.</p>
+	<p class="H_Parrafo_de_Item">Se ofrece la imputación contable por defecto 
+	 asociada al agente en su definición. Esta puede cambiarse por otra 
+	 siempre y cuando esta última se haya habilitado en la tabla de <a href="tabla__Cuentas.htm">imputaciones contables</a> correspondiente 
+	 al agente.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP670737746" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Vencimiento</span><span data-close-text="true">Vencimiento</span></a></p>
+<div data-targetname="POPUP670737746">
+	<p class="H_Parrafo_de_Item">Fecha de vencimiento asociada a la rendición. 
+	 Es un dato informativo.</p>
+	<p class="H_Parrafo_de_Item">Si se ingresa se podrá solicitar, al emitir 
+	 listados de rendiciones de gastos, incluir sólo las rendiciones vencidas, 
+	 las abiertas o ambas.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP670744983" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+<div data-targetname="POPUP670744983">
+	<p class="H_Parrafo_de_Item">Texto aclaratorio a asociar al comprobante. 
+	 Aparece junto a él en todos los informes que lo incluyen.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP670706781');
+	TextPopupInit('a2', 'POPUP670729043');
+	TextPopupInit('a3', 'POPUP670737746');
+	TextPopupInit('a4', 'POPUP670744983');
+//]]></script>
+
+
+</body></html>

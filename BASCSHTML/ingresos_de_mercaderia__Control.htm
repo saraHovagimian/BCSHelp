@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.3.1.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Ingreso de mercaderia Control</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Control de ingresos</h1>
+<p class="H_Texto">Esta tarea permite detectar la existencia de errores 
+ durante la registración de comprobantes de ingreso de mercaderías.</p>
+<p class="H_Texto">El control consiste en una segunda registración que 
+ se efectúa, en forma ciega, es decir, sin disponer de la información registrada 
+ en el comprobante de ingreso a controlar.</p>
+<p class="H_Texto">Para que un comprobante de ingreso de mercaderías pase 
+ por este control, debe marcarse el requisito <font style="font-weight: bold;">Requiere 
+ control de egresos/ingresos de mercadería</font> en el <a href="tabla__Talonarios.htm">talonario</a> 
+ correspondiente. De esta manera, los comprobantes de ingreso asociados 
+ al talonario en cuestión permanecerán pendientes de control hasta tanto 
+ sean confirmados o controlados mediante esta tarea. Se considerarán, por 
+ lo tanto, <font style="font-weight: bold;">Ingresos de mercadería pendientes 
+ de control.</font></p>
+<p class="H_Texto">Al ingresar a esta tarea, se deberá indicar cual es 
+ el comprobante de ingreso que se ha de controlar. Luego se deben registrar 
+ nuevamente los ítems que ingresan, prescindiendo de la información registrada 
+ en el remito referenciado.</p>
+<p class="H_Texto">Una vez registrados todos los ítems por segunda vez, 
+ al grabar el <font style="font-weight: bold;">Comprobante de control de 
+ ingresos</font>, se iniciará un proceso de comparación entre lo que se 
+ acaba de registrar y lo registrado en el comprobante de ingreso que se 
+ está controlando.</p>
+<p class="H_Texto">La comparación se realiza consolidando las líneas con 
+ los mismos datos (ítem, color, medida, dimensiones, contenedor, series, 
+ despacho, partida, centros de apropiación y negocio) tanto en el comprobante 
+ ingresado como en el original.</p>
+<p class="H_Texto">Si en la comparación no se encuentra ninguna diferencia 
+ entre el comprobante ingresado y el comprobante original (es decir las 
+ cantidades son iguales y, en el caso de ítems que manejan dimensiones, 
+ la cantidad de unidades de las dimensiones indicada son iguales) se marca 
+ el comprobante como confirmado y se imprime, o no (según sea lo indicado 
+ en el talonario correspondiente).</p>
+<p class="H_Texto">Si del resultado de la comparación de los comprobantes 
+ surge alguna diferencia, se pasa posteriormente, y en forma automática, 
+ a una ventana que exhibe las diferencias detectadas por ítem, indicando 
+ además el color, la medida, la cantidades en primera y en segunda unidad 
+ de medida.</p>
+<p class="H_Texto">Luego se ofrecen las opciones de <font style="font-weight: bold;">Confirmar 
+ con diferencias</font>, <font style="font-weight: bold;">Imprimir las 
+ diferencias</font> o <font style="font-weight: bold;">Volver</font> a 
+ la pantalla de control de ingresos para corregir las diferencias detectadas.</p>
+<p class="H_Texto">Los datos a ingresar, además de la fecha interna y externa, 
+ son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP599671282" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> 
+ Depósito</span><span data-close-text="true"> 
+ Depósito</span></a></p>
+<div data-targetname="POPUP599671282">
+	<p class="H_Parrafo_de_Item">Código del <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 al cual ingresa la mercadería.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP599563562" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Origen</span><span data-close-text="true">Origen</span></a></p>
+<div data-targetname="POPUP599563562">
+	<p class="H_Parrafo_de_Item">Según de quién o de dónde provenga la 
+	 mercadería que ingresa, se debe seleccionar:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Proveedor</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta opción debe seleccionarse cuando 
+	 el ingreso de mercadería proviene de un proveedor , cualquiera sea 
+	 la causa que origina dicho ingreso.</p>
+	<p class="H_Parrafo_de_Sub-Item">Fundamentalmente, dichos ingresos 
+	 se producen por compras efectuadas pero pueden estar originados, también, 
+	 en préstamos que se efectúan a la empresa o en entregas de muestras 
+	 y atenciones varias.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Clientes</p>
+	<p class="H_Parrafo_de_Sub-Item">Los comprobantes de ingreso de <a href="tabla__Clientes.htm">clientes</a> se utilizan, en general, para 
+	 registrar las devoluciones de mercadería que éstos efectúan.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta opción debe seleccionarse cuando 
+	 la mercadería ingresa desde otro <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 habilitado en el sistema.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema divide el registro de las 
+	 transferencias entre depósitos en dos etapas, la que corresponde al 
+	 egreso de la mercadería de un depósito y la que corresponde a su ingreso 
+	 al otro.</p>
+	<p class="H_Parrafo_de_Sub-Item">De este modo, al registrar el comprobante 
+	 de egreso, éste quedará pendiente hasta que se registre el correspondiente 
+	 ingreso en el depósito de destino.</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta forma de trabajar posibilita 
+	 el control de la mercadería en tránsito, es decir, de aquellos bienes 
+	 que salieron de un lugar de almacenamiento de la empresa con destino 
+	 a otro y aún no han arribado a destino.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Agente</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta opción se debe seleccionar cuando 
+	 la mercadería ingresa por alguna causa que no está relacionada con 
+	 las entregas de proveedores, los traslados desde otros depósitos, 
+	 ni con las devoluciones de clientes. Un ejemplo puede ser el ingreso 
+	 de bienes que provienen de un proceso de fabricación.</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez seleccionado el origen del 
+	 comprobante, se debe informar el código que lo identifica. Por lo 
+	 cual, en función al dato informado en el campo <font style="font-weight: bold;">Destino</font>, 
+	 se deberá ingresar un código de cliente, proveedor, depósito o agente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al respecto, debe tenerse en cuenta 
+	 que, si se seleccionó <font style="font-weight: bold;">Agente</font>, 
+	 para que el código del mismo sea aceptado, éste debe corresponder 
+	 a un <font style="font-weight: bold;">Agente</font> de <font style="font-weight: bold;">Tipo</font>, 
+	 <font style="font-weight: bold;">Destino de materiales</font>.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP599605353" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número</span><span data-close-text="true">Número</span></a></p>
+<div data-targetname="POPUP599605353">
+	<p class="H_Parrafo_de_Item">Se ingresa aquí el Prefijo y el número 
+	 del comprobante de ingreso de mercaderías que se desea de controlar.</p>
+	<p class="H_Parrafo_de_Item">El campo correspondiente al prefijo tiene 
+	 habilitada una búsqueda que exhibe los talonarios de ingresos.</p>
+	<p class="H_Parrafo_de_Item">El campo correspondiente al número también 
+	 tiene habilitada una búsqueda que muestra los comprobantes de ingreso 
+	 pendientes de control que tienen el prefijo que se haya indicado (si 
+	 es que se indicó alguno) y que tienen asociado el origen que se haya 
+	 indicado (si es que se indico alguno previamente).</p>
+	<p class="H_Parrafo_de_Item">Es importante tener en cuenta que no es 
+	 posible indicar un comprobante de ingreso de mercadería pendiente 
+	 de control si el mismo referencia en alguna de sus líneas a otro comprobante.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP599614645" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha de registración</span><span data-close-text="true">Fecha de registración</span></a></p>
+<div data-targetname="POPUP599614645">
+	<p class="H_Parrafo_de_Item">Fecha del comprobante de ingreso de mercadería 
+	 pendiente de control.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP599620650" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Control de cantidades</span><span data-close-text="true">Control de cantidades</span></a></p>
+<div data-targetname="POPUP599620650">
+	<p class="H_Parrafo_de_Item">Número que indica la cantidad total de 
+	 unidades de mercadería que ingresa.</p>
+	<p class="H_Parrafo_de_Item">A veces pueden ocurrir errores durante 
+	 el tipeo de los datos correspondientes al ingreso de materiales. Este 
+	 campo permite controlar si hay errores en el ingreso de las cantidades 
+	 en las líneas del comprobante.</p>
+	<p class="H_Parrafo_de_Item">Si se ingresa información en este dato, 
+	 al finalizar el ingreso del comprobante, se verificará que el total 
+	 de unidades ingresado en todas las líneas coincida con el valor aquí 
+	 consignado. Si no coincide aparecerá una leyenda en pantalla, explicando 
+	 el error, y no se permitirá grabar el comprobante hasta que el error 
+	 no sea corregido</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP599639432" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidades ingresadas</span><span data-close-text="true">Cantidades ingresadas</span></a></p>
+<div data-targetname="POPUP599639432">
+	<p class="H_Parrafo_de_Item">Este número indica las cantidades tipeadas 
+	 en la columna cantidad a medida que se van ingresando líneas en el 
+	 comprobante. Dicho valor se actualiza también en caso de eliminar 
+	 líneas ya tipeadas.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Items</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP714045190" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla 
+ de Ítems</span><span data-close-text="true">Tabla 
+ de Ítems</span></a></p>
+<div data-targetname="POPUP714045190">
+	<p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se informan los 
+	 <a href="tabla__Bienes.htm">bienes</a> a incluir en el comprobante 
+	 de control de ingresos que se está confeccionando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Dichos ítems deben ingresarse en forma 
+	 directa invocándolos mediante su código identificatorio</p>
+	<p class="H_Parrafo_de_Sub-Item">Para cada ítem se debe informar la 
+	 cantidad que ingresa y, en función al tipo de ítem del que se trate, 
+	 se requerirá información adicional.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al respecto, y a título de ejemplo, 
+	 podemos mencionar que para algunos <a href="tabla__Bienes.htm">bienes</a> 
+	 se deben detallar las cantidades que ingresan por <a href="tabla__Tablas_de_colores.htm">color</a> 
+	 y por <a href="tabla__Tablas_de_medidas.htm">medida</a> .</p>
+	<p class="H_Parrafo_de_Sub-Item">Para otros bienes como, por ejemplo, 
+	 los importados que deben administrarse mediante <a href="despachos.htm">despachos</a> 
+	 , debe informarse el número de despacho que avala el ingreso. Dicho 
+	 despacho debe haberse definido en el sistema con anterioridad.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para aquellos <a href="tabla__Bienes.htm">bienes</a> 
+	 donde cada unidad se identifica con un número de serie, se deben informar 
+	 los números de serie asociados a cada una de las unidades que ingresan.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los bienes que llevan asociado 
+	 un código de <a href="partidas.htm">partida</a> se debe informar el 
+	 código de la partida correspondiente. La misma debe haberse definido 
+	 con anterioridad en la tabla destinada a tal fin.</p>
+	<p class="H_Parrafo_de_Sub-Item">En otros casos, como por ejemplo, 
+	 cuando deben informarse códigos de despachos, de partidas o de centros 
+	 de apropiación, se incorporan columnas adicionales para permitir incluir 
+	 dicha información.</p>
+	<p class="H_Parrafo_de_Sub-Item">De lo dicho surge entonces que, si 
+	 bien cada uno de estos datos ya ha sido informado en el comprobante 
+	 de ingreso de mercadería que se está controlando, dado que se trata 
+	 de un control basado en una segunda registración “ciega”, dichos datos 
+	 no podrán ser consultados. Deberán ser informados nuevamente.</p>
+	<p class="H_Parrafo_de_Sub-Item"><a href="lineas_de_control_de_ingresos.htm">Datos 
+	 a ingresar para cada línea del control de ingresos</a>.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP713873928" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Totales</span><span data-close-text="true">Ficha Totales</span></a></p>
+<div data-targetname="POPUP713873928">
+	<p class="H_Parrafo_de_Item">Esta ficha está destinada exclusivamente 
+	 a exhibir información relacionada a los totales del comprobante. Los 
+	 totales son calculados automáticamente.</p>
+	<p class="H_Parrafo_de_Item">Esta ficha puede ser consultada todas 
+	 las veces que sea necesario durante el ingreso del comprobante y la 
+	 información de la misma se actualizará en forma automática a medida 
+	 que se ingresan líneas en el comprobante.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad total de unidades de mercadería 
+	 recibidas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las cantidades se consideran siempre 
+	 según la primera unidad de medida, o sea según el valor de la columna 
+	 cantidad de la tabla de ítems.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Peso</p>
+	<p class="H_Parrafo_de_Sub-Item">Peso total de la mercadería recibida 
+	 expresado en la unidad indicada en los Parámetros de ítems como unidad 
+	 de peso.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema calcula el peso total sumando 
+	 el peso unitario de cada <a href="tabla__Bienes.htm">bien</a> (indicado 
+	 en la definición del ítem) remitido por la cantidad recibida de cada 
+	 uno.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las cantidades de cada bien se consideran 
+	 siempre según la primera unidad de medida, o sea según el valor de 
+	 la columna cantidad de la tabla de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los ítems con contenedores el 
+	 peso se calcula como la suma del peso por las unidades del ítem más 
+	 el peso por las unidades del contenedor.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Volumen</p>
+	<p class="H_Parrafo_de_Sub-Item">Volumen total de la mercadería recibida 
+	 expresado en la unidad indicada en los Parámetros de ítems como unidad 
+	 de volumen.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema calcula el volumen total 
+	 sumando el volumen unitario de cada <a href="tabla__Bienes.htm">bien</a> 
+	 (indicado en la definición del ítem) remitido por la cantidad recibida 
+	 de cada uno.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las cantidades de cada bien se consideran 
+	 siempre según la primera unidad de medida, o sea según el valor de 
+	 la columna cantidad de la tabla de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los ítems con contenedores el 
+	 volumen se calcula como el volumen del contenedor por las unidades 
+	 del mismo.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP713878469" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+<div data-targetname="POPUP713878469">
+	<p class="H_Parrafo_de_Item">Esta ficha permite asociar al comprobante 
+	 una serie de datos destinados, fundamentalmente, a ser incluidos en 
+	 el correspondiente formulario de impresión.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Observaciones</p>
+	<p class="H_Parrafo_de_Sub-Item">Texto de ingreso libre a incluir en 
+	 el comprobante.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP714073194" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla de diferencias</span><span data-close-text="true">Tabla de diferencias</span></a></p>
+<div data-targetname="POPUP714073194">
+	<p class="H_Parrafo_de_Item">Al grabar el comprobante, se ejecuta un 
+	 proceso de comparación luego del cual se exhibe esta tabla, en forma 
+	 automática. La misma contendrá las diferencias encontradas durante 
+	 dicho proceso. Es decir, las diferencias detectadas entre los ítems 
+	 ingresados mediante esta tarea y los ingresados en el comprobante 
+	 de ingreso que se esta controlando.</p>
+	<p class="H_Parrafo_de_Item">Por lo tanto esta tabla no aparecerá en 
+	 caso de no haberse detectado diferencias.</p>
+	<p class="H_Parrafo_de_Item">Los datos que contiene son los siguientes:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Item">Código del ítem en el que se han detectado 
+	 diferencias con respecto al comprobante de ingreso controlado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el 
+	 dato anterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción 
+	 larga, se exhibirá esta. Si no, se exhibirá la otra descripción.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Color</p>
+	<p class="H_Parrafo_de_Sub-Item">Para ítems que administran distintos 
+	 colores, se indicará en este campo el color en el que se ha detectado 
+	 una diferencia en cuanto a las cantidades.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Medida</p>
+	<p class="H_Parrafo_de_Sub-Item">Para ítems que administran distintas 
+	 medidas o talles, se indicará aquí la medida del ítem en la cual se 
+	 ha detectado una diferencia en cuanto a las cantidades</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad ingresada</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem que 
+	 ingresan según lo informado en la pantalla anterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad 
+	 de medida, se exhibirá en este campo las cantidades expresadas en 
+	 la primera unidad.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas 
+	 exhibirá una línea por cada combinación de color y medida del ítem 
+	 en la que se hayan detectado diferencias.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con despachos, 
+	 partidas, dimensiones, números de serie, centros de apropiación, negocios 
+	 o si es un ítem de tipo contenedor, al posicionar el mouse en el campo 
+	 cantidad de esa línea se exhibirá un tooltip con los datos adicionales 
+	 correspondientes. De lo contrario aparecerá una leyenda que diga No 
+	 hay datos adicionales.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad en 2da unidad ingresada</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades expresadas en 
+	 la segunda unidad de medida, que se entregan del ítem según lo informado 
+	 en la pantalla anterior.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad 
+	 de medida, se exhibirá el valor 0 en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad Original</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem que 
+	 ingresan según lo informado en el comprobante de ingreso de mercaderías 
+	 que se está controlando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad 
+	 de medida, se exhibirá en este campo las cantidades expresadas en 
+	 la primera unidad.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas 
+	 exhibirá una línea por cada combinación de color y medida del ítem 
+	 en que se hayan detectado diferencias.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con despachos, 
+	 partidas, dimensiones, números de serie, centros de apropiación, negocios 
+	 o si es un ítem de tipo contenedor, al posicionar el mouse en esa 
+	 línea se exhibirá un tooltip con los datos adicionales correspondientes. 
+	 De lo contrario aparecerá una leyenda que diga No hay datos adicionales.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad en 2da unidad Original</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades expresadas en 
+	 la segunda unidad de medida, que ingresan del ítem según lo informado 
+	 en el comprobante de ingreso de mercaderías que se está controlando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad 
+	 de medida, se exhibirá el valor 0 en este campo.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Confirmar 
+	 con diferencias</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante este botón se da por terminado 
+	 el proceso modificando el comprobante de ingreso original, de acuerdo 
+	 con las diferencias detectadas. Es decir, el comprobante de ingreso 
+	 original queda exactamente igual que el comprobante confeccionado 
+	 mediante esta tarea.</p>
+	<p class="H_Parrafo_de_Sub-Item">En la parte inferior de la pantalla 
+	 aparecerá una leyenda indicando que se están actualizando las diferencias.</p>
+	<p class="H_Parrafo_de_Sub-Item">Mientras se realiza la modificación 
+	 del comprobante de ingreso original. Se agregan al final del mismo 
+	 las líneas de ítems de tipo texto que aparecían en el comprobante 
+	 original.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Volver</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante este botón se retorna a la 
+	 Tabla de ítems. En la misma, aquellas líneas en las que se hayan detectado 
+	 diferencias se marcarán en rojo y, además, se marcará el check box 
+	 ubicado en la columna Diferencias.</p>
+	<p class="H_Parrafo_de_Sub-Item">En la parte inferior izquierda de 
+	 la pantalla aparece la leyenda Revisando líneas mientras se realiza 
+	 la revisión de las líneas en el comprobante original y una barra de 
+	 progreso nos indica el % de la tabla revisado hasta el momento.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las líneas pueden ordenarse por ítem, 
+	 número de línea o por diferencias, en este último caso se muestran 
+	 al principio de la tabla de ítems todas las líneas.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> Imprimir 
+	 diferencias</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta opción permite obtener un informe 
+	 en pantalla con las diferencias detectadas.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a5', 'POPUP599671282');
+	TextPopupInit('a6', 'POPUP599563562');
+	TextPopupInit('a7', 'POPUP599605353');
+	TextPopupInit('a8', 'POPUP599614645');
+	TextPopupInit('a9', 'POPUP599620650');
+	TextPopupInit('a10', 'POPUP599639432');
+	TextPopupInit('a1', 'POPUP714045190');
+	TextPopupInit('a2', 'POPUP713873928');
+	TextPopupInit('a3', 'POPUP713878469');
+	TextPopupInit('a4', 'POPUP714073194');
+//]]></script>
+
+
+</body></html>

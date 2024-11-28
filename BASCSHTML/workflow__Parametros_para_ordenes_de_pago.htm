@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.6.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Workflow parametros para ordenes de Pagos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Pagos"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Pagos</h1>
+  <p class="H_Texto">A través de esta tarea se establecen los usuarios que emiten las órdenes de pago según las condiciones que se establezcan.</p>
+  <p class="H_Texto">Es posible indicar usuarios para todos los pagos, indicar diferentes usuarios en base a los destinatarios de los pagos (proveedores y/o clientes). También es posible definir días de pago y los talonarios que se utilizarán por defecto según la sucursal y la caja de la cual saldrán los valores.</p>
+  <p class="H_Texto">Estos parámetros son utilizados para el circuito de agenda.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Empresa</p>
+  <p class="H_Parrafo_de_Item">Número de hasta dos dígitos que identifica a la empresa donde hay al menos un responsable de la remisión de pedidos.</p>
+  <p class="H_Parrafo_de_Item">Debe corresponder a una empresa ya definida en el sistema.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Para todos los pagos</p>
+  <p class="H_Parrafo_de_Item">Activando este campo todos los pagos aparecen en la agenda de la persona que se defina en el campo <font style="font-weight: bold;">Usuarios</font>
+  </p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Usuarios</p>
+  <p class="H_Parrafo_de_Item">Nombre del responsable de emitir los pagos.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Método</p>
+  <p class="H_Parrafo_de_Item">En este campo se indica el método de pago a utilizar. Las opciones posibles son:</p>
+  <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">No pagar anticipado</p>
+  <p class="H_Parrafo_de_Sub-Item">Si el vencimiento sucede en un día en el que no corresponde efectuar pagos, aparecerá en relación a la fecha inmediata siguiente.</p>
+  <p class="H_Sub_Item_con_vineta rl-p-H_Sub_Item_con_vineta">Asegurar pago en término.</p>
+  <p class="H_Parrafo_de_Sub-Item">Si el vencimiento sucede en un día en el que no corresponde efectuar pagos, aparece en relación a la fecha inmediata anterior.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Clientes</p>
+  <p class="H_Parrafo_de_Item">En este ficha es posible indicar diferentes usuarios encargados de los pagos, en función de los clientes destinatarios de los mismos.</p>
+  <p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> De clientes determinados</p>
+  <p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que sea necesario que distintos usuarios registren órdenes de pago, según los clientes de los que se trate.</p>
+  <p class="H_Parrafo_de_Sub-Item">Luego, se debe indicar el atributo y valores en base a los cuales se determinarán a que clientes se le emitirá pagos cada usuario</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Se informa el atributo en base a cuyos valores se indicarán los usuarios encargados de emitir los pagos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de atributos</p>
+  <p class="H_Parrafo_de_Sub-Item">En esta tabla se asignan, para los valores del atributo informado, los usuarios responsables de la emisión de pagos.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Valor del atributo, correspondiente a los clientes a los cuales el/los usuarios que se informen en la línea, emitirá/n los pagos.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Nombre del valor del atributo informado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Nombre del usuario/usuarios encargados de emitir las órdenes de pago, para el valor de atributo especificado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Método</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Método de pago a utilizar. Las opciones son: No pagar anticipado o Asegurar pago en término.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Proveedores</p>
+  <p class="H_Parrafo_de_Item">En este ficha es posible indicar diferentes usuarios encargados de los pagos, en función de los proveedores destinatarios de los mismos.</p>
+  <p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> De proveedores determinados</p>
+  <p class="H_Parrafo_de_Sub-Item">Este campo debe activarse en caso que sea necesario que distintos usuarios registren órdenes de pago, según los proveedores de los que se trate.</p>
+  <p class="H_Parrafo_de_Sub-Item">Luego, se debe indicar el atributo y valores en base a los cuales se determinarán a que proveedores se le emitirá pagos cada usuario.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+  <p class="H_Parrafo_de_Sub-Item">Se informa el atributo en base a cuyos valores se indicarán los usuarios encargados de emitir los pagos.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de atributos</p>
+  <p class="H_Parrafo_de_Sub-Item">En esta tabla se asignan, para los valores del atributo informado, los usuarios responsables de la emisión de pagos.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Valor del atributo, correspondiente a los proveedores a los cuales el/los usuarios que se informen en la línea, emitirá/n los pagos.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Nombre del valor del atributo informado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Nombre del usuario/usuarios encargados de emitir las órdenes de pago, para el valor de atributo especificado.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Método</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Método de pago a utilizar. Las opciones son: No pagar anticipado o Asegurar pago en término.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Días de pago</p>
+  <p class="H_Parrafo_de_Item">En esta solapa se indica la frecuencia de pagos: diaria o semanal. Con esta última opción se debe indicar al menos un día de la semana.</p>
+  <p class="H_Parrafo_de_Item">También se puede determinar cuantos días antes de la fecha de pago se debe emitir un aviso, y que el sistema no muestre vencimientos anteriores a una cierta cantidad de días.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Frecuencia</p>
+  <p class="H_Parrafo_de_Sub-Item">Es posible indicar que los pagos se realizan en forma diaria o en determinados días de la semana.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Diariamente</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica esta opción los pagos se emiten todos los días.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Semanalmente</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica que los pagos se realizan en determinados días, se deberán indicar tildando los campos de los días:</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Lun. <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Mar. <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Mié. <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Jue. <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Vie. <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Sáb. <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Dom.</p>
+  <p class="H_Sub-Item_con_imagen_negrita">Avisar <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> días antes de la fecha de pago.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Es posible determinar cuantos días antes de la fecha de pago se debe incluir el aviso en la agenda de tareas.</p>
+  <p class="H_Sub-Item_con_imagen_negrita">No mostrar vencimientos anteriores a <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> días.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Al completarse este campo se indica que no se muestren en la agenda los vencimientos anteriores a una cierta cantidad de días.</p>
+  <p class="H_Sub-Item_con_imagen_negrita">Considerar fecha del día hasta las <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> horas.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Este campo indica el final operativo del día. Esto último evita recibir retrasadamente avisos de pagos a realizar.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/>Ficha de Resolución:</p>
+  <p class="H_Parrafo_de_Item">Se indican en esta ficha los talonarios por defecto a utilizar en la generación de órdenes de pago, según la sucursal, la caja y el tipo de orden de pago a emitirse.(Ej: orden de pago contado).</p>
+  <p class="H_Parrafo_de_Item">Los datos que deben ingresarse son los siguientes:</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Sucursal:</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de la sucursal para la cual es posible registrar las órdenes de pago Por ejemplo:5 (sucursal cinco).</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre:</p>
+  <p class="H_Parrafo_de_Sub-Item">Denominación de la sucursal informada.</p>
+  <p class="H_Parrafo_de_Sub-Item">Por ejemplo: Sucursal 3, Sucursal 5.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Caja:</p>
+  <p class="H_Parrafo_de_Sub-Item">Número de hasta cuatro dígitos que identifica a la caja de la cual se emitirán los pagos.</p>
+  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, <font style="font-weight: bold;">1, 11, 25,</font> etc.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+  <p class="H_Parrafo_de_Sub-Item">Denominación de la caja.</p>
+  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, <font style="font-weight: bold;">Caja central</font>, <font style="font-weight: bold;">Caja Sucursal 3 ,</font> etc.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Talonario:</p>
+  <p class="H_Parrafo_de_Sub-Item">Código de los talonarios que se requiere que utilice el sistema para generar los comprobantes de pago de la sucursal indicada.</p>
+  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción:</p>
+  <p class="H_Parrafo_de_Sub-Item">Nombre del talonario informado.</p>
+
+</body></html>

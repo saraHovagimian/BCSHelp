@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Partes de producción","type":"item","tilePath":"","description":"","url":"BASCSHTML/partes_de_produccion.htm"},{"name":"Impresión","type":"item","tilePath":"","description":"","url":"BASCSHTML/partes_de_produccion__Impresion.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

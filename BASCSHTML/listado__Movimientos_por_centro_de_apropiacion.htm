@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.6.0_5"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Movimientos Centros de apropiacion</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Apropiación"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Movimientos por centros de apropiación</h1>
+  <p class="H_Texto">Este informe permite ver los movimientos de los <a href="tabla__Centros_de_apropiacion.htm">centros de apropiación</a> definidos en el sistema.</p>
+  <p class="H_Texto">Los movimientos de los centros pueden listarse detallados para cada <a href="tabla__Cuentas.htm">cuenta</a> del Plan de cuentas a los cuales se imputan o pueden verse los totales imputados a cada cuenta.</p>
+  <p class="H_Texto">Pueden incluirse en los movimientos de los centros de apropiación los asientos registrados en el diario general, o los asientos de los <a href="tabla__Subdiarios.htm">subdiarios</a> , es decir, la registración contable de todos los comprobantes que utilizan centros ingresados en el sistema.</p>
+  <p class="H_Texto">Recordemos que cada vez que se ingresa un comprobante, se genera en forma automática el asiento correspondiente al mismo, en el subdiario indicado por el talonario asociado al comprobante.</p>
+  <p class="H_Texto">Todos los asientos que cumplen con las opciones y rangos que se solicitan participan del informe. Se listan para cada <a href="tabla__Centros_de_apropiacion.htm">centro de apropiación</a> que interviene en el informe, las <a href="tabla__Cuentas.htm">imputaciones contables</a> con los movimientos imputados a cada una. Si se detallan los movimientos se imprimen para cada uno la fecha, tipo y número de comprobante y el importe, compuesto por los débitos menos los créditos. Se totalizan las imputaciones asociadas a cada centro y se imprimen totales por centros de apropiación.</p>
+  <p class="H_Texto">Si se trabaja con moneda de contabilización alternativa (Recordemos que esta opción se puede indicar en el punto de Parámetros de Datos Generales), se podrán listar los importes de los movimientos en moneda local o en moneda alternativa, permitiendo ver todas las registraciones contables en una u otra moneda con los valores correspondientes al momento en que se registró cada movimiento.</p>
+  <p class="H_Texto">Si no se trabaja con moneda de contabilización alternativa, los importes de los movimientos se mostrarán expresados en la moneda asociada a cada imputación contable . Es decir, que para un centro de apropiación pueden listarse movimientos en moneda local y movimientos en moneda extranjera. En estos casos, los totales se imprimen discriminados por moneda mostrando el símbolo de la moneda asociado a cada total.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673627317" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP673627317">
+    <p class="H_Parrafo_de_Item">Indicación del tipo de asientos que se incluyen en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Diario general</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se elige <font style="font-weight: bold;">Diario general</font> se considerarán en el listado todos los asientos registrados en el diario general y los asientos correspondientes a subdiarios que no resumen en el diario.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Subdiario</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se elige <font style="font-weight: bold;">Subdiario</font> se deberá seleccionar luego el número de <a href="tabla__Subdiarios.htm">subdiario</a> a listar y se incluirán todos los asientos registrados automáticamente por el sistema, al ingresar comprobantes en el subdiario indicado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Tipo de listado</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Detallado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se incluye el detalle de los movimientos de cada imputación contable asociada a los centros de apropiación que se listan. Al finalizar el detalle de comprobantes de cada cuenta se imprimen los totales correspondientes.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se imprime para cada imputación contable asociada a los centros de apropiación que se listan, el importe total de los movimientos considerados, en el rango de fechas indicado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Tabular</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Permite emitir el informe en forma tabular por centro de costos.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Al activarlo se habilita el campo Vista, y la ficha &quot;Columnas&quot; de modo de poder indicar qué centros de costos incluir en cada columna.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Fechas</p>
+    <p class="H_Parrafo_de_Sub-Item">La fecha que se seleccione (Comprobante o valorización) se  tendrá en cuenta tanto para filtrar los comprobantes a considerar, como para el ordenamiento de la información</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Comprobante</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Valorización</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/>Vista</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo está disponible solamente si se selecciona listado &quot;Tabular&quot;.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se desea que las imputaciones contables que incluirá el informe respondan a una estructura jerárquica, se debe informar el código de la vista correspondiente a la misma.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/>Imputación contable</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de las <a href="tabla__Cuentas.htm">cuentas</a> del Plan de cuentas, que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una cuenta en particular o un grupo de cuentas. Si este dato es dejado en blanco, se incluirán todas las cuentas en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las cuentas que se impriman son aquellas de subcuentas de tipo <font style="font-weight: bold;">Centros de apropiación</font> que se asociaron a los movimientos de los centros de apropiación que se incluyen en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP673943904" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP673943904">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Valores</p>
+    <p class="H_Parrafo_de_Sub-Item">Es posible emitir este informe por Saldos o por Netos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Netos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se emite el informe con esta opción, se incluye para cada imputación contable asociada a los centros de apropiación que se listan, el importe total de los movimientos considerados, sin tener en cuenta los saldos anteriores de cada cuenta.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Saldos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona emitir con Saldos, conjuntamente con la opción Detallado, se muestra, para cada centro de apropiación el saldo anterior de cada cuenta y al final de cada cuenta el total exhibirá la suma de los movimientos del período, más el saldo anterior, conformado por los movimientos de esa cuenta hasta la fecha indicada como Desde Fecha.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si el listado se emite con la opción Detallada, es posible incluir las observaciones de los comprobantes. En este caso se muestran las mismas junto con los datos del encabezado de cada comprobante. Para los asientos del Diario General, junto con las observaciones se incluyen también los detalles de las líneas.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se emite el listado con la opción Consolidada, se muestra el saldo anterior de cada centro de apropiación y luego se muestra el total correspondiente a cada imputación contable.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se emite con la opción Tabular, el saldo anterior se incluye en la columna en la que aparezca cada centro, junto con los movimientos del período.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Valores en moneda</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de la moneda en la cual se mostrarán los importes de los débitos y los créditos de los movimientos que se incluyan en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato estará visible y habilitado si se opera con la contabilidad en forma bimonetaria, es decir, si hay una moneda de contabilización alternativa indicada en el punto Parámetros de Datos Generales.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Subdiarios</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir asientos no resumidos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta opción sólo está habilitada si se seleccionó para imprimir el Diario general.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indica si se incluyen o no en el listado, los asientos de subdiarios que resumen en el diario pero que aún no tienen efectuado el correspondiente cierre operativo, o sea, que todavía no registraron en el diario los asientos resumen de los subdiarios correspondientes.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esto es sumamente útil pues permite obtener toda la información contable en forma completa y on-line a pesar de no haberse contabilizado aún los correspondientes asientos resúmenes.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Detallar asientos resumidos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta opción sólo está habilitada si se seleccionó para imprimir el Diario general.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indica si se incluye o no en el listado, el detalle de los asientos de subdiarios que han sido resumidos en el diario mediante el <a href="cierre_operativo.htm">cierre operativo</a>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Incluir</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Asientos de cierre del período</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En caso que se tilde, se incluirán todos los asientos de cierre cuyas fechas estén comprendidas en el rango de fechas solicitado en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Los asientos de cierre ingresados con fecha anterior al inicio del período que se lista, forman parte del saldo anterior de las cuentas, por lo tanto, se incluirán siempre en el caso de considerar saldos anteriores, independientemente de lo que se haya indicado en este campo.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Asientos de ajuste por valor corriente</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indica si se incluyen o no en el listado los asientos de ajuste por valor corriente.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Asientos de ajuste por inflación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indica si se incluyen o no en este listado los asientos de ajuste por inflación.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Observaciones</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo se activa sólo si se ha seleccionado la opción tipo de listado Detallado. Indica si se incluyen o no las observaciones de los comprobantes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación A</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de los <a href="tabla__Centros_de_apropiacion.htm">centros de apropiación</a> de tipo <font style="font-weight: bold;">A</font> que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un centro en particular o un grupo de centros. Si este dato es dejado en blanco, se incluirán en el informe todos los centros de apropiación del tipo <font style="font-weight: bold;">A</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación B</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de los <a href="tabla__Centros_de_apropiacion.htm">centros de apropiación</a> de tipo <font style="font-weight: bold;">B</font> que se desean incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un centro en particular o un grupo de centros. Si este dato es dejado en blanco, se incluirán en el informe todos los centros de apropiación del tipo <font style="font-weight: bold;">B</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Detalle de centros de apropiación</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante esta opción es posible indicar si se desean listar los comprobantes que afectan a los centros de apropiación de tipo <font style="font-weight: bold;">A</font> solamente, al tipo <font style="font-weight: bold;">B</font> solamente o a ambos a la vez. A tal efecto las opciones son las siguientes:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Centro de Apropiación A</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Centro de Apropiación B</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Combinación de centros</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP640643191" href="#"><span data-open-text="true" data-skip-index="true">Ficha Columnas</span><span data-close-text="true">Ficha Columnas</span></a></p>
+  <div data-targetname="POPUP640643191">
+    <p class="H_Parrafo_de_Item">Esta ficha sólo se activa si se emite un informe tabular.</p>
+    <p class="H_Parrafo_de_Item">Este formato de listado muestra para cada cuenta, el importe correspondiente a los movimientos de la misma para grupos de centros de apropiación.</p>
+    <p class="H_Parrafo_de_Item">Los centros de apropiación que pueden incluirse en cada columna del listado deben indicarse en esta solapa. Es posible indicar hasta 4 columnas y, para cada una, se debe informar el título y el rango de centros de apropiación a agrupar en la misma.</p>
+    <p class="H_Parrafo_de_Item">Es importante tener en cuenta que en la opción <font style="font-weight: bold;">Tabular</font>, se listan todas las cuentas de los rangos que se soliciten y no solamente las que poseen subcuentas de tipo centro de apropiación, como ocurre al emitir el listado en forma detallada o consolidada. Es decir que si en el rango se han incluido cuentas sin subcuentas, o con otro tipo de subcuenta que no sea centro de apropiación, también se incluirán en el informe.</p>
+    <p class="H_Parrafo_de_Item">El listado muestra el importe neto correspondiente a cada columna y una columna <font style="font-weight: bold;">Neto</font> con el importe neto de la cuenta.</p>
+    <p class="H_Parrafo_de_Item">La columna <font style="font-weight: bold;">Neto</font> no siempre va a coincidir con la suma de las demás columnas del listado, ya que en esta columna se suman también los movimientos de cuentas cuyas subcuentas no son centros de apropiación. También aunque la cuenta tenga como subcuentas centros de apropiación, si en las columnas no se han incluido todos los centros, en la columna total se suman los movimientos de todos los centros y no sólo los incluidos en las columnas, por lo cual, en este caso, tampoco el importe que se muestra en la columna <font style="font-weight: bold;">Neto</font> coincidirá con la suma de la fila.</p>
+    <p class="H_Parrafo_de_Item">Los casos en que la columna <font style="font-weight: bold;">Neto</font> no coincida con la suma de las demás columnas. se indicarán con una marca.</p>
+    <p class="H_Parrafo_de_Item">Con la letra <font style="font-weight: bold;">O</font>, se indicará el caso en que el importe total, que se muestra en la columna Neto, no coincide porque la cuenta tiene movimientos en otros centros del tipo de centro indicado en el detalle pero no incluidos en los rangos de la solapa Columnas.</p>
+    <p class="H_Parrafo_de_Item">Con la letra <font style="font-weight: bold;">T</font> se indicará el caso en que el importe total que se muestra en la columna Neto no coincide porque la cuenta tiene distinto tipo de subcuentas, ya sea por no ser de subcuentas &quot;Centros de apropiación&quot; o por haber pedido un tipo de centros y operar con el otro (en el caso de cuentas que se imputan mediante los dos centros de apropiación, A y B).</p>
+    <p class="H_Parrafo_de_Item">La letra <font style="font-weight: bold;">D</font> se reserva para indicar la no coincidencia en las líneas de totales correspondientes a los diferentes niveles de la vista cuando el informe se solicita en relación a una vista.</p>
+    <p class="H_Parrafo_de_Item">Si se indica una Vista se incluyen las cuentas que figuran en ella y los totales en relación a cada uno de los niveles definidos.</p>
+    <p class="H_Parrafo_de_Item">Al seleccionar una vista, se deshabilita el campo <font style="font-weight: bold;">Combinación de centros</font> de la ficha &quot;Rangos&quot; ya que la emisión tabular sólo es aplicable para un tipo de centros de apropiación. Por lo cual, debe tenerse en cuenta que los centros que se informen en las columnas siguientes deberán corresponder al tipo de centros de apropiación que se selecciona para detallar.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Columna 1</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite informar los centros a incluir en la primera columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Título de la columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicar los centros de apropiación a incluir en la columna.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Columna 2</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite informar los centros a incluir en la primera columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Título de la columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicar los centros de apropiación a incluir en la columna.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Columna 3</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite informar los centros a incluir en la primera columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Título de la columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicar los centros de apropiación a incluir en la columna.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Columna 4</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite informar los centros a incluir en la primera columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Título de la columna.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Centro de apropiación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicar los centros de apropiación a incluir en la columna.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm" style="font-style: normal;">Empresas</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP674062198" href="#"><span data-open-text="true" data-skip-index="true">Ficha Cuentas</span><span data-close-text="true">Ficha Cuentas</span></a></p>
+  <div data-targetname="POPUP674062198">
+    <p class="H_Parrafo_de_Item">Esta ficha permite indicar diferentes
+      filtros a aplicar a las cuentas que se incluyen en el listado.</p>
+    <p class="H_Parrafo_de_Item">Las cuentas pueden filtrarse por código
+      de selección y por <a href="tabla__Atributos.htm">atributos</a> y
+      valores de atributos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Código
+      de selección</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al código que se indique
+      se considerará o no cada una de las <a href="tabla__Cuentas.htm">cuentas</a>
+      del Plan de cuentas del rango seleccionado, según el código de selección
+      que se haya asignado a cada una de ellas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las cuentas que se incluyen son aquellas
+      cuyo código de selección coincide con el ingresado. Se pueden ingresar
+      los caracteres <font style="font-weight: bold;">?</font> y <font style="font-weight: bold;">*</font>
+      que cumplen la función de comodines. El carácter <font style="font-weight: bold;">?</font>
+      se utiliza para un único carácter y el <font style="font-weight: bold;">*</font>
+      para varios.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún código
+      de selección, todas las cuentas del rango solicitado intervendrán
+      en el listado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los <a href="tabla__Atributos.htm">atributos</a> asociados a las cuentas
+      que se desean incluir en el listado y sus respectivos valores.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP673627317');
+    TextPopupInit('a2', 'POPUP673943904');
+    TextPopupInit('a4', 'POPUP640643191');
+    TextPopupInit('a3', 'POPUP674062198');
+    //]]>
+  </script>
+
+</body></html>

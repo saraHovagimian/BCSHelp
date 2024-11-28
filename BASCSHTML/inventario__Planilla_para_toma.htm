@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.4.0_6"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Inventario Planilla para toma</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Planilla"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Planilla de inventario</h1>
+<p class="H_Texto">Esta tarea permite obtener la impresión de una planilla 
+ que puede ser utilizada en la toma de inventario para registrar en ella 
+ en forma manual la cantidad de unidades de cada ítem.</p>
+<p class="H_Texto">La planilla se emite para un depósito determinado y 
+ puede emitirse, si se desea, por ubicación física.</p>
+<p class="H_Texto">Se imprime cada ítem con su código y descripción, y 
+ se deja en blanco para cada uno la columna correspondiente a la cantidad 
+ para que sea completada al tomar el inventario.</p>
+<p class="H_Texto">Los ítems que manejan colores y medidas se imprimirán 
+ en forma detallada, es decir, una línea para cada color y medida posible, 
+ permitiendo detallar las cantidades para cada uno.</p>
+<p class="H_Texto">Es posible, además, incluir en la impresión del informe 
+ una <font style="font-weight: bold;">carátula</font> en la que se detallan 
+ todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+<p class="H_Texto">Los datos a ingresar para emitir la planilla son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP738704324" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Rangos</span><span data-close-text="true">Rangos</span></a></p>
+<div data-targetname="POPUP738704324">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Depósito</p>
+	<p class="H_Parrafo_de_Sub-Item">Número de <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 a listar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un depósito definido 
+	 en el sistema y con un inventario iniciado.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Ubicación 
+	 física</p>
+	<p class="H_Parrafo_de_Sub-Item">La planilla podrá emitirse por ubicación 
+	 física.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
+	 Todas las ubicaciones</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona <font style="font-weight: bold;">Todas 
+	 las ubicaciones</font> se incluirán en el informe todos los <a href="tabla__Bienes.htm">bienes</a>, 
+	 tengan o no una ubicación física definida, agrupándolos en diferentes 
+	 planillas una para cada ubicación física definida.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
+	 Una ubicación</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona esta opción se 
+	 deberá indicar luego el código de ubicación física a listar. Se incluirán 
+	 en la planilla sólo los <a href="tabla__Bienes.htm">bienes</a> que 
+	 se encuentran en esa ubicación dentro del <a href="tabla__Depositos_Plantas.htm">depósito</a> 
+	 indicado.</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+	 Ubicación</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Ubicación a listar.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP738715810" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Opciones</span><span data-close-text="true">Opciones</span></a></p>
+<div data-targetname="POPUP738715810">
+	<p class="H_Parrafo_de_Item">Permite indicar una serie de datos para 
+	 la emisión del informe.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Colores</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el sistema maneja colores es posible 
+	 emitir el informe consolidándolos o en forma detallada.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Medidas</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el sistema maneja medidas es posible 
+	 emitir el informe consolidando, detallando o en forma tabular por 
+	 medida.</p>
+	<p class="H_Parrafo_de_Sub-Item">En el caso de emitir el informe en 
+	 forma tabular, se podrá indicar la tabla de títulos y si se desea 
+	 ordenar a los ítems en el informe por tabla.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP738789676" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Productos</span><span data-close-text="true">Ficha Productos</span></a></p>
+<div data-targetname="POPUP738789676">
+	<p class="H_Parrafo_de_Item">En esta ficha pueden indicarse diferentes 
+	 filtros a aplicar a los ítems que se incluyen en el listado.</p>
+	<p class="H_Parrafo_de_Item">Pueden filtrarse los ítems por código, 
+	 por código de selección o por atributos y valores de atributos.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Códigos de los ítems que se desean 
+	 incluir en el listado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Puede seleccionarse un ítem en 
+	 particular o un grupo de ítems. Si este dato es dejado en blanco, 
+	 se incluirán todos los ítems en el informe.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código de selección</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al código que se indique 
+	 se considerará o no cada uno de los ítems del rango seleccionado, 
+	 según el código de selección que se haya asignado a cada uno de ellos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Los ítems que se incluyen son 
+	 aquellos cuyo código de selección coincide con el ingresado. Se pueden 
+	 ingresar los caracteres <font style="font-weight: bold;">?</font> 
+	 y <font style="font-weight: bold;">*</font> que cumplen la función 
+	 de comodines. El carácter <font style="font-weight: bold;">?</font> 
+	 se utiliza para un único carácter y el <font style="font-weight: bold;">*</font> 
+	 para varios.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún código 
+	 de selección, todos los ítems del rango solicitado intervendrán en 
+	 el listado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Provisto por</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Permite indicar un conjunto de 
+	 proveedores. Cuando se indiquen, sólo se listarán aquellos bienes 
+	 que presenten al menos uno de los proveedores indicados en la solapa 
+	 correspondiente a clientes y proveedores de las altas, bajas y modificaciones 
+	 de bienes.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla 
+	 de Atributos</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los atributos 
+	 asociados a los ítems que se desean incluir en el listado con sus 
+	 valores.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código del atributo asociado a 
+	 los ítems que se desean incluir en el listado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún atributo, 
+	 todos los ítems del rango solicitado intervendrán en el listado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del atributo correspondiente 
+	 al código informado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valor del atributo informado asociado 
+	 a los ítems que se desean incluir en el listado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo <font style="font-weight: bold;">Código</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor, se incluirán 
+	 en el listado los ítems que tengan asociados el valor del atributo 
+	 indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún valor 
+	 de atributo, todos los ítems del rango solicitado que tengan el atributo 
+	 indicado, intervendrán en el listado.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del valor asociado 
+	 al atributo correspondiente al código informado.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+<p class="H_Texto">Para emitir la planilla primero se ingresan los datos 
+ en la tarea, de manera tal de filtrar la información de acuerdo a las 
+ necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas 
+ superior que corresponda al tipo de emisión requerida. El uso de estos 
+ botones se detalla en el link <font style="font-weight: bold;">Emisión</font> 
+ disponible en un párrafo posterior.</p>
+<p class="H_Texto">Al momento de imprimir la planilla (tanto por pantalla 
+ como por papel) se puede utilizar el formato standard del sistema, o indicar 
+ un <font style="font-weight: bold;">formato personalizado de impresión</font>. 
+ Este último se indica en el campo homónimo que se encuentra en la zona 
+ inferior de la pantalla y su funcionalidad está detallada a continuación 
+ en el link <font style="font-weight: bold;">Emisión</font>.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Impresora.gif" alt="BASCSIMAG\Impresora.gif" width="24" height="23" border="0"/> 
+ <a href="emision.htm">Emisión</a></p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP738704324');
+	TextPopupInit('a2', 'POPUP738715810');
+	TextPopupInit('a3', 'POPUP738789676');
+//]]></script>
+
+
+</body></html>

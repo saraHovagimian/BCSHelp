@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.2.1.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>pedidos internos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Ingreso,Internos,Pedidos"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Ingreso de pedidos internos</h1>
+  <p class="H_Texto">Esta tarea permite registrar pedidos internos. No se permite registrar comprobantes que no tengan ninguna línea asociada.</p>
+  <p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante en estado de preparación</a>, de modo de seguir con el ingreso del mismo en una instancia posterior.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\boton_comprobante_referenciado.gif" border="0" height="29" src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" width="21"/> <a href="comprobantes_referenciados_Pedidos_internos.htm">Comprobantes referenciados Pedidos internos</a></p>
+  <p class="H_Texto">Los datos a ingresar, además de la fecha y el número de comprobante son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP698066602" href="#"><span data-open-text="true" data-skip-index="true">Pedido por</span><span data-close-text="true">Pedido por</span></a></p>
+  <div data-targetname="POPUP698066602">
+    <p class="H_Parrafo_de_Item">En función del destinatario de la mercadería pedida, se debe seleccionar:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Depósito</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite registrar un pedido de un depósito a otro depósito de la empresa.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Agente</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite registrar un pedido de un agente a un depósito.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez seleccionado el tipo de destinatario, se debe informar el código que lo identifica. Por lo cual, en función al dato informado en el campo <font style="font-weight: bold;">Destino</font>, se deberá ingresar un código de depósito o agente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al respecto, debe tenerse en cuenta que, si se seleccionó <font style="font-weight: bold;">Agente</font>, para que el código del mismo sea aceptado, éste debe corresponder a un <font style="font-weight: bold;">Agente</font> de tipo <font style="font-weight: bold;">Destino de materiales</font>.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP698041219" href="#"><span data-open-text="true" data-skip-index="true">A depósito</span><span data-close-text="true">A depósito</span></a></p>
+  <div data-targetname="POPUP698041219">
+    <p class="H_Parrafo_de_Item">Código del depósito al cual se asocia el pedido.</p>
+    <p class="H_Parrafo_de_Item">El pedido interno incrementará el stock en venta de la mercadería pedida en el depósito que aquí se indique.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP698032486" href="#"><span data-open-text="true" data-skip-index="true">Concepto</span><span data-close-text="true">Concepto</span></a></p>
+  <div data-targetname="POPUP698032486">
+    <p class="H_Parrafo_de_Item">Código del <a href="tabla__Conceptos.htm">concepto</a>
+      a asociar al comprobante.</p>
+    <p class="H_Parrafo_de_Item">Debe corresponder al código de un concepto
+      definido en el sistema y habilitado para <font style="font-weight: bold;">Agentes</font>
+      o Depósito según sea el destino indicado.</p>
+    <p class="H_Parrafo_de_Item">Si no se indica ningún concepto, al grabar
+      el comprobante se asociará al mismo el concepto para ventas indicado
+      en los Parámetros de Datos Generales.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP698010969" href="#"><span data-open-text="true" data-skip-index="true">Fecha de entrega</span><span data-close-text="true">Fecha de entrega</span></a></p>
+  <div data-targetname="POPUP698010969">
+    <p class="H_Parrafo_de_Item">Fecha en la cual se espera efectuar la
+      entrega de los <a href="tabla__Bienes.htm">ítems</a> incluidos en
+      el pedido. Esta fecha será ofrecida por el sistema en cada una de
+      las líneas que se ingresen. No obstante, es posible modificarla. Si
+      en alguna línea se modifica esta fecha, en las líneas siguientes se
+      ofrecerá esa nueva fecha de entrega.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP697993288" href="#"><span data-open-text="true" data-skip-index="true">Control de cantidades</span><span data-close-text="true">Control de cantidades</span></a></p>
+  <div data-targetname="POPUP697993288">
+    <p class="H_Parrafo_de_Item">Número que indica la cantidad total de
+      unidades de mercadería que se piden.</p>
+    <p class="H_Parrafo_de_Item">A veces pueden ocurrir errores de tipeo
+      en el ingreso del pedido. Este campo permite controlar si hay errores
+      en el ingreso de las cantidades en las líneas del pedido interno.</p>
+    <p class="H_Parrafo_de_Item">Si se ingresa información en este dato,
+      al finalizar el ingreso del pedido, se verificará que el total de
+      unidades ingresado en todas las líneas del pedido coincida con el
+      valor aquí consignado. Si no coincide aparecerá una leyenda en pantalla,
+      explicando el error, y no se permitirá grabar el pedido hasta que
+      el error no sea corregido.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Necesidad de abastecimiento</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" style="cursor: nesw-resize;" width="24"/> <a href="necesidad_de_abastecimiento_por_item.htm">Por ítem</a></p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a href="necesidad_de_abastecimiento_por_comprobante.htm">Por comprobante</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP697940455" href="#"><span data-open-text="true" data-skip-index="true"> Ficha Items</span><span data-close-text="true"> Ficha Items</span></a></p>
+  <div data-targetname="POPUP697940455">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Items</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se ingresan, uno
+      a uno, los ítems que conforman el pedido interno que se está registrando.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada ítem se debe informar la
+      cantidad que se pide y, en función al tipo de ítem del que se trate,
+      se requerirá información adicional.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al respecto, y a título de ejemplo,
+      podemos mencionar que para algunos <a href="tabla__Bienes.htm">bienes</a>
+      se deben detallar las cantidades que se piden por color y por medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que
+      la forma en que el sistema solicita los datos a incluir en el comprobante
+      varía según cuál sea el tipo de bienes de los que se trate. En algunos
+      casos, como por ejemplo cuando se trabaja con doble unidad de medida
+      o con <a href="tabla__Tablas_de_medidas.htm">medidas</a> y <a href="tabla__Tablas_de_colores.htm">colores</a>,
+      se abre una ventana en el campo <font style="font-weight: bold;">Cantidad</font>
+      para requerir los datos necesarios.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Item</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el pedido.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a>
+      , <a href="tabla__Servicios.htm">servicio</a> o <a href="tabla__Items_varios.htm">ítem
+        vario</a> ingresado en el sistema y no debe ser de tipo <font style="font-weight: bold;">Importe</font>
+      ni <font style="font-weight: bold;">Porcentaje</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse el código del ítem
+      o su código alternativo.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el
+      dato anterior.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción
+      larga, se exhibirá esta. Si no, se exhibirá la otra descripción. Si
+      el ítem no tiene descripción asociada, se solicitará el ingreso de
+      un detalle del mismo en este momento.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Observaciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta columna exhibe una &quot;X&quot;
+      en caso que esté previsto informar una Observación en relación al
+      bien. Al presionar Enter en la columna se accede a una ventana destinada
+      a ingresar el texto correspondiente a la misma.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Disponible</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta columna se exhibe sólo si se
+      ha indicado en la ficha &quot;Stock interno&quot; de la tarea &quot;Control
+      de pedidos&quot; (Configuración/Parámetros), &quot;Ver stock disponible
+      en ingreso&quot;.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para los ítems con tabla de colores
+      y medidas asociada, en el caso de no indicar en el ingreso el color
+      y medida correspondiente, esta columna no muestra ningún valor. De
+      igual forma pasa con los ítems de tipo texto vario o servicio, o los
+      ítems que no administran stock.</p>
+    <p class="H_Parrafo_de_Sub-Item">El valor que se exhibe en esta columna
+      no puede modificarse y en caso de situarse sobre dicha columna, aparece
+      un tooltip que muestra la descripción de la unidad de medida en que
+      se expresa dicho stock disponible. esta unidad siempre coincide con
+      la unidad de venta.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que se piden
+      del ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Aquí se presentan varias posibilidades.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad
+      de medida, se solicitará este campo si las ventas se registran en
+      la primera unidad. Si las ventas se registran en segunda unidad, al
+      ingresar la cantidad en la segunda unidad se completará este dato
+      en forma automática y podrá ser modificado sólo si se indicó que la
+      relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con <a href="tabla__Tablas_de_colores.htm">colores</a>
+      y <a href="tabla__Tablas_de_medidas.htm">medidas</a> se abrirá una
+      ventana que solicitará el ingreso de las cantidades para cada color
+      y medida solicitada, y al finalizar el ingreso de datos en esa ventana,
+      se completará este dato con la cantidad total de unidades pedidas
+      para todos los colores y medidas del ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem es un contenedor, se abrirá
+      una ventana que solicita el código del ítem que contiene (se ofrecerá
+      el ítem indicado como default en la tabla de contenedores del bien)
+      y la cantidad del mismo, y luego se completará este dato con la cantidad
+      resultante de multiplicar la cantidad indicada por la cantidad de
+      unidades de este indicada en la definición del ítem contenedor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con dimensiones,
+      se abrirá una ventana que solicitará el ingreso de cantidades para
+      cada dimensión posible definida para el ítem, y luego se completará
+      este dato con la cantidad resultante de multiplicar la cantidad indicada
+      por todas las dimensiones del ítem.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad en 2da unidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades que se piden
+      del ítem indicado en la segunda unidad de medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad
+      de medida, no se solicitará información en este campo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad
+      de medida, se solicitará este campo si las ventas se registran en
+      la segunda unidad. Si las ventas se registran en primera unidad, al
+      ingresar la cantidad en la primera unidad se completará este dato
+      en forma automática y podrá ser modificado sólo si se indicó que la
+      relación entre las unidades de medida es <font style="font-weight: bold;">Variable</font>.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Entrega</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha de entrega de la mercadería
+      asociada a la línea del pedido interno.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez ingresada una fecha de entrega
+      para un ítem, la misma fecha será ofrecida en las siguientes líneas
+      del comprobante, pudiendo ser modificada, de ser necesario indicar
+      una fecha distinta. Esta fecha será utilizada para el control de stock
+      y/o la asignación de mercadería.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Centro de apropiación A</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro
+        de apropiación</a> A asociado a la línea del pedido.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el pedido
+      interno que tiene una tabla de posiciones contables asociadas, el
+      sistema verificará si la <a href="tabla__Cuentas.htm">imputación contable</a>
+      de inventario de la posición contable o la imputación contable de
+      ventas o la asociada al concepto para ventas indicado en los Parámetros
+      de Datos Generales, tienen subcuentas de tipo centro de apropiación
+      A o ambos centros. En ese caso, se solicitará el ingreso del centro
+      de apropiación asociado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Centro de apropiación B</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro
+        de apropiación</a> B asociado a la línea del pedido.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el pedido
+      que tiene una tabla de posiciones contables asociadas, el sistema
+      verificará si la <a href="tabla__Cuentas.htm">imputación contable</a>
+      de inventario de la posición contable o la imputación contable de
+      ventas o la asociada al concepto para ventas indicado en los Parámetros
+      de Datos Generales, tienen subcuentas de tipo centro de apropiación
+      B o ambos centros. En ese caso, se solicitará el ingreso del centro
+      de apropiación asociado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Negocio</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se ingresan centros de apropiación
+      y alguno de los centros indicados administra negocios se debe ingresar
+      el código del negocio asociado a la línea del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe indicarse el código de un negocio
+      ya definido en el sistema y correspondiente a la empresa en la cual
+      se ingresa el comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP698088579" href="#"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+  <div data-targetname="POPUP698088579">
+    <p class="H_Parrafo_de_Item">Permite ingresar un texto aclaratorio.
+      Este aparece en todos los informes en los que se incluye al comprobante.</p>
+    <p class="H_Parrafo_de_Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita" style="font-style: normal;"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="administracion_de_Documentos.htm">
+      <font style="font-style: normal;">Ficha Adjuntos</font>
+    </a></p>
+  <p class="H_Parrafo_de_Item">Permite adjuntar archivos externos. Una vez grabado el comprobante la administración de los archivos adjuntados se realiza desde el Proceso de <a href="adjuntos.htm">Adjuntos</a>.</p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP698066602');
+    TextPopupInit('a2', 'POPUP698041219');
+    TextPopupInit('a3', 'POPUP698032486');
+    TextPopupInit('a4', 'POPUP698010969');
+    TextPopupInit('a5', 'POPUP697993288');
+    TextPopupInit('a6', 'POPUP697940455');
+    TextPopupInit('a7', 'POPUP698088579');
+    //]]>
+  </script>
+
+</body></html>

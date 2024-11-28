@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.1.6.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Cierre de carga / Generacion de guia</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Carga,Cierre,Generación,Guía"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Cierre de carga / Generación de guía</h1>
+<p class="H_Texto">Mediante esta tarea se cierra la carga en forma definitiva 
+ y no se permite efectuar más modificaciones a la misma.</p>
+<p class="H_Texto">Al cerrar una carga se debe asignar la misma a una guía 
+ que puede generarse en este momento.</p>
+<p class="H_Texto">Una guía es una entidad que agrupa a los comprobantes 
+ de ventas que conforman una determinada carga. La guía se identifica mediante 
+ un número de comprobante, por lo tanto, debe tener asociado un <a href="tabla__Talonarios.htm">talonario</a>.</p>
+<p class="H_Texto">En los casos en que la mercadería se distribuye, la 
+ guía es la herramienta fundamental para preparar el reparto. Al generar 
+ la guía puede indicarse quién será el <a href="tabla__Agentes.htm">transportista</a> 
+ que efectuará el reparto y el <a href="tabla__Camiones.htm">camión</a> 
+ que se utilizará.</p>
+<p class="H_Texto">Si al generar el comprobante de guía el mismo incluye 
+ egresos de mercadería cuyo talonario requiere fiscalización electrónica 
+ según el servicio Fiscalización Paraguay, los mismos procederán a ser 
+ fiscalizados. Por tanto la impresión de dichos comprobantes con todos 
+ los datos que precisan legalmente, solo podrá realizarse al finalizar 
+ la generación de la guía. </p>
+<p class="H_Texto">En caso que la guía incluya egresos de mercadería que 
+ se fiscalicen según la fiscalización de Paraguay, el sistema controlará 
+ en el ingreso de la misma, que se haya indicado una modalidad de transporte, 
+ una fecha estimada de fin de traslado, el transportista, el camión, que 
+ el transportista tenga indicado un tipo y número de documento, que el 
+ camión tenga indicado el tipo, patente y marca, que se haya indicado un 
+ conductor, y que el mismo tenga indicado un tipo y número de documento.</p>
+<p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante 
+ en estado de preparación</a>, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.</p>
+<p class="H_Texto">Los datos a ingresar para el cierre de carga son:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP734925107" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Lote</span><span data-close-text="true">Lote</span></a></p>
+<div data-targetname="POPUP734925107">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Tipo</p>
+	<p class="H_Parrafo_de_Sub-Item">Código de lote correspondiente a las 
+	 facturas automáticas cuya carga se desea cerrar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se desea cerrar cargas de facturas 
+	 que no provienen del cierre de un lote de facturación automática, 
+	 se debe dejar en blanco este campo.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fecha</p>
+	<p class="H_Parrafo_de_Sub-Item">Fecha del lote correspondiente a las 
+	 facturas automáticas cuya carga se desea cerrar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se desea cerrar cargas de facturas 
+	 que no provienen del cierre de un lote de facturación automática, 
+	 se debe indicar aquí la fecha de los comprobantes de venta que componen 
+	 dichas cargas.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP734933990" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Carga</span><span data-close-text="true">Carga</span></a></p>
+<div data-targetname="POPUP734933990">
+	<p class="H_Parrafo_de_Item">Número de carga que se desea cerrar.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder a una carga asignada 
+	 a comprobantes de venta del lote y fecha de lote indicados.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP734953671" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP734953671">
+	<p class="H_Parrafo_de_Item">Fecha que tendrá la guía que se genere 
+	 al cerrar la carga.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP734954051" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número</span><span data-close-text="true">Número</span></a></p>
+<div data-targetname="POPUP734954051">
+	<p class="H_Parrafo_de_Item">Prefijo y número de comprobante que tendrá 
+	 la guía que se genere al cerrar la carga.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP734952846" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Camión</span><span data-close-text="true">Camión</span></a></p>
+<div data-targetname="POPUP734952846">
+	<p class="H_Parrafo_de_Item">Código de camión que se asigna a la guía 
+	 para efectuar el reparto de la mercadería contenida en la carga que 
+	 se está cerrando.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP734959902" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Patente</span><span data-close-text="true">Patente</span></a></p>
+<div data-targetname="POPUP734959902">
+	<p class="H_Parrafo_de_Item">Exhibe la patente del camión indicado.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP735004035" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Modalidad de transporte</span><span data-close-text="true">Modalidad de transporte</span></a></p>
+<div data-targetname="POPUP735004035">
+	<p class="H_Parrafo_de_Item">Se puede seleccionar:</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta" style="counter-set: prl-p-h_sub_sub_item_con_vineta 0;">No aplica</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Terrestre</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Marítima/Fluvial</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Aéreo</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Multimodal</p>
+	<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Otro</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735025354" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número de vuelo</span><span data-close-text="true">Número de vuelo</span></a></p>
+<div data-targetname="POPUP735025354">
+	<p class="H_Parrafo_de_Item">Aplica para modalidad de transporte Aérea.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735013881" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo, Marca, Patente</span><span data-close-text="true">Tipo, Marca, Patente</span></a></p>
+<div data-targetname="POPUP735013881">
+	<p class="H_Parrafo_de_Item">Estos tres datos se registran para ls 
+	 modalidades de transporte Marítima/Fluvial y Aéreo.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735040775" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha estimada de fin de traslado</span><span data-close-text="true">Fecha estimada de fin de traslado</span></a></p>
+<div data-targetname="POPUP735040775">
+	<p class="H_Parrafo_de_Item">Fecha estimada en que finaliza el traslado 
+	 de la carga.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735058240" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Transportista</span><span data-close-text="true">Transportista</span></a></p>
+<div data-targetname="POPUP735058240">
+	<p class="H_Parrafo_de_Item">Código de <a href="tabla__Agentes.htm">transportista</a> 
+	 que efectuará el reparto de la mercadería asociada a la carga que 
+	 se está cerrando.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735083628" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Conductor</span><span data-close-text="true">Conductor</span></a></p>
+<div data-targetname="POPUP735083628">
+	<p class="H_Parrafo_de_Item">Código de conductor que efectuará el reparto 
+	 de la mercadería asociada a la carga que se está cerrando.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735104327" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Caja</span><span data-close-text="true">Caja</span></a></p>
+<div data-targetname="POPUP735104327">
+	<p class="H_Parrafo_de_Item">Este campo se completará automáticamente 
+	 si se informa un camión que tenga indicado en la tabla correspondiente 
+	 una caja. No puede modificarse por el operador.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735092608" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP735092608">
+	<p class="H_Parrafo_de_Item">Este campo se completará automáticamente 
+	 si se informa un camión que tenga indicado en la tabla correspondiente 
+	 un depósito. No puede modificarse por el operador.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP735101717" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+<div data-targetname="POPUP735101717">
+	<p class="H_Parrafo_de_Item">Texto aclaratorio de la guía que se genera.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP734925107');
+	TextPopupInit('a2', 'POPUP734933990');
+	TextPopupInit('a3', 'POPUP734953671');
+	TextPopupInit('a4', 'POPUP734954051');
+	TextPopupInit('a5', 'POPUP734952846');
+	TextPopupInit('a6', 'POPUP734959902');
+	TextPopupInit('a7', 'POPUP735004035');
+	TextPopupInit('a8', 'POPUP735025354');
+	TextPopupInit('a9', 'POPUP735013881');
+	TextPopupInit('a10', 'POPUP735040775');
+	TextPopupInit('a11', 'POPUP735058240');
+	TextPopupInit('a12', 'POPUP735083628');
+	TextPopupInit('a13', 'POPUP735104327');
+	TextPopupInit('a14', 'POPUP735092608');
+	TextPopupInit('a15', 'POPUP735101717');
+//]]></script>
+
+
+</body></html>

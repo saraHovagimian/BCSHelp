@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.2.0_7"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tabla Tarjetas</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Tarjetas</h1>
+  <p class="H_Texto">Esta tabla permite el mantenimiento de la información asociada a las tarjetas de crédito.</p>
+  <p class="H_Texto">Se prevén campos para el ingreso de todos los datos necesarios de modo de efectuar los controles que prevén las empresas emisoras de tarjetas de crédito tales como prefijos válidos, límites de compra máximos autorizados, habilitación para comprar en cuotas, etc.</p>
+  <p class="H_Texto">También se prevé otra serie de datos destinados a informar las particularidades de los diferentes planes de cada tarjeta en particular. Dicha información está orientada a automatizar las tareas de presentación y liquidación de cupones en las respectivas <a href="tabla__Cuentas_bancarias.htm">cuentas bancarias</a> y al cálculo de los impuestos (retenciones y/o percepciones) que correspondan.</p>
+  <p class="H_Texto">Si se trabaja con múltiples empresas se deberán definir las tarjetas de cada empresa con la que se trabaja. Las tarjetas que se ingresen se registrarán en la empresa en la cual está el usuario en ese momento.</p>
+  <p class="H_Texto">Para definir una tarjeta de crédito se debe ingresar:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Código de empresa en la cual se ingresa la tarjeta que se está definiendo.</p>
+    <p class="H_Parrafo_de_Item">Se exhibe el código de la empresa en la cual está trabajando el usuario.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Código</span><span data-close-text="true">Código</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Código que identifica a la tarjeta de crédito.</p>
+    <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight:bold">001</font>, <font style="font-weight:bold">VIS</font>, <font style="font-weight:bold">AM</font>, etc.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Descripción</span><span data-close-text="true">Descripción</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Nombre identificatorio de la empresa emisora de la tarjeta.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Tipo de Validación</span><span data-close-text="true">Tipo de Validación</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">El <font style="font-weight:bold">Tipo de validación</font> es un número que indica la metodología de validación de los números de tarjeta asociados a la empresa emisora de tarjetas, a saber:</p>
+    <p></p>
+    <table style="margin-left:57px" width="389" class=" cke_show_border">
+      <colgroup>
+        <col style="width:4.926%"/>
+        <col style="width:93.402%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">0</p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Indica que no se utilizará ningún proceso de validación disponible</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">1</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Corresponde a la rutina Módulo 10 utilizada para validar tarjetas American Express</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">2</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Corresponde a la rutina Módulo 11 utilizada para validar tarjetas de Diners</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">4</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Se utiliza para validar tarjetas de Argencard, Mastercard y Líder</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">6</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Se utiliza para validar tarjetas de Carta Franca</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">7</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Se utiliza para validar tarjetas de Carta Credencial</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">8</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Se utiliza para validar tarjetas de Cabal</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">
+              <font style="font-weight:bold">99</font>
+            </p>
+          </td>
+          <td style="padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px">
+            <p class="H_Texto">Se utiliza para validar tarjetas de Visa</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Máximo sin autorizar</span><span data-close-text="true">Máximo sin autorizar</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">El <font style="font-weight:bold">Máximo sin autorizar</font> indica el valor hasta el cual no es necesario obtener el código de aprobación por parte de la empresa emisora.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Liquidación de tarjetas</span><span data-close-text="true">Liquidación de tarjetas</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Usar datos impositivos del banco</p>
+    <p class="H_Parrafo_de_Sub-Item">Al activar esta opción, cuando se liquiden las tarjetas, el proveedor del que se tomarán los datos impositivos es el proveedor asociado al banco de la cuenta bancaria en la que se está liquidando.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Usar datos impositivos de la tarjeta</p>
+    <p class="H_Parrafo_de_Sub-Item">Al activar esta opción, cuando se liquiden las tarjetas, el proveedor del que se tomarán los datos impositivos es el proveedor asociado a la tarjeta.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Proveedor</span><span data-close-text="true">Proveedor</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Item">Código del proveedor de la tarjeta. Si se deja en blanco se tomas la información impositiva del proveedor del banco.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true">Planes</span><span data-close-text="true">Planes</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Parrafo_de_Item">Cada plan que se desee asociar a la tarjeta, se identifica por un código y una descripción y lleva asociada una serie de datos que hacen a la forma en que éste operará en el sistema.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de planes</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código</p>
+    <p class="H_Parrafo_de_Sub-Item">Código que identifica al plan que se define, por ejemplo, <font style="font-weight: bold;">007</font>, <font style="font-weight: bold;">V1P</font>, <font style="font-weight: bold;">VIP</font>, <font style="font-weight: bold;">VID</font>, <font style="font-weight: bold;">V2D</font>, etc.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto que identifica al plan. Por ejemplo, Visa 1 pago $, Visa en pesos, Visa 2 pagos dólares, Visa U$S, etc.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cuotas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indica la cantidad de cuotas mensuales con que se financian, a los clientes, las ventas correspondientes al plan.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Moneda</p>
+    <p class="H_Parrafo_de_Sub-Item">El dato <font style="font-weight: bold;">Moneda</font>, como su nombre lo indica, informa la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> en que se realizan las operaciones correspondientes a dicho plan. Solamente se podrán ingresar cupones de planes cuya moneda coincida con la moneda del medio de pago utilizado en dicha registración.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Código de Comercio</p>
+    <p class="H_Parrafo_de_Sub-Item">Se prevé el campo <font style="font-weight: bold;">Código de comercio</font> para ingresar el que corresponde a la empresa usuaria del sistema.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Plazo</p>
+    <p class="H_Parrafo_de_Sub-Item">Indica los días que transcurren entre que se presentan los cupones y se produce su acreditación en la cuenta bancaria.</p>
+    <p class="H_Parrafo_de_Sub-Item">En otras palabras, el importe de las presentaciones se acredita en una fecha que resulta de sumar a la fecha del comprobante los días de plazo informados.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descuento</p>
+    <p class="H_Parrafo_de_Sub-Item">Indica el porcentaje de descuento que se efectúa sobre el importe de los cupones que se presentan cuando se produce la acreditación de los cupones pertenecientes al plan.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cuenta de Presentación</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato indica la <a href="tabla__Cuentas_bancarias.htm">cuenta bancaria</a> en la que se acredita el importe de los cupones correspondientes al plan cuando éstos se presentan mediante comprobantes bancarios de presentación de tarjetas. Este dato es de ingreso obligatorio.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cuenta de Liquidación</p>
+    <p class="H_Parrafo_de_Sub-Item"><a href="tabla__Cuentas_bancarias.htm">Cuenta bancaria</a> a considerar en comprobantes bancarios de liquidación de tarjetas.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cuotas a Acreeditar</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de cuotas mensuales en que se ha de acreditar el importe de los cupones correspondientes al plan en la correspondiente cuenta bancaria.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Prefijos</span><span data-close-text="true">Prefijos</span></a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <p class="H_Parrafo_de_Item">En la ficha <font style="font-weight: bold;">Prefijos</font> se incluye información asociada a cada uno de los prefijos que puede aceptar la tarjeta que se define.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Prefijos admitidos</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Prefijos admitidos</p>
+    <p class="H_Parrafo_de_Sub-Item">Valores que se utilizan para verificar que los números de tarjeta ingresados corresponden a los habilitados por la empresa emisora de la tarjeta.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se ingresa ningún prefijo los números de tarjeta no se validan.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que ingresando, al menos, un prefijo se activa la rutina de validación, por lo cual, sólo se aceptarán números de tarjeta cuyos prefijos coincidan con los de la lista.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Banco</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del banco central emisor de las tarjetas del prefijo informado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe el nombre del banco informado.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
+
+</body></html>

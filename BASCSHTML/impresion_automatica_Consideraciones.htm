@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_45"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Impresion automatica Consideraciones</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Impresión automática- Consideraciones</h1>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si el talonario de fiscalización 
+ que se está utilizando tiene indicado impresión automática, ante la correcta 
+ fiscalización de un nuevo comprobante, el servicio procederá a la impresión 
+ de los comprobantes pendientes de imprimir de dicho talonario, siempre 
+ que los mismos estén fiscalizados y autorizados.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si hubiera más de un talonario 
+ con comprobantes pendientes de imprimir fiscalizados y de la misma empresa, 
+ se procederá a la impresión de dichos talonarios en paralelo.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Para poder ejecutar la 
+ impresión correctamente es preciso definir en la opción de</span><span lang="ES" xml:lang="ES" style="font-weight: bold;"> Configuración 
+ del servicio</span><span lang="ES" xml:lang="ES"> la ruta de acceso a 
+ la instalación de BASCS, que generalmente se ubica en el directorio de 
+ programas de Windows en la carpeta BASCS y dentro de dicha carpeta en 
+ la carpeta Programs.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Además, es necesario en 
+ la instalación del servicio indicar una cuenta para el inicio de sesión 
+ del servicio, indicando un usuario y contraseña que estén habilitados 
+ para el ingreso a BASCS.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si el servicio de fiscalización 
+ ya estuviera instalado en la máquina hay que proceder a su desinstalación 
+ para poder volver a instalarlo indicando el usuario y contraseña en caso 
+ de imprimir automáticamente. Si no se desea imprimir automáticamente estos 
+ datos pueden quedar en blanco cuando se soliciten. En ese caso la cuenta 
+ de inicio de sesión del servicio es LocalSystem.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si está definida una variable 
+ de entorno de sistema (con el nombre SERVCAEDBG) para indicar el nombre 
+ del archivo de logueo , el servicio genera un archivo de logueo con el 
+ nombre indicado en la variable de entorno, más la fecha del día con extensión 
+ .log de la conversión entre el servicio y la AFIP e información del talonario 
+ a imprimir, la empresa a la que pertenece el mismo, el rango de números 
+ de dicho talonario a imprimir, el programa de impresión a ejecutar y el 
+ nombre del archivo de intercambio con el mismo.</span></p>
+<p class="H_Texto"> </p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si se indica el nombre 
+ del archivo en la variable de entorno seguido de punto y coma seguido 
+ del número 2, el sistema guardará en la carpeta de instalación del servicio 
+ los archivos de error de la impresión del talonario con problemas, con 
+ extensión .log más el archivo con extensión .tmp de intercambio con el 
+ programa de impresión. Si no hay errores en la impresión no se guardará 
+ ningún archivo. Sólo se recomienda activar dicha opción ante problemas 
+ con la impresión automática.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Los errores en la impresión 
+ se pueden visualizar también en la solapa de seguimiento del programa 
+ Administrador de comprobantes electrónicos.</span></p>
+
+
+</body></html>

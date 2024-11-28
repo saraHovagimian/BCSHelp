@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.3.2.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Comprobantes de egreso de mercaderia Ingreso</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Ingreso"/><meta name="topic-comment" content=""/><meta name="rh-authors" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Egreso de mercadería</h1>
+<p class="H_Texto">Esta tarea permite registrar movimientos de egreso de 
+ materiales.</p>
+<p class="H_Texto">El egreso de <a href="tabla__Bienes.htm">bienes</a> 
+ puede tener su origen en las entregas por ventas o por consignación, en 
+ las salidas por préstamos, en las pérdidas por deterioro o por robo, en 
+ los traslados a otros depósitos de la empresa, etc.</p>
+<p class="H_Texto">Los comprobantes de egreso disminuyen las existencias 
+ de los bienes que incluyen. El depósito que se afecta es el que se informa 
+ en el encabezado del comprobante al momento que éste se registra.</p>
+<p class="H_Texto">Los comprobantes de egreso quedarán pendientes (o no) 
+ en función al concepto que se les asocie.</p>
+<p class="H_Texto">Existe la posibilidad de registrar comprobantes de <font style="font-weight: bold;">egresos diferidos</font>. Se trata de una 
+ especie de remito previo a una entrega. Su destino puede ser un cliente, 
+ un agente o un proveedor. A diferencia de los egresos comunes, los comprobantes 
+ de <font style="font-weight: bold;">egreso diferido</font> asignan mercadería 
+ y quedan pendientes (nace como un comprobante pendiente independientemente 
+ de lo que indique el concepto que se le asocie).</p>
+<p class="H_Texto">Si el talonario del comprobante tiene indicado que controla 
+ cantidades y que no permiten diferencias no se podrán ingresar bienes 
+ directamente en la grilla. Tampoco será posible modificar la cantidad 
+ o eliminar líneas de bienes que ya tengan las cantidades controladas.</p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">También se posible registrar 
+ una transferencia de un depósito a otro depósito en base a un remito de 
+ ingreso de un proveedor, que se haya registrado para el depósito origen 
+ de la transferencia.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Esta funcionalidad aplica 
+ cuando se recibe la mercadería de un proveedor y, así como viene, se envía 
+ a otro depósito de la empresa, posiblemente, al que corresponde a alguna 
+ sucursal de la misma.</span></p>
+<p class="H_Texto"><span lang="ES" xml:lang="ES">Si el egreso es por consumo, 
+ es posible indicar  los datos del ingreso de compra que se consume. 
+ Se requiere que el comprobante tenga como destino a un cliente o agente, 
+ que los bienes no administren stock o sean servicios de tipo cantidad 
+ y tengan método de valuación precio de compra, al momento del ingreso. 
+ Al final de cada línea, en la columna “Ingreso” , mediante una búsqueda, 
+ se podrán seleccionar ingresos de mercadería de proveedores para el ítem 
+ indicado. Estos bienes serán costeados considerando el costo del ingreso 
+ indicado, dado que su método de valuación es por precio de compra. </span><span lang="ES" xml:lang="ES" style="mso-no-proof: yes;">Al momento de ingresar 
+ el comprobante el sistema validará también que exista suficiente cantidad 
+ pendiente para consumir en el ingreso considerando las cantidades ingresadas 
+ en el egreso y egresos por consumo anteriores relacionados con el mismo 
+ ingreso.</span></p>
+<p class="H_Texto">Si se ingresan egresos de mercadería, con un talonario 
+ que fiscalice según la fiscalización de Paraguay, se controlan los siguientes 
+ datos: que el talonario tenga definido el timbrado correspondiente, que 
+ el destinatario tenga definido el país en su domicilio, que esté definido 
+ el domicilio, localidad y provincia del depósito de origen, que esté definido 
+ el domicilio de entrega y el mismo tenga indicado el domicilio, localidad 
+ y provincia, y que los bienes indicados tengan indicada su unidad de medida 
+ correspondiente. Se entiende como destinatario el cliente, proveedor, 
+ agente o sucursal del depósito o planta destino de la mercadería.</p>
+<p class="H_Texto"> </p>
+<p class="H_Texto">En cualquier momento es posible dejar el <a href="comprobantes_en_preparacion.htm">comprobante 
+ en estado de preparación</a>, de modo de seguir con el ingreso del mismo 
+ en una instancia posterior.</p>
+<p class="H_Item_con_imagen_negrita"><a href="remito_carnico.htm">Consideraciones 
+ para remito cárnico</a></p>
+<p class="H_Item_con_imagen_negrita"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a href="comprobantes_referenciados_egreso_de_mercaderia.htm">Comprobantes_referenciados_egreso_de_mercaderia</a></p>
+<p class="H_Texto">Para registrar un comprobante de egreso se debe completar, 
+ la siguiente información:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP766846943" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha</span><span data-close-text="true">Fecha</span></a></p>
+<div data-targetname="POPUP766846943">
+	<p class="H_Parrafo_de_Item">Fecha de ingreso del comprobante. El sistema 
+	 ofrece por defecto la fecha de ingreso del día calendario.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP766808782" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tipo de comprobante</span><span data-close-text="true">Tipo de comprobante</span></a></p>
+<div data-targetname="POPUP766808782">
+	<p class="H_Parrafo_de_Item">El comprobante que se registra puede ser 
+	 de alguno de los siguientes tipos:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Egreso de mercadería</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Egreso de mercadería diferido</p>
+	<p class="H_Parrafo_de_Item">El <font style="font-weight: bold;">Egreso 
+	 de mercadería</font> permite registrar los egresos de mercadería que 
+	 tienen lugar en un depósito cualquiera sea el motivo, venta, consignación, 
+	 préstamos, deterioros, robo, transferencias, etc.</p>
+	<p class="H_Parrafo_de_Item">El <font style="font-weight: bold;">Egreso 
+	 de mercadería diferido</font> permite registrar futuros egresos. Es 
+	 decir, asignan mercadería pero permanecen pendientes hasta tanto sean 
+	 invocados durante la registración de uno o más comprobantes de egreso 
+	 (del tipo de los descriptos en el punto precedente) o hasta que se 
+	 cancele mediante uno, o más, Comprobantes de cancelación de entrega 
+	 diferida. Asimismo un mismo remito de egreso puede confirmar las entregas 
+	 registradas en varios comprobantes de egreso diferidos, simultáneamente.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP766766611" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Número</span><span data-close-text="true">Número</span></a></p>
+<div data-targetname="POPUP766766611">
+	<p class="H_Parrafo_de_Item">Este campo sólo se encuentra habilitado 
+	 en caso que el prefijo que se indique para el comprobante de egreso 
+	 corresponda a un <a href="tabla__Talonarios.htm">talonario</a> con 
+	 método de numeración <font style="font-weight: bold;">No numera</font>. 
+	 Este tipo de talonarios pueden utilizarse para registrar comprobantes 
+	 resumen que agrupan varios comprobantes de egreso ingresados manualmente 
+	 que consumieron más de una hoja, para los cuales se guardará la cantidad 
+	 de hojas que ocupa.</p>
+	<p class="H_Parrafo_de_Item">Los controles de numeración de comprobantes 
+	 se hacen ahora para todo el rango de comprobantes que se consumen 
+	 en el comprobante que se ingresa.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP766762528" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito/Planta</span><span data-close-text="true">Depósito/Planta</span></a></p>
+<div data-targetname="POPUP766762528">
+	<p class="H_Parrafo_de_Item">Código del depósito o de la planta del 
+	 cual (o de la cual) egresa la mercadería.</p>
+	<p class="H_Parrafo_de_Item">En caso que el depósito correspondiente 
+	 al egreso permita stock negativo provisorio y tenga la opción “ No 
+	 avisar de stock insuficiente de la Tabla de Depósitos/Plantas destildada, 
+	 se da un aviso al usuario informándo sobre la insuficiencia de existencias 
+	 del ítem en cuestión. En caso contrario (opción de &quot;No avisar 
+	 de stock insuficiente&quot; tildada) no se emite ningún aviso. Esto 
+	 es válido para ítems con y sin colores y medidas, y que manejen una 
+	 y dos unidades de medida.</p>
+	<p class="H_Parrafo_de_Item">En caso que el egreso sea de una planta 
+	 se pueden efectuar el <a href="control_de_productos_terminados.htm">Control 
+	 de productos terminados</a>.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP764448834" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Destino</span><span data-close-text="true">Destino</span></a></p>
+<div data-targetname="POPUP764448834">
+	<p class="H_Parrafo_de_Item">En función del destinatario de la mercadería, 
+	 se debe seleccionar:</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_item_con_vineta_negrita 0;">Cliente</p>
+	<p class="H_Parrafo_de_Sub-Item">Los comprobantes de egreso a <a href="tabla__Clientes.htm">clientes</a> 
+	 se utilizan para registrar, fundamentalmente, los remitos por ventas. 
+	 Pueden utilizarse también para registrar otro tipo de entregas, tales 
+	 como atenciones o muestras.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Proveedor</p>
+	<p class="H_Parrafo_de_Sub-Item">Los comprobantes de egreso a <a href="tabla__Proveedores.htm">proveedores</a> 
+	 se utilizan, en general, para registrar devoluciones de mercadería.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Agente</p>
+	<p class="H_Parrafo_de_Sub-Item">Se debe seleccionar <a href="tabla__Agentes.htm">Agente</a> 
+	 cuando el destinatario de la mercadería no es contemplado por ninguna 
+	 de las opciones anteriores (Cliente, Proveedor, Depósito).</p>
+	<p class="H_Parrafo_de_Sub-Item">Podemos mencionar, como ejemplo de 
+	 comprobantes cuyos titulares son agentes, aquellos destinados a registrar 
+	 las bajas por robo o por deterioro, las atenciones a individuos que 
+	 no son ni clientes ni proveedores, las salidas para exposiciones, 
+	 etc.</p>
+	<p class="H_Parrafo_de_Sub-Item">Una vez seleccionado el tipo de destinatario, 
+	 se debe informar el código que lo identifica. Por lo cual, en función 
+	 al dato informado en el campo <font style="font-weight: bold;">Destino</font>, 
+	 se deberá ingresar un código de cliente, proveedor, depósito o agente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al respecto, debe tenerse en cuenta 
+	 que, si se seleccionó <font style="font-weight: bold;">Agente</font>, 
+	 para que el código del mismo sea aceptado, éste debe corresponder 
+	 a un <font style="font-weight: bold;">Agente</font> de tipo <font style="font-weight: bold;">Destino de materiales</font>.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Depósito</p>
+	<p class="H_Parrafo_de_Sub-Item">Permite registrar una salida (transferencia) 
+	 hacia otro depósito de la empresa.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema divide el registro de la 
+	 transferencia en dos etapas, la que corresponde al egreso de la mercadería 
+	 de un depósito y la que corresponde a su ingreso al otro. De este 
+	 modo, al reflejar en el sistema ambas instancias, se posibilita el 
+	 control de la mercadería en tránsito, es decir, de aquellos bienes 
+	 que salieron de un lugar de almacenamiento de la empresa con destino 
+	 a otro lugar físico y aún no han arribado a dicho destino.</p>
+	<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Planta </p>
+	<p class="H_Parrafo_de_Sub-Item">Permite registrar una salida (transferencia) 
+	 hacia una planta de la empresa.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cuando se trata de una transferencia 
+	 a una planta la transferencia siempre queda pendiente y no permite 
+	 indicar talonarios que requiere control.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para obtener detalles de las transferencias 
+	 a plantas consultar <a href="movimientos_depositos_planta.htm">Movimientos 
+	 entre depósitos y plantas</a>.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP766741692" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Concepto</span><span data-close-text="true">Concepto</span></a></p>
+<div data-targetname="POPUP766741692">
+	<p class="H_Parrafo_de_Item">Código del concepto a asociar al comprobante.</p>
+	<p class="H_Parrafo_de_Item">Como hemos mencionado al comienzo del 
+	 apartado, mediante el concepto asociado al comprobante se determina 
+	 si éste queda pendiente, o no. Los comprobantes pendientes pueden 
+	 ser utilizados como fuente para la confección de otros comprobantes.</p>
+	<p class="H_Parrafo_de_Item">Si el destino del egreso es una planta 
+	 el concepto a indicar para el comprobante debe estar habilitado para 
+	 plantas.</p>
+	<p class="H_Parrafo_de_Item">Mediante el concepto se determina, también, 
+	 la <a href="tabla__Cuentas.htm">cuenta contable</a> a imputar al momento 
+	 de generar el asiento contable asociado al comprobante que lo utiliza.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP766715715" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Control de cantidades</span><span data-close-text="true">Control de cantidades</span></a></p>
+<div data-targetname="POPUP766715715">
+	<p class="H_Parrafo_de_Item">Número que indica la cantidad total de 
+	 unidades de mercadería que egresa.</p>
+	<p class="H_Parrafo_de_Item">A veces pueden ocurrir errores de tipeo 
+	 en el ingreso del egreso de materiales. Este campo permite controlar 
+	 si hay errores en el ingreso de las cantidades en las líneas del comprobante.</p>
+	<p class="H_Parrafo_de_Item">Si se ingresa información en este dato, 
+	 al finalizar el ingreso del comprobante, se verificará que el total 
+	 de unidades ingresado en todas las líneas coincida con el valor aquí 
+	 consignado. Si no coincide aparecerá una leyenda en pantalla, explicando 
+	 el error, y no se permitirá grabar el comprobante hasta que el error 
+	 no sea corregido.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP766712171" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidades ingresadas</span><span data-close-text="true">Cantidades ingresadas</span></a></p>
+<div data-targetname="POPUP766712171">
+	<p class="H_Parrafo_de_Item">Este número indica las cantidades tipeadas 
+	 en la columna cantidad a medida que se van ingresando líneas en el 
+	 comprobante. Dicho valor se actualiza también en caso de eliminar 
+	 líneas ya tipeadas.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP762854886" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Transferencia</span><span data-close-text="true">Transferencia</span></a></p>
+<div data-targetname="POPUP762854886">
+	<p class="H_Parrafo_de_Item">Este cuadro está destinado al caso en 
+	 que se trate de un movimiento de transferencia y que se desee registrar 
+	 el ingreso automáticamente desde esta pantalla.</p>
+	<p class="H_Parrafo_de_Item">La opción se habilita sólo si el destino 
+	 del movimiento de egreso es un depósito o una planta propia y el talonario 
+	 de remitos de egreso de mercadería que se está utilizando no requiere 
+	 control.</p>
+	<p class="H_Parrafo_de_Item">Si el usuario está operando con una sucursal 
+	 en particular, para poder generar el remito de egreso e ingreso en 
+	 un solo paso hay que indicar un depósito destino y un talonario de 
+	 remitos de ingreso que pertenezcan a la sucursal con la que opera 
+	 en este momento el usuario.</p>
+	<p class="H_Parrafo_de_Item">Si el usuario no está operando con una 
+	 sucursal en particular, para poder generar la transferencia de mercadería 
+	 en un solo paso, la sucursal del depósito destino indicado y la del 
+	 talonario de remitos de ingreso indicado tienen que ser la misma.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Nro. 
+	 interno ingreso</p>
+	<p class="H_Parrafo_de_Sub-Item">Se debe indicar el prefijo correspondiente 
+	 al talonario de remitos de ingreso de mercadería para registrar la 
+	 transferencias entre depósitos.</p>
+	<p class="H_Parrafo_de_Sub-Item">El talonario que se indique, a su 
+	 vez, no puede requerir control.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para el movimiento de ingreso se respeta 
+	 la parametrización indicada en la impresión del talonario del remito 
+	 de ingreso (impresión al grabar el comprobantes, aviso, etc.).</p>
+	<p class="H_Parrafo_de_Sub-Item">El campo &quot;Observación&quot; del 
+	 comprobante que se genera se copia del comprobante de egreso que se 
+	 está registrando.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Ítems</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP764364010" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla 
+ de Items</span><span data-close-text="true">Tabla 
+ de Items</span></a></p>
+<div data-targetname="POPUP764364010">
+	<p class="H_Parrafo_de_Sub-Item">Mediante esta tabla se informan los 
+	 <a href="tabla__Bienes.htm">bienes</a> a incluir en el comprobante 
+	 de egreso que se está confeccionando.</p>
+	<p class="H_Parrafo_de_Sub-Item">Dichos ítems pueden ingresarse en 
+	 forma directa invocándolos mediante su código identificatorio o, en 
+	 forma indirecta, referenciando otros comprobantes (pedidos, facturas 
+	 o movimientos de materiales) que se encuentren pendientes.</p>
+	<p class="H_Parrafo_de_Sub-Item">En caso de registrar remitos de egreso 
+	 con destino a clientes (cuando el concepto del remito es el que se 
+	 ha informado en los parámetros generales como &quot;Concepto de ventas&quot;), 
+	 es posible controlar que sólo se incluyan bienes que estén en la lista 
+	 de precios estándar, correspondiente a la condición de venta por defecto, 
+	 del cliente titular del comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Esto depende de que se haya activado, 
+	 o no, el parámetro de comprobantes &quot;Exigir que el ítem esté en 
+	 la lista de precios asociada al cliente en los remitos de egreso&quot;.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para cada ítem se debe informar la 
+	 cantidad que se entrega y, en función al tipo de ítem del que se trate, 
+	 se requerirá información adicional.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al respecto, y a título de ejemplo, 
+	 podemos mencionar que para algunos bienes se deben detallar las cantidades 
+	 que egresan por <a href="tabla__Tablas_de_colores.htm">color</a> y 
+	 por <a href="tabla__Tablas_de_medidas.htm">medida</a>. Para otros, 
+	 si la mercadería que egresa ingresó avalada por un <a href="despachos.htm">despacho</a> 
+	 de importación, éste deberá indicarse en el comprobante de egreso. 
+	 En ese caso, además, el sistema lleva un control estricto del stock 
+	 disponible por despacho.</p>
+	<p class="H_Parrafo_de_Sub-Item">En caso de bienes tales que cada unidad 
+	 disponible en stock tenga asociado un número de serie en particular, 
+	 cada unidad que egresa deberá identificarse, también, por su respectivo 
+	 número de serie.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los ítems que son conjuntos, 
+	 es decir, los que están compuestos por un conjunto de ítems que conforman 
+	 el mismo con distintas cantidades, al entregarlos, se actualizan las 
+	 existencias de los ítems componentes. Al ingresar ítems de este tipo, 
+	 si el conjunto tiene componentes que trabajan con <a href="despachos.htm">despachos</a>, 
+	 <a href="partidas.htm">partidas</a> o series, se abrirá luego de ingresar 
+	 la cantidad de unidades del conjunto, una ventana que mostrará todos 
+	 los componentes del conjunto y permitirá el ingreso de los correspondientes 
+	 números de despachos, partidas y/o series de cada componente a entregar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que 
+	 la forma en que el sistema solicita los datos a incluir en el comprobante 
+	 varía según cual sea el tipo de bienes de los que se trate. En algunos 
+	 casos, como por ejemplo cuando se trabaja con doble unidad de medida 
+	 o con <a href="tabla__Tablas_de_medidas.htm">medidas</a> y <a href="tabla__Tablas_de_colores.htm">colores</a> 
+	 , se abre una ventana en el campo <font style="font-weight: bold;">Cantidad</font> 
+	 para requerir los datos necesarios.</p>
+	<p class="H_Parrafo_de_Sub-Item">En otros casos, como por ejemplo, 
+	 cuando deben ingresarse códigos de despachos, partidas o centros de 
+	 costos, se incorporan columnas adicionales para permitir incluir dicha 
+	 información.</p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si se 
+	 indicó algo en los parámetros del equipo, para la lectora de barras, 
+	 se habilita la posibilidad de, parados en el campo de la grilla de 
+	 ingreso de ítems en la columna para indicar el código del ítem, que 
+	 al oprimir Shift-F2, se abra la ventana que permite escanear un código 
+	 de barras con un scanner por puerto serie.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Una 
+	 vez escaneado el código de barras, el mismo será procesado considerando 
+	 los parámetros definidos en el programa de parámetros de ítems en 
+	 la solapa de Lectora.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Ya sea 
+	 que se obtenga de dicho escaneo el código del ítem o el código del 
+	 ítem y su cantidad, dichos datos serán ingresados en la grilla en 
+	 la primera fila disponible (en caso de haber filas vacías en cualquier 
+	 lugar de la grilla) o al final si no hay filas disponibles.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En el 
+	 caso que se produzca algún error en la validación de los datos ingresados, 
+	 se informará de dicha eventualidad y la ventana para escaneo del código 
+	 de barras se cerrará, pudiendo volver a activarse oprimiendo Shift-F2.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el 
+	 ítem escaneado no es un ítem de tipo cantidad la ventana de escaneo 
+	 también se cerrará dejando al usuario la posibilidad de ingresar el 
+	 resto de los datos relevantes del ítem.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el 
+	 ítem escaneado es un ítem de tipo cantidad que no posee dimensiones, 
+	 contenedores, ni es un código madre de colores y/o medidas, ni maneja 
+	 despachos, partidas o series, no precisa el ingreso de centros de 
+	 apropiación, ni tiene relación variable, la ventana de escaneo seguirá 
+	 activa para poder continuar escaneando códigos de barras. En caso 
+	 contrario la ventana de escaneo se cerrará, para habilitar el ingreso 
+	 de los datos relevantes de dicho ítem (colores, medidas, despachos, 
+	 series, etc.).</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el 
+	 escaneo no incluye el dato de la cantidad del ítem se asumirá cantidad 
+	 1 en la unidad de venta de dicho ítem.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En el 
+	 caso en que se cierre la ventana de escaneo, pero el ítem no tenga 
+	 dimensiones, contenedores o sea un código madre de colores y/o medidas, 
+	 se considerará si se indicó una cantidad en el escaneo, en caso contrario 
+	 se tomará cantidad 1 en la unidad de venta del ítem y se podrá continuar 
+	 con el ingreso de los otros datos relevantes del ítem.</span></p>
+	<p class="H_Parrafo_de_Sub-Item"><a href="lineas_de_comprobantes_de_egreso.htm">Datos 
+	 a ingresar en cada línea del comprobante</a>.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP766667971" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Entrega</span><span data-close-text="true">Ficha Entrega</span></a></p>
+<div data-targetname="POPUP766667971">
+	<p class="H_Parrafo_de_Sub-Item">Esta ficha está destinada exclusivamente 
+	 a exhibir información relacionada a los totales del comprobante. Los 
+	 totales son calculados automáticamente.</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta ficha puede ser consultada todas 
+	 las veces que sea necesario durante el ingreso del comprobante y la 
+	 información de la misma se actualizará en forma automática a medida 
+	 que se ingresan líneas en el comprobante.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Entrega 
+	 en</p>
+	<p class="H_Parrafo_de_Sub-Item">Por defecto exhibe el domicilio principal 
+	 y se permite seleccionar cualquiera de los disponibles en la ventana 
+	 de búsqueda.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se dispone de un tooltip sobre el 
+	 campo para poder acceder a la descripción reducida de los domicilios.</p>
+	<p class="H_Parrafo_de_Sub-Item">En el caso de egresos de mercadería 
+	 con destino agentes, depósitos o plantas este campo no se muestra 
+	 y el sistema registra para el movimiento el domicilio asociado al 
+	 agente, depósito o planta.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Obs entrega</p>
+	<p class="H_Parrafo_de_Sub-Item">Precarga las Observaciones registradas 
+	 en el domicilio.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Transportista</p>
+	<p class="H_Parrafo_de_Sub-Item">Precarga el transportista registrado 
+	 en el domicilio.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Camión</p>
+	<p class="H_Parrafo_de_Sub-Item">Si, corresponde, camión que transporta 
+	 la mercadería del remito.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Distancia</p>
+	<p class="H_Parrafo_de_Sub-Item" style="background-color: #ffffff;"><span lang="ES" xml:lang="ES" style="background: #ffffff;">Acá se debe indicar 
+	 la distancia del viaje en km, necesaria para la fiscalización del 
+	 remito cárnico.</span></p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Peso</p>
+	<p class="H_Parrafo_de_Sub-Item">Peso total de la mercadería entregada 
+	 expresado en la unidad indicada en los Parámetros de ítems como unidad 
+	 de peso.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se calcula el peso total sumando el 
+	 peso unitario de cada <a href="tabla__Bienes.htm">bien</a> (indicado 
+	 en la definición del ítem) remitido por la cantidad entregada de cada 
+	 uno.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las cantidades de cada bien se consideran 
+	 siempre según la primera unidad de medida, o sea según el valor de 
+	 la columna cantidad de la tabla de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los ítems con contenedores el 
+	 peso se calcula como la suma del peso por las unidades del ítem más 
+	 el peso por las unidades del contenedor.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Volumen</p>
+	<p class="H_Parrafo_de_Sub-Item">Volumen total de la mercadería entregada 
+	 expresado en la unidad indicada en los Parámetros de ítems como unidad 
+	 de volumen.</p>
+	<p class="H_Parrafo_de_Sub-Item">El sistema calcula el volumen total 
+	 sumando el volumen unitario de cada <a href="tabla__Bienes.htm">bien</a> 
+	 (indicado en la definición del ítem) remitido por la cantidad entregada 
+	 de cada uno.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las cantidades de cada bien se consideran 
+	 siempre según la primera unidad de medida, o sea según el valor de 
+	 la columna cantidad de la tabla de ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los ítems con contenedores el 
+	 volumen se calcula como el volumen del contenedor por las unidades 
+	 del mismo.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Cantidad total de unidades de mercadería 
+	 entregadas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las cantidades se consideran siempre 
+	 según la primera unidad de medida, o sea según el valor de la columna 
+	 cantidad de la tabla de ítems.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Campo_numerico_automatico.gif" alt="BASCSIMAG\Campo_numerico_automatico.gif" width="24" height="24" border="0"/> 2da. unidad</p>
+	<p class="H_Parrafo_de_Sub-Item">Exhibe el total de la columna correspondiente 
+	 a la segunda unidad de medida. Es decir, el total de unidades correspondiente 
+	 a la 2da. Unidad.</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Bultos</p>
+	<p class="H_Parrafo_de_Sub-Item">Número que indica la cantidad de bultos 
+	 que egresan. Suma de contenedores más cantidad correspondiente a ítems 
+	 sin contenedor.</p>
+	<p class="H_Parrafo_de_Sub-Item">SI el remito referencia una factura 
+	 heredará la cantidad de bultos indicados en dicha factura (siempre 
+	 que sea una sola) y se remitan todas las líneas de dicho comprobante 
+	 con sus cantidades originales. Es decir, cuando la cantidad a remitir 
+	 de cada bien de tipo cantidad es igual a la cantidad indicada para 
+	 dicho ítem en la factura.No se realizará este mecanismo si se elige 
+	 la factura con la búsqueda desde la columna Comprob. de la grilla 
+	 de ítems (tecla F3).</p>
+	<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Valor declarado</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se indica una lista para valor 
+	 declarado (Configuración Parámetros/ Items), el sistema calcula automáticamente 
+	 en dicho campo el valor del importe en moneda local de los ítems bienes 
+	 con entrega, multiplicando el precio del ítem en la lista indicada 
+	 por la cantidad en la unidad de venta.</p>
+	<p class="H_Parrafo_de_Sub-Item">El valor declarado  se calcula 
+	 en moneda local, en base a los bienes con entrega, multiplicando el 
+	 precio de dichos bienes en la lista mencionada por la cantidad expresada 
+	 en la unidad de venta. El valor calculado por el sistema puede ser 
+	 modificado por el usuario.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si el talonario del remito de egreso 
+	 tiene indicado que se consolidan ítems al imprimir, para los ítems 
+	 con colores y medidas se mostrará el precio máximo que exista en la 
+	 lista para dicho ítem.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP764392143" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Ubicaciones</span><span data-close-text="true">Ficha Ubicaciones</span></a></p>
+<div data-targetname="POPUP764392143">
+	<p class="H_Parrafo_de_Sub-Item">Esta solapa se habilita si el depósito 
+	 administra múltiples de modo de indicar las ubicaciones donde se encuentra 
+	 la mercadería que se va a egresar.</p>
+	<p class="H_Parrafo_de_Sub-Item">En la grilla de la izquierda se exhiben 
+	 los ítems y cantidades ingresados en la solapa de ítems y en la grilla 
+	 de la derecha se indicarán las ubicaciones de los ítems que se muestran 
+	 en la grilla de la izquierda.</p>
+	<p class="H_Parrafo_de_Sub-Item">Se dispone de botones para copiar 
+	 a la grilla de la derecha todos los ítems de la grilla de la izquierda, 
+	 solo los seleccionados, sacar ítems indicados en la grilla de la derecha 
+	 seleccionados o quitar todos los ítems indicados en la grilla de la 
+	 derecha, de igual forma que se hace en el programa de <a href="reubicar_en_el_deposito.htm">Ubicaciones</a>.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si al mover un ítem de la grilla de 
+	 la izquierda a la derecha existe una sola ubicación con cantidad suficiente 
+	 para egresar, la misma se copiará directamente a la grilla de la derecha. 
+	 En caso de existir más de una ubicación o de que no haya en la ubicación 
+	 única suficiente cantidad se mostrará una ventana con las ubicaciones 
+	 disponibles, las existencias en las mismas y la cantidad pendiente 
+	 de egresar.</p>
+	<p class="H_Parrafo_de_Sub-Item">No se puede indicar en una ubicación 
+	 una cantidad mayor a la existencia en dicha ubicación. Se puede indicar 
+	 una cantidad mayor a la cantidad a egresar siempre que haya existencia 
+	 suficiente en la ubicación para dicha cantidad. El sistema avisa si 
+	 se desea modificar la cantidad en la solapa de ítems por la nueva 
+	 cantidad indicada en la solapa de ubicaciones. Cabe destacar que dicha 
+	 modificación solo se realiza si el ítem no maneja despachos, partidas, 
+	 series, contenedores, dimensiones o referencia a otro comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al grabar el comprobante si no se 
+	 indica nada en la grilla de ubicaciones y el depósito tiene indicado 
+	 informar ubicaciones al egresar, el sistema emitirá un aviso informando 
+	 de tal eventualidad con la posibilidad continuar o cancelar la grabación 
+	 de dicho comprobante. Además se puede indicar que no aparezca el mensaje 
+	 en el futuro, lo que modifica la parametrización en la tabla de depósitos 
+	 del aviso de informar ubicaciones al egresar.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se indica información en la grilla 
+	 de ubicaciones el sistema generará un comprobante de desubicación 
+	 utilizando el talonario indicado en el ABM de depósitos para movimientos 
+	 internos, con los ítems indicados en la grilla. De no existir dicho 
+	 talonario el sistema informará de dicha eventualidad.</p>
+	<p class="H_Parrafo_de_Sub-Item">Cabe resaltar, que ante cualquier 
+	 error en la grabación de alguno de los comprobantes, ninguno de ellos 
+	 quedará registrado en el sistema.</p>
+	<p class="H_Parrafo_de_Sub-Item">Al registrar el comprobante de ubicación 
+	 el sistema verificará que no se haya indicado una ubicación para un 
+	 ítem que no existe en el comprobante de egreso, que no se haya desubicado 
+	 una cantidad mayor a la del egreso y que no falte desubicar alguna 
+	 cantidad de los ítems.</p>
+	<p class="H_Parrafo_de_Sub-Item">En el caso de no indicar una ubicación 
+	 para alguna cantidad del ítem, el sistema no emitirá error alguno 
+	 si existe suficiente cantidad para el ítem sin ubicación asignada 
+	 que satisfaga dicha cantidad no informada.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP764413138" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+<div data-targetname="POPUP764413138">
+	<p class="H_Parrafo_de_Item">Esta ficha permite asociar al comprobante 
+	 una serie de datos destinados, fundamentalmente, a ser incluidos en 
+	 el correspondiente formulario de impresión.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Observaciones</p>
+	<p class="H_Parrafo_de_Sub-Item">Texto de ingreso libre a incluir en 
+	 el comprobante.</p>
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Observación 
+	 para facturas</p>
+	<p class="H_Parrafo_de_Sub-Item">Texto de ingreso libre que se desea 
+	 incluir en las facturas.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si se seleccionaron pedidos para remitir, 
+	 las observaciones para facturas ingresadas en esos pedidos se concatenarán, 
+	 hasta un máximo de 254 caracteres, en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Item">Las observaciones del cliente para 
+	 remitos, que se ingresan en la solapa Observaciones de la consulta 
+	 de clientes, también se agregarán a lo anteriormente comentado hasta 
+	 completar 254 caracteres en total.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a href="administracion_de_Documentos.htm"><font style="font-style: normal;">Ficha 
+ Adjuntos</font></a> </p>
+<p class="H_Parrafo_de_Item">Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de <a href="adjuntos.htm">Adjuntos</a>.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP762447523" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP762447523">
+	<p class="H_Item_con_vineta rl-p-H_Item_con_vineta" style="counter-set: prl-p-h_item_con_vineta 0;">En 
+	 el caso de remisión de pedidos o de facturas, el sistema no permitirá 
+	 que se referencien pedidos con domicilios de entrega o recepción diferentes, 
+	 en caso de no tener indicado el domicilio se considerará que dicho 
+	 domicilio no se registró en la carga del comprobante y puede ser referenciado 
+	 junto con otro comprobante con domicilio indicado.</p>
+	<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">En 
+	 caso de egresar mercadería de un depósito que tiene activada la opción 
+	 de control exhaustivo del stock, el sistema no permitirá ingresar 
+	 el comprobante si esto produce stock negativo a la fecha de ingreso 
+	 del mismo o para comprobantes ingresados con posterioridad.</p>
+	<p> </p></div>
+<p class="H_Item_con_vineta"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a6', 'POPUP766846943');
+	TextPopupInit('a7', 'POPUP766808782');
+	TextPopupInit('a8', 'POPUP766766611');
+	TextPopupInit('a9', 'POPUP766762528');
+	TextPopupInit('a10', 'POPUP764448834');
+	TextPopupInit('a11', 'POPUP766741692');
+	TextPopupInit('a12', 'POPUP766715715');
+	TextPopupInit('a13', 'POPUP766712171');
+	TextPopupInit('a5', 'POPUP762854886');
+	TextPopupInit('a1', 'POPUP764364010');
+	TextPopupInit('a14', 'POPUP766667971');
+	TextPopupInit('a2', 'POPUP764392143');
+	TextPopupInit('a3', 'POPUP764413138');
+	TextPopupInit('a4', 'POPUP762447523');
+//]]></script>
+
+
+</body></html>

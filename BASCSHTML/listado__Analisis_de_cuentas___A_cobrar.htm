@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.1.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Analisis de cuentas a cobrar</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Análisis,Cuentas"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Análisis de cuentas a cobrar</h1>
+  <p class="H_Texto">Exhibe los comprobantes que integran la cuenta corriente de los clientes detallados por imputación contable, abiertos por vencimiento e incluyendo las aplicaciones.</p>
+  <p class="H_Texto">Los comprobantes que aún se encuentran pendientes de autorización se identifican anteponiendo a los mismos la letra A.</p>
+  <p class="H_Texto">Para los comprobantes, la idea es llevar un mayor de cada uno indicando sus aplicaciones y desaplicaciones, partiendo de un saldo inicial y haciendo la cuenta del saldo del comprobante que va quedando a medida que se detallan las aplicaciones.</p>
+  <p class="H_Texto">Las desaplicaciones se muestran en la columna correspondiente pero con el importe en negativo.</p>
+  <p class="H_Texto">Vale aclarar que las aplicaciones de destino de los Comprobantes Internos de Cuenta Corriente aparecen con los datos del comprobante al que refinancian y, entre paréntesis, se exhiben los datos del Comprobante Interno de Cuenta Corriente.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada en el enlace disponible en <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos a ingresar para solicitar la emisión del listado son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP741407473" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP741407473">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Cliente</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de los clientes que se desean
+      incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un cliente en
+      particular o un grupo de clientes. Si este dato es dejado en blanco,
+      se incluirán todos los clientes en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Código
+      de selección</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al código que se indique
+      se considerará o no cada uno de los clientes del rango seleccionado,
+      según el código de selección que se haya asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los clientes que se incluyen son aquellos
+      cuyo código de selección coincide con el ingresado. Se pueden ingresar
+      los caracteres ? y * que cumplen la función de comodines. El carácter
+      ? se utiliza para un único carácter y el * para varios.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún código
+      de selección, todos los clientes del rango solicitado intervendrán
+      en el listado.</p>
+    <p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> <a href="periodo_a_considerar.htm">Período
+        a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Imputación
+      contable</p>
+    <p class="H_Parrafo_de_Sub-Item">Códigos de las imputaciones contables
+      de clientes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse una cuenta en
+      particular o un grupo de cuentas. Si este dato es dejado en blanco,
+      se incluirán en el listado, todas las cuentas asociadas a los clientes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica alguna imputación sólo
+      se listará para cada cliente la información vinculada con las imputaciones
+      que se indicaron.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP741512137" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP741512137">
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Tipo
+      de Listado</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicar la forma en que se desea imprimir
+      el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Continuo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para imprimir un cliente a continuación
+      de otro.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Un cliente por hoja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para imprimir cada cliente en
+      una hoja aparte.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Incluir</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Comprobantes saldados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Permite incluir en el informe
+      los comprobantes ya cancelados correspondientes al rango de fechas
+      especificado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Cuentas sin movimientos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para incluir a los clientes que
+      no han tenido movimientos en el período de tiempo especificado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Pedidos e Ingresos/Egresos de mercadería</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Permite incluir los pedidos pendientes
+      de remitir y los ingresos y egresos de mercadería pendientes de facturarEn
+      caso que se incluyan pedidos, se detallará la fecha de expiración
+      de los mismos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Cheques, pagarés y fac. de crédito</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se incluye o
+      no en el informe un apartado con todos aquellos documentos ingresados
+      mediante cobranzas.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Al marcar esta opción se incluirán
+      también las facturas de crédito aplicadas en los pagos de los comprobantes.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para cada cheque o pagaré que
+      se liste, se mostrará el estado, en cartera, depositado, endosado,
+      rechazado, vencido, etc.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Comprobantes contado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Permite incluir en el informe
+      las facturas contado emitidas a los clientes del rango.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Cheques, pagares y facturas de crédito vencidos no confirmados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de si se incluyen en
+      el informe todos aquellos documentos entregados por el cliente (canjeados
+      o depositados) cuya fecha de operación se encuentre dentro del margen
+      de días de seguridad para confirmación especificado en el punto Parámetros
+      / Datos Generales.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Cheques rechazados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En caso de haber seleccionado
+      alguna opción para incluir cheques, se habilita este campo para indicar
+      si se desea incluir a los cheques rechazados.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Ordenamiento
+      cliente</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe indicar cómo ordenar los clientes
+      en el informe, seleccionando alguna de las siguientes opciones:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Código</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Razón social</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/>
+      Nombre de fantasía</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> No netear
+      aplicaciones y desaplicaciones del período</p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Se debe
+        activar este campo  si se desea visualizar</span> <span lang="ES" xml:lang="ES" style="mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; 
+	 mso-fareast-font-family: &#39;Times New Roman&#39;; mso-bidi-font-family: &#39;Times New Roman&#39;; 
+	 mso-ansi-language: ES-AR; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">en
+        e</span><span style="mso-bidi-font-size: 10.0pt; font-family: Arial, sans-serif; 
+					 mso-fareast-font-family: &#39;Times New Roman&#39;; mso-bidi-font-family: &#39;Times New Roman&#39;; 
+					 mso-ansi-language: ES-AR; mso-fareast-language: EN-US; 
+					 mso-bidi-language: AR-SA;">l informe toda la historia
+        de las aplicaciones/desaplicaciones de un comprobante.</span></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Consolidar
+      información en el administrador</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que se incluyan clientes administrados,
+      se debe indicar si la información de los mismos se desea exhibir en
+      forma separada o si se desea consolidar en la cuenta administradora.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Vista
+      por comprobante de</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la forma en que se desean
+      ver los comprobantes aplicados que aparecen en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Las opciones son:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Origen de deuda</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se detallan los comprobantes que
+      originan la deuda y, para cada uno, se muestran los comprobantes que
+      tiene aplicados.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/>
+      Cancelación de deuda</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se detallan los comprobantes que
+      cancelan la deuda y, para cada uno, se muestra a qué comprobantes
+      se aplica.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Comprobantes
+      detallados por vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Para ordenar a los comprobantes cronológicamente
+      según la fecha de carga de los mismos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Comprobantes
+      ordenados por vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Para ordenar a los comprobantes cronológicamente
+      según su fecha de vencimiento.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP741572988" href="#"><span data-open-text="true" data-skip-index="true">Ficha Clientes</span><span data-close-text="true">Ficha Clientes</span></a></p>
+  <div data-targetname="POPUP741572988">
+    <p class="H_Parrafo_de_Item">En esta ficha pueden indicarse diferentes
+      filtros a aplicar a los clientes que se incluyen en el listado.</p>
+    <p class="H_Parrafo_de_Item">Pueden filtrarse los clientes por atributos
+      y valores de atributos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla
+      de Atributos</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los atributos
+      asociados a los clientes que se desean incluir en el listado con sus
+      valores.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Código</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del atributo asociado a los
+      clientes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al atributo y al valor
+      de atributo que se indique se considerará o no cada uno de los clientes
+      del rango seleccionado, según los atributos y valores que se hayan
+      asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún atributo,
+      todos los clientes del rango solicitado intervendrán en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Ingresado el código, se exhibe la
+      Descripción correspondiente al código informado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Valor del atributo informado asociado
+      a los clientes que se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder a un valor ya definido
+      en el sistema para el atributo indicado en el campo Código.</p>
+    <p class="H_Parrafo_de_Sub-Item">De acuerdo al atributo y al valor
+      de atributo que se indique se considerará o no cada uno de los clientes
+      del rango seleccionado, según los atributos y valores que se hayan
+      asignado a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica un valor, se incluirán
+      en el listado los clientes que tengan asociados el valor del atributo
+      indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se especifica ningún valor de
+      atributo, todos los clientes del rango solicitado que tengan el atributo
+      indicado, intervendrán en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Ingresado el código, se exhibe la
+      Descripción del valor correspondiente al código informado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP741407473');
+    TextPopupInit('a2', 'POPUP741512137');
+    TextPopupInit('a3', 'POPUP741572988');
+    //]]>
+  </script>
+
+</body></html>

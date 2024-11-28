@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.5.4.0_2"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Tabla tablas de Percepcion de Ganancias</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+
+<meta name="rh-index-keywords" content="Percepción Ganancias"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Tabla de Percepción Ganancias</h1>
+<p class="H_Texto">Aquí se definen las diferentes tablas de percepción de Ganancias con las que se opera.</p>
+<p class="H_Texto">Las tablas de percepción se asocian a los <a href="tabla__Bienes.htm">bienes</a> y <a href="tabla__Servicios.htm">servicios</a> mediante las tablas de impuestos asociadas a los mismos. Cada tabla de impuestos que se defina lleva indicada una tabla de percepción de Ganancias, lo que permite administrar distintos porcentajes de percepción dependiendo del tipo de productos o servicios.</p>
+<p class="H_Texto">Esto permite que al ingresar facturas de compra, facturas de venta, débitos bancarios, o liquidaciones de tarjetas, el sistema calcule automáticamente, en los casos de ítems con tablas de percepción de Ganancias, el importe de percepción de Ganancias correspondiente. Para el cálculo interviene además la categoría de percepción de Ganancias asociada al <a href="tabla__Tratamientos_impositivos.htm">tratamiento impositivo</a> de la cuenta corriente (cliente o proveedor). Esta categoría determina si la cuenta corriente está sujeta a percepciones de Ganancias, y en ese caso, la categoría permite aplicar diferentes porcentajes de percepción.</p>
+<p class="H_Texto">Los datos que deben ingresarse son los siguientes:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Número de tabla</p>
+<p class="H_Parrafo_de_Item">Número de hasta dos dígitos que identifica a la tabla de percepción de Ganancias y será utilizado para individualizar a la misma en todo el sistema.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Descripción</p>
+<p class="H_Parrafo_de_Item">Denominación de la tabla. Se dispone de hasta veinticinco caracteres para el ingreso.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Imputaciones contables</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Compras</p>
+<p class="H_Parrafo_de_Sub-Item">Cuenta del Plan de Cuentas que llevará imputado el importe de percepción de Ganancias en los asientos de los comprobantes de compras en los que se utiliza la tabla de percepción que se está definiendo.</p>
+<p class="H_Parrafo_de_Sub-Item">Debe ingresarse una <a href="tabla__Cuentas.htm">imputación contable</a> definida en el plan de cuentas y sin subcuentas.</p>
+<p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúe la registración contable de una factura de compra, un débito bancario o una liquidación de tarjetas en los cuales se hayan efectuado percepciones de Ganancias para la tabla indicada, se debitará en esta cuenta el importe de la percepción efectuada.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Ventas</p>
+<p class="H_Parrafo_de_Sub-Item">Cuenta del Plan de Cuentas que llevará imputado el importe de percepción de Ganancias en los asientos de los comprobantes de ventas en los que se utiliza la tabla de percepción que se está definiendo.</p>
+<p class="H_Parrafo_de_Sub-Item">Debe ingresarse una <a href="tabla__Cuentas.htm">imputación contable</a> definida en el plan de cuentas y sin subcuentas.</p>
+<p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúe la registración contable de una factura de venta en la cual se hayan efectuado percepciones de Ganancias para la tabla indicada, se acreditará en esta cuenta el importe de la percepción efectuada.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Porcentajes</p>
+<p class="H_Parrafo_de_Item">Cada tratamiento impositivo asociado a cuentas corrientes tiene asociado una Categoría de percepción de Ganancias.</p>
+<p class="H_Parrafo_de_Item">Esto permite administrar diferentes categorías para los diferentes agentes de percepción.</p>
+<p class="H_Parrafo_de_Item">Las categorías se indican con un número de 1 a 5. Aquí se pueden ingresar los porcentajes de percepción asociados a cada categoría. El sistema trabaja con cinco categorías, si hay alguna que no se utiliza, puede dejarse con porcentaje 0.</p>
+<p class="H_Parrafo_de_Item">Cada porcentaje será aplicado en el cálculo de percepciones para los agentes de percepción de la categoría correspondiente.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Categoría 1</p>
+<p class="H_Parrafo_de_Sub-Item">Porcentaje de percepción de Ganancias asociado a la categoría 1.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Categoría 2</p>
+<p class="H_Parrafo_de_Sub-Item">Porcentaje de percepción de Ganancias asociado a la categoría 2.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Categoría 3</p>
+<p class="H_Parrafo_de_Sub-Item">Porcentaje de percepción de Ganancias asociado a la categoría 3.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Categoría 4</p>
+<p class="H_Parrafo_de_Sub-Item">Porcentaje de percepción de Ganancias asociado a la categoría 4.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Categoría 5</p>
+<p class="H_Parrafo_de_Sub-Item">Porcentaje de percepción de Ganancias asociado a la categoría 5.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Regímenes</p>
+<p class="H_Parrafo_de_Item">Código de régimen asociado a cada categoría de la tabla de percepción.</p>
+<p class="H_Parrafo_de_Item">Es posible indicar para cada categoría de percepción un régimen, pudiendo indicar a todas las categorías el mismo régimen o a cada una de ellas un régimen distinto.</p>
+<p class="H_Parrafo_de_Item">Es importante tener en cuenta que, si en la configuración de la <a href="tabla__Tablas_de_percepciones_de_I_V_A_.htm">empresa</a> se tildó el campo Exigir el código de régimen en tablas de percepciones/retenciones, los regímenes son obligatorios para las categorías que se estén utilizando.</p>
+
+
+</body></html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.5.0_13"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Comisiones por cobranzas</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Cobranzas,Comisiones"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Comisiones por cobranzas</h1>
+  <p class="H_Texto">Este informe está destinado al caso en que se paguen comisiones a cobradores por las cobranzas que efectúen. Las comisiones se calculan sobre el monto de los recibos, independientemente de que éstos estén aplicados o no.</p>
+  <p class="H_Texto">Los montos de las comisiones se calculan sobre el importe total de los recibos, no obstante, al momento de emitir el informe, se puede solicitar que se desagregue el I.V.A.. En ese caso, el cálculo se realizará sobre el importe neto gravado. La moneda en que se calculan las comisiones se corresponde con la moneda de la imputación contable del recibo.</p>
+  <p class="H_Texto">Los porcentajes de comisión pueden diferir según el tipo de cliente al que se le cobra y son privativos de cada cobrador en particular.</p>
+  <p class="H_Texto">Los cobradores se asocian a las cobranzas a través de los <a href="tabla__Clientes.htm">clientes</a> . Cada cliente que se define en el sistema puede tener un cobrador asociado que se asignará automáticamente a las cobranzas efectuadas a ese cliente. Puede ocurrir en algunos casos que el mismo <a href="tabla__Agentes.htm">vendedor</a> actúe como <a href="tabla__Agentes.htm">cobrador</a>, en cuyo caso puede indicarse esta situación al definir los agentes en el sistema.</p>
+  <p class="H_Texto">Los comprobantes que participarán del informe pueden seleccionarse por rangos de <a href="tabla__Agentes.htm">cobradores</a> y fechas de comprobantes. Además puede emitirse el listado con diferentes ordenamientos y en forma detallada o consolidada.</p>
+  <p class="H_Texto">También se prevé la posibilidad de incluir en el informe los datos particulares de cada agente cobrador, éstos son el Número de Legajo, C.U.I.L. (este dato debe informarse en el campo Número 2 de la ficha Datos Generales de la tabla de agentes), Zona, Sueldo, Viáticos, Fecha de ingreso, Fecha de egreso y Observaciones.</p>
+  <p class="H_Texto">Otros datos que se pueden detallar, si la emisión del listados se solicita en forma &quot;Detallada&quot;, son: el cambio correspondiente al comprobante y el factor asociado a la moneda del importe acumulado.</p>
+  <p class="H_Texto">El informe puede emitirse detallando los comprobantes correspondientes a cada cobrador o consolidando la información por porcentajes de comisión.</p>
+  <p class="H_Texto">Este listado presenta totales por cobrador que o discriminan comisiones.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP641665765" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP641665765">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título 1</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto de hasta 30 caracteres que corresponderá a la primer línea de título con el que se emita el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Título 2</p>
+    <p class="H_Parrafo_de_Sub-Item">Texto de hasta 30 caracteres que corresponderá a la segunda línea de título con el que se emita el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cobrador</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Agentes.htm">cobrador</a> que se desea incluir en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder al código de un agente de tipo <font style="font-weight: bold;">Cobrador</font> definido en el sistema.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un cobrador en particular o un grupo de cobradores. Si este dato es dejado en blanco, se incluirán en el informe las comisiones de todos los cobradores.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a href="periodo_a_considerar.htm">Período a considerar</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP641710474" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP641710474">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Desagregar I.V.A.</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea desagregar el importe de I.V.A., de manera que el cálculo de las comisiones se realice sobre el importe neto gravado.</p>
+    <p class="H_Parrafo_de_Sub-Item">A tal efecto, deben indicarse, las tasas a desagregar correspondientes a:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tasa de I.V.A.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Tasa de I.V.A. No inscripto</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Tipo de listado</p>
+    <p class="H_Parrafo_de_Sub-Item">Forma en que se incluirán los comprobantes de ventas de cada cobrador en el informe.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Consolidado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción <font style="font-weight: bold;">Consolidado</font>, se mostrarán por cada cobrador los acumulados de cobranzas, el porcentaje de comisión y el correspondiente importe discriminados por tipo de cliente.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Detallado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El informe de tipo Detallado incluye los datos que identifican al recibo, el importe del mismo, el porcentaje e importe correspondientes a la comisión y la moneda correspondiente. La información se ordena por código o nombre del cobrador, para cada uno de ellos la información se agrupa por moneda y, para cada moneda, se ordena por comisión, en forma descendente y, para una misma comisión, por fecha.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En caso de emitir la información en forma detallada, se habilita también la opción de ordenar por fecha de comprobante. Para una misma fecha, los comprobantes se agrupan por moneda y, para una misma moneda, por porcentaje de comisión.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir facturas contado</p>
+    <p class="H_Parrafo_de_Sub-Item">Al tildarse esta opción se incluyen los datos de las facturas contado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluir datos adicionales del cobrador</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea o no incluir en el listado los datos adicionales del cobrador. Estos son el Número de legajo, Sueldo, Viáticos, Zona, Fecha de ingreso, Fecha de egreso y las Observaciones.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Tipo de ordenamiento con el que se desea emitir el informe.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Código se ordenan los datos listados por código de cobrador.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Nombre</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Nombre se ordenan alfabéticamente los datos listados por nombre de cobrador.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Fecha</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Fecha, para cada cobrador, se ordenan los recibos por fecha. Esta opción se habilita únicamente si se seleccionó la emisión Detallada del listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Ranking</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Ranking se ordenan los datos listados por el acumulado de cobranzas de los cobradores. Se mostrará qué porcentaje del total de cobranzas listado, corresponde al acumulado de cada cobrador. De esta forma aparecerán primero en el listado los cobradores con mayor monto de cobranzas y se irán imprimiendo los siguientes, ordenados en forma descendente por ese importe. En caso de haber comprobantes en distintas monedas, reexpresa toda la información en moneda local. Para cada cobrador se exhibe el importe total que cobró, el importe total de comisiones que le corresponde, la incidencia de esa comisión sobre el importe total de comisiones y el acumulado de incidencias.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El ordenamiento tipo Ranking sólo se encuentra habilitado si se selecciona tipo de listado Consolidado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Porcentaje de corte</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Permite incluir en el informe todos aquellos cobradores cuyas cobranzas asociadas representen el porcentaje total de cobranzas indicado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este dato sólo está habilitado si el listado se imprime tipo Ranking.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se puede indicar aquí un porcentaje hasta el cual se desean imprimir los cobradores de acuerdo al porcentaje de incidencia de cada uno. Es decir, se imprimirán los cobradores acumulando el porcentaje de cada uno hasta llegar al primero para el cual el acumulado supera el porcentaje aquí indicado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Los cobradores en los cuales el acumulado de los porcentajes supera el porcentaje de corte no se incluyen en el informe.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita_XE"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Empresas.htm" style="font-style: normal;">Empresas</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP641665765');
+    TextPopupInit('a2', 'POPUP641710474');
+    //]]>
+  </script>
+
+</body></html>

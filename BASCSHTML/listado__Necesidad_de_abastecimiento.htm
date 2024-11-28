@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="5.3.0_12"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Listado Necesidad de abastecimiento</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Necesidad de abastecimiento</h1>
+  <p class="H_Texto">Este informe permite ver el detalle de las cantidades de unidades necesarias de abastecer de cada <a href="tabla__Bienes.htm">ítem</a> en un determinado <a href="tabla__Depositos_Plantas.htm">depósito</a> y el tiempo de reposición de dichas unidades.</p>
+  <p class="H_Texto">Se debe indicar un conjunto de depósitos para los cuáles se emite el listado (o no indicar ninguno) y los ítems a incluir pueden filtrarse por código de selección, por <a href="tabla__Atributos.htm">atributos</a> , por <a href="tabla__Rubros.htm">rubro</a> al que pertenecen y por método de reposición.</p>
+  <p class="H_Texto">El método de reposición se asocia a los <a href="tabla__Bienes.htm">bienes</a> en la definición de los mismos y puede variar en cada depósito en el que se almacena el bien. Los bienes de un determinado depósito pueden reponerse por tres métodos: Compra, fabricación o transferencia. Se puede solicitar listar los bienes que utilizan un determinado método de reposición o todos.</p>
+  <p class="H_Texto">De la misma forma, el tiempo de reposición también se asocia a cada depósito en el que se almacena un bien, y corresponde a la cantidad de días que tarda en llegar el producto al depósito.</p>
+  <p class="H_Texto">El listado muestra cada producto del rango solicitado con su método de reposición, su existencia, las cantidades requeridas pendientes de satisfacer (requerimientos de compras y producción pendientes), las cantidades pendientes de recibir, las cantidades pendientes de entregar, el punto y tiempo de reposición, el stock ideal y la cantidad de unidades a reponer.</p>
+  <p class="H_Texto">Si se incluyen en el informe productos que administran colores y/o medidas la información se exhibirá detallada por cada color y/o medida definida. En estos casos se considerará como punto de reposición, stock ideal y tiempo de reposición de cada color y/o medida aquellos que se hayan informado para el ítem genérico para el depósito indicado.</p>
+  <p class="H_Texto">Es importante destacar la posibilidad de seleccionar la unidad de medida en la cual se desea expresar las cantidades exhibidas. Se podrá optar por la unidad de medida para las compras o por la <font style="font-weight: bold;">Unidad para cantidad pendiente</font> indicada para <font style="font-weight: bold;">Compras y producción</font> de cada ítems en la tabla de bienes. Esto es útil  en el caso de productos que se compran en una unidad pero las cantidades pendientes se administran en otra.</p>
+  <p class="H_Texto">En este listado se incluyen los movimientos pertenecientes a los lotes de generación automática. Si alguna de las cantidades asociadas al ítem incluye movimientos correspondientes a un lote se indicará con un asterisco y se detallará en el pie de página que incluye valores del lote.</p>
+  <p class="H_Texto">Es posible, además, incluir en la impresión del informe una <font style="font-weight: bold;">carátula</font> en la que se detallan todas las opciones seleccionadas por el usuario al solicitarlo.</p>
+  <p class="H_Texto">Para emitir el listado primero se ingresan los datos en las distintas fichas contenidas en la tarea, de manera tal de filtrar la información de acuerdo a las necesidades. Luego se debe presionar el ícono (botón) de la barra de herramientas superior que corresponda al tipo de emisión requerida. El uso de estos botones se detalla en el link <font style="font-weight: bold;">Emisión</font> disponible en un párrafo posterior.</p>
+  <p class="H_Texto">Al momento de imprimir un informe (tanto por pantalla como por papel) se puede utilizar el formato standard del sistema, o indicar un <font style="font-weight: bold;">formato personalizado de impresión</font>. Este último se indica en el campo homónimo que, en general, se encuentra en la zona inferior de la primer solapa y su funcionalidad está detallada a continuación en el link <font style="font-weight: bold;">Emisión</font>.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Impresora.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Impresora.gif" width="24"/> <a href="emision.htm">Emisión</a></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\enlace.gif" border="0" height="24" src="../assets/images/BASCSIMAG/enlace.gif" width="18"/> <a href="fecha_de_certeza_contable.htm">FCC (Fecha de certeza contable)</a></p>
+  <p class="H_Texto">Los datos solicitados para la emisión del listado son los siguientes:</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP601650014" href="#"><span data-open-text="true" data-skip-index="true">Ficha Rangos</span><span data-close-text="true">Ficha Rangos</span></a></p>
+  <div data-targetname="POPUP601650014">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Rubro</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Rubros.htm">rubro</a> cuyos ítems se desean incluir en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un rubro en particular o un grupo de rubros. Si este dato es dejado en blanco, se incluirán los ítems de todos los rubros en el informe.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Hasta fecha</p>
+    <p class="H_Parrafo_de_Sub-Item">Fecha hasta la cual se desean calcular las unidades a reponer de los ítems incluidos en el listado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se indica ninguna fecha, se calculan las unidades a reponer hasta el final.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica una fecha no se tendrán en cuenta para el cálculo de las unidades a reponer, los requerimientos y las entregas de los ítems registradas en una fecha posterior a esta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de depósito o depósitos para el cual se desea emitir el informe.</p>
+    <p class="H_Parrafo_de_Sub-Item"> </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP601676745" href="#"><span data-open-text="true" data-skip-index="true">Ficha Opciones</span><span data-close-text="true">Ficha Opciones</span></a></p>
+  <div data-targetname="POPUP601676745">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Existencias en cero</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir o no en el listado los <a href="listado__Items.htm">
+        <font color="#008000" style="text-decoration: underline; ">ítems</font>
+      </a> con existencia en cero en el depósito indicado. Si no se tilda esta opción se considerarán todos aquellos productos que presenten, entre las cantidades que se exhiban, alguna cantidad que no sea 0 a pesar de que la existencia física sea 0.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Método de reposición</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación del método de reposición utilizado por los ítems que se desean incluir en el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Todos</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Compra</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Transferencia</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Fabricación</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Importación (Versión XE)</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se incluirán en el listado todos los ítems de los rangos solicitados que utilicen el método de reposición que aquí se indique, en el depósito solicitado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">Todos</font> se incluirán todos los ítems sin tener en cuenta el método de reposición que utilicen y se mostrará éste al listar cada ítem.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Unidad de medida</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de la unidad de medida en la cual se desea expresar las cantidades exhibidas en el informe.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Compra</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona <font style="font-weight: bold;">Compra</font>, las cantidades contenidas en el informe se expresarán en la unidad de medida indicada para las compras en cada uno de los <a href="tabla__Bienes.htm">ítems</a>.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Pendiente</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona Pendiente, las cantidades contenidas en el informe se expresarán en la Unidad para cantidades pendientes para las compras indicada en cada uno de los <a href="tabla__Bienes.htm">ítems</a>. <a href="tabla__Depositos_Plantas.htm">Depósitos</a></p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Depósitos</p>
+    <p class="H_Parrafo_de_Sub-Item">Este listado se puede emitir para un conjunto de depósitos en forma:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Consolidados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Depósitos Consolidados, la emisión considera el máximo, punto de reposición y tiempo de reposición, que figuran en la solapa Stock en las altas de la tabla Bienes.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Detallados</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona la opción Depósitos Detallados, y la emisión involucra más de un depósito, se considera el stock ideal, punto de reposición y tiempo de reposición que figuran para cada depósito en la solapa Depósitos en la tabla Bienes.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Ordenamiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación del ordenamiento con el que se desea emitir el listado.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Ítem</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Ítem se listará la información ordenada por código de <a href="tabla__Bienes.htm">ítem</a> .</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Rubro</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se selecciona ordenamiento Rubro se listará la información ordenada por <a href="tabla__Rubros.htm">código de rubro</a> al que pertenece cada bien. Se mostrará cada rubro del rango seleccionado con el detalle de los ítems de ese rubro y se incluirán totales por rubro. En este caso no se incluyen totales ni por rubro ni por subrubro.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">En ambos casos, se permite, además, efectuar un segundo ordenamiento</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Código</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Descripción</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" style="cursor: nesw-resize;" width="24"/> Considerar sólo comprobantes autorizados</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea emitir el informe considerando sólo los comprobantes autorizados.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de indicar esta opción, se consideran los comprobantes que requieren autorización y fueron autorizados, y los que no requieren autorización. Y no se  consideran comprobantes del lote.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a href="ficha_Productos.htm">Ficha Productos</a></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP601650014');
+    TextPopupInit('a2', 'POPUP601676745');
+    //]]>
+  </script>
+
+</body></html>

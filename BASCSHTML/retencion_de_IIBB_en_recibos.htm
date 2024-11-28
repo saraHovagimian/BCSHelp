@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="0_66"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Retencion de IIBB en recibos</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Retención de IIBB en recibos</h1>
+  <p class="H_Texto">Esta ficha sólo se encuentra habilitada si el titular del comprobante actúa como agente de retención de Ingresos Brutos.</p>
+  <p class="H_Texto">El sistema calcula automáticamente la retención de <font style="font-weight: bold;">Ingresos Brutos</font>. Esta se calcula en función a la categoría del titular y a las provincias de los comprobantes aplicados.</p>
+  <p class="H_Texto">La categoría de retención se asocia al titular a través del tratamiento impositivo.</p>
+  <p class="H_Texto">Las tablas a considerar en el cálculo dependen de los Bienes o Servicios incluidos en los comprobantes que se cancelan.</p>
+  <p class="H_Texto">Las retenciones se calculan en base a la parametrización existente. El cálculo que realiza el sistema puede modificarse, tanto en los importes sujetos, los porcentajes aplicados al importe sujeto o las provincias que se tienen en cuenta para el cálculo.</p>
+  <p class="H_Texto">Se calcularán automáticamente múltiples retenciones de ingresos brutos dependiendo de lo que la empresa tenga indicado.</p>
+  <p class="H_Texto">Si se hacen múltiples retenciones se tomarán todas las provincias en las cuales el cliente o proveedor es agente de retención de ingresos brutos. Si el cliente o proveedor no es agente de retención en ninguna provincia, se calculará la retención para las provincias de los comprobantes aplicados.</p>
+  <p class="H_Texto">
+    <font style="font-weight: bold;">Si la empresa está adherida al Convenio multilateral</font>, de cada provincia para la cual se calcule retención se tomará toda la base imponible o el porcentaje de coparticipación de la provincia, según lo que la tabla de retenciones provinciales de la provincia tenga indicado.
+  </p>
+  <p class="H_Texto">Para las provincias que apliquen el porcentaje de coparticipación se exhibe el porcentaje que se aplicó al importe sujeto para realizar el cálculo, y el mismo podrá ser modificado.</p>
+  <p class="H_Texto">
+    <font style="font-weight: bold;">Si la empresa no está adherida al Convenio multilateral</font>, no se tiene en cuenta el parámetro de la provincia que indica si se aplica el porcentaje de coparticipación y siempre se calcula sobre todo el importe sujeto de cada provincia.
+  </p>
+  <p class="Texto_de_Item" style="margin-top: 0; margin-bottom: 0;"></p>
+  <p class="H_Texto">Tenga la empresa convenio o no, si se calcula usando la provincia del comprobante (la empresa tiene indicado que no se hacen múltiples retenciones en Cobranzas), pero el cliente o proveedor no es agente de retención en esa provincia, no se calculará retención, salvo que el cliente o proveedor no sea agente de retención en ninguna provincia, en cuyo caso sí se calculará.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Cálculo de la Retención</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Provincia</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Código de la provincia correspondiente a la retención que se ha de efectuar.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Tabla</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Número de tabla que se utiliza en el cálculo de los importes retenidos.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Importe Sujeto</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Importe neto de impuestos correspondiente a las facturas que se cobran y sobre el que corresponde efectuar retenciones.</p>
+  <p class="H_Parrafo_de_Sub-Item">El valor que exhibe el sistema puede ser reemplazado por otro, simplemente digitándolo.</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_vineta">Importe Retención</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item">Importe de la retención que efectúa el titular del comprobante.</p>
+  <p class="H_Parrafo_de_Sub-Item">El valor calculado por el sistema puede ser reemplazado por otro, simplemente digitándolo.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Numero de comprobante</p>
+  <p class="H_Parrafo_de_Sub-Item">Número correspondiente al comprobante de retención expedido.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Fecha</p>
+  <p class="H_Parrafo_de_Sub-Item">Fecha correspondiente al comprobante de retención expedido.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Recalcula</p>
+  <p class="H_Parrafo_de_Sub-Item">En caso de haberse variado los valores correspondientes al Importe sujeto o al Importe Retención, presionando este botón, es posible volver a los valores originales calculados por el sistema en forma automática.</p>
+
+</body></html>

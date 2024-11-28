@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Exportacion a la colectora</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Exportación a la colectora</h1>
+<p class="H_Texto">Este proceso permite generar los archivos que contienen 
+ la información que necesita el software de la colectora que se lleva el 
+ preventista. Es decir, las tablas de bonificaciones, las rutas, los bienes, 
+ las condiciones de venta, las listas de precios y las observaciones.</p>
+<p class="H_Texto">Para la generación de archivos se debe indicar una Ruta, 
+ un Preventista (el código no podrá tener más de 3 caracteres) y un directorio 
+ o carpeta en donde se generarán los archivos.</p>
+<p class="H_Texto">Es posible indicar también, que en el archivo de clientes 
+ que se ha de generar, se incluyan a los clientes del Preventista. Se consideran 
+ como clientes del Preventista los que están incluidos en la ruta indicada 
+ en el campo correspondiente y los que lo tienen asociado como vendedor 
+ en la tabla de clientes. La ruta y el agente preventista deberán estar 
+ habilitados para la empresa del usuario, como así también los clientes 
+ e ítems que se indiquen.</p>
+<p class="H_Texto">También opcionalmente, se podrá seleccionar un rango 
+ de ítems, como así también un rango de clientes. Tanto para unos como 
+ para otros se pueden indicar atributos y valores.</p>
+<p class="H_Texto">Los errores que se detecten y determinen la exclusión 
+ de clientes, productos, etc. podrán observarse al finalizar el proceso 
+ de exportación a través del botón <font style="font-weight: bold;">Detalles</font> 
+ de la pantalla <font style="font-weight: bold;">Detalle de errores</font>. 
+ A través de dicha opción podrán observarse los primeros 50 errores, y 
+ cuando el número de errores sea mayor, aparecerá una sentencia indicando 
+ que hay más errores pero éstos no se exhibirán.</p>
+<p class="H_Texto">El proceso genera los siguientes archivos de texto:</p>
+<p class="H_Texto"> </p>
+<p class="epigrafe"><a data-target="POPUP735546844" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Bonif.odb</span><span data-close-text="true">Bonif.odb</span></a></p>
+<div data-targetname="POPUP735546844">
+	<p class="H_Parrafo_de_Item">Contiene la información correspondiente 
+	 a la tabla de bonificaciones informada en la ficha <font style="font-weight: bold;">Datos 
+	 Preventa</font> ubicada en los Parámetros de Datos Generales. Si no 
+	 se indicó ninguna tabla, el archivo se generará vacío.</p>
+	<p class="H_Parrafo_de_Item">La información contenida en los registros 
+	 se organiza de la misma forma en que se presentan los valores en la 
+	 tablas de bonificaciones cuando éstas exhiben sus valores por tipo 
+	 de producto.</p>
+	<p class="H_Parrafo_de_Item">Es importante tener en cuenta que si bien 
+	 no hay límite en la cantidad de valores de los atributos de clientes 
+	 que se pueden utilizar para definir una tabla de bonificaciones, para 
+	 la exportación a la colectora, solamente se tendrán en cuenta los 
+	 nueve primeros valores del atributo de clientes. En caso que los atributos 
+	 de clientes e ítems tengan más de 9 valores, se tomarán solamente 
+	 los 9 primeros, considerando los valores de los mismos ordenados alfabéticamente.</p>
+	<p class="H_Parrafo_de_Item">En caso que la cantidad de valores asociados 
+	 al atributo de clientes sea menor a 9, se completarán a 9, definiéndose 
+	 los que sean necesarios con porcentaje 0.</p>
+	<p class="H_Parrafo_de_Item">La cantidad de <font style="font-weight: bold;">Tipos 
+	 de productos</font> tampoco podrá ser mayor a 9.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735560791" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Clies.odb</span><span data-close-text="true">Clies.odb</span></a></p>
+<div data-targetname="POPUP735560791">
+	<p class="H_Parrafo_de_Item">Contiene información de los clientes seleccionados 
+	 durante la generación. Es decir, contendrá los clientes de la ruta 
+	 y, si corresponde, los asociados al preventista (habilitados para 
+	 operar en la empresa del usuario).</p>
+	<p class="H_Parrafo_de_Item">Debe tenerse en cuenta que, tanto para 
+	 los clientes que están incluidos en la ruta correspondiente al preventista 
+	 como para los que tienen asociado un agente preventista, la lista 
+	 de precios estándar correspondiente a la condición de venta por defecto, 
+	 debe ser alguna de las listas de precios que se indican en la ficha 
+	 <font style="font-weight: bold;">Datos Preventa</font> ubicada en 
+	 los Parámetros de Datos Generales.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735594187" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Rutas.odb</span><span data-close-text="true">Rutas.odb</span></a></p>
+<div data-targetname="POPUP735594187">
+	<p class="H_Parrafo_de_Item">Contiene información relacionada con la 
+	 ruta solicitada al ejecutar la tarea. Sólo se incluirán los clientes 
+	 de la ruta y si corresponde, los asociados al preventista (habilitados 
+	 para trabajar con la empresa del usuario).</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735592753" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Prods.odb</span><span data-close-text="true">Prods.odb</span></a></p>
+<div data-targetname="POPUP735592753">
+	<p class="H_Parrafo_de_Item">Contiene información relacionada con los 
+	 <a href="tabla__Bienes.htm">bienes</a> que se han de vender. El archivo 
+	 contendrá los bienes que están incluidos en las listas de precios 
+	 que se hayan informado en la ficha <font style="font-weight: bold;">Datos 
+	 Preventa</font> de los <font style="font-weight: bold;">Parámetros 
+	 de Datos Generales</font> siempre y cuando estén habilitados para 
+	 operar con la empresa del usuario que está realizando la tarea.</p>
+	<p class="H_Parrafo_de_Item">Es importante tener en cuenta que sólo 
+	 se incluirán en el archivo los productos cuyos códigos presenten, 
+	 a lo sumo, 13 caracteres. Si bien el sistema se prevén hasta 18 caracteres 
+	 para el código de los bienes, para la exportación a la colectora se 
+	 requiere que los códigos sean como máximo de 13 caracteres.</p>
+	<p class="H_Parrafo_de_Item">Si se trabaja con medidas y colores, un 
+	 bien que se administre con tablas de medidas y colores generará tantos 
+	 registros en el archivo como códigos de productos resulten de su apertura 
+	 por medida y color. En estos casos deberá tenerse en cuenta que el 
+	 código de producto incluirá color, medida y delimitador cuando así 
+	 corresponda y esto aumentará la cantidad de caracteres del código 
+	 de producto.</p>
+	<p class="H_Parrafo_de_Item">El tipo de bonificación que se incluye 
+	 en el archivo corresponde al orden alfabético en que el valor del 
+	 atributo de ítems aparece en la definición de la tabla de bonificaciones. 
+	 Si el tipo de bonificación fueses mayor a 9, se emitirá un mensaje 
+	 de error y no se incluirá en el archivo. Análogamente, si el valor 
+	 del atributo de ítems asociado no correspondiese a ninguno de los 
+	 que definen la tabla de bonificaciones indicada en la ficha <font style="font-weight: bold;">Datos de Preventa</font>, se emitirá un 
+	 mensaje de error y se grabará con tipo de bonificación 0 (cero).</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735599723" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Conds.odb</span><span data-close-text="true">Conds.odb</span></a></p>
+<div data-targetname="POPUP735599723">
+	<p class="H_Parrafo_de_Item">Contiene información relacionada con la 
+	 tabla de condiciones de venta. Se exportan todas las condiciones definidas 
+	 en el sistema.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735636803" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Control.odb</span><span data-close-text="true">Control.odb</span></a></p>
+<div data-targetname="POPUP735636803">
+	<p class="H_Parrafo_de_Item">Contiene información relacionada con el 
+	 agente Preventista. Entre otros datos, se incluye, la password del 
+	 preventista y los permisos informados para él en la ficha <font style="font-weight: bold;">Datos 
+	 Preventa</font> ubicada en los Parámetros de Datos Generales, que 
+	 le permitirán que pueda modificar, o no, los datos que se han de exportar 
+	 a la colectora.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735658175" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Listas.odb</span><span data-close-text="true">Listas.odb</span></a></p>
+<div data-targetname="POPUP735658175">
+	<p class="H_Parrafo_de_Item">Contiene la información correspondiente 
+	 a las listas de precios habilitadas para la empresa del usuario que 
+	 se han indicado en la ficha <font style="font-weight: bold;">Datos 
+	 Preventa</font> ubicada en los Parámetros de Datos generales.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="epigrafe"><a data-target="POPUP735658988" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Obses.odb</span><span data-close-text="true">Obses.odb</span></a></p>
+<div data-targetname="POPUP735658988">
+	<p class="H_Parrafo_de_Item">Contiene la información registrada en 
+	 la tabla de observaciones de preventa.</p>
+	<p class="H_Parrafo_de_Item">Los errores que se produzcan y determinen 
+	 la exclusión de clientes, productos, etc., se podrán consultar al 
+	 finalizar el proceso de generación. Efectivamente, se exhibirá un 
+	 mensaje informando que se produjeron errores y se ofrece la posibilidad 
+	 de acceder a una pantalla que muestra los errores producidos.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Texto">Los datos solicitados para la generación de esta proceso 
+ son los siguientes:</p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP735701629" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ruta</span><span data-close-text="true">Ruta</span></a></p>
+<div data-targetname="POPUP735701629">
+	<p class="H_Parrafo_de_Item">Código de la ruta cuyos clientes se desea 
+	 incluir en el proceso.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP735714940" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Preventista</span><span data-close-text="true">Preventista</span></a></p>
+<div data-targetname="POPUP735714940">
+	<p class="H_Parrafo_de_Item">Código del agente preventista cuyos datos 
+	 se desea incluir en los archivos a generar.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> <a data-target="POPUP735739448" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Incluir clientes del preventista</span><span data-close-text="true">Incluir clientes del preventista</span></a></p>
+<div data-targetname="POPUP735739448">
+	<p class="H_Parrafo_de_Sub-Item">Indicación de si se desean incluir, 
+	 o no, en el proceso a los clientes del preventista. Es decir los clientes 
+	 que lo tienen asociado como vendedor en la tabla de clientes.</p>
+	<p class="H_Parrafo_de_Sub-Item"> </p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP735727520" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> Directorio</span><span data-close-text="true"> Directorio</span></a></p>
+<div data-targetname="POPUP735727520">
+	<p class="H_Parrafo_de_Item">Nombre y ubicación del directorio o carpeta 
+	 donde se han de guardar los archivos que resulten de la exportación. 
+	 El mismo podrá ser seleccionado a través del botón <font style="font-weight: bold;">Examinar</font>.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> <a data-target="POPUP735742650" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Comando</span><span data-close-text="true">Comando</span></a></p>
+<div data-targetname="POPUP735742650">
+	<p class="H_Parrafo_de_Sub-Item">Nombre y ubicación del programa que 
+	 se ejecutará al finalizar el proceso de generación de los archivos 
+	 compatibles.</p>
+	<p class="H_Parrafo_de_Sub-Item">Mediante este campo será posible invocar, 
+	 por ejemplo, un programa que se encargue de indicarle al operador 
+	 los pasos necesarios para conectar el dispositivo móvil y transferir 
+	 al mismo el contenido de los archivos generados.</p></div>
+<p class="H_Parrafo_de_Sub-Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Ítems</p>
+<p class="H_Parrafo_de_Sub-Item">En esta ficha pueden indicarse diferentes 
+ filtros destinados a seleccionar los <a href="tabla__Bienes.htm">ítems</a> 
+ que se han de exportar. Recuérdese que dichos ítems deben estar habilitados 
+ para operar con la empresa del usuario y deben pertenecer a alguna de 
+ las listas de precios establecidas para la preventa.</p>
+<p class="H_Parrafo_de_Sub-Item">Pueden filtrarse los ítems por código 
+ o por <a href="tabla__Atributos.htm">atributos</a> y valores de los atributos.</p>
+<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Ítem</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">Código del <a href="tabla__Bienes.htm">ítem</a> 
+ que se desea exportar.</p>
+<p class="H_Parrafo_de_Sub-Sub-Item">Puede seleccionarse un ítem en particular 
+ o un grupo de ítems. Si este dato es dejado en blanco, se exportarán todos 
+ los ítems incluidos en las listas de precios establecidas para la preventa.</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP735812279" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla de Tabla:_Atributos</span><span data-close-text="true">Tabla de Tabla:_Atributos</span></a></p>
+<div data-targetname="POPUP735812279">
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta tabla permite informar los 
+	 <a href="tabla__Atributos.htm">atributos</a> asociados a los ítems 
+	 que se desea exportar a la colectora con sus valores de atributo.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Atributo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> 
+	 de los ítems que se desea incluir en la exportación.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 según los atributos y valores que se hayan asignado a cada uno de 
+	 ellos y según estén incluidos en alguna de las listas de precios establecidas 
+	 para la preventa.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún atributo, 
+	 todos los ítems que estén incluidos en alguna de las listas de precios 
+	 establecidas para la preventa intervendrán en el proceso.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del atributo correspondiente 
+	 al código informado.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valor del <a href="tabla__Atributos.htm">atributo</a> 
+	 informado asociado a los ítems que se desean exportar.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo <font style="font-weight: bold;">Código</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los ítems 
+	 del rango seleccionado, según los atributos y valores que se hayan 
+	 asignado a cada uno de ellos y según estén incluidos en alguna de 
+	 las listas de precios establecidas para la preventa.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor, se incluirán 
+	 en el listado los ítems que tengan asociados el valor del atributo 
+	 indicado y que estén incluidos en alguna de las listas de precios 
+	 mencionadas.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún valor 
+	 de atributo, todos los ítems del rango solicitado que tengan el atributo 
+	 indicado y que estén incluidos en alguna de las lista de precios establecidas 
+	 para la preventa, quedarán incluidos en el proceso.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del valor asociado 
+	 al atributo correspondiente al código informado.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Clientes</p>
+<p class="H_Parrafo_de_Item">En esta ficha pueden indicarse diferentes 
+ filtros para aplicar a los clientes incluidos en la ruta indicada y a 
+ los clientes asociados al preventista, en caso de haberlos incluido.</p>
+<p class="H_Parrafo_de_Item">Pueden filtrarse los clientes por <a href="tabla__Atributos.htm">atributos</a> 
+ y valores de atributos.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP735882649" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla de Atributos</span><span data-close-text="true">Tabla de Atributos</span></a></p>
+<div data-targetname="POPUP735882649">
+	<p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar los <a href="tabla__Atributos.htm">atributos</a> asociados a los clientes 
+	 que se desea incluir en la exportación.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Código</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código del <a href="tabla__Atributos.htm">atributo</a> 
+	 asociado a los <a href="tabla__Clientes.htm">clientes</a> que se desean 
+	 exportar.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al atributo y al valor 
+	 del atributo que se indique se considerará o no cada uno de los clientes 
+	 asociados a la ruta indicada y/o al preventista elegido, según los 
+	 atributos y valores que se hayan asignado a cada uno de ellos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún atributo, 
+	 todos los clientes incluidos en la ruta indicada y que estén asociados 
+	 al preventista informado, se exportarán al archivo que se indique.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del atributo correspondiente 
+	 al código informado.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Valor</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Valor del <a href="tabla__Atributos.htm">atributo</a> 
+	 informado asociado a los <a href="tabla__Clientes.htm">clientes</a> 
+	 que se desean exportar.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debe corresponder a un valor ya 
+	 definido en el sistema para el atributo indicado en el campo <font style="font-weight: bold;">Código</font>.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">De acuerdo al atributo y al valor 
+	 de atributo que se indique se considerará o no cada uno de los clientes 
+	 asociados a la ruta indicada y al preventista informado, según los 
+	 atributos y valores que se hayan asignado a cada uno de ellos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica un valor, se exportarán 
+	 los clientes que tengan asociados el valor del atributo indicado y 
+	 que estén incluidos en la ruta indicada o que estén asociados al preventista 
+	 informado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se especifica ningún valor 
+	 de atributo, todos los clientes que tengan el atributo indicado y 
+	 que estén incluidos en la ruta indicada o que estén asociados al preventista 
+	 informado, intervendrán en la exportación.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del valor asociado 
+	 al atributo correspondiente al código informado.</p></div>
+<p class="H_Parrafo_de_Sub-Sub-Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP735546844');
+	TextPopupInit('a2', 'POPUP735560791');
+	TextPopupInit('a3', 'POPUP735594187');
+	TextPopupInit('a4', 'POPUP735592753');
+	TextPopupInit('a5', 'POPUP735599723');
+	TextPopupInit('a6', 'POPUP735636803');
+	TextPopupInit('a7', 'POPUP735658175');
+	TextPopupInit('a8', 'POPUP735658988');
+	TextPopupInit('a9', 'POPUP735701629');
+	TextPopupInit('a10', 'POPUP735714940');
+	TextPopupInit('a11', 'POPUP735739448');
+	TextPopupInit('a12', 'POPUP735727520');
+	TextPopupInit('a13', 'POPUP735742650');
+	TextPopupInit('a14', 'POPUP735812279');
+	TextPopupInit('a15', 'POPUP735882649');
+//]]></script>
+
+
+</body></html>

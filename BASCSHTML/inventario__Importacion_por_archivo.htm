@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="4.4.0_3"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Inventario Importacion por archivo</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Importación por archivo"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Importación por archivo</h1>
+<p class="H_Texto">Este programa permite realizar la importación de la 
+ toma de inventario de un depósito a partir de un archivo de texto.</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP739108868" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP739108868">
+	<p class="H_Parrafo_de_Item">Código del depósito en el cual se efectúa 
+	 el inventario. Debe ser un depósito definido en la empresa en la que 
+	 se está trabajando y el inventario debe haberse iniciado con anterioridad.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP739138224" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ubicación</span><span data-close-text="true">Ubicación</span></a></p>
+<div data-targetname="POPUP739138224">
+	<p class="H_Parrafo_de_Item">Código de la ubicación física de los items 
+	 a incluir en el inventario. Si se deja en blanco se asume que no se 
+	 está detallando la ubicación correspondiente.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP739148672" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Inventario</span><span data-close-text="true">Inventario</span></a></p>
+<div data-targetname="POPUP739148672">
+	<p class="H_Parrafo_de_Item">Número del inventario actual del depósito 
+	 informado. Este campo no puede modificarse por el usuario.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP739164651" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Fecha de cierre</span><span data-close-text="true">Fecha de cierre</span></a></p>
+<div data-targetname="POPUP739164651">
+	<p class="H_Parrafo_de_Item">Si el inventario está cerrado, en este 
+	 campo se exhibe la fecha de cierre del mismo. Si no, este campo queda 
+	 en blanco. Este campo no puede ser modifcado por el usuario.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP739178140" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ajustar el stock a cero en ítems no informados</span><span data-close-text="true">Ajustar el stock a cero en ítems no informados</span></a></p>
+<div data-targetname="POPUP739178140">
+	<p class="H_Parrafo_de_Item">Si se activa, los ítems que estén en el 
+	 depósito y ubicación indicados que no se informen en el archivo pasarán 
+	 a figurar con stock cero.</p>
+	<p class="H_Parrafo_de_Item">Esto significa que al generar los remitos 
+	 de ajuste, si este campo está activo el stock de los ítems no informados 
+	 se ajustará a cero. Si no está activado no se realizará ningún ajuste 
+	 con ellos.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP739202361" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Importar</span><span data-close-text="true">Importar</span></a></p>
+<div data-targetname="POPUP739202361">
+	<p class="H_Parrafo_de_Item">Al presionar el este botón se accede a 
+	 una ventana donde se deben indicar el formato correspondiente al archivo 
+	 que contiene los datos a importar y el nombre del mismo. Para mas 
+	 detalles sobre este tema acceder <a href="importar_archivo_de_inventario.htm">aquí</a>.</p>
+	<p class="H_Parrafo_de_Item"> </p></div>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP739108868');
+	TextPopupInit('a2', 'POPUP739138224');
+	TextPopupInit('a3', 'POPUP739148672');
+	TextPopupInit('a4', 'POPUP739164651');
+	TextPopupInit('a5', 'POPUP739178140');
+	TextPopupInit('a6', 'POPUP739202361');
+//]]></script>
+
+
+</body></html>

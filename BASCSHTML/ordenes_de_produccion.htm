@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="3.7.1.0_1"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>Ordenes de produccion Ingreso</title>
+<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Ingreso"/><meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+
+<h1>Ingreso de Ordenes de producción</h1>
+<p class="H_Texto">Se pueden ingresar directamente o en base a una Hoja 
+ de ruta.</p>
+<p class="H_Texto">Si se opta por la segunda opción, una vez informada 
+ la Hoja de ruta base y la cantidad a producir, la Orden de Producción 
+ se precarga con la información correspondiente a dicho documento. Esta 
+ información puede ser modificada.</p>
+<p class="H_Texto">También existe la posibilidad de ingresar una orden 
+ de producción en base a otros comprobantes ya ingresados en el sistema:</p>
+<p class="H_Texto"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" alt="BASCSIMAG\boton_comprobante_referenciado.gif" width="21" height="29" border="0"/> 
+ <a href="comprobantes_referenciados_ordenes_de_produccion.htm">Comprobantes 
+ referenciados órdenes de producción</a></p>
+<p class="H_Texto">Cuando se registran las órdenes los datos a ingresar, 
+ además de la fecha y el número de comprobante son:</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679917658" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+<div data-targetname="POPUP679917658">
+	<p class="H_Parrafo_de_Item">Código de depósito asociado a la orden 
+	 de producción que se está ingresando.</p>
+	<p class="H_Parrafo_de_Item">Si se indica una planta en el campo homónimo 
+	 se debe indicar un código de depósito que es tomado como valor por 
+	 defecto en la solapa Insumos de las tareas definidas en la ficha Tareas.</p>
+	<p class="H_Parrafo_de_Item">Si no se indica una planta, representa 
+	 el depósito de insumos y de productos terminados.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679934794" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Planta</span><span data-close-text="true">Planta</span></a></p>
+<div data-targetname="POPUP679934794">
+	<p class="H_Parrafo_de_Item">Es posible indicar la planta en la cual 
+	 se realiza el proceso. Puede ser propia o de terceros.</p>
+	<p class="H_Parrafo_de_Item">Se debe tener en cuenta que una vez que 
+	 se ha comenzado a incorporar información al comprobante (ítems o tareas), 
+	 no se permite modificar, sacar o indicar el dato correspondiente a 
+	 la planta. Si se requiere hacerlo se debe cancelar el comprobante 
+	 y volver a empezar.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679933177" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Responsable</span><span data-close-text="true">Responsable</span></a></p>
+<div data-targetname="POPUP679933177">
+	<p class="H_Parrafo_de_Item">Se ofrecen como responsables, por defecto, 
+	 los informados en la Hoja de ruta. Si la orden no cuenta con hoja 
+	 de ruta o si la misma no tiene indicado un responsable, será el responsable 
+	 de la planta</p>
+	<p class="H_Parrafo_de_Item">Los responsables que se indiquen pueden 
+	 operar sobre todas las tareas de la orden de producción, independientemente 
+	 de que las tareas tengan, o no, asignados responsables.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679955599" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Hoja de ruta</span><span data-close-text="true">Hoja de ruta</span></a></p>
+<div data-targetname="POPUP679955599">
+	<p class="H_Parrafo_de_Item">Este campo podrá completarse con el código 
+	 de la Hoja de ruta que se desee utilizar como base para registrar 
+	 la orden de producción.</p>
+	<p class="H_Parrafo_de_Item">Debe corresponder al código de una hoja 
+	 de ruta ya definida en el sistema.</p>
+	<p class="H_Parrafo_de_Item">La orden de producción no podrá registrarse 
+	 si la fecha de inicio de la Hoja de ruta es posterior a la fecha actual 
+	 o si su fecha de expiración sea anterior a la fecha actual.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/><a data-target="POPUP679976220" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> Inicio</span><span data-close-text="true"> Inicio</span></a></p>
+<div data-targetname="POPUP679976220">
+	<p class="H_Parrafo_de_Item">Fecha y hora de inicio del proceso productivo 
+	 determinado por la hoja de ruta que se indique.</p>
+	<p class="H_Parrafo_de_Item">Al grabar, el sistema controla que esta 
+	 fecha sea igual o anterior a la fecha en la que comienza la primer 
+	 tarea.</p>
+	<p class="H_Parrafo_de_Item">Si se modifica la fecha de inicio, reemplazándola 
+	 por una fecha posterior, el sistema ofrece recalcular las fechas de 
+	 todas las tareas en función de sus dependencias.</p>
+	<p class="H_Parrafo_de_Item">Si se deja en blanco, o si la fecha de 
+	 inicio de la primer tarea a ejecutarse es anterior a esta fecha, al 
+	 grabar el comprobante el sistema ofrecerá modificar la fecha de inicio 
+	 de la orden de producción por la fecha de inicio de la primera tarea.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679984469" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Terminación</span><span data-close-text="true">Terminación</span></a></p>
+<div data-targetname="POPUP679984469">
+	<p class="H_Parrafo_de_Item">Fecha y hora prevista para la finalización 
+	 del proceso productivo determinado por la hoja de ruta que se indique.</p>
+	<p class="H_Parrafo_de_Item">Esta fecha dependerá de la duración de 
+	 las tareas componentes y de los recursos que se encuentren disponibles 
+	 para las fechas requeridas, y deberá ser informada en forma acorde 
+	 a las mismas.</p>
+	<p class="H_Parrafo_de_Item">Al grabar el comprobante si esta fecha 
+	 no se ha indicado, el sistema ofrecerá completarla con la mayor fecha 
+	 de finalización de las últimas tareas a ejecutarse.</p>
+	<p class="H_Parrafo_de_Item">También se controla que esta fecha sea 
+	 mayor o igual a la fecha en la que termina la última tarea.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
+ <a data-target="POPUP679989954" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Cantidad</span><span data-close-text="true">Cantidad</span></a></p>
+<div data-targetname="POPUP679989954">
+	<p class="H_Parrafo_de_Item">Cantidad de unidades a producir con la 
+	 orden de producción que se está ingresando.</p>
+	<p class="H_Parrafo_de_Item">Se recomienda indicar, como unidades equivalentes, 
+	 la misma cantidad de unidades a fabricar del producto terminado principalo 
+	 uno.</p>
+	<p class="H_Parrafo_de_Item">La cantidad a fabricar de cada bien se 
+	 obtendrá como:</p>
+	<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita">Cantidad x (Cantidad 
+	 según Hoja de Ruta / Unidades equivalentes según Hoja de ruta)</p></div>
+<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"> </p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ Ficha Productos</p>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> <a data-target="POPUP680023900" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Tabla de Ítems</span><span data-close-text="true">Tabla de Ítems</span></a></p>
+<div data-targetname="POPUP680023900">
+	<p class="H_Parrafo_de_Sub-Item">En esta tabla se informarán uno a 
+	 uno los productos que se han de producir y sus correspondientes cantidades.</p>
+	<p class="H_Parrafo_de_Sub-Item">Si la Orden de producción se registra 
+	 en base a una hoja de ruta, en esta tabla se exhibirán los productos 
+	 informados en la misma, mostrando para cada uno la cantidad a producir.</p>
+	<p class="H_Parrafo_de_Sub-Item">Para los ítems que trabajan con doble 
+	 unidad de medida se mostrará la cantidad de unidades expresada en 
+	 cada unidad.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Ítem</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de bien que se incluye 
+	 en la orden de producción.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El primer ítem que se ingresa 
+	 se considera el principal y es el que define el grado de avance.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">No es posible ingresar dos líneas 
+	 diferentes del producto principal.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Observaciones</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El sistema exhibe las observaciones 
+	 que tuviere el ítem, si éstas son previamente parametrizadas en la 
+	 tabla de bienes para el comprobante Orden de producción.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción del ítem exhibido 
+	 en el dato anterior.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem tiene asociada una 
+	 descripción larga, se exhibirá esta. Si no, se exhibirá la otra descripción. 
+	 Si el ítem no tiene descripción asociada, se solicitará el ingreso 
+	 de un detalle del mismo en este momento.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades que se van 
+	 a producir del ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem trabaja con doble unidad 
+	 de medida y la relación entre ellas es variable, si al ingresar la 
+	 cantidad en segunda unidad de medida, la primera está en cero, el 
+	 sistema la calcula automáticamente.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si la orden proviene de una hoja 
+	 de ruta y se modifica la cantidad del producto terminado que figura 
+	 como producto principal en dicha hoja de ruta, el sistema ofrece recalcular 
+	 los insumos y recursos en función a la nueva cantidad informada.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad en 2da unidad</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Cantidad de unidades que se van 
+	 a producir del ítem indicado en la segunda unidad de medida.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem no trabaja con doble 
+	 unidad de medida, no se exhibirá información en este campo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si la relación es variable y al 
+	 ingresar la cantidad en segunda unidad de medida, la primera está 
+	 en cero, el sistema la calcula automáticamente.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Despacho</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de hasta quince caracteres 
+	 que indica el número del despacho al cual ingresa el ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este dato podrá ingresarse para 
+	 los ítems que trabajan con despachos. Debe corresponder a un despacho 
+	 definido en el sistema para el ítem indicado.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Partida</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de hasta quince caracteres 
+	 que indica el número de la partida a la cual ingresa el ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Este dato podrá ingresarse para 
+	 los ítems que trabajan con partidas. Debe corresponder a una partida 
+	 definida en el sistema para el ítem indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Los controles que se efectúan 
+	 sobre las partidas que se informan dependen del estado de los parámetros 
+	 de Producción disponibles en <a href="parametros__Items.htm">Parámetros 
+	 de ítems</a>.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Números de serie</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si el ítem indicado trabaja con 
+	 números de serie, se abrirá una ventana que permitirá el ingreso de 
+	 todos los números de serie que ingresan con el comprobante.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se solicitará el ingreso de tantos 
+	 números como cantidad de unidades se fabriquen del ítem.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El sistema brinda la posibilidad 
+	 de ingresar estos números en forma automática definiendo un prefijo 
+	 común y un rango de números para los mismos. Esto es muy útil en el 
+	 caso de producción de grandes cantidades de mercadería seriada.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Porcentaje de costo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Número que indica qué porcentaje 
+	 del costo de los procesos de fabricación le corresponderá al producto 
+	 terminado indicado.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Para obtener el costo de los productos 
+	 terminados, se suman los costos de los insumos, de la mano de obra 
+	 y de la maquinaria afectadas a la orden de producción y, se aplica 
+	 el porcentaje de incidencia indicado en cada producto.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Redondeo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Redondeo a aplicar en la cantidad 
+	 de productos necesarios, con indicación de hasta dos decimales.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Rel</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">La información de este campo aplica 
+	 exclusivamente a productos que administran medidas y colores y se 
+	 debe utilizar solamente si el costo de los productos terminados no 
+	 se reparte uniformemente entre las diversas combinaciones medida-color.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Para ingresar información al campo, 
+	 debe hacerse doble clic.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se ha ingresado algo en la 
+	 &quot;Relación de Costos&quot;, la columna se muestra una &quot;X&quot; 
+	 en azul. Si no tiene nada ingresado, pero está previsto que se ingresen 
+	 datos en la grilla correspondiente, se muestra un &quot;X&quot; en 
+	 negro. Si no es posible ingresar relación de costos para el ítem, 
+	 no se muestra nada en esta columna (bienes sin medidas y colores).</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si no se indica nada en este campo 
+	 se considera que el costo de producción se reparte uniformemente entre 
+	 todos los productos resultantes del proceso, independientemente de 
+	 los colores y de las medidas que se hayan producido.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">A veces, algunas medidas de un 
+	 ítem resultan más costosas que otras, por ejemplo, por utilizar mayor 
+	 cantidad de insumos.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si por ejemplo, para un producto 
+	 terminado que se fabrica en blanco y negro, en los talles S, M, L 
+	 y XL, se indica como relación de costos las siguientes:</p>
+	<table style="margin-left: 41.85pt; border-top: 0.50pt solid #000000; 
+			 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+			 border-right: 0.50pt solid #000000; border-collapse: separate;" cellspacing="0" width="361" cellpadding="1">
+		<tbody><tr style="vertical-align: top;">
+			<td style="width: 39.15%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item" style="margin-top: 0; margin-bottom: 0;"> </p></td>
+			<td style="width: 12.38%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">S</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">M</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">L</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">XL</p></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="width: 39.15%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">Blanco</p></td>
+			<td style="width: 12.38%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1.10</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1.10</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1.15</p></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="width: 39.15%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">Negro</p></td>
+			<td style="width: 12.38%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1.10</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1.10</p></td>
+			<td style="width: 16.16%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">1.15</p></td>
+		</tr>
+	</tbody></table>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Significa que, independientemente 
+	 del color, los talles M y L tienen un 10% más de costo que los talles 
+	 S y los talles XL, un 15% más.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si por ejemplo se producen 10/S, 
+	 20/M, 20/L y 10/XL unidades de un bien con la relación de costos indicada, 
+	 y el costo total de la producción resulta ser de 3300, el costo de 
+	 cada medida resulta de aplicar las siguientes fórmulas:</p>
+	<table style="margin-left: 42.55pt; border-top: 0.50pt solid #000000; 
+			 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+			 border-right: 0.50pt solid #000000; border-collapse: separate;" cellspacing="0" width="491" cellpadding="1">
+		<tbody><tr style="vertical-align: top;">
+			<td style="width: 100.00%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">Base de costos = Costo total 
+			 / (Sumatoria de relación * cantidad)</p>
+			<p class="H_Parrafo_de_Item">Costo unitario de cada medida-color 
+			 = Base de costos * Relación</p></td>
+		</tr>
+	</tbody></table>
+	<p class="H_Parrafo_de_Sub-Sub-Item">La &quot;Sumatoria de relación 
+	 * cantidad&quot; se refiere a la suma, para cada combinación medida-color, 
+	 del resultado de multiplicar la cantidad de unidades por la relación 
+	 que le corresponde.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Por lo cual, en el caso del ejemplo,</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Base de costos = 3300 / (1*10 
+	 + 1.10*20 + 1.10*20 + 1.15*10) = 50,382</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Luego, el costo para cada medida 
+	 será:</p>
+	<table style="margin-left: 42.55pt; border-top: 0.50pt solid #000000; 
+			 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+			 border-right: 0.50pt solid #000000; border-collapse: separate;" cellspacing="0" width="387" cellpadding="1">
+		<tbody><tr style="vertical-align: top;">
+			<td style="width: 100.00%; border-top: 0.50pt solid #000000; 
+				 border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; 
+				 border-right: 0.50pt solid #000000; padding-left: 1px; 
+				 padding-top: 1px; padding-right: 1px; padding-bottom: 1px;"><p class="H_Parrafo_de_Item">Costo S = 50,382 * 1 = 50,382</p>
+			<p class="H_Parrafo_de_Item">Costo M-L = 50,382 * 1,10 = 55,42</p>
+			<p class="H_Parrafo_de_Item">Costo XL = 50,382 * 1,15 = 57,94</p></td>
+		</tr>
+	</tbody></table>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se debe tener en cuenta que si 
+	 se ingresa información en la grilla, debe ingresársela para todos 
+	 los talles y colores de modo que el cálculo de costos se realice en 
+	 forma correcta. Si no se ingresa nada, el costo se reparte uniformemente 
+	 entre todos los productos que se fabrican.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Pedidos</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Esta columna) permite, al hacer 
+	 doble clic sobre cada fila, acceder a una ventana donde se pueden 
+	 ingresar, eliminar o modificar los datos del pedido de venta u otras 
+	 entregas relacionados con el ítem correspondiente a la línea.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En la ventana es posible ingresar, 
+	 eliminar o modificar los datos de los pedidos relacionados con el 
+	 ítem de la línea. Si se utiliza el botón de búsqueda en la columna 
+	 &quot;Comprobante&quot;, se accede a los pedidos pendientes correspondientes 
+	 al ítem en cuestión.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP680477600" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Tareas</span><span data-close-text="true">Ficha Tareas</span></a></p>
+<div data-targetname="POPUP680477600">
+	<p class="H_Parrafo_de_Item">En esta ficha es posible definir cada 
+	 una de las etapas que permitirán concretar el proceso productivo correspondiente 
+	 a la Orden de producción que se está definiendo. Si la Orden se ingresa 
+	 en base a una hoja de ruta, esta ficha exhibirá toda la información 
+	 ingresada al definir la hoja de ruta que se haya tomado como base.</p>
+	<p class="H_Parrafo_de_Item">Para cada tarea podrán indicarse los insumos 
+	 requeridos, los tipos de recursos necesarios para realizar la tarea, 
+	 el tiempo necesario para su realización, la forma en que está relacionada 
+	 con otras tareas, etc.</p>
+	<p class="H_Parrafo_de_Item">Pulsando el botón <font style="font-weight: bold;">Nueva</font> 
+	 se abrirá una ventana que permitirá el ingreso de una nueva tarea 
+	 que será agregada a la orden de producción.</p>
+	<p class="H_Parrafo_de_Item">Pulsando el botón <font style="font-weight: bold;">Modificar</font> 
+	 mientras el cursor se encuentra posicionado en una de las líneas de 
+	 la tabla de tareas se abrirá una ventana que permitirá modificar los 
+	 datos de una tarea ya definida en la orden de producción.</p>
+	<p class="H_Parrafo_de_Item">A medida que se agregan nuevas tareas, 
+	 se va completando en esta ficha la tabla de tareas con los datos de 
+	 cada tarea definida.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita" style="counter-set: prl-p-h_sub_sub_item_con_vineta_negrita 0;">Código</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Código de tarea definida.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">No puede haber dos tareas con 
+	 el mismo código.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Descripción</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Descripción de la tarea informada.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Duración</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Duración de la tarea expresada 
+	 en horas o minutos expresada con hasta dos decimales.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">La duración que se exhibe se calcula 
+	 automáticamente en base a los datos informados en la orden de producción 
+	 o en la Hoja de ruta, y a la cantidad de unidades a producir.</p>
+	<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> 
+	 Incidencia</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Tipo de incidencia de la tarea 
+	 en el proceso productivo.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Las opciones son:</p>
+	<p class="H_Sub_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita">Fija</p>
+	<p class="H_Sub_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Sub_Item_con_vineta_negrita">Proporcional</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica incidencia <font style="font-weight: bold;">Fija</font>, la duración de la tarea que 
+	 se indique, será independientes de la cantidad de piezas a fabricar.</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">En cambio, si se indica incidencia 
+	 <font style="font-weight: bold;">Proporcional</font>, la duración 
+	 de la tarea variará en función a la cantidad de bienes a producir.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Redondeo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Redondeo a aplicar en la cantidad 
+	 de recursos necesarios para completar la tarea, con indicación de 
+	 hasta dos decimales.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Divisible</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Se exhibe un tilde si la tarea 
+	 puede dividirse.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Responsable</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Responsable de la Tarea. Por defecto, 
+	 se exhibe el informado en la hoja de ruta.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Permite diferentes Grupos 
+	 de trabajo</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">El sistema exhibe un tilde si 
+	 la tarea permite diferentes grupos de trabajo en paralelo.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Cantidad de grupos</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Si se muestra tildado el check 
+	 box anterior, se exhibe en este columna la cantidad de grupos de trabajo 
+	 que se utilizan en la tarea.</p>
+	<p class="H_Sub_Sub_Item_con_vineta_negrita rl-p-H_Sub_Sub_Item_con_vineta_negrita">Planta</p>
+	<p class="H_Parrafo_de_Sub-Sub-Item">Debido a que la orden opera con 
+	 Plantas, se indica el código y la descripción de la misma.</p></div>
+<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_generico.gif" alt="BASCSIMAG\Boton_generico.gif" width="24" height="24" border="0"/> <a href="tareas_de_la_orden_de_produccion.htm">Botones 
+ Nueva/Modificar</a></p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP680087350" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Ficha Observaciones</span><span data-close-text="true">Ficha Observaciones</span></a></p>
+<div data-targetname="POPUP680087350">
+	<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Observación</p>
+	<p class="H_Parrafo_de_Sub-Item">Esta ficha permite incluir instrucciones, 
+	 consideraciones, y todo aquello que resulte de interés informar a 
+	 los responsables de concretar la <font style="font-weight: bold;">Orden 
+	 de producción</font>.</p></div>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
+ <a href="administracion_de_Documentos.htm" style="font-style: normal;"><font style="font-style: normal;">Ficha Adjuntos</font></a> </p>
+<p class="H_Parrafo_de_Item">Permite adjuntar archivos externos. Una vez 
+ grabado el comprobante la administración de los archivos adjuntados se 
+ realiza desde el Proceso de <a href="adjuntos.htm">Adjuntos</a>.</p>
+<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
+ <a data-target="POPUP680060319" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+<div data-targetname="POPUP680060319">
+	<p class="H_Parrafo_de_Item">Cuando se graba una Orden de producción 
+	 el sistema controlará que nadie dependa de la última tarea indicada 
+	 y puede haber sólo una tarea final.</p>
+	<p class="H_Parrafo_de_Item">Si el comprobante tiene indicada una planta 
+	 en el encabezado, cada una de las tareas debe tener una planta indicada.</p>
+	<p class="H_Parrafo_de_Item">Si se indica un código de servicio para 
+	 una línea que corresponde a un recurso propio, si bien permite su 
+	 ingreso, al grabar, el sistema blanquea el campo del servicio.</p>
+	<p class="H_Parrafo_de_Item">No se permite grabar una orden de producción 
+	 si tiene alguna tarea en la que se haya indicado un servicio que tenga 
+	 asociado un grupo de compras que requiera control de presupuesto de 
+	 compras. </p>
+	<p class="H_Parrafo_de_Item">En una tarea de una planta propia, no 
+	 es posible indicar un recurso de tercero.</p>
+	<p class="H_Parrafo_de_Item">La primera tarea No puede ocurrir en una 
+	 plante de terceros.</p>
+	<p class="H_Parrafo_de_Item">Se controla que dos tareas seguidas no 
+	 ocurran en planta de terceros.</p>
+	<p class="H_Parrafo_de_Item">El pasaje de tareas dependientes que ocurran 
+	 en plantas diferentes es uno a uno.</p>
+	<p class="H_Parrafo_de_Item">Se verifica que las cantidades de insumos 
+	 y/o productos terminados que se indican coincidan con el redondeo 
+	 indicado en cada caso.</p></div>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item"> </p>
+<p class="H_Parrafo_de_Item"> </p>
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1', 'POPUP679917658');
+	TextPopupInit('a2', 'POPUP679934794');
+	TextPopupInit('a3', 'POPUP679933177');
+	TextPopupInit('a4', 'POPUP679955599');
+	TextPopupInit('a5', 'POPUP679976220');
+	TextPopupInit('a6', 'POPUP679984469');
+	TextPopupInit('a7', 'POPUP679989954');
+	TextPopupInit('a8', 'POPUP680023900');
+	TextPopupInit('a9', 'POPUP680477600');
+	TextPopupInit('a10', 'POPUP680087350');
+	TextPopupInit('a11', 'POPUP680060319');
+//]]></script>
+
+
+</body></html>

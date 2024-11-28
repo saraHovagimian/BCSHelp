@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Listado IIBB Compras","type":"item","tilePath":"","description":"","url":"BASCSHTML/listado__Ingresos_brutos___Compras.htm"},{"name":"Listado IIBB Ventas","type":"item","tilePath":"","description":"","url":"BASCSHTML/listado__Ingresos_brutos___Ventas.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

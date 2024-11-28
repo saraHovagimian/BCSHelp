@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+  <meta name="gRootRelPath" content=".."/>
+	<meta name="gCommonRootRelPath" content=".."/>
+  <meta name="gTopicId" content="6.4.2.0_8"/>
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Parametros Base para informes</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Base para informes"/>
+<meta name="rh-authors" content=""/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BAS CS">
+        <span>BAS CS</span>
+      </div>
+      <div class="gotohome" title="Haga clic aquí para ver esta página en contexto">
+        <a href="#" onclick="rh._.goToFullLayout()">Haga clic aquí para ver esta página en contexto</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1>Base para informes</h1>
+  <p class="H_Texto">BAS CS permite disponer de una segunda base de datos con la misma información de la base de datos que se utiliza para la operación diaria, destinada exclusivamente a emitir informes.</p>
+  <p class="H_Texto">Esta segunda base de datos se llama <font style="font-weight: bold;">Base para informes</font> y se mantiene actualizada en forma automática mediante el mecanismo llamado Log Shipping disponible en SQL.</p>
+  <p class="H_Texto">Log Shipping es un proceso mediante el cual se respalda, copia y restaura el log de transacciones de una base de datos (primaria) en otra (secundaria), de modo de poder recuperar la base de datos ante cualquier falla que se produzca. Esta funcionalidad es la que utiliza BAS CS para mantener una segunda base actualizada de modo de emitir los informes desde allí.</p>
+  <p class="H_Texto">El proceso de Log Shipping, consta de 3 operaciones que se automatizan mediante la creación de trabajos en el SQL Server Agent:</p>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Parrafo_de_Item">Respaldar el Log de Transacciones (transaction log) de la Base de datos primaria (operativa o transaccional)</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Parrafo_de_Item">Copiar el respaldo realizado al Servidor de la base de datos secundaria (base para informes)</p>
+    </li>
+    <li style="font-size: 11pt;">
+      <p class="H_Parrafo_de_Item">Restaurar el respaldo en la base de datos secundaria</p>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Item">El mecanismo implementado en BAS CS está basado en este proceso y asegura que todo lo que acontece en la base principal de BAS CS se copia a la base secundaria, no sólo las transacciones, sino también los cambios de versión, los resultados de ejecutar FXen la base principal, si se realiza un proceso de depuración de datos históricos, etc., todo se replicará en la base secundaria.</p>
+  <p class="H_Parrafo_de_Item">Es importante tener en cuenta que la base secundaria está en estado read only, por lo cual sólo puede utilizarse para la emisión de informes.</p>
+  <p class="H_Parrafo_de_Item">La implementación de esta funcionalidad debe realizarla un usuario que esté conectado con permiso de SYSADMIN en este punto del menú.</p>
+  <p class="H_Parrafo_de_Item">Una vez implementada, en todos los informes del sistema se incorpora la posibilidad de realizar la emisión desde la base operativa o desde la base para informes. En caso que se requiera se puede indicar, para cada usuario, de cual de las dos bases puede emitir informes restringiendo el acceso a la otra.</p>
+  <p class="H_Parrafo_de_Item">Al implementar esta funcionalidad se automatiza la generación de backups del transaction log de la base operativa, su copia al servidor que corresponda y su recuperación en la base secundaria.</p>
+  <p class="H_Texto">El mecanismo se inicia realizando un backup full de la base principal para después recuperarlo como la base secundaria; luego se realizarán backups diferenciales del transaction log y se recuperarán en la base secundaria.</p>
+  <p class="H_Texto">Para implementar la funcionalidad:</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Se debe realizar una copia de la base operativa y levantarla en una nueva base (en un estado de read-only), en el servidor que corresponda, que constituirá la base para informes.</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Se debe generar una carpeta, en el servidor de la base operativa, en la cual se generarán automáticamente mediante el job creado a tal efecto, los archivos transaction log:</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Se debe generar otra carpeta, en el servidor de la base para informes, a la cual se copiarán automáticamente mediante el job correspondiente, los archivos transaction log generados.</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Estos se restaurarán automáticamente, mediante el tercer job, en la base para informes.</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Ambas carpetas deben ser carpetas compartidas de red y contar con determinados permisos.</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Se debe ingresar la información que se solicita en este punto del menú.</p>
+  <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Una vez realizada la configuración, se deberá indicar, para cada usuario, qué base se le ofrecerá por defecto al emitir informes y si se le permitirá, o no, cambiarse entre una y otra.</p>
+  <p class="H_Item_con_imagen_negrita">Configuración de la Base para informes</p>
+  <p class="H_Texto">La configuración de la base para informes crea 4 trabajos en el Agente de SQL Server y se realiza mediante el botón <font style="font-weight: bold;">Instalar</font>.</p>
+  <p class="H_Texto">Todos los trabajos se configuran con la cuenta con la que corre el Agente de SQL Server. Esa cuenta tiene que tener permiso de lectura y escritura en la carpeta de origen y de destino para poder hacer la copia de archivos y recupero de archivo (la información de los permisos es a confirmar).</p>
+  <p class="H_Texto">Una vez que se ha realizado la configuración de la base para informes, si se vuelve a ingresar, se habilitan los botones Modificar, Desinstalar y Detener.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Instalar</p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font color="#000000">Al presionar Instalar se accede a</font>
+    <font color="#000000">una</font>
+    <font color="#000000">ventana</font>
+    <font color="#000000">donde deben indicarse el nombre del servidor donde se instaló la base para informes y los datos del usuario que se utilizarán para la conexión a dicho server para</font>
+    <font color="#000000">la emisión de informes</font>
+    <font color="#000000">.</font>
+  </p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Servidor</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Nombre del servidor donde está alojada la base para informes.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Usuario</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Usuario que realizará la conexión. . La implementación de esta funcionalidad debe realizarla un usuario que esté conectado con permiso de SYSADMIN.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Clave</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Clave del usuario. Se debe volver a ingresar en el campo <font style="font-weight: bold;">Confirmar clave</font>.</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Probar conexión</p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font color="#000000">Este botón</font>
+    <font color="#000000">permite, una vez ingresados</font>
+    <font color="#000000">los</font>
+    <font color="#000000">datos</font>
+    <font color="#000000">anteriores</font>
+    <font color="#000000">, verificar el estado de la conexión</font>
+    <font color="#000000">.</font>
+  </p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Directorio de red compartido para la carpeta de backup (ejemplo: \\servidor\backup)</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Lugar en el cual se alojará la copia del transaction log en el servidor de la base operativa</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Carpeta destino para la copia de archivos (esta carpeta generalmente se encuentra en el Server destino)</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Lugar al cual se copiarán los archivos, desde allí se efectuará la restauración en la base de destino</p>
+  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Hora para el proceso diario de restauración</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Por defecto, los jobs de backup y de copia se parametrizan de modo que tanto el backup como su copia al servidor de la base de informes se realicen cada 30 minutos.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">En cambio la restauración de los archivos de transaction log, en la base para informes, se efectuará una vez al día, a la hora que se indique en este campo.</p>
+  <p class="H_Parrafo_de_Sub-Sub-Item">Es importante tener en cuenta que no es posible efectuar la restauración en la base de destino, si está en uso, por lo cual, es aconsejable indicar una hora para restaurar que se encuentre fuera del horario de trabajo, por ejemplo, de noche. Vale aclarar que, de todos modos, si la base de destino estuviera en uso, el mecanismo vuelve a intentar la próxima vez que se ejecuta el trabajo y sincroniza todo lo pendiente sin problemas.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Detener</p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font color="#000000">Frena la ejecución de los jobs. Esto puede ser necesario si se presenta algún inconveniente. En ese caso se detendrá el mecanismo haciendo uso de este botón, se resolverá el inconveniente y se volverá a arrancar, mediante el botón correspondiente, que se habilitará al detener el mecanismo</font>
+  </p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Modificar</p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font color="#000000">Permite cambiar el usuario o la clave del Server de la base para informes al que se va a conectar.</font>
+  </p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Desinstalar</p>
+  <p class="H_Parrafo_de_Sub-Item">
+    <font color="#000000">Elimina el mecanismo de log shipping de la base de datos</font>
+  </p>
+
+</body></html>
