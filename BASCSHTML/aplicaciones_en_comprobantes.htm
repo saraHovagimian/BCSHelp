@@ -41,64 +41,76 @@
 
   <h1>Aplicaciones en comprobantes</h1>
   <p class="H_Texto">Al registrar comprobantes de ventas, compras, recibos, órdenes de pago y comprobantes internos de cuenta corriente, para aplicarlos, se debe presionar alguno de los botones que se exhiben abajo a la izquierda.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\boton_para_aplicar.gif" border="0" height="27" src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" width="29"/><span lang="ES" xml:lang="ES">Aplicar</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Mediante el botón Aplicar se pueden seleccionar varios comprobantes en ambas tablas y los mismos serán aplicados entre sí, siguiendo el orden en qué se muestran en las respectivas tablas.</span></p>
-  <p class="H_Texto">Se abre una ventana con los datos del comprobante que se está registrando, destinada a registrar las aplicaciones.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Mostrar solo a comprobantes de esta imputación</p>
-  <p class="H_Parrafo_de_Item">Si se tilda, la tabla Aplicables mostrará sólo vencimientos pendientes con igual imputación contable que la del comprobante seleccionado en el encabezado.</p>
-  <p class="H_Parrafo_de_Item">Para aplicar comprobantes (grilla “Aplicables”), es posible:</p>
-  <ul style="list-style: square;">
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Usar los botones <img alt="BASCSIMAG\flecha1.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha1.gif" width="24"/> y <img alt="BASCSIMAG\flecha2.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha2.gif" width="24"/></p>
-    </li>
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Hacer doble clic sobre el comprobante</p>
-    </li>
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Oprimir el botón derecho del mouse y seleccionar una opción del menú contextual</p>
-    </li>
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Arrastrar el comprobante</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Item">En todos los casos, solo se podrá aplicar un importe igual o inferior al saldo restante del comprobante. En ningún caso se puede indicar un importe de aplicación en negativo.</p>
-  <p class="H_Parrafo_de_Item">Para desaplicar comprobantes (grilla “Aplicados”) la operatoria es similar:</p>
-  <ul style="list-style: square;">
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Usar los botones <img alt="BASCSIMAG\flecha3.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha3.gif" width="24"/> y <img alt="BASCSIMAG\flecha4.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha4.gif" width="24"/></p>
-    </li>
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Hacer doble clic sobre el comprobante</p>
-    </li>
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Oprimir el botón derecho del mouse y seleccionar la opción del menú contextual</p>
-    </li>
-    <li style="font-size: 8pt;">
-      <p class="H_Item_con_vineta">Arrastrar el comprobante</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Item">Al desaplicar, los comprobantes aparecen al inicio de la tabla “Aplicables”.</p>
-  <p class="H_Parrafo_de_Item">Para aplicar un comprobante en forma parcial, se dispone del botón <img alt="BASCSIMAG\flecha5.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha5.gif" width="24"/>. Este permite aplicar un importe menor al saldo pendiente del comprobante seleccionado o del comprobante a aplicar. Al presionarlo se abre una ventana para indicar el importe a aplicar. En ningún caso se puede indicar un importe de aplicación negativo.</p>
-  <p class="H_Parrafo_de_Item">Una vez registradas las aplicaciones, al grabar, no se generan los comprobantes de aplicación sino que simplemente se muestran en la grilla “Aplicados” los comprobantes aplicados. Si se vuelve a oprimir el botón <img alt="BASCSIMAG\boton_para_aplicar.gif" border="0" height="27" src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" width="29"/> la ventana mostrará los comprobantes que se exhiben en dicha grilla.</p>
-  <p class="H_Parrafo_de_Item">También es posible aplicar en bloque, presionando el botón<img alt="" border="0" height="24" src="../assets/images/BASCSIMAG/separador.gif" style="border: none;" width="25"/>.</p>
-  <p class="H_Parrafo_de_Item">Al grabar el comprobante, se genera un comprobante de aplicación. El sistema automáticamente repartirá los importes aplicados entre los diferentes vencimientos generados para el comprobante ingresado.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="" border="0" src="../assets/images/BASCSIMAG/rayo.gif" style="border: none;"/><span lang="ES" xml:lang="ES">Aplicar automáticamente</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Mediante el botón Aplicar automáticamente el sistema procederá a aplicar automáticamente todos los comprobantes de ambas tablas. Dicha aplicación masiva se realizará ponderando la suma de los saldos de ambas tablas de tal forma que los comprobantes de la tabla izquierda queden, en la medida de lo posible, con saldo para aplicar al recibo u orden de pago.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Por ejemplo, si la suma de saldos de la tabla de la izquierda fuera $100 y la suma de los saldos de la tabla de la derecha fuera $60, el sistema procederá a aplicar automáticamente todos los comprobantes, teniendo en cuenta que no puede superar el 60% del saldo de los comprobantes de la tabla de la izquierda, de forma que quede un 40% del saldo pendiente para aplicar al recibo u orden de pago que se está ingresando, para dichos comprobantes.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Si la suma de saldos de la tabla de la derecha es mayor a la de la izquierda se aplicará todo el saldo de los comprobantes de la tabla de la izquierda.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Si hubiera comprobantes en la tabla de la derecha del tipo nota de débito (de compras o ventas), los mismos serán aplicados al primer comprobante (de ventas o compras) disponible de la tabla de la izquierda, ya que le transfieren su saldo.</span></p>
-  <p class="H_Item_con_imagen_negrita"><img alt="" border="0" src="../assets/images/BASCSIMAG/desaplicartodo.gif" style="border: none;"/> Aplicar en bloque</p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">En el encabezado de la ventana se exhiben: el tipo y número del comprobante que se ingresa, los datos del cliente y de la imputación contable.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Luego se dispone de dos tablas, la de la izquierda incluye los comprobantes aplicables al recibo u orden de pago y la de la derecha los comprobantes que pueden aplicarse, a los indicados en la tabla de la izquierda. Ambas grillas poseen la posibilidad de definir un ordenamiento que se puede guardar en un modelo.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Para precargar dichas tablas se dispone de dos botones, uno de búsqueda de comprobantes adecuados para cada tabla (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/largavista.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">) y otro de precarga (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">). EL de búsqueda permite seleccionar los comprobantes a incluir en la grilla mientras que el de precarga incluye todos los comprobantes pendientes.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Ambos botones consideran solo comprobantes de la misma imputación contable que la indicada en el recibo u orden de pago, que estén autorizados.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Los datos que muestran dichas tablas son la fecha de vencimiento, la fecha del comprobante, el tipo y número del comprobante y el saldo del mismo. Si el comprobante se corresponde a un comprobante interno de cuenta corriente, se muestra en la tabla el comprobante refinanciado y el tooltip de dicha columna muestra los datos del comprobante interno de cuenta corriente original. El tooltip de la columna saldo muestra el importe original del vencimiento (en caso que ya haya sido cancelado en parte).</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Cabe destacar que en las órdenes de pago a clientes y en los recibos a proveedores no se incluyen las notas de débito en la tabla de la izquierda.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">En la parte inferior de ambas tablas se dispone de botones para eliminar algunas filas seleccionadas de la tabla (</span><img alt="BASCSIMAG\flecha3.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha3.gif" width="24"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">), eliminar todo (</span><img alt="BASCSIMAG\flecha4.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha4.gif" width="24"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">) o modificar el saldo de una fila (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/Lapiz.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">), en este último caso se debe tener en cuenta que sólo debe haber una sola fila seleccionada. Solo se podrán eliminarán las filas que no estén aplicadas a otros comprobantes en la tabla inferior.</span></p>
-  <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Entre ambas tablas se dispone de botones para aplicar automáticamente (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/rayo.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">), aplicar (</span><img alt="BASCSIMAG\boton_para_aplicar.gif" border="0" height="27" src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" width="29"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">) o aplicar parcialmente (</span><img alt="BASCSIMAG\flecha5.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha5.gif" width="24"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">). Para poder aplicar parcialmente tiene que haber sólo un comprobante seleccionado en ambas tablas.</span></p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> Para tener en cuenta</p>
-  <p class="H_Parrafo_de_Item">En los Recibos y Ordenes se dispone de un botón para aplicar automáticamente. Este puede utilizarse cuando se indica un importe de valores mayor a cero.</p>
-  <p class="H_Parrafo_de_Item">Al oprimirlo, el sistema aplicará el importe de valores indicado a los comprobantes con saldo pendiente, ordenándolos por la fecha de vencimiento. Esta opción está habilitada independientemente de lo que indiquen los parámetros de aplicación automática de recibos y órdenes de pago.</p>
-  <p class="H_Parrafo_de_Item">En el caso de tener activado el parámetro de aplicación automática, la aplicación automática se realizará al grabar el comprobante (siempre que no se haya indicado nada en la tabla “Aplicados”). En caso que se acceda a la solapa “Aplicaciones” no se aplicará más automáticamente, si se requiere, se podrá hacer uso del botón “Aplicar automáticamente” disponible al pie de la grilla.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\boton_para_aplicar.gif" border="0" height="27" src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" width="29"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true"><span lang="ES" xml:lang="ES">Aplicar</span></span><span data-close-text="true"><span lang="ES" xml:lang="ES">Aplicar</span></span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Mediante el botón Aplicar se pueden seleccionar varios comprobantes en ambas tablas y los mismos serán aplicados entre sí, siguiendo el orden en qué se muestran en las respectivas tablas.</span></p>
+    <p class="H_Texto">Se abre una ventana con los datos del comprobante que se está registrando, destinada a registrar las aplicaciones.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Mostrar solo a comprobantes de esta imputación</span><span data-close-text="true">Mostrar solo a comprobantes de esta imputación</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Si se tilda, la tabla Aplicables mostrará sólo vencimientos pendientes con igual imputación contable que la del comprobante seleccionado en el encabezado.</p>
+    <p class="H_Parrafo_de_Item">Para aplicar comprobantes (grilla “Aplicables”), es posible:</p>
+    <ul style="list-style: square;">
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Usar los botones <img alt="BASCSIMAG\flecha1.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha1.gif" width="24"/> y <img alt="BASCSIMAG\flecha2.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha2.gif" width="24"/></p>
+      </li>
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Hacer doble clic sobre el comprobante</p>
+      </li>
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Oprimir el botón derecho del mouse y seleccionar una opción del menú contextual</p>
+      </li>
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Arrastrar el comprobante</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Item">En todos los casos, solo se podrá aplicar un importe igual o inferior al saldo restante del comprobante. En ningún caso se puede indicar un importe de aplicación en negativo.</p>
+    <p class="H_Parrafo_de_Item">Para desaplicar comprobantes (grilla “Aplicados”) la operatoria es similar:</p>
+    <ul style="list-style: square;">
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Usar los botones <img alt="BASCSIMAG\flecha3.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha3.gif" width="24"/> y <img alt="BASCSIMAG\flecha4.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha4.gif" width="24"/></p>
+      </li>
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Hacer doble clic sobre el comprobante</p>
+      </li>
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Oprimir el botón derecho del mouse y seleccionar la opción del menú contextual</p>
+      </li>
+      <li style="font-size: 8pt;">
+        <p class="H_Item_con_vineta">Arrastrar el comprobante</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Item">Al desaplicar, los comprobantes aparecen al inicio de la tabla “Aplicables”.</p>
+    <p class="H_Parrafo_de_Item">Para aplicar un comprobante en forma parcial, se dispone del botón <img alt="BASCSIMAG\flecha5.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha5.gif" width="24"/>. Este permite aplicar un importe menor al saldo pendiente del comprobante seleccionado o del comprobante a aplicar. Al presionarlo se abre una ventana para indicar el importe a aplicar. En ningún caso se puede indicar un importe de aplicación negativo.</p>
+    <p class="H_Parrafo_de_Item">Una vez registradas las aplicaciones, al grabar, no se generan los comprobantes de aplicación sino que simplemente se muestran en la grilla “Aplicados” los comprobantes aplicados. Si se vuelve a oprimir el botón <img alt="BASCSIMAG\boton_para_aplicar.gif" border="0" height="27" src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" width="29"/> la ventana mostrará los comprobantes que se exhiben en dicha grilla.</p>
+    <p class="H_Parrafo_de_Item">También es posible aplicar en bloque, presionando el botón<img alt="" border="0" height="24" src="../assets/images/BASCSIMAG/separador.gif" style="border: none;" width="25"/>.</p>
+    <p class="H_Parrafo_de_Item">Al grabar el comprobante, se genera un comprobante de aplicación. El sistema automáticamente repartirá los importes aplicados entre los diferentes vencimientos generados para el comprobante ingresado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="" border="0" src="../assets/images/BASCSIMAG/rayo.gif" style="border: none;"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true"><span lang="ES" xml:lang="ES">Aplicar automáticamente</span></span><span data-close-text="true"><span lang="ES" xml:lang="ES">Aplicar automáticamente</span></span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Mediante el botón Aplicar automáticamente el sistema procederá a aplicar automáticamente todos los comprobantes de ambas tablas. Dicha aplicación masiva se realizará ponderando la suma de los saldos de ambas tablas de tal forma que los comprobantes de la tabla izquierda queden, en la medida de lo posible, con saldo para aplicar al recibo u orden de pago.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Por ejemplo, si la suma de saldos de la tabla de la izquierda fuera $100 y la suma de los saldos de la tabla de la derecha fuera $60, el sistema procederá a aplicar automáticamente todos los comprobantes, teniendo en cuenta que no puede superar el 60% del saldo de los comprobantes de la tabla de la izquierda, de forma que quede un 40% del saldo pendiente para aplicar al recibo u orden de pago que se está ingresando, para dichos comprobantes.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Si la suma de saldos de la tabla de la derecha es mayor a la de la izquierda se aplicará todo el saldo de los comprobantes de la tabla de la izquierda.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">Si hubiera comprobantes en la tabla de la derecha del tipo nota de débito (de compras o ventas), los mismos serán aplicados al primer comprobante (de ventas o compras) disponible de la tabla de la izquierda, ya que le transfieren su saldo.</span></p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="" border="0" src="../assets/images/BASCSIMAG/desaplicartodo.gif" style="border: none;"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true"> Aplicar en bloque</span><span data-close-text="true"> Aplicar en bloque</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item"><span lang="ES" xml:lang="ES">En el encabezado de la ventana se exhiben: el tipo y número del comprobante que se ingresa, los datos del cliente y de la imputación contable.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Luego se dispone de dos tablas, la de la izquierda incluye los comprobantes aplicables al recibo u orden de pago y la de la derecha los comprobantes que pueden aplicarse, a los indicados en la tabla de la izquierda. Ambas grillas poseen la posibilidad de definir un ordenamiento que se puede guardar en un modelo.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Para precargar dichas tablas se dispone de dos botones, uno de búsqueda de comprobantes adecuados para cada tabla (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/largavista.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">) y otro de precarga (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">). EL de búsqueda permite seleccionar los comprobantes a incluir en la grilla mientras que el de precarga incluye todos los comprobantes pendientes.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Ambos botones consideran solo comprobantes de la misma imputación contable que la indicada en el recibo u orden de pago, que estén autorizados.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Los datos que muestran dichas tablas son la fecha de vencimiento, la fecha del comprobante, el tipo y número del comprobante y el saldo del mismo. Si el comprobante se corresponde a un comprobante interno de cuenta corriente, se muestra en la tabla el comprobante refinanciado y el tooltip de dicha columna muestra los datos del comprobante interno de cuenta corriente original. El tooltip de la columna saldo muestra el importe original del vencimiento (en caso que ya haya sido cancelado en parte).</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Cabe destacar que en las órdenes de pago a clientes y en los recibos a proveedores no se incluyen las notas de débito en la tabla de la izquierda.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">En la parte inferior de ambas tablas se dispone de botones para eliminar algunas filas seleccionadas de la tabla (</span><img alt="BASCSIMAG\flecha3.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha3.gif" width="24"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">), eliminar todo (</span><img alt="BASCSIMAG\flecha4.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha4.gif" width="24"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">) o modificar el saldo de una fila (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/Lapiz.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">), en este último caso se debe tener en cuenta que sólo debe haber una sola fila seleccionada. Solo se podrán eliminarán las filas que no estén aplicadas a otros comprobantes en la tabla inferior.</span></p>
+    <p class="H_Parrafo_de_Item"><span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">Entre ambas tablas se dispone de botones para aplicar automáticamente (</span><img alt="" border="0" src="../assets/images/BASCSIMAG/rayo.gif" style="border: none;"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">), aplicar (</span><img alt="BASCSIMAG\boton_para_aplicar.gif" border="0" height="27" src="../assets/images/BASCSIMAG/boton_para_aplicar.gif" width="29"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">) o aplicar parcialmente (</span><img alt="BASCSIMAG\flecha5.gif" border="0" height="23" src="../assets/images/BASCSIMAG/flecha5.gif" width="24"/> <span lang="ES" style="mso-bidi-font-weight: bold; mso-bidi-font-style: italic;" xml:lang="ES">). Para poder aplicar parcialmente tiene que haber sólo un comprobante seleccionado en ambas tablas.</span></p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Para tener en cuenta</span><span data-close-text="true">Para tener en cuenta</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">En los Recibos y Ordenes se dispone de un botón para aplicar automáticamente. Este puede utilizarse cuando se indica un importe de valores mayor a cero.</p>
+    <p class="H_Parrafo_de_Item">Al oprimirlo, el sistema aplicará el importe de valores indicado a los comprobantes con saldo pendiente, ordenándolos por la fecha de vencimiento. Esta opción está habilitada independientemente de lo que indiquen los parámetros de aplicación automática de recibos y órdenes de pago.</p>
+    <p class="H_Parrafo_de_Item">En el caso de tener activado el parámetro de aplicación automática, la aplicación automática se realizará al grabar el comprobante (siempre que no se haya indicado nada en la tabla “Aplicados”). En caso que se acceda a la solapa “Aplicaciones” no se aplicará más automáticamente, si se requiere, se podrá hacer uso del botón “Aplicar automáticamente” disponible al pie de la grilla.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

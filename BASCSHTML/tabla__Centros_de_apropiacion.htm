@@ -20,7 +20,8 @@
   <title>Tabla Centros de apropiacion</title>
   <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
   <meta name="rh-index-keywords" content="Centros"/>
-<meta name="rh-authors" content=""/></head>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -52,30 +53,44 @@
   <p class="H_Texto">Los centros grupales permiten asociar diferentes centros de costos a una misma línea de un comprobante de compras o ventas, con un determinado criterio de prorrateo del importe entre los centros que conforman el centro grupal. Al indicar que un centro es grupal se podrán informar los centros que lo integran y el porcentaje que le corresponde a cada uno de ellos.</p>
   <p class="H_Texto">También es posible indicar centros de apropiación grupales al registrar asientos en el diario general, excepto en asientos de ajuste por inflación. Al grabar el asiento, internamente, se efectuará el desglose de las líneas en base a los centros que se agrupen en cada centro grupal indicado.</p>
   <p class="H_Texto">La información a ingresar al definir centros de apropiación es la siguiente:</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Tipo</p>
-  <p class="H_Parrafo_de_Item">Indicación del tipo de centro de apropiación que se está definiendo.</p>
-  <p class="H_Parrafo_de_Item">El sistema ofrecerá como tipos las denominaciones de los centros A y B que se ingresaron en los parámetros da datos generales.</p>
-  <p class="H_Parrafo_de_Item">Entonces, cada vez que se desee ingresar un centro de apropiación en el sistema, se debe indicar a qué tipo de centro corresponde.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
-  <p class="H_Parrafo_de_Item">Código de hasta seis caracteres que identifica al centro de apropiación y será utilizado para individualizar al mismo en todo el sistema.</p>
-  <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight: bold;">ADM,</font>
-    <font style="font-weight: bold;">CEN2</font>, <font style="font-weight: bold;">VENTAS</font>, <font style="font-weight: bold;">001</font>, etc.
-  </p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Nombre</p>
-  <p class="H_Parrafo_de_Item">Denominación del centro de apropiación. Se dispone de hasta veinte caracteres para el ingreso.</p>
-  <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight: bold;">Administración</font>, <font style="font-weight: bold;">Contaduría</font>, <font style="font-weight: bold;">Ventas</font>, <font style="font-weight: bold;">Capacitación</font>, etc.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Característica</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Individual</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Grupal</p>
-  <p class="H_Parrafo_de_Sub-Item">Los centros grupales permiten asociar diferentes centros de costos a una misma línea de un comprobante de compras o ventas y de los asientos que se registran por diario, con un determinado criterio de prorrateo del importe entre los centros que conforman el centro grupal.</p>
-  <p class="H_Parrafo_de_Sub-Item">Los centros que pueden agruparse en un centro grupal deben ser centros definidos con la Característica &quot;Individual&quot;, deben ser del mismo tipo del centro grupal y no pueden administrar negocios (versión XE).</p>
-  <p class="H_Parrafo_de_Sub-Item">Al efectuar la registración contable de un comprobante de compras o ventas, para las líneas en las que se utilizó un centro grupal, se generarán en el asiento tantas líneas como centros se agrupen en el centro grupal indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Además, a cada una de las líneas se le asigna el importe resultante de aplicar, al importe original de la línea del comprobante, el porcentaje que cada centro tenga definido.</p>
-  <p class="H_Item_con_imangen_negrita_XE"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Administra negocios </p>
-  <p class="H_Parrafo_de_Item">Indicación de si el centro de apropiación puede administrar negocios o no.</p>
-  <p class="H_Parrafo_de_Item">Si el centro de apropiación administra negocios cada vez que se ingrese el centro de apropiación en un comprobante de compras o ventas, se solicitará el ingreso del negocio al cual corresponde la línea del comprobante que se está ingresando.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Centros en los que participa</p>
-  <p class="H_Parrafo_de_Item">En esta tabla, para los centros que se definen como grupales, se deben informar los centros que lo integran y el porcentaje que le corresponde a cada uno de ellos.</p>
-  <p class="H_Parrafo_de_Item">Para los centros individuales exhibe la lista de centros grupales que lo incluyen.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Tipo</span><span data-close-text="true">Tipo</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Indicación del tipo de centro de apropiación que se está definiendo.</p>
+    <p class="H_Parrafo_de_Item">El sistema ofrecerá como tipos las denominaciones de los centros A y B que se ingresaron en los parámetros da datos generales.</p>
+    <p class="H_Parrafo_de_Item">Entonces, cada vez que se desee ingresar un centro de apropiación en el sistema, se debe indicar a qué tipo de centro corresponde.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Código</span><span data-close-text="true">Código</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Código de hasta seis caracteres que identifica al centro de apropiación y será utilizado para individualizar al mismo en todo el sistema.</p>
+    <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight:bold">ADM,</font>
+      <font style="font-weight:bold">CEN2</font>, <font style="font-weight:bold">VENTAS</font>, <font style="font-weight:bold">001</font>, etc.
+    </p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Nombre</span><span data-close-text="true">Nombre</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Denominación del centro de apropiación. Se dispone de hasta veinte caracteres para el ingreso.</p>
+    <p class="H_Parrafo_de_Item">Por ejemplo, <font style="font-weight:bold">Administración</font>, <font style="font-weight:bold">Contaduría</font>, <font style="font-weight:bold">Ventas</font>, <font style="font-weight:bold">Capacitación</font>, etc.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Característica</span><span data-close-text="true">Característica</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" style="cursor: nesw-resize;" width="24"/> Individual</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Grupal</p>
+    <p class="H_Parrafo_de_Sub-Item">Los centros grupales permiten asociar diferentes centros de costos a una misma línea de un comprobante de compras o ventas y de los asientos que se registran por diario, con un determinado criterio de prorrateo del importe entre los centros que conforman el centro grupal.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los centros que pueden agruparse en un centro grupal deben ser centros definidos con la Característica &quot;Individual&quot;, deben ser del mismo tipo del centro grupal y no pueden administrar negocios.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al efectuar la registración contable de un comprobante de compras o ventas, para las líneas en las que se utilizó un centro grupal, se generarán en el asiento tantas líneas como centros se agrupen en el centro grupal indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Además, a cada una de las líneas se le asigna el importe resultante de aplicar, al importe original de la línea del comprobante, el porcentaje que cada centro tenga definido.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Administra negocios</span><span data-close-text="true">Administra negocios</span></a> </p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Indicación de si el centro de apropiación puede administrar negocios o no.</p>
+    <p class="H_Parrafo_de_Item">Si el centro de apropiación administra negocios cada vez que se ingrese el centro de apropiación en un comprobante de compras o ventas, se solicitará el ingreso del negocio al cual corresponde la línea del comprobante que se está ingresando.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Centros en los que participa</span><span data-close-text="true">Centros en los que participa</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Item">En esta tabla, para los centros que se definen como grupales, se deben informar los centros que lo integran y el porcentaje que le corresponde a cada uno de ellos.</p>
+    <p class="H_Parrafo_de_Item">Para los centros individuales exhibe la lista de centros grupales que lo incluyen.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

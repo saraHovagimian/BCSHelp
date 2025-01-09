@@ -15,11 +15,12 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>Lineas de Pedidos y Facturas</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-<meta name="rh-index-keywords" content="Lineas de Pedidos y Facturas"/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Lineas de Pedidos y Facturas</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Lineas de Pedidos y Facturas"/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -38,407 +39,217 @@
 
 
 
-
-<h1>Lineas de Pedidos y Facturas</h1>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Ítem</p>
-<p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a> 
- , <a href="tabla__Servicios.htm">servicio</a> o <a href="tabla__Items_varios.htm">ítem 
- vario</a> ingresado en el sistema y debe estar incluido en la lista de 
- precios asociada al <a href="tabla__Clientes.htm">cliente</a> .</p>
-<p class="H_Parrafo_de_Sub-Item">Si el servicio o ítem vario es de tipo 
- Porcentaje y tiene un porcentaje asociado, el porcentaje se ofrece en 
- el campo correspondiente y no puede ser modificado.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
-<p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el dato 
- anterior.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción 
- larga, se exhibirá esta si en los <a href="parametros__Datos_generales.htm">Parámetros 
- de datos generales</a> se indica eso. Si no, se exhibirá la otra descripción. 
- Si el ítem no tiene descripción asociada, se solicitará el ingreso de 
- un detalle del mismo en este momento.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Comprobante (campo sólo disponible 
- en Facturas)</p>
-<p class="H_Parrafo_de_Sub-Item">Número de comprobante al que se hace referencia 
- en la línea de la factura.</p>
-<p class="H_Parrafo_de_Sub-Item">Este campo no está disponible si en los 
- Parámetros de datos generales se indicó que no se utiliza la columna de 
- comprobantes referenciados.</p>
-<p class="H_Parrafo_de_Sub-Item">Si la línea de la factura fue insertada 
- automáticamente en el comprobante mediante la selección de uno o más comprobantes 
- pendientes, en esta columna se exhibe el número del comprobante seleccionado, 
- correspondiente a cada ítem.</p>
-<p class="H_Parrafo_de_Sub-Item">Aquí se presenta la posibilidad de invocar 
- un pedido o un egreso de materiales para el ítem indicado en la línea 
- de la factura. Es decir, una vez indicado el ítem es posible pulsar la 
- tecla F3 para buscar y seleccionar la línea del comprobante que se desea 
- incluir en la factura. Al pulsar F3 se abre una ventana que contiene una 
- lista con todas las líneas de pedidos y comprobantes de egreso de materiales 
- pendientes, ingresados para el ítem indicado. Al seleccionar una línea 
- en esta tabla, los datos de la misma se copian a la correspondiente línea 
- de la factura. En este caso el número de comprobante, la cantidad, el 
- depósito y demás datos correspondientes a la línea del comprobante seleccionado 
- se copiarán a la línea de la factura desde la que se hizo la selección.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato no puede ingresarse manualmente. 
- Se completa automáticamente al seleccionar comprobantes mediante los botones 
- de comprobantes pendientes o mediante la tecla F3.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Observaciones</p>
-<p class="H_Parrafo_de_Sub-Item">Esta columna exhibe una &quot;X&quot; 
- en caso que esté previsto informar una Observación en relación al bien. 
- Al presionar Enter en la columna se accede a una ventana destinada a ingresar 
- el texto correspondiente a la misma.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Disponible (campo sólo disponible 
- en Pedidos de venta, de otras entregas y Cotizaciones)</p>
-<p class="H_Parrafo_de_Sub-Item">Esta columna se exhibe sólo si se ha indicado 
- en la ficha &quot;Stock externo&quot; de la tarea &quot;Control de pedidos&quot; 
- (Configuración/Parámetros), &quot;Ver stock disponible en ingreso&quot;.</p>
-<p class="H_Parrafo_de_Sub-Item">El parámetro está habilitado para los 
- pedidos de venta u otras entregas. En los pedidos de cotización o de devolución 
- la columna de stock disponible nunca está visible.</p>
-<p class="H_Parrafo_de_Sub-Item">Para los ítems con tabla de colores y 
- medidas asociada, en el caso de no indicar en el ingreso el color y medida 
- correspondiente, esta columna no muestra ningún valor. De igual forma 
- pasa con los ítems de tipo texto vario o servicio, o los ítems que no 
- administran stock.</p>
-<p class="H_Parrafo_de_Sub-Item">Para los ítems sin tabla de colores y 
- medidas asociada y para aquellos ítems con medidas y colores cuando se 
- indique en el ingreso el color y la medida correspondiente, posicionándose 
- en la columna “Disponible se mostrará al lado del valor indicado un botón 
- con puntos suspensivos.</p>
-<p class="H_Parrafo_de_Sub-Item">Presionando dicho botón aparece una ventana 
- con una grilla que muestra, para el depósito indicado en la línea correspondiente 
- al ítem en el comprobante (en la unidad de medida de venta) y a partir 
- de la fecha de dicho pedido en adelante:</p>
-<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">El 
- stock Físico existente</p>
-<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Las 
- cantidades A entregar reservado</p>
-<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">El 
- stock Disponible físico</p>
-<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Las 
- cantidades A ingresar</p>
-<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Las 
- cantidades A entregar pendiente de reservar</p>
-<p class="H_Item_con_vineta rl-p-H_Item_con_vineta">El 
- stock Disponible proyectado del ítem</p>
-<p class="H_Parrafo_de_Sub-Item">Es posible cambiar el rango de depósitos 
- a consultar indicando un depósito determinado, un conjunto de depósitos 
- o todos los depósitos en forma consolidada, dejando el dato Depósito en 
- blanco.</p>
-<p class="H_Parrafo_de_Sub-Item">La grilla incluye una línea por cada fecha 
- en la que se produzcan movimientos, que afecte la información anteriormente 
- detallada, del ítem en cuestión.</p>
-<p class="H_Parrafo_de_Sub-Item">Para el caso de ítems que manejan talle 
- y color cuyas cantidades se registran mediante la grilla, el stock 
- disponible y disponible proyectado se muestra en otra ventana.</p>
-<p class="H_Parrafo_de_Sub-Item"> </p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cantidad</p>
-<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">Aquí se presentan varias posibilidades.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem es un ítem vario o es un servicio 
- de tipo <font style="font-weight: bold;">Porcentaje</font> o <font style="font-weight: bold;">Importe</font>, 
- no se solicitará información en este campo.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de 
- medida, se solicitará este campo si las ventas se registran en la primera 
- unidad. Si las ventas se registran en segunda unidad, al ingresar la cantidad 
- en la segunda unidad se completará este dato en forma automática y podrá 
- ser modificado sólo si se indicó que la relación entre las unidades de 
- medida es <font style="font-weight: bold;">Variable</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas 
- se abrirá una ventana que solicitará el ingreso de las cantidades para 
- cada color y medida solicitada, y al finalizar el ingreso de datos en 
- esa ventana, se completará este dato con la cantidad total de unidades 
- pedidas para todos los colores y medidas del ítem.</p>
-<p class="H_Parrafo_de_Sub-Item">En ese caso, si se ha parametrizado el 
- sistema indicando que se desea ver el stock disponible en pedidos, al 
- ingresar un bien que se comercializa en medidas y colores, se abre una 
- ventana que exhibe el stock disponible para el ítem en todas las combinaciones 
- de medidas y colores en el depósito del que se trate.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem es un contenedor, se abrirá 
- una ventana que solicita el código del ítem que contiene (se ofrecerá 
- el ítem indicado como default en la tabla de contenedores del bien) y 
- la cantidad del mismo, y luego se completará este dato con la cantidad 
- resultante de multiplicar la cantidad indicada por la cantidad de unidades 
- de este indicada en la definición del ítem contenedor.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con dimensiones, se 
- abrirá una ventana que solicitará el ingreso de cantidades para cada dimensión 
- posible definida para el ítem, y luego se completará este dato con la 
- cantidad resultante de multiplicar la cantidad indicada por todas las 
- dimensiones del ítem.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Cantidad en 2da unidad</p>
-<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem indicado 
- en la segunda unidad de medida.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad 
- de medida, no se solicitará información en este campo.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de 
- medida, se solicitará este campo si las ventas se registran en la segunda 
- unidad. Si las ventas se registran en primera unidad, al ingresar la cantidad 
- en la primera unidad se completará este dato en forma automática y podrá 
- ser modificado sólo si se indicó que la relación entre las unidades de 
- medida es <font style="font-weight: bold;">Variable</font>.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Precio</p>
-<p class="H_Parrafo_de_Sub-Item">Precio del ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem es un servicio o un ítem vario 
- de tipo <font style="font-weight: bold;">Importe</font> o <font style="font-weight: bold;">Nada</font>, 
- no se solicitará información en este campo.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem es de tipo <font style="font-weight: bold;">Porcentaje</font>, 
- se solicitará el ingreso de un porcentaje que será aplicado al total del 
- comprobante ingresado hasta ese momento, y el valor resultante se exhibirá 
- en el campo <font style="font-weight: bold;">Importe</font>. De esta forma, 
- es posible aplicar descuentos o recargos parciales cuyo valor depende 
- del valor de los ítems ingresados en las líneas anteriores del pedido.</p>
-<p class="H_Parrafo_de_Sub-Item">Si la lista de precios no está en unidad 
- de ventas, se realizarán los cálculos que correspondan para expresar los 
- precios en unidad de ventas.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas, 
- en la ventana donde se ingresaron las cantidades, podrán ingresarse también 
- los precios para cada color y medida. Esto es útil si se manejan distintos 
- precios por medida o por color. Si se utiliza un solo precio, podrá indicarse 
- el mismo en este dato.</p>
-<p class="H_Parrafo_de_Sub-Item">Aquí el sistema ofrece el precio correspondiente 
- a la lista oferta asociada a la condición de venta del cliente. Si el 
- ítem no figura en esa lista, ofrece el precio de la lista estándar.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem figura en la lista con precio 
- cero, se permitirá el ingreso del precio en este momento sin ningún tipo 
- de control. Si hay un precio, el mismo sólo podrá disminuirse hasta el 
- valor indicado en la lista mínima asociada al cliente.</p>
-<p class="H_Parrafo_de_Sub-Item">Es posible ingresar precios por encima 
- del máximo y por debajo del mínimo para las facturas de venta siempre 
- y cuando así se haya parametrizado en la condición de venta que se está 
- utilizando en el ingreso del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Para facturas: Si la línea de la factura 
- hace referencia a un pedido se exhibirá el precio allí indicado, pudiendo 
- el mismo modificarse o no dependiendo de lo indicado en la condición de 
- venta asociada al comprobante. Si la condición de venta indica que se 
- factura a Precio del pedido, los precios no podrán modificarse en este 
- momento. Si la condición indica que se factura a Lista de precios del 
- pedido, se ofrecerán los precios de esa lista asociada al pedido y tampoco 
- podrán modificarse.</p>
-<p class="H_Parrafo_de_Sub-Item">Si se trata de una lista de precios a 
- consumidores finales el precio que se muestre va a tener incluidos los 
- impuestos, o sea, I.V.A e impuestos internos.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Precio en Listas dinámicas</p>
-<p class="H_Parrafo_de_Sub-Item">Si la lista que se asocia al cliente es 
- <font style="font-weight: bold;">dinámica</font>, cuando el sistema necesite 
- obtener el precio correspondiente buscará para la lista dinámica vigente 
- a la fecha del comprobante, el de la lista original y lo modificará por 
- el factor y redondeo (recuérdese que la lista dinámica es virtual, por 
- lo cual se calcula en el momento en que se requiere).</p>
-<p class="H_Parrafo_de_Sub-Item">Para calcular el precio de un ítem, lo 
- que se tiene en cuenta es el precio vigente en la lista de origen a la 
- fecha del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Al buscar el precio en la lista de origen 
- pueden producirse errores, a saber, que no hay una lista de origen vigente 
- a la fecha del comprobante, que la misma está expirada, que no está generada 
- o que no está autorizada.</p>
-<p class="H_Parrafo_de_Sub-Item">Si se encuentra el precio de la lista 
- origen, el cálculo que se hace para obtener el precio de la lista dinámica 
- es el siguiente:</p>
-<p class="H_Parrafo_de_Sub-Item">El precio de la lista origen se multiplica 
- por el factor indicado para dicha lista, y luego se aplica el cambio si 
- fuera necesario (si la lista dinámica está en moneda diferente a la de 
- origen). Para ello se utiliza la cotización de cada moneda a la fecha 
- de la operación. Luego se aplica el redondeo.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el cliente es consumidor final y la 
- lista no tiene precios a consumidores finales se le suma el IVA que corresponda 
- y se redondea. Si, además, la condición tiene indicado un porcentaje de 
- descuento o recargo, se aplica dicho valor y se redondea.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Bonificación</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de bonificación a aplicar sobre 
- el precio unitario del ítem.</p>
-<p class="H_Parrafo_de_Sub-Item">El sistema utiliza la tabla de bonificaciones 
- indicada en la condición de venta asociada al comprobante, como <font style="font-weight: bold;">Primera bonificación</font>, para obtener 
- el porcentaje a ofrecer, de acuerdo al valor del atributo del cliente 
- y al valor del atributo del ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">El porcentaje de bonificación ofrecido 
- por el sistema podrá modificarse hasta un máximo que está determinado 
- por la tabla de bonificaciones indicada en la condición de venta como 
- <font style="font-weight: bold;">Máxima de la Primera bonificación.</font></p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas, 
- en la ventana donde se ingresaron las cantidades, podrán ingresarse también 
- los porcentajes de bonificación para cada color y medida. Esto es útil 
- si se manejan distintos porcentajes por medida o por color. Si se utiliza 
- un solo porcentaje, podrá indicarse el mismo en este dato.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Bonificación 2</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de bonificación a aplicar sobre 
- el precio unitario del ítem con la primera bonificación ya aplicada.</p>
-<p class="H_Parrafo_de_Sub-Item">Se utiliza la tabla de bonificaciones 
- indicada en la condición de venta asociada al comprobante, como <font style="font-weight: bold;">Segunda bonificación</font>, para obtener 
- el porcentaje a ofrecer, de acuerdo al valor del atributo del cliente 
- y al valor del atributo del ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">El porcentaje de bonificación ofrecido 
- por el sistema podrá modificarse hasta un máximo que está determinado 
- por la tabla de bonificaciones indicada en la condición de venta como 
- <font style="font-weight: bold;">Máxima de la Segunda bonificación.</font></p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas, 
- en la ventana donde se ingresaron las cantidades, podrán ingresarse también 
- los porcentajes de bonificación para cada color y medida. Esto es útil 
- si se manejan distintos porcentajes por medida o por color. Si se utiliza 
- un solo porcentaje, podrá indicarse el mismo en este dato.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Importe</p>
-<p class="H_Parrafo_de_Sub-Item">Importe de la línea del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem es un <a href="tabla__Bienes.htm">bien</a> 
- , o un ítem vario o servicio de tipo <font style="font-weight: bold;">Porcentaje</font> 
- o <font style="font-weight: bold;">Cantidad</font>, el importe de la línea 
- ya fue calculado en base a la información ingresada en los otros campos, 
- y el mismo no podrá ser modificado.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el servicio o ítem vario es de tipo 
- <font style="font-weight: bold;">Importe</font> se debe ingresar aquí 
- el valor correspondiente al mismo.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Depósito</p>
-<p class="H_Parrafo_de_Sub-Item">Código del depósito que se asigna a la 
- línea .</p>
-<p class="H_Parrafo_de_Sub-Item">Se ofrece el depósito indicado en el encabezado 
- y el mismo puede ser modificado.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que el sistema 
- también solicitará el dato del depósito cuando se trate de un servicio 
- de tipo <font style="font-weight: bold;">cantidad</font>.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Despacho (campo sólo disponible 
- en Facturas)</p>
-<p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que 
- indica el número de despacho del cual egresa el ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems 
- que trabajan con despachos. Debe corresponder a un despacho definido en 
- el sistema y debe tener disponible la cantidad de unidades del ítem que 
- se está facturando.</p>
-<p class="H_Parrafo_de_Sub-Item">Se mostrará una lista ordenada por fecha 
- con todos los despachos en los que ingresó el ítem que se está facturando 
- y podrá seleccionarse el que corresponda.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Partida (campo sólo disponible en 
- Facturas)</p>
-<p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que 
- indica el número de partida de la cual egresa el ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems 
- que trabajan con partidas. Debe corresponder a una partida definida en 
- el sistema para el ítem indicado.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato debe indicarse si la factura 
- se genera con la correspondiente entrega de la mercadería.</p>
-<p class="H_Parrafo_de_Sub-Item">Se mostrará una lista con todas las partidas 
- en las que ingresó el ítem que se está facturando y podrá seleccionarse 
- la que corresponda.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Números de serie (campo sólo disponible 
- en Facturas)</p>
-<p class="H_Parrafo_de_Sub-Item">Si el ítem indicado trabaja con números 
- de serie, se abrirá una ventana que permitirá el ingreso de todos los 
- números de serie que egresan con el comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">El número de serie puede incluir hasta 
- 25 caracteres.</p>
-<p class="H_Parrafo_de_Sub-Item">Se solicitará el ingreso de tantos números 
- como cantidad de unidades egresen del ítem.</p>
-<p class="H_Parrafo_de_Sub-Item">El sistema brinda la posibilidad de ingresar 
- estos números en forma automática definiendo un prefijo común y un rango 
- de números para los mismos. Esto es muy útil en el caso de egresos de 
- grandes cantidades de mercadería seriada. Además, se exhibirá una lista 
- con todos los números de serie registrados en los ingresos de mercadería 
- del ítem, permitiendo también seleccionar de estos números cuáles son 
- los que egresan.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato debe indicarse si la factura 
- se genera con la correspondiente entrega de la mercadería.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Entrega (campo correspondiente a 
- Pedidos)</p>
-<p class="H_Parrafo_de_Sub-Item">Fecha de entrega de la mercadería asociada 
- a la línea del pedido interno.</p>
-<p class="H_Parrafo_de_Sub-Item">Una vez ingresada una fecha de entrega 
- para un ítem, la misma fecha será ofrecida en las siguientes líneas del 
- comprobante, pudiendo ser modificada, de ser necesario indicar una fecha 
- distinta. Esta fecha será utilizada para el control de stock y/o la asignación 
- de mercadería.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Entrega (campo correspondiente a 
- Facturas)</p>
-<p class="H_Parrafo_de_Sub-Item">Indicación de si del ítem indicado se 
- realiza la entrega al registrar la factura o no.</p>
-<p class="H_Parrafo_de_Sub-Item">Si la línea de la factura lleva asociado 
- algún egreso de mercadería, obviamente que la entrega ya fue efectuada 
- y en esta línea se indicará Sin entrega.</p>
-<p class="H_Parrafo_de_Sub-Item">En caso contrario, si se indica Con entrega, 
- con la registración de la factura se actualizará el stock y se generará 
- el remito de egreso correspondiente. Si se indica sin entrega, la factura 
- quedará pendiente y en el momento en que la entrega de la mercadería se 
- haga efectiva, se ingresará el correspondiente comprobante de egreso de 
- materiales.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Centro de apropiación A</p>
-<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro 
- de apropiación</a> A asociado a la línea del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el comprobante 
- que tiene una tabla de posiciones contables asociadas, se verificará si 
- la imputación contable de inventario de la posición contable o la imputación 
- contable de ventas o la asociada al concepto para ventas indicado en los 
- Parámetros de Datos Generales, tienen subcuentas de tipo centro de apropiación 
- A o ambos centros. En ese caso, se solicitará el ingreso del centro de 
- apropiación asociado.</p>
-<p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Centro de apropiación B</p>
-<p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro 
- de apropiación</a> B asociado a la línea del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el comprobante 
- que tiene una tabla de posiciones contables asociadas, se verificará si 
- la imputación contable de inventario de la posición contable o la imputación 
- contable de ventas o la asociada al concepto para ventas indicado en los 
- Parámetros de Datos Generales, tienen subcuentas de tipo centro de apropiación 
- B o ambos centros. En ese caso, se solicitará el ingreso del centro de 
- apropiación asociado.</p>
-<ul>
-	<li style="font-size: 11pt;"><p class="H_Item_con_imagen_negrita">Negocio 
-	 </p></li>
-</ul>
-<p class="H_Parrafo_de_Sub-Item">Si se ingresan centros de apropiación 
- y alguno de los centros indicados administra negocios se debe ingresar 
- el código del negocio asociado a la línea del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe indicarse el código de un negocio 
- ya definido en el sistema y correspondiente a la empresa en la cual se 
- ingresa el comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">Si un negocio se ha definido indicando 
- que no puede ser imputado a otro cliente, no se permitirá invocarlo si 
- el cliente del mismo no coincide con el de este comprobante.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/><a data-target="POPUP637736034" data-rhwidget="DropSpot" href="#" class="dropspot"><span data-open-text="true" data-skip-index="true"> 
- A tener en cuenta</span><span data-close-text="true"> 
- A tener en cuenta</span></a></p>
-<div data-targetname="POPUP637736034">
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si se 
-	 indicó algo en los parámetros del equipo, para la lectora de barras, 
-	 se habilita la posibilidad de, parados en el campo de la grilla de 
-	 ingreso de ítems en la columna para indicar el código del ítem, que 
-	 al oprimir Shift-F2, se abra la ventana que permite escanear un código 
-	 de barras con un scanner por puerto serie.</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Una 
-	 vez escaneado el código de barras, el mismo será procesado considerando 
-	 los parámetros definidos en el programa de parámetros de ítems en 
-	 la solapa de Lectora.</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Ya sea 
-	 que se obtenga de dicho escaneo el código del ítem o el código del 
-	 ítem y su cantidad, dichos datos serán ingresados en la grilla en 
-	 la primera fila disponible (en caso de haber filas vacías en cualquier 
-	 lugar de la grilla) o al final si no hay filas disponibles.</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En el 
-	 caso que se produzca algún error en la validación de los datos ingresados, 
-	 se informará de dicha eventualidad y la ventana para escaneo del código 
-	 de barras se cerrará, pudiendo volver a activarse oprimiendo Shift-F2.</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el 
-	 ítem escaneado no es un ítem de tipo cantidad la ventana de escaneo 
-	 también se cerrará dejando al usuario la posibilidad de ingresar el 
-	 resto de los datos relevantes del ítem.</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el 
-	 ítem escaneado es un ítem de tipo cantidad que no posee dimensiones, 
-	 contenedores, ni es un código madre de colores y/o medidas, ni maneja 
-	 despachos, partidas o series, no precisa el ingreso de centros de 
-	 apropiación, ni tiene relación variable, la ventana de escaneo seguirá 
-	 activa para poder continuar escaneando códigos de barras. En caso 
-	 contrario la ventana de escaneo se cerrará, para habilitar el ingreso 
-	 de los datos relevantes de dicho ítem (colores, medidas, despachos, 
-	 series, etc.).</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el 
-	 escaneo no incluye el dato de la cantidad del ítem se asumirá cantidad 
-	 1 en la unidad de venta de dicho ítem.</span></p>
-	<p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En el 
-	 caso en que se cierre la ventana de escaneo, pero el ítem no tenga 
-	 dimensiones, contenedores o sea un código madre de colores y/o medidas, 
-	 se considerará si se indicó una cantidad en el escaneo, en caso contrario 
-	 se tomará cantidad 1 en la unidad de venta del ítem y se podrá continuar 
-	 con el ingreso de los otros datos relevantes del ítem.</span></p></div>
-<p class="H_Parrafo_de_Sub-Item"> </p>
-<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
-	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
-	TextPopupInit('a1', 'POPUP637736034');
-//]]></script>
-
+  <h1>Lineas de Pedidos y Facturas</h1>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Ítem</span><span data-close-text="true">Ítem</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Sub-Item">Código del ítem a incluir en el comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe corresponder a un <a href="tabla__Bienes.htm">bien</a> , <a href="tabla__Servicios.htm">servicio</a> o <a href="tabla__Items_varios.htm">ítem vario</a> ingresado en el sistema y debe estar incluido en la lista de precios asociada al <a href="tabla__Clientes.htm">cliente</a> .</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el servicio o ítem vario es de tipo Porcentaje y tiene un porcentaje asociado, el porcentaje se ofrece en el campo correspondiente y no puede ser modificado.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Descripción</span><span data-close-text="true">Descripción</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Sub-Item">Descripción del ítem indicado en el dato anterior.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem tiene asociada una descripción larga, se exhibirá esta si en los <a href="parametros__Datos_generales.htm">Parámetros de datos generales</a> se indica eso. Si no, se exhibirá la otra descripción. Si el ítem no tiene descripción asociada, se solicitará el ingreso de un detalle del mismo en este momento.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Comprobante (campo sólo disponible en Facturas)</span><span data-close-text="true">Comprobante (campo sólo disponible en Facturas)</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Sub-Item">Número de comprobante al que se hace referencia en la línea de la factura.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo no está disponible si en los Parámetros de datos generales se indicó que no se utiliza la columna de comprobantes referenciados.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si la línea de la factura fue insertada automáticamente en el comprobante mediante la selección de uno o más comprobantes pendientes, en esta columna se exhibe el número del comprobante seleccionado, correspondiente a cada ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">Aquí se presenta la posibilidad de invocar un pedido o un egreso de materiales para el ítem indicado en la línea de la factura. Es decir, una vez indicado el ítem es posible pulsar la tecla F3 para buscar y seleccionar la línea del comprobante que se desea incluir en la factura. Al pulsar F3 se abre una ventana que contiene una lista con todas las líneas de pedidos y comprobantes de egreso de materiales pendientes, ingresados para el ítem indicado. Al seleccionar una línea en esta tabla, los datos de la misma se copian a la correspondiente línea de la factura. En este caso el número de comprobante, la cantidad, el depósito y demás datos correspondientes a la línea del comprobante seleccionado se copiarán a la línea de la factura desde la que se hizo la selección.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato no puede ingresarse manualmente. Se completa automáticamente al seleccionar comprobantes mediante los botones de comprobantes pendientes o mediante la tecla F3.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Observaciones</span><span data-close-text="true">Observaciones</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Sub-Item">Esta columna exhibe una &quot;X&quot; en caso que esté previsto informar una Observación en relación al bien. Al presionar Enter en la columna se accede a una ventana destinada a ingresar el texto correspondiente a la misma.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Disponible (campo sólo disponible en Pedidos de venta, de otras entregas y Cotizaciones)</span><span data-close-text="true">Disponible (campo sólo disponible en Pedidos de venta, de otras entregas y Cotizaciones)</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Sub-Item">Esta columna se exhibe sólo si se ha indicado en la ficha &quot;Stock externo&quot; de la tarea &quot;Control de pedidos&quot; (Configuración/Parámetros), &quot;Ver stock disponible en ingreso&quot;.</p>
+    <p class="H_Parrafo_de_Sub-Item">El parámetro está habilitado para los pedidos de venta u otras entregas. En los pedidos de cotización o de devolución la columna de stock disponible nunca está visible.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para los ítems con tabla de colores y medidas asociada, en el caso de no indicar en el ingreso el color y medida correspondiente, esta columna no muestra ningún valor. De igual forma pasa con los ítems de tipo texto vario o servicio, o los ítems que no administran stock.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para los ítems sin tabla de colores y medidas asociada y para aquellos ítems con medidas y colores cuando se indique en el ingreso el color y la medida correspondiente, posicionándose en la columna “Disponible se mostrará al lado del valor indicado un botón con puntos suspensivos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Presionando dicho botón aparece una ventana con una grilla que muestra, para el depósito indicado en la línea correspondiente al ítem en el comprobante (en la unidad de medida de venta) y a partir de la fecha de dicho pedido en adelante:</p>
+    <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">El stock Físico existente</p>
+    <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Las cantidades A entregar reservado</p>
+    <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">El stock Disponible físico</p>
+    <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Las cantidades A ingresar</p>
+    <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">Las cantidades A entregar pendiente de reservar</p>
+    <p class="H_Item_con_vineta rl-p-H_Item_con_vineta">El stock Disponible proyectado del ítem</p>
+    <p class="H_Parrafo_de_Sub-Item">Es posible cambiar el rango de depósitos a consultar indicando un depósito determinado, un conjunto de depósitos o todos los depósitos en forma consolidada, dejando el dato Depósito en blanco.</p>
+    <p class="H_Parrafo_de_Sub-Item">La grilla incluye una línea por cada fecha en la que se produzcan movimientos, que afecte la información anteriormente detallada, del ítem en cuestión.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para el caso de ítems que manejan talle y color cuyas cantidades se registran mediante la grilla, el stock disponible y disponible proyectado se muestra en otra ventana.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Cantidad</span><span data-close-text="true">Cantidad</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Aquí se presentan varias posibilidades.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem es un ítem vario o es un servicio de tipo <font style="font-weight:bold">Porcentaje</font> o <font style="font-weight:bold">Importe</font>, no se solicitará información en este campo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de medida, se solicitará este campo si las ventas se registran en la primera unidad. Si las ventas se registran en segunda unidad, al ingresar la cantidad en la segunda unidad se completará este dato en forma automática y podrá ser modificado sólo si se indicó que la relación entre las unidades de medida es <font style="font-weight:bold">Variable</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas se abrirá una ventana que solicitará el ingreso de las cantidades para cada color y medida solicitada, y al finalizar el ingreso de datos en esa ventana, se completará este dato con la cantidad total de unidades pedidas para todos los colores y medidas del ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">En ese caso, si se ha parametrizado el sistema indicando que se desea ver el stock disponible en pedidos, al ingresar un bien que se comercializa en medidas y colores, se abre una ventana que exhibe el stock disponible para el ítem en todas las combinaciones de medidas y colores en el depósito del que se trate.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem es un contenedor, se abrirá una ventana que solicita el código del ítem que contiene (se ofrecerá el ítem indicado como default en la tabla de contenedores del bien) y la cantidad del mismo, y luego se completará este dato con la cantidad resultante de multiplicar la cantidad indicada por la cantidad de unidades de este indicada en la definición del ítem contenedor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con dimensiones, se abrirá una ventana que solicitará el ingreso de cantidades para cada dimensión posible definida para el ítem, y luego se completará este dato con la cantidad resultante de multiplicar la cantidad indicada por todas las dimensiones del ítem.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Cantidad en 2da unidad</span><span data-close-text="true">Cantidad en 2da unidad</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades del ítem indicado en la segunda unidad de medida.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem no trabaja con doble unidad de medida, no se solicitará información en este campo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con doble unidad de medida, se solicitará este campo si las ventas se registran en la segunda unidad. Si las ventas se registran en primera unidad, al ingresar la cantidad en la primera unidad se completará este dato en forma automática y podrá ser modificado sólo si se indicó que la relación entre las unidades de medida es <font style="font-weight:bold">Variable</font>.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true">Precio</span><span data-close-text="true">Precio</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Parrafo_de_Sub-Item">Precio del ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem es un servicio o un ítem vario de tipo <font style="font-weight:bold">Importe</font> o <font style="font-weight:bold">Nada</font>, no se solicitará información en este campo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem es de tipo <font style="font-weight:bold">Porcentaje</font>, se solicitará el ingreso de un porcentaje que será aplicado al total del comprobante ingresado hasta ese momento, y el valor resultante se exhibirá en el campo <font style="font-weight:bold">Importe</font>. De esta forma, es posible aplicar descuentos o recargos parciales cuyo valor depende del valor de los ítems ingresados en las líneas anteriores del pedido.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si la lista de precios no está en unidad de ventas, se realizarán los cálculos que correspondan para expresar los precios en unidad de ventas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas, en la ventana donde se ingresaron las cantidades, podrán ingresarse también los precios para cada color y medida. Esto es útil si se manejan distintos precios por medida o por color. Si se utiliza un solo precio, podrá indicarse el mismo en este dato.</p>
+    <p class="H_Parrafo_de_Sub-Item">Aquí el sistema ofrece el precio correspondiente a la lista oferta asociada a la condición de venta del cliente. Si el ítem no figura en esa lista, ofrece el precio de la lista estándar.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem figura en la lista con precio cero, se permitirá el ingreso del precio en este momento sin ningún tipo de control. Si hay un precio, el mismo sólo podrá disminuirse hasta el valor indicado en la lista mínima asociada al cliente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Es posible ingresar precios por encima del máximo y por debajo del mínimo para las facturas de venta siempre y cuando así se haya parametrizado en la condición de venta que se está utilizando en el ingreso del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para facturas: Si la línea de la factura hace referencia a un pedido se exhibirá el precio allí indicado, pudiendo el mismo modificarse o no dependiendo de lo indicado en la condición de venta asociada al comprobante. Si la condición de venta indica que se factura a Precio del pedido, los precios no podrán modificarse en este momento. Si la condición indica que se factura a Lista de precios del pedido, se ofrecerán los precios de esa lista asociada al pedido y tampoco podrán modificarse.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se trata de una lista de precios a consumidores finales el precio que se muestre va a tener incluidos los impuestos, o sea, I.V.A e impuestos internos.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Precio en Listas dinámicas</span><span data-close-text="true">Precio en Listas dinámicas</span></a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <p class="H_Parrafo_de_Sub-Item">Si la lista que se asocia al cliente es <font style="font-weight:bold">dinámica</font>, cuando el sistema necesite obtener el precio correspondiente buscará para la lista dinámica vigente a la fecha del comprobante, el de la lista original y lo modificará por el factor y redondeo (recuérdese que la lista dinámica es virtual, por lo cual se calcula en el momento en que se requiere).</p>
+    <p class="H_Parrafo_de_Sub-Item">Para calcular el precio de un ítem, lo que se tiene en cuenta es el precio vigente en la lista de origen a la fecha del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al buscar el precio en la lista de origen pueden producirse errores, a saber, que no hay una lista de origen vigente a la fecha del comprobante, que la misma está expirada, que no está generada o que no está autorizada.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se encuentra el precio de la lista origen, el cálculo que se hace para obtener el precio de la lista dinámica es el siguiente:</p>
+    <p class="H_Parrafo_de_Sub-Item">El precio de la lista origen se multiplica por el factor indicado para dicha lista, y luego se aplica el cambio si fuera necesario (si la lista dinámica está en moneda diferente a la de origen). Para ello se utiliza la cotización de cada moneda a la fecha de la operación. Luego se aplica el redondeo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el cliente es consumidor final y la lista no tiene precios a consumidores finales se le suma el IVA que corresponda y se redondea. Si, además, la condición tiene indicado un porcentaje de descuento o recargo, se aplica dicho valor y se redondea.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#"><span data-open-text="true" data-skip-index="true">Bonificación</span><span data-close-text="true">Bonificación</span></a></p>
+  <div class="droptext" data-targetname="drop-down9">
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de bonificación a aplicar sobre el precio unitario del ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">El sistema utiliza la tabla de bonificaciones indicada en la condición de venta asociada al comprobante, como <font style="font-weight:bold">Primera bonificación</font>, para obtener el porcentaje a ofrecer, de acuerdo al valor del atributo del cliente y al valor del atributo del ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El porcentaje de bonificación ofrecido por el sistema podrá modificarse hasta un máximo que está determinado por la tabla de bonificaciones indicada en la condición de venta como <font style="font-weight:bold">Máxima de la Primera bonificación.</font>
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas, en la ventana donde se ingresaron las cantidades, podrán ingresarse también los porcentajes de bonificación para cada color y medida. Esto es útil si se manejan distintos porcentajes por medida o por color. Si se utiliza un solo porcentaje, podrá indicarse el mismo en este dato.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#"><span data-open-text="true" data-skip-index="true">Bonificación 2</span><span data-close-text="true">Bonificación 2</span></a></p>
+  <div class="droptext" data-targetname="drop-down10">
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de bonificación a aplicar sobre el precio unitario del ítem con la primera bonificación ya aplicada.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se utiliza la tabla de bonificaciones indicada en la condición de venta asociada al comprobante, como <font style="font-weight:bold">Segunda bonificación</font>, para obtener el porcentaje a ofrecer, de acuerdo al valor del atributo del cliente y al valor del atributo del ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">El porcentaje de bonificación ofrecido por el sistema podrá modificarse hasta un máximo que está determinado por la tabla de bonificaciones indicada en la condición de venta como <font style="font-weight:bold">Máxima de la Segunda bonificación.</font>
+    </p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem trabaja con colores y medidas, en la ventana donde se ingresaron las cantidades, podrán ingresarse también los porcentajes de bonificación para cada color y medida. Esto es útil si se manejan distintos porcentajes por medida o por color. Si se utiliza un solo porcentaje, podrá indicarse el mismo en este dato.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#"><span data-open-text="true" data-skip-index="true">Importe</span><span data-close-text="true">Importe</span></a></p>
+  <div class="droptext" data-targetname="drop-down11">
+    <p class="H_Parrafo_de_Sub-Item">Importe de la línea del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem es un <a href="tabla__Bienes.htm">bien</a> , o un ítem vario o servicio de tipo <font style="font-weight: bold;">Porcentaje</font> o <font style="font-weight: bold;">Cantidad</font>, el importe de la línea ya fue calculado en base a la información ingresada en los otros campos, y el mismo no podrá ser modificado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el servicio o ítem vario es de tipo <font style="font-weight: bold;">Importe</font> se debe ingresar aquí el valor correspondiente al mismo.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#"><span data-open-text="true" data-skip-index="true">Depósito</span><span data-close-text="true">Depósito</span></a></p>
+  <div class="droptext" data-targetname="drop-down12">
+    <p class="H_Parrafo_de_Sub-Item">Código del depósito que se asigna a la línea .</p>
+    <p class="H_Parrafo_de_Sub-Item">Se ofrece el depósito indicado en el encabezado y el mismo puede ser modificado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que el sistema también solicitará el dato del depósito cuando se trate de un servicio de tipo <font style="font-weight:bold">cantidad</font>.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#"><span data-open-text="true" data-skip-index="true">Despacho (campo sólo disponible en Facturas)</span><span data-close-text="true">Despacho (campo sólo disponible en Facturas)</span></a></p>
+  <div class="droptext" data-targetname="drop-down13">
+    <p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que indica el número de despacho del cual egresa el ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems que trabajan con despachos. Debe corresponder a un despacho definido en el sistema y debe tener disponible la cantidad de unidades del ítem que se está facturando.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se mostrará una lista ordenada por fecha con todos los despachos en los que ingresó el ítem que se está facturando y podrá seleccionarse el que corresponda.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#"><span data-open-text="true" data-skip-index="true">Partida (campo sólo disponible en Facturas)</span><span data-close-text="true">Partida (campo sólo disponible en Facturas)</span></a></p>
+  <div class="droptext" data-targetname="drop-down14">
+    <p class="H_Parrafo_de_Sub-Item">Código de hasta quince caracteres que indica el número de partida de la cual egresa el ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato podrá ingresarse para los ítems que trabajan con partidas. Debe corresponder a una partida definida en el sistema para el ítem indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato debe indicarse si la factura se genera con la correspondiente entrega de la mercadería.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se mostrará una lista con todas las partidas en las que ingresó el ítem que se está facturando y podrá seleccionarse la que corresponda.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down15" href="#"><span data-open-text="true" data-skip-index="true">Números de serie (campo sólo disponible en Facturas)</span><span data-close-text="true">Números de serie (campo sólo disponible en Facturas)</span></a></p>
+  <div class="droptext" data-targetname="drop-down15">
+    <p class="H_Parrafo_de_Sub-Item">Si el ítem indicado trabaja con números de serie, se abrirá una ventana que permitirá el ingreso de todos los números de serie que egresan con el comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">El número de serie puede incluir hasta 25 caracteres.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se solicitará el ingreso de tantos números como cantidad de unidades egresen del ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">El sistema brinda la posibilidad de ingresar estos números en forma automática definiendo un prefijo común y un rango de números para los mismos. Esto es muy útil en el caso de egresos de grandes cantidades de mercadería seriada. Además, se exhibirá una lista con todos los números de serie registrados en los ingresos de mercadería del ítem, permitiendo también seleccionar de estos números cuáles son los que egresan.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato debe indicarse si la factura se genera con la correspondiente entrega de la mercadería.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down16" href="#"><span data-open-text="true" data-skip-index="true">Entrega (campo correspondiente a Pedidos)</span><span data-close-text="true">Entrega (campo correspondiente a Pedidos)</span></a></p>
+  <div class="droptext" data-targetname="drop-down16">
+    <p class="H_Parrafo_de_Sub-Item">Fecha de entrega de la mercadería asociada a la línea del pedido interno.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez ingresada una fecha de entrega para un ítem, la misma fecha será ofrecida en las siguientes líneas del comprobante, pudiendo ser modificada, de ser necesario indicar una fecha distinta. Esta fecha será utilizada para el control de stock y/o la asignación de mercadería.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down17" href="#"><span data-open-text="true" data-skip-index="true">Entrega (campo correspondiente a Facturas)</span><span data-close-text="true">Entrega (campo correspondiente a Facturas)</span></a></p>
+  <div class="droptext" data-targetname="drop-down17">
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si del ítem indicado se realiza la entrega al registrar la factura o no.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si la línea de la factura lleva asociado algún egreso de mercadería, obviamente que la entrega ya fue efectuada y en esta línea se indicará Sin entrega.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso contrario, si se indica Con entrega, con la registración de la factura se actualizará el stock y se generará el remito de egreso correspondiente. Si se indica sin entrega, la factura quedará pendiente y en el momento en que la entrega de la mercadería se haga efectiva, se ingresará el correspondiente comprobante de egreso de materiales.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down18" href="#"><span data-open-text="true" data-skip-index="true">Centro de apropiación A</span><span data-close-text="true">Centro de apropiación A</span></a></p>
+  <div class="droptext" data-targetname="drop-down18">
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro de apropiación</a> A asociado a la línea del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el comprobante que tiene una tabla de posiciones contables asociadas, se verificará si la imputación contable de inventario de la posición contable o la imputación contable de ventas o la asociada al concepto para ventas indicado en los Parámetros de Datos Generales, tienen subcuentas de tipo centro de apropiación A o ambos centros. En ese caso, se solicitará el ingreso del centro de apropiación asociado.</p>
+  </div>
+  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down19" href="#"><span data-open-text="true" data-skip-index="true">Centro de apropiación B</span><span data-close-text="true">Centro de apropiación B</span></a></p>
+  <div class="droptext" data-targetname="drop-down19">
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Centros_de_apropiacion.htm">centro de apropiación</a> B asociado a la línea del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada ítem ingresado en el comprobante que tiene una tabla de posiciones contables asociadas, se verificará si la imputación contable de inventario de la posición contable o la imputación contable de ventas o la asociada al concepto para ventas indicado en los Parámetros de Datos Generales, tienen subcuentas de tipo centro de apropiación B o ambos centros. En ese caso, se solicitará el ingreso del centro de apropiación asociado.</p>
+  </div>
+  <ul>
+    <li style="font-size: 11pt;">
+      <p class="H_Item_con_imagen_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down20" href="#"><span data-open-text="true" data-skip-index="true">Negocio</span><span data-close-text="true">Negocio</span></a></p>
+      <div class="droptext" data-targetname="drop-down20">
+        <p class="H_Parrafo_de_Sub-Item">Si se ingresan centros de apropiación y alguno de los centros indicados administra negocios se debe ingresar el código del negocio asociado a la línea del comprobante.</p>
+        <p class="H_Parrafo_de_Sub-Item">Debe indicarse el código de un negocio ya definido en el sistema y correspondiente a la empresa en la cual se ingresa el comprobante.</p>
+        <p class="H_Parrafo_de_Sub-Item">Si un negocio se ha definido indicando que no puede ser imputado a otro cliente, no se permitirá invocarlo si el cliente del mismo no coincide con el de este comprobante.</p>
+      </div>
+    </li>
+  </ul>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="POPUP637736034" href="#"><span data-open-text="true" data-skip-index="true"> A tener en cuenta</span><span data-close-text="true"> A tener en cuenta</span></a></p>
+  <div data-targetname="POPUP637736034">
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si se
+        indicó algo en los parámetros del equipo, para la lectora de barras,
+        se habilita la posibilidad de, parados en el campo de la grilla de
+        ingreso de ítems en la columna para indicar el código del ítem, que
+        al oprimir Shift-F2, se abra la ventana que permite escanear un código
+        de barras con un scanner por puerto serie.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Una
+        vez escaneado el código de barras, el mismo será procesado considerando
+        los parámetros definidos en el programa de parámetros de ítems en
+        la solapa de Lectora.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Ya sea
+        que se obtenga de dicho escaneo el código del ítem o el código del
+        ítem y su cantidad, dichos datos serán ingresados en la grilla en
+        la primera fila disponible (en caso de haber filas vacías en cualquier
+        lugar de la grilla) o al final si no hay filas disponibles.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En el
+        caso que se produzca algún error en la validación de los datos ingresados,
+        se informará de dicha eventualidad y la ventana para escaneo del código
+        de barras se cerrará, pudiendo volver a activarse oprimiendo Shift-F2.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el
+        ítem escaneado no es un ítem de tipo cantidad la ventana de escaneo
+        también se cerrará dejando al usuario la posibilidad de ingresar el
+        resto de los datos relevantes del ítem.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el
+        ítem escaneado es un ítem de tipo cantidad que no posee dimensiones,
+        contenedores, ni es un código madre de colores y/o medidas, ni maneja
+        despachos, partidas o series, no precisa el ingreso de centros de
+        apropiación, ni tiene relación variable, la ventana de escaneo seguirá
+        activa para poder continuar escaneando códigos de barras. En caso
+        contrario la ventana de escaneo se cerrará, para habilitar el ingreso
+        de los datos relevantes de dicho ítem (colores, medidas, despachos,
+        series, etc.).</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">Si el
+        escaneo no incluye el dato de la cantidad del ítem se asumirá cantidad
+        1 en la unidad de venta de dicho ítem.</span></p>
+    <p class="H_Parrafo_de_Sub-Item"><span lang="ES" xml:lang="ES">En el
+        caso en que se cierre la ventana de escaneo, pero el ítem no tenga
+        dimensiones, contenedores o sea un código madre de colores y/o medidas,
+        se considerará si se indicó una cantidad en el escaneo, en caso contrario
+        se tomará cantidad 1 en la unidad de venta del ítem y se podrá continuar
+        con el ingreso de los otros datos relevantes del ítem.</span></p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <script type="text/javascript" language="JavaScript1.2">
+    //<![CDATA[
+    if (typeof(TextPopupInit) != 'function') TextPopupInit = new Function();
+    TextPopupInit('a1', 'POPUP637736034');
+    //]]>
+  </script>
 
 </body></html>

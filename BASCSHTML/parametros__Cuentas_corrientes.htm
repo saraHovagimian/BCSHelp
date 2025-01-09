@@ -15,12 +15,13 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>Parametros Cuentas corrientes</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-
-<meta name="rh-index-keywords" content="Corrientes,Cuentas"/><meta name="rh-authors" content=""/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Parametros Cuentas corrientes</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Corrientes,Cuentas"/>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -39,364 +40,165 @@
 
 
 
-<h1>Cuentas corrientes</h1>
-<p class="H_Texto">Esta tarea permite proporcionar una serie de indicaciones 
- que contribuyen a facilitar y automatizar determinados procesos del sistema 
- vinculados con la registración de los comprobantes de las cuentas corrientes 
- definidas.</p>
-<p class="H_Texto">Estas indicaciones corresponden a valores a asumir en 
- determinados datos, formas de visualizar la información, actitudes a tomar 
- en ciertas circunstancias, controles a efectuar, y diferentes maneras 
- de efectuar determinados procesos.</p>
-<p class="H_Texto">El sistema ya tiene incorporados algunos valores de 
- parámetros, pero los mismos pueden modificarse para adecuarse a las necesidades 
- de la empresa.</p>
-<p class="H_Texto">Los parámetros pueden modificarse mientras se está operando 
- con el sistema y la actualización de las opciones que se indiquen se realizará 
- en forma inmediata sin necesidad de salir del sistema y volver a entrar.</p>
-<p class="H_Texto">Los parámetros de cuentas corrientes posibles de configurar 
- son:</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- Controla crédito de clientes</p>
-<p class="H_Parrafo_de_Item">Indicación de si se controla o no el crédito 
- de los <a href="tabla__Clientes.htm">clientes</a> definidos en el sistema.</p>
-<p class="H_Parrafo_de_Item">Según la metodología de trabajo de la empresa 
- puede interesar o no controlar el crédito de los clientes en el momento 
- de registrar sus comprobantes.</p>
-<p class="H_Parrafo_de_Item">Si no se controla, el sistema nunca avisará 
- si se registra un comprobante de un cliente que excede su crédito.</p>
-<p class="H_Parrafo_de_Item">Si se controla, el sistema avisará que un 
- cliente no tiene suficiente crédito, cuando se intente registrar un comprobante 
- cuyo monto excede el crédito disponible del mismo.</p>
-<p class="H_Parrafo_de_Item">Recordemos que el crédito de un cliente se 
- conforma de la siguiente forma:</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Deuda global</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">No documentada</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Documentada propia</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Documentada de terceros</p>
-<p class="H_Parrafo_de_Item">Al registrar un comprobante en el cual interviene 
- el cliente, el sistema chequeará que ninguna de las deudas mencionadas 
- exceda el valor que le fue asignado en el momento de la definición del 
- cliente.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- Considerar pedidos</p>
-<p class="H_Parrafo_de_Item">Indicación de si se desea o no considerar 
- a los pedidos de venta en el cálculo de la deuda no documentada de las 
- cuentas corrientes de los clientes.</p>
-<p class="H_Parrafo_de_Item">Esta opción se habilita sólo en caso de haber 
- marcado previamente la opción Control Crédito de Clientes.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- Aplicación automática en Recibos</p>
-<p class="H_Parrafo_de_Item">Indicación de si se trabaja con aplicación 
- automática en recibos o no.</p>
-<p class="H_Parrafo_de_Item">Si no se trabaja con aplicación automática, 
- el sistema nunca se encargará de aplicar importes a los comprobantes del 
- titular de un recibo, durante el ingreso del mismo. El usuario es el que 
- selecciona los comprobantes a aplicar y luego indica los valores que se 
- reciben.</p>
-<p class="H_Parrafo_de_Item">Si se trabaja con aplicación automática, al 
- ingresar en un recibo los valores que recibimos del titular del mismo, 
- el sistema irá recorriendo todos los comprobantes del cliente en forma 
- cronológica y efectuando la aplicación de los mismos, hasta completar 
- el importe a aplicar de acuerdo al importe recibido.</p>
-<p class="H_Parrafo_de_Item">En el caso en que la aplicación se realice 
- automáticamente, el usuario puede, en los casos que lo considere necesario, 
- modificar la aplicación realizada por el sistema, por otra de su conveniencia.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- Aplicación automática en Ordenes de Pago</p>
-<p class="H_Parrafo_de_Item">Indicación de si se trabaja con aplicación 
- automática en órdenes de pago o no.</p>
-<p class="H_Parrafo_de_Item">Si no se trabaja con aplicación automática, 
- el sistema nunca se encargará de aplicar importes a los comprobantes del 
- titular de una orden de pago, durante el ingreso de la misma. El usuario 
- es el que selecciona los comprobantes a aplicar y luego indica los valores 
- que se entregan.</p>
-<p class="H_Parrafo_de_Item">Si se trabaja con aplicación automática, al 
- ingresar en una orden de pago los valores que entregamos al titular del 
- mismo, el sistema irá recorriendo todos los comprobantes del proveedor 
- en forma cronológica y efectuando la aplicación de los mismos, hasta completar 
- el importe a aplicar de acuerdo al importe entregado.</p>
-<p class="H_Parrafo_de_Item">En el caso en que la aplicación se realice 
- automáticamente, el usuario puede, en los casos que lo considere necesario, 
- modificar la aplicación realizada por el sistema, por otra de su conveniencia.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- No permitir eliminar comprobantes con aplicaciones en cuentas a cobrar</p>
-<p class="H_Parrafo_de_Item">Indicación de si se permiten o no eliminar 
- comprobantes a cobrar con aplicaciones.</p>
-<p class="H_Parrafo_de_Item">Si no se permite, se informará tal condición 
- al intentar eliminar un comprobante a cobrar con aplicaciones, no permitiéndose 
- eliminar ese comprobante.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- No permitir eliminar comprobantes con aplicaciones en cuentas a pagar</p>
-<p class="H_Parrafo_de_Item">Indicación de si se permiten o no eliminar 
- comprobantes a pagar con aplicaciones.</p>
-<p class="H_Parrafo_de_Item">Si no se permite, se informará tal condición 
- al intentar eliminar un comprobante a pagar con aplicaciones, no permitiéndose 
- eliminar ese comprobante.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
- Moneda para crédito de clientes</p>
-<p class="H_Parrafo_de_Item">Número de moneda en la cual se expresa el 
- crédito de los clientes del sistema.</p>
-<p class="H_Parrafo_de_Item">Debe ingresarse una <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">tabla 
- de cotizaciones</a> ya definida en el sistema.</p>
-<p class="H_Parrafo_de_Item">Al ingresar una moneda se exhibirá su símbolo; 
- y este símbolo se exhibirá además acompañando a los importes de créditos 
- máximos definidos para los clientes.</p>
-<p class="H_Parrafo_de_Item">Si no se ingresa ninguna moneda, el sistema 
- asumirá que los créditos de los clientes están expresados en moneda local.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Desvío del cambio vigente</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Recibos</p>
-<p class="H_Parrafo_de_Sub-Item">Se pueden indicar los porcentajes de desvío 
- del cambio en mas y en menos que se permiten para los recibos.</p>
-<p class="H_Parrafo_de_Sub-Item">Para los recibos que se aplican a comprobantes 
- en moneda extranjera, el sistema calcula el tipo de cambio resultante 
- entre el importe aplicado y el importe cobrado. Este cambio podrá diferir 
- del cambio a la fecha del comprobante en los porcentajes de desvío que 
- se indiquen en este punto.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el cambio resultante se encuentra dentro 
- de los porcentajes de desvío permitidos, se permitirá registrar el comprobante.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En más</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite 
- que supere el cambio del recibo al cambio a la fecha del mismo.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En menos</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite 
- que sea inferior el cambio del recibo con respecto al cambio a la fecha 
- del mismo.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Pagos</p>
-<p class="H_Parrafo_de_Sub-Item">Se pueden indicar los porcentajes de desvío 
- del cambio en mas y en menos que se permiten para los pagos.</p>
-<p class="H_Parrafo_de_Sub-Item">Para las órdenes de pago que se aplican 
- a comprobantes en moneda extranjera, el sistema calcula el tipo de cambio 
- resultante entre el importe aplicado y el importe pagado. Este cambio 
- podrá diferir del cambio a la fecha del comprobante en los porcentajes 
- de desvío que se indiquen en este punto.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el cambio resultante se encuentra dentro 
- de los porcentajes de desvío permitidos, se permitirá registrar el comprobante.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En más</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite 
- que supere el cambio de la orden de pago al cambio a la fecha del mismo.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En menos</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite 
- que sea inferior el cambio de la orden de pago con respecto al cambio 
- a la fecha del mismo.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Notas de crédito automáticas por pronto pago</p>
-<p class="H_Parrafo_de_Item">El sistema permite al ingresar recibos aplicados 
- a facturas de venta, generar en forma automática en los casos en que corresponda, 
- notas de crédito por pronto pago.</p>
-<p class="H_Parrafo_de_Item">Si se elige trabajar con estas notas de crédito, 
- al ingresar recibos y aplicarlos a facturas cuya fecha de vencimiento 
- sea posterior a la fecha del recibo, se generarán en forma automática 
- notas de crédito por pronto pago y el importe de dichas notas corresponde 
- al descuento que se aplica en cada caso.</p>
-<p class="H_Parrafo_de_Item">Los ítems con los que se generan las notas, 
- la forma en que se calculan los descuentos y los porcentajes de descuento 
- a calcular se deben indicar en las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones 
- de venta</a> para las cuales se desean generar notas por pronto pago.</p>
-<p class="H_Parrafo_de_Item">Es importante aclarar que la información que 
- se ingresa desde este punto no basta para que el sistema genere notas 
- de crédito automáticas, sino que se deben configurar además las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones 
- de venta</a> correspondientes.</p>
-<p class="H_Parrafo_de_Item">Aquí se debe indicar si se va a operar con 
- estas notas o no y en qué forma.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Nunca</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">Nunca</font>, 
- no se generarán notas de crédito automáticas por pronto pago. Tampoco 
- se podrán configurar los descuentos a calcular en el ingreso de las condiciones 
- de venta.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Por vencimiento</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas <font style="font-weight: bold;">Por 
- vencimiento</font>, se generará una nota de crédito por cada aplicación 
- del recibo en la que corresponda aplicar un descuento.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Global</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas en forma 
- <font style="font-weight: bold;">Global</font>, se generará una nota de 
- crédito por cada recibo y la misma acumulará los descuentos correspondientes 
- a todas las aplicaciones del recibo.</p>
-<p class="H_Parrafo_de_Item">Si se indica que se generan las notas, se 
- debe indicar además un importe mínimo para el cual se generan.</p>
-<p class="H_Parrafo_de_Item">En los casos en que se generen notas de este 
- tipo la numeración del comprobante, el subdiario y demás datos deben indicarse 
- en los talonarios asociados del recibo. Es decir, en el talonario del 
- recibo debe definirse un talonario asociado que permita la registración 
- de notas de crédito.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Importe 
- mínimo</p>
-<p class="H_Parrafo_de_Sub-Item">Importe mínimo para la generación de notas 
- de crédito automáticas por pronto pago.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato se encuentra habilitado si se 
- generan estas notas tanto en forma global como por vencimiento.</p>
-<p class="H_Parrafo_de_Sub-Item">Si al calcular los descuentos correspondientes 
- durante el ingreso del recibo, el importe de la o las notas resultantes 
- es inferior a este importe, no se generan las notas.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Participan 
- en el circuito de autorizaciones</p>
-<p class="H_Parrafo_de_Sub-Item">Si se tilda, las notas que se generan 
- automáticamente participan del proceso de autorización en forma similar 
- a las que se ingresan directamente. Si no se tilda, quedan autorizadas 
- al mismo momento en que se generan.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Notas de débito automáticas por mora</p>
-<p class="H_Parrafo_de_Item">El sistema permite al ingresar recibos aplicados 
- a facturas de venta, generar en forma automática en los casos en que corresponda, 
- notas de débito por mora o retraso en el pago.</p>
-<p class="H_Parrafo_de_Item">Si se elige trabajar con estas notas de débito, 
- al ingresar recibos y aplicarlos a facturas cuya fecha de vencimiento 
- sea anterior a la fecha del recibo, se generarán en forma automática notas 
- de débito por mora y el importe de dichas notas corresponde al recargo 
- que se aplica en cada caso.</p>
-<p class="H_Parrafo_de_Item">Los ítems con los que se generan las notas, 
- la forma en que se calculan los recargos y los porcentajes de recargo 
- a calcular se deben indicar en las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones 
- de venta</a> para las cuales se desean generar notas por mora.</p>
-<p class="H_Parrafo_de_Item">Es importante aclarar que la información que 
- se ingresa desde este punto no basta para que el sistema genere notas 
- de débito automáticas, sino que se deben configurar además las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones 
- de venta</a> correspondientes.</p>
-<p class="H_Parrafo_de_Item">Aquí se debe indicar si se va a operar con 
- estas notas o no y en qué forma.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Nunca</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica Nunca, no se generarán notas 
- de débito automáticas por mora. Tampoco se podrán configurar los recargos 
- a calcular en el ingreso de las condiciones de venta.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Por vencimiento</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas Por vencimiento, 
- se generará una nota de débito por cada aplicación del recibo en la que 
- corresponda aplicar un recargo.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Global</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas en forma 
- Global, se generará una nota de débito por cada recibo y la misma acumulará 
- los recargos correspondientes a todas las aplicaciones del recibo.</p>
-<p class="H_Parrafo_de_Item">Si se indica que se generan las notas, se 
- debe indicar además un importe mínimo para el cual se generan.</p>
-<p class="H_Parrafo_de_Item">En los casos en que se generen notas de este 
- tipo la numeración del comprobante, el subdiario y demás datos deben indicarse 
- en los talonarios asociados del recibo. Es decir, en el talonario del 
- recibo debe definirse un talonario asociado que permita la registración 
- de notas de débito.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Importe 
- mínimo</p>
-<p class="H_Parrafo_de_Sub-Item">Importe mínimo para la generación de notas 
- de débito automáticas por mora.</p>
-<p class="H_Parrafo_de_Sub-Item">Este dato se encuentra habilitado si se 
- generan estas notas tanto en forma global como por vencimiento.</p>
-<p class="H_Parrafo_de_Sub-Item">Si al calcular los recargos correspondientes 
- durante el ingreso del recibo, el importe de la o las notas resultantes 
- es inferior a este importe no se generan las notas.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Constancia de CUIT</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Verificar 
- constancia de CUIT</p>
-<p class="H_Parrafo_de_Sub-Item">Si se tilda, el sistema permitirá validar 
- constancia de CUIT en todos los lugares donde sea posible indicar un número 
- de CUIT, pulsando un botón que aparecerá junto al número que se indique.<img src="../assets/images/BASCSIMAG/image1.png" alt="" style="border: none;" border="0"/></p>
-<p class="H_Parrafo_de_Sub-Item">En los ingresos de comprobantes de compras 
- y ventas, el sistema realizará la verificación en forma automática al 
- indicar un cliente con CUIT para un comprobante A, y mostrará visualmente 
- el resultado de dicha verificación, en una imagen tipo ícono que se observará 
- al lado del botón de verificación.</p>
-<p class="H_Parrafo_de_Sub-Item">Dicha imagen podrá ser un tilde con fondo 
- verde, que implica que corresponde realizarle un comprobante A al cliente/proveedor. 
- Podrá ser también un signo de admiración sobre fondo amarillo, que indica 
- que se produjo un error en la verificación del CUIT. Podrá ser también 
- una cruz sobre fondo rojo, que implica que no corresponde realizarle un 
- comprobante A al cliente/proveedor.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Tipo</p>
-<p class="H_Parrafo_de_Sub-Item">Al indicar que se verifica constancia 
- de CUIT, se deberá seleccionar el método de validación pudiendo seleccionar 
- <span style="font-weight: bold;">Remoto</span> o <span style="font-weight: bold;">Local</span>.</p>
-<p class="H_Parrafo_de_Sub-Item">Esto se refiere al lugar físico donde 
- correrá el programa que realiza dicha validación. </p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Puerto</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica verificación de constancia 
- de CUIT Local, se debe indicar el puerto.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Máquina 
- donde opera </p>
-<p class="H_Parrafo_de_Sub-Item">Si se indica verificación de constancia 
- de CUIT Remota, se debe indicar el nombre o la IP de la máquina donde 
- correrá el servicio de verificación.</p>
-<p class="H_Parrafo_de_Sub-Item">Para seleccionar la máquina se ofrecen 
- dos botones, el primero permite buscar la máquina en la red y el segundo 
- es para seleccionar la máquina local en la que se está ejecutando el sistema.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Padrones de ingresos brutos</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Obtener 
- porcentajes mediante BasPadrones</p>
-<p class="H_Parrafo_de_Sub-Item">Indicación de si se realiza la importación 
- de padrones de ingresos brutos mediante la api BAS Padrones. </p>
-<p class="H_Parrafo_de_Sub-Item">BAS Padrones permite habilitar las Agencias 
- (provincias, municipios, etc.) e importar los padrones de retenciones 
- y percepciones correspondientes a cada una de ellas, mediante una interfaz 
- Web. La aplicación expone APIs que pueden ser consultadas por cualquier 
- programa, y en particular, por BASCS. </p>
-<p class="H_Parrafo_de_Sub-Item">Mediante estas APIs es posible obtener 
- los coeficientes de retención y de percepción a aplicar para un determinado 
- CUIT, en determinado período, para todas las Agencias que se hayan definido. 
- BAS Padrones se ejecuta en un servidor, en el cual se levantan los padrones 
- y éstos quedan disponibles para todas las empresas.</p>
-<p class="H_Parrafo_de_Sub-Item">Para poder realizar modificaciones en 
- este campo, el usuario debe pertenecer al role SYSADMIN, y además para 
- poder utilizar BAS Padrones, se debe utilizar Sql Server 2016 o posterior. 
- </p>
-<p class="H_Parrafo_de_Sub-Item">Al ingresar comprobantes, en el momento 
- de calcular percepciones o retenciones de ingresos brutos, se obtiene 
- de esa aplicación el porcentaje, para el CUIT y fecha en la que se realiza 
- el cálculo. Si en ese momento no se encuentra un valor de porcentaje, 
- se utiliza el porcentaje ya existente en BASCS, si lo hay, que puede haber 
- sido obtenido en un cálculo anterior, o en la importación de padrones 
- de BASCS que también puede utilizarse para importar un padrón.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> URL base 
- </p>
-<p class="H_Parrafo_de_Sub-Item">URL base para acceder a la api Bas Padrones.</p>
-<p class="H_Parrafo_de_Sub-Item">Este campo se habilita si en el campo 
- anterior se indica que se obtienen porcentajes de padrones de ingresos 
- brutos mediante la api Bas Padrones.</p>
-<p class="H_Parrafo_de_Sub-Item">Para poder realizar modificaciones en 
- este campo, el usuario debe pertenecer al role SYSADMIN. </p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
- Para tener en cuenta</p>
-<p class="H_Item_con_imagen_negrita" style="margin-left: 40px;"> </p>
-<p class="H_Item_con_imagen_negrita" style="margin-left: 40px;">Verificación 
- de CUIT en ABM de Clientes y Proveedores</p>
-<p class="H_Parrafo_de_Sub-Item">En los lugares donde es posible indicar 
- un número de CUIT se permitirá ejecutar la verificación del mismo pulsando 
- el botón que se observa al lado del número. Ese botón sólo estará visible 
- si se realiza verificación de constancia de CUIT y si el tipo de documento 
- que se está ingresando corresponde a un CUIT, tal como se observa en la 
- Figura 10. En caso de no indicar un CUIT como tipo de documento, para 
- un cliente o un proveedor, el botón se mostrará pero permanecerá deshabilitado.</p>
-<p class="H_Parrafo_de_Sub-Item">Al pulsar el botón, el resultado de dicha 
- verificación se mostrará en una pantalla de consulta de CUIT. Dicha pantalla 
- muestra en su parte superior la categoría del cliente o proveedor, y en 
- la parte inferior los detalles impositivos de dicho cliente o proveedor, 
- o errores que puedan ocurrir en el proceso de verificación. </p>
-<p class="H_Parrafo_de_Sub-Item"> </p>
-<p class="H_Item_con_imagen_negrita" style="margin-left: 40px;">Verificación 
- de CUIT en comprobantes de Ventas y Compras</p>
-<p class="H_Parrafo_de_Sub-Item">Si está habilitada la verificación de 
- constancia de CUIT, se mostrará al lado de los datos del cliente/proveedor, 
- un botón para poder realizar la misma, de modo similar a como se hace 
- en los ABMs de Clientes y Proveedores. Dicho botón estará habilitado si 
- se trata de un comprobante del tipo A y se indicó un cliente cuyo tipo 
- de documento es un CUIT, en caso contrario permanecerá deshabilitado.</p>
-<p class="H_Parrafo_de_Sub-Item">Además, en los ingresos de comprobantes 
- de compras y ventas, el sistema realizará la verificación en forma automática 
- al indicar un cliente con CUIT para un comprobante A, y mostrará visualmente 
- el resultado de dicha verificación, en una imagen tipo ícono que se observará 
- al lado del botón de verificación.</p>
-<p class="H_Parrafo_de_Sub-Item">Dicha imagen podrá ser un tilde con fondo 
- verde, que implica que corresponde realizarle un comprobante A al cliente/proveedor. 
- Podrá ser también un signo de admiración sobre fondo amarillo, que indica 
- que se produjo un error en la verificación del CUIT. Podrá ser también 
- una cruz sobre fondo rojo, que implica que no corresponde realizarle un 
- comprobante A al cliente/proveedor. </p>
-<p class="H_Parrafo_de_Sub-Item">Se dispone del mismo botón de verificación 
- en la solapa Clientes/Proveedores, cuando se trate de un comprobante A 
- realizado a un cliente/proveedor ocasional con tipo de documento CUIT, 
- al lado del número se observará el botón que permitirá efectuar  la 
- verificación. El resultado de dicha verificación se mostrará en una imagen 
- igual a la descripta anteriormente.</p>
-
+  <h1>Cuentas corrientes</h1>
+  <p class="H_Texto">Esta tarea permite proporcionar una serie de indicaciones que contribuyen a facilitar y automatizar determinados procesos del sistema vinculados con la registración de los comprobantes de las cuentas corrientes definidas.</p>
+  <p class="H_Texto">Estas indicaciones corresponden a valores a asumir en determinados datos, formas de visualizar la información, actitudes a tomar en ciertas circunstancias, controles a efectuar, y diferentes maneras de efectuar determinados procesos.</p>
+  <p class="H_Texto">El sistema ya tiene incorporados algunos valores de parámetros, pero los mismos pueden modificarse para adecuarse a las necesidades de la empresa.</p>
+  <p class="H_Texto">Los parámetros pueden modificarse mientras se está operando con el sistema y la actualización de las opciones que se indiquen se realizará en forma inmediata sin necesidad de salir del sistema y volver a entrar.</p>
+  <p class="H_Texto">Los parámetros de cuentas corrientes posibles de configurar son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Controla crédito de clientes</span><span data-close-text="true">Controla crédito de clientes</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Indicación de si se controla o no el crédito de los <a data-cke-saved-href="tabla__Clientes.htm" href="tabla__Clientes.htm">clientes</a> definidos en el sistema.</p>
+    <p class="H_Parrafo_de_Item">Según la metodología de trabajo de la empresa puede interesar o no controlar el crédito de los clientes en el momento de registrar sus comprobantes.</p>
+    <p class="H_Parrafo_de_Item">Si no se controla, el sistema nunca avisará si se registra un comprobante de un cliente que excede su crédito.</p>
+    <p class="H_Parrafo_de_Item">Si se controla, el sistema avisará que un cliente no tiene suficiente crédito, cuando se intente registrar un comprobante cuyo monto excede el crédito disponible del mismo.</p>
+    <p class="H_Parrafo_de_Item">Recordemos que el crédito de un cliente se conforma de la siguiente forma:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Deuda global</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">No documentada</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Documentada propia</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Documentada de terceros</p>
+    <p class="H_Parrafo_de_Item">Al registrar un comprobante en el cual interviene el cliente, el sistema chequeará que ninguna de las deudas mencionadas exceda el valor que le fue asignado en el momento de la definición del cliente.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Considerar pedidos</span><span data-close-text="true">Considerar pedidos</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Indicación de si se desea o no considerar a los pedidos de venta en el cálculo de la deuda no documentada de las cuentas corrientes de los clientes.</p>
+    <p class="H_Parrafo_de_Item">Esta opción se habilita sólo en caso de haber marcado previamente la opción Control Crédito de Clientes.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true"> Aplicación automática en Recibos</span><span data-close-text="true"> Aplicación automática en Recibos</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Indicación de si se trabaja con aplicación automática en recibos o no.</p>
+    <p class="H_Parrafo_de_Item">Si no se trabaja con aplicación automática, el sistema nunca se encargará de aplicar importes a los comprobantes del titular de un recibo, durante el ingreso del mismo. El usuario es el que selecciona los comprobantes a aplicar y luego indica los valores que se reciben.</p>
+    <p class="H_Parrafo_de_Item">Si se trabaja con aplicación automática, al ingresar en un recibo los valores que recibimos del titular del mismo, el sistema irá recorriendo todos los comprobantes del cliente en forma cronológica y efectuando la aplicación de los mismos, hasta completar el importe a aplicar de acuerdo al importe recibido.</p>
+    <p class="H_Parrafo_de_Item">En el caso en que la aplicación se realice automáticamente, el usuario puede, en los casos que lo considere necesario, modificar la aplicación realizada por el sistema, por otra de su conveniencia.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Aplicación automática en Ordenes de Pago</span><span data-close-text="true">Aplicación automática en Ordenes de Pago</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">Indicación de si se trabaja con aplicación automática en órdenes de pago o no.</p>
+    <p class="H_Parrafo_de_Item">Si no se trabaja con aplicación automática, el sistema nunca se encargará de aplicar importes a los comprobantes del titular de una orden de pago, durante el ingreso de la misma. El usuario es el que selecciona los comprobantes a aplicar y luego indica los valores que se entregan.</p>
+    <p class="H_Parrafo_de_Item">Si se trabaja con aplicación automática, al ingresar en una orden de pago los valores que entregamos al titular del mismo, el sistema irá recorriendo todos los comprobantes del proveedor en forma cronológica y efectuando la aplicación de los mismos, hasta completar el importe a aplicar de acuerdo al importe entregado.</p>
+    <p class="H_Parrafo_de_Item">En el caso en que la aplicación se realice automáticamente, el usuario puede, en los casos que lo considere necesario, modificar la aplicación realizada por el sistema, por otra de su conveniencia.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#"><span data-open-text="true" data-skip-index="true">No permitir eliminar comprobantes con aplicaciones en cuentas a cobrar</span><span data-close-text="true">No permitir eliminar comprobantes con aplicaciones en cuentas a cobrar</span></a></p>
+  <div class="droptext" data-targetname="drop-down13">
+    <p class="H_Parrafo_de_Item">Indicación de si se permiten o no eliminar comprobantes a cobrar con aplicaciones.</p>
+    <p class="H_Parrafo_de_Item">Si no se permite, se informará tal condición al intentar eliminar un comprobante a cobrar con aplicaciones, no permitiéndose eliminar ese comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Drop-down Title</span><span data-close-text="true">Drop-down Title</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Indicación de si se permiten o no eliminar comprobantes a pagar con aplicaciones.</p>
+    <p class="H_Parrafo_de_Item">Si no se permite, se informará tal condición al intentar eliminar un comprobante a pagar con aplicaciones, no permitiéndose eliminar ese comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Moneda para crédito de clientes</span><span data-close-text="true">Moneda para crédito de clientes</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Item">Número de moneda en la cual se expresa el crédito de los clientes del sistema.</p>
+    <p class="H_Parrafo_de_Item">Debe ingresarse una <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">tabla de cotizaciones</a> ya definida en el sistema.</p>
+    <p class="H_Parrafo_de_Item">Al ingresar una moneda se exhibirá su símbolo; y este símbolo se exhibirá además acompañando a los importes de créditos máximos definidos para los clientes.</p>
+    <p class="H_Parrafo_de_Item">Si no se ingresa ninguna moneda, el sistema asumirá que los créditos de los clientes están expresados en moneda local.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Desvío del cambio vigente</span><span data-close-text="true">Desvío del cambio vigente</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Sub-Item_con_imagen_negrita"><img data-cke-saved-src="../assets/images/BASCSIMAG/Frame.gif" src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Recibos</p>
+    <p class="H_Parrafo_de_Sub-Item">Se pueden indicar los porcentajes de desvío del cambio en mas y en menos que se permiten para los recibos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para los recibos que se aplican a comprobantes en moneda extranjera, el sistema calcula el tipo de cambio resultante entre el importe aplicado y el importe cobrado. Este cambio podrá diferir del cambio a la fecha del comprobante en los porcentajes de desvío que se indiquen en este punto.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el cambio resultante se encuentra dentro de los porcentajes de desvío permitidos, se permitirá registrar el comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En más</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite que supere el cambio del recibo al cambio a la fecha del mismo.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En menos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite que sea inferior el cambio del recibo con respecto al cambio a la fecha del mismo.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img data-cke-saved-src="../assets/images/BASCSIMAG/Frame.gif" src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Pagos</p>
+    <p class="H_Parrafo_de_Sub-Item">Se pueden indicar los porcentajes de desvío del cambio en mas y en menos que se permiten para los pagos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para las órdenes de pago que se aplican a comprobantes en moneda extranjera, el sistema calcula el tipo de cambio resultante entre el importe aplicado y el importe pagado. Este cambio podrá diferir del cambio a la fecha del comprobante en los porcentajes de desvío que se indiquen en este punto.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el cambio resultante se encuentra dentro de los porcentajes de desvío permitidos, se permitirá registrar el comprobante.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En más</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite que supere el cambio de la orden de pago al cambio a la fecha del mismo.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img data-cke-saved-src="../assets/images/BASCSIMAG/campo_para_dato.gif" src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> En menos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Porcentaje de desvío que se permite que sea inferior el cambio de la orden de pago con respecto al cambio a la fecha del mismo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true">Notas de crédito automáticas por pronto pago</span><span data-close-text="true">Notas de crédito automáticas por pronto pago</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Parrafo_de_Item">El sistema permite al ingresar recibos aplicados a facturas de venta, generar en forma automática en los casos en que corresponda, notas de crédito por pronto pago.</p>
+    <p class="H_Parrafo_de_Item">Si se elige trabajar con estas notas de crédito, al ingresar recibos y aplicarlos a facturas cuya fecha de vencimiento sea posterior a la fecha del recibo, se generarán en forma automática notas de crédito por pronto pago y el importe de dichas notas corresponde al descuento que se aplica en cada caso.</p>
+    <p class="H_Parrafo_de_Item">Los ítems con los que se generan las notas, la forma en que se calculan los descuentos y los porcentajes de descuento a calcular se deben indicar en las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones de venta</a> para las cuales se desean generar notas por pronto pago.</p>
+    <p class="H_Parrafo_de_Item">Es importante aclarar que la información que se ingresa desde este punto no basta para que el sistema genere notas de crédito automáticas, sino que se deben configurar además las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones de venta</a> correspondientes.</p>
+    <p class="H_Parrafo_de_Item">Aquí se debe indicar si se va a operar con estas notas o no y en qué forma.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Nunca</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica <font style="font-weight: bold;">Nunca</font>, no se generarán notas de crédito automáticas por pronto pago. Tampoco se podrán configurar los descuentos a calcular en el ingreso de las condiciones de venta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas <font style="font-weight: bold;">Por vencimiento</font>, se generará una nota de crédito por cada aplicación del recibo en la que corresponda aplicar un descuento.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Global</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas en forma <font style="font-weight: bold;">Global</font>, se generará una nota de crédito por cada recibo y la misma acumulará los descuentos correspondientes a todas las aplicaciones del recibo.</p>
+    <p class="H_Parrafo_de_Item">Si se indica que se generan las notas, se debe indicar además un importe mínimo para el cual se generan.</p>
+    <p class="H_Parrafo_de_Item">En los casos en que se generen notas de este tipo la numeración del comprobante, el subdiario y demás datos deben indicarse en los talonarios asociados del recibo. Es decir, en el talonario del recibo debe definirse un talonario asociado que permita la registración de notas de crédito.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Importe mínimo</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe mínimo para la generación de notas de crédito automáticas por pronto pago.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato se encuentra habilitado si se generan estas notas tanto en forma global como por vencimiento.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si al calcular los descuentos correspondientes durante el ingreso del recibo, el importe de la o las notas resultantes es inferior a este importe, no se generan las notas.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Participan en el circuito de autorizaciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda, las notas que se generan automáticamente participan del proceso de autorización en forma similar a las que se ingresan directamente. Si no se tilda, quedan autorizadas al mismo momento en que se generan.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Notas de débito automáticas por mora</span><span data-close-text="true">Notas de débito automáticas por mora</span></a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <p class="H_Parrafo_de_Item">El sistema permite al ingresar recibos aplicados a facturas de venta, generar en forma automática en los casos en que corresponda, notas de débito por mora o retraso en el pago.</p>
+    <p class="H_Parrafo_de_Item">Si se elige trabajar con estas notas de débito, al ingresar recibos y aplicarlos a facturas cuya fecha de vencimiento sea anterior a la fecha del recibo, se generarán en forma automática notas de débito por mora y el importe de dichas notas corresponde al recargo que se aplica en cada caso.</p>
+    <p class="H_Parrafo_de_Item">Los ítems con los que se generan las notas, la forma en que se calculan los recargos y los porcentajes de recargo a calcular se deben indicar en las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones de venta</a> para las cuales se desean generar notas por mora.</p>
+    <p class="H_Parrafo_de_Item">Es importante aclarar que la información que se ingresa desde este punto no basta para que el sistema genere notas de débito automáticas, sino que se deben configurar además las <a href="tabla__Condiciones_de_compra_y_venta.htm">condiciones de venta</a> correspondientes.</p>
+    <p class="H_Parrafo_de_Item">Aquí se debe indicar si se va a operar con estas notas o no y en qué forma.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Nunca</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica Nunca, no se generarán notas de débito automáticas por mora. Tampoco se podrán configurar los recargos a calcular en el ingreso de las condiciones de venta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Por vencimiento</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas Por vencimiento, se generará una nota de débito por cada aplicación del recibo en la que corresponda aplicar un recargo.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Global</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica generar las notas en forma Global, se generará una nota de débito por cada recibo y la misma acumulará los recargos correspondientes a todas las aplicaciones del recibo.</p>
+    <p class="H_Parrafo_de_Item">Si se indica que se generan las notas, se debe indicar además un importe mínimo para el cual se generan.</p>
+    <p class="H_Parrafo_de_Item">En los casos en que se generen notas de este tipo la numeración del comprobante, el subdiario y demás datos deben indicarse en los talonarios asociados del recibo. Es decir, en el talonario del recibo debe definirse un talonario asociado que permita la registración de notas de débito.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Importe mínimo</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe mínimo para la generación de notas de débito automáticas por mora.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este dato se encuentra habilitado si se generan estas notas tanto en forma global como por vencimiento.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si al calcular los recargos correspondientes durante el ingreso del recibo, el importe de la o las notas resultantes es inferior a este importe no se generan las notas.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#"><span data-open-text="true" data-skip-index="true">Constancia de CUIT</span><span data-close-text="true">Constancia de CUIT</span></a></p>
+  <div class="droptext" data-targetname="drop-down9">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Verificar constancia de CUIT</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda, el sistema permitirá validar constancia de CUIT en todos los lugares donde sea posible indicar un número de CUIT, pulsando un botón que aparecerá junto al número que se indique.<img alt="" border="0" src="../assets/images/BASCSIMAG/image1.png" style="border: none;"/></p>
+    <p class="H_Parrafo_de_Sub-Item">En los ingresos de comprobantes de compras y ventas, el sistema realizará la verificación en forma automática al indicar un cliente con CUIT para un comprobante A, y mostrará visualmente el resultado de dicha verificación, en una imagen tipo ícono que se observará al lado del botón de verificación.</p>
+    <p class="H_Parrafo_de_Sub-Item">Dicha imagen podrá ser un tilde con fondo verde, que implica que corresponde realizarle un comprobante A al cliente/proveedor. Podrá ser también un signo de admiración sobre fondo amarillo, que indica que se produjo un error en la verificación del CUIT. Podrá ser también una cruz sobre fondo rojo, que implica que no corresponde realizarle un comprobante A al cliente/proveedor.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Tipo</p>
+    <p class="H_Parrafo_de_Sub-Item">Al indicar que se verifica constancia de CUIT, se deberá seleccionar el método de validación pudiendo seleccionar <span style="font-weight: bold;">Remoto</span> o <span style="font-weight: bold;">Local</span>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esto se refiere al lugar físico donde correrá el programa que realiza dicha validación.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Puerto</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica verificación de constancia de CUIT Local, se debe indicar el puerto.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Máquina donde opera</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indica verificación de constancia de CUIT Remota, se debe indicar el nombre o la IP de la máquina donde correrá el servicio de verificación.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para seleccionar la máquina se ofrecen dos botones, el primero permite buscar la máquina en la red y el segundo es para seleccionar la máquina local en la que se está ejecutando el sistema.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#"><span data-open-text="true" data-skip-index="true">Padrones de ingresos brutos</span><span data-close-text="true">Padrones de ingresos brutos</span></a></p>
+  <div class="droptext" data-targetname="drop-down10">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Obtener porcentajes mediante BasPadrones</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se realiza la importación de padrones de ingresos brutos mediante la api BAS Padrones.</p>
+    <p class="H_Parrafo_de_Sub-Item">BAS Padrones permite habilitar las Agencias (provincias, municipios, etc.) e importar los padrones de retenciones y percepciones correspondientes a cada una de ellas, mediante una interfaz Web. La aplicación expone APIs que pueden ser consultadas por cualquier programa, y en particular, por BASCS.</p>
+    <p class="H_Parrafo_de_Sub-Item">Mediante estas APIs es posible obtener los coeficientes de retención y de percepción a aplicar para un determinado CUIT, en determinado período, para todas las Agencias que se hayan definido. BAS Padrones se ejecuta en un servidor, en el cual se levantan los padrones y éstos quedan disponibles para todas las empresas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para poder realizar modificaciones en este campo, el usuario debe pertenecer al role SYSADMIN, y además para poder utilizar BAS Padrones, se debe utilizar Sql Server 2016 o posterior.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al ingresar comprobantes, en el momento de calcular percepciones o retenciones de ingresos brutos, se obtiene de esa aplicación el porcentaje, para el CUIT y fecha en la que se realiza el cálculo. Si en ese momento no se encuentra un valor de porcentaje, se utiliza el porcentaje ya existente en BASCS, si lo hay, que puede haber sido obtenido en un cálculo anterior, o en la importación de padrones de BASCS que también puede utilizarse para importar un padrón.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> URL base</p>
+    <p class="H_Parrafo_de_Sub-Item">URL base para acceder a la api Bas Padrones.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo se habilita si en el campo anterior se indica que se obtienen porcentajes de padrones de ingresos brutos mediante la api Bas Padrones.</p>
+    <p class="H_Parrafo_de_Sub-Item">Para poder realizar modificaciones en este campo, el usuario debe pertenecer al role SYSADMIN.</p>
+  </div>
+  <p class="H_Sub-Item_con_imagen_negrita"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> Para tener en cuenta</p>
+  <p class="H_Item_con_imagen_negrita" style="margin-left: 40px;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#"><span data-open-text="true" data-skip-index="true">Verificación de CUIT en ABM de Clientes y Proveedores</span><span data-close-text="true">Verificación de CUIT en ABM de Clientes y Proveedores</span></a></p>
+  <div class="droptext" data-targetname="drop-down11">
+    <p class="H_Parrafo_de_Sub-Item">En los lugares donde es posible indicar un número de CUIT se permitirá ejecutar la verificación del mismo pulsando el botón que se observa al lado del número. Ese botón sólo estará visible si se realiza verificación de constancia de CUIT y si el tipo de documento que se está ingresando corresponde a un CUIT, tal como se observa en la Figura 10. En caso de no indicar un CUIT como tipo de documento, para un cliente o un proveedor, el botón se mostrará pero permanecerá deshabilitado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al pulsar el botón, el resultado de dicha verificación se mostrará en una pantalla de consulta de CUIT. Dicha pantalla muestra en su parte superior la categoría del cliente o proveedor, y en la parte inferior los detalles impositivos de dicho cliente o proveedor, o errores que puedan ocurrir en el proceso de verificación.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita" style="margin-left: 40px;"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#"><span data-open-text="true" data-skip-index="true">Verificación de CUIT en comprobantes de Ventas y Compras</span><span data-close-text="true">Verificación de CUIT en comprobantes de Ventas y Compras</span></a></p>
+  <div class="droptext" data-targetname="drop-down12">
+    <p class="H_Parrafo_de_Sub-Item">Si está habilitada la verificación de constancia de CUIT, se mostrará al lado de los datos del cliente/proveedor, un botón para poder realizar la misma, de modo similar a como se hace en los ABMs de Clientes y Proveedores. Dicho botón estará habilitado si se trata de un comprobante del tipo A y se indicó un cliente cuyo tipo de documento es un CUIT, en caso contrario permanecerá deshabilitado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Además, en los ingresos de comprobantes de compras y ventas, el sistema realizará la verificación en forma automática al indicar un cliente con CUIT para un comprobante A, y mostrará visualmente el resultado de dicha verificación, en una imagen tipo ícono que se observará al lado del botón de verificación.</p>
+    <p class="H_Parrafo_de_Sub-Item">Dicha imagen podrá ser un tilde con fondo verde, que implica que corresponde realizarle un comprobante A al cliente/proveedor. Podrá ser también un signo de admiración sobre fondo amarillo, que indica que se produjo un error en la verificación del CUIT. Podrá ser también una cruz sobre fondo rojo, que implica que no corresponde realizarle un comprobante A al cliente/proveedor.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se dispone del mismo botón de verificación en la solapa Clientes/Proveedores, cuando se trate de un comprobante A realizado a un cliente/proveedor ocasional con tipo de documento CUIT, al lado del número se observará el botón que permitirá efectuar  la verificación. El resultado de dicha verificación se mostrará en una imagen igual a la descripta anteriormente.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
 
 </body></html>

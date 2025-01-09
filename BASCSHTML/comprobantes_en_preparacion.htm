@@ -15,12 +15,13 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>Comprobantes en preparacion</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-
-<meta name="rh-index-keywords" content="Comprobantes en preparación"/><meta name="rh-authors" content=""/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Comprobantes en preparacion</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Comprobantes en preparación"/>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -39,35 +40,42 @@
 
 
 
-<h1>Comprobantes en preparación</h1>
-<p class="H_Texto">Los comprobantes que se registran en el sistema pueden dejarse en estado de preparación. Esto permite comenzar a registrar un comprobante, dejarlo pendiente, en borrador, y continuar con su registración en una instancia posterior.</p>
-<p class="H_Texto">Los comprobantes en preparación son considerados por el sistema como comprobantes provisorios, por lo cual no afectan las existencias en stock, ni las cuentas corrientes, ni la contabilidad, ni pueden referenciarse por otros comprobantes, etc.</p>
-<p class="H_Texto">También se dispone de la posibilidad de disponer de la vista previa de un comprobante en el momento de su ingreso. Esto significa poder ver en pantalla como quedaría impreso el comprobante que se está ingresando al sistema, pero que aún no se ha grabado.</p>
-<p class="H_Texto">La habilitación de estas funcionalidades se hace por talonario. En la solapa “ Workflow de los talonarios se dispone del campo Permite guardar en preparación; éste deberá activarse en los talonarios correspondientes a los tipos de comprobantes para los cuales se desea disponer de la posibilidad de disponer de comprobantes en preparación.</p>
-<p class="H_Texto">Asimismo, en la solapa Impresión es posible indicar, para un comprobante en preparación, que Admite vista previa. En ese caso es posible indicar un Texto para marca de agua y un archivo PDF incluyendo la plantilla para el fondo del comprobante.</p>
-<p class="H_Texto">La vista previa de los comprobantes utiliza el formato de impresión indicado en el talonario del comprobante de modo de generar una imagen igual a la impresión real de dicho comprobante.</p>
-<p class="H_Texto">Vale aclarar que la imagen se genera en un archivo de formato pdf por lo cual, para utilizar esta funcionalidad, será necesario que la PC que ejecuta la vista previa tenga instalado el Acrobat Reader.</p>
-<p class="H_Texto">El texto que se informa en el campo Texto para marca de agua se exhibirá como fondo en la vista previa de los comprobantes. La leyenda se mostrará en cada página, en forma diagonal, desde el margen izquierdo inferior al margen derecho superior. Se podrá indicar, por ejemplo, Provisorio, En preparación, etc.; si no se indica nada, BAS CS ofrece como texto para marca de agua la leyenda Borrador.</p>
-<p class="H_Texto">En el campo Plantilla para fondo es posible indicar un archivo con formato pdf. El contenido de este archivo se imprimirá en cada hoja de la vista previa del comprobante en preparación</p>
-<p class="H_Texto">Las plantillas deben ubicarse en una carpeta de nombre Plantillas, la misma deberá crearse dentro de la carpeta Programs correspondiente a la instalación de BASCS.</p>
-<p class="H_Texto">Un ejemplo de uso de la plantilla para fondo puede ser el caso en el cual los comprobantes se imprimen sobre papel totalmente blanco y el diseño forma parte del archivo de formato. En ese caso si el archivo .pdf reproduce un formulario con el diseño de la hoja (líneas, recuadros, etc.) se puede conseguir una impresión del comprobante con el formulario como fondo, obteniéndose un resultado muy similar al de la impresión sobre papel.</p>
-<p class="H_Texto_negrita">Ingreso de comprobantes</p>
-<p class="H_Texto">En las pantallas destinadas al ingreso de comprobantes se dispone de tres botones, en la barra de herramientas, destinados a la administración de los comprobantes en preparación.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/diskette.gif" alt="BASCSIMAG\diskette.gif" width="24" height="23" border="0"/> F8-Guardar en preparación</p>
-<p class="H_Parrafo_de_Item">Este botón permite guardar el comprobante como comprobante en preparación. También puede presionarse la tecla de función F8.</p>
-<p class="H_Parrafo_de_Item">Sólo se habilita si el talonario permite guardar comprobantes en preparación. Al oprimir el botón el sistema registra los datos ingresados para el comprobante hasta el momento y lo guarda como comprobante en preparación, limpiando la pantalla de ingreso. Si el talonario del comprobante que se guarda en preparación tiene numeración del tipo No numera y se indicó un número de comprobante, el comprobante queda almacenado provisoriamente con dicho número; en el resto de los casos se almacena con número cero.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Hojitas.gif" alt="BASCSIMAG\Hojitas.gif" width="24" height="23" border="0"/> F9-Recuperar en preparación</p>
-<p class="H_Parrafo_de_Item">Este botón permite recuperar comprobantes en preparación; también es posible presionar la letra de función F9.</p>
-<p class="H_Parrafo_de_Item">Se habilita cuando hay comprobantes en preparación del tipo del comprobante en cuestión, guardados por cualquier usuario. Al oprimir el botón se muestra una búsqueda con los comprobantes en preparación disponibles hasta el momento.</p>
-<p class="H_Parrafo_de_Item">La búsqueda incluye datos tales como la fecha de carga, el usuario, el tipo, prefijo y numero de comprobante, el importe total del comprobante, el código del ítem, la cantidad, el código del titular del comprobante, etc.</p>
-<p class="H_Parrafo_de_Item">Cuando se selecciona un comprobante en preparación los datos del mismo se precargan en la pantalla de carga del comprobante.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/vista_previa.gif" alt="BASCSIMAG\vista_previa.gif" width="24" height="23" border="0"/> F2-Vista preliminar</p>
-<p class="H_Parrafo_de_Item">Este botón permite obtener una vista preliminar del comprobante tal cual como se vería impreso; también puede presionarse la letra de función F2.</p>
-<p class="H_Parrafo_de_Item">Se habilita sólo si el talonario permite vista previa de comprobantes en preparación. Al oprimir este botón, y si se encuentra instalado el Acrobat Reader en la PC en cuestión, se podrá ver a través de dicho programa una imagen de la impresión del comprobante que se esté ingresando en este momento en el sistema, con los datos que estén indicados hasta el momento. El formato corresponderá al que se haya informado en el campo Formato de impresión de la solapa Impresión del talonario correspondiente al comprobante.</p>
-<p class="H_Texto">Si se está registrando un comprobante cuyo talonario indica que permite guardar comprobante en preparación y se presiona la tecla Esc luego de haber ingresado datos, el sistema avisa al usuario de dicha posibilidad pudiéndose optar por cancelar la tarea perdiendo los datos ingresados hasta el momento o guardar el comprobante en preparación. En este caso se exhibe el mensaje:</p>
-<p class="H_Texto_negrita">Se perderán los datos ingresados en el comprobante. Si no quisiera perderlos tiene la posibilidad de guardar el comprobante en preparación. ¿Desea cancelar la tarea perdiendo los datos ingresados?”</p>
-<p class="H_Texto">Si después de recuperar un comprobante en preparación se oprime el botón Escape (ESC) el sistema avisará que los datos ingresados en pantalla corresponden a un comprobante en preparación, ofreciendo al usuario la posibilidad de perder los datos ingresados hasta el momento y borrar los datos de ese estado anterior, perder los datos ingresados hasta el momento pero guardar los datos del comprobante en preparación en su estado anterior o cancelar la operación y volver a la pantalla de ingreso del comprobante.</p>
-<p class="H_Texto">Los comprobantes en preparación aparecen en la agenda del usuario agrupados en diferentes carpetas según el tipo de comprobante. Al acceder a cada carpeta, en el panel de la derecha se exhibe el detalle de los comprobantes en preparación pudiendo acceder a cada uno de ellos, directamente, haciendo clic sobre el enlace que se ofrece en la columna Recuperar.</p>
-
+  <h1>Comprobantes en preparación</h1>
+  <p class="H_Texto">Los comprobantes que se registran en el sistema pueden dejarse en estado de preparación. Esto permite comenzar a registrar un comprobante, dejarlo pendiente, en borrador, y continuar con su registración en una instancia posterior.</p>
+  <p class="H_Texto">Los comprobantes en preparación son considerados por el sistema como comprobantes provisorios, por lo cual no afectan las existencias en stock, ni las cuentas corrientes, ni la contabilidad, ni pueden referenciarse por otros comprobantes, etc.</p>
+  <p class="H_Texto">También se dispone de la posibilidad de disponer de la vista previa de un comprobante en el momento de su ingreso. Esto significa poder ver en pantalla como quedaría impreso el comprobante que se está ingresando al sistema, pero que aún no se ha grabado.</p>
+  <p class="H_Texto">La habilitación de estas funcionalidades se hace por talonario. En la solapa “ Workflow de los talonarios se dispone del campo Permite guardar en preparación; éste deberá activarse en los talonarios correspondientes a los tipos de comprobantes para los cuales se desea disponer de la posibilidad de disponer de comprobantes en preparación.</p>
+  <p class="H_Texto">Asimismo, en la solapa Impresión es posible indicar, para un comprobante en preparación, que Admite vista previa. En ese caso es posible indicar un Texto para marca de agua y un archivo PDF incluyendo la plantilla para el fondo del comprobante.</p>
+  <p class="H_Texto">La vista previa de los comprobantes utiliza el formato de impresión indicado en el talonario del comprobante de modo de generar una imagen igual a la impresión real de dicho comprobante.</p>
+  <p class="H_Texto">Vale aclarar que la imagen se genera en un archivo de formato pdf por lo cual, para utilizar esta funcionalidad, será necesario que la PC que ejecuta la vista previa tenga instalado el Acrobat Reader.</p>
+  <p class="H_Texto">El texto que se informa en el campo Texto para marca de agua se exhibirá como fondo en la vista previa de los comprobantes. La leyenda se mostrará en cada página, en forma diagonal, desde el margen izquierdo inferior al margen derecho superior. Se podrá indicar, por ejemplo, Provisorio, En preparación, etc.; si no se indica nada, BAS CS ofrece como texto para marca de agua la leyenda Borrador.</p>
+  <p class="H_Texto">En el campo Plantilla para fondo es posible indicar un archivo con formato pdf. El contenido de este archivo se imprimirá en cada hoja de la vista previa del comprobante en preparación</p>
+  <p class="H_Texto">Las plantillas deben ubicarse en una carpeta de nombre Plantillas, la misma deberá crearse dentro de la carpeta Programs correspondiente a la instalación de BASCS.</p>
+  <p class="H_Texto">Un ejemplo de uso de la plantilla para fondo puede ser el caso en el cual los comprobantes se imprimen sobre papel totalmente blanco y el diseño forma parte del archivo de formato. En ese caso si el archivo .pdf reproduce un formulario con el diseño de la hoja (líneas, recuadros, etc.) se puede conseguir una impresión del comprobante con el formulario como fondo, obteniéndose un resultado muy similar al de la impresión sobre papel.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Texto_negrita">Ingreso de comprobantes</p>
+  <p class="H_Texto">En las pantallas destinadas al ingreso de comprobantes se dispone de tres botones, en la barra de herramientas, destinados a la administración de los comprobantes en preparación.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\diskette.gif" border="0" height="23" src="../assets/images/BASCSIMAG/diskette.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">F8-Guardar en preparación</span><span data-close-text="true">F8-Guardar en preparación</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Este botón permite guardar el comprobante como comprobante en preparación. También puede presionarse la tecla de función F8.</p>
+    <p class="H_Parrafo_de_Item">Sólo se habilita si el talonario permite guardar comprobantes en preparación. Al oprimir el botón el sistema registra los datos ingresados para el comprobante hasta el momento y lo guarda como comprobante en preparación, limpiando la pantalla de ingreso. Si el talonario del comprobante que se guarda en preparación tiene numeración del tipo No numera y se indicó un número de comprobante, el comprobante queda almacenado provisoriamente con dicho número; en el resto de los casos se almacena con número cero.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Hojitas.gif" border="0" height="23" src="../assets/images/BASCSIMAG/Hojitas.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">F9-Recuperar en preparación</span><span data-close-text="true">F9-Recuperar en preparación</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Este botón permite recuperar comprobantes en preparación; también es posible presionar la letra de función F9.</p>
+    <p class="H_Parrafo_de_Item">Se habilita cuando hay comprobantes en preparación del tipo del comprobante en cuestión, guardados por cualquier usuario. Al oprimir el botón se muestra una búsqueda con los comprobantes en preparación disponibles hasta el momento.</p>
+    <p class="H_Parrafo_de_Item">La búsqueda incluye datos tales como la fecha de carga, el usuario, el tipo, prefijo y numero de comprobante, el importe total del comprobante, el código del ítem, la cantidad, el código del titular del comprobante, etc.</p>
+    <p class="H_Parrafo_de_Item">Cuando se selecciona un comprobante en preparación los datos del mismo se precargan en la pantalla de carga del comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\vista_previa.gif" border="0" height="23" src="../assets/images/BASCSIMAG/vista_previa.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">F2-Vista preliminar</span><span data-close-text="true">F2-Vista preliminar</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Este botón permite obtener una vista preliminar del comprobante tal cual como se vería impreso; también puede presionarse la letra de función F2.</p>
+    <p class="H_Parrafo_de_Item">Se habilita sólo si el talonario permite vista previa de comprobantes en preparación. Al oprimir este botón, y si se encuentra instalado el Acrobat Reader en la PC en cuestión, se podrá ver a través de dicho programa una imagen de la impresión del comprobante que se esté ingresando en este momento en el sistema, con los datos que estén indicados hasta el momento. El formato corresponderá al que se haya informado en el campo Formato de impresión de la solapa Impresión del talonario correspondiente al comprobante.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Texto">Si se está registrando un comprobante cuyo talonario indica que permite guardar comprobante en preparación y se presiona la tecla Esc luego de haber ingresado datos, el sistema avisa al usuario de dicha posibilidad pudiéndose optar por cancelar la tarea perdiendo los datos ingresados hasta el momento o guardar el comprobante en preparación. En este caso se exhibe el mensaje:</p>
+  <p class="H_Texto_negrita">Se perderán los datos ingresados en el comprobante. Si no quisiera perderlos tiene la posibilidad de guardar el comprobante en preparación. ¿Desea cancelar la tarea perdiendo los datos ingresados?”</p>
+  <p class="H_Texto">Si después de recuperar un comprobante en preparación se oprime el botón Escape (ESC) el sistema avisará que los datos ingresados en pantalla corresponden a un comprobante en preparación, ofreciendo al usuario la posibilidad de perder los datos ingresados hasta el momento y borrar los datos de ese estado anterior, perder los datos ingresados hasta el momento pero guardar los datos del comprobante en preparación en su estado anterior o cancelar la operación y volver a la pantalla de ingreso del comprobante.</p>
+  <p class="H_Texto">Los comprobantes en preparación aparecen en la agenda del usuario agrupados en diferentes carpetas según el tipo de comprobante. Al acceder a cada carpeta, en el panel de la derecha se exhibe el detalle de los comprobantes en preparación pudiendo acceder a cada uno de ellos, directamente, haciendo clic sobre el enlace que se ofrece en la columna Recuperar.</p>
 
 </body></html>

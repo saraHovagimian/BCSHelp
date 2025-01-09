@@ -5,7 +5,7 @@
 
   <meta name="gRootRelPath" content=".."/>
 	<meta name="gCommonRootRelPath" content=".."/>
-  <meta name="gTopicId" content="6.4.2.0_6"/>
+  <meta name="gTopicId" content="6.4.2.0_7"/>
   <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
   <script type="text/javascript" src="../template/scripts/common.min.js"></script>
   <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
@@ -15,12 +15,14 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>Parametros equipo</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-
-<meta name="rh-index-keywords" content="Parámetros del equipo"/><meta name="rh-authors" content=""/><meta name="topic-comment" content=""/><meta name="description" content=""/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Parametros equipo</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Parámetros del equipo"/>
+  <meta name="rh-authors" content=""/>
+  <meta name="topic-comment" content=""/>
+<meta name="description" content=""/></head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -39,318 +41,139 @@
 
 
 
-<h1>Parámetros del equipo</h1>
-<p class="H_Texto">En esta tarea deben ingresarse todos los datos relacionados 
- con la parametrización de cada uno de los equipos usuarios del sistema. 
- Los parámetros que se indiquen aquí son aquellos relacionados con el uso 
- de lectoras de medios de pago, de controladores fiscales y con la emisión 
- de informes por pantalla mediante el Acrobat Reader.</p>
-<p class="H_Texto">El sistema ya tiene incorporados algunos valores de 
- parámetros, pero los mismos pueden modificarse para adecuarse a las necesidades 
- de la empresa.</p>
-<p class="H_Texto">Los parámetros pueden modificarse mientras se está operando 
- con el sistema y la actualización de las opciones que se indiquen se realizará 
- en forma inmediata sin necesidad de salir del sistema y volver a entrar.</p>
-<p class="H_Texto">Los parámetros de datos generales posibles de configurar 
- son:</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
- Ficha Lectoras</p>
-<p class="H_Parrafo_de_Item">El sistema permite efectuar el ingreso automático 
- de los datos contenidos en cheques y en los tickets mediante la utilización 
- de Lectoras de barras y Lectoras de cheques.</p>
-<p class="H_Parrafo_de_Item">Los Cheques contienen un código impreso en 
- su parte inferior en el cual constan algunos datos referentes al mismo 
- como, por ejemplo, el código del banco según la codificación del Banco 
- Central, la sucursal y el código postal del mismo y el número de cheque. 
- Este código está compuesto por caracteres especiales de tipo magnético 
- y puede leerse mediante una Lectora de caracteres magnéticos.</p>
-<p class="H_Parrafo_de_Item">Del mismo modo, los Tickets, que habitualmente 
- se utilizan para adquirir productos alimenticios, contienen en su parte 
- inferior un código de barras que incluye algunos datos como, por ejemplo, 
- el prefijo, el número de ticket y el importe.</p>
-<p class="H_Parrafo_de_Item">Esta tarea está destinada a habilitar la utilización 
- de este tipo de unidades lectoras y debe configurarse desde cada puesto 
- de trabajo donde se desea instalar un lector de estas características. 
- Es decir, la información que consignada a través de esta tarea, se graba 
- localmente y se relaciona con el puesto del que se trate y no con la base 
- de datos.</p>
-<p class="H_Parrafo_de_Item">Para la lectura de tickets se debe habilitar 
- el Lector de barras y, para los cheques, el Lector de cheques.</p>
-<p class="H_Parrafo_de_Item">El campo Puerto permite informar el puerto 
- en el que se ha de conectar la lectora. Las opciones que se ofrecen son: 
- COM1, COM2, COM3, COM4, Ninguno y Teclado.</p>
-<p class="H_Parrafo_de_Item">Los valores a informar en los campos <font style="font-weight: bold;">Baud</font>, <font style="font-weight: bold;">Data</font> 
- y <font style="font-weight: bold;">Parity</font> dependen del lector que 
- se está instalando, por lo cual, deberán consultarse las características 
- específicas de los equipos a instalar, para poder completarlos.</p>
-<p class="H_Parrafo_de_Item">El detalle de cómo está organizada la información 
- en los códigos de barras de los tickets y en los códigos magnéticos de 
- los cheques se suministra en los <a href="tabla__Medios_de_pago.htm">Medios 
- de pago</a> que se habilitan para registrar dicho tipo de valores.</p>
-<p class="H_Parrafo_de_Item">Los <a href="tabla__Medios_de_pago.htm">Medios 
- de pago</a> a habilitar para la registración de valores desde lectoras 
- deben ser de tipo <font style="font-weight: bold;">Cheque recibido</font>, 
- ya sea que se trate de lectura por código de barras (tickets) o de lectura 
- de caracteres magnéticos (cheques). Para registrar <font style="font-weight: bold;">Cheques 
- de pago diferido</font> deberá asociarse el correspondiente tipo de medio 
- de pago.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
- Ficha Informes</p>
-<p class="H_Parrafo_de_Item">En esta ficha se puede indicar al sistema 
- que todos los informes se emitirán por pantalla mediante el Acrobat Reader.</p>
-<p class="H_Parrafo_de_Item">En caso que se configure la emisión en formato 
- PDF, los listados por pantalla correspondientes a la documentación de 
- la base de datos, que se emiten mediante el utilitario <font style="font-weight: bold;">Bascomen</font>, 
- se emitirán también en formato PDF.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Emitir por 
- pantalla mediante Acrobat Reader</p>
-<p class="H_Parrafo_de_Sub-Item">Indicación de si se desea, o no, emitir 
- los informes por pantalla utilizando el Acrobat Reader.</p>
-<p class="H_Parrafo_de_Sub-Item">El equipo donde se indique que la emisión 
- de los informes se realiza mediante el Acrobat Reader, deberá tener instalada 
- una versión de dicho producto, en caso contrario el sistema emitirá un 
- mensaje de aviso al momento en que se emitan los informes por pantalla.</p>
-<p class="H_Parrafo_de_Sub-Item">Una vez marcada esta opción ,cada vez 
- que se solicite un listado por pantalla se creará un archivo .PDF con 
- el informe solicitado. El nombre que se asigne a los archivos .PDF estará 
- compuesto por el prefijo BCS y un número.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Carpeta 
- para archivos PDF</p>
-<p class="H_Parrafo_de_Sub-Item">En este cuadro se deberá informar en que 
- carpeta se almacenarán los archivos PDF que se generen con los informes 
- emitidos por Acrobat Reader. Sólo se habilita en caso de haber marcado 
- la opción anterior.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Temporario 
- de Windows</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Esta opción es ofrecida por el sistema 
- por defecto. Si se deja marcada esta opción los archivos PDF que se generen 
- con los informes se almacenarán en la carpeta de archivos temporarios 
- de Windows.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Otro</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Si se marca esta opción el sistema 
- solicitará que se informe el nombre de la carpeta donde se almacenarán 
- los archivos PDF que se generen con los informes. La misma puede indicarse 
- directamente o buscarse mediante el botón <font style="font-weight: bold;">Examinar</font>.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Agregar 
- el usuario al nombre de carpeta</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Si se activa esta opción, los archivos 
- PDF que se generen se guardarán en la carpeta indicada en el campo precedente, 
- concatenando el nombre del usuario como subcarpeta Si la subcarpeta con 
- el nombre del usuario no existe en el directorio indicado, se creará automáticamente 
- la primera vez que se genere un informe sobre dicha carpeta.</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Este campo solo se activa en caso 
- de haber seleccionado la opción <font style="font-weight: bold;">Otro</font>.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Prefijo 
- (URL) para publicación</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Prefijo Uniform Resource Locator para 
- publicación, válido en caso que el sistema se esté ejecutando en un ambiente 
- de Terminal Services.</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Si se indica este prefijo y el sistema 
- se está ejecutando en un ambiente de Terminal Service, una vez generado 
- el archivo PDF, el mismo podrá consultarse en la máquina local del usuario 
- mediante el Internet Explorer.</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Este campo solo se activa en caso 
- de haber seleccionado la opción Otro.</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita">Borrar los archivos con antigüedad 
- mayor a <img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> dias</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Número de días previstos para borrar 
- los archivos cuya antigüedad supera al número que aquí se indique. El 
- mínimo que ese puede indicar en este campo es 3 días.</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Si no se indica ningún dato en este 
- campo, el sistema borrará automáticamente los archivos que tengan una 
- antigüedad superior a los 60 días (tanto si se ha indicado Temporario 
- de Windows como si se ha indicado Otro).</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
- Ficha Controlador fiscal</p>
-<p class="H_Parrafo_de_Item">En esta ficha se podrá indicar si el equipo 
- que se está parametrizando utilizará para la emisión de comprobantes un 
- Controlador fiscal.</p>
-<p class="H_Parrafo_de_Item">Es importante recordar que la configuración 
- corresponde al equipo en el cual se está ejecutando el programa.</p>
-<p class="H_Parrafo_de_Item">Al indicar que un equipo imprime con Controlador 
- fiscal, no será posible imprimir ningún comprobante mediante otra impresora. 
- Los comprobantes habilitados para ser impresos por controlador fiscal 
- son: facturas de venta A, B y C; Notas de Crédito y Débito A,B y C; Remitos 
- de egreso y Recibos.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> El equipo 
- Imprime con controlador fiscal</p>
-<p class="H_Parrafo_de_Sub-Item">Indicación de si el equipo que se está 
- configurando imprimirá los comprobantes mediante un controlador fiscal. 
- Al habilitar esta opción se activan los tres campos restantes.</p>
-<p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que solo 
- se podrá imprimir en controlador fiscal si el equipo dispone de un dispositivo 
- de control de licencias habilitado para impresión en controlador fiscal. 
- El dispositivo de control del licencias tiene que estar configurado por 
- puesto, es decir, no puede ser de tipo ingreso concurrente.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el equipo dispone de un dispositivo 
- para impresión por <font style="font-weight: bold;">Controlador Fiscal</font>, 
- sólo se podrán imprimir comprobantes cuyo talonario tenga indicado impresión 
- por <font style="font-weight: bold;">Controlador Fiscal</font> y en los 
- que el nombre del Controlador coincida con el indicado en esta tarea. 
- Se podrán ingresar, pero no imprimir, comprobantes que no operan con <font style="font-weight: bold;">Controlador Fiscal</font> y no se podrán 
- ingresar ni imprimir comprobantes cuyo talonario imprima en otro <font style="font-weight: bold;">Controlador Fiscal</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Se podrán imprimir informes pero no se 
- podrán imprimir cheques ni comprobantes de retenciones.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el equipo no dispone de un dispositivo 
- para impresión por Controlador Fiscal, sólo se podrán imprimir comprobantes 
- que no operan con Controlador Fiscal. No se podrán ingresar ni imprimir 
- comprobantes cuyo <a href="tabla__Talonarios.htm">talonario</a> imprima 
- en Controlador Fiscal. Se podrán imprimir cheques y comprobantes de retención.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Controlador</p>
-<p class="H_Parrafo_de_Sub-Item">En este campo se deberá seleccionar el 
- equipo controlador que se desea instalar. Los modelos de controlador fiscal 
- que admite el sistema son: <font style="font-weight: bold;">Hasar SMH/P-320F</font> 
- y <font style="font-weight: bold;">NCR2008</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el equipo dispone de un dispositivo 
- para impresión por <font style="font-weight: bold;">Controlador Fiscal</font>, 
- sólo se podrán imprimir comprobantes cuyo talonario tenga indicado impresión 
- por <font style="font-weight: bold;">Controlador Fiscal</font> y en los 
- que el nombre del Controlador coincida con el indicado en este campo.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Nombre</p>
-<p class="H_Parrafo_de_Sub-Item">Nombre o denominación con la que se ha 
- de identificar al controlador fiscal en todo el sistema. Es un dato obligatorio.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Puerto</p>
-<p class="H_Parrafo_de_Sub-Item">Debe indicarse el puerto en el que se 
- ha de instalar el controlador. Las opciones son: COM1,COM2, COM3 o COM4.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Información 
- de ítems</p>
-<p class="H_Parrafo_de_Sub-Item">Permite especificar, para el puesto, como 
- se quieren imprimir los bienes.</p>
-<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
- Código y descripción encolumnado</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Imprime encolumnado.</p>
-<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
- Código y descripción no encolumnado</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Imprime sin tener en cuenta las columnas.</p>
-<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> 
- Descripción sola</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">No imprime el código.</p>
-<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- Imprime observación de los ítems</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Si está activado se imprime el texto 
- registrado en la columna Observaciones, en relación al ítem.</p>
-<p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> 
- Imprime información de despachos y partidas</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Si está activado se imprime la información 
- del despacho y de la partida y su correspondiente vencimiento.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Incluye 
- datos del vendedor</p>
-<p class="H_Parrafo_de_Sub-Item">Si está activado se imprimen los datos 
- del vendedor en el ticket.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Línea</p>
-<p class="H_Parrafo_de_Sub-Item">En caso de imprimir los datos del vendedor, 
- se debe indicar la línea en la cual se han de incluir.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Resolver 
- inconsistencias en pagos con detalle al pie</p>
-<p class="H_Parrafo_de_Sub-Item">Este parámetro resuelve inconsistencias 
- que se presentan cuando se registra un cobro con un medio de pago y se 
- excede el total del importe del comprobante.</p>
-<p class="H_Parrafo_de_Sub-Item">En caso de estar activado, se detallan 
- los medios de pago en las líneas al pie del comprobante indicándose en 
- relación al medio de pago Varios, el importe total del comprobante y se 
- detalla en líneas al pie el valor real del cheque (importe mayor al comprobante) 
- y el efectivo (dinero que se devuelve).</p>
-<p class="H_Parrafo_de_Sub-Item">Si no se activa este campo la impresora 
- fiscal no permite importes superiores de cobros al comprobante, de manera 
- tal que registra que se recibe un valor por X pesos donde X es igual al 
- monto del comprobante.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
- Apariencia</p>
-<p class="H_Parrafo_de_Item">En esta solapa es posible modificar el aspecto 
- visual de las ventanas del sistema. Al seleccionar diferentes opciones, 
- en el cuadro de la derecha, puede visualizarse la apariencia resultante 
- obtenida.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Utiliza 
- apariencia de Windows</p>
-<p class="H_Parrafo_de_Sub-Item">Al activar este campo se habilitan los 
- campos del cuadro Apariencia de tablas pudiéndose personalizar los colores 
- de las filas que componen las grillas y el color con el cual se distinguen 
- las filas que se seleccionan. En este último caso es posible también indicar 
- el color del texto.</p>
-<p class="H_Parrafo_de_Sub-Item">En caso que no se active este campo el 
- pautado de las grillas y demás datos es el estándar del sistema.(combinación 
- de colores gris y celeste).</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Pautado</p>
-<p class="H_Parrafo_de_Sub-Item">Haciendo clic en el botón Color es posible 
- elegir de la tabla de colores, colores básicos o personalizados para:</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Filas 
- pares</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Filas 
- impares</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Selección</p>
-<p class="H_Parrafo_de_Sub-Item">Haciendo clic en el botón Color es posible 
- elegir de la tabla de colores, colores básicos o personalizados para:</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Fila 
- seleccionada</p>
-<p class="H_Sub-Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Texto 
- seleccionado</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
- Otros</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Chequear 
- puesto de trabajo con BasAp</p>
-<p class="H_Parrafo_de_Sub-Item">Ofrece la actualización del puesto en 
- forma automática al bajar FX en BASAP Admin.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Mostrar 
- avisos de BasCore</p>
-<p class="H_Parrafo_de_Sub-Item">Por default estos avisos no se muestran. 
- Al ingresar al sistema usando un DCL administrado por BasCore, si el mismo 
- tiene vencimiento y se encuentra vencido, en período de gracia, o está 
- por vencer, dicho aviso se mostrará o no según lo parametrizado aquí.</p>
-<p class="H_Parrafo_de_Sub-Item"> </p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Foco.gif" alt="BASCSIMAG\Foco.gif" width="24" height="24" border="0"/> 
- A tener en cuenta</p>
-<p class="H_Texto_negrita">Impresión Fiscal</p>
-<p class="H_Parrafo_de_Item">Cuando se registra el cobro de una factura 
- con un medio de pago por un importe que supera el total de comprobante, 
- la controladora fiscal manda el total del comprobante como importe del 
- medio de pago y no el importe que se ha informado.</p>
-<p class="H_Parrafo_de_Item">Si no está tildado el campo Resolver inconsistencias 
- en pagos con detalle al pie la impresión fiscal permite incluir, en el 
- sector de pagos, hasta 4 líneas de pagos. La impresión del vendedor es 
- parametrizable y puede incluirse entre las líneas 1-5 (cabecera) y entre 
- la 11-14 (líneas al pie).</p>
-<p class="H_Parrafo_de_Item">Si el campo Resolver inconsistencias en pagos 
- con detalle al pie sí está tildado no modifica la impresión del vendedor, 
- es decir, el dato se imprime donde se haya parametrizado (encabezado o 
- pie).En cambio, se modifica la impresión de los medios de pago de la siguiente 
- manera:</p>
-<p class="H_Parrafo_de_Item">Si el medio de pago que excede el importe 
- total del comprobante es el cuarto, y hay mas medios de pago o una posición 
- mayor, entonces el importe se acumula en la cuarta línea de la zona correspondiente 
- a los medios de pago con la suma de los pagos restantes y la descripción 
- Otros.</p>
-<p class="H_Parrafo_de_Item">Por ejemplo, si el total de la factura es 
- 50$, y se cobra con:</p>
-<p class="H_Parrafo_de_Item">Medio de pago 1: 10$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 2: 10$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 3: 10$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 4: 25$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 5: -5$</p>
-<p class="H_Parrafo_de_Item">En la zona de pagos se imprimirá:</p>
-<p class="H_Parrafo_de_Item">Medio de pago 1: 10$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 2: 10$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 3: 10$</p>
-<p class="H_Parrafo_de_Item">Otros:   20$</p>
-<p class="H_Parrafo_de_Item">Este mecanismo es indistinto tanto para los 
- pagos que superen el total de la factura o no.</p>
-<p class="H_Parrafo_de_Item">En cambio, si el medio de pago que excede 
- el total se encuentra entre la primer o cuarta fila y no hay más de 4 
- medios de pago, en la zona de medios de pago se indica, como descripción, 
- Varios con el importe correspondiente a la factura. Luego, en la zona 
- de Líneas al pie,del documento, se detallan los medios de pago respetando 
- la posición del vendedor (si se lo hubiese parametrizado para imprimir 
- al pie).</p>
-<p class="H_Parrafo_de_Item">De no alcanzar las líneas del pie (4), se 
- acumula en la ultima línea, con la descripción Otros, el resto del importe.</p>
-<p class="H_Parrafo_de_Item">Por ejemplo, si el importe total de la factura 
- 50$ y se cobra con:</p>
-<p class="H_Parrafo_de_Item">Medio de pago 1: 60$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 2: 10$</p>
-<p class="H_Parrafo_de_Item">En la zona de pagos se imprime:</p>
-<p class="H_Parrafo_de_Item">Varios: 50$</p>
-<p class="H_Parrafo_de_Item">En la zona de líneas al pie se imprime:</p>
-<p class="H_Parrafo_de_Item">Medio de pago 1: 60$</p>
-<p class="H_Parrafo_de_Item">Medio de pago 2 10$.</p>
-
+  <h1>Parámetros del equipo</h1>
+  <p class="H_Texto">En esta tarea deben ingresarse todos los datos relacionados con la parametrización de cada uno de los equipos usuarios del sistema. Los parámetros que se indiquen aquí son aquellos relacionados con el uso de lectoras de medios de pago, de controladores fiscales y con la emisión de informes por pantalla mediante el Acrobat Reader.</p>
+  <p class="H_Texto">El sistema ya tiene incorporados algunos valores de parámetros, pero los mismos pueden modificarse para adecuarse a las necesidades de la empresa.</p>
+  <p class="H_Texto">Los parámetros pueden modificarse mientras se está operando con el sistema y la actualización de las opciones que se indiquen se realizará en forma inmediata sin necesidad de salir del sistema y volver a entrar.</p>
+  <p class="H_Texto">Los parámetros de datos generales posibles de configurar son:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Ficha Lectoras</span><span data-close-text="true">Ficha Lectoras</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">El sistema permite efectuar el ingreso automático de los datos contenidos en cheques y en los tickets mediante la utilización de Lectoras de barras y Lectoras de cheques.</p>
+    <p class="H_Parrafo_de_Item">Los Cheques contienen un código impreso en su parte inferior en el cual constan algunos datos referentes al mismo como, por ejemplo, el código del banco según la codificación del Banco Central, la sucursal y el código postal del mismo y el número de cheque. Este código está compuesto por caracteres especiales de tipo magnético y puede leerse mediante una Lectora de caracteres magnéticos.</p>
+    <p class="H_Parrafo_de_Item">Del mismo modo, los Tickets, que habitualmente se utilizan para adquirir productos alimenticios, contienen en su parte inferior un código de barras que incluye algunos datos como, por ejemplo, el prefijo, el número de ticket y el importe.</p>
+    <p class="H_Parrafo_de_Item">Esta tarea está destinada a habilitar la utilización de este tipo de unidades lectoras y debe configurarse desde cada puesto de trabajo donde se desea instalar un lector de estas características. Es decir, la información que consignada a través de esta tarea, se graba localmente y se relaciona con el puesto del que se trate y no con la base de datos.</p>
+    <p class="H_Parrafo_de_Item">Para la lectura de tickets se debe habilitar el Lector de barras y, para los cheques, el Lector de cheques.</p>
+    <p class="H_Parrafo_de_Item">El campo Puerto permite informar el puerto en el que se ha de conectar la lectora. Las opciones que se ofrecen son: COM1, COM2, COM3, COM4, Ninguno y Teclado.</p>
+    <p class="H_Parrafo_de_Item">Los valores a informar en los campos <font style="font-weight: bold;">Baud</font>, <font style="font-weight: bold;">Data</font> y <font style="font-weight: bold;">Parity</font> dependen del lector que se está instalando, por lo cual, deberán consultarse las características específicas de los equipos a instalar, para poder completarlos.</p>
+    <p class="H_Parrafo_de_Item">El detalle de cómo está organizada la información en los códigos de barras de los tickets y en los códigos magnéticos de los cheques se suministra en los <a data-cke-saved-href="tabla__Medios_de_pago.htm" href="tabla__Medios_de_pago.htm">Medios de pago</a> que se habilitan para registrar dicho tipo de valores.</p>
+    <p class="H_Parrafo_de_Item">Los <a data-cke-saved-href="tabla__Medios_de_pago.htm" href="tabla__Medios_de_pago.htm">Medios de pago</a> a habilitar para la registración de valores desde lectoras deben ser de tipo <font style="font-weight: bold;">Cheque recibido</font>, ya sea que se trate de lectura por código de barras (tickets) o de lectura de caracteres magnéticos (cheques). Para registrar <font style="font-weight: bold;">Cheques de pago diferido</font> deberá asociarse el correspondiente tipo de medio de pago.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Ficha Informes</span><span data-close-text="true">Ficha Informes</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Emitir por pantalla mediante Acrobat Reader</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea, o no, emitir los informes por pantalla utilizando el Acrobat Reader.</p>
+    <p class="H_Parrafo_de_Sub-Item">El equipo donde se indique que la emisión de los informes se realiza mediante el Acrobat Reader, deberá tener instalada una versión de dicho producto, en caso contrario el sistema emitirá un mensaje de aviso al momento en que se emitan los informes por pantalla.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez marcada esta opción ,cada vez que se solicite un listado por pantalla se creará un archivo .PDF con el informe solicitado. El nombre que se asigne a los archivos .PDF estará compuesto por el prefijo BCS y un número.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Carpeta para archivos PDF</p>
+    <p class="H_Parrafo_de_Sub-Item">En este cuadro se deberá informar en que carpeta se almacenarán los archivos PDF que se generen con los informes emitidos por Acrobat Reader. Sólo se habilita en caso de haber marcado la opción anterior.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Temporario de Windows</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Esta opción es ofrecida por el sistema por defecto. Si se deja marcada esta opción los archivos PDF que se generen con los informes se almacenarán en la carpeta de archivos temporarios de Windows.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Otro</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se marca esta opción el sistema solicitará que se informe el nombre de la carpeta donde se almacenarán los archivos PDF que se generen con los informes. La misma puede indicarse directamente o buscarse mediante el botón <font style="font-weight: bold;">Examinar</font>.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Agregar el usuario al nombre de carpeta</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa esta opción, los archivos PDF que se generen se guardarán en la carpeta indicada en el campo precedente, concatenando el nombre del usuario como subcarpeta Si la subcarpeta con el nombre del usuario no existe en el directorio indicado, se creará automáticamente la primera vez que se genere un informe sobre dicha carpeta.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo solo se activa en caso de haber seleccionado la opción <font style="font-weight: bold;">Otro</font>.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prefijo (URL) para publicación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Prefijo Uniform Resource Locator para publicación, válido en caso que el sistema se esté ejecutando en un ambiente de Terminal Services.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se indica este prefijo y el sistema se está ejecutando en un ambiente de Terminal Service, una vez generado el archivo PDF, el mismo podrá consultarse en la máquina local del usuario mediante el Internet Explorer.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Este campo solo se activa en caso de haber seleccionado la opción Otro.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita">Borrar los archivos con antigüedad mayor a <img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> dias</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Número de días previstos para borrar los archivos cuya antigüedad supera al número que aquí se indique. El mínimo que ese puede indicar en este campo es 3 días.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si no se indica ningún dato en este campo, el sistema borrará automáticamente los archivos que tengan una antigüedad superior a los 60 días (tanto si se ha indicado Temporario de Windows como si se ha indicado Otro).</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Ficha Controlador fiscal</span><span data-close-text="true">Ficha Controlador fiscal</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">En esta ficha se podrá indicar si el equipo que se está parametrizando utilizará para la emisión de comprobantes un Controlador fiscal.</p>
+    <p class="H_Parrafo_de_Item">Es importante recordar que la configuración corresponde al equipo en el cual se está ejecutando el programa.</p>
+    <p class="H_Parrafo_de_Item">Al indicar que un equipo imprime con Controlador fiscal, no será posible imprimir ningún comprobante mediante otra impresora. Los comprobantes habilitados para ser impresos por controlador fiscal son: facturas de venta A, B y C; Notas de Crédito y Débito A,B y C; Remitos de egreso y Recibos.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> El equipo Imprime con controlador fiscal</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si el equipo que se está configurando imprimirá los comprobantes mediante un controlador fiscal. Al habilitar esta opción se activan los tres campos restantes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Es importante tener en cuenta que solo se podrá imprimir en controlador fiscal si el equipo dispone de un dispositivo de control de licencias habilitado para impresión en controlador fiscal. El dispositivo de control del licencias tiene que estar configurado por puesto, es decir, no puede ser de tipo ingreso concurrente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el equipo dispone de un dispositivo para impresión por <font style="font-weight: bold;">Controlador Fiscal</font>, sólo se podrán imprimir comprobantes cuyo talonario tenga indicado impresión por <font style="font-weight: bold;">Controlador Fiscal</font> y en los que el nombre del Controlador coincida con el indicado en esta tarea. Se podrán ingresar, pero no imprimir, comprobantes que no operan con <font style="font-weight: bold;">Controlador Fiscal</font> y no se podrán ingresar ni imprimir comprobantes cuyo talonario imprima en otro <font style="font-weight: bold;">Controlador Fiscal</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se podrán imprimir informes pero no se podrán imprimir cheques ni comprobantes de retenciones.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el equipo no dispone de un dispositivo para impresión por Controlador Fiscal, sólo se podrán imprimir comprobantes que no operan con Controlador Fiscal. No se podrán ingresar ni imprimir comprobantes cuyo <a href="tabla__Talonarios.htm">talonario</a> imprima en Controlador Fiscal. Se podrán imprimir cheques y comprobantes de retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Controlador</p>
+    <p class="H_Parrafo_de_Sub-Item">En este campo se deberá seleccionar el equipo controlador que se desea instalar. Los modelos de controlador fiscal que admite el sistema son: <font style="font-weight: bold;">Hasar SMH/P-320F</font> y <font style="font-weight: bold;">NCR2008</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el equipo dispone de un dispositivo para impresión por <font style="font-weight: bold;">Controlador Fiscal</font>, sólo se podrán imprimir comprobantes cuyo talonario tenga indicado impresión por <font style="font-weight: bold;">Controlador Fiscal</font> y en los que el nombre del Controlador coincida con el indicado en este campo.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Nombre</p>
+    <p class="H_Parrafo_de_Sub-Item">Nombre o denominación con la que se ha de identificar al controlador fiscal en todo el sistema. Es un dato obligatorio.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Puerto</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe indicarse el puerto en el que se ha de instalar el controlador. Las opciones son: COM1,COM2, COM3 o COM4.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Información de ítems</p>
+    <p class="H_Parrafo_de_Sub-Item">Permite especificar, para el puesto, como se quieren imprimir los bienes.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código y descripción encolumnado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Imprime encolumnado.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Código y descripción no encolumnado</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Imprime sin tener en cuenta las columnas.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Descripción sola</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">No imprime el código.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Imprime observación de los ítems</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si está activado se imprime el texto registrado en la columna Observaciones, en relación al ítem.</p>
+    <p class="H_Sub-Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Imprime información de despachos y partidas</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si está activado se imprime la información del despacho y de la partida y su correspondiente vencimiento.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Incluye datos del vendedor</p>
+    <p class="H_Parrafo_de_Sub-Item">Si está activado se imprimen los datos del vendedor en el ticket.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Línea</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de imprimir los datos del vendedor, se debe indicar la línea en la cual se han de incluir.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Resolver inconsistencias en pagos con detalle al pie</p>
+    <p class="H_Parrafo_de_Sub-Item">Este parámetro resuelve inconsistencias que se presentan cuando se registra un cobro con un medio de pago y se excede el total del importe del comprobante.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de estar activado, se detallan los medios de pago en las líneas al pie del comprobante indicándose en relación al medio de pago Varios, el importe total del comprobante y se detalla en líneas al pie el valor real del cheque (importe mayor al comprobante) y el efectivo (dinero que se devuelve).</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se activa este campo la impresora fiscal no permite importes superiores de cobros al comprobante, de manera tal que registra que se recibe un valor por X pesos donde X es igual al monto del comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Apariencia</span><span data-close-text="true">Apariencia</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">En esta solapa es posible modificar el aspecto visual de las ventanas del sistema. Al seleccionar diferentes opciones, en el cuadro de la derecha, puede visualizarse la apariencia resultante obtenida.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Utiliza apariencia de Windows</p>
+    <p class="H_Parrafo_de_Sub-Item">Al activar este campo se habilitan los campos del cuadro Apariencia de tablas pudiéndose personalizar los colores de las filas que componen las grillas y el color con el cual se distinguen las filas que se seleccionan. En este último caso es posible también indicar el color del texto.</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso que no se active este campo el pautado de las grillas y demás datos es el estándar del sistema.(combinación de colores gris y celeste).</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Pautado</p>
+    <p class="H_Parrafo_de_Sub-Item">Haciendo clic en el botón Color es posible elegir de la tabla de colores, colores básicos o personalizados para:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Filas pares</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Filas impares</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Selección</p>
+    <p class="H_Parrafo_de_Sub-Item">Haciendo clic en el botón Color es posible elegir de la tabla de colores, colores básicos o personalizados para:</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Fila seleccionada</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Texto seleccionado</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Otros</span><span data-close-text="true">Otros</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Chequear puesto de trabajo con BasAp</p>
+    <p class="H_Parrafo_de_Sub-Item">Ofrece la actualización del puesto en forma automática al bajar FX en BASAP Admin.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Mostrar avisos de BasCore</p>
+    <p class="H_Parrafo_de_Sub-Item">Por default estos avisos no se muestran. Al ingresar al sistema usando un DCL administrado por BasCore, si el mismo tiene vencimiento y se encuentra vencido, en período de gracia, o está por vencer, dicho aviso se mostrará o no según lo parametrizado aquí.</p>
+  </div>
+  <p class="H_Parrafo_de_Sub-Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Foco.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Foco.gif" width="24"/> A tener en cuenta</p>
+  <p class="H_Texto_negrita"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Impresión Fiscal</span><span data-close-text="true">Impresión Fiscal</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Item">Cuando se registra el cobro de una factura con un medio de pago por un importe que supera el total de comprobante, la controladora fiscal manda el total del comprobante como importe del medio de pago y no el importe que se ha informado.</p>
+    <p class="H_Parrafo_de_Item">Si no está tildado el campo Resolver inconsistencias en pagos con detalle al pie la impresión fiscal permite incluir, en el sector de pagos, hasta 4 líneas de pagos. La impresión del vendedor es parametrizable y puede incluirse entre las líneas 1-5 (cabecera) y entre la 11-14 (líneas al pie).</p>
+    <p class="H_Parrafo_de_Item">Si el campo Resolver inconsistencias en pagos con detalle al pie sí está tildado no modifica la impresión del vendedor, es decir, el dato se imprime donde se haya parametrizado (encabezado o pie).En cambio, se modifica la impresión de los medios de pago de la siguiente manera:</p>
+    <p class="H_Parrafo_de_Item">Si el medio de pago que excede el importe total del comprobante es el cuarto, y hay mas medios de pago o una posición mayor, entonces el importe se acumula en la cuarta línea de la zona correspondiente a los medios de pago con la suma de los pagos restantes y la descripción Otros.</p>
+    <p class="H_Parrafo_de_Item">Por ejemplo, si el total de la factura es 50$, y se cobra con:</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 1: 10$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 2: 10$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 3: 10$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 4: 25$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 5: -5$</p>
+    <p class="H_Parrafo_de_Item">En la zona de pagos se imprimirá:</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 1: 10$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 2: 10$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 3: 10$</p>
+    <p class="H_Parrafo_de_Item">Otros:   20$</p>
+    <p class="H_Parrafo_de_Item">Este mecanismo es indistinto tanto para los pagos que superen el total de la factura o no.</p>
+    <p class="H_Parrafo_de_Item">En cambio, si el medio de pago que excede el total se encuentra entre la primer o cuarta fila y no hay más de 4 medios de pago, en la zona de medios de pago se indica, como descripción, Varios con el importe correspondiente a la factura. Luego, en la zona de Líneas al pie,del documento, se detallan los medios de pago respetando la posición del vendedor (si se lo hubiese parametrizado para imprimir al pie).</p>
+    <p class="H_Parrafo_de_Item">De no alcanzar las líneas del pie (4), se acumula en la ultima línea, con la descripción Otros, el resto del importe.</p>
+    <p class="H_Parrafo_de_Item">Por ejemplo, si el importe total de la factura 50$ y se cobra con:</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 1: 60$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 2: 10$</p>
+    <p class="H_Parrafo_de_Item">En la zona de pagos se imprime:</p>
+    <p class="H_Parrafo_de_Item">Varios: 50$</p>
+    <p class="H_Parrafo_de_Item">En la zona de líneas al pie se imprime:</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 1: 60$</p>
+    <p class="H_Parrafo_de_Item">Medio de pago 2 10$.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

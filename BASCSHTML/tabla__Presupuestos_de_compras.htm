@@ -15,12 +15,12 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>tabla presupuestos de compras</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-
-<meta name="rh-index-keywords" content="Definición"/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>tabla presupuestos de compras</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Definición"/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -39,61 +39,74 @@
 
 
 
-<h1>Definición de presupuesto de compras</h1>
-<p class="H_Texto">Los presupuestos de compras están destinados a efectuar un control de las compras que se registran en el sistema.</p>
-<p class="H_Texto">Estos permiten definir los importes, o las cantidades e importes, máximos a comprar de determinados bienes y servicios, en cierto período de tiempo. Pudiéndose indicar, si se requiere, las cantidades o importes a comprar, detallados por proveedor.</p>
-<p class="H_Texto">El presupuesto total de compras puede estar compuesto por la suma de varios presupuestos, cada uno de ellos creado ante una necesidad en particular. Por ejemplo, puede existir un presupuesto base de compras de un sector y, además, uno específico creado en relación a determinado evento que contemple cantidades adicionales en relación a dicho evento.</p>
-<p class="H_Texto">Por ejemplo, en una empresa que posee sucursales de venta de productos, donde las compras se planifican en función al volumen de ventas, puede haber un presupuesto de compras genérico y presupuestos específicos en determinadas fechas (navidad, día de la madre, día del niño, etc.).</p>
-<p class="H_Texto">Una vez establecido el presupuesto, cada comprobante de compras que se registre en el sistema (órdenes de compra y facturas de compra), afectará a un presupuesto en particular. Por ejemplo, puede indicarse que una factura de compras afecta al presupuesto correspondiente al día de la madre.</p>
-<p class="H_Texto">Al registrar un comprobante, en caso que el sistema detecte que la correspondiente compra excede lo previsto en el presupuesto, impedirá su ingreso o, bien, lo registrará como pendiente de autorización.</p>
-<p class="H_Texto">Los presupuestos que se registran requieren ser aprobados para entrar en vigencia. Una vez aprobados, pueden modificarse en forma puntual o periódicamente. Siendo posible individualizar, en todo momento, la información relativa al presupuesto original y a las modificaciones que se hayan realizado.</p>
-<p class="H_Texto">El control de las compras se puede realizar contra los valores presupuestados correspondientes a diferentes períodos según cual sea el tipo de compra del cual se trate. Pudiendo coexistir diferentes modalidades de trabajo.</p>
-<p class="H_Texto">Por ejemplo, es posible que el presupuesto se realice con valores mensuales, y el control se efectúe contra el mes correspondiente al de la compra, sin tener en cuenta si existen importes no ejecutados de meses anteriores. Un ejemplo podría ser el caso de un presupuesto de reposición de insumos de librería o de productos de limpieza,</p>
-<p class="H_Texto">Otra posibilidad consiste en establecer un presupuesto para, por ejemplo, 6 meses y realizar el control contra los valores correspondientes al total de los meses, sin importar la distribución en cada uno de los mismos. Por ejemplo, gastar todo el presupuesto el primer mes.</p>
-<p class="H_Texto">También es posible efectuar controles en los que se deba considerar el acumulado del presupuesto hasta el mes del comprobante, es decir, aprovechar los valores no ejecutados correspondientes a períodos anteriores.</p>
-<p class="H_Texto">Es posible también establecer que no es posible registrar compras que no estén asociadas a un presupuesto.</p>
-<p class="H_Texto">En lo operativo, los presupuestos se definen por empresa y, establecer un presupuesto de compras en BAS CS, implica realizar dos tareas la definición del presupuesto propiamente dicha y la de sus componentes.</p>
-<p class="H_Texto">Al definir una componente se indica, para determinados valores del atributo asociado al presupuesto, el importe de la compra y, si corresponde, se indicará la cantidad involucrada en la compra y el período de vigencia de la componente.</p>
-<p class="H_Texto">Los presupuestos deben aprobarse para poder ser utilizados en la evaluación de las compras.</p>
-<p class="H_Texto">Además, es posible parametrizar el sistema para que las componentes de los presupuestos requieran de autorización.</p>
-<p class="H_Texto">Los presupuestos nacen en estado <font style="font-weight: bold;">En Preparación</font> y permanecerán en él hasta tanto se aprueben, en cuyo caso pasan al estado <font style="font-weight: bold;">Aprobados</font>.</p>
-<p class="H_Texto">Se prevé una tarea destinada a Cerrar un presupuesto. Al realizar la tarea, el presupuesto pasa al estado <font style="font-weight: bold;">Cerrado</font> y no se permite registrar ni modificaciones a sus componentes ni comprobantes para el mismo. En caso que se requiera, es posible Reabrir el presupuesto y realizar las modificaciones que correspondan.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Empresa</p>
-<p class="H_Parrafo_de_Item">Empresa correspondiente al presupuesto.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Código</p>
-<p class="H_Parrafo_de_Item">Código que identifica al presupuesto que se define.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Descripción</p>
-<p class="H_Parrafo_de_Item">Texto que identifica, junto con el código, al presupuesto que se define.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Atributo</p>
-<p class="H_Parrafo_de_Item">Se debe indicar el atributo (aplicable a de ítems) a partir de los valores del cual se definirán las componentes de dicho presupuesto.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Moneda</p>
-<p class="H_Parrafo_de_Item">Moneda en la cual se informarán los importes presupuestados.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Criterio de evaluación</p>
-<p class="H_Parrafo_de_Item">Según la forma en que se desea controlar las compras, se debe indicar:</p>
-
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Período completo</p>
-
-<p class="H_Parrafo_de_Sub-Item">Cuando el criterio de evaluación es por período completo el sistema verifica que la suma de las compras en el período de vigencia del presupuesto (incluido el comprobante actual), para el valor del atributo asociado al ítem, no supere la suma de lo presupuestado en las componentes de dicho presupuesto (vigentes a la fecha de la compra), para el valor del atributo de dicho ítem, y para el mismo proveedor (si éste está indicado en las componentes).</p>
-
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Mes a mes</p>
-
-<p class="H_Parrafo_de_Sub-Item">Cuando el criterio de evaluación es mes a mes, el sistema efectúa el mismo control, pero teniendo en cuenta solamente los comprobantes de compras correspondientes al mes de carga del comprobante actual, igual para las componentes, prorrateando los importes y cantidades si el período de vigencia del componente es inferior o superior al mes evaluado..</p>
-
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Período transcurrido</p>
-
-<p class="H_Parrafo_de_Sub-Item">Cuando el criterio de evaluación es por período transcurrido, el sistema efectúa el mismo control, pero teniendo en cuenta los comprobantes de compras desde el inicio de vigencia del presupuesto hasta la fecha del comprobante actual, igual para las componentes, prorrateando los importes y cantidades si el período de vigencia del componente supera la fecha del comprobante.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Admite apertura por proveedor</p>
-<p class="H_Parrafo_de_Item">En caso que se desee presupuestar importes y, eventualmente, cantidades en relación a determinados proveedores, se debe activar este campo.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Considerar</p>
-<p class="H_Parrafo_de_Item">Este cuadro permite indicar si se van a presupuestar sólo importes o si se indicarán importes y cantidades.</p>
-<p class="H_Parrafo_de_Item">Se debe seleccionar, según el caso:</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Importes</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Importes y cantidades</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> Período</p>
-<p class="H_Parrafo_de_Item">El período de vigencia del presupuesto se indica mediante los datos:</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Desde fecha</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Hasta fecha</p>
-<p class="H_Parrafo_de_Item">Las componentes que se definan en relación al presupuesto deberán estar comprendidas entre ambas.</p>
-
+  <h1>Definición de presupuesto de compras</h1>
+  <p class="H_Texto">Los presupuestos de compras están destinados a efectuar un control de las compras que se registran en el sistema.</p>
+  <p class="H_Texto">Estos permiten definir los importes, o las cantidades e importes, máximos a comprar de determinados bienes y servicios, en cierto período de tiempo. Pudiéndose indicar, si se requiere, las cantidades o importes a comprar, detallados por proveedor.</p>
+  <p class="H_Texto">El presupuesto total de compras puede estar compuesto por la suma de varios presupuestos, cada uno de ellos creado ante una necesidad en particular. Por ejemplo, puede existir un presupuesto base de compras de un sector y, además, uno específico creado en relación a determinado evento que contemple cantidades adicionales en relación a dicho evento.</p>
+  <p class="H_Texto">Por ejemplo, en una empresa que posee sucursales de venta de productos, donde las compras se planifican en función al volumen de ventas, puede haber un presupuesto de compras genérico y presupuestos específicos en determinadas fechas (navidad, día de la madre, día del niño, etc.).</p>
+  <p class="H_Texto">Una vez establecido el presupuesto, cada comprobante de compras que se registre en el sistema (órdenes de compra y facturas de compra), afectará a un presupuesto en particular. Por ejemplo, puede indicarse que una factura de compras afecta al presupuesto correspondiente al día de la madre.</p>
+  <p class="H_Texto">Al registrar un comprobante, en caso que el sistema detecte que la correspondiente compra excede lo previsto en el presupuesto, impedirá su ingreso o, bien, lo registrará como pendiente de autorización.</p>
+  <p class="H_Texto">Los presupuestos que se registran requieren ser aprobados para entrar en vigencia. Una vez aprobados, pueden modificarse en forma puntual o periódicamente. Siendo posible individualizar, en todo momento, la información relativa al presupuesto original y a las modificaciones que se hayan realizado.</p>
+  <p class="H_Texto">El control de las compras se puede realizar contra los valores presupuestados correspondientes a diferentes períodos según cual sea el tipo de compra del cual se trate. Pudiendo coexistir diferentes modalidades de trabajo.</p>
+  <p class="H_Texto">Por ejemplo, es posible que el presupuesto se realice con valores mensuales, y el control se efectúe contra el mes correspondiente al de la compra, sin tener en cuenta si existen importes no ejecutados de meses anteriores. Un ejemplo podría ser el caso de un presupuesto de reposición de insumos de librería o de productos de limpieza,</p>
+  <p class="H_Texto">Otra posibilidad consiste en establecer un presupuesto para, por ejemplo, 6 meses y realizar el control contra los valores correspondientes al total de los meses, sin importar la distribución en cada uno de los mismos. Por ejemplo, gastar todo el presupuesto el primer mes.</p>
+  <p class="H_Texto">También es posible efectuar controles en los que se deba considerar el acumulado del presupuesto hasta el mes del comprobante, es decir, aprovechar los valores no ejecutados correspondientes a períodos anteriores.</p>
+  <p class="H_Texto">Es posible también establecer que no es posible registrar compras que no estén asociadas a un presupuesto.</p>
+  <p class="H_Texto">En lo operativo, los presupuestos se definen por empresa y, establecer un presupuesto de compras en BAS CS, implica realizar dos tareas la definición del presupuesto propiamente dicha y la de sus componentes.</p>
+  <p class="H_Texto">Al definir una componente se indica, para determinados valores del atributo asociado al presupuesto, el importe de la compra y, si corresponde, se indicará la cantidad involucrada en la compra y el período de vigencia de la componente.</p>
+  <p class="H_Texto">Los presupuestos deben aprobarse para poder ser utilizados en la evaluación de las compras.</p>
+  <p class="H_Texto">Además, es posible parametrizar el sistema para que las componentes de los presupuestos requieran de autorización.</p>
+  <p class="H_Texto">Los presupuestos nacen en estado <font style="font-weight: bold;">En Preparación</font> y permanecerán en él hasta tanto se aprueben, en cuyo caso pasan al estado <font style="font-weight: bold;">Aprobados</font>.</p>
+  <p class="H_Texto">Se prevé una tarea destinada a Cerrar un presupuesto. Al realizar la tarea, el presupuesto pasa al estado <font style="font-weight: bold;">Cerrado</font> y no se permite registrar ni modificaciones a sus componentes ni comprobantes para el mismo. En caso que se requiera, es posible Reabrir el presupuesto y realizar las modificaciones que correspondan.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Empresa correspondiente al presupuesto.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Código</span><span data-close-text="true">Código</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Código que identifica al presupuesto que se define.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Descripción</span><span data-close-text="true">Descripción</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Texto que identifica, junto con el código, al presupuesto que se define.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Atributo</span><span data-close-text="true">Atributo</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Item">Se debe indicar el atributo (aplicable a de ítems) a partir de los valores del cual se definirán las componentes de dicho presupuesto.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Moneda</span><span data-close-text="true">Moneda</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Item">Moneda en la cual se informarán los importes presupuestados.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true">Criterio de evaluación</span><span data-close-text="true">Criterio de evaluación</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Parrafo_de_Item">Según la forma en que se desea controlar las compras, se debe indicar:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Período completo</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando el criterio de evaluación es por período completo el sistema verifica que la suma de las compras en el período de vigencia del presupuesto (incluido el comprobante actual), para el valor del atributo asociado al ítem, no supere la suma de lo presupuestado en las componentes de dicho presupuesto (vigentes a la fecha de la compra), para el valor del atributo de dicho ítem, y para el mismo proveedor (si éste está indicado en las componentes).</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Mes a mes</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando el criterio de evaluación es mes a mes, el sistema efectúa el mismo control, pero teniendo en cuenta solamente los comprobantes de compras correspondientes al mes de carga del comprobante actual, igual para las componentes, prorrateando los importes y cantidades si el período de vigencia del componente es inferior o superior al mes evaluado..</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Período transcurrido</p>
+    <p class="H_Parrafo_de_Sub-Item">Cuando el criterio de evaluación es por período transcurrido, el sistema efectúa el mismo control, pero teniendo en cuenta los comprobantes de compras desde el inicio de vigencia del presupuesto hasta la fecha del comprobante actual, igual para las componentes, prorrateando los importes y cantidades si el período de vigencia del componente supera la fecha del comprobante.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Admite apertura por proveedor</span><span data-close-text="true">Admite apertura por proveedor</span></a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <p class="H_Parrafo_de_Item">En caso que se desee presupuestar importes y, eventualmente, cantidades en relación a determinados proveedores, se debe activar este campo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#"><span data-open-text="true" data-skip-index="true">Considerar</span><span data-close-text="true">Considerar</span></a></p>
+  <div class="droptext" data-targetname="drop-down9">
+    <p class="H_Parrafo_de_Item">Este cuadro permite indicar si se van a presupuestar sólo importes o si se indicarán importes y cantidades.</p>
+    <p class="H_Parrafo_de_Item">Se debe seleccionar, según el caso:</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Importes</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Importes y cantidades</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#"><span data-open-text="true" data-skip-index="true">Período</span><span data-close-text="true">Período</span></a></p>
+  <div class="droptext" data-targetname="drop-down10">
+    <p class="H_Parrafo_de_Item">El período de vigencia del presupuesto se indica mediante los datos:</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Desde fecha</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Hasta fecha</p>
+    <p class="H_Parrafo_de_Item">Las componentes que se definan en relación al presupuesto deberán estar comprendidas entre ambas.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

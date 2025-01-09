@@ -39,7 +39,7 @@
 
 
 
-  <h1>Necesidad de abastecimiento por item</h1>
+  <h1>Necesidad de abastecimiento por ítem</h1>
   <p class="H_Texto">Este botón permite conocer que <a href="tabla__Bienes.htm">ítems</a> y que cantidad de los mismos son necesarias en un determinado depósito para satisfacer las necesidades de abastecimiento a una determinada fecha, considerada por el sistema como <font style="font-weight: bold;">Fecha límite</font>, evitando que las unidades en stock queden por debajo del <font style="font-weight: bold;">stock ideal</font> informado para cada ítem en dicho depósito. El depósito en cuestión será aquel informado durante la carga del comprobante.</p>
   <p class="H_Texto">Si no se informa <font style="font-weight: bold;">fecha límite</font> alguna, se considerarán todas las entregas, sin importar cuando deban entregarse las mismas.</p>
   <p class="H_Texto">Es importante destacar que también se incluyen en esta consulta los servicios de tipo cantidad que requieran de abastecimiento. Los servicios de este tipo no tienen informado stock ideal ni punto de reposición, por lo tanto simplemente se exhibirán en la consulta cuando no cuenten con <font style="font-weight: bold;">stock disponible</font> para satisfacer sus entregas. Como ya mencionamos, este stock puede medir la cantidad de servicios o de horas de servicio.</p>
@@ -76,155 +76,177 @@
   <p class="H_Texto">Al oprimir el botón se despliega una ventana en la que es posible establecer ciertos filtros a aplicar sobre la consulta de necesidad de abastecimiento.</p>
   <p class="H_Texto">Estos filtros no constituyen datos obligatorios para la emisión de la consulta, son opcionales y si no se indica ningún filtro se exhibirá una lista con todos los ítems necesarios en el depósito para el cual se ingresa el comprobante.</p>
   <p class="H_Texto">Los filtros y rangos posibles de indicar son:</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Fecha límite</p>
-  <p class="H_Parrafo_de_Item">Fecha hasta la cual se desea considerar la necesidad de abastecimiento. Como mencionamos al principio, se expondrán las cantidades de las que es necesario abastecerse para cubrir las necesidades de entrega que tiene la empresa hasta la fecha límite informada.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Depósito (sólo disponible en Ordenes de compra)</p>
-  <p class="H_Parrafo_de_Item">Depósito correspondiente al stock a consultar.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Proveedor</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
-  <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Proveedores.htm">proveedor</a> al que se le compran los ítems que se desean incluir en la consulta.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
-  <p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema y aplicable a <font style="font-weight: bold;">Proveedores</font>.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Valor</p>
-  <p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó en el campo anterior.</p>
-  <p class="H_Parrafo_de_Sub-Item">Se incluirán en la consulta de necesidad de abastecimiento sólo aquellos ítems que se adquieren a <a href="tabla__Proveedores.htm">proveedores</a> que presenten este valor para el <a href="tabla__Atributos.htm">atributo</a> indicado en el campo anterior.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> Items</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
-  <p class="H_Parrafo_de_Sub-Item">Código del ítem que se desea incluir en la consulta.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
-  <p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema y aplicable a <font style="font-weight: bold;">Ítems.</font>
-  </p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Valor</p>
-  <p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó en el campo anterior.</p>
-  <p class="H_Parrafo_de_Sub-Item">Se incluirán en la consulta de necesidad de abastecimiento sólo aquellos ítems que tengan asociado el valor que aquí se indique para el atributo indicado en el campo anterior.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Rubro</p>
-  <p class="H_Parrafo_de_Sub-Item">Código de rubros cuyos ítems se desea incluir en la consulta.</p>
-  <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un rubro en particular o un grupo de rubros. Si este dato es dejado en blanco, se incluirán todos los rubros en la consulta.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Grupo de compra</p>
-  <p class="H_Parrafo_de_Sub-Item">Código de grupo de compras asociado a los ítems que se desean incluir en la consulta.</p>
-  <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un grupo en particular o un rango de grupos.</p>
-  <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco, se incluirán en el listado los ítems asociados a todos los grupos de compras y aquellos que no hayan sido asociados a grupo alguno.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo ítems con cantidad pendiente de entregar</p>
-  <p class="H_Parrafo_de_Sub-Item">Si está activado este campo se precargan sólo los ítems que tienen una cantidad mayor a cero en la columna “A Entregar” de la necesidad de abastecimiento.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Se abastece en función de las entregas a clientes (sólo disponible en Pedidos internos y Ordenes de compra)</p>
-  <p class="H_Parrafo_de_Item">Este campo aplica a los casos en que se desea realizar pedidos internos en base a las cantidades vendidas y/o entregadas.</p>
-  <p class="H_Parrafo_de_Item">Activar este campo no modifica las cantidades a adquirir que sugiere el sistema. Lo que hace es incluir más información en la ventana. Además de las cantidades a reponer para cubrir el stock ideal y los compromisos asumidos, se exhiben las cantidades vendidas y los egresos a clientes en el periodo que se informe, de modo de disponer de información de ventas y otros egresos para poder modificar, en base a ellas, las cantidades a comprar.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Desde – Hasta (sólo disponible en Pedidos internos y Ordenes de compra)</p>
-  <p class="H_Parrafo_de_Item">En caso de haber activado el campo &quot;Se abastece en función a las ventas&quot;, se debe indicar el período correspondiente a las ventas que se desea consultar.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Mostrar las ventas de todos los depósitos (sólo disponible en Pedidos internos y Ordenes de compra)</p>
-  <p class="H_Parrafo_de_Item">Si se tilda este campo se muestran las ventas de todos los depósitos. En caso de no estar marcado, se mostrarán las ventas del depósito indicado.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Considerar punto de reposición (sólo disponible en Pedidos internos y Ordenes de compra)</p>
-  <p class="H_Parrafo_de_Item">En caso de que este campo este marcado, no se mostrarán los ítems donde la columna subtotal (stock disponible) sea mayor al punto de reposición.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Buscar</p>
-  <p class="H_Parrafo_de_Item">Una vez completada la información necesaria y luego de oprimir el botón <font style="font-weight: bold;">Busca</font>r, se presenta una consulta incluyendo todos los ítems que cumplen con las condiciones mencionadas.</p>
-  <p class="H_Parrafo_de_Item">La grilla incluye para cada ítem la siguiente información:</p>
-  <p class="H_Texto" style="margin-top: 0; margin-bottom: 0;"></p>
-  <table cellpadding="1" cellspacing="0" style="margin-left: 34.75pt; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; border-collapse: separate;" width="491">
-    <tbody>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Columna</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Contenido</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Código</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Código del ítem o ítems</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Descripción</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Descripción del ítem</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Color</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Color del ítem</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Medida</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Medida del ítem</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Existencia</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Existencia en el depósito solicitado</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">A Ingresar</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Cantidades a Ingresar</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">A Entregar</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Cantidades a Entregar</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Subtotal</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Existencia + &quot;A Ingresar&quot; – &quot;A Entregar&quot;</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Ventas</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Unidades vendidas en el depósito indicado para la fecha solicitada</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Maximo</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Máximo informado para el artículo para el deposito (stock ideal)</p>
-        </td>
-      </tr>
-      <tr style="vertical-align: top;">
-        <td style="width: 28.86%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">A Comprar</p>
-        </td>
-        <td style="width: 71.14%; border-top: 0.50pt solid #000000; border-bottom: 0.50pt solid #000000; border-left: 0.50pt solid #000000; border-right: 0.50pt solid #000000; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px;">
-          <p class="H_Texto">Máximo - Subtotal</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <p class="H_Texto" style="margin-top: 0; margin-bottom: 0;"></p>
-  <p class="H_Parrafo_de_Item">Si se desea comprar una cantidad distinta a la sugerida por el sistema, es posible digitarla, directamente, en el campo &quot;A Comprar&quot;.</p>
-  <p class="H_Parrafo_de_Item">Asimismo, si hay algún ítem que no se desea comprar, se debe informar cero (0) en la columna &quot;A Comprar&quot;.</p>
-  <p class="H_Parrafo_de_Item">Finalmente, al presionar el botón &quot;OK&quot;, se copiarán a la Orden de Compra todos los ítems que tienen un valor distinto de cero en la columna &quot;A Comprar&quot;.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Cancelar</p>
-  <p class="H_Parrafo_de_Item">Si se presiona &quot;Cancelar&quot;, se sale de la ventana de &quot;Necesidad de abastecimiento&quot;, volviendo a la Orden de compra.</p>
-  <p class="H_Parrafo_de_Item">Es posible seleccionar los ítems que se desea incluir en el comprobante y éste último se completará con los códigos de dichos ítems y las respectivas cantidades necesarias en el depósito. Para efectuar la selección se podrá utilizar la combinación de las teclas Control o Shift y el clic del mouse.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Fecha límite</span><span data-close-text="true">Fecha límite</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Fecha hasta la cual se desea considerar la necesidad de abastecimiento. Como mencionamos al principio, se expondrán las cantidades de las que es necesario abastecerse para cubrir las necesidades de entrega que tiene la empresa hasta la fecha límite informada.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Depósito (sólo disponible en Ordenes de compra)</span><span data-close-text="true">Depósito (sólo disponible en Ordenes de compra)</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Depósito correspondiente al stock a consultar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Proveedor</span><span data-close-text="true">Proveedor</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del <a href="tabla__Proveedores.htm">proveedor</a> al que se le compran los ítems que se desean incluir en la consulta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema y aplicable a <font style="font-weight: bold;">Proveedores</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó en el campo anterior.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se incluirán en la consulta de necesidad de abastecimiento sólo aquellos ítems que se adquieren a <a href="tabla__Proveedores.htm">proveedores</a> que presenten este valor para el <a href="tabla__Atributos.htm">atributo</a> indicado en el campo anterior.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Items</span><span data-close-text="true">Items</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Código</p>
+    <p class="H_Parrafo_de_Sub-Item">Código del ítem que se desea incluir en la consulta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Atributo</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de atributo. Debe corresponder a un <a href="tabla__Atributos.htm">atributo</a> ya definido en el sistema y aplicable a <font style="font-weight: bold;">Ítems.</font>
+    </p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Valor del atributo cuyo código se indicó en el campo anterior.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se incluirán en la consulta de necesidad de abastecimiento sólo aquellos ítems que tengan asociado el valor que aquí se indique para el atributo indicado en el campo anterior.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Rubro</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de rubros cuyos ítems se desea incluir en la consulta.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un rubro en particular o un grupo de rubros. Si este dato es dejado en blanco, se incluirán todos los rubros en la consulta.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Grupo de compra</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de grupo de compras asociado a los ítems que se desean incluir en la consulta.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede seleccionarse un grupo en particular o un rango de grupos.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si este dato es dejado en blanco, se incluirán en el listado los ítems asociados a todos los grupos de compras y aquellos que no hayan sido asociados a grupo alguno.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Sólo ítems con cantidad pendiente de entregar</p>
+    <p class="H_Parrafo_de_Sub-Item">Si está activado este campo se precargan sólo los ítems que tienen una cantidad mayor a cero en la columna “A Entregar” de la necesidad de abastecimiento.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Se abastece en función de las entregas a clientes (sólo disponible en Pedidos internos y Ordenes de compra)</span><span data-close-text="true">Se abastece en función de las entregas a clientes (sólo disponible en Pedidos internos y Ordenes de compra)</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Este campo aplica a los casos en que se desea realizar pedidos internos en base a las cantidades vendidas y/o entregadas.</p>
+    <p class="H_Parrafo_de_Item">Activar este campo no modifica las cantidades a adquirir que sugiere el sistema. Lo que hace es incluir más información en la ventana. Además de las cantidades a reponer para cubrir el stock ideal y los compromisos asumidos, se exhiben las cantidades vendidas y los egresos a clientes en el periodo que se informe, de modo de disponer de información de ventas y otros egresos para poder modificar, en base a ellas, las cantidades a comprar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Desde – Hasta (sólo disponible en Pedidos internos y Ordenes de compra)</span><span data-close-text="true">Desde – Hasta (sólo disponible en Pedidos internos y Ordenes de compra)</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Item">En caso de haber activado el campo &quot;Se abastece en función a las ventas&quot;, se debe indicar el período correspondiente a las ventas que se desea consultar.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Mostrar las ventas de todos los depósitos (sólo disponible en Pedidos internos y Ordenes de compra)</span><span data-close-text="true">Mostrar las ventas de todos los depósitos (sólo disponible en Pedidos internos y Ordenes de compra)</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Item">Si se tilda este campo se muestran las ventas de todos los depósitos. En caso de no estar marcado, se mostrarán las ventas del depósito indicado.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true">Considerar punto de reposición (sólo disponible en Pedidos internos y Ordenes de compra)</span><span data-close-text="true">Considerar punto de reposición (sólo disponible en Pedidos internos y Ordenes de compra)</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Parrafo_de_Item">En caso de que este campo este marcado, no se mostrarán los ítems donde la columna subtotal (stock disponible) sea mayor al punto de reposición.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#"><span data-open-text="true" data-skip-index="true">Buscar</span><span data-close-text="true">Buscar</span></a></p>
+  <div class="droptext" data-targetname="drop-down8">
+    <p class="H_Parrafo_de_Item">Una vez completada la información necesaria y luego de oprimir el botón <font style="font-weight:bold">Busca</font>r, se presenta una consulta incluyendo todos los ítems que cumplen con las condiciones mencionadas.</p>
+    <p class="H_Parrafo_de_Item">La grilla incluye para cada ítem la siguiente información:</p>
+    <p class="H_Texto"></p>
+    <table style="margin-left:46px; border-top:1px solid #000000; border-bottom:1px solid #000000; border-left:1px solid #000000; border-right:1px solid #000000; border-collapse:separate" width="491">
+      <tbody>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Columna</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Contenido</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Código</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Código del ítem o ítems</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Descripción</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Descripción del ítem</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Color</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Color del ítem</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Medida</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Medida del ítem</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Existencia</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Existencia en el depósito solicitado</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">A Ingresar</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Cantidades a Ingresar</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">A Entregar</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Cantidades a Entregar</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Subtotal</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Existencia + &quot;A Ingresar&quot; – &quot;A Entregar&quot;</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Ventas</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Unidades vendidas en el depósito indicado para la fecha solicitada</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Maximo</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Máximo informado para el artículo para el deposito (stock ideal)</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-bottom:1px solid #000000; width:28.86%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">A Comprar</p>
+          </td>
+          <td style="border-bottom:1px solid #000000; width:71.14%; padding-left:1px; padding-top:1px; padding-right:1px; padding-bottom:1px; border-top:1px solid #000000; border-right:1px solid #000000; border-left:1px solid #000000">
+            <p class="H_Texto">Máximo - Subtotal</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="H_Texto"></p>
+    <p class="H_Parrafo_de_Item">Si se desea comprar una cantidad distinta a la sugerida por el sistema, es posible digitarla, directamente, en el campo &quot;A Comprar&quot;.</p>
+    <p class="H_Parrafo_de_Item">Asimismo, si hay algún ítem que no se desea comprar, se debe informar cero (0) en la columna &quot;A Comprar&quot;.</p>
+    <p class="H_Parrafo_de_Item">Finalmente, al presionar el botón &quot;OK&quot;, se copiarán a la Orden de Compra todos los ítems que tienen un valor distinto de cero en la columna &quot;A Comprar&quot;.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#"><span data-open-text="true" data-skip-index="true">Cancelar</span><span data-close-text="true">Cancelar</span></a></p>
+  <div class="droptext" data-targetname="drop-down9">
+    <p class="H_Parrafo_de_Item">Si se presiona &quot;Cancelar&quot;, se sale de la ventana de &quot;Necesidad de abastecimiento&quot;, volviendo a la Orden de compra.</p>
+    <p class="H_Parrafo_de_Item">Es posible seleccionar los ítems que se desea incluir en el comprobante y éste último se completará con los códigos de dichos ítems y las respectivas cantidades necesarias en el depósito. Para efectuar la selección se podrá utilizar la combinación de las teclas Control o Shift y el clic del mouse.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

@@ -19,7 +19,8 @@
   <meta name="generator" content="Adobe RoboHelp 2022"/>
   <title>Alertas Pedidos demorados</title>
   <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-<meta name="rh-authors" content=""/></head>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -44,45 +45,51 @@
   <p class="H_Texto">Aquí se puede programar que el sistema avise a ciertos usuarios cuando determinados <a href="tabla__Clientes.htm">clientes</a> tienen pedidos con determinados ítems no entregados en las fechas previstas. La dirección de correo electrónico de cada usuario podrá indicarse en la ficha <font style="font-weight: bold;">Datos generales</font> del punto <font style="font-weight: bold;">Usuarios</font>.</p>
   <p class="H_Texto">El sistema brinda también la posibilidad de actualizar las agendas de los Usuarios que se informan en las ventanas de las correspondientes parametrizaciones en relación a pedidos demorados. Para organizar los avisos en la agenda existe un campo llamado Carpeta.</p>
   <p class="H_Texto">Los datos que deben ingresarse son los siguientes:</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de importes de pedidos</p>
-  <p class="H_Parrafo_de_Item">En esta tabla se debe ingresar una lista con los importes de pedidos ante los cuales se quieren enviar alertas indicando para cada importe qué clientes e ítems se controlan, cuántos días de tolerancia se contemplan y a qué usuario se le envía el mensaje.</p>
-  <p class="H_Parrafo_de_Item">Si un cliente tiene pedidos con ítems no entregados en las fechas previstas y el importe de estos ítems demorados está contemplado en alguna línea de la tabla, y el cliente y los ítems cumplen con los <a href="tabla__Atributos.htm">atributos</a> y valores de atributos indicados en la misma línea, se le enviará en forma automática un mensaje al usuario que se indique en dicha línea. También si se desea, se podrán enviar los mensajes a los vendedores asociados a los pedidos demorados.</p>
-  <p class="H_Parrafo_de_Item">El momento en que se envíe cada mensaje y con qué frecuencia podrá configurarse pulsando el botón <font style="font-weight: bold;">Programar trabajo</font>.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Importe</p>
-  <p class="H_Parrafo_de_Item">Importe de los ítems demorados en pedidos hasta el cual se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
-  <p class="H_Parrafo_de_Item">Se utilizarán los datos de una determinada línea si el importe de los pedidos demorados es mayor o igual al importe de la línea y es menor al importe de la línea siguiente.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Días de tolerancia</p>
-  <p class="H_Parrafo_de_Item">Cantidad de días de tolerancia en el incumplimiento de la fecha de entrega de los pedidos hasta los cuales se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Atributo clientes</p>
-  <p class="H_Parrafo_de_Item">Código de <a href="tabla__Atributos.htm">atributo</a> de <font style="font-weight: bold;">Clientes</font> correspondiente a aquellos <a href="tabla__Clientes.htm">clientes</a> cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los ítems consignados en la línea de la tabla.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
-  <p class="H_Parrafo_de_Item">Descripción del atributo correspondiente al código informado.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Valor</p>
-  <p class="H_Parrafo_de_Item">Valor del atributo informado correspondiente a aquellos clientes cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los ítems consignados en la línea de la tabla.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
-  <p class="H_Parrafo_de_Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Atributo ítems</p>
-  <p class="H_Parrafo_de_Item">Código de <a href="tabla__Atributos.htm">atributo</a> de <font style="font-weight: bold;">Items</font> correspondiente a aquellos ítems cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los clientes consignados en la línea de la tabla.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
-  <p class="H_Parrafo_de_Item">Descripción del atributo correspondiente al código informado.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Valor</p>
-  <p class="H_Parrafo_de_Item">Valor del atributo informado correspondiente a aquellos ítems cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los clientes consignados en la línea de la tabla.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
-  <p class="H_Parrafo_de_Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Incluir vendedor</p>
-  <p class="H_Parrafo_de_Item">Indicación de si se desea enviar también los mensajes al vendedor asociado a cada pedido demorado.</p>
-  <p class="H_Parrafo_de_Item">La dirección de correo electrónico de cada vendedor podrá indicarse al ingresar el mismo en el sistema.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Usuarios</p>
-  <p class="H_Parrafo_de_Item">Nombre del usuario o de los usuarios a los que se les debe enviar el mensaje si se cumplen las condiciones indicadas en la línea de la tabla.</p>
-  <p class="H_Parrafo_de_Item">La dirección de correo electrónico de cada usuario deberá indicarse en la ficha <font style="font-weight: bold;">Datos generales</font> del punto <font style="font-weight: bold;">Usuarios</font>.</p>
-  <p class="H_Parrafo_de_Item">Si algún cliente tiene ítems que no hayan sido entregados en las fechas previstas, ya se cumplieron los días de tolerancia permitidos, y el cliente y los ítems cumplen con los <a href="tabla__Atributos.htm">atributos</a> y valores de atributos indicados en la misma línea, se les enviarán a los usuarios que aquí se indiquen mensajes avisando tal circunstancia.</p>
-  <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Carpeta</p>
-  <p class="H_Parrafo_de_Item">Las carpetas que se definen en este campo, alfanumérico de 30 caracteres, agrupan las alertas en la agenda del usuario que se informa en la ventana de la correspondiente parametrización. Su uso no es obligatorio. Ejemplo: se puede definir una carpeta para pedidos demorados de 1 día, y otra para pedidos demorados 7 días.</p>
-  <p class="H_Parrafo_de_Item">Siguiendo con el ejemplo anterior, aparecerán en la agenda del destinatario usuario, una carpeta de alertas, que contendrá otra carpeta llamada pedidos demorados, con los avisos correspondientes a pedidos demorados de 1 día y pedidos demorados 7 días agrupados en dos carpetas homónimas</p>
-  <p class="H_Parrafo_de_Item">En caso de no indicar carpetas el sistema utiliza una carpeta genérica de nombre “Sin Carpeta”</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Programar trabajo</p>
-  <p class="H_Parrafo_de_Item">Pulsando este botón aparecerá una pantalla que permitirá configurar la programación periódica de alertas de pedidos demorados.</p>
-  <p class="H_Parrafo_de_Item">Se podrá programar la periodicidad con que se enviarán los alertas y la frecuencia diaria, se podrá configurar para que se envíen los mensajes siempre un día y a una determinada hora o se pueden indicar períodos de días, semanas o meses pasados los cuales se enviarán.</p>
-  <p class="H_Parrafo_de_Item">La programación periódica de alertas sólo podrá ser realizada por el administrador del sistema y podrá modificarse esta programación todas las veces que sea necesario.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Tabla de importes de pedidos</span><span data-close-text="true">Tabla de importes de pedidos</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">En esta tabla se debe ingresar una lista con los importes de pedidos ante los cuales se quieren enviar alertas indicando para cada importe qué clientes e ítems se controlan, cuántos días de tolerancia se contemplan y a qué usuario se le envía el mensaje.</p>
+    <p class="H_Parrafo_de_Item">Si un cliente tiene pedidos con ítems no entregados en las fechas previstas y el importe de estos ítems demorados está contemplado en alguna línea de la tabla, y el cliente y los ítems cumplen con los <a href="tabla__Atributos.htm">atributos</a> y valores de atributos indicados en la misma línea, se le enviará en forma automática un mensaje al usuario que se indique en dicha línea. También si se desea, se podrán enviar los mensajes a los vendedores asociados a los pedidos demorados.</p>
+    <p class="H_Parrafo_de_Item">El momento en que se envíe cada mensaje y con qué frecuencia podrá configurarse pulsando el botón <font style="font-weight: bold;">Programar trabajo</font>.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Importe</p>
+    <p class="H_Parrafo_de_Item">Importe de los ítems demorados en pedidos hasta el cual se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
+    <p class="H_Parrafo_de_Item">Se utilizarán los datos de una determinada línea si el importe de los pedidos demorados es mayor o igual al importe de la línea y es menor al importe de la línea siguiente.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Días de tolerancia</p>
+    <p class="H_Parrafo_de_Item">Cantidad de días de tolerancia en el incumplimiento de la fecha de entrega de los pedidos hasta los cuales se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Atributo clientes</p>
+    <p class="H_Parrafo_de_Item">Código de <a href="tabla__Atributos.htm">atributo</a> de <font style="font-weight: bold;">Clientes</font> correspondiente a aquellos <a href="tabla__Clientes.htm">clientes</a> cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los ítems consignados en la línea de la tabla.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Item">Descripción del atributo correspondiente al código informado.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Valor</p>
+    <p class="H_Parrafo_de_Item">Valor del atributo informado correspondiente a aquellos clientes cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los ítems consignados en la línea de la tabla.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Atributo ítems</p>
+    <p class="H_Parrafo_de_Item">Código de <a href="tabla__Atributos.htm">atributo</a> de <font style="font-weight: bold;">Items</font> correspondiente a aquellos ítems cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los clientes consignados en la línea de la tabla.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Item">Descripción del atributo correspondiente al código informado.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Valor</p>
+    <p class="H_Parrafo_de_Item">Valor del atributo informado correspondiente a aquellos ítems cuyos pedidos se considerarán para el envío de alertas teniendo en cuenta el importe, los días de tolerancia, y los clientes consignados en la línea de la tabla.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Incluir vendedor</p>
+    <p class="H_Parrafo_de_Item">Indicación de si se desea enviar también los mensajes al vendedor asociado a cada pedido demorado.</p>
+    <p class="H_Parrafo_de_Item">La dirección de correo electrónico de cada vendedor podrá indicarse al ingresar el mismo en el sistema.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Usuarios</p>
+    <p class="H_Parrafo_de_Item">Nombre del usuario o de los usuarios a los que se les debe enviar el mensaje si se cumplen las condiciones indicadas en la línea de la tabla.</p>
+    <p class="H_Parrafo_de_Item">La dirección de correo electrónico de cada usuario deberá indicarse en la ficha <font style="font-weight: bold;">Datos generales</font> del punto <font style="font-weight: bold;">Usuarios</font>.</p>
+    <p class="H_Parrafo_de_Item">Si algún cliente tiene ítems que no hayan sido entregados en las fechas previstas, ya se cumplieron los días de tolerancia permitidos, y el cliente y los ítems cumplen con los <a href="tabla__Atributos.htm">atributos</a> y valores de atributos indicados en la misma línea, se les enviarán a los usuarios que aquí se indiquen mensajes avisando tal circunstancia.</p>
+    <p class="H_Item_con_vineta_negrita rl-p-H_Item_con_vineta_negrita">Carpeta</p>
+    <p class="H_Parrafo_de_Item">Las carpetas que se definen en este campo, alfanumérico de 30 caracteres, agrupan las alertas en la agenda del usuario que se informa en la ventana de la correspondiente parametrización. Su uso no es obligatorio. Ejemplo: se puede definir una carpeta para pedidos demorados de 1 día, y otra para pedidos demorados 7 días.</p>
+    <p class="H_Parrafo_de_Item">Siguiendo con el ejemplo anterior, aparecerán en la agenda del destinatario usuario, una carpeta de alertas, que contendrá otra carpeta llamada pedidos demorados, con los avisos correspondientes a pedidos demorados de 1 día y pedidos demorados 7 días agrupados en dos carpetas homónimas</p>
+    <p class="H_Parrafo_de_Item">En caso de no indicar carpetas el sistema utiliza una carpeta genérica de nombre “Sin Carpeta”</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true"> Programar trabajo</span><span data-close-text="true"> Programar trabajo</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Pulsando este botón aparecerá una pantalla que permitirá configurar la programación periódica de alertas de pedidos demorados.</p>
+    <p class="H_Parrafo_de_Item">Se podrá programar la periodicidad con que se enviarán los alertas y la frecuencia diaria, se podrá configurar para que se envíen los mensajes siempre un día y a una determinada hora o se pueden indicar períodos de días, semanas o meses pasados los cuales se enviarán.</p>
+    <p class="H_Parrafo_de_Item">La programación periódica de alertas sólo podrá ser realizada por el administrador del sistema y podrá modificarse esta programación todas las veces que sea necesario.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

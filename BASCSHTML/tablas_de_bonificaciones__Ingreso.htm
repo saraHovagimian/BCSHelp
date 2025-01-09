@@ -15,12 +15,13 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>Tablas de bonificaciones Ingreso</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-
-<meta name="rh-index-keywords" content="Ingreso"/><meta name="rh-authors" content=""/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tablas de bonificaciones Ingreso</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Ingreso"/>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -39,47 +40,59 @@
 
 
 
-<h1>Ingreso de bonificaciones</h1>
-<p class="H_Texto">Esta tarea permite informar la fecha de vigencia, la fecha de expiración y los porcentajes de bonificación a aplicar según los volúmenes de venta y según sean los productos y los clientes de los que se trate.</p>
-<p class="H_Texto">Los datos a ingresar son los siguientes:</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Empresa</p>
-<p class="H_Parrafo_de_Item">Código de empresa en la cual se ingresan las bonificaciones que se están definiendo.</p>
-<p class="H_Parrafo_de_Item">Este dato no se ingresa manualmente, sino que se completa el dato automáticamente con el código de la empresa en la cual está el usuario en ese momento; y sólo podrán verse o modificarse las tablas de bonificaciones asociadas a esa empresa.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Código</p>
-<p class="H_Parrafo_de_Item">Código identificatorio de la tabla de bonificación en la cual se ingresarán los porcentajes.</p>
-<p class="H_Parrafo_de_Item">Debe indicarse el código de una tabla de bonificaciones ya definida en el punto Definición de tablas de bonificaciones.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Día de vigencia</p>
-<p class="H_Parrafo_de_Item">Fecha desde la cual comienzan a regir los porcentajes de bonificación de la tabla que se está ingresando.</p>
-<p class="H_Parrafo_de_Item">No es posible ingresar tablas de bonificaciones con fechas de vigencia anteriores a la del día. Por lo cual, si la tabla vigente tiene una fecha de vigencia anterior a la del día y si debe incorporarse algún nuevo valor de atributo a la tabla, se deberá generar una nueva versión de dicha tabla cuya fecha de vigencia sea la fecha del día.</p>
-<p class="H_Parrafo_de_Item">Es posible ingresar tablas de bonificaciones con fechas de vigencia a futuro. Estas últimas no pasarán a ser tablas activas hasta tanto no se alcance su correspondiente fecha de vigencia.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Día de expiración</p>
-<p class="H_Parrafo_de_Item">Es la fecha hasta la cual regirán los porcentajes de la tabla de bonificaciones que se está definiendo.</p>
-<p class="H_Parrafo_de_Item">Este es un dato opcional, es decir, no es necesario ingresar información en él.</p>
-<p class="H_Parrafo_de_Item">En el caso que no se informe una fecha, la tabla será considerada como tabla activa y, por ende, será utilizada en las operaciones de venta, en tanto no aparezca una nueva versión de ella misma, que la reemplace.</p>
-<p class="H_Parrafo_de_Item">Esta situación puede darse, por ejemplo, en el caso que se haya ingresado en el sistema una versión de la tabla en cuestión con fecha de vigencia a futuro. El día que se alcance dicha fecha, esta tabla de bonificaciones entrará en vigencia automáticamente haciendo expirar a la tabla que estuvo vigente hasta ese momento.</p>
-<p class="H_Parrafo_de_Item">Resumiendo, una tabla de bonificaciones expira cuando se alcanza su fecha de expiración o, en caso de no poseer dicha fecha, cuando aparece una versión de la misma con fecha de vigencia posterior (y anterior o igual a la fecha del día).</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Tipo de producto</p>
-<p class="H_Parrafo_de_Item">Valor del <a href="tabla__Atributos.htm">atributo</a> de ítems para el cual se desean ingresar en la tabla los porcentajes de bonificación.</p>
-<p class="H_Parrafo_de_Item">Debe indicarse un valor de atributo definido para el código de atributo de ítems indicado al ingresar la tabla de bonificaciones.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Tipo de cliente</p>
-<p class="H_Parrafo_de_Item">Valor del <a href="tabla__Atributos.htm">atributo</a> de clientes para el cual se desean ingresar en la tabla los porcentajes de bonificación.</p>
-<p class="H_Parrafo_de_Item">Debe ingresarse un valor de atributo definido para el código de atributo de clientes indicado al ingresar la tabla de bonificaciones.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" alt="BASCSIMAG\Boton_de_opcion.gif" width="24" height="24" border="0"/> Cantidad</p>
-<p class="H_Parrafo_de_Item">Cantidad de Atributos de ítems para los cuales se desean ingresar en la tabla los porcentajes de bonificación.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Grilla.gif" alt="BASCSIMAG\Grilla.gif" width="24" height="24" border="0"/> Tabla de Bonificaciones</p>
-<p class="H_Parrafo_de_Item">Esta tabla se construye en base a los valores del <a href="tabla__Atributos.htm">atributo</a> de clientes, de ítems o a la cantidad que se haya especificado.</p>
-<p class="H_Parrafo_de_Item">Es decir, se fija un valor para algunas de las variables mencionadas (tipo de ítems, tipo de clientes o cantidad) y se informan los porcentajes de bonificación en base a los dos restantes.</p>
-<p class="H_Parrafo_de_Item">Por lo tanto esta tabla exhibirá los valores del atributo que no se tomó como fijo y se permite ingresar la cantidad o cantidades de unidades ante las cuales se desean aplicar distintos porcentajes de bonificación.</p>
-<p class="H_Parrafo_de_Item">Luego, bastará informar el porcentaje de bonificación que se ha de efectuar en cada caso.</p>
-
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
-
-<p class="H_Parrafo_de_Sub-Item">Cantidad de unidades a partir de la cual se utilizarán los porcentajes de bonificación que se indiquen en las columnas de esta línea de la tabla.</p>
-
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Porcentaje de bonificación</p>
-
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de bonificación que se utilizará para la cantidad de unidades indicada y para el valor del atributo de clientes correspondiente a la columna en la cual se ingresa el porcentaje.</p>
-<p class="H_Parrafo_de_Sub-Item">Este porcentaje se ofrecerá al ingresar comprobantes de ventas que utilicen la tabla de bonificaciones que se está ingresando, con un ítem con el valor del atributo de ítems indicado y para un cliente con el valor del atributo de clientes correspondiente a la columna en la cual se ingresó el porcentaje y con una cantidad menor o igual a la indicada.</p>
-
+  <h1>Ingreso de bonificaciones</h1>
+  <p class="H_Texto">Esta tarea permite informar la fecha de vigencia, la fecha de expiración y los porcentajes de bonificación a aplicar según los volúmenes de venta y según sean los productos y los clientes de los que se trate.</p>
+  <p class="H_Texto">Los datos a ingresar son los siguientes:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Empresa</span><span data-close-text="true">Empresa</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Código de empresa en la cual se ingresan las bonificaciones que se están definiendo.</p>
+    <p class="H_Parrafo_de_Item">Este dato no se ingresa manualmente, sino que se completa el dato automáticamente con el código de la empresa en la cual está el usuario en ese momento; y sólo podrán verse o modificarse las tablas de bonificaciones asociadas a esa empresa.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Código</span><span data-close-text="true">Código</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Código identificatorio de la tabla de bonificación en la cual se ingresarán los porcentajes.</p>
+    <p class="H_Parrafo_de_Item">Debe indicarse el código de una tabla de bonificaciones ya definida en el punto Definición de tablas de bonificaciones.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Día de vigencia</span><span data-close-text="true">Día de vigencia</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Fecha desde la cual comienzan a regir los porcentajes de bonificación de la tabla que se está ingresando.</p>
+    <p class="H_Parrafo_de_Item">No es posible ingresar tablas de bonificaciones con fechas de vigencia anteriores a la del día. Por lo cual, si la tabla vigente tiene una fecha de vigencia anterior a la del día y si debe incorporarse algún nuevo valor de atributo a la tabla, se deberá generar una nueva versión de dicha tabla cuya fecha de vigencia sea la fecha del día.</p>
+    <p class="H_Parrafo_de_Item">Es posible ingresar tablas de bonificaciones con fechas de vigencia a futuro. Estas últimas no pasarán a ser tablas activas hasta tanto no se alcance su correspondiente fecha de vigencia.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Día de expiración</span><span data-close-text="true">Día de expiración</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">Es la fecha hasta la cual regirán los porcentajes de la tabla de bonificaciones que se está definiendo.</p>
+    <p class="H_Parrafo_de_Item">Este es un dato opcional, es decir, no es necesario ingresar información en él.</p>
+    <p class="H_Parrafo_de_Item">En el caso que no se informe una fecha, la tabla será considerada como tabla activa y, por ende, será utilizada en las operaciones de venta, en tanto no aparezca una nueva versión de ella misma, que la reemplace.</p>
+    <p class="H_Parrafo_de_Item">Esta situación puede darse, por ejemplo, en el caso que se haya ingresado en el sistema una versión de la tabla en cuestión con fecha de vigencia a futuro. El día que se alcance dicha fecha, esta tabla de bonificaciones entrará en vigencia automáticamente haciendo expirar a la tabla que estuvo vigente hasta ese momento.</p>
+    <p class="H_Parrafo_de_Item">Resumiendo, una tabla de bonificaciones expira cuando se alcanza su fecha de expiración o, en caso de no poseer dicha fecha, cuando aparece una versión de la misma con fecha de vigencia posterior (y anterior o igual a la fecha del día).</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Tipo de producto</p>
+  <p class="H_Parrafo_de_Item">Valor del <a href="tabla__Atributos.htm">atributo</a> de ítems para el cual se desean ingresar en la tabla los porcentajes de bonificación.</p>
+  <p class="H_Parrafo_de_Item">Debe indicarse un valor de atributo definido para el código de atributo de ítems indicado al ingresar la tabla de bonificaciones.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Tipo de cliente</span><span data-close-text="true">Tipo de cliente</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Valor del <a href="tabla__Atributos.htm">atributo</a> de clientes para el cual se desean ingresar en la tabla los porcentajes de bonificación.</p>
+    <p class="H_Parrafo_de_Item">Debe ingresarse un valor de atributo definido para el código de atributo de clientes indicado al ingresar la tabla de bonificaciones.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Cantidad</span><span data-close-text="true">Cantidad</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Item">Cantidad de Atributos de ítems para los cuales se desean ingresar en la tabla los porcentajes de bonificación.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Tabla de Bonificaciones</span><span data-close-text="true">Tabla de Bonificaciones</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Parrafo_de_Item">Esta tabla se construye en base a los valores del <a data-cke-saved-href="tabla__Atributos.htm" href="tabla__Atributos.htm">atributo</a> de clientes, de ítems o a la cantidad que se haya especificado.</p>
+    <p class="H_Parrafo_de_Item">Es decir, se fija un valor para algunas de las variables mencionadas (tipo de ítems, tipo de clientes o cantidad) y se informan los porcentajes de bonificación en base a los dos restantes.</p>
+    <p class="H_Parrafo_de_Item">Por lo tanto esta tabla exhibirá los valores del atributo que no se tomó como fijo y se permite ingresar la cantidad o cantidades de unidades ante las cuales se desean aplicar distintos porcentajes de bonificación.</p>
+    <p class="H_Parrafo_de_Item">Luego, bastará informar el porcentaje de bonificación que se ha de efectuar en cada caso.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de unidades a partir de la cual se utilizarán los porcentajes de bonificación que se indiquen en las columnas de esta línea de la tabla.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Porcentaje de bonificación</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de bonificación que se utilizará para la cantidad de unidades indicada y para el valor del atributo de clientes correspondiente a la columna en la cual se ingresa el porcentaje.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este porcentaje se ofrecerá al ingresar comprobantes de ventas que utilicen la tabla de bonificaciones que se está ingresando, con un ítem con el valor del atributo de ítems indicado y para un cliente con el valor del atributo de clientes correspondiente a la columna en la cual se ingresó el porcentaje y con una cantidad menor o igual a la indicada.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"></p>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

@@ -15,12 +15,13 @@
   <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="generator" content="Adobe RoboHelp 2022"/>
-<title>tabla Tablas de Retenciones de S.U.S.S.</title>
-<link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-
-<meta name="rh-index-keywords" content="Retención,S.U.S.S."/><meta name="rh-authors" content=""/></head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>tabla Tablas de Retenciones de S.U.S.S.</title>
+  <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Retención,S.U.S.S."/>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -39,286 +40,132 @@
 
 
 
-<h1>Retención de S.U.S.S.</h1>
-<p class="H_Texto">Aquí se definen las diferentes tablas de retención de 
- SUSS con las que se opera.</p>
-<p class="H_Texto">La información que aquí se ingrese permitirá, en los 
- casos que corresponda, que el sistema efectúe el cálculo automático de 
- las retenciones de SUSS en los ingresos de pagos (si la empresa actúa 
- como agente de retención) y cobranzas cuyos clientes titulares actúan 
- como agentes de retención.</p>
-<p class="H_Texto">Las tablas de retención de SUSS se asocian a los <a href="tabla__Bienes.htm">bienes</a> y <a href="tabla__Servicios.htm">servicios</a> 
- mediante las tablas de impuestos asociadas a los mismos. Cada tabla de 
- impuestos que se defina lleva indicada una tabla de retención de SUSS., 
- lo que permite administrar distintos porcentajes de retención dependiendo 
- del tipo de productos.</p>
-<p class="H_Texto">Los comprobantes en los que se calculan retenciones 
- de SUSS. son las órdenes de pago (en caso que la empresa actúe como agente 
- de retención) y los recibos clientes cuyos titulares actúen como agentes 
- de retención.</p>
-<p class="H_Texto">Para el cálculo interviene el importe sujeto a retención 
- y la categoría de retención de SUSS asociada al <a href="tabla__Tratamientos_impositivos.htm">tratamiento 
- impositivo</a> de la cuenta corriente (cliente o proveedor). Esta categoría 
- determina si la cuenta corriente está sujeta a retenciones de SUSS, y 
- en ese caso, la categoría permite aplicar diferentes porcentajes de retención 
- según cual sea el importe sujeto.</p>
-<p class="H_Texto">Se prevé la impresión de los comprobantes de retención 
- correspondientes a las retenciones efectuadas. En los datos impositivos 
- de la empresa en la que se ingresa cada comprobante se informa el formato 
- de impresión con el que se imprimen dichos comprobantes, y si se imprimen 
- en forma automática o no.</p>
-<p class="H_Texto">Los datos que deben ingresarse son los siguientes:</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
- Número de tabla</p>
-<p class="H_Parrafo_de_Item">Número de hasta dos dígitos que identifica 
- a la tabla de retención de SUSS y será utilizado para individualizar a 
- la misma en todo el sistema.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> 
- Descripción</p>
-<p class="H_Parrafo_de_Item">Denominación de la tabla. Se dispone de hasta 
- veinticinco caracteres para el ingreso.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Imputaciones contables</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Compras</p>
-<p class="H_Parrafo_de_Sub-Item">En este campo se indica la cuenta del 
- Plan de Cuentas que llevará imputado el importe de retención de SUSS en 
- los asientos de las órdenes de pago, créditos bancarios y liquidaciones 
- de tarjetas en los que se utiliza la tabla de retención que se está definiendo.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe ingresarse una <a href="tabla__Cuentas.htm">imputación 
- contable</a> definida en el plan de cuentas y sin subcuentas.</p>
-<p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúe la registración 
- contable de alguno de los comprobantes mencionados en los cuales se hayan 
- efectuado retenciones de SUSS para la tabla indicada, se imputará en esta 
- cuenta el importe de la retención efectuada.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Ventas</p>
-<p class="H_Parrafo_de_Sub-Item">En este campo se indica la cuenta del 
- Plan de Cuentas que llevará imputado el importe de retención de SUSS. 
- en los asientos de los recibos en los que se utiliza la tabla de retención 
- que se está definiendo.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe ingresarse una <a href="tabla__Cuentas.htm">imputación 
- contable</a> definida en el plan de cuentas y sin subcuentas.</p>
-<p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúe la registración 
- contable de un recibo en el cual se hayan efectuado retenciones de SUSS 
- para la tabla indicada, se imputará en esta cuenta el importe de la retención 
- sufrida.</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Frame.gif" alt="BASCSIMAG\Frame.gif" width="24" height="24" border="0"/> 
- Porcentajes</p>
-<p class="H_Parrafo_de_Item">Cada <a href="tabla__Tratamientos_impositivos.htm">tratamiento 
- impositivo</a> asociado a las cuentas corrientes tiene asociado una <font style="font-weight: bold;">Categoría de retención de SUSS.</font></p>
-<p class="H_Parrafo_de_Item">Esto permite administrar diferentes categorías 
- para los diferentes agentes de retención.</p>
-<p class="H_Parrafo_de_Item">Las categorías se indican con un número de 
- 1 a 5. Aquí se pueden ingresar los porcentajes de retención de SUSS asociados 
- a cada categoría. BAS CS trabaja con cinco categorías, si hay alguna que 
- no se utiliza, puede dejarse con porcentaje 0.</p>
-<p class="H_Parrafo_de_Item">Cada porcentaje será aplicado en el cálculo 
- de retenciones para los agentes de retención de la categoría correspondiente.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> %Categoría 
- 1</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se 
- utiliza en el tramo de la tabla indicado para la categoría 1.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> %Categoría 
- 2</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se 
- utiliza en el tramo de la tabla indicado para la categoría 2.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> %Categoría 
- 3</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se 
- utiliza en el tramo de la tabla indicado para la categoría 3.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> %Categoría 
- 4</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se 
- utiliza en el tramo de la tabla indicado para la categoría 4.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> %Categoría 
- 5</p>
-<p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se 
- utiliza en el tramo de la tabla indicado para la categoría 5.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Boton_de_opción.gif" alt="BASCSIMAG\Boton_de_opción.gif" width="24" height="24" border="0"/> Tipo de 
- cálculo</p>
-<p class="H_Parrafo_de_Sub-Item">Indica cómo se obtiene el porcentaje de 
- retención que debe aplicarse a un determinado importe sujeto.</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Directo</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Ubica el importe en la fila de la 
- tabla que corresponda y aplica el porcentaje de esa línea (Así se hacía 
- hasta ahora la retención de IVA).</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cálculo por tramos</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Con el importe que se tiene se va 
- calculando el porcentaje de cada tramo hasta llegar al importe. (Así se 
- calculaban hasta ahora las retenciones de Ganancias).</p>
-<p class="H_Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Ficha.gif" alt="BASCSIMAG\Ficha.gif" width="24" height="24" border="0"/> 
- Regímenes</p>
-<p class="H_Parrafo_de_Item">En esta solapa se incluyen una serie de parámetros 
- destinados a cubrir las diferentes posibilidades de cálculo del impuesto.</p>
-<p class="H_Parrafo_de_Item">Al ingresar comprobantes se deben considerar 
- dos importes. Un importe que se toma como <font style="font-weight: bold;">Base 
- de evaluación</font> y otro importe que se toma como <font style="font-weight: bold;">Base 
- de Cálculo</font>.</p>
-<p class="H_Parrafo_de_Item">Por lo cual, hay un grupo de parámetros denominados 
- de <font style="font-weight: bold;">Evaluación</font> que se utilizan 
- para determinar si a un comprobante se le calcula retención o no y otro 
- grupo de parámetros denominados de <font style="font-weight: bold;">Cálculo</font> 
- que se utilizan para efectuar el cálculo propiamente dicho.</p>
-<p class="H_Parrafo_de_Item">Tanto la <font style="font-weight: bold;">Base 
- de evaluación</font> como la <font style="font-weight: bold;">Base de 
- Cálculo</font> se pueden obtener por comprobante, por mes, o por año según 
- se indique, y no necesariamente tienen que ser iguales, ya que pueden 
- obtenerse en base a diferentes importes.</p>
-<p class="H_Parrafo_de_Item">Por ejemplo, para evaluar si a un comprobante 
- le corresponde retención se puede tener en cuenta su importe TOTAL y para 
- calcularle la retención tener en cuenta su importe gravado solamente.</p>
-<p class="H_Parrafo_de_Item">La <font style="font-weight: bold;">base de 
- evaluación</font> es un importe que se compara con el <font style="font-weight: bold;">importe 
- mínimo imponible</font> de la tabla de retención, para determinar si a 
- un comprobante se le calcula retención.</p>
-<p class="H_Parrafo_de_Item">La <font style="font-weight: bold;">base de 
- cálculo</font> es el importe al que se aplica el porcentaje de retención, 
- lo que comúnmente llamamos <font style="font-weight: bold;">importe sujeto</font>.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Categoría</p>
-<p class="H_Parrafo_de_Sub-Item">Categoría de cliente/ proveedor para la 
- cual se especifican los parámetros de la línea.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Régimen</p>
-<p class="H_Parrafo_de_Sub-Item">Régimen correspondiente a la categoría 
- indicada. Se debe seleccionar un código o de la tabla correspondiente.</p>
-<p class="H_Parrafo_de_Sub-Item">Si en la <a href="tabla__Empresas.htm">Empresa 
- (solapa “Datos impositivos”)</a> se tildó el campo “Exigir el régimen 
- en percepciones/retenciones de IVA, Ganancias y SUSS, los regímenes son 
- obligatorios para las categorías que se estén utilizando.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Descripción</p>
-<p class="H_Parrafo_de_Sub-Item">Nombre del régimen informado.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Flecha_opciones.gif" alt="BASCSIMAG\Flecha_opciones.gif" width="24" height="24" border="0"/> Base</p>
-<p class="H_Parrafo_de_Sub-Item">Se indica en base a qué se calcula el 
- importe que se va a comparar con el mínimo imponible para determinar si 
- a un comprobante se le efectúa la retención. Las opciones son:</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Comprobante</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">El importe que se toma como base es 
- el importe (gravado, IVA y/o impuestos internos) del comprobante aplicado.</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Mes</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Se usa el importe del comprobante 
- aplicado, sumado a los totales pagados del mes al mismo proveedor o cliente.</p>
-<p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Año</p>
-<p class="H_Parrafo_de_Sub-Sub-Item">Se usa el importe del comprobante 
- aplicado, sumado a los totales pagados del año al mismo proveedor o cliente.</p>
-<p class="H_Parrafo_de_Item">Si la base es mensual o anual se exhiben las 
- columnas de total pagado y total retenido al calcular retenciones.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Evalúa comprobantes 
- en sucesivas aplicaciones</p>
-<p class="H_Parrafo_de_Sub-Item">Al tildarse, indica que los comprobantes 
- a los cuales ya se les calculó retención en otros pagos o cobranzas, si 
- bien no vuelven a participar del cálculo de la misma retención, sí son 
- tenidos en cuenta para el control del mínimo imponible</p>
-<p class="H_Parrafo_de_Sub-Item">En otras palabras, el importe del comprobante 
- correspondiente a la base de evaluación, sumará al importe de los comprobantes 
- aplicados que se compara con el mínimo imponible para determinar si se 
- calcula o no retención.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se podrán 
- evaluar comprobantes en sucesivas aplicaciones, si se seleccionó base 
- mensual o anual.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Base de 
- evaluación</p>
-<p class="H_Parrafo_de_Sub-Item">Se debe indicar, mediante tildes, cuales 
- de los siguientes importes conforman la base de evaluación:</p>
-<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe gravado</p>
-<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe de IVA</p>
-<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Impuestos internos</p>
-<p class="H_Parrafo_de_Sub-Item">Para cada comprobante, se sumarán los 
- importes que acá se indiquen y se compararán con el mínimo imponible.</p>
-<p class="H_Parrafo_de_Sub-Item">Si se indicó Base Mensual o Anual, se 
- sumará el importe que aquí se indique, de todos los comprobantes del mes 
- o del año del mismo cliente o proveedor al que se le calcula la retención.</p>
-<p class="H_Parrafo_de_Sub-Item">Si se evalúa en sucesivas aplicaciones, 
- el importe de los comprobantes que se considerará para la evaluación será 
- el que aquí se indique.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Mínimo imponible</p>
-<p class="H_Parrafo_de_Sub-Item">Importe mínimo necesario para calcular 
- la retención.</p>
-<p class="H_Parrafo_de_Sub-Item">El importe que se compara con este mínimo, 
- surge del importe (gravado, IVA y/o impuestos internos) de los comprobantes 
- aplicados, más los totales pagados del mes si se indicó <font style="font-weight: bold;">base 
- mensual</font> o los totales pagados del año si se indico <font style="font-weight: bold;">base 
- anual</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Además incluye los importes correspondientes 
- a la base de evaluación, de los comprobantes ya aplicados parcialmente, 
- si se indicó <font style="font-weight: bold;">Evalúa en sucesivas aplicaciones</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el importe resultante es menor a este 
- mínimo no se calcula retención.</p>
-<p class="H_Parrafo_de_Sub-Item">Este mínimo podrá evaluarse en forma total 
- o por cada comprobante aplicado, según lo que se indique en <font style="font-weight: bold;">Controla 
- mínimos por comprobante</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Una vez controlados los mínimos por tabla, 
- se suman todos los importes que superan los mínimos por tabla y se compara 
- ese total con el mínimo imponible informado en la empresa, en forma global.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Controla 
- mínimo por comprobante</p>
-<p class="H_Parrafo_de_Sub-Item">Según lo que se indique en este campo, 
- el control del mínimo imponible se efectuará por cada tabla de retención 
- o por comprobante aplicado-tabla de retención.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se podrá 
- controlar mínimo imponible por comprobante, si se evalúa comprobantes 
- en sucesivas aplicaciones.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Considera 
- importe aplicado</p>
-<p class="H_Parrafo_de_Sub-Item">Si se tilda, indica que el importe sujeto 
- a retención se calcula en forma proporcional al importe aplicado. (Así 
- es como funcionan actualmente las retenciones de Ganancias y SUSS).</p>
-<p class="H_Parrafo_de_Sub-Item">Si no se tilda, el importe sujeto incluye 
- el total de la base usada como calculo, de los comprobantes aplicados.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Base de 
- cálculo</p>
-<p class="H_Parrafo_de_Sub-Item">Se debe indicar, mediante tildes, cuales 
- de los siguientes importes conforman la base de cálculo:</p>
-<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe gravado</p>
-<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe de IVA</p>
-<p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Impuestos internos</p>
-<p class="H_Parrafo_de_Sub-Item">El importe sujeto surgirá de la base de 
- cálculo de los comprobantes aplicados, en forma total o parcial, según 
- se indique en Evalúa importe aplicado. Además incluirá los totales pagados 
- del mes o del año en caso que se haya indicado base mensual o anual.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Importe 
- deducible</p>
-<p class="H_Parrafo_de_Sub-Item">Importe no imponible, es decir, importe 
- para el cual no se calcula retención.</p>
-<p class="H_Parrafo_de_Sub-Item">Este importe se resta del importe sujeto 
- antes de calcular la retención. No afecta al importe sujeto, es decir, 
- el importe sujeto se muestra sin restarle el importe deducible; éste último 
- sólo se aplica en el cálculo.</p>
-<p class="H_Parrafo_de_Sub-Item">Si el importe sujeto es menor a este importe 
- no se calcula retención.</p>
-<p class="H_Parrafo_de_Sub-Item">El importe deducible siempre se resta 
- independientemente de la base de cálculo que se utilice.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se restará 
- este importe si el tratamiento impositivo del cliente o proveedor tiene 
- indicado que no se considera.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/campo_para_dato.gif" alt="BASCSIMAG\campo_para_dato.gif" width="23" height="13" border="0"/> Mínimo a 
- retener</p>
-<p class="H_Parrafo_de_Sub-Item">Es el importe mínimo que tendrá que tener 
- la retención resultante para que sea efectuada.</p>
-<p class="H_Parrafo_de_Sub-Item">Surge de aplicar la tasa correspondiente 
- al importe sujeto resultante y a ese importe restarle los totales retenidos 
- del mes o del año, si se eligió base <font style="font-weight: bold;">mensual</font> 
- o <font style="font-weight: bold;">anual</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Este mínimo podrá evaluarse en forma total 
- o por cada comprobante aplicado, según lo que se indique en <font style="font-weight: bold;">Controla 
- mínimos por comprobante aplicado</font>.</p>
-<p class="H_Parrafo_de_Sub-Item">Una vez controlados los mínimos por tabla, 
- o por comprobante-tabla, se suman todos los importes de retención que 
- superan los mínimos a retener por tabla y se compara ese total, con el 
- importe mínimo a retener de la empresa, en forma global.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Controla 
- mínimo por comprobante</p>
-<p class="H_Parrafo_de_Sub-Item">Según lo que se indique, el control del 
- mínimo a retener se efectuará por cada tabla de retención o por comprobante 
- aplicado-tabla de retención.</p>
-<p class="H_Sub-Item_con_imagen_negrita"><img src="../assets/images/BASCSIMAG/Check.gif" alt="BASCSIMAG\Check.gif" width="24" height="24" border="0"/> Detalla 
- por comprobante aplicado</p>
-<p class="H_Parrafo_de_Sub-Item">Si se tilda esta opción, en la solapa 
- de retención de ganancias de las ordenes de pago y recibos la retención 
- se detalla comprobante por comprobante aplicado. de lo contrario, la retención 
- se exhibe  consolidada en una línea.</p>
-<p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se podrá 
- chequear esta opción si se seleccionó base mensual o anual.</p>
-<p class="H_Parrafo_de_Sub-Item">Si se tilda se asignarán distintos números 
- de retención a cada comprobante aplicado al que no se le haya indicado 
- uno manualmente.</p>
-
+  <h1>Retención de S.U.S.S.</h1>
+  <p class="H_Texto">Aquí se definen las diferentes tablas de retención de SUSS con las que se opera.</p>
+  <p class="H_Texto">La información que aquí se ingrese permitirá, en los casos que corresponda, que el sistema efectúe el cálculo automático de las retenciones de SUSS en los ingresos de pagos (si la empresa actúa como agente de retención) y cobranzas cuyos clientes titulares actúan como agentes de retención.</p>
+  <p class="H_Texto">Las tablas de retención de SUSS se asocian a los <a href="tabla__Bienes.htm">bienes</a> y <a href="tabla__Servicios.htm">servicios</a> mediante las tablas de impuestos asociadas a los mismos. Cada tabla de impuestos que se defina lleva indicada una tabla de retención de SUSS., lo que permite administrar distintos porcentajes de retención dependiendo del tipo de productos.</p>
+  <p class="H_Texto">Los comprobantes en los que se calculan retenciones de SUSS. son las órdenes de pago (en caso que la empresa actúe como agente de retención) y los recibos clientes cuyos titulares actúen como agentes de retención.</p>
+  <p class="H_Texto">Para el cálculo interviene el importe sujeto a retención y la categoría de retención de SUSS asociada al <a href="tabla__Tratamientos_impositivos.htm">tratamiento impositivo</a> de la cuenta corriente (cliente o proveedor). Esta categoría determina si la cuenta corriente está sujeta a retenciones de SUSS, y en ese caso, la categoría permite aplicar diferentes porcentajes de retención según cual sea el importe sujeto.</p>
+  <p class="H_Texto">Se prevé la impresión de los comprobantes de retención correspondientes a las retenciones efectuadas. En los datos impositivos de la empresa en la que se ingresa cada comprobante se informa el formato de impresión con el que se imprimen dichos comprobantes, y si se imprimen en forma automática o no.</p>
+  <p class="H_Texto">Los datos que deben ingresarse son los siguientes:</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Número de tabla</span><span data-close-text="true">Número de tabla</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Número de hasta dos dígitos que identifica a la tabla de retención de SUSS y será utilizado para individualizar a la misma en todo el sistema.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Descripción</span><span data-close-text="true">Descripción</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Denominación de la tabla. Se dispone de hasta veinticinco caracteres para el ingreso.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Imputaciones contables</span><span data-close-text="true">Imputaciones contables</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Compras</p>
+    <p class="H_Parrafo_de_Sub-Item">En este campo se indica la cuenta del Plan de Cuentas que llevará imputado el importe de retención de SUSS en los asientos de las órdenes de pago, créditos bancarios y liquidaciones de tarjetas en los que se utiliza la tabla de retención que se está definiendo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe ingresarse una <a href="tabla__Cuentas.htm">imputación contable</a> definida en el plan de cuentas y sin subcuentas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúe la registración contable de alguno de los comprobantes mencionados en los cuales se hayan efectuado retenciones de SUSS para la tabla indicada, se imputará en esta cuenta el importe de la retención efectuada.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Ventas</p>
+    <p class="H_Parrafo_de_Sub-Item">En este campo se indica la cuenta del Plan de Cuentas que llevará imputado el importe de retención de SUSS. en los asientos de los recibos en los que se utiliza la tabla de retención que se está definiendo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe ingresarse una <a href="tabla__Cuentas.htm">imputación contable</a> definida en el plan de cuentas y sin subcuentas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Cada vez que se efectúe la registración contable de un recibo en el cual se hayan efectuado retenciones de SUSS para la tabla indicada, se imputará en esta cuenta el importe de la retención sufrida.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Porcentajes</span><span data-close-text="true">Porcentajes</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">Cada <a href="tabla__Tratamientos_impositivos.htm">tratamiento impositivo</a> asociado a las cuentas corrientes tiene asociado una <font style="font-weight: bold;">Categoría de retención de SUSS.</font>
+    </p>
+    <p class="H_Parrafo_de_Item">Esto permite administrar diferentes categorías para los diferentes agentes de retención.</p>
+    <p class="H_Parrafo_de_Item">Las categorías se indican con un número de 1 a 5. Aquí se pueden ingresar los porcentajes de retención de SUSS asociados a cada categoría. BAS CS trabaja con cinco categorías, si hay alguna que no se utiliza, puede dejarse con porcentaje 0.</p>
+    <p class="H_Parrafo_de_Item">Cada porcentaje será aplicado en el cálculo de retenciones para los agentes de retención de la categoría correspondiente.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> %Categoría 1</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se utiliza en el tramo de la tabla indicado para la categoría 1.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> %Categoría 2</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se utiliza en el tramo de la tabla indicado para la categoría 2.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> %Categoría 3</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se utiliza en el tramo de la tabla indicado para la categoría 3.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> %Categoría 4</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se utiliza en el tramo de la tabla indicado para la categoría 4.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> %Categoría 5</p>
+    <p class="H_Parrafo_de_Sub-Item">Porcentaje de retención de SUSS que se utiliza en el tramo de la tabla indicado para la categoría 5.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opción.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opción.gif" width="24"/> Tipo de cálculo</p>
+    <p class="H_Parrafo_de_Sub-Item">Indica cómo se obtiene el porcentaje de retención que debe aplicarse a un determinado importe sujeto.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Directo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Ubica el importe en la fila de la tabla que corresponda y aplica el porcentaje de esa línea (Así se hacía hasta ahora la retención de IVA).</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cálculo por tramos</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Con el importe que se tiene se va calculando el porcentaje de cada tramo hasta llegar al importe. (Así se calculaban hasta ahora las retenciones de Ganancias).</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Regímenes</span><span data-close-text="true">Regímenes</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">En esta solapa se incluyen una serie de parámetros destinados a cubrir las diferentes posibilidades de cálculo del impuesto.</p>
+    <p class="H_Parrafo_de_Item">Al ingresar comprobantes se deben considerar dos importes. Un importe que se toma como <font style="font-weight: bold;">Base de evaluación</font> y otro importe que se toma como <font style="font-weight: bold;">Base de Cálculo</font>.</p>
+    <p class="H_Parrafo_de_Item">Por lo cual, hay un grupo de parámetros denominados de <font style="font-weight: bold;">Evaluación</font> que se utilizan para determinar si a un comprobante se le calcula retención o no y otro grupo de parámetros denominados de <font style="font-weight: bold;">Cálculo</font> que se utilizan para efectuar el cálculo propiamente dicho.</p>
+    <p class="H_Parrafo_de_Item">Tanto la <font style="font-weight: bold;">Base de evaluación</font> como la <font style="font-weight: bold;">Base de Cálculo</font> se pueden obtener por comprobante, por mes, o por año según se indique, y no necesariamente tienen que ser iguales, ya que pueden obtenerse en base a diferentes importes.</p>
+    <p class="H_Parrafo_de_Item">Por ejemplo, para evaluar si a un comprobante le corresponde retención se puede tener en cuenta su importe TOTAL y para calcularle la retención tener en cuenta su importe gravado solamente.</p>
+    <p class="H_Parrafo_de_Item">La <font style="font-weight: bold;">base de evaluación</font> es un importe que se compara con el <font style="font-weight: bold;">importe mínimo imponible</font> de la tabla de retención, para determinar si a un comprobante se le calcula retención.</p>
+    <p class="H_Parrafo_de_Item">La <font style="font-weight: bold;">base de cálculo</font> es el importe al que se aplica el porcentaje de retención, lo que comúnmente llamamos <font style="font-weight: bold;">importe sujeto</font>.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Categoría</p>
+    <p class="H_Parrafo_de_Sub-Item">Categoría de cliente/ proveedor para la cual se especifican los parámetros de la línea.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Régimen</p>
+    <p class="H_Parrafo_de_Sub-Item">Régimen correspondiente a la categoría indicada. Se debe seleccionar un código o de la tabla correspondiente.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si en la <a href="tabla__Empresas.htm">Empresa (solapa “Datos impositivos”)</a> se tildó el campo “Exigir el régimen en percepciones/retenciones de IVA, Ganancias y SUSS, los regímenes son obligatorios para las categorías que se estén utilizando.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Nombre del régimen informado.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Base</p>
+    <p class="H_Parrafo_de_Sub-Item">Se indica en base a qué se calcula el importe que se va a comparar con el mínimo imponible para determinar si a un comprobante se le efectúa la retención. Las opciones son:</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Comprobante</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">El importe que se toma como base es el importe (gravado, IVA y/o impuestos internos) del comprobante aplicado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Mes</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se usa el importe del comprobante aplicado, sumado a los totales pagados del mes al mismo proveedor o cliente.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Año</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Se usa el importe del comprobante aplicado, sumado a los totales pagados del año al mismo proveedor o cliente.</p>
+    <p class="H_Parrafo_de_Item">Si la base es mensual o anual se exhiben las columnas de total pagado y total retenido al calcular retenciones.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Evalúa comprobantes en sucesivas aplicaciones</p>
+    <p class="H_Parrafo_de_Sub-Item">Al tildarse, indica que los comprobantes a los cuales ya se les calculó retención en otros pagos o cobranzas, si bien no vuelven a participar del cálculo de la misma retención, sí son tenidos en cuenta para el control del mínimo imponible</p>
+    <p class="H_Parrafo_de_Sub-Item">En otras palabras, el importe del comprobante correspondiente a la base de evaluación, sumará al importe de los comprobantes aplicados que se compara con el mínimo imponible para determinar si se calcula o no retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se podrán evaluar comprobantes en sucesivas aplicaciones, si se seleccionó base mensual o anual.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Base de evaluación</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe indicar, mediante tildes, cuales de los siguientes importes conforman la base de evaluación:</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe gravado</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe de IVA</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Impuestos internos</p>
+    <p class="H_Parrafo_de_Sub-Item">Para cada comprobante, se sumarán los importes que acá se indiquen y se compararán con el mínimo imponible.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se indicó Base Mensual o Anual, se sumará el importe que aquí se indique, de todos los comprobantes del mes o del año del mismo cliente o proveedor al que se le calcula la retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se evalúa en sucesivas aplicaciones, el importe de los comprobantes que se considerará para la evaluación será el que aquí se indique.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Mínimo imponible</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe mínimo necesario para calcular la retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">El importe que se compara con este mínimo, surge del importe (gravado, IVA y/o impuestos internos) de los comprobantes aplicados, más los totales pagados del mes si se indicó <font style="font-weight: bold;">base mensual</font> o los totales pagados del año si se indico <font style="font-weight: bold;">base anual</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Además incluye los importes correspondientes a la base de evaluación, de los comprobantes ya aplicados parcialmente, si se indicó <font style="font-weight: bold;">Evalúa en sucesivas aplicaciones</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el importe resultante es menor a este mínimo no se calcula retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este mínimo podrá evaluarse en forma total o por cada comprobante aplicado, según lo que se indique en <font style="font-weight: bold;">Controla mínimos por comprobante</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez controlados los mínimos por tabla, se suman todos los importes que superan los mínimos por tabla y se compara ese total con el mínimo imponible informado en la empresa, en forma global.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Controla mínimo por comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Según lo que se indique en este campo, el control del mínimo imponible se efectuará por cada tabla de retención o por comprobante aplicado-tabla de retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se podrá controlar mínimo imponible por comprobante, si se evalúa comprobantes en sucesivas aplicaciones.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Considera importe aplicado</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda, indica que el importe sujeto a retención se calcula en forma proporcional al importe aplicado. (Así es como funcionan actualmente las retenciones de Ganancias y SUSS).</p>
+    <p class="H_Parrafo_de_Sub-Item">Si no se tilda, el importe sujeto incluye el total de la base usada como calculo, de los comprobantes aplicados.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Base de cálculo</p>
+    <p class="H_Parrafo_de_Sub-Item">Se debe indicar, mediante tildes, cuales de los siguientes importes conforman la base de cálculo:</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe gravado</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Importe de IVA</p>
+    <p class="H_Sub_Sub_Item_con_vineta rl-p-H_Sub_Sub_Item_con_vineta">Impuestos internos</p>
+    <p class="H_Parrafo_de_Sub-Item">El importe sujeto surgirá de la base de cálculo de los comprobantes aplicados, en forma total o parcial, según se indique en Evalúa importe aplicado. Además incluirá los totales pagados del mes o del año en caso que se haya indicado base mensual o anual.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Importe deducible</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe no imponible, es decir, importe para el cual no se calcula retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este importe se resta del importe sujeto antes de calcular la retención. No afecta al importe sujeto, es decir, el importe sujeto se muestra sin restarle el importe deducible; éste último sólo se aplica en el cálculo.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el importe sujeto es menor a este importe no se calcula retención.</p>
+    <p class="H_Parrafo_de_Sub-Item">El importe deducible siempre se resta independientemente de la base de cálculo que se utilice.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se restará este importe si el tratamiento impositivo del cliente o proveedor tiene indicado que no se considera.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Mínimo a retener</p>
+    <p class="H_Parrafo_de_Sub-Item">Es el importe mínimo que tendrá que tener la retención resultante para que sea efectuada.</p>
+    <p class="H_Parrafo_de_Sub-Item">Surge de aplicar la tasa correspondiente al importe sujeto resultante y a ese importe restarle los totales retenidos del mes o del año, si se eligió base <font style="font-weight: bold;">mensual</font> o <font style="font-weight: bold;">anual</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Este mínimo podrá evaluarse en forma total o por cada comprobante aplicado, según lo que se indique en <font style="font-weight: bold;">Controla mínimos por comprobante aplicado</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Una vez controlados los mínimos por tabla, o por comprobante-tabla, se suman todos los importes de retención que superan los mínimos a retener por tabla y se compara ese total, con el importe mínimo a retener de la empresa, en forma global.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Controla mínimo por comprobante</p>
+    <p class="H_Parrafo_de_Sub-Item">Según lo que se indique, el control del mínimo a retener se efectuará por cada tabla de retención o por comprobante aplicado-tabla de retención.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Detalla por comprobante aplicado</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda esta opción, en la solapa de retención de ganancias de las ordenes de pago y recibos la retención se detalla comprobante por comprobante aplicado. de lo contrario, la retención se exhibe  consolidada en una línea.</p>
+    <p class="H_Parrafo_de_Sub-Item">Debe tenerse en cuenta que no se podrá chequear esta opción si se seleccionó base mensual o anual.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si se tilda se asignarán distintos números de retención a cada comprobante aplicado al que no se le haya indicado uno manualmente.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

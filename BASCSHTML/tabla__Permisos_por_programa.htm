@@ -19,7 +19,8 @@
   <meta name="generator" content="Adobe RoboHelp 2022"/>
   <title>Tabla Permisos por programa</title>
   <link rel="StyleSheet" href="../assets/css/Manual-Salary.css" type="text/css"/>
-<meta name="rh-authors" content=""/></head>
+  <meta name="rh-authors" content=""/>
+</head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header">
@@ -38,7 +39,7 @@
 
 
 
-  <h1>Permisos por programa (Versión XE)</h1>
+  <h1>Permisos por programa </h1>
   <p class="H_Texto">El sistema brinda la posibilidad de manejar para los distintos usuarios del sistema, permisos por cada programa, es decir, dentro de un determinado proceso qué cosas puede hacer un usuario y qué cosas no. Además, mediante esta tarea se pueden indicar los modelos que cada usuario puede usar para cada programa.</p>
   <p class="H_Texto">La operatoria consiste en elegir un usuario del sistema, seleccionar un programa, y luego habilitar o inhabilitar los datos o modelos que se deseen.</p>
   <p class="H_Texto">Puede seleccionarse un usuario determinado del sistema o un grupo de usuarios. Si un usuario no tiene permisos por programa específicos, usará los del grupo de usuarios al que pertenece. Si el grupo no tiene permisos por programa específicos, el usuario tendrá habilitados todos los datos y modelos de todos los programas.</p>
@@ -50,80 +51,97 @@
   <p class="H_Texto">Si un campo se prohíbe en consulta, el usuario no podrá ver el valor de ese campo ni de los campos que dependen de él al consultar un registro en el programa indicado.</p>
   <p class="H_Texto">Se puede asignar además a cada campo un valor <font style="font-weight: bold;">Predeterminado</font> que es un valor fijo que tendrá el dato al ingresar nuevos registros en el programa.</p>
   <p class="H_Texto">Los datos a ingresar son los siguientes:</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> Grupos/usuarios</p>
-  <p class="H_Parrafo_de_Item">Se muestra una lista conteniendo todos los usuarios habilitados para cada grupo de usuarios definido.</p>
-  <p class="H_Parrafo_de_Item">Se permite seleccionar de esta lista, el usuario para el cual se desean configurar o modificar los permisos y modelos por programa.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Seleccionar</p>
-  <p class="H_Parrafo_de_Item">Mediante este botón es posible seleccionar el programa para el cual se desean modificar los permisos del usuario o del grupo de usuarios indicado.</p>
-  <p class="H_Parrafo_de_Item">Aparecerá en una ventana el menú mediante el cual opera el usuario o grupo, y será posible buscar y seleccionar en dicho menú el programa deseado. Al seleccionar el programa se exhibirá el nombre del mismo en el dato Programa.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Alta</p>
-  <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
-  <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para dar altas, es decir, para ingresar nuevos registros. Por ejemplo, se podrá indicar si el usuario podrá ingresar un nuevo ítem, en el programa de ingreso de bienes.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Modificación</p>
-  <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
-  <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para efectuar modificaciones a la información existente. Por ejemplo, se podrá indicar si el usuario podrá cambiar el grupo de compras al que pertenece un ítem, en el programa de ingreso de bienes.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Baja</p>
-  <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
-  <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para dar bajas, es decir, para eliminar registros. Por ejemplo, se podrá indicar si el usuario podrá eliminar un ítem que se encuentra en desuso, en el programa de ingreso de bienes.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Consulta</p>
-  <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
-  <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para efectuar consultas de la información existente. Por ejemplo, se podrá indicar si el usuario podrá consultar la ubicación de un ítem en un depósito, en el programa de ingreso de bienes.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Datos</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Datos</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta tabla permite indicar qué datos del programa se desean inhabilitar para el usuario o grupo de usuarios indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Al seleccionar el programa para el cual se desean configurar los permisos, se completará esta tabla con la lista de todos los datos posibles de ingresar o modificar en el programa.</p>
-  <p class="H_Parrafo_de_Sub-Item">Los datos que aparezcan en esta tabla se podrán prohibir en alta, en modificación y en consulta, o se les podrá asignar un valor fijo que tendrá cada dato al ingresar nuevos registros en el programa.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Dato</p>
-  <p class="H_Parrafo_de_Sub-Item">Nombre de cada dato del programa seleccionado para el cual será posible indicar permisos para el usuario o grupo de usuarios indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, si se indica el programa de ingreso de bienes, aparecerán en esta columna, entre otros datos, la tabla de impuestos, el peso, el volumen, las dimensiones, el stock ideal, el punto de reposición, el tipo de bien, etc.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohibir en alta</p>
-  <p class="H_Parrafo_de_Sub-Item">Indicación de si el dato exhibido en la columna anterior se encuentra inhabilitado o no para el usuario, al dar altas en el programa indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta columna no estará habilitada si el usuario no tiene permiso para dar altas en el programa, es decir, si no se marcó el campo <font style="font-weight: bold;">Alta</font> situado más arriba en la pantalla.</p>
-  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, se podrá prohibir que un determinado usuario ingrese el subdiario asociado a un talonario, al definir nuevos talonarios en el sistema.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohibir en modificación</p>
-  <p class="H_Parrafo_de_Sub-Item">Indicación de si el dato exhibido en la columna <font style="font-weight: bold;">Dato</font> se encuentra inhabilitado o no para el usuario, al realizar modificaciones en el programa indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta columna no estará habilitada si el usuario no tiene permiso para efectuar modificaciones en el programa, es decir, si no se marcó el campo <font style="font-weight: bold;">Modificación</font> situado más arriba en la pantalla.</p>
-  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, se podrá prohibir que un determinado usuario cambie el subdiario asociado a un talonario, al efectuar modificaciones a los talonarios definidos en el sistema.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohibir en consulta</p>
-  <p class="H_Parrafo_de_Sub-Item">Indicación de si el dato exhibido en la columna <font style="font-weight: bold;">Dato</font> se encuentra inhabilitado o no para el usuario, al realizar consultas en el programa indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta columna no estará habilitada si el usuario no tiene permiso para efectuar consultas en el programa, es decir, si no se marcó el campo <font style="font-weight: bold;">Consulta</font> situado más arriba en la pantalla.</p>
-  <p class="H_Parrafo_de_Sub-Item">Por ejemplo, se podrá prohibir que un determinado usuario vea el crédito de un cliente, al efectuar consultas a los clientes definidos en el sistema.</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Sub-Item_con_vi￱eta_negrita">Predeterminado</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Sub-Item">Este dato es opcional y corresponde al valor fijo que tendrá el dato al ingresar nuevos registros en el programa. Cada vez que sea posible ingresar un valor al dato, se completará automáticamente el mismo con el valor que aquí se indique.</p>
-  <p class="H_Parrafo_de_Sub-Item">Si el dato es un campo que se tilda en pantalla, los valores posibles a ingresar son S, s, N o n. Para el resto de los campos se valida que el valor predeterminado sea del mismo tipo que el campo (carácter, fecha o número) y que no exceda la longitud permitida del campo.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Modelos</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> No permite dar de alta modelos</p>
-  <p class="H_Parrafo_de_Sub-Item">Este campo permite indicar para el usuario, o el grupo de usuarios del cual se trate, si tienen o no permiso para dar de alta modelos en el programa que se indica en el campo Programa.</p>
-  <p class="H_Parrafo_de_Sub-Item">Por defecto, se ofrece, destildado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Si el usuario no tiene permiso para dar de alta modelos, en la ventana correspondiente al programa del cual se trate, al pretender grabar un nuevo modelo, el botón Grabar estará deshabilitado.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Modelos</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta tabla permite indicar qué modelos de los definidos para el programa seleccionado, se desean inhabilitar para el usuario o grupo de usuarios indicado.</p>
-  <p class="H_Parrafo_de_Sub-Item">Al seleccionar el programa para el cual se desean configurar los permisos, se completará esta tabla con la lista de todos los modelos definidos y habilitados para el programa.</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta tabla posee columnas para indicar si el usuario o grupo seleccionado tiene permisos para usar, modificar y/o dar de baja el modelo.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Modelo</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Modelo del programa seleccionado, posible de inhabilitar para el usuario o grupo de usuarios indicado.</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Al indicar un usuario o un grupo y un programa, la tabla disponible en la ficha Modelos exhibe los modelos habilitados para dicho usuario.</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Si se seleccionó un grupo, se muestran los modelos habilitados para ese grupo y para todos los usuarios que lo integran.</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Para habilitar modelos que anteriormente hayan sido inhabilitados para el usuario o grupo, se podrán agregar los mismos a la tabla, seleccionándolos de la lista de modelos definidos para el programa.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Creador</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Usuario creador del modelo.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Permiso para</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Exhibe este campo, según sea el caso, TODOS, el nombre de un grupo, y/o el nombre del usuario del cual se trate.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Observaciones</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Texto que se ha incorporado en el campo Comentario al darse de alta un modelo, en alguna ventana del sistema correspondiente.</p>
-  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Uso</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este campo, el usuario y/o grupo de usuarios puede utilizar el modelo definido en la fila de la tabla.</p>
-  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Modificación</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este campo, el usuario y/o grupo de usuarios puede modificar el modelo definido en la fila de la tabla.</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Si el usuario no tiene permiso de modificación, se deshabilitan los campos Comentario, Modelo predeterminado, el botón Grabar y el botón Seguridad de la ventana de Modelos.</p>
-  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Baja</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este campo, el usuario y/o grupo de usuarios puede dar de baja el modelo definido en la fila de la tabla.</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Si un usuario no tiene permiso para dar de baja el modelo, se deshabilita el botón Borrar de la ventana Modelos que corresponda.</p>
-  <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Defecto</p>
-  <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de un modelo por defecto, para el usuario y/o grupo de usuarios determinado.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Flecha_opciones.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Flecha_opciones.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Grupos/usuarios</span><span data-close-text="true">Grupos/usuarios</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Se muestra una lista conteniendo todos los usuarios habilitados para cada grupo de usuarios definido.</p>
+    <p class="H_Parrafo_de_Item">Se permite seleccionar de esta lista, el usuario para el cual se desean configurar o modificar los permisos y modelos por programa.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Seleccionar</span><span data-close-text="true">Seleccionar</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Mediante este botón es posible seleccionar el programa para el cual se desean modificar los permisos del usuario o del grupo de usuarios indicado.</p>
+    <p class="H_Parrafo_de_Item">Aparecerá en una ventana el menú mediante el cual opera el usuario o grupo, y será posible buscar y seleccionar en dicho menú el programa deseado. Al seleccionar el programa se exhibirá el nombre del mismo en el dato Programa.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Alta</span><span data-close-text="true">Alta</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
+    <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para dar altas, es decir, para ingresar nuevos registros. Por ejemplo, se podrá indicar si el usuario podrá ingresar un nuevo ítem, en el programa de ingreso de bienes.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Modificación</span><span data-close-text="true">Modificación</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
+    <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para efectuar modificaciones a la información existente. Por ejemplo, se podrá indicar si el usuario podrá cambiar el grupo de compras al que pertenece un ítem, en el programa de ingreso de bienes.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">Baja</span><span data-close-text="true">Baja</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
+    <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para dar bajas, es decir, para eliminar registros. Por ejemplo, se podrá indicar si el usuario podrá eliminar un ítem que se encuentra en desuso, en el programa de ingreso de bienes.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#"><span data-open-text="true" data-skip-index="true">Consulta</span><span data-close-text="true">Consulta</span></a></p>
+  <div class="droptext" data-targetname="drop-down5">
+    <p class="H_Parrafo_de_Item">Este dato sólo se encuentra habilitado si se seleccionó un programa de tipo altas, bajas y modificaciones.</p>
+    <p class="H_Parrafo_de_Item">Permite indicar si en el programa, el usuario indicado está habilitado para efectuar consultas de la información existente. Por ejemplo, se podrá indicar si el usuario podrá consultar la ubicación de un ítem en un depósito, en el programa de ingreso de bienes.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#"><span data-open-text="true" data-skip-index="true">Ficha Datos</span><span data-close-text="true">Ficha Datos</span></a></p>
+  <div class="droptext" data-targetname="drop-down6">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Grilla.gif" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Datos</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite indicar qué datos del programa se desean inhabilitar para el usuario o grupo de usuarios indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al seleccionar el programa para el cual se desean configurar los permisos, se completará esta tabla con la lista de todos los datos posibles de ingresar o modificar en el programa.</p>
+    <p class="H_Parrafo_de_Sub-Item">Los datos que aparezcan en esta tabla se podrán prohibir en alta, en modificación y en consulta, o se les podrá asignar un valor fijo que tendrá cada dato al ingresar nuevos registros en el programa.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Dato</p>
+    <p class="H_Parrafo_de_Sub-Item">Nombre de cada dato del programa seleccionado para el cual será posible indicar permisos para el usuario o grupo de usuarios indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por ejemplo, si se indica el programa de ingreso de bienes, aparecerán en esta columna, entre otros datos, la tabla de impuestos, el peso, el volumen, las dimensiones, el stock ideal, el punto de reposición, el tipo de bien, etc.</p>
+    <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohibir en alta</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si el dato exhibido en la columna anterior se encuentra inhabilitado o no para el usuario, al dar altas en el programa indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta columna no estará habilitada si el usuario no tiene permiso para dar altas en el programa, es decir, si no se marcó el campo <font style="font-weight: bold;">Alta</font> situado más arriba en la pantalla.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por ejemplo, se podrá prohibir que un determinado usuario ingrese el subdiario asociado a un talonario, al definir nuevos talonarios en el sistema.</p>
+    <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohibir en modificación</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si el dato exhibido en la columna <font style="font-weight: bold;">Dato</font> se encuentra inhabilitado o no para el usuario, al realizar modificaciones en el programa indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta columna no estará habilitada si el usuario no tiene permiso para efectuar modificaciones en el programa, es decir, si no se marcó el campo <font style="font-weight: bold;">Modificación</font> situado más arriba en la pantalla.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por ejemplo, se podrá prohibir que un determinado usuario cambie el subdiario asociado a un talonario, al efectuar modificaciones a los talonarios definidos en el sistema.</p>
+    <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Prohibir en consulta</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si el dato exhibido en la columna <font style="font-weight: bold;">Dato</font> se encuentra inhabilitado o no para el usuario, al realizar consultas en el programa indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta columna no estará habilitada si el usuario no tiene permiso para efectuar consultas en el programa, es decir, si no se marcó el campo <font style="font-weight: bold;">Consulta</font> situado más arriba en la pantalla.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por ejemplo, se podrá prohibir que un determinado usuario vea el crédito de un cliente, al efectuar consultas a los clientes definidos en el sistema.</p>
+    <ul>
+      <li style="font-size: 11pt;">
+        <p class="H_Sub-Item_con_vi￱eta_negrita">Predeterminado</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Sub-Item">Este dato es opcional y corresponde al valor fijo que tendrá el dato al ingresar nuevos registros en el programa. Cada vez que sea posible ingresar un valor al dato, se completará automáticamente el mismo con el valor que aquí se indique.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el dato es un campo que se tilda en pantalla, los valores posibles a ingresar son S, s, N o n. Para el resto de los campos se valida que el valor predeterminado sea del mismo tipo que el campo (carácter, fecha o número) y que no exceda la longitud permitida del campo.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#"><span data-open-text="true" data-skip-index="true"> Ficha Modelos</span><span data-close-text="true"> Ficha Modelos</span></a></p>
+  <div class="droptext" data-targetname="drop-down7">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> No permite dar de alta modelos</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo permite indicar para el usuario, o el grupo de usuarios del cual se trate, si tienen o no permiso para dar de alta modelos en el programa que se indica en el campo Programa.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por defecto, se ofrece, destildado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si el usuario no tiene permiso para dar de alta modelos, en la ventana correspondiente al programa del cual se trate, al pretender grabar un nuevo modelo, el botón Grabar estará deshabilitado.</p>
+    <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Grilla.gif" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de Modelos</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite indicar qué modelos de los definidos para el programa seleccionado, se desean inhabilitar para el usuario o grupo de usuarios indicado.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al seleccionar el programa para el cual se desean configurar los permisos, se completará esta tabla con la lista de todos los modelos definidos y habilitados para el programa.</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla posee columnas para indicar si el usuario o grupo seleccionado tiene permisos para usar, modificar y/o dar de baja el modelo.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Modelo</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Modelo del programa seleccionado, posible de inhabilitar para el usuario o grupo de usuarios indicado.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Al indicar un usuario o un grupo y un programa, la tabla disponible en la ficha Modelos exhibe los modelos habilitados para dicho usuario.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se seleccionó un grupo, se muestran los modelos habilitados para ese grupo y para todos los usuarios que lo integran.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Para habilitar modelos que anteriormente hayan sido inhabilitados para el usuario o grupo, se podrán agregar los mismos a la tabla, seleccionándolos de la lista de modelos definidos para el programa.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Creador</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Usuario creador del modelo.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Permiso para</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Exhibe este campo, según sea el caso, TODOS, el nombre de un grupo, y/o el nombre del usuario del cual se trate.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Observaciones</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Texto que se ha incorporado en el campo Comentario al darse de alta un modelo, en alguna ventana del sistema correspondiente.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Uso</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este campo, el usuario y/o grupo de usuarios puede utilizar el modelo definido en la fila de la tabla.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Modificación</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este campo, el usuario y/o grupo de usuarios puede modificar el modelo definido en la fila de la tabla.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si el usuario no tiene permiso de modificación, se deshabilitan los campos Comentario, Modelo predeterminado, el botón Grabar y el botón Seguridad de la ventana de Modelos.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Baja</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si se activa este campo, el usuario y/o grupo de usuarios puede dar de baja el modelo definido en la fila de la tabla.</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Si un usuario no tiene permiso para dar de baja el modelo, se deshabilita el botón Borrar de la ventana Modelos que corresponda.</p>
+    <p class="H_Sub-Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Check.gif" border="0" height="24" data-cke-saved-src="../assets/images/BASCSIMAG/Check.gif" src="../assets/images/BASCSIMAG/Check.gif" width="24"/> Defecto</p>
+    <p class="H_Parrafo_de_Sub-Sub-Item">Indicación de un modelo por defecto, para el usuario y/o grupo de usuarios determinado.</p>
+  </div>
 
 </body></html>

@@ -45,13 +45,20 @@
   <p class="H_Texto">Si los productos ya cuentan con sus etiquetas, el ingreso de las cantidades puede hacerse escaneando dichas etiquetas, de modo de facilitar la operación y asegurarse que los productos están etiquetados correctamente.</p>
   <p class="H_Texto">Se puede indicar, mediante un parámetro, que se impida registrar el egreso en caso de encontrar diferencias entre las cantidades de la orden de producción y las cantidades informadas. Para implementar esta funcionalidad en el talonario correspondiente al comprobante de egreso se debe indicar que se realiza control de cantidades y si se permitirá, o no, registrar el egreso existiendo diferencias.</p>
   <p class="Texto" style="margin-top: 0; margin-bottom: 0;"></p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Orden de produc.</p>
-  <p class="H_Parrafo_de_Item">Para registrar el egreso se debe indicar el número de la Orden de Producción correspondiente a los productos a transferir.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\boton_comprobante_referenciado.gif" border="0" height="29" src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" width="21"/> Botón “O. produc.”</p>
-  <p class="H_Parrafo_de_Item">Presionando este botón se deben seleccionar los ítems a transferir de la planta al depósito.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Grilla de items</p>
-  <p class="H_Parrafo_de_Item">Al seleccionar los ítems se presenta la pantalla de “<a href="control_de_cantidades.htm">Control de cantidades</a> ” donde se pueden escanear las etiquetas de los ítems o digitar la cantidad de unidades a transferir.</p>
-  <p class="H_Parrafo_de_Item">No es posible indicar cantidades mayores a las existentes en stock en la planta, para dicha orden de producción, ni ítems que no tengan stock.</p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Orden de produc.</span><span data-close-text="true">Orden de produc.</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Para registrar el egreso se debe indicar el número de la Orden de Producción correspondiente a los productos a transferir.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\boton_comprobante_referenciado.gif" border="0" height="29" src="../assets/images/BASCSIMAG/boton_comprobante_referenciado.gif" width="21"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Botón “O. produc.”</span><span data-close-text="true">Botón “O. produc.”</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">Presionando este botón se deben seleccionar los ítems a transferir de la planta al depósito.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Grilla de items</span><span data-close-text="true">Grilla de items</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Al seleccionar los ítems se presenta la pantalla de “<a href="control_de_cantidades.htm">Control de cantidades</a> ” donde se pueden escanear las etiquetas de los ítems o digitar la cantidad de unidades a transferir.</p>
+    <p class="H_Parrafo_de_Item">No es posible indicar cantidades mayores a las existentes en stock en la planta, para dicha orden de producción, ni ítems que no tengan stock.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
   <p class="H_Texto">En caso que para los ítems seleccionados se requiera egresar una cantidad menor al stock en planta para la orden de producción informada, oprimiendo el botón “Preparación”, se puede indicar la cantidad a controlar.</p>
   <p class="H_Texto">Una vez informadas las cantidades a transferir, al presionar “Ok”, el sistema evalua si hay diferencias entre el stock en planta (o en Preparación) y lo indicado en la grilla de control. En caso de encontrarlas emite un Aviso y permite consultar la diferencia existente para cada ítem.</p>
 

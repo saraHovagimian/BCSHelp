@@ -48,83 +48,96 @@
   <p class="H_Texto">El tema es que a veces se conoce de antemano que van a producirse diferencias, por ejemplo, porque el empleado de almacén avisa que no hay existencias suficientes para satisfacer los pedidos e informa, también, cuáles son las cantidades disponibles en stock.</p>
   <p class="H_Texto">En estos casos ya se sabe que al recolectar la mercadería para satisfacer un pedido habrá diferencias pues se conoce que el stock es menor, por lo cual, es una incomodidad para el operador informarle las diferencias, pues él ya la conoce de antemano.</p>
   <p class="H_Texto">Por ejemplo, si un pedido es por 100 unidades del producto, y de almacén se informa que hay 70, el empleado sabe que recolectará 70, que facturará 70 y no desea que la tarea de control le indique que hay una diferencia de 30.</p>
-  <p class="H_Texto">Para tener en cuenta esta situación se dispone del botón <font style="font-weight: bold;">Preparación</font> . A partir de dicho botón se accede a una ventana en la cual se puede indicar la cantidad pendiente de cada ítem en relación a los comprobantes seleccionados para el control .</p>
-  <p class="H_Item_con_vineta_negrita">Ingreso</p>
-  <p class="H_Parrafo_de_Sub-Item">Se debe ingresar una cantidad expresada en unidad de venta o compra (dependiendo de si es un ingreso o egreso) y un código de ítem. Si el ítem maneja colores y medidas hay que indicar el color y la medida en el ingreso del mismo.</p>
-  <p class="H_Parrafo_de_Sub-Item">El campo “Item”, permite leer el código de ítem desde un escáner de código de barras de teclado que debe parametrizarse con un “Enter” o una flecha hacia abajo como último carácter.</p>
-  <p class="H_Item_con_vineta_negrita">Cantidad</p>
-  <p class="H_Parrafo_de_Sub-Item">Cantidad expresada en unidad de venta o compra (dependiendo de si es un ingreso o egreso).</p>
-  <p class="H_Item_con_vineta_negrita">Item</p>
-  <p class="H_Parrafo_de_Sub-Item">Este campo prevé una operativa rápida para el ingreso de la cantidad.</p>
-  <p class="H_Parrafo_de_Sub-Item">Posicionados en el campo se ingresa una cantidad y, al oprimir la tecla *, la misma se copia al campo “Cantidad” permitiendo ingresar seguidamente el código del ítem.</p>
-  <p class="H_Parrafo_de_Sub-Item">Al oprimir “Enter”, o flecha hacia abajo, o el botón “Copiar”, se copiará dicho ítem a la tabla inferior. Si no se indica ninguna cantidad se asumirá cantidad uno. Si el ítem ya existe en dicha tabla se suma la nueva cantidad a la cantidad existente.</p>
-  <p class="H_Item_con_vineta_negrita">Copiar</p>
-  <p class="H_Parrafo_de_Sub-Item">Copia La información del ítem a la tabla “Items ingresados”.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Items ingresados</p>
-  <p class="H_Parrafo_de_Item">En esta grilla se van registrando los ítems y cantidades informados en el cuadro <font style="font-weight: bold;">Ingreso</font>.</p>
-  <p class="H_Parrafo_de_Item">También se puede eliminar un ítem de esta tabla haciendo doble clic sobre el encabezado de la fila correspondiente. Si posteriormente se ingresa el mismo ítem el sistema marcará la línea como válida con la última cantidad indicada.</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Sub-Item_con_vi￱eta_negrita">Código</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Sub-Item">Exhibe el código del ítem registrado.</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Sub-Item">Exhibe la descripción del ítem registrado.</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Sub-Item_con_vi￱eta_negrita">Color</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Sub-Item">Exhibe el color del ítem, si corresponde.</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Sub-Item_con_vi￱eta_negrita">Medida</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Sub-Item">Exhibe la medida del ítem, si corresponde.</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Sub-Item_con_vi￱eta_negrita">Cantidad</p>
-    </li>
-  </ul>
-  <p class="H_Parrafo_de_Sub-Item">Desde acá se pueden modificar directamente las cantidades indicadas.</p>
-  <p class="H_Parrafo_de_Sub-Item">No se pueden indicar en ningún caso cantidades en negativo o mayores a la suma de las cantidades pendientes en los comprobantes referenciados.</p>
-  <p class="H_Parrafo_de_Sub-Item">La excepción a lo dicho se presenta en el caso en que los comprobantes referenciados sean órdenes de compra o pedidos y que se haya informado un porcentaje por exceso permitido en las cantidades en el grupo de compras (órdenes de compra) o en el control de pedidos (pedidos externos). En ese caso se permite indicar cantidades mayores a las cantidades pendientes en los comprobantes referenciados, siempre y cuando no se superen dichos límites.</p>
-  <p class="H_Parrafo_de_Sub-Item">Tampoco se permite indicar ítems que no existan en los comprobantes referenciados o ítems que no sean de tipo cantidad.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Preparación</p>
-  <p class="H_Parrafo_de_Item">Permite acceder a una ventana en la cual se podrá indicar la cantidad pendiente de cada ítem en relación a los comprobantes seleccionados para el control.</p>
-  <p class="H_Parrafo_de_Item">Estas serán las cantidades que el sistema utilizará como base para realizar el control.</p>
-  <p class="H_Parrafo_de_Item">El objetivo de esta ventana es poder indicar, en relación a algunos ítems, una cantidad menor a la cantidad pendiente en los comprobantes, ya sea porque no hay stock suficiente o porque se decide entregar una cantidad menor al cliente, y que dicha diferencia no aparezca en el informe de diferencias final del control de cantidades. De este modo el informe final de la tarea tendrá realmente las diferencias que se deben controlar y no aquellas que se conocen de antemano.</p>
-  <p class="H_Parrafo_de_Item">Al presionar el botón e ingresar a la ventana de Preparación del control de cantidades, para cada ítem que se informa se exhibe la “Cantidad pendiente” y se debe informar la “<font style="font-weight: bold;">Cantidad preparada</font>”.</p>
-  <p class="H_Parrafo_de_Item">Se debe tener en cuenta:</p>
-  <ul>
-    <li style="font-size: 11pt;">
-      <p class="H_Item_con_vineta">No se puede indicar cantidades en negativo ni superiores a la cantidad pendiente total de dicho ítem en los comprobantes seleccionados.</p>
-    </li>
-    <li style="font-size: 11pt;">
-      <p class="H_Item_con_vineta">Para ítems con colores y medidas se permite el ingreso indicando el color y la medida junto con el código del ítem o por explosión de colores y medidas indicando en la ventana las cantidades para cada combinación.</p>
-    </li>
-    <li style="font-size: 11pt;">
-      <p class="H_Item_con_vineta">Si se indica el ítem con color y medida en la tabla y luego se indica el código del ítem sin color y medida, la cantidad indicada en la primera línea se agrega a la explosión de colores y medidas y la fila original aparece como eliminada.</p>
-    </li>
-    <li style="font-size: 11pt;">
-      <p class="H_Item_con_vineta">Si se indica el ítem inicialmente como explosión de colores y medidas, luego no puede indicarse individualmente con color y medida. Hay que agregar la cantidad correspondiente en la grilla por explosión de colores y medidas.</p>
-    </li>
-    <li style="font-size: 11pt;">
-      <p class="H_Item_con_vineta">No puede indicarse un mismo ítem dos veces en la grilla, así como tampoco se puede indicar un ítem que no esté incluido en los comprobantes pendientes seleccionados.</p>
-    </li>
-  </ul>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Cancelar</p>
-  <p class="H_Parrafo_de_Item">Al presionar “Cancelar” en la tarea de control, habiendo ingresado ítems para controlar, el sistema previo pedido de confirmación, desechará todo lo actuado perdiéndose la información ingresada en la tabla hasta el momento.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> OK</p>
-  <p class="H_Parrafo_de_Item">Al oprimir el botón “OK” el sistema informa si hay diferencias entre lo indicado y los ítems involucrados en los comprobantes referenciados (o en la ventana “Preparación”) ya sea por cantidades menores o por ítems que no se incluyeron en la tabla anterior.</p>
-  <p class="H_Parrafo_de_Item">En esa instancia se ofrece al operador la posibilidad de consultar, mediante el botón “<font style="font-weight: bold;">Detalles</font>”, el detalle de todas las diferencias encontradas.</p>
-  <p class="H_Parrafo_de_Item">Cuando se encuentran diferencias, el sistema da la posibilidad de volver a la pantalla de carga (respondiendo “<font style="font-weight: bold;">No</font>” en la ventana). En ese caso se podrá continuar con la precarga del comprobante de ingreso o egreso.</p>
-  <p class="H_Parrafo_de_Item">Si se continua adelante (opción “<font style="font-weight: bold;">Sí</font>”), se cargará la grilla de ítems del comprobante del que se trate con los ítems indicados en la tabla de control para las cantidades indicadas en dicha tabla. Dicha cantidad se dividirá entre las cantidades pendientes de los comprobantes referenciados.</p>
+  <p class="H_Texto">Para tener en cuenta esta situación se dispone del botón <font style="font-weight: bold;">Preparación</font> . A partir de dicho botón se accede a una ventana en la cual se puede indicar la cantidad pendiente de cada ítem en relación a los comprobantes seleccionados para el control.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Frame.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Frame.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Ingreso</span><span data-close-text="true">Ingreso</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Parrafo_de_Item">Se debe ingresar una cantidad expresada en unidad de venta o compra (dependiendo de si es un ingreso o egreso) y un código de ítem. Si el ítem maneja colores y medidas hay que indicar el color y la medida en el ingreso del mismo.</p>
+    <p class="H_Parrafo_de_Item">El campo “Item”, permite leer el código de ítem desde un escáner de código de barras de teclado que debe parametrizarse con un “Enter” o una flecha hacia abajo como último carácter.</p>
+    <p class="H_Item_con_vineta_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Cantidad</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad expresada en unidad de venta o compra (dependiendo de si es un ingreso o egreso).</p>
+    <p class="H_Item_con_vineta_negrita"><img alt="BASCSIMAG\campo_para_dato.gif" border="0" height="13" src="../assets/images/BASCSIMAG/campo_para_dato.gif" width="23"/> Item</p>
+    <p class="H_Parrafo_de_Sub-Item">Este campo prevé una operativa rápida para el ingreso de la cantidad.</p>
+    <p class="H_Parrafo_de_Sub-Item">Posicionados en el campo se ingresa una cantidad y, al oprimir la tecla *, la misma se copia al campo “Cantidad” permitiendo ingresar seguidamente el código del ítem.</p>
+    <p class="H_Parrafo_de_Sub-Item">Al oprimir “Enter”, o flecha hacia abajo, o el botón “Copiar”, se copiará dicho ítem a la tabla inferior. Si no se indica ninguna cantidad se asumirá cantidad uno. Si el ítem ya existe en dicha tabla se suma la nueva cantidad a la cantidad existente.</p>
+    <p class="H_Item_con_vineta_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Copiar</p>
+    <p class="H_Parrafo_de_Sub-Item">Copia La información del ítem a la tabla “Items ingresados”.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Items ingresados</span><span data-close-text="true">Items ingresados</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">En esta grilla se van registrando los ítems y cantidades informados en el cuadro <font style="font-weight:bold">Ingreso</font>.</p>
+    <p class="H_Parrafo_de_Item">También se puede eliminar un ítem de esta tabla haciendo doble clic sobre el encabezado de la fila correspondiente. Si posteriormente se ingresa el mismo ítem el sistema marcará la línea como válida con la última cantidad indicada.</p>
+    <ul>
+      <li style="font-size:11pt">
+        <p class="H_Sub-Item_con_vi￱eta_negrita">Código</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe el código del ítem registrado.</p>
+    <ul>
+      <li style="font-size:11pt">
+        <p class="H_Sub-Item_con_vi￱eta_negrita">Descripción</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe la descripción del ítem registrado.</p>
+    <ul>
+      <li style="font-size:11pt">
+        <p class="H_Sub-Item_con_vi￱eta_negrita">Color</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe el color del ítem, si corresponde.</p>
+    <ul>
+      <li style="font-size:11pt">
+        <p class="H_Sub-Item_con_vi￱eta_negrita">Medida</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Sub-Item">Exhibe la medida del ítem, si corresponde.</p>
+    <ul>
+      <li style="font-size:11pt">
+        <p class="H_Sub-Item_con_vi￱eta_negrita">Cantidad</p>
+      </li>
+    </ul>
+    <p class="H_Parrafo_de_Sub-Item">Desde acá se pueden modificar directamente las cantidades indicadas.</p>
+    <p class="H_Parrafo_de_Sub-Item">No se pueden indicar en ningún caso cantidades en negativo o mayores a la suma de las cantidades pendientes en los comprobantes referenciados.</p>
+    <p class="H_Parrafo_de_Sub-Item">La excepción a lo dicho se presenta en el caso en que los comprobantes referenciados sean órdenes de compra o pedidos y que se haya informado un porcentaje por exceso permitido en las cantidades en el grupo de compras (órdenes de compra) o en el control de pedidos (pedidos externos). En ese caso se permite indicar cantidades mayores a las cantidades pendientes en los comprobantes referenciados, siempre y cuando no se superen dichos límites.</p>
+    <p class="H_Parrafo_de_Sub-Item">Tampoco se permite indicar ítems que no existan en los comprobantes referenciados o ítems que no sean de tipo cantidad.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#"><span data-open-text="true" data-skip-index="true">Preparación</span><span data-close-text="true">Preparación</span></a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="H_Parrafo_de_Item">Permite acceder a una ventana en la cual se podrá indicar la cantidad pendiente de cada ítem en relación a los comprobantes seleccionados para el control.</p>
+    <p class="H_Parrafo_de_Item">Estas serán las cantidades que el sistema utilizará como base para realizar el control.</p>
+    <p class="H_Parrafo_de_Item">El objetivo de esta ventana es poder indicar, en relación a algunos ítems, una cantidad menor a la cantidad pendiente en los comprobantes, ya sea porque no hay stock suficiente o porque se decide entregar una cantidad menor al cliente, y que dicha diferencia no aparezca en el informe de diferencias final del control de cantidades. De este modo el informe final de la tarea tendrá realmente las diferencias que se deben controlar y no aquellas que se conocen de antemano.</p>
+    <p class="H_Parrafo_de_Item">Al presionar el botón e ingresar a la ventana de Preparación del control de cantidades, para cada ítem que se informa se exhibe la “Cantidad pendiente” y se debe informar la “<font style="font-weight:bold">Cantidad preparada</font>”.</p>
+    <p class="H_Parrafo_de_Item">Se debe tener en cuenta:</p>
+    <ul>
+      <li style="font-size:11pt">
+        <p class="H_Item_con_vineta">No se puede indicar cantidades en negativo ni superiores a la cantidad pendiente total de dicho ítem en los comprobantes seleccionados.</p>
+      </li>
+      <li style="font-size:11pt">
+        <p class="H_Item_con_vineta">Para ítems con colores y medidas se permite el ingreso indicando el color y la medida junto con el código del ítem o por explosión de colores y medidas indicando en la ventana las cantidades para cada combinación.</p>
+      </li>
+      <li style="font-size:11pt">
+        <p class="H_Item_con_vineta">Si se indica el ítem con color y medida en la tabla y luego se indica el código del ítem sin color y medida, la cantidad indicada en la primera línea se agrega a la explosión de colores y medidas y la fila original aparece como eliminada.</p>
+      </li>
+      <li style="font-size:11pt">
+        <p class="H_Item_con_vineta">Si se indica el ítem inicialmente como explosión de colores y medidas, luego no puede indicarse individualmente con color y medida. Hay que agregar la cantidad correspondiente en la grilla por explosión de colores y medidas.</p>
+      </li>
+      <li style="font-size:11pt">
+        <p class="H_Item_con_vineta">No puede indicarse un mismo ítem dos veces en la grilla, así como tampoco se puede indicar un ítem que no esté incluido en los comprobantes pendientes seleccionados.</p>
+      </li>
+    </ul>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#"><span data-open-text="true" data-skip-index="true">Cancelar</span><span data-close-text="true">Cancelar</span></a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="H_Parrafo_de_Item">Al presionar “Cancelar” en la tarea de control, habiendo ingresado ítems para controlar, el sistema previo pedido de confirmación, desechará todo lo actuado perdiéndose la información ingresada en la tabla hasta el momento.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#"><span data-open-text="true" data-skip-index="true">OK</span><span data-close-text="true">OK</span></a></p>
+  <div class="droptext" data-targetname="drop-down4">
+    <p class="H_Parrafo_de_Item">Al oprimir el botón “OK” el sistema informa si hay diferencias entre lo indicado y los ítems involucrados en los comprobantes referenciados (o en la ventana “Preparación”) ya sea por cantidades menores o por ítems que no se incluyeron en la tabla anterior.</p>
+    <p class="H_Parrafo_de_Item">En esa instancia se ofrece al operador la posibilidad de consultar, mediante el botón “<font style="font-weight:bold">Detalles</font>”, el detalle de todas las diferencias encontradas.</p>
+    <p class="H_Parrafo_de_Item">Cuando se encuentran diferencias, el sistema da la posibilidad de volver a la pantalla de carga (respondiendo “<font style="font-weight:bold">No</font>” en la ventana). En ese caso se podrá continuar con la precarga del comprobante de ingreso o egreso.</p>
+    <p class="H_Parrafo_de_Item">Si se continua adelante (opción “<font style="font-weight:bold">Sí</font>”), se cargará la grilla de ítems del comprobante del que se trate con los ítems indicados en la tabla de control para las cantidades indicadas en dicha tabla. Dicha cantidad se dividirá entre las cantidades pendientes de los comprobantes referenciados.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>

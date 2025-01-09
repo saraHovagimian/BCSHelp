@@ -44,52 +44,58 @@
   <p class="H_Texto">Aquí se puede programar que el sistema avise a ciertos usuarios si determinados clientes tienen una deuda vencida. La dirección de correo electrónico de cada usuario podrá indicarse en la ficha <font style="font-weight: bold;">Datos generales</font> del punto Usuarios.</p>
   <p class="H_Texto">El sistema brinda también la posibilidad de actualizar las agendas de los Usuarios en relación a saldos vencidos. Para organizar los avisos en la agenda existe un campo llamado Carpeta.</p>
   <p class="H_Texto">Los datos que deben ingresarse son los siguientes:</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Configuración</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de importes vencidos</p>
-  <p class="H_Parrafo_de_Sub-Item">En esta tabla se debe ingresar una lista con los importes de deuda vencida ante los cuales se quieren enviar alertas indicando para cada importe qué <a href="tabla__Clientes.htm">clientes</a> se controlan, cuántos días de tolerancia se contemplan y a qué usuario se le envía el mensaje.</p>
-  <p class="H_Parrafo_de_Sub-Item">Si un cliente con un <a href="tabla__Atributos.htm">atributo</a> y valor de atributo indicado en una línea de la tabla tiene una deuda vencida menor o igual al importe de deuda correspondiente a la misma línea de la tabla, se le enviará en forma automática un mensaje al usuario que se indique en dicha línea. El momento en que se envíe cada mensaje y con qué frecuencia podrá configurarse pulsando el botón <font style="font-weight: bold;">Programar trabajo</font>.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe</p>
-  <p class="H_Parrafo_de_Sub-Item">Importe de deuda vencida a partir del cual se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
-  <p class="H_Parrafo_de_Sub-Item">Se utilizarán los datos de una determinada línea si la deuda es mayor o igual al importe de deuda de la línea y es menor al importe de deuda de la línea siguiente.</p>
-  <p class="H_Parrafo_de_Sub-Item">El importe se expresa en la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> para crédito de clientes indicada en los <font style="font-weight: bold;">Parámetros de Cuentas corrientes</font>.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Días de tolerancia</p>
-  <p class="H_Parrafo_de_Sub-Item">Cantidad de días de tolerancia en el vencimiento de la deuda vencida hasta los cuales se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Atributo clientes</p>
-  <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> de <font style="font-weight: bold;">Clientes</font> correspondiente a aquellos clientes cuya deuda se considerará para el envío de alertas teniendo en cuenta el importe y los días de tolerancia consignados en la línea de la tabla.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
-  <p class="H_Parrafo_de_Sub-Item">Descripción del atributo correspondiente al código informado.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
-  <p class="H_Parrafo_de_Sub-Item">Valor del atributo informado correspondiente a aquellos clientes cuya deuda se considerará para el envío de alertas teniendo en cuenta el importe y los días de tolerancia consignados en la línea de la tabla.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
-  <p class="H_Parrafo_de_Sub-Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios</p>
-  <p class="H_Parrafo_de_Sub-Item">Nombre del usuario o de los usuarios a los que se les debe enviar el mensaje si se cumplen las condiciones indicadas en la línea de la tabla.</p>
-  <p class="H_Parrafo_de_Sub-Item">La dirección de correo electrónico de cada usuario deberá indicarse en la ficha <font style="font-weight: bold;">Datos generales</font> del punto <font style="font-weight: bold;">Usuarios</font>.</p>
-  <p class="H_Parrafo_de_Sub-Item">Si algún cliente con el atributo y valor de atributo indicados, tiene una deuda vencida no superior al importe de deuda indicado en la misma línea de la tabla y ya se cumplieron los días de tolerancia permitidos, se les enviarán a los usuarios que aquí se indiquen mensajes avisando tal circunstancia.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Carpeta</p>
-  <p class="H_Parrafo_de_Sub-Item">Las carpetas que se definen en este campo, alfanumérico de 30 caracteres, agrupan las alertas en la agenda del usuario que se informa en la ventana de la correspondiente parametrización. Su uso no es obligatorio. Ejemplo: se puede definir una carpeta para saldos vencidos de 1 día, y otra para saldos vencidos 10 días.</p>
-  <p class="H_Parrafo_de_Sub-Item">Siguiendo con el ejemplo anterior, aparecerán en la agenda del destinatario usuario, una carpeta de alertas, que contendrá otra carpeta llamada saldos vencidos, con los avisos correspondientes a saldos vencidos de 1 día y saldos vencidos 10 días agrupados en dos carpetas homónimas</p>
-  <p class="H_Parrafo_de_Sub-Item">En caso de no indicar carpetas el sistema utiliza una carpeta genérica de nombre Sin Carpeta.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> Ficha Imputaciones contables</p>
-  <p class="H_Parrafo_de_Item">En esta ficha es posible indicar sobre que imputaciones contables asociadas a los clientes se desea efectuar el cálculo de los saldos vencidos y sus consecuentes alertas</p>
-  <p class="H_Parrafo_de_Item">Es posible indicar que todas las imputaciones contable están suspendidas para la generación de las alertas, salvo excepciones. Estas se detallan en la Tabla <font style="font-weight: bold;">Excepto los indicados</font>. Del mismo modo es posible indicar que todas están habilitadas salvo excepciones que se detallan, también, en la tabla mencionada.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Todas suspendidas</p>
-  <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea suspender la generación de alertas por saldos vencidos de todos las imputaciones contables. No obstante podrán luego indicarse, en la tabla que sigue, si hay imputaciones que estén exceptuadas de esta suspensión.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Todas habilitadas</p>
-  <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea habilitar la generación de alertas por saldos vencidos para todas las imputaciones contables. No obstante podrá luego indicarse, en la tabla que sigue, si hay imputaciones que estén exceptuadas de esta habilitación.</p>
-  <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla Excepto las indicadas</p>
-  <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar todas las imputaciones contables que se encuentran exceptuados de la suspensión o habilitación general efectuada en alguno de los campos precedentes.</p>
-  <p class="H_Parrafo_de_Sub-Item">Puede ingresarse una imputación en particular o un grupo de ellas.</p>
-  <p class="H_Parrafo_de_Sub-Item">Pulsando el botón Todas las imputaciones, se incluirán todas las imputaciones en la tabla.</p>
-  <p class="H_Parrafo_de_Sub-Item">Por otro lado, el botón Vaciar Tabla, permite quitar a todas las imputaciones de la tabla.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cuenta</p>
-  <p class="H_Parrafo_de_Sub-Item">Código de la imputación contable que se desea exceptuar de la suspensión o habilitación indicada más arriba.</p>
-  <p class="H_Parrafo_de_Sub-Item">Se permitirá el ingreso de cualquier <a href="tabla__Cuentas.htm">imputación contable</a> definida en el sistema asociada a clientes.</p>
-  <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre</p>
-  <p class="H_Parrafo_de_Sub-Item">Descripción de la imputación contable asociada al código informado.</p>
-  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Programar trabajo</p>
-  <p class="H_Parrafo_de_Item">Pulsando este botón aparecerá una pantalla que permitirá configurar la programación periódica de alertas de saldos vencidos.</p>
-  <p class="H_Parrafo_de_Item">Se podrá programar la periodicidad con que se enviarán los alertas y la frecuencia diaria, se podrá configurar para que se envíen los mensajes siempre un día y a una determinada hora o se pueden indicar períodos de días, semanas o meses pasados los cuales se enviarán.</p>
-  <p class="H_Parrafo_de_Item">La programación periódica de alertas sólo podrá ser realizada por el administrador del sistema y podrá modificarse esta programación todas las veces que sea necesario.</p>
+  <p class="H_Texto"></p>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#"><span data-open-text="true" data-skip-index="true">Ficha Configuración</span><span data-close-text="true">Ficha Configuración</span></a></p>
+  <div class="droptext" data-targetname="drop-down">
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla de importes vencidos</p>
+    <p class="H_Parrafo_de_Sub-Item">En esta tabla se debe ingresar una lista con los importes de deuda vencida ante los cuales se quieren enviar alertas indicando para cada importe qué <a href="tabla__Clientes.htm">clientes</a> se controlan, cuántos días de tolerancia se contemplan y a qué usuario se le envía el mensaje.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si un cliente con un <a href="tabla__Atributos.htm">atributo</a> y valor de atributo indicado en una línea de la tabla tiene una deuda vencida menor o igual al importe de deuda correspondiente a la misma línea de la tabla, se le enviará en forma automática un mensaje al usuario que se indique en dicha línea. El momento en que se envíe cada mensaje y con qué frecuencia podrá configurarse pulsando el botón <font style="font-weight: bold;">Programar trabajo</font>.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Importe</p>
+    <p class="H_Parrafo_de_Sub-Item">Importe de deuda vencida a partir del cual se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se utilizarán los datos de una determinada línea si la deuda es mayor o igual al importe de deuda de la línea y es menor al importe de deuda de la línea siguiente.</p>
+    <p class="H_Parrafo_de_Sub-Item">El importe se expresa en la <a href="tabla__Tablas_de_indices_y_cotizaciones.htm">moneda</a> para crédito de clientes indicada en los <font style="font-weight: bold;">Parámetros de Cuentas corrientes</font>.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Días de tolerancia</p>
+    <p class="H_Parrafo_de_Sub-Item">Cantidad de días de tolerancia en el vencimiento de la deuda vencida hasta los cuales se utilizan los datos indicados en la línea de la tabla para enviar los alertas.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Atributo clientes</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de <a href="tabla__Atributos.htm">atributo</a> de <font style="font-weight: bold;">Clientes</font> correspondiente a aquellos clientes cuya deuda se considerará para el envío de alertas teniendo en cuenta el importe y los días de tolerancia consignados en la línea de la tabla.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del atributo correspondiente al código informado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Valor</p>
+    <p class="H_Parrafo_de_Sub-Item">Valor del atributo informado correspondiente a aquellos clientes cuya deuda se considerará para el envío de alertas teniendo en cuenta el importe y los días de tolerancia consignados en la línea de la tabla.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Descripción</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción del valor asociado al atributo correspondiente al código informado.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Usuarios</p>
+    <p class="H_Parrafo_de_Sub-Item">Nombre del usuario o de los usuarios a los que se les debe enviar el mensaje si se cumplen las condiciones indicadas en la línea de la tabla.</p>
+    <p class="H_Parrafo_de_Sub-Item">La dirección de correo electrónico de cada usuario deberá indicarse en la ficha <font style="font-weight: bold;">Datos generales</font> del punto <font style="font-weight: bold;">Usuarios</font>.</p>
+    <p class="H_Parrafo_de_Sub-Item">Si algún cliente con el atributo y valor de atributo indicados, tiene una deuda vencida no superior al importe de deuda indicado en la misma línea de la tabla y ya se cumplieron los días de tolerancia permitidos, se les enviarán a los usuarios que aquí se indiquen mensajes avisando tal circunstancia.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Carpeta</p>
+    <p class="H_Parrafo_de_Sub-Item">Las carpetas que se definen en este campo, alfanumérico de 30 caracteres, agrupan las alertas en la agenda del usuario que se informa en la ventana de la correspondiente parametrización. Su uso no es obligatorio. Ejemplo: se puede definir una carpeta para saldos vencidos de 1 día, y otra para saldos vencidos 10 días.</p>
+    <p class="H_Parrafo_de_Sub-Item">Siguiendo con el ejemplo anterior, aparecerán en la agenda del destinatario usuario, una carpeta de alertas, que contendrá otra carpeta llamada saldos vencidos, con los avisos correspondientes a saldos vencidos de 1 día y saldos vencidos 10 días agrupados en dos carpetas homónimas</p>
+    <p class="H_Parrafo_de_Sub-Item">En caso de no indicar carpetas el sistema utiliza una carpeta genérica de nombre Sin Carpeta.</p>
+  </div>
+  <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Ficha.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Ficha.gif" width="24"/> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#"><span data-open-text="true" data-skip-index="true">Ficha Imputaciones contables</span><span data-close-text="true">Ficha Imputaciones contables</span></a></p>
+  <div class="droptext" data-targetname="drop-down1">
+    <p class="H_Parrafo_de_Item">En esta ficha es posible indicar sobre que imputaciones contables asociadas a los clientes se desea efectuar el cálculo de los saldos vencidos y sus consecuentes alertas</p>
+    <p class="H_Parrafo_de_Item">Es posible indicar que todas las imputaciones contable están suspendidas para la generación de las alertas, salvo excepciones. Estas se detallan en la Tabla <font style="font-weight: bold;">Excepto los indicados</font>. Del mismo modo es posible indicar que todas están habilitadas salvo excepciones que se detallan, también, en la tabla mencionada.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Todas suspendidas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea suspender la generación de alertas por saldos vencidos de todos las imputaciones contables. No obstante podrán luego indicarse, en la tabla que sigue, si hay imputaciones que estén exceptuadas de esta suspensión.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_de_opcion.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_de_opcion.gif" width="24"/> Todas habilitadas</p>
+    <p class="H_Parrafo_de_Sub-Item">Indicación de si se desea habilitar la generación de alertas por saldos vencidos para todas las imputaciones contables. No obstante podrá luego indicarse, en la tabla que sigue, si hay imputaciones que estén exceptuadas de esta habilitación.</p>
+    <p class="H_Sub-Item_con_imagen_negrita"><img alt="BASCSIMAG\Grilla.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Grilla.gif" width="24"/> Tabla Excepto las indicadas</p>
+    <p class="H_Parrafo_de_Sub-Item">Esta tabla permite informar todas las imputaciones contables que se encuentran exceptuados de la suspensión o habilitación general efectuada en alguno de los campos precedentes.</p>
+    <p class="H_Parrafo_de_Sub-Item">Puede ingresarse una imputación en particular o un grupo de ellas.</p>
+    <p class="H_Parrafo_de_Sub-Item">Pulsando el botón Todas las imputaciones, se incluirán todas las imputaciones en la tabla.</p>
+    <p class="H_Parrafo_de_Sub-Item">Por otro lado, el botón Vaciar Tabla, permite quitar a todas las imputaciones de la tabla.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Cuenta</p>
+    <p class="H_Parrafo_de_Sub-Item">Código de la imputación contable que se desea exceptuar de la suspensión o habilitación indicada más arriba.</p>
+    <p class="H_Parrafo_de_Sub-Item">Se permitirá el ingreso de cualquier <a href="tabla__Cuentas.htm">imputación contable</a> definida en el sistema asociada a clientes.</p>
+    <p class="H_Sub_Item_con_vineta_negrita rl-p-H_Sub_Item_con_vineta_negrita">Nombre</p>
+    <p class="H_Parrafo_de_Sub-Item">Descripción de la imputación contable asociada al código informado.</p>
+    <p class="H_Item_con_imagen_negrita"><img alt="BASCSIMAG\Boton_generico.gif" border="0" height="24" src="../assets/images/BASCSIMAG/Boton_generico.gif" width="24"/> Programar trabajo</p>
+    <p class="H_Parrafo_de_Item">Pulsando este botón aparecerá una pantalla que permitirá configurar la programación periódica de alertas de saldos vencidos.</p>
+    <p class="H_Parrafo_de_Item">Se podrá programar la periodicidad con que se enviarán los alertas y la frecuencia diaria, se podrá configurar para que se envíen los mensajes siempre un día y a una determinada hora o se pueden indicar períodos de días, semanas o meses pasados los cuales se enviarán.</p>
+    <p class="H_Parrafo_de_Item">La programación periódica de alertas sólo podrá ser realizada por el administrador del sistema y podrá modificarse esta programación todas las veces que sea necesario.</p>
+  </div>
+  <p class="H_Parrafo_de_Item"></p>
 
 </body></html>
